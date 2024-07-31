@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Button } from "./Button";
-
 export interface NavBarProps {}
 
 export const Navbar = ({}: NavBarProps) => {
@@ -34,7 +33,7 @@ export const Navbar = ({}: NavBarProps) => {
                 >
                   <img
                     className="img-fluid d-block"
-                    src="/img/inject-logo-dark.svg"
+                    src="img/inject-logo-dark.svg"
                     style={{ maxWidth: 150, width: "100%" }}
                   />
                 </a>
@@ -154,7 +153,7 @@ export const Navbar = ({}: NavBarProps) => {
                       >
                         <img
                           alt="Account"
-                          src="/img/thumbnails/john-doe.webp"
+                          src="../img/thumbnails/john-doe.webp"
                         />
                       </div>
                     </a>
@@ -163,7 +162,7 @@ export const Navbar = ({}: NavBarProps) => {
                         <div className="thumbnail is-lg is-oval">
                           <img
                             alt="John Doe"
-                            src="../img/thumbnails/john-doe.webp"
+                            src="img/thumbnails/john-doe.webp"
                           />
                         </div>
                         <div className="d-flex flex-column justify-content-center ml-4">

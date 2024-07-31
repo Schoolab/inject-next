@@ -36,3 +36,11 @@ yarn-error.log*
 next-env.d.ts
 
 *storybook.log
+
+# others
+*.log
+*.tgz
+*.DS/Store
+*.DS_Store
+*.sass-cache
+*.npmrc
