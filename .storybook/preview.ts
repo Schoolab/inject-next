@@ -12,6 +12,7 @@ const preview: Preview = {
     html: {
       prettier: {
         tabWidth: 4,
+        printWidth: 250,
         useTabs: false,
         singleAttributePerLine: false,
         htmlWhitespaceSensitivity: "ignore",

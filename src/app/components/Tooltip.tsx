@@ -1,9 +1,10 @@
 import React from "react";
 import { useEffect } from "react";
+import {tooltips} from "../../../public/utils/tooltips"
 
 export const Tooltip = () => {
   useEffect(() => {
-    ($('[data-toggle="tooltip"]') as any).tooltip();
+    tooltips();
   }, []);
   return (
     <>
