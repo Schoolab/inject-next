@@ -7,7 +7,7 @@ const meta = {
   component: Button,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: "centered",
+    layout: "padded",
     docs: {
       controls: { sort: "requiredFirst" },
     },
@@ -17,9 +17,13 @@ const meta = {
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
     isActive: { control: "boolean" },
+    extended: { control: "boolean" },
   },
   args:{
     isActive: false,
+    type: "default",
+    size: "default",
+    extended: false,
   },
 } satisfies Meta<typeof Button>;
 
@@ -38,8 +42,7 @@ export const Default: Story = {
 export const Active: Story = {
   args: {
     iconStartName: "compass",
-    label: "Button",
-    type: "default",
+    label: "Button",   
     isActive: true,
   },
 };
