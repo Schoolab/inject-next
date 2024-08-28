@@ -2,7 +2,7 @@ import React from "react";
 
 export interface IconProps {
   /**
-   * Icon name, names refer to the <a href="https://pictogrammers.com/library/mdi/" target="_blank">mdi list</a>
+   * Icon name
    */
   name: string;
   /**

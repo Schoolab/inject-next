@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+.previews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+.preview {
+    position: relative;
+    width: 6rem;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    row-gap: 0;
+    padding: .5rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.preview::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .5rem;
+    pointer-events: none;
+    cursor: pointer;
+}
+.preview:hover {
+    background-color: #F5F5F5;
+}
+.preview:hover::before {
+    border: 1px solid rgba(0,0,0,.25);
+}
+.preview .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+}
+.preview .inner  {
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    color: #0F0F0F;
+}
+.preview-label {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: .75rem;
+    line-height: 1rem;
+    font-family: Monaco, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #AAA;
+}

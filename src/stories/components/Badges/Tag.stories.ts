@@ -38,35 +38,35 @@ export const WithIcon: Story = {
 export const Open: Story = {
     args: {
         label: "Open",
-        iconName: "open",
+        iconName: "status-filled",
         status: "open",
     },
 };
 export const InProgress: Story = {
     args: {
         label: "In progress",
-        iconName: "progress",
+        iconName: "status-dashed",
         status: "progress",
     },
 };
 export const Closed: Story = {
     args: {
         label: "Closed",
-        iconName: "closed",
+        iconName: "status-stop",
         status: "closed",
     },
 };
 export const Done: Story = {
     args: {
         label: "Done",
-        iconName: "done",
+        iconName: "status-filled",
         status: "done",
     },
 };
 export const Draft: Story = {
     args: {
         label: "Draft",
-        iconName: "draft",
+        iconName: "status-bordered",
         status: "draft",
     },
 };

@@ -13,6 +13,7 @@ export const tooltips = () => {
             $('.application-shortcutbar.shortcutbar-expanded div').tooltip('disable')
             
         }
+        
         disableTooltipInMobile();
         $(window).resize(function () {
             disableTooltipInMobile();

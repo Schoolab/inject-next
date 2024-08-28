@@ -1,10 +1,17 @@
 import React from "react";
 
-export interface TitleProps {}
+export interface TitleProps {
+    /**
+   * Custom class
+   */
+    addClass?: string;
+}
 
-export const Title = ({}: TitleProps) => {
+export const Title = ({addClass}: TitleProps) => {
+    let classTab = ["application-title"];
+    addClass && classTab.push(addClass);
     return (
-        <div className="application-title">
+        <div className={classTab.join(" ")}>
             <div className="d-lg-none flex-grow-1">
                 <div className="d-flex justify-content-between mb-3">
                     <a className="btn btn-sm btn-default mr-5" data-toggle="tooltip" data-original-title="Back" href="#">

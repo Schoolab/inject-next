@@ -11,12 +11,12 @@ export interface ButtonProps {
      */
     isActive?: Boolean;
     /**
-     * Icon name, names refer to the <a href="https://pictogrammers.com/library/mdi/" target="_blank">mdi list</a>
+     * Icon name, names refer to the <a href="https://pictogrammers.com/learning/mdi/" target="_blank">mdi list</a>
      */
 
     iconStartName?: string;
     /**
-     * Icon name, names refer to the <a href="https://pictogrammers.com/library/mdi/" target="_blank">mdi list</a>
+     * Icon name, names refer to the <a href="https://pictogrammers.com/learning/mdi/" target="_blank">mdi list</a>
      */
     iconEndName?: string;
     /**

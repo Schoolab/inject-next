@@ -62,12 +62,12 @@ export const CardEvent = ({ img, start, title, pin, location, ongoing=false }: C
                         </div>
                         <div className="d-flex justify-content-between align-items-end flex-wrap gap-xs">
                             {location === "Online" && <Tag iconName="link" label="Online" />}
-                            {location === "Hybride" && <Tag iconName="map-marker" label="Hybride" />}
-                            {location === "InPerson" && <Tag iconName="map-marker" label="In person" />}
+                            {location === "Hybride" && <Tag iconName="location" label="Hybride" />}
+                            {location === "InPerson" && <Tag iconName="location" label="In person" />}
                             {ongoing ? (
-                                <Tag iconName="open" status="open" label={`Ongoing until ${start.endTime}`} />
+                                <Tag iconName="status-filled" status="open" label={`Ongoing until ${start.endTime}`} />
                             ) :(
-                                <Tag iconName="draft" status="draft" label={`Start at ${start.startTime}`} />
+                                <Tag iconName="status-bordered" status="draft" label={`Start at ${start.startTime}`} />
                             )}
                             
                         </div>

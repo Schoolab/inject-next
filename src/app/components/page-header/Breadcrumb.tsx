@@ -7,7 +7,7 @@ export const Breadcrumb = ({}: BreadcrumbProps) => {
         <nav className="breadcrumb-container" aria-label="breadcrumb">
             <ol className="breadcrumb">
                 <li className="breadcrumb-item">
-                    <a href="#" className="icon icon-school" />
+                    <a href="#" className="icon icon-program" />
                 </li>
                 <li className="breadcrumb-item">
                     <a href="#">Item</a>

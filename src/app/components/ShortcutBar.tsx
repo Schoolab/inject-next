@@ -1,10 +1,18 @@
 import React from "react";
 
-export interface ShortcutBarProps {}
+export interface ShortcutBarProps {
+    /**
+     * User is logged ?
+     */
+    isExpanded?: Boolean;
+}
 
-export const ShortcutBar = ({ }: ShortcutBarProps) => {
+export const ShortcutBar = ({ isExpanded }: ShortcutBarProps) => {
+    let classTab = ["application-shortcutbar"];
+    isExpanded && classTab.push("shortcutbar-expanded");
+
     return (
-        <div className="application-shortcutbar shortcutbar-expanded">
+        <div className={classTab.join(" ")}>
             <div className="shortcutbar-container flex-fill" aria-label="Shortcut Bar">
                 <div className="shortcutbar-option dropright mb-lg-5 mb-none" data-toggle="tooltip" data-placement="right" data-original-title="Switch program" data-boundary="window" style={{ zIndex: 2 }}>
                     <a href="#" className="shortcutbar-option--link" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false">
@@ -25,7 +33,7 @@ export const ShortcutBar = ({ }: ShortcutBarProps) => {
                         <div className="dropdown-divider" />
                         <a className="dropdown-item" href="#">
                             <span>My programs (3)</span>
-                            <span className="ml-3 icon icon-open-in-new" aria-hidden="true" />
+                            <span className="ml-3 icon icon-new-tab" aria-hidden="true" />
                         </a>
                     </div>
                     <div className="shortcutbar-option--label">Switch program</div>
@@ -40,7 +48,7 @@ export const ShortcutBar = ({ }: ShortcutBarProps) => {
                     </div>
                     <div className="shortcutbar-option">
                         <a className="shortcutbar-option--link active" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Learning course" data-boundary="window">
-                            <span className="icon icon-library" aria-hidden="true" />
+                            <span className="icon icon-learning" aria-hidden="true" />
                             <div className="shortcutbar-option--label">Learning course</div>
                         </a>
                         <div className="shortcutbar-option--label">Learning course</div>
@@ -66,7 +74,7 @@ export const ShortcutBar = ({ }: ShortcutBarProps) => {
                     </div>
                     <div className="shortcutbar-option dropright" data-toggle="tooltip" data-placement="right" data-original-title="More projects" data-boundary="window" style={{ zIndex: 2 }}>
                         <a href="#" className="shortcutbar-option--link" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false">
-                            <span className="icon icon-more" aria-hidden="true" />
+                            <span className="icon icon-project" aria-hidden="true" />
                             <div className="shortcutbar-option--label">More projects</div>
                             <span className="icon icon-chevron-down shortcutbar-expanded-item-show" aria-hidden="true" />
                         </a>
@@ -261,14 +269,14 @@ export const ShortcutBar = ({ }: ShortcutBarProps) => {
                     <div className="shortcutbar-separator" />
                     <div className="shortcutbar-option">
                         <a className="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Expert space" data-boundary="window">
-                            <span className="icon icon-account-supervisor-circle" aria-hidden="true" />
+                            <span className="icon icon-coaching" aria-hidden="true" />
                             <div className="shortcutbar-option--label">Expert space</div>
                         </a>
                         <div className="shortcutbar-option--label">Expert space</div>
                     </div>
                     <div className="shortcutbar-option">
                         <a className="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Jury space" data-boundary="window">
-                            <span className="icon icon-gavel" aria-hidden="true" />
+                            <span className="icon icon-evaluation" aria-hidden="true" />
                             <div className="shortcutbar-option--label">Jury space</div>
                         </a>
                         <div className="shortcutbar-option--label">Jury space</div>
@@ -276,14 +284,14 @@ export const ShortcutBar = ({ }: ShortcutBarProps) => {
                     <div className="shortcutbar-separator" />
                     <div className="shortcutbar-option dropright" data-toggle="tooltip" data-placement="right" data-original-title="Previews" data-boundary="window" style={{ zIndex: 2 }}>
                         <a href="#" className="shortcutbar-option--link" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false">
-                            <span className="icon icon-eye" aria-hidden="true" />
+                            <span className="icon icon-visibility" aria-hidden="true" />
                             <div className="shortcutbar-option--label">Previews</div>
                             <span className="icon icon-chevron-down shortcutbar-expanded-item-show" aria-hidden="true" />
                         </a>
                         <div className="dropdown-menu" style={{ maxWidth: 225 }}>
                             <h6 className="dropdown-header">Previews</h6>
                             <a className="dropdown-item align-items-center" href="#">
-                                <span className="flex-shrink-0 icon icon-library is-sm" />
+                                <span className="flex-shrink-0 icon icon-learning is-sm" />
                                 <span className="text-truncate">Learning course</span>
                             </a>
                             <a className="dropdown-item align-items-center" href="#">
@@ -321,7 +329,7 @@ export const ShortcutBar = ({ }: ShortcutBarProps) => {
                     </div>
                     <div className="shortcutbar-option">
                         <a className="shortcutbar-option--link active" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Manage program" data-boundary="window">
-                            <span className="icon icon-cog" aria-hidden="true" />
+                            <span className="icon icon-settings" aria-hidden="true" />
                             <div className="shortcutbar-option--label">Manage program</div>
                         </a>
                         <div className="shortcutbar-option--label">Manage program</div>

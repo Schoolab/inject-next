@@ -1,32 +1,36 @@
 import React from "react";
 import { ReactNode } from "react";
+import { useEffect } from "react";
 import { Navbar } from "../components/NavBar";
 import { ShortcutBar } from "../components/ShortcutBar";
-import { Breadcrumb } from "../components/page-header/Breadcrumb";
-import { Title } from "../components/page-header/Title";
-import { SubNav } from "../components/page-header/SubNav";
-import { Footer } from "../components/Footer";
+import { SidebarManage } from "../components/sidebar/SidebarManage";
+import { SidebarAdmin } from "../components/sidebar/SidebarAdmin";
+import { select } from "../../../public/utils/select";
 
 interface LayoutProps {
-  children?: ReactNode;
-}
+    children?: ReactNode;
+    shortcutBarExpanded?: boolean;
+    sideBar?: "Admin" | "Manage";
+    theme?: "default" | "Schoolab" | "Moho" | "Raiselab";
 
-export const Layout = ({children,}:LayoutProps) => {
+    showShortcutbar?: boolean;
+
+}
+export const Layout = ({ children, sideBar, theme, shortcutBarExpanded, showShortcutbar = true,  }: LayoutProps) => {
+    useEffect(() => {
+        select();
+    }, []);
+
     return (
         <div className="application-ui">
-            <Navbar />
+            {theme ? <Navbar theme={theme} /> : <Navbar />}
             <div className="application-container">
-                <ShortcutBar />
-                <main className="application-content">
-                    <Breadcrumb />
-                    <Title />
-                    <SubNav />
-                    <div id="appMainContainer" className="container-lg container-lg-fluid mb-lg-0 py-7">
-                        {children}
-                    </div>
-                    <Footer />
-                </main>
+                {showShortcutbar && (shortcutBarExpanded ? <ShortcutBar isExpanded={true} /> : <ShortcutBar />)}
+                {sideBar && sideBar === "Manage" && <SidebarManage />}
+                {sideBar && sideBar === "Admin" && <SidebarAdmin />}
+                {children}
             </div>
+
         </div>
     );
 };

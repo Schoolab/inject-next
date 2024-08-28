@@ -33,7 +33,7 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Default: Story = {
   args: {
-    iconStartName: "compass",
+    iconStartName: "link",
     label: "Button",
     type: "default",
   },
@@ -41,7 +41,7 @@ export const Default: Story = {
 
 export const Active: Story = {
   args: {
-    iconStartName: "compass",
+    iconStartName: "link",
     label: "Button",   
     isActive: true,
   },
@@ -49,7 +49,7 @@ export const Active: Story = {
 
 export const Primary: Story = {
   args: {
-    iconStartName: "compass",
+    iconStartName: "link",
     label: "Button",
     type: "primary",
   },
@@ -57,35 +57,35 @@ export const Primary: Story = {
 
 export const Transparent: Story = {
   args: {
-    iconStartName: "compass",
+    iconStartName: "link",
     label: "Button",
     type: "transparent",
   },
 };
 export const Danger: Story = {
   args: {
-    iconStartName: "compass",
+    iconStartName: "link",
     label: "Button",
     type: "danger",
   },
 };
 export const Warning: Story = {
   args: {
-    iconStartName: "compass",
+    iconStartName: "link",
     label: "Button",
     type: "warning",
   },
 };
 export const Secondary: Story = {
   args: {
-    iconStartName: "compass",
+    iconStartName: "link",
     label: "Button",
     type: "secondary",
   },
 };
 export const Muted: Story = {
   args: {
-    iconStartName: "compass",
+    iconStartName: "link",
     label: "Button",
     type: "muted",
   },

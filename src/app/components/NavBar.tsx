@@ -57,22 +57,22 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                                 <div className="navbar-options ml-lg-auto">
                                     <div className="d-none d-lg-flex flex-fill">
                                         <div className="navbar-option">
-                                            <Button label="Programs" iconStartName="school" isActive={true} addClass="navbar-main-btn" />
+                                            <Button label="Programs" iconStartName="program" isActive={true} addClass="navbar-main-btn" />
                                         </div>
                                         <div className="navbar-option">
-                                            <Button label="Projects" iconStartName="clipboard-text" addClass="navbar-main-btn" />
+                                            <Button label="Projects" iconStartName="project" addClass="navbar-main-btn" />
                                         </div>
                                         <div className="navbar-option">
-                                            <Button label="Community" iconStartName="account-group" addClass="navbar-main-btn" />
+                                            <Button label="Community" iconStartName="community" addClass="navbar-main-btn" />
                                         </div>
                                         <div className="navbar-option">
                                             <Button label="Events" iconStartName="calendar" addClass="navbar-main-btn" />
                                         </div>
                                         <div className="navbar-option">
-                                            <Button label="Newsfeed" iconStartName="newspaper" addClass="navbar-main-btn" />
+                                            <Button label="Newsfeed" iconStartName="newsfeed" addClass="navbar-main-btn" />
                                         </div>
                                         <div className="navbar-option">
-                                            <Button label="F.A.Q." iconStartName="frequently-asked-questions" addClass="navbar-main-btn" />
+                                            <Button label="F.A.Q." iconStartName="faq" addClass="navbar-main-btn" />
                                         </div>
                                     </div>
                                     {isLogged ? (
@@ -101,7 +101,7 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                                             <div className="nav-horizontal-divider d-none d-lg-block" />
                                             <div className="navbar-option dropdown">
                                                 <a className="navbar-option--link" data-toggle="dropdown" role="button" href="#">
-                                                    <span className="icon icon-bell has-dot" title="" data-toggle="tooltip" data-content="" data-original-title="Notifications" />
+                                                    <span className="icon icon-notifications has-dot" title="" data-toggle="tooltip" data-content="" data-original-title="Notifications" />
                                                 </a>
                                                 <div className="dropdown-menu dropdown-menu-right" />
                                             </div>
