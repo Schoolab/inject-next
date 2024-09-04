@@ -37,7 +37,7 @@ export const JuryEvaluationProject = () => {
                                                 <h3 className="mb-2">Green energy</h3>
                                                 <ul className="list-inline list-dotted text-muted">
                                                     <li className="list-inline-item">
-                                                        <a className="icon icon-school" href="/program/esg-awards">
+                                                        <a className="icon icon-program" href="/program/esg-awards">
                                                             ESG Awards
                                                         </a>
                                                     </li>
@@ -237,7 +237,7 @@ export const JuryEvaluationProject = () => {
                                                                         </div>
                                                                         <div className="item-options dropdown">
                                                                             <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                <span className="icon icon-dots-vertical" />
+                                                                                <span className="icon icon-options" />
                                                                             </a>
                                                                             <div className="dropdown-menu dropdown-menu-right">
                                                                                 <a className="dropdown-item" href="/program/192/manage/updates">

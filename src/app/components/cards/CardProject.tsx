@@ -26,7 +26,7 @@ export const CardProject = ({}: CardProjectProps) => {
                             <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                 <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                     <div className="d-flex gap-2xs text-muted small z-2" data-toggle="tooltip" data-placement="top" data-original-title="<ul class='list-unstyled d-flex flex-column gap-2xs m-none'><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/2216e7ab-c701-4503-83a2-ae7b91afb15d/sq150.jpeg'></div><span>Alexandra Jolly</span></li></ul>" data-html="true" data-boundary="window">
-                                        <span className="icon icon-account-multiple is-xs" />
+                                        <span className="icon icon-members is-xs" />
                                         <span className="text-nowrap">1 member</span>
                                     </div>
                                     <div className="badges flex-nowrap">
@@ -64,7 +64,7 @@ export const CardProject = ({}: CardProjectProps) => {
                                         data-html="true"
                                         data-boundary="window"
                                     >
-                                        <span className="icon icon-account-multiple is-xs" />
+                                        <span className="icon icon-members is-xs" />
                                         <span className="text-nowrap">2 members</span>
                                     </div>
                                     <div className="badges flex-nowrap">
@@ -103,7 +103,7 @@ export const CardProject = ({}: CardProjectProps) => {
                                         data-html="true"
                                         data-boundary="window"
                                     >
-                                        <span className="icon icon-account-multiple is-xs" />
+                                        <span className="icon icon-members is-xs" />
                                         <span className="text-nowrap">8 members</span>
                                     </div>
                                     <div className="badges flex-nowrap">
@@ -137,7 +137,7 @@ export const CardProject = ({}: CardProjectProps) => {
                             <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                 <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                     <div className="d-flex gap-2xs text-muted small">
-                                        <span className="icon icon-account-multiple is-xs" />
+                                        <span className="icon icon-members is-xs" />
                                         <span className="text-nowrap">1 member</span>
                                     </div>
                                     <div className="badges flex-nowrap">
@@ -150,7 +150,7 @@ export const CardProject = ({}: CardProjectProps) => {
                         <div className="card-targets">
                             <div className="card-target">
                                 <a href="#" className="stretched-link d-flex align-items-center">
-                                    <span className="icon icon-cog is-sm" />
+                                    <span className="icon icon-settings is-sm" />
                                     <span>Manage project</span>
                                 </a>
                                 <span className="icon icon-chevron-right is-sm" />
@@ -179,7 +179,7 @@ export const CardProject = ({}: CardProjectProps) => {
                             <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                 <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                     <div className="d-flex gap-2xs text-muted small">
-                                        <span className="icon icon-account-multiple is-xs" />
+                                        <span className="icon icon-members is-xs" />
                                         <span className="text-nowrap">1 member</span>
                                     </div>
                                     <div className="badges flex-nowrap">
@@ -229,7 +229,7 @@ export const CardProject = ({}: CardProjectProps) => {
                             <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                 <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                     <div className="d-flex gap-2xs text-muted small">
-                                        <span className="icon icon-account-multiple is-xs" />
+                                        <span className="icon icon-members is-xs" />
                                         <span className="text-nowrap">1 member</span>
                                     </div>
                                     <div className="badges flex-nowrap">
@@ -272,7 +272,7 @@ export const CardProject = ({}: CardProjectProps) => {
                                     </picture>
                                 </div>
                                 <div className="card-external">
-                                    <div className="icon icon-school is-16px ml-n6px" />
+                                    <div className="icon icon-program is-16px ml-n6px" />
                                     <div className="small font-weight-bold text-truncate mx-2">CPi Concept</div>
                                 </div>
                             </div>
@@ -284,7 +284,7 @@ export const CardProject = ({}: CardProjectProps) => {
                             <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                 <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                     <div className="d-flex gap-2xs text-muted small">
-                                        <span className="icon icon-account-multiple is-xs" />
+                                        <span className="icon icon-members is-xs" />
                                         <span className="text-nowrap">1 member</span>
                                     </div>
                                     <div className="badges flex-nowrap">

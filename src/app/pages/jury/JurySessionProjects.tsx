@@ -71,7 +71,7 @@ export const JurySessionProjects = () => {
                                             <span className="small">
                                                 Average{" "}
                                                 <span className="font-weight-bold text-yellow">
-                                                    <span className="icon icon-star" /> 4.8
+                                                    <span className="icon icon-rating" /> 4.8
                                                 </span>
                                             </span>
                                         </div>
@@ -83,7 +83,7 @@ export const JurySessionProjects = () => {
                                         </div>
                                         <div className="card-actions">
                                             <a className="btn btn-lg btn-primary btn-block" href="#">
-                                                <span className="icon icon-star is-sm mr-2" />
+                                                <span className="icon icon-rating is-sm mr-2" />
                                                 <span>Evaluate</span>
                                             </a>
                                             <a className="btn btn-lg btn-default btn-block" href="#">
@@ -130,7 +130,7 @@ export const JurySessionProjects = () => {
                                             <span className="small">
                                                 Average{" "}
                                                 <span className="font-weight-bold text-yellow">
-                                                    <span className="icon icon-star" /> 4.8
+                                                    <span className="icon icon-rating" /> 4.8
                                                 </span>
                                             </span>
                                         </div>
@@ -142,7 +142,7 @@ export const JurySessionProjects = () => {
                                         </div>
                                         <div className="card-actions">
                                             <a className="btn btn-lg btn-primary btn-block" href="#">
-                                                <span className="icon icon-star is-sm mr-2" />
+                                                <span className="icon icon-rating is-sm mr-2" />
                                                 <span>Evaluate</span>
                                             </a>
                                             <a className="btn btn-lg btn-default btn-block" href="#">
@@ -189,7 +189,7 @@ export const JurySessionProjects = () => {
                                             <span className="small">
                                                 Average{" "}
                                                 <span className="font-weight-bold text-yellow">
-                                                    <span className="icon icon-star" /> 4.8
+                                                    <span className="icon icon-rating" /> 4.8
                                                 </span>
                                             </span>
                                         </div>
@@ -201,7 +201,7 @@ export const JurySessionProjects = () => {
                                         </div>
                                         <div className="card-actions">
                                             <a className="btn btn-lg btn-primary btn-block" href="#">
-                                                <span className="icon icon-star is-sm mr-2" />
+                                                <span className="icon icon-rating is-sm mr-2" />
                                                 <span>Evaluate</span>
                                             </a>
                                             <a className="btn btn-lg btn-default btn-block" href="#">
@@ -248,7 +248,7 @@ export const JurySessionProjects = () => {
                                             <span className="small">
                                                 Average{" "}
                                                 <span className="font-weight-bold text-yellow">
-                                                    <span className="icon icon-star" /> 4.8
+                                                    <span className="icon icon-rating" /> 4.8
                                                 </span>
                                             </span>
                                         </div>
@@ -260,7 +260,7 @@ export const JurySessionProjects = () => {
                                         </div>
                                         <div className="card-actions">
                                             <a className="btn btn-lg btn-primary btn-block" href="#">
-                                                <span className="icon icon-star is-sm mr-2" />
+                                                <span className="icon icon-rating is-sm mr-2" />
                                                 <span>Evaluate</span>
                                             </a>
                                             <a className="btn btn-lg btn-default btn-block" href="#">

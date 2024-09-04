@@ -25,13 +25,13 @@ export const SidebarAdmin = ({}: SidebarAdminProps) => {
                         </li>
                         <li className="nav-item">
                             <a href="#" className=" nav-link">
-                                <span className="nav-link--icon icon icon-school" />
+                                <span className="nav-link--icon icon icon-program" />
                                 <span className="nav-link--label">Programs</span>
                             </a>
                         </li>
                         <li className="nav-item">
                             <a href="#" className=" nav-link">
-                                <span className="nav-link--icon icon icon-clipboard-text" />
+                                <span className="nav-link--icon icon icon-project" />
                                 <span className="nav-link--label">Projects</span>
                             </a>
                         </li>
@@ -43,7 +43,7 @@ export const SidebarAdmin = ({}: SidebarAdminProps) => {
                         </li>
                         <li className="nav-item">
                             <a href="#" className=" nav-link">
-                                <span className="nav-link--icon icon icon-account-supervisor-circle" />
+                                <span className="nav-link--icon icon icon-coaching" />
                                 <span className="nav-link--label">Coaching</span>
                             </a>
                         </li>

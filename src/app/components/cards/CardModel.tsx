@@ -25,7 +25,7 @@ export const CardModel = ({img}: CardModelProps) => {
                                 {"{"}Organization name with a super long text{"}"}
                                 {"}"}
                             </div>
-                            <span className="small icon icon-arrow-top-right text-muted" />
+                            <span className="small icon icon-new-tab text-muted" />
                         </div>
                     </CardBanner>
                 )}
@@ -39,7 +39,7 @@ export const CardModel = ({img}: CardModelProps) => {
                 <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                     <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                         <div className="d-flex gap-2xs text-muted small">
-                            <span className="icon icon-account-group is-xs" />
+                            <span className="icon icon-community is-xs" />
                             <span className="text-nowrap">100 members</span>
                         </div>
                         <div className="badges flex-nowrap">
@@ -75,7 +75,7 @@ export const CardModel = ({img}: CardModelProps) => {
             <div className="card-targets">
                 <div className="card-target">
                     <a href="#" className="stretched-link d-flex align-items-center">
-                        <span className="icon icon-information is-sm" />
+                        <span className="icon icon-public-page is-sm" />
                         <span>Public page</span>
                     </a>
                     <span className="icon icon-chevron-right is-sm" />
@@ -91,28 +91,28 @@ export const CardModel = ({img}: CardModelProps) => {
                 </div>
                 <div className="card-target">
                     <a href="#" className="stretched-link d-flex align-items-center">
-                        <span className="icon icon-account-supervisor-circle is-sm" />
+                        <span className="icon icon-coaching is-sm" />
                         <span>Open experts overview</span>
                     </a>
                     <span className="icon icon-chevron-right is-sm" />
                 </div>
                 <div className="card-target">
                     <a href="#" className="stretched-link d-flex align-items-center">
-                        <span className="icon icon-gavel is-sm" />
+                        <span className="icon icon-evaluation is-sm" />
                         <span>Open jury overview</span>
                     </a>
                     <span className="icon icon-chevron-right is-sm" />
                 </div>
                 <div className="card-target">
                     <a href="#" className="stretched-link d-flex align-items-center">
-                        <span className="icon icon-cog is-sm" />
+                        <span className="icon icon-settings is-sm" />
                         <span>Manage program</span>
                     </a>
                     <span className="icon icon-chevron-right is-sm" />
                 </div>
                 <div className="card-target">
                     <a href="#" className="stretched-link d-flex align-items-center">
-                        <span className="icon icon-cog is-sm" />
+                        <span className="icon icon-settings is-sm" />
                         <span>Manage project</span>
                     </a>
                     <span className="icon icon-chevron-right is-sm" />
@@ -207,7 +207,7 @@ export const CardModel = ({img}: CardModelProps) => {
                     <span className="small">
                         Average{" "}
                         <span className="font-weight-bold text-yellow">
-                            <span className="icon icon-star" /> 4.8
+                            <span className="icon icon-rating" /> 4.8
                         </span>
                     </span>
                 </div>
@@ -219,7 +219,7 @@ export const CardModel = ({img}: CardModelProps) => {
                 </div>
                 <div className="card-actions">
                     <a className="btn btn-lg btn-primary btn-block" href="#">
-                        <span className="icon icon-star is-sm mr-2" />
+                        <span className="icon icon-rating is-sm mr-2" />
                         <span>Evaluate</span>
                     </a>
                     <a className="btn btn-lg btn-default btn-block" href="#">

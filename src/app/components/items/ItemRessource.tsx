@@ -73,13 +73,13 @@ export const ItemRessource = ({ img, ressource, action, icon, isSmall = false }:
                     )}
                     {action == "openLink" && (
                         <a className="btn btn-transparent btn-icon z-1" href="#" role="button" data-toggle="tooltip" data-placement="top" data-title="Open in new tab" data-boundary="window" data-original-title="" title="">
-                            <span className="icon icon-arrow-top-right" />
+                            <span className="icon icon-new-tab" />
                         </a>
                     )}
 
                     <div className="dropdown" data-toggle="tooltip" data-placement="top" data-title="Options" data-boundary="window" data-original-title="" title="">
                         <a className="btn btn-transparent btn-icon z-1" href="#" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
-                            <span className="icon icon-dots-vertical" />
+                            <span className="icon icon-options" />
                         </a>
                         <div className="dropdown-menu dropdown-menu-right">
                             <a href="#" className="dropdown-item">

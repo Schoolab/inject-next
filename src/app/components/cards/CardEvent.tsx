@@ -42,7 +42,7 @@ interface CardEventProps {
 export const CardEvent = ({ img, start, title, pin, location, ongoing=false }: CardEventProps) => {
     return (
         <Card>
-            <CardInfos>
+            <CardInfos addClass="is-linked">
                 {img && (
                     <CardBanner>
                         <CardImage is3by1={true} src={img} />

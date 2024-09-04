@@ -154,16 +154,16 @@ export const SidebarManageOld = ({}: SidebarManageOldProps) => {
                     <ul className="nav nav-main flex-column">
                         <li className="nav-item">
                             <a href="#" className=" nav-link">
-                                <span className="nav-link--icon icon icon-lifebuoy" />
+                                <span className="nav-link--icon icon icon-help-center" />
                                 <span className="nav-link--label">Help center</span>
-                                <span className="icon icon-arrow-top-right is-12px my-4px text-muted" />
+                                <span className="icon icon-new-tab is-12px my-4px text-muted" />
                             </a>
                         </li>
                         <li className="nav-item">
                             <a href="#" className=" nav-link">
-                                <span className="nav-link--icon icon icon-alert-decagram" />
+                                <span className="nav-link--icon icon icon-release" />
                                 <span className="nav-link--label">Release notes</span>
-                                <span className="icon icon-arrow-top-right is-12px my-4px text-muted" />
+                                <span className="icon icon-new-tab is-12px my-4px text-muted" />
                             </a>
                         </li>
                     </ul>

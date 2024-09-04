@@ -18,7 +18,7 @@ export const PageAsideSmall = ({}: PageAsideSmallProps) => {
                             </h3>
                             <div className="aside-actions">
                                 {/* <a class="btn btn-transparent border-0 p-2xs text-muted" data-toggle="tooltip" data-original-title="Open in new tab" href="#">
-              <span class="icon icon-arrow-top-right is-24px"></span>
+              <span class="icon icon-new-tab is-24px"></span>
           </a> */}
                                 <button className="btn btn-transparent border-0 p-2xs text-muted close-aside" type="button" data-dismiss="aside" aria-label="Close">
                                     <span className="icon icon-close is-24px" aria-hidden="true" />

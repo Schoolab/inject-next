@@ -37,7 +37,7 @@ export const CardSession = ({}: CardSessionProps) => {
                             </div>
                             <div className="dropdown z-2">
                                 <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span className="icon is-20px icon-dots-vertical" />
+                                    <span className="icon is-20px icon-options" />
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-right">
                                     <a className="dropdown-item" href="#">
@@ -81,7 +81,7 @@ export const CardSession = ({}: CardSessionProps) => {
                             </div>
                             <div className="dropdown z-2">
                                 <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span className="icon is-20px icon-dots-vertical" />
+                                    <span className="icon is-20px icon-options" />
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-right">
                                     <a className="dropdown-item" href="#">
@@ -121,7 +121,7 @@ export const CardSession = ({}: CardSessionProps) => {
                             </div>
                             <div className="dropdown z-2">
                                 <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span className="icon is-20px icon-dots-vertical" />
+                                    <span className="icon is-20px icon-options" />
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-right">
                                     <a className="dropdown-item" href="#">
@@ -136,7 +136,7 @@ export const CardSession = ({}: CardSessionProps) => {
                         <div className="card-targets">
                             <div className="card-target">
                                 <a href="#" className="stretched-link d-flex align-items-center">
-                                    <span className="icon icon-text-box is-sm" />
+                                    <span className="icon icon-file-document-box is-sm" />
                                     <span>Access to session notes</span>
                                 </a>
                                 <span className="icon icon-chevron-right is-sm" />
@@ -169,7 +169,7 @@ export const CardSession = ({}: CardSessionProps) => {
                             </div>
                             <div className="dropdown z-2">
                                 <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span className="icon is-20px icon-dots-vertical" />
+                                    <span className="icon is-20px icon-options" />
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-right">
                                     <a className="dropdown-item" href="#">
@@ -184,7 +184,7 @@ export const CardSession = ({}: CardSessionProps) => {
                         <div className="card-targets">
                             <div className="card-target">
                                 <a href="#" className="stretched-link d-flex align-items-center">
-                                    <span className="icon icon-text-box is-sm" />
+                                    <span className="icon icon-file-document-box is-sm" />
                                     <span>Access to session notes</span>
                                 </a>
                                 <span className="icon icon-chevron-right is-sm" />

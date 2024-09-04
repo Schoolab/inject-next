@@ -55,7 +55,7 @@ export const ExpertProjectMentored = () => {
                                     <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                         <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                             <div className="d-flex gap-2xs text-muted small">
-                                                <span className="icon icon-account-multiple is-xs" />
+                                                <span className="icon icon-members is-xs" />
                                                 <span className="text-nowrap">2 members</span>
                                             </div>
                                             <div className="badges flex-nowrap">
@@ -106,7 +106,7 @@ export const ExpertProjectMentored = () => {
                                     <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                         <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                             <div className="d-flex gap-2xs text-muted small">
-                                                <span className="icon icon-account-multiple is-xs" />
+                                                <span className="icon icon-members is-xs" />
                                                 <span className="text-nowrap">2 members</span>
                                             </div>
                                             <div className="badges flex-nowrap">
@@ -157,7 +157,7 @@ export const ExpertProjectMentored = () => {
                                     <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                         <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                             <div className="d-flex gap-2xs text-muted small">
-                                                <span className="icon icon-account-multiple is-xs" />
+                                                <span className="icon icon-members is-xs" />
                                                 <span className="text-nowrap">2 members</span>
                                             </div>
                                             <div className="badges flex-nowrap">
@@ -208,7 +208,7 @@ export const ExpertProjectMentored = () => {
                                     <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                         <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                             <div className="d-flex gap-2xs text-muted small">
-                                                <span className="icon icon-account-multiple is-xs" />
+                                                <span className="icon icon-members is-xs" />
                                                 <span className="text-nowrap">2 members</span>
                                             </div>
                                             <div className="badges flex-nowrap">

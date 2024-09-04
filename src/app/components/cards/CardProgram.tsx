@@ -27,7 +27,7 @@ export const CardProgram = ({}: CardProgramProps) => {
                             <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                 <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                     <div className="d-flex gap-2xs text-muted small">
-                                        <span className="icon icon-account-group is-xs" />
+                                        <span className="icon icon-community is-xs" />
                                         <span className="text-nowrap">803 members</span>
                                     </div>
                                     <div className="badges flex-nowrap">
@@ -76,7 +76,7 @@ export const CardProgram = ({}: CardProgramProps) => {
                             <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                 <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                     <div className="d-flex gap-2xs text-muted small">
-                                        <span className="icon icon-account-group is-xs" />
+                                        <span className="icon icon-community is-xs" />
                                         <span className="text-nowrap">803 members</span>
                                     </div>
                                     <div className="badges flex-nowrap">
@@ -143,7 +143,7 @@ export const CardProgram = ({}: CardProgramProps) => {
                         <div className="card-targets">
                             <div className="card-target">
                                 <a href="#" className="stretched-link d-flex align-items-center">
-                                    <span className="icon icon-cog is-sm" />
+                                    <span className="icon icon-settings is-sm" />
                                     <span>Manage program</span>
                                 </a>
                                 <span className="icon icon-chevron-right is-sm" />
@@ -170,7 +170,7 @@ export const CardProgram = ({}: CardProgramProps) => {
                             <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                 <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                     <div className="d-flex gap-2xs text-muted small">
-                                        <span className="icon icon-account-group is-xs" />
+                                        <span className="icon icon-community is-xs" />
                                         <span className="text-nowrap">803 members</span>
                                     </div>
                                     <div className="badges flex-nowrap">
@@ -229,7 +229,7 @@ export const CardProgram = ({}: CardProgramProps) => {
                             <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                 <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                     <div className="d-flex gap-2xs text-muted small">
-                                        <span className="icon icon-account-group is-xs" />
+                                        <span className="icon icon-community is-xs" />
                                         <span className="text-nowrap">53 members</span>
                                     </div>
                                     <div className="badges flex-nowrap">
@@ -258,7 +258,7 @@ export const CardProgram = ({}: CardProgramProps) => {
                         <div className="card-targets">
                             <div className="card-target">
                                 <a href="#" className="stretched-link d-flex align-items-center">
-                                    <span className="icon icon-information is-sm" />
+                                    <span className="icon icon-public-page is-sm" />
                                     <span>Public page</span>
                                 </a>
                                 <span className="icon icon-chevron-right is-sm" />
@@ -342,7 +342,7 @@ export const CardProgram = ({}: CardProgramProps) => {
                                 <div className="card-external">
                                     <div className="small">External: </div>
                                     <div className="small font-weight-bold text-truncate mx-2">Le Perqo</div>
-                                    <span className="small icon icon-arrow-top-right text-muted" />
+                                    <span className="small icon icon-new-tab text-muted" />
                                 </div>
                             </div>
                             <div className="card-title d-flex align-items-center gap-2xs mb-none">
@@ -382,11 +382,11 @@ export const CardProgram = ({}: CardProgramProps) => {
                             <div className="card-actions">
                                 <a className="btn btn-lg btn-primary btn-block" href="#">
                                     <span>Join</span>
-                                    <span className="small icon icon-arrow-top-right" />
+                                    <span className="small icon icon-new-tab" />
                                 </a>
                                 <a className="btn btn-lg btn-default btn-block" href="#">
                                     <span>Learn more</span>
-                                    <span className="small icon icon-arrow-top-right" />
+                                    <span className="small icon icon-new-tab" />
                                 </a>
                             </div>
                         </div>
@@ -404,7 +404,7 @@ export const CardProgram = ({}: CardProgramProps) => {
                                 <div className="card-external">
                                     <div className="small">External: </div>
                                     <div className="small font-weight-bold text-truncate mx-2">RaiseLab</div>
-                                    <span className="small icon icon-arrow-top-right text-muted" />
+                                    <span className="small icon icon-new-tab text-muted" />
                                 </div>
                             </div>
                             <div className="card-title d-flex align-items-center gap-2xs mb-none">
@@ -439,11 +439,11 @@ export const CardProgram = ({}: CardProgramProps) => {
                             <div className="card-actions">
                                 <a className="btn btn-lg btn-primary btn-block" href="#">
                                     <span>Join</span>
-                                    <span className="small icon icon-arrow-top-right" />
+                                    <span className="small icon icon-new-tab" />
                                 </a>
                                 <a className="btn btn-lg btn-default btn-block" href="#">
                                     <span>Learn more</span>
-                                    <span className="small icon icon-arrow-top-right" />
+                                    <span className="small icon icon-new-tab" />
                                 </a>
                             </div>
                         </div>

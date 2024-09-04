@@ -284,7 +284,7 @@ export const ShortcutBar = ({ isExpanded }: ShortcutBarProps) => {
                     <div className="shortcutbar-separator" />
                     <div className="shortcutbar-option dropright" data-toggle="tooltip" data-placement="right" data-original-title="Previews" data-boundary="window" style={{ zIndex: 2 }}>
                         <a href="#" className="shortcutbar-option--link" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false">
-                            <span className="icon icon-visibility" aria-hidden="true" />
+                            <span className="icon icon-preview" aria-hidden="true" />
                             <div className="shortcutbar-option--label">Previews</div>
                             <span className="icon icon-chevron-down shortcutbar-expanded-item-show" aria-hidden="true" />
                         </a>

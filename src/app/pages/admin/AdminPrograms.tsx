@@ -1230,7 +1230,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/447/data" id="organization-manage-applications-447" className="dropdown-item">
@@ -1347,7 +1347,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/446/data" id="organization-manage-applications-446" className="dropdown-item">
@@ -1456,7 +1456,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/379/data" id="organization-manage-applications-379" className="dropdown-item">
@@ -1573,7 +1573,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/272/data" id="organization-manage-applications-272" className="dropdown-item">
@@ -1676,7 +1676,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/270/data" id="organization-manage-applications-270" className="dropdown-item">
@@ -1779,7 +1779,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/268/data" id="organization-manage-applications-268" className="dropdown-item">
@@ -1882,7 +1882,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/265/data" id="organization-manage-applications-265" className="dropdown-item">
@@ -1985,7 +1985,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/202/data" id="organization-manage-applications-202" className="dropdown-item">
@@ -2096,7 +2096,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/192/data" id="organization-manage-applications-192" className="dropdown-item">
@@ -2199,7 +2199,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/182/data" id="organization-manage-applications-182" className="dropdown-item">
@@ -2302,7 +2302,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/178/data" id="organization-manage-applications-178" className="dropdown-item">
@@ -2411,7 +2411,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/154/data" id="organization-manage-applications-154" className="dropdown-item">
@@ -2520,7 +2520,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/153/data" id="organization-manage-applications-153" className="dropdown-item">
@@ -2629,7 +2629,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/152/data" id="organization-manage-applications-152" className="dropdown-item">
@@ -2746,7 +2746,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/142/data" id="organization-manage-applications-142" className="dropdown-item">
@@ -2849,7 +2849,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/138/data" id="organization-manage-applications-138" className="dropdown-item">
@@ -2952,7 +2952,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/119/data" id="organization-manage-applications-119" className="dropdown-item">
@@ -3055,7 +3055,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/118/data" id="organization-manage-applications-118" className="dropdown-item">
@@ -3158,7 +3158,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/74/data" id="organization-manage-applications-74" className="dropdown-item">
@@ -3261,7 +3261,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/56/data" id="organization-manage-applications-56" className="dropdown-item">
@@ -3386,7 +3386,7 @@ export const AdminPrograms = () => {
                                                             <div className="dropdown-container">
                                                                 <div className="d-inline-flex justify-content-end dropdown">
                                                                     <a className="btn btn-lg btn-transparent btn-icon text-muted" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                                                                        <span className="icon icon-dots-vertical" />
+                                                                        <span className="icon icon-options" />
                                                                     </a>
                                                                     <div className="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
                                                                         <a href="/manage/program/29/data" id="organization-manage-applications-29" className="dropdown-item">

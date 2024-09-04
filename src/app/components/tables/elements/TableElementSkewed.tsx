@@ -326,7 +326,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                             <div className="d-flex align-items-center flex-fill gap-0">
                                 <div className="d-flex align-items-start flex-fill gap-xs">
                                     <div className="text-muted">
-                                        <div aria-hidden="true" className="icon icon-account-group is-24px" />
+                                        <div aria-hidden="true" className="icon icon-community is-24px" />
                                     </div>
                                     <div className="d-flex flex-column flex-fill gap-0">
                                         <p className="font-weight-bold">All participants (10)</p>
@@ -339,7 +339,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -357,7 +357,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -584,7 +584,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                         <a href="#" className="underlined-link stretched-link">
                                             Alexandra Jolly
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <div className="show-on-hover z-1">
@@ -594,7 +594,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -612,7 +612,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -850,7 +850,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                         <a href="#" className="underlined-link stretched-link">
                                             Schoolab
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <div className="show-on-hover z-1">
@@ -860,7 +860,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -878,7 +878,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -1118,7 +1118,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                         <a href="#" className="underlined-link stretched-link">
                                             Impact (1)
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <div className="show-on-hover z-1">
@@ -1128,7 +1128,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -1146,7 +1146,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -1386,7 +1386,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                         <a href="#" className="underlined-link stretched-link">
                                             Freelance (0)
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <div className="show-on-hover z-1">
@@ -1396,7 +1396,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -1414,7 +1414,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -1478,7 +1478,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                         <a href="#" className="underlined-link stretched-link">
                                             External (0)
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <div className="show-on-hover z-1">
@@ -1488,7 +1488,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -1506,7 +1506,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">

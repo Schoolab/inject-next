@@ -149,7 +149,7 @@ export const ProgramDashboardCarousel = () => {
                                     </div>
                                     <div className="item-options dropdown">
                                         <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span className="icon icon-dots-vertical" />
+                                            <span className="icon icon-options" />
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right">
                                             <a className="dropdown-item" href="/user/u/0d3e2b04">
@@ -182,7 +182,7 @@ export const ProgramDashboardCarousel = () => {
                                     </div>
                                     <div className="item-options dropdown">
                                         <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span className="icon icon-dots-vertical" />
+                                            <span className="icon icon-options" />
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right">
                                             <a className="dropdown-item" href="/user/u/158c2ec5">
@@ -215,7 +215,7 @@ export const ProgramDashboardCarousel = () => {
                                     </div>
                                     <div className="item-options dropdown">
                                         <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span className="icon icon-dots-vertical" />
+                                            <span className="icon icon-options" />
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right">
                                             <a className="dropdown-item" href="/user/u/53825949">
@@ -238,7 +238,7 @@ export const ProgramDashboardCarousel = () => {
                             <div className="row justify-content-center">
                                 <div className="col-12">
                                     <h3>
-                                        <span className="icon icon-format-list-checks is-24px mr-2" />A survey is waiting your response!
+                                        <span className="icon icon-questionnaire is-24px mr-2" />A survey is waiting your response!
                                     </h3>
                                     <p>We need you to help us improve the CPI Concept program by responding to a survey. It will only take you a couple minutes.</p>
                                     <div className="mt-5 d-flex">
@@ -315,7 +315,7 @@ export const ProgramDashboardCarousel = () => {
                                                         </div>
                                                         <div className="dropdown z-2">
                                                             <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <span className="icon is-20px icon-dots-vertical" />
+                                                                <span className="icon is-20px icon-options" />
                                                             </a>
                                                             <div className="dropdown-menu dropdown-menu-right">
                                                                 <a className="dropdown-item" href="#">
@@ -324,11 +324,11 @@ export const ProgramDashboardCarousel = () => {
                                                                 <div className="dropdown-divider" />
                                                                 <a className="dropdown-item" href="#">
                                                                     <span className="dropdown-item--label">Open profile</span>
-                                                                    <span className="dropdown-item--shortcut icon icon-arrow-top-right" />
+                                                                    <span className="dropdown-item--shortcut icon icon-new-tab" />
                                                                 </a>
                                                                 <a className="dropdown-item" href="#">
                                                                     <span className="dropdown-item--label">Open program</span>
-                                                                    <span className="dropdown-item--shortcut icon icon-arrow-top-right" />
+                                                                    <span className="dropdown-item--shortcut icon icon-new-tab" />
                                                                 </a>
                                                                 <div className="dropdown-divider" />
                                                                 <a className="dropdown-item" href="#">
@@ -386,7 +386,7 @@ export const ProgramDashboardCarousel = () => {
                                                             </a>
                                                         </div>
                                                         <a href="#" className="btn btn-secondary" data-toggle="tooltip" data-placement="top" data-original-title="Click to copy link" data-boundary="window">
-                                                            <span className="icon icon-share-variant" />
+                                                            <span className="icon icon-share" />
                                                             <span>Copy link</span>
                                                         </a>
                                                     </div>

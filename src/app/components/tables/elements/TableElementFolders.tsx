@@ -18,7 +18,7 @@ export const TableElementFolders = ({}: TableElementFoldersProps) => {
                         </div>
                         <div className="dropdown z-1">
                             <a className="btn btn-lg btn-transparent btn-icon text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                <span className="icon icon-dots-vertical" />
+                                <span className="icon icon-options" />
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                                 <a className="dropdown-item" data-toggle="collapse" data-target="#question1">
@@ -44,7 +44,7 @@ export const TableElementFolders = ({}: TableElementFoldersProps) => {
                         </div>
                         <div className="dropdown z-1">
                             <a className="btn btn-lg btn-transparent btn-icon text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                <span className="icon icon-dots-vertical" />
+                                <span className="icon icon-options" />
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                                 <a className="dropdown-item" data-toggle="collapse" data-target="#question1">
@@ -70,7 +70,7 @@ export const TableElementFolders = ({}: TableElementFoldersProps) => {
                         </div>
                         <div className="dropdown z-1">
                             <a className="btn btn-lg btn-transparent btn-icon text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                <span className="icon icon-dots-vertical" />
+                                <span className="icon icon-options" />
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                                 <a className="dropdown-item" data-toggle="collapse" data-target="#question1">
@@ -96,7 +96,7 @@ export const TableElementFolders = ({}: TableElementFoldersProps) => {
                         </div>
                         <div className="dropdown z-1">
                             <a className="btn btn-lg btn-transparent btn-icon text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                <span className="icon icon-dots-vertical" />
+                                <span className="icon icon-options" />
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                                 <a className="dropdown-item" data-toggle="collapse" data-target="#question1">

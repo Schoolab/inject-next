@@ -67,7 +67,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -85,7 +85,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -143,7 +143,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -161,7 +161,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -215,7 +215,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -233,7 +233,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -285,7 +285,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -303,7 +303,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -364,7 +364,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -382,7 +382,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -451,7 +451,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -469,7 +469,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -490,7 +490,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <a href="#" className="underlined-link stretched-link" aria-labelledby="small">
                                             Link with icon
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
@@ -526,7 +526,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -544,7 +544,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -562,7 +562,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <a href="#" className="underlined-link stretched-link" aria-labelledby="small">
                                             Link
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
@@ -601,7 +601,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -619,7 +619,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -673,7 +673,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -691,7 +691,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -746,7 +746,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -764,7 +764,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -843,7 +843,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span>Tag #2</span>
                                         </div>
                                         <div className="badge is-pill">
-                                            <span className="icon icon-eye-off" />
+                                            <span className="icon icon-visibility-off" />
                                             <span>Private</span>
                                         </div>
                                         <a href="#" className="badge is-pill">
@@ -886,7 +886,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -904,7 +904,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -925,7 +925,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <a href="#" className="underlined-link stretched-link" aria-labelledby="small">
                                             Org Name
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
@@ -985,7 +985,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -1003,7 +1003,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -1024,7 +1024,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <a href="#" className="underlined-link stretched-link" aria-labelledby="small">
                                             Program Name
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
@@ -1083,7 +1083,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -1101,7 +1101,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -1122,7 +1122,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <a href="#" className="underlined-link stretched-link" aria-labelledby="small">
                                             Project Name
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
@@ -1181,7 +1181,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -1199,7 +1199,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -1220,7 +1220,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <a href="#" className="underlined-link stretched-link" aria-labelledby="small">
                                             User Name
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
@@ -1278,7 +1278,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -1296,7 +1296,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -1315,7 +1315,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <a href="#" className="underlined-link stretched-link" aria-labelledby="small">
                                             filename.ext
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Download file" data-boundary="window">
@@ -1370,7 +1370,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -1388,7 +1388,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -1410,7 +1410,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <a href="#" className="underlined-link stretched-link" aria-labelledby="small">
                                             Event Name
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
@@ -1455,7 +1455,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -1473,7 +1473,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -1494,7 +1494,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <a href="#" className="underlined-link stretched-link" aria-labelledby="small">
                                             Mentor / Project
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
@@ -1539,7 +1539,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -1557,7 +1557,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -1578,7 +1578,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <a href="#" className="underlined-link stretched-link" aria-labelledby="small">
                                             Project / Mentor
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
@@ -1618,7 +1618,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                     <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                        <span className="icon icon-dots-vertical" />
+                                        <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a href="#" className="dropdown-item">
@@ -1636,7 +1636,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="dropdown-item--label">Edit</span>
                                         </a>
                                         <a href="#" className="dropdown-item">
-                                            <span className="dropdown-item--icon icon icon-content-duplicate" />
+                                            <span className="dropdown-item--icon icon icon-copy" />
                                             <span className="dropdown-item--label">Duplicate</span>
                                         </a>
                                         <a href="#" className="dropdown-item is-danger">
@@ -1657,7 +1657,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <a href="#" className="underlined-link stretched-link" aria-labelledby="small">
                                             Goal Name
                                         </a>
-                                        <span className="icon icon-arrow-top-right text-muted" />
+                                        <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
                                 <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">

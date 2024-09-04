@@ -76,7 +76,7 @@ export const AdminInstaller = () => {
                                     <div className="flex-fill mb-lg-0 custom-control custom-control-card custom-radio">
                                         <input type="radio" id="id-1_0" name="form1" className="custom-control-input" defaultValue={0} />
                                         <label className="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" htmlFor="id-1_0">
-                                            <span className="icon is-sm icon-cancel" />
+                                            <span className="icon is-sm icon-impact-none" />
                                             <span>None</span>
                                         </label>
                                     </div>
@@ -85,7 +85,7 @@ export const AdminInstaller = () => {
                                     <div className="flex-fill  mb-lg-0 custom-control custom-control-card custom-radio">
                                         <input type="radio" id="id-1_1" name="form1" className="custom-control-input" defaultValue={1} defaultChecked />
                                         <label className="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" htmlFor="id-1_1">
-                                            <span className="icon is-sm icon-help-circle" />
+                                            <span className="icon is-sm icon-impact-not-obvious" />
                                             <span>Not obvious</span>
                                         </label>
                                     </div>
@@ -94,7 +94,7 @@ export const AdminInstaller = () => {
                                     <div className="flex-fill  mb-lg-0 custom-control custom-control-card custom-radio">
                                         <input type="radio" id="id-1_2" name="form1" className="custom-control-input" defaultValue={2} />
                                         <label className="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" htmlFor="id-1_2">
-                                            <span className="icon is-sm icon-sprout" />
+                                            <span className="icon is-sm icon-impact-native" />
                                             <span>Native</span>
                                         </label>
                                     </div>
@@ -103,7 +103,7 @@ export const AdminInstaller = () => {
                                     <div className="flex-fill  mb-lg-0 custom-control custom-control-card custom-radio">
                                         <input type="radio" id="id-1_3" name="form1" className="custom-control-input" defaultValue={2} />
                                         <label className="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" htmlFor="id-1_3">
-                                            <span className="icon is-sm icon-bullhorn" />
+                                            <span className="icon is-sm icon-impact-push" />
                                             <span>Push</span>
                                         </label>
                                     </div>
@@ -117,7 +117,7 @@ export const AdminInstaller = () => {
                                     <div className="flex-fill mb-lg-0 custom-control custom-control-card custom-checkbox">
                                         <input type="checkbox" id="id-2_0" name="form2" className="custom-control-input" defaultValue={0} />
                                         <label className="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" htmlFor="id-2_0">
-                                            <span className="icon is-sm icon-recycle" />
+                                            <span className="icon is-sm icon-vertical-plastic" />
                                             <span>Plastic</span>
                                         </label>
                                     </div>
@@ -126,7 +126,7 @@ export const AdminInstaller = () => {
                                     <div className="flex-fill mb-lg-0 custom-control custom-control-card custom-checkbox">
                                         <input type="checkbox" id="id-2_1" name="form2" className="custom-control-input" defaultValue={1} defaultChecked />
                                         <label className="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" htmlFor="id-2_1">
-                                            <span className="icon is-sm icon-barley" />
+                                            <span className="icon is-sm icon-vertical-food" />
                                             <span>Food</span>
                                         </label>
                                     </div>
@@ -135,7 +135,7 @@ export const AdminInstaller = () => {
                                     <div className="flex-fill mb-lg-0 custom-control custom-control-card custom-checkbox">
                                         <input type="checkbox" id="id-2_2" name="form2" className="custom-control-input" defaultValue={2} />
                                         <label className="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" htmlFor="id-2_2">
-                                            <span className="icon is-sm icon-scale-balance" />
+                                            <span className="icon is-sm icon-vertical-dei" />
                                             <span>DEI</span>
                                         </label>
                                     </div>
@@ -149,7 +149,7 @@ export const AdminInstaller = () => {
                                     <div className="flex-fill mb-lg-0 custom-control custom-control-card custom-checkbox">
                                         <input type="checkbox" id="id-3_0" name="form2" className="custom-control-input" defaultValue={0} />
                                         <label className="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" htmlFor="id-3_0">
-                                            <span className="icon is-sm icon-school" />
+                                            <span className="icon is-sm icon-ecosystem-student" />
                                             <span>Student</span>
                                         </label>
                                     </div>
@@ -158,7 +158,7 @@ export const AdminInstaller = () => {
                                     <div className="flex-fill mb-lg-0 custom-control custom-control-card custom-checkbox">
                                         <input type="checkbox" id="id-3_1" name="form2" className="custom-control-input" defaultValue={1} defaultChecked />
                                         <label className="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" htmlFor="id-3_1">
-                                            <span className="icon is-sm icon-rocket" />
+                                            <span className="icon is-sm icon-ecosystem-startups" />
                                             <span>Startups</span>
                                         </label>
                                     </div>
@@ -167,7 +167,7 @@ export const AdminInstaller = () => {
                                     <div className="flex-fill mb-lg-0 custom-control custom-control-card custom-checkbox">
                                         <input type="checkbox" id="id-3_2" name="form2" className="custom-control-input" defaultValue={2} />
                                         <label className="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" htmlFor="id-3_2">
-                                            <span className="icon is-sm icon-briefcase" />
+                                            <span className="icon is-sm icon-ecosystem-corporate" />
                                             <span>Corporate</span>
                                         </label>
                                     </div>

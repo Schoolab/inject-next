@@ -11,7 +11,7 @@ export const DropdownDefault = ({}: DropdownDefaultProps) => {
     return (
         <Dropdown>
             <DropdownMenu direction="left" show={true}>
-                <DropdownItem type="interactive" label="Impersonate this user" iconName="account" />
+                <DropdownItem type="interactive" label="Impersonate this user" iconName="admin" />
                 <DropdownDivider />
                 <DropdownItem label="Open Data" />
                 <DropdownItem label="Open Manage" outbound={true} />

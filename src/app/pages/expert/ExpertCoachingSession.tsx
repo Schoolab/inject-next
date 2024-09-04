@@ -23,7 +23,7 @@ export const ExpertCoachingSession = () => {
                                         <span>March 30 Thursday, 2023 from 09:30 to 17:00</span>
                                     </li>
                                     <li className="list-inline-item">
-                                        <span className="icon icon-map-marker" />
+                                        <span className="icon icon-location" />
                                         <span>Offline</span>
                                     </li>
                                 </ul>
@@ -104,7 +104,7 @@ export const ExpertCoachingSession = () => {
                                         </div>
                                         <div className="item-options dropdown">
                                             <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span className="icon icon-dots-vertical" />
+                                                <span className="icon icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
                                                 <a className="dropdown-item" href="/user/u/600a4bc4">
@@ -141,7 +141,7 @@ export const ExpertCoachingSession = () => {
                                         </div>
                                         <div className="item-options dropdown">
                                             <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span className="icon icon-dots-vertical" />
+                                                <span className="icon icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
                                                 <a className="dropdown-item" href="/user/u/ae5b9801">

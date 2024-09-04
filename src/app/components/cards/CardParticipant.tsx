@@ -32,7 +32,7 @@ export const CardParticipant = ({}: CardParticipantProps) => {
                                 </div>
                                 <div className="dropdown z-2">
                                     <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span className="icon is-20px icon-dots-vertical" />
+                                        <span className="icon is-20px icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a className="dropdown-item" href="#">
@@ -66,7 +66,7 @@ export const CardParticipant = ({}: CardParticipantProps) => {
                                 </div>
                                 <div className="dropdown z-2">
                                     <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span className="icon is-20px icon-dots-vertical" />
+                                        <span className="icon is-20px icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a className="dropdown-item" href="#">
@@ -102,7 +102,7 @@ export const CardParticipant = ({}: CardParticipantProps) => {
                                 </div>
                                 <div className="dropdown z-2 position-absolute" style={{ top: ".75rem", right: ".75rem" }}>
                                     <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span className="icon is-20px icon-dots-vertical" />
+                                        <span className="icon is-20px icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a className="dropdown-item" href="#">
@@ -149,7 +149,7 @@ export const CardParticipant = ({}: CardParticipantProps) => {
                                 </div>
                                 <div className="dropdown z-2 position-absolute" style={{ top: ".75rem", right: ".75rem" }}>
                                     <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span className="icon is-20px icon-dots-vertical" />
+                                        <span className="icon is-20px icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
                                         <a className="dropdown-item" href="#">
@@ -169,7 +169,7 @@ export const CardParticipant = ({}: CardParticipantProps) => {
                                     <span className="small text-nowrap">
                                         Average{" "}
                                         <span className="font-weight-bold text-yellow">
-                                            <span className="icon icon-star" /> 4.8
+                                            <span className="icon icon-rating" /> 4.8
                                         </span>
                                     </span>
                                 </div>
@@ -181,7 +181,7 @@ export const CardParticipant = ({}: CardParticipantProps) => {
                                 </div>
                                 <div className="card-actions">
                                     <a className="btn btn-lg btn-primary btn-block" href="#">
-                                        <span className="icon icon-star is-sm mr-2" /> Evaluate{" "}
+                                        <span className="icon icon-rating is-sm mr-2" /> Evaluate{" "}
                                     </a>
                                     <a className="btn btn-lg btn-default btn-block" href="#">
                                         {" "}

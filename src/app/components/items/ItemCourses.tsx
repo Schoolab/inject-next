@@ -28,7 +28,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                 <div className="d-flex align-items-center gap-xs dropdown">
                                     <div className="dropdown-container">
                                         <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                            <span className="icon icon-dots-vertical" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
+                                            <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right">
                                             <h6 className="dropdown-header">Position</h6>
@@ -60,7 +60,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                         <div className="item is-small is-bordered gap-0px">
                             <div className="item-row gap-xs pb-8px">
                                 <div className="d-flex p-3xs text-muted">
-                                    <span className="icon icon-file-document-box is-20px" />
+                                    <span className="icon icon-learning is-20px" />
                                 </div>
                                 <div className="item-content d-flex flex-column align-items-start justify-content-center overflow-hidden">
                                     <a href="#" className="item-title stretched-link line-clamp-1">
@@ -76,7 +76,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                 <div className="d-flex align-items-center gap-xs dropdown">
                                     <div className="dropdown-container">
                                         <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                            <span className="icon icon-dots-vertical" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
+                                            <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right">
                                             <h6 className="dropdown-header">Position</h6>
@@ -122,7 +122,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                         <span className="badge badge-notification is-highlight">0</span>
                                         <div className="dropdown-container">
                                             <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span className="icon icon-dots-vertical" />
+                                                <span className="icon icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
                                                 <h6 className="dropdown-header">Position</h6>
@@ -145,7 +145,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 </a>
                                                 <a className="dropdown-item">
                                                     <span className="dropdown-item--label">Manage</span>
-                                                    <div className="dropdown-item--icon icon icon-arrow-top-right" />
+                                                    <div className="dropdown-item--icon icon icon-new-tab" />
                                                 </a>
                                                 <a className="dropdown-item is-danger">
                                                     <span className="dropdown-item--label">Delete</span>
@@ -170,7 +170,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                         <span className="badge badge-notification is-highlight">8</span>
                                         <div className="dropdown-container">
                                             <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span className="icon icon-dots-vertical" />
+                                                <span className="icon icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
                                                 <h6 className="dropdown-header">Position</h6>
@@ -193,7 +193,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 </a>
                                                 <a className="dropdown-item">
                                                     <span className="dropdown-item--label">Manage</span>
-                                                    <div className="dropdown-item--icon icon icon-arrow-top-right" />
+                                                    <div className="dropdown-item--icon icon icon-new-tab" />
                                                 </a>
                                                 <a className="dropdown-item is-danger">
                                                     <span className="dropdown-item--label">Delete</span>
@@ -216,7 +216,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
                                                         <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                                            <span className="icon icon-dots-vertical" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
+                                                            <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
                                                             <h6 className="dropdown-header">Position</h6>
@@ -258,7 +258,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
                                                         <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                                            <span className="icon icon-dots-vertical" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
+                                                            <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
                                                             <h6 className="dropdown-header">Position</h6>
@@ -300,7 +300,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
                                                         <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                                            <span className="icon icon-dots-vertical" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
+                                                            <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
                                                             <h6 className="dropdown-header">Position</h6>
@@ -342,7 +342,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
                                                         <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                                            <span className="icon icon-dots-vertical" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
+                                                            <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
                                                             <h6 className="dropdown-header">Position</h6>
@@ -391,7 +391,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
                                                         <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                                            <span className="icon icon-dots-vertical" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
+                                                            <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
                                                             <h6 className="dropdown-header">Position</h6>
@@ -440,7 +440,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
                                                         <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                                            <span className="icon icon-dots-vertical" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
+                                                            <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
                                                             <h6 className="dropdown-header">Position</h6>
@@ -488,7 +488,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
                                                         <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                                            <span className="icon icon-dots-vertical" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
+                                                            <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
                                                             <h6 className="dropdown-header">Position</h6>
@@ -537,7 +537,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
                                                         <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                                            <span className="icon icon-dots-vertical" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
+                                                            <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
                                                             <h6 className="dropdown-header">Position</h6>
@@ -584,7 +584,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                         <span className="badge badge-notification is-highlight">0</span>
                                         <div className="dropdown-container">
                                             <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span className="icon icon-dots-vertical" />
+                                                <span className="icon icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
                                                 <h6 className="dropdown-header">Position</h6>
@@ -607,7 +607,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 </a>
                                                 <a className="dropdown-item">
                                                     <span className="dropdown-item--label">Manage</span>
-                                                    <div className="dropdown-item--icon icon icon-arrow-top-right" />
+                                                    <div className="dropdown-item--icon icon icon-new-tab" />
                                                 </a>
                                                 <a className="dropdown-item is-danger">
                                                     <span className="dropdown-item--label">Delete</span>
@@ -632,7 +632,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                         <span className="badge badge-notification is-highlight">0</span>
                                         <div className="dropdown-container">
                                             <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span className="icon icon-dots-vertical" />
+                                                <span className="icon icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
                                                 <h6 className="dropdown-header">Position</h6>
@@ -655,7 +655,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 </a>
                                                 <a className="dropdown-item">
                                                     <span className="dropdown-item--label">Manage</span>
-                                                    <div className="dropdown-item--icon icon icon-arrow-top-right" />
+                                                    <div className="dropdown-item--icon icon icon-new-tab" />
                                                 </a>
                                                 <a className="dropdown-item is-danger">
                                                     <span className="dropdown-item--label">Delete</span>

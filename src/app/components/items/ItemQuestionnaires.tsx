@@ -11,7 +11,7 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                         <div className="item is-small is-bordered gap-0px">
                             <div className="item-row gap-xs pb-8px" data-toggle="collapse" data-target="#question1" aria-expanded="false">
                                 <div className="d-flex p-3xs text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Short text" data-boundary="window">
-                                    <span className="icon icon-text-input is-20px" />
+                                    <span className="icon icon-form-textbox is-20px" />
                                 </div>
                                 <div className="item-content d-flex flex-column align-items-start">
                                     <h4 className="item-title">
@@ -23,7 +23,7 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                                     <span className="small text-muted">n options: [list options here]</span>
                                 </div>
                                 <div className="d-flex align-items-center gap-xs dropdown">
-                                    <span className="icon icon-eye-off is-20px text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Private response" data-boundary="window" />
+                                    <span className="icon icon-visibility-off is-20px text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Private response" data-boundary="window" />
                                     <span className="icon icon-lock is-20px text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Locked. Can't be moved or deleted." data-boundary="window" />
                                     <div className="dropdown-container">
                                         <a className="btn btn-xs btn-transparent btn-icon" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
@@ -240,7 +240,7 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                             <div className="item is-small is-bordered gap-0px">
                                 <div className="item-row gap-xs pb-8px" data-toggle="collapse" data-target="#question2" aria-expanded="false">
                                     <div className="d-flex p-3xs text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Short text" data-boundary="window">
-                                        <span className="icon icon-text-input is-20px" />
+                                        <span className="icon icon-form-textbox is-20px" />
                                     </div>
                                     <div className="item-content d-flex flex-column align-items-start">
                                         <h4 className="item-title">
@@ -252,7 +252,7 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                                         <span className="small text-muted">n options: [list options here]</span>
                                     </div>
                                     <div className="d-flex align-items-center gap-xs dropdown">
-                                        <span className="icon icon-eye-off is-20px text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Private response" data-boundary="window" />
+                                        <span className="icon icon-visibility-off is-20px text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Private response" data-boundary="window" />
                                         <span className="icon icon-lock is-20px text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Locked. Can't be moved or deleted." data-boundary="window" />
                                         <div className="dropdown-container">
                                             <a className="btn btn-xs btn-transparent btn-icon" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
@@ -386,7 +386,7 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                                                         No verification
                                                     </option>
                                                     <optgroup label="Texts">
-                                                        <option data-icon="icon-text-input" value="text">
+                                                        <option data-icon="icon-form-textbox" value="text">
                                                             Text
                                                         </option>
                                                         <option data-icon="icon-email" value="email">
@@ -480,15 +480,16 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                     <div>
                         <h3>Types</h3>
                         <div className="d-flex gap-md">
-                            <span className="icon icon-text-input is-24px" />
-                            <span className="icon icon-radiobox-marked is-24px" />
-                            <span className="icon icon-checkbox-marked is-24px" />
-                            <span className="icon icon-checklist is-24px" />
-                            <span className="icon icon-attachment is-24px" />
-                            <span className="icon icon-link is-24px" />
-                            <span className="icon icon-rating is-24px" />
-                            <span className="icon icon-votes is-24px" />
-                        </div>
+                            <span className="icon icon-form-textbox is-24px"></span>
+                            <span className="icon icon-form-textarea is-24px"></span>
+                            <span className="icon icon-form-select is-24px"></span>
+                            <span className="icon icon-form-radiobox-marked is-24px"></span>
+                            <span className="icon icon-form-checkbox-marked is-24px"></span>
+                            <span className="icon icon-form-checklist is-24px"></span>
+                            <span className="icon icon-attachment is-24px"></span>
+                            <span className="icon icon-link is-24px"></span>
+                            <span className="icon icon-rating is-24px"></span>
+                            <span className="icon icon-votes is-24px"></span> </div>
                     </div>
                     <div>
                         <h3>Steps</h3>
@@ -500,7 +501,7 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                                         <span className="badge badge-notification is-highlight">0</span>
                                         <div className="dropdown-container">
                                             <a className="btn btn-xs btn-transparent btn-icon text-muted" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                                <span className="icon icon-dots-vertical" />
+                                                <span className="icon icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
                                                 <h6 className="dropdown-header">Position</h6>
@@ -523,7 +524,7 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                                                 </a>
                                                 <a className="dropdown-item">
                                                     <span className="dropdown-item--label">Manage</span>
-                                                    <div className="dropdown-item--icon icon icon-arrow-top-right" />
+                                                    <div className="dropdown-item--icon icon icon-new-tab" />
                                                 </a>
                                                 <a className="dropdown-item is-danger">
                                                     <span className="dropdown-item--label">Delete</span>
@@ -542,7 +543,7 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                                         <span className="badge badge-notification is-highlight">0</span>
                                         <div className="dropdown-container">
                                             <a className="btn btn-xs btn-transparent btn-icon text-muted" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                                <span className="icon icon-dots-vertical" />
+                                                <span className="icon icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
                                                 <a className="dropdown-item">

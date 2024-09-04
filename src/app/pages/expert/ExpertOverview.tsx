@@ -348,7 +348,7 @@ export const ExpertOverview = () => {
                                             <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                                 <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                                     <div className="d-flex gap-2xs text-muted small">
-                                                        <span className="icon icon-account-multiple is-xs" />
+                                                        <span className="icon icon-members is-xs" />
                                                         <span className="text-nowrap">2 members</span>
                                                     </div>
                                                     <div className="badges flex-nowrap">
@@ -399,7 +399,7 @@ export const ExpertOverview = () => {
                                             <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
                                                 <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
                                                     <div className="d-flex gap-2xs text-muted small">
-                                                        <span className="icon icon-account-multiple is-xs" />
+                                                        <span className="icon icon-members is-xs" />
                                                         <span className="text-nowrap">2 members</span>
                                                     </div>
                                                     <div className="badges flex-nowrap">
@@ -495,7 +495,7 @@ export const ExpertOverview = () => {
                                                     </div>
                                                     <div className="dropdown z-2">
                                                         <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span className="icon is-20px icon-dots-vertical" />
+                                                            <span className="icon is-20px icon-options" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
                                                             <a className="dropdown-item" href="#">
@@ -504,11 +504,11 @@ export const ExpertOverview = () => {
                                                             <div className="dropdown-divider" />
                                                             <a className="dropdown-item" href="#">
                                                                 <span className="dropdown-item--label">Open profile</span>
-                                                                <span className="dropdown-item--shortcut icon icon-arrow-top-right" />
+                                                                <span className="dropdown-item--shortcut icon icon-new-tab" />
                                                             </a>
                                                             <a className="dropdown-item" href="#">
                                                                 <span className="dropdown-item--label">Open program</span>
-                                                                <span className="dropdown-item--shortcut icon icon-arrow-top-right" />
+                                                                <span className="dropdown-item--shortcut icon icon-new-tab" />
                                                             </a>
                                                             <div className="dropdown-divider" />
                                                             <a className="dropdown-item" href="#">

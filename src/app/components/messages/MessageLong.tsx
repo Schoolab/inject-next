@@ -30,7 +30,7 @@ export const MessageLong = ({}: MessageLongProps) => {
                     </div>
                     <div className="message-options dropdown">
                         <a className="btn btn-sm btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span className="icon icon-dots-vertical" />
+                            <span className="icon icon-options" />
                         </a>
                         <div className="dropdown-menu dropdown-menu-right">
                             <a href="#" className="dropdown-item update-comment" data-url="/rest/comment/924/edit-modal">

@@ -25,7 +25,7 @@ export const PageAsideNotes = ({}: PageAsideNotesProps) => {
                                     <span className="badge badge-notification is-highlight">2</span>
                                 </a>
                                 <a href="#" className=" nav-link nav-item" id="data-tab" data-toggle="tab" data-target="#data" type="button" role="tab" aria-controls="data" aria-selected="false">
-                                    <span className="icon icon-eye-off ml-n4px" data-toggle="tooltip" data-placement="top" data-original-title="Accessible only to admins" data-boundary="window" />
+                                    <span className="icon icon-visibility-off ml-n4px" data-toggle="tooltip" data-placement="top" data-original-title="Accessible only to admins" data-boundary="window" />
                                     <span>Data</span>
                                 </a>
                             </nav>
@@ -40,7 +40,7 @@ export const PageAsideNotes = ({}: PageAsideNotesProps) => {
                             </div>
                             <div className="aside-actions">
                                 <a className="btn btn-transparent border-0 p-2xs text-muted" data-toggle="tooltip" data-original-title="Open in new tab" href="#">
-                                    <span className="icon icon-arrow-top-right is-24px" />
+                                    <span className="icon icon-new-tab is-24px" />
                                 </a>
                                 <button className="btn btn-transparent border-0 p-2xs text-muted close-aside" type="button" data-dismiss="aside" aria-label="Close">
                                     <span className="icon icon-close is-24px" aria-hidden="true" />
@@ -85,7 +85,7 @@ export const PageAsideNotes = ({}: PageAsideNotesProps) => {
                                                             </div>
                                                             <div className="message-options dropdown">
                                                                 <a className="btn btn-sm btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                    <span className="icon icon-dots-vertical" />
+                                                                    <span className="icon icon-options" />
                                                                 </a>
                                                                 <div className="dropdown-menu dropdown-menu-right">
                                                                     <a href="#" className="dropdown-item update-comment" data-url="/rest/comment/924/edit-modal">
@@ -127,7 +127,7 @@ export const PageAsideNotes = ({}: PageAsideNotesProps) => {
                                                             </div>
                                                             <div className="message-options dropdown">
                                                                 <a className="btn btn-sm btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                    <span className="icon icon-dots-vertical" />
+                                                                    <span className="icon icon-options" />
                                                                 </a>
                                                                 <div className="dropdown-menu dropdown-menu-right">
                                                                     <a href="#" className="dropdown-item update-comment" data-url="/rest/comment/924/edit-modal">

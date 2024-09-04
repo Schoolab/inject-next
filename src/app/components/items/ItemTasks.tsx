@@ -7,7 +7,7 @@ export const ItemTasks = ({}: ItemTasksProps) => {
             <div className="item is-completed is-static is-bordered">
                 <div className="item-row">
                     <div className="item-row">
-                        <div className="item-icon is-darker icon icon-information-outline" />
+                        <div className="item-icon is-darker icon icon-public-page" />
                         <div className="item-content">
                             <h4 className="item-title">Complete the basic info</h4>
                             <span className="small text-muted">Review the name, the description, dates and cover of the program</span>

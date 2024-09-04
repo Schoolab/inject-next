@@ -10,7 +10,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                     <ul className="nav nav-main flex-column">
                         <li className="nav-item">
                             <a href="#" className="nav-link">
-                                <span className="nav-link--icon icon icon-view-dashboard" aria-hidden="true" />
+                                <span className="nav-link--icon icon icon-dashboard" aria-hidden="true" />
                                 <span className="nav-link--label">Dashboard</span>
                                 <span className="badge badge-notification is-interactive" aria-label="New feature">
                                     NEW
@@ -26,7 +26,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                         </li>
                         <li className="nav-item">
                             <a id="headingProgram" href="#" className="nav-link active" type="button" data-toggle="collapse" data-target="#collapseProgram" aria-expanded="true" aria-controls="collapseProgram">
-                                <span className="nav-link--icon icon icon-school" aria-hidden="true" />
+                                <span className="nav-link--icon icon icon-program" aria-hidden="true" />
                                 <span className="nav-link--label">Program</span>
                                 <span className="badge badge-notification is-accent" aria-label="2 notifications in this group">
                                     2
@@ -82,13 +82,13 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 <li>
                                     <a href="#" className="nav-link" data-toggle="tooltip" data-placement="right" data-original-title="<p class='m-2px font-weight-bold'>Open in new tab.</p><p class='small'>This link will open in a new tab.</p>" data-html="true" data-boundary="window">
                                         <span className="nav-link--label">Google Drive</span>
-                                        <span className="icon icon-arrow-top-right is-12px my-4px text-muted" />
+                                        <span className="icon icon-new-tab is-12px my-4px text-muted" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link" data-toggle="tooltip" data-placement="right" data-original-title="<p class='m-2px font-weight-bold'>Open in new tab.</p><p class='small'>This link will open in a new tab.</p>" data-html="true" data-boundary="window">
                                         <span className="nav-link--label">Pipedrive</span>
-                                        <span className="icon icon-arrow-top-right is-12px my-4px text-muted" />
+                                        <span className="icon icon-new-tab is-12px my-4px text-muted" />
                                     </a>
                                 </li>
                             </ul>
@@ -139,7 +139,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                         </li>
                         <li className="nav-item">
                             <a id="headingProjects" href="#" className="nav-link" type="button" data-toggle="collapse" data-target="#collapseProjects" aria-expanded="false" aria-controls="collapseProjects">
-                                <span className="nav-link--icon icon icon-clipboard-text" />
+                                <span className="nav-link--icon icon icon-project" />
                                 <span className="nav-link--label">Projects</span>
                                 <span className="badge badge-notification is-accent" aria-label="3 notifications in this group">
                                     3
@@ -186,7 +186,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                         </li>
                         <li className="nav-item">
                             <a id="headingCoaching" href="#" className="nav-link" type="button" data-toggle="collapse" data-target="#collapseCoaching" aria-expanded="false" aria-controls="collapseCoaching">
-                                <span className="nav-link--icon icon icon-account-supervisor-circle" />
+                                <span className="nav-link--icon icon icon-coaching" />
                                 <span className="nav-link--label">Coaching</span>
                             </a>
                             <ul id="collapseCoaching" className="collapse" aria-labelledby="headingCoaching" data-parent="#accordionManageNav">
@@ -214,7 +214,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                         </li>
                         <li className="nav-item">
                             <a id="headingEvaluations" href="#" className="nav-link" type="button" data-toggle="collapse" data-target="#collapseEvaluations" aria-expanded="false" aria-controls="collapseEvaluations">
-                                <span className="nav-link--icon icon icon-gavel" />
+                                <span className="nav-link--icon icon icon-evaluation" />
                                 <span className="nav-link--label">Evaluations</span>
                             </a>
                             <ul id="collapseEvaluations" className="collapse" aria-labelledby="headingEvaluations" data-parent="#accordionManageNav">
@@ -380,7 +380,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                         </li>
                         <li className="nav-item">
                             <a id="headingContent" href="#" className="nav-link" type="button" data-toggle="collapse" data-target="#collapseContent" aria-expanded="false" aria-controls="collapseContent">
-                                <span className="nav-link--icon icon icon-book-open-variant" />
+                                <span className="nav-link--icon icon icon-content" />
                                 <span className="nav-link--label">Content</span>
                             </a>
                             <ul id="collapseContent" className="collapse" aria-labelledby="headingContent" data-parent="#accordionManageNav">
@@ -433,16 +433,16 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                     <ul className="nav nav-main flex-column">
                         <li className="nav-item">
                             <a href="#" className="nav-link" data-toggle="tooltip" data-placement="right" data-original-title="<p class='m-2px font-weight-bold'>Open in new tab.</p><p class='small'>This link will open in a new tab.</p>" data-html="true" data-boundary="window">
-                                <span className="nav-link--icon icon icon-lifebuoy" />
+                                <span className="nav-link--icon icon icon-help-center" />
                                 <span className="nav-link--label">Help center</span>
-                                <span className="icon icon-arrow-top-right is-12px my-4px text-muted" />
+                                <span className="icon icon-new-tab is-12px my-4px text-muted" />
                             </a>
                         </li>
                         <li className="nav-item">
                             <a href="#" className="nav-link" data-toggle="tooltip" data-placement="right" data-original-title="<p class='m-2px font-weight-bold'>Open in new tab.</p><p class='small'>This link will open in a new tab.</p>" data-html="true" data-boundary="window">
-                                <span className="nav-link--icon icon icon-alert-decagram" />
+                                <span className="nav-link--icon icon icon-release" />
                                 <span className="nav-link--label">Release notes</span>
-                                <span className="icon icon-arrow-top-right is-12px my-4px text-muted" />
+                                <span className="icon icon-new-tab is-12px my-4px text-muted" />
                             </a>
                         </li>
                     </ul>

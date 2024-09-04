@@ -85,7 +85,7 @@ export const TableElementFiltersEdited = ({}: TableElementFiltersEditedProps) =>
                     </div>
                     <div className="dropdown d-flex flex-nowrap gap-xs" data-save-to-close="true">
                         <a className="btn btn-lg btn-default active dropdown-toggle w-100" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
-                            <span className="icon icon-filter-variant" />
+                            <span className="icon icon-filter" />
                             <span className="d-md-none d-md-flex">Filtered by</span> <span>2 rules</span>
                         </a>
                         <div className="dropdown-menu dropdown-menu-filters">

@@ -27,7 +27,7 @@ export const PageAsideDefault = ({}: PageAsideDefaultProps) => {
                             </div>
                             <div className="aside-actions">
                                 <a className="btn btn-transparent border-0 p-2xs text-muted" data-toggle="tooltip" data-original-title="Open in new tab" href="#">
-                                    <span className="icon icon-arrow-top-right is-24px" />
+                                    <span className="icon icon-new-tab is-24px" />
                                 </a>
                                 <button className="btn btn-transparent border-0 p-2xs text-muted close-aside" type="button" data-dismiss="aside" aria-label="Close">
                                     <span className="icon icon-close is-24px" aria-hidden="true" />
@@ -45,7 +45,7 @@ export const PageAsideDefault = ({}: PageAsideDefaultProps) => {
                                 <div className="dropdown-menu">
                                     <a className="dropdown-item" href="#">
                                         <span className="dropdown-item--label">Open</span>
-                                        <span className="dropdown-item--shortcut icon icon-arrow-top-right" />
+                                        <span className="dropdown-item--shortcut icon icon-new-tab" />
                                     </a>
                                     <div className="dropdown-divider" />
                                     <a className="dropdown-item" href="#">

@@ -44,7 +44,7 @@ export const CardFeed = ({ commented, liked }: CardFeedProps) => {
                     </div>
                     <Dropdown addClass="z-2">
                         <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span className="icon is-20px icon-dots-vertical" />
+                            <span className="icon is-20px icon-options" />
                         </a>
                         <DropdownMenu direction="right">
                             <DropdownItem label="Open post" />
