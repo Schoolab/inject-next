@@ -10,13 +10,22 @@ interface AppContentProps {
     children?: ReactNode;
     showSubnav?: boolean;
     isAsside?: boolean;
+    layout?: "centered" | "fluid" | "narrow";
+    sections?: "cards" | "bordered" | "transparent";
 }
-export const AppContent = ({ children,   showSubnav = true,  isAsside }: AppContentProps) => {
-    let appMainContainerClass = "container-lg container-lg-fluid mb-lg-0 py-7";
-    isAsside && (appMainContainerClass = "container-fluid mb-lg-0 py-7");
+export const AppContent = ({ children,   showSubnav = true,  isAsside, layout = "centered", sections = "cards" }: AppContentProps) => {
+
+    let appMainContainerClass = "application-main-content container-lg container-lg-fluid p-xl";
+    isAsside && (appMainContainerClass = "application-main-content container-fluid p-xl");
+    layout === "fluid" && (appMainContainerClass = "application-main-content container-fluid p-xl");
+    layout === "narrow" && (appMainContainerClass = "application-main-content container-md p-xl");
+
+    let appContentClass = "application-content card-sections"
+    sections === "bordered" && (appContentClass = "application-content bordered-sections")
+    sections === "transparent" && (appContentClass = "application-content transparent-sections")
 
     return (
-        <main className="application-content">
+        <main className={appContentClass} >
             <Breadcrumb />
             {!showSubnav ? <Title addClass="border-bottom" /> : <Title />}
             {showSubnav && <SubNav />}

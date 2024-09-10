@@ -1,18 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { SidebarManage } from '@/app/components/sidebar/SidebarManage';
+import { SectionsBordered } from '@/app/pages/layouts/SectionsBordered';
 
 const meta = {
-  title: 'Components/Sidebar/Manage',
-  component: SidebarManage,
+  title: 'Pages/Layouts/Sections',
+  component: SectionsBordered,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
-    layout: 'centered',
+    layout: 'fullpage',
   },
 
-} satisfies Meta<typeof SidebarManage>;
+} satisfies Meta<typeof SectionsBordered>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Manage: Story = {
+export const Bordered: Story = {
 };
