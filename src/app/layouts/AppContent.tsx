@@ -11,7 +11,7 @@ interface AppContentProps {
     showSubnav?: boolean;
     isAsside?: boolean;
     layout?: "centered" | "fluid" | "narrow";
-    sections?: "cards" | "bordered" | "transparent";
+    sections?: "cards" | "bordered" | "transparent" | "separated";
 }
 export const AppContent = ({ children,   showSubnav = true,  isAsside, layout = "centered", sections = "cards" }: AppContentProps) => {
 
@@ -23,6 +23,7 @@ export const AppContent = ({ children,   showSubnav = true,  isAsside, layout = 
     let appContentClass = "application-content card-sections"
     sections === "bordered" && (appContentClass = "application-content bordered-sections")
     sections === "transparent" && (appContentClass = "application-content transparent-sections")
+    sections === "separated" && (appContentClass = "application-content separated-sections")
 
     return (
         <main className={appContentClass} >
