@@ -37,9 +37,11 @@ interface CardEventProps {
      * is this event still ongoing
      */
     ongoing?: boolean; 
+    register?: boolean;
+
 }
 
-export const CardEvent = ({ img, start, title, pin, location, ongoing=false }: CardEventProps) => {
+export const CardEvent = ({ img, start, title, pin, location, ongoing=false, register=false }: CardEventProps) => {
     return (
         <Card>
             <CardInfos addClass="is-linked">
@@ -74,6 +76,27 @@ export const CardEvent = ({ img, start, title, pin, location, ongoing=false }: C
                     </div>
                 </div>
             </CardInfos>
+            {register && (
+            <div className="card-links">
+                <div className="d-flex align-items-center justify-content-between text-muted mb-3">
+                    <span className="small font-weight-bold text-truncate mr-2">To access the event </span>
+                    <span className="small">
+                        Canditates
+                        <span className="font-weight-bold">
+                            <span className="icon icon-account" /> 48
+                        </span>
+                    </span>
+                </div>
+                <div className="card-actions">
+                    <a className="btn btn-lg btn-primary btn-block" href="#">
+                        <span>Register</span>
+                    </a>
+                    <a className="btn btn-lg btn-default btn-block" href="#">
+                        <span>Learn more</span>
+                    </a>
+                </div>
+            </div>
+            )}
         </Card>
     );
 };

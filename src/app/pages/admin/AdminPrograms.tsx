@@ -10,7 +10,7 @@ export const AdminPrograms = () => {
     }, []);
     return (
         <Layout sideBar="Admin" showShortcutbar={false}>
-            <AppContent >
+            <AppContent sections="transparent">
                 <div className="row">
                     <div className="col-12">
                         <div className="application-section dataTableContainer dataTableLargeHeight loaded" id="challengesTable">

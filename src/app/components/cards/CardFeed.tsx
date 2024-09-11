@@ -17,9 +17,10 @@ interface CardFeedProps {
      * liked ?
      */
     liked?: boolean;
+    copyLink?: boolean;
 }
 
-export const CardFeed = ({ commented, liked }: CardFeedProps) => {
+export const CardFeed = ({ commented, liked, copyLink=false }: CardFeedProps) => {
     return (
         <Card>
             <CardInfos addClass="d-flex flex-column align-items-stretch gap-md p-24px">
@@ -102,10 +103,12 @@ export const CardFeed = ({ commented, liked }: CardFeedProps) => {
                             </a>
                         )}
                     </div>
-                    <a href="#" className="btn btn-sm btn-secondary" data-toggle="tooltip" data-placement="top" data-original-title="Click to copy link" data-boundary="window">
+                    {copyLink && (
+                     <a href="#" className="btn btn-sm btn-secondary" data-toggle="tooltip" data-placement="top" data-original-title="Click to copy link" data-boundary="window">
                         <Icon name="share" />
                         <span>Copy link</span>
-                    </a>
+                    </a> 
+                    )}
                 </div>
             </CardInfos>
         </Card>

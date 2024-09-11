@@ -19,7 +19,7 @@ export const CardParticipant = ({}: CardParticipantProps) => {
                                 <div className="card-title flex-grow-1">
                                     <a href="#" className="h4 mb-none stretched-link line-clamp-1 d-flex align-items-center gap-2xs">
                                         <span>Pierre Lemeteil</span>
-                                        <span className="badge badge-role is-admin z-2" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window" />
+                                        {/* <span className="badge badge-role is-admin z-2" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window" /> */}
                                     </a>
                                     <p className="text-muted small mb-none">Bordeaux, FR</p>
                                     <div className="badges mt-8px">

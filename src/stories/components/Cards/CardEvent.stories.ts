@@ -17,10 +17,12 @@ const meta = {
     argTypes: {
         pin: { control: "boolean" },
         ongoing: { control: "boolean" },
+        register: { control: "boolean" },
     },
     args: {
         pin: false,
         ongoing: false,
+        register: false,
     },
 } satisfies Meta<typeof CardEvent>;
 
@@ -40,6 +42,21 @@ export const Default: Story = {
         location: "Online",
         title: "Event Not started",
         img: "https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg",
+    },
+};
+
+export const Register: Story = {
+    args: {
+        start: {
+            month: "June",
+            day: "8",
+            startTime: "10am",
+            endTime: "11am",
+        },
+        location: "Online",
+        title: "Event Not started",
+        img: "https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg",
+        register: true,
     },
 };
 

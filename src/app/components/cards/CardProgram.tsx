@@ -19,7 +19,7 @@ export const CardProgram = ({}: CardProgramProps) => {
                                 </div>
                             </div>
                             <div className="card-title d-flex align-items-center gap-2xs mb-none">
-                                <span className="icon icon-pin is-24px z-2" data-toggle="tooltip" data-placement="top" data-original-title="Pinned programs are visible on the organization Hub" data-boundary="window" />
+                                {/* <span className="icon icon-pin is-24px z-2" data-toggle="tooltip" data-placement="top" data-original-title="Pinned programs are visible on the organization Hub" data-boundary="window" /> */}
                                 <a href="#" className="h3 mb-none stretched-link line-clamp-1">
                                     Schoolab Saint-Lazare
                                 </a>
@@ -68,7 +68,7 @@ export const CardProgram = ({}: CardProgramProps) => {
                                 </div>
                             </div>
                             <div className="card-title d-flex align-items-center gap-2xs mb-none">
-                                <span className="icon icon-pin is-24px z-2" data-toggle="tooltip" data-placement="top" data-original-title="Pinned programs are visible on the organization Hub" data-boundary="window" />
+                                {/* <span className="icon icon-pin is-24px z-2" data-toggle="tooltip" data-placement="top" data-original-title="Pinned programs are visible on the organization Hub" data-boundary="window" /> */}
                                 <a href="#" className="h3 mb-none stretched-link line-clamp-1">
                                     Schoolab Saint-Lazare
                                 </a>
@@ -162,7 +162,7 @@ export const CardProgram = ({}: CardProgramProps) => {
                                 </div>
                             </div>
                             <div className="card-title d-flex align-items-center gap-2xs mb-none">
-                                <span className="icon icon-pin is-24px z-2" data-toggle="tooltip" data-placement="top" data-original-title="Pinned programs are visible on the organization Hub" data-boundary="window" />
+                                {/* <span className="icon icon-pin is-24px z-2" data-toggle="tooltip" data-placement="top" data-original-title="Pinned programs are visible on the organization Hub" data-boundary="window" /> */}
                                 <a href="#" className="h3 mb-none stretched-link line-clamp-1">
                                     Schoolab Saint-Lazare
                                 </a>

@@ -171,7 +171,7 @@ export const CardQuestion = ({}: CardQuestionProps) => {
                                                 <li>
                                                     <a href="#" className="text-muted d-flex align-items-center gap-2xs">
                                                         <span>Pierre Lemeteil</span>
-                                                        <span className="badge badge-role is-admin z-2" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window" />
+                                                        {/* <span className="badge badge-role is-admin z-2" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window" /> */}
                                                     </a>
                                                 </li>
                                                 <li>
@@ -212,7 +212,7 @@ export const CardQuestion = ({}: CardQuestionProps) => {
                                                 <li>
                                                     <a href="#" className="text-muted d-flex align-items-center gap-2xs">
                                                         <span>Sasha Lehmann</span>
-                                                        <span className="badge badge-role is-expert z-2" data-toggle="tooltip" data-placement="top" data-original-title="Expert" data-boundary="window" />
+                                                        {/* <span className="badge badge-role is-expert z-2" data-toggle="tooltip" data-placement="top" data-original-title="Expert" data-boundary="window" /> */}
                                                     </a>
                                                 </li>
                                                 <li>
@@ -434,7 +434,7 @@ export const CardQuestion = ({}: CardQuestionProps) => {
                                                 <li>
                                                     <a href="#" className="text-muted d-flex align-items-center gap-2xs">
                                                         <span>Pierre Lemeteil</span>
-                                                        <span className="badge badge-role is-admin z-2" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window" />
+                                                        {/* <span className="badge badge-role is-admin z-2" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window" /> */}
                                                     </a>
                                                 </li>
                                                 <li>

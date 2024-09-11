@@ -30,7 +30,7 @@ export const SidebarManageOld = ({}: SidebarManageOldProps) => {
                                 <span className="nav-link--column">
                                     <span className="nav-link--label">Setup</span>
                                 </span>
-                                <span className="badge badge-notification is-accent">2</span>
+                                {/* <span className="badge badge-notification is-accent">2</span> */}
                             </a>
                         </li>
                     </ul>
@@ -43,7 +43,7 @@ export const SidebarManageOld = ({}: SidebarManageOldProps) => {
                                 <span className="nav-link--column">
                                     <span className="nav-link--label">Registrations</span>
                                 </span>
-                                <span className="badge badge-notification is-accent">9+</span>
+                                {/* <span className="badge badge-notification is-accent">9+</span> */}
                             </a>
                         </li>
                         <li className="nav-item">
@@ -51,7 +51,7 @@ export const SidebarManageOld = ({}: SidebarManageOldProps) => {
                                 <span className="nav-link--column">
                                     <span className="nav-link--label">Applications</span>
                                 </span>
-                                <span className="badge badge-notification is-accent">3</span>
+                                {/* <span className="badge badge-notification is-accent">3</span> */}
                             </a>
                         </li>
                         <li className="nav-item">

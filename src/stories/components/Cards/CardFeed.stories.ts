@@ -17,10 +17,12 @@ const meta = {
      argTypes: {
         liked: { control: "boolean" },
         commented: { control: "boolean" },
+        copyLink: { control: "boolean" },
     },
     args: {
         liked: false,
         commented: false,
+        copyLink: false,
     },
 
 } satisfies Meta<typeof CardFeed>;
