@@ -1,9 +1,4 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: .5rem 1rem;
-    text-align: center;
-}
+
 .previews {
     display: flex;
     flex-wrap: wrap;

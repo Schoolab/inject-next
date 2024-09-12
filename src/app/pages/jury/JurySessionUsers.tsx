@@ -8,19 +8,15 @@ export const JurySessionUsers = () => {
         <Layout shortcutBarExpanded={true}>
             <AppContent isAsside={true}>
                 <>
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="application-section">
-                                <h3 className="application-section--title">About this jury session</h3>
-                                <p>During the idea evaluation session, use the platform to find key information and rate each project.</p>
-                                <p>
-                                    The projects are evaluated according to 6 weighted criteria, and an overall average is automatically calculated for each project to determine the winners. Feel free to use the "feedback" field to give your feedback to the project team members when the results are published.
-                                    <br />
-                                    Thank you very much for helping us to choose the best projects.
-                                </p>
-                                <p>Have a good evaluation session!</p>
-                            </div>
-                        </div>
+                    <div className="application-section">
+                        <h3 className="application-section--title">About this jury session</h3>
+                        <p>During the idea evaluation session, use the platform to find key information and rate each project.</p>
+                        <p>
+                            The projects are evaluated according to 6 weighted criteria, and an overall average is automatically calculated for each project to determine the winners. Feel free to use the "feedback" field to give your feedback to the project team members when the results are published.
+                            <br />
+                            Thank you very much for helping us to choose the best projects.
+                        </p>
+                        <p>Have a good evaluation session!</p>
                     </div>
                     <div className="application-section">
                         <div className="d-flex d-lg-inline-flex flex-column flex-lg-row mb-5">

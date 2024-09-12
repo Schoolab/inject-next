@@ -11,7 +11,7 @@ export const ProgramEventsEvent = () => {
     }, []);
     return (
         <Layout >
-            <AppContent isAsside={true}>
+            <AppContent showSubnav={false} sections="separated" isAsside={true}>
                 <div className="d-flex align-items-start">
                     <div className="container-lg container-fluid">
                         <div className="row justify-content-center flex-grow-1">

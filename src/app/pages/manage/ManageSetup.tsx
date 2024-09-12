@@ -5,7 +5,7 @@ import { AppContent } from "@/app/layouts/AppContent";
 export const ManageSetup = () => {
     return (
         <Layout  sideBar="Manage">
-            <AppContent showSubnav={false}>
+            <AppContent sections="separated" showSubnav={false}>
                 <div className="row">
                     <div className="col-12">
                         <div className="application-section">
