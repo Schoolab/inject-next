@@ -285,14 +285,14 @@ export const SidebarStudyManage = ({}: SidebarStudyManageProps) => {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <a id="headingSocial" href="#" className="nav-link" type="button" data-toggle="collapse" data-target="#collapseSocial" aria-expanded="false" aria-controls="collapseSocial">
-                                <span className="nav-link--icon icon icon-comment" />
-                                <span className="nav-link--label">Social</span>
+                            <a id="headingNewsfeed" href="#" className="nav-link" type="button" data-toggle="collapse" data-target="#collapseNewsfeed" aria-expanded="false" aria-controls="collapseNewsfeed">
+                                <span className="nav-link--icon icon icon-newsfeed" />
+                                <span className="nav-link--label">Newsfeed</span>
                             </a>
-                            <ul id="collapseSocial" className="collapse" aria-labelledby="headingSocial" data-parent="#accordionManageNav">
+                            <ul id="collapseNewsfeed" className="collapse" aria-labelledby="headingNewsfeed" data-parent="#accordionManageNav">
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Newsfeed</span>
+                                        <span className="nav-link--label">Posts</span>
                                     </a>
                                 </li>
                                 <li>
@@ -300,12 +300,14 @@ export const SidebarStudyManage = ({}: SidebarStudyManageProps) => {
                                         <span className="nav-link--label">Comments</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Messages</span>
-                                    </a>
-                                </li>
                             </ul>
+                        </li>
+                        <li className="nav-item">
+                            <a href="#" className="nav-link">
+                                <span className="nav-link--icon icon icon-impact-push" aria-hidden="true" />
+                                {/* TODO: add icon for announcements */}
+                                <span className="nav-link--label">Announcements</span>
+                            </a>
                         </li>
                     </ul>
                     <ul className="nav nav-main flex-column flex-fill">
