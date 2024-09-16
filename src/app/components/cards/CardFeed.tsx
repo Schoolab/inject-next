@@ -70,7 +70,7 @@ export const CardFeed = ({ commented, liked, copyLink=false }: CardFeedProps) =>
                         addClass: "text-danger",
                         name: "file-pdf-box",
                     }}
-                    ressource={{
+                    resource={{
                         details: "120 KB",
                         name: "stakeholdermap-model.pdf",
                         type: "PDF File",
