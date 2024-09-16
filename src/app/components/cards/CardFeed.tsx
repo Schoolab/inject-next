@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "./Card";
 import { CardInfos } from "./CardInfos";
-import { ItemRessource } from "../items/ItemRessource";
+import { ItemResource } from "../items/ItemResource";
 import { Icon } from "../Icon";
 import { Dropdown } from "../dropdown/Dropdown";
 import { DropdownMenu } from "../dropdown/DropdownMenu";
@@ -63,7 +63,7 @@ export const CardFeed = ({ commented, liked, copyLink=false }: CardFeedProps) =>
                     <p>Dans la gestion de projet, on entend souvent parler de "chemin critique". Mais qu'est-ce que cela signifie réellement ? Comment est-il déterminé et pourquoi est-il si crucial pour la réussite d'un projet ? Pourriez-vous donner un exemple concret pour illustrer son importance ?</p>
                     <a href="#">Read more -&gt;</a>
                 </div>
-                <ItemRessource
+                <ItemResource
                     isSmall={false}
                     action="download"
                     icon={{

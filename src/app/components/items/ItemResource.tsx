@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from "../Icon";
 
-type RessourceType = {
+type ResourceType = {
     name: string;
     type: string;
     details?: string;
@@ -11,15 +11,15 @@ type IconTypeType = {
     addClass?: string;
 };
 
-export interface ItemRessourceProps {
+export interface ItemResourceProps {
     /**
      * Does the item have an image url
      */
     img?: string;
     /**
-     * Ressource informations
+     * Resource informations
      */
-    ressource: RessourceType;
+    resource: ResourceType;
     /**
      * What kind of action is possible?
      */
@@ -34,7 +34,7 @@ export interface ItemRessourceProps {
     isSmall: Boolean;
 }
 
-export const ItemRessource = ({ img, ressource, action, icon, isSmall = false }: ItemRessourceProps) => {
+export const ItemResource = ({ img, resource, action, icon, isSmall = false }: ItemResourceProps) => {
     let classTab = ["item is-bordered"];
     isSmall && classTab.push("is-small");
 
@@ -51,13 +51,13 @@ export const ItemRessource = ({ img, ressource, action, icon, isSmall = false }:
 
                     <div className="item-content">
                         <a className="item-title stretched-link text-truncate" href="#">
-                            {ressource.name}
+                            {resource.name}
                         </a>
                         <ul className="item-caption metas small is-list">
                             <li>
-                                <span>{ressource.type}</span>
+                                <span>{resource.type}</span>
                             </li>
-                            {ressource.details && (
+                            {resource.details && (
                                 <li>
                                     <span>420 KB</span>
                                 </li>

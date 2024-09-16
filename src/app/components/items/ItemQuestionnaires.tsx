@@ -9,25 +9,28 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                     <div>
                         <h3>Default</h3>
                         <div className="item is-small is-bordered gap-0px">
-                            <div className="item-row gap-xs pb-8px" data-toggle="collapse" data-target="#question1" aria-expanded="false">
-                                <div className="d-flex p-3xs text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Short text" data-boundary="window">
-                                    <span className="icon icon-form-textbox is-20px" />
-                                </div>
-                                <div className="item-content d-flex flex-column align-items-start">
-                                    <h4 className="item-title">
-                                        Question Label
-                                        <span className="text-danger" data-toggle="tooltip" data-placement="top" data-original-title="Required question" data-boundary="window">
-                                            *
-                                        </span>
-                                    </h4>
-                                    <span className="small text-muted">n options: [list options here]</span>
+                            <div className="item-row gap-2xs pb-8px" data-toggle="collapse" data-target="#question1" aria-expanded="false">
+                                <a className="btn btn-xs btn-transparent btn-icon" data-toggle="collapse" data-target="#question1" aria-expanded="false" href="#">
+                                    <span className="icon icon-chevron-right" data-toggle="tooltip" data-placement="top" data-original-title="Click to toggle." data-boundary="window" />
+                                </a>
+                                <div className="d-flex flex-fill gap-xs">
+                                    <div className="icon icon-form-textbox is-20px p-3xs text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Short text" data-boundary="window" />
+                                    <div className="item-content d-flex flex-column align-items-start">
+                                        <h4 className="item-title">
+                                            Question Label
+                                            <span className="text-danger" data-toggle="tooltip" data-placement="top" data-original-title="Required question" data-boundary="window">
+                                                *
+                                            </span>
+                                        </h4>
+                                        <span className="small text-muted">n options: [list options here]</span>
+                                    </div>
                                 </div>
                                 <div className="d-flex align-items-center gap-xs dropdown">
                                     <span className="icon icon-visibility-off is-20px text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Private response" data-boundary="window" />
                                     <span className="icon icon-lock is-20px text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Locked. Can't be moved or deleted." data-boundary="window" />
                                     <div className="dropdown-container">
                                         <a className="btn btn-xs btn-transparent btn-icon" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                            <span className="icon icon-chevron-right" data-toggle="tooltip" data-placement="top" data-original-title="Drag to move. Click for options." data-boundary="window" />
+                                            <span className="icon icon-options" data-toggle="tooltip" data-placement="top" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right">
                                             <h6 className="dropdown-header">Position</h6>
@@ -238,25 +241,28 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                                 <span>Condition</span>
                             </div>
                             <div className="item is-small is-bordered gap-0px">
-                                <div className="item-row gap-xs pb-8px" data-toggle="collapse" data-target="#question2" aria-expanded="false">
-                                    <div className="d-flex p-3xs text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Short text" data-boundary="window">
-                                        <span className="icon icon-form-textbox is-20px" />
-                                    </div>
-                                    <div className="item-content d-flex flex-column align-items-start">
-                                        <h4 className="item-title">
-                                            Question Label
-                                            <span className="text-danger" data-toggle="tooltip" data-placement="top" data-original-title="Required question" data-boundary="window">
-                                                *
-                                            </span>
-                                        </h4>
-                                        <span className="small text-muted">n options: [list options here]</span>
+                                <div className="item-row gap-2xs pb-8px" data-toggle="collapse" data-target="#question2" aria-expanded="false">
+                                    <a className="btn btn-xs btn-transparent btn-icon" data-toggle="collapse" data-target="#question2" aria-expanded="false" href="#">
+                                        <span className="icon icon-chevron-right" data-toggle="tooltip" data-placement="top" data-original-title="Click to toggle." data-boundary="window" />
+                                    </a>
+                                    <div className="d-flex flex-fill gap-xs">
+                                        <div className="icon icon-form-textbox is-20px p-3xs text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Short text" data-boundary="window" />
+                                        <div className="item-content d-flex flex-column align-items-start">
+                                            <h4 className="item-title">
+                                                Question Label
+                                                <span className="text-danger" data-toggle="tooltip" data-placement="top" data-original-title="Required question" data-boundary="window">
+                                                    *
+                                                </span>
+                                            </h4>
+                                            <span className="small text-muted">n options: [list options here]</span>
+                                        </div>
                                     </div>
                                     <div className="d-flex align-items-center gap-xs dropdown">
                                         <span className="icon icon-visibility-off is-20px text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Private response" data-boundary="window" />
                                         <span className="icon icon-lock is-20px text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Locked. Can't be moved or deleted." data-boundary="window" />
                                         <div className="dropdown-container">
                                             <a className="btn btn-xs btn-transparent btn-icon" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                                                <span className="icon icon-chevron-right" data-toggle="tooltip" data-placement="top" data-original-title="Drag to move. Click for options." data-boundary="window" />
+                                                <span className="icon icon-options" data-toggle="tooltip" data-placement="top" data-original-title="Click to toggle." data-boundary="window" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
                                                 <h6 className="dropdown-header">Position</h6>

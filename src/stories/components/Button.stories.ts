@@ -16,10 +16,12 @@ const meta = {
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
+    disabled: { control: "boolean" },
     isActive: { control: "boolean" },
     extended: { control: "boolean" },
   },
   args:{
+    disabled: false,
     isActive: false,
     type: "default",
     size: "default",
@@ -44,6 +46,14 @@ export const Active: Story = {
     iconStartName: "link",
     label: "Button",   
     isActive: true,
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    iconStartName: "link",
+    label: "Button",
+    disabled: true,
   },
 };
 

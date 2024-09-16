@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { ItemRessource } from "@/app/components/items/ItemRessource";
+import { ItemResource } from "@/app/components/items/ItemResource";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-    title: "Components/Items/Ressource",
-    component: ItemRessource,
+    title: "Components/Items/Resource",
+    component: ItemResource,
     parameters: {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
         layout: "padded",
@@ -17,7 +17,7 @@ const meta = {
     args: {
         isSmall: false,
     },
-} satisfies Meta<typeof ItemRessource>;
+} satisfies Meta<typeof ItemResource>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -25,7 +25,7 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Default: Story = {
     args: {
-        ressource: {
+        resource: {
             name: "Intro to Ideation.pdf",
             type: "PDF File",
             details: "420 KB",
@@ -39,7 +39,7 @@ export const Default: Story = {
 };
 export const Small: Story = {
     args: {
-        ressource: {
+        resource: {
             name: "Intro to Ideation.pdf",
             type: "PDF File",
             details: "420 KB",
@@ -55,7 +55,7 @@ export const Small: Story = {
 
 export const WithImage: Story = {
     args: {
-        ressource: {
+        resource: {
             name: "Intro to Ideation.pdf",
             type: "PDF File",
             details: "420 KB",
