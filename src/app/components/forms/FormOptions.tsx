@@ -88,7 +88,7 @@ export const FormOptions = ({}: FormOptionsProps) => {
                         <span className="icon icon-close" />
                     </a>
                 </div>
-                <button className="btn btn-sm btn-default btn-transparent text-muted text-nowrap align-self-start" role="button">
+                <button className="btn btn-sm btn-default btn-muted text-nowrap align-self-start" role="button">
                     <span className="icon icon-plus-circle" />
                     <span>Add option</span>
                 </button>

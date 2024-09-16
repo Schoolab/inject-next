@@ -37,7 +37,7 @@ export const TableElementViews = ({}: TableElementViewsProps) => {
                     </label>
                 </div>
             </form>
-            <a href="#" className="btn btn-lg btn-transparent text-muted">
+            <a href="#" className="btn btn-lg btn-muted">
                 <span className="icon icon-plus-circle" />
                 <span>Add view</span>
             </a>

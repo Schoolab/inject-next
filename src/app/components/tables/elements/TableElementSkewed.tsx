@@ -333,12 +333,12 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                     </div>
                                 </div>
                                 <div className="show-on-hover z-1">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Copy line to clipboard">
+                                    <a href="#" className="btn btn-lg btn-muted my-n8px" role="button" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Copy line to clipboard">
                                         <span className="icon icon-copy" />
                                     </a>
                                 </div>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -588,12 +588,12 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                     </div>
                                 </div>
                                 <div className="show-on-hover z-1">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Copy line to clipboard">
+                                    <a href="#" className="btn btn-lg btn-muted my-n8px" role="button" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Copy line to clipboard">
                                         <span className="icon icon-copy" />
                                     </a>
                                 </div>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -854,12 +854,12 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                     </div>
                                 </div>
                                 <div className="show-on-hover z-1">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Copy line to clipboard">
+                                    <a href="#" className="btn btn-lg btn-muted my-n8px" role="button" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Copy line to clipboard">
                                         <span className="icon icon-copy" />
                                     </a>
                                 </div>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -1122,12 +1122,12 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                     </div>
                                 </div>
                                 <div className="show-on-hover z-1">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Copy line to clipboard">
+                                    <a href="#" className="btn btn-lg btn-muted my-n8px" role="button" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Copy line to clipboard">
                                         <span className="icon icon-copy" />
                                     </a>
                                 </div>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -1390,12 +1390,12 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                     </div>
                                 </div>
                                 <div className="show-on-hover z-1">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Copy line to clipboard">
+                                    <a href="#" className="btn btn-lg btn-muted my-n8px" role="button" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Copy line to clipboard">
                                         <span className="icon icon-copy" />
                                     </a>
                                 </div>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -1482,12 +1482,12 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                     </div>
                                 </div>
                                 <div className="show-on-hover z-1">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Copy line to clipboard">
+                                    <a href="#" className="btn btn-lg btn-muted my-n8px" role="button" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Copy line to clipboard">
                                         <span className="icon icon-copy" />
                                     </a>
                                 </div>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted my-n8px" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">

@@ -337,12 +337,12 @@ export const ManageApplicationForms = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <button className="btn btn-sm btn-default btn-transparent text-muted text-nowrap align-self-start"  role="button">
+                                        <button className="btn btn-sm btn-default btn-muted text-nowrap align-self-start"  role="button">
                                             <span className="icon icon-plus-circle" />
                                             <span>Add question</span>
                                         </button>
                                     </div>
-                                    <button className="btn btn-sm btn-default btn-transparent text-muted text-nowrap align-self-start"  role="button">
+                                    <button className="btn btn-sm btn-default btn-muted text-nowrap align-self-start"  role="button">
                                         <span className="icon icon-plus-circle" />
                                         <span>Add step</span>
                                     </button>

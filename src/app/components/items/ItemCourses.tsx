@@ -153,7 +153,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <button className="btn btn-sm btn-default btn-transparent text-muted text-nowrap align-self-start" role="button">
+                                    <button className="btn btn-sm btn-default btn-muted text-nowrap align-self-start" role="button">
                                         <span className="icon icon-plus-circle" />
                                         <span>Add capsule</span>
                                     </button>
@@ -567,7 +567,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <button className="btn btn-sm btn-default btn-transparent text-muted text-nowrap align-self-start" role="button">
+                                    <button className="btn btn-sm btn-default btn-muted text-nowrap align-self-start" role="button">
                                         <span className="icon icon-plus-circle" />
                                         <span>Add capsule</span>
                                     </button>
@@ -615,7 +615,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <button className="btn btn-sm btn-default btn-transparent text-muted text-nowrap align-self-start" role="button">
+                                    <button className="btn btn-sm btn-default btn-muted text-nowrap align-self-start" role="button">
                                         <span className="icon icon-plus-circle" />
                                         <span>Add capsule</span>
                                     </button>
@@ -663,12 +663,12 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <button className="btn btn-sm btn-default btn-transparent text-muted text-nowrap align-self-start" role="button">
+                                    <button className="btn btn-sm btn-default btn-muted text-nowrap align-self-start" role="button">
                                         <span className="icon icon-plus-circle" />
                                         <span>Add capsule</span>
                                     </button>
                                 </div>
-                                <button className="btn btn-sm btn-default btn-transparent text-muted text-nowrap" role="button">
+                                <button className="btn btn-sm btn-default btn-muted text-nowrap" role="button">
                                     <span className="icon icon-plus-circle" />
                                     <span>Add module</span>
                                 </button>

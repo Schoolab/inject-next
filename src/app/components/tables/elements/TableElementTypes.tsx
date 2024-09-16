@@ -62,11 +62,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -110,7 +110,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </p>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -138,11 +138,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -181,7 +181,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </p>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -210,11 +210,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -254,7 +254,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <p aria-labelledby="small">Text with icon</p>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -280,11 +280,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -321,7 +321,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <p aria-labelledby="small">Text</p>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -359,11 +359,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -410,12 +410,12 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                     </a>
                                     <div className="d-flex flex-fill gap-2xs">
                                         <p aria-labelledby="small">Label</p>
-                                        <a href="#" className="btn btn-xs btn-transparent text-muted" data-toggle="tooltip" data-placement="top" data-html="true" data-title="Edit notes">
+                                        <a href="#" className="btn btn-xs btn-muted" data-toggle="tooltip" data-placement="top" data-html="true" data-title="Edit notes">
                                             <span className="icon icon-pencil" />
                                         </a>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -446,11 +446,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -493,7 +493,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -521,11 +521,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -565,7 +565,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -596,11 +596,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -640,7 +640,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <p aria-labelledby="small">July 12, 2024 at 2:00 PM</p>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -668,11 +668,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -709,7 +709,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <p aria-labelledby="small">July 12, 2024 at 2:00 PM</p>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -741,11 +741,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -786,12 +786,12 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                     </svg>
                                     <div className="d-flex flex-fill gap-2xs">
                                         <p aria-labelledby="small">1/4</p>
-                                        <a href="#" className="btn btn-xs btn-transparent text-muted" data-toggle="tooltip" data-placement="top" data-html="true" data-title="Edit scores">
+                                        <a href="#" className="btn btn-xs btn-muted" data-toggle="tooltip" data-placement="top" data-html="true" data-title="Edit scores">
                                             <span className="icon icon-pencil" />
                                         </a>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -827,7 +827,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -851,7 +851,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </a>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -881,11 +881,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -928,7 +928,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -949,7 +949,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                     </div>
                                     <p className="small text-muted text-nowrap py-4px">+2 more</p>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -980,11 +980,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -1027,7 +1027,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -1048,7 +1048,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                     </div>
                                     <p className="small text-muted text-nowrap py-4px">+2 more</p>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -1078,11 +1078,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -1125,7 +1125,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -1146,7 +1146,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                     </div>
                                     <p className="small text-muted text-nowrap py-4px">+2 more</p>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -1176,11 +1176,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -1223,7 +1223,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -1244,7 +1244,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                     </div>
                                     <p className="small text-muted text-nowrap py-4px">+2 more</p>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -1273,11 +1273,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Download file" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Download file" data-boundary="window">
                                     <span className="icon icon-cloud-download" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -1318,7 +1318,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Download file" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Download file" data-boundary="window">
                                     <span className="icon icon-cloud-download" />
                                 </a>
                             </div>
@@ -1333,7 +1333,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                     </div>
                                     <p className="small text-muted text-nowrap py-4px">+2 more</p>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Download files" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Download files" data-boundary="window">
                                     <span className="icon icon-cloud-download" />
                                 </a>
                             </div>
@@ -1365,11 +1365,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -1413,7 +1413,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -1450,11 +1450,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -1497,7 +1497,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -1534,11 +1534,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -1581,7 +1581,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -1613,11 +1613,11 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                                 <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                    <a href="#" className="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                         <span className="icon icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">
@@ -1660,7 +1660,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                         <span className="icon icon-new-tab text-muted" />
                                     </div>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>
@@ -1681,7 +1681,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                     </div>
                                     <p className="small text-muted text-nowrap py-4px">+2 more</p>
                                 </div>
-                                <a href="#" className="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                                <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
                                 </a>
                             </div>

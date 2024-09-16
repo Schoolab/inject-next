@@ -110,7 +110,7 @@ export const TableElementNotifications = ({}: TableElementNotificationsProps) =>
         data-save-to-close="true"
       >
         <a
-          className="btn btn-lg btn-transparent text-muted"
+          className="btn btn-lg btn-muted"
           href="#"
           role="button"
           data-reference="parent"

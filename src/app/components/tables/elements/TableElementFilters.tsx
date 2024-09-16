@@ -62,7 +62,7 @@ export const TableElementFilters = ({}: TableElementFiltersProps) => {
                         </div>
                     </div>
                     <div className="dropdown d-flex flex-nowrap gap-xs" data-save-to-close="true">
-                        <a className="btn btn-lg btn-transparent text-muted" href="#" role="button" data-reference="parent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
+                        <a className="btn btn-lg btn-muted" href="#" role="button" data-reference="parent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
                             <span className="icon icon-plus-circle" />
                             <span>Add filter</span>
                         </a>

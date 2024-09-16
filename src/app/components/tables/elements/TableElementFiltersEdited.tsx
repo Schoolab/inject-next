@@ -185,7 +185,7 @@ export const TableElementFiltersEdited = ({}: TableElementFiltersEditedProps) =>
                     </div>
                 </div>
                 <div className="table-actions d-flex flex-nowrap align-items-start gap-xs order-2 order-md-3">
-                    <a href="#" className="btn btn-lg btn-transparent text-muted">
+                    <a href="#" className="btn btn-lg btn-muted">
                         Reset
                     </a>
                     <a href="#" className="btn btn-lg btn-warning text-nowrap">
