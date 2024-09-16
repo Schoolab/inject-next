@@ -44,7 +44,7 @@ export const CardUser = ({}: CardUserProps) => {
                             </div>
                             <span className="icon icon-chevron-right is-sm" />
                         </div>
-                        <div className="py-5 collapse" id="form-122">
+                        <div className="collapse bg-highlight rounded-sm p-md mb-2xs mt-md" id="form-122">
                             <div className="form-group">
                                 <label className="font-weight-bold" htmlFor="q1">
                                     À quel problème répondez-vous ?
