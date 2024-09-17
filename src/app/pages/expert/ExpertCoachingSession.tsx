@@ -31,7 +31,7 @@ export const ExpertCoachingSession = () => {
                                                 <span>March 30 Thursday, 2023 from 09:30 to 17:00</span>
                                             </li>
                                             <li className="list-inline-item">
-                                                <span className="icon icon-location" />
+                                                <span className="icon icon-map-marker" />
                                                 <span>Offline</span>
                                             </li>
                                         </ul>

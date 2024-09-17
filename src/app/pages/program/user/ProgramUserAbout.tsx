@@ -21,7 +21,7 @@ export const ProgramUserAbout = () => {
                                     <p className="m-none text-muted">Software engineer</p>
                                     <ul className="list-inline text-muted w-100 small">
                                         <li className="list-inline-item">
-                                            <span className="icon icon-location">Paris, FR</span>
+                                            <span className="icon icon-map-marker">Paris, FR</span>
                                         </li>
                                         <li className="list-inline-item">
                                             <span className="icon icon-time">Rejoint Jun 11, 2020</span>

@@ -72,7 +72,7 @@ export const ProgramsHubEvents = () => {
                                             </div>
                                             <div className="d-flex justify-content-between align-items-end flex-wrap gap-xs">
                                                 <div className="badge is-pill">
-                                                    <span className="icon icon-location" />
+                                                    <span className="icon icon-map-marker" />
                                                     <span>In person</span>
                                                 </div>
                                                 <div className="badge is-pill is-draft">
@@ -111,7 +111,7 @@ export const ProgramsHubEvents = () => {
                                             </div>
                                             <div className="d-flex justify-content-between align-items-end flex-wrap gap-xs">
                                                 <div className="badge is-pill">
-                                                    <span className="icon icon-location" />
+                                                    <span className="icon icon-map-marker" />
                                                     <span>In person</span>
                                                 </div>
                                                 <div className="badge is-pill is-draft">
@@ -150,7 +150,7 @@ export const ProgramsHubEvents = () => {
                                             </div>
                                             <div className="d-flex justify-content-between align-items-end flex-wrap gap-xs">
                                                 <div className="badge is-pill">
-                                                    <span className="icon icon-location" />
+                                                    <span className="icon icon-map-marker" />
                                                     <span>In person</span>
                                                 </div>
                                                 <div className="badge is-pill is-draft">
@@ -189,7 +189,7 @@ export const ProgramsHubEvents = () => {
                                             </div>
                                             <div className="d-flex justify-content-between align-items-end flex-wrap gap-xs">
                                                 <div className="badge is-pill">
-                                                    <span className="icon icon-location" />
+                                                    <span className="icon icon-map-marker" />
                                                     <span>In person</span>
                                                 </div>
                                                 <div className="badge is-pill is-draft">

@@ -835,7 +835,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                         <td>
                             <div className="d-flex align-items-center flex-fill gap-0">
                                 <div className="d-flex align-items-start flex-fill gap-xs">
-                                    <div id="tags" className="badges flex-nowrap">
+                                    <div id="tags" className="badges flex-nowrap" role="button" aria-labelledby="multiple"  data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-none p-0"><li>Tag #1</li><li>Tag #2</li><li>Private</li><li>Tag #4</li><li>Tag #5</li></ul>' data-boundary="window">
                                         <div className="badge is-pill">
                                             <span>Tag #1</span>
                                         </div>
@@ -846,10 +846,13 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                             <span className="icon icon-visibility-off" />
                                             <span>Private</span>
                                         </div>
-                                        <a href="#" className="badge is-pill">
-                                            <span className="icon icon-plus" />
-                                        </a>
                                     </div>
+                                    <p className="small text-muted text-nowrap py-4px">+2 more</p>
+                                    <a href="#" className="badge is-pill">
+                                        <span className="icon icon-plus" />
+                                    </a>
+                                   
+                                   
                                 </div>
                                 <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
@@ -870,7 +873,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                             <div className="d-flex align-items-center flex-fill gap-0">
                                 <div className="d-flex align-items-start flex-fill gap-xs">
                                     <div className="thumbnail is-lg">
-                                        <img alt="Org Name thumbnail" src="../img/placeholder-thumbnail-logo.png" />
+                                        <img alt="Org Name thumbnail" src="img/placeholder-thumbnail-logo.png" />
                                     </div>
                                     <div className="d-flex flex-column flex-fill gap-0">
                                         <a href="#" className="is-primary font-weight-bold stretched-link" aria-labelledby="large">
@@ -919,7 +922,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                             <div className="d-flex align-items-center flex-fill gap-0">
                                 <div className="d-flex align-items-start flex-fill gap-xs">
                                     <div className="thumbnail is-sm">
-                                        <img alt="Org Name thumbnail" src="../img/placeholder-thumbnail-logo.png" />
+                                        <img alt="Org Name thumbnail" src="img/placeholder-thumbnail-logo.png" />
                                     </div>
                                     <div className="d-flex flex-fill gap-2xs">
                                         <a href="#" className="underlined-link stretched-link" aria-labelledby="small">
@@ -936,15 +939,15 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                         <td>
                             <div className="d-flex align-items-center flex-fill gap-0">
                                 <div className="d-flex align-items-start flex-fill gap-xs">
-                                    <div aria-labelledby="multiple" className="thumbnail-stack" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-none p-0"><li>Org Name</li><li>Org Name</li><li>Org Name</li><li>Org Name</li><li>Org Name</li></ul>' data-boundary="window">
+                                    <div aria-labelledby="multiple" role="button" className="thumbnail-stack" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-none p-0"><li>Org Name</li><li>Org Name</li><li>Org Name</li><li>Org Name</li><li>Org Name</li></ul>' data-boundary="window">
                                         <a href="#" className="thumbnail is-sm">
-                                            <img alt="Org Name thumbnail" src="../img/placeholder-thumbnail-logo.png" />
+                                            <img alt="Org Name thumbnail" src="img/placeholder-thumbnail-logo.png" />
                                         </a>
                                         <a href="#" className="thumbnail is-sm">
-                                            <img alt="Org Name thumbnail" src="../img/placeholder-thumbnail-logo.png" />
+                                            <img alt="Org Name thumbnail" src="img/placeholder-thumbnail-logo.png" />
                                         </a>
                                         <a href="#" className="thumbnail is-sm">
-                                            <img alt="Org Name thumbnail" src="../img/placeholder-thumbnail-logo.png" />
+                                            <img alt="Org Name thumbnail" src="img/placeholder-thumbnail-logo.png" />
                                         </a>
                                     </div>
                                     <p className="small text-muted text-nowrap py-4px">+2 more</p>

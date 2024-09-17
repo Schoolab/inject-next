@@ -36,7 +36,7 @@ export const ProgramEventsEvent = () => {
                                                 <span>March 30 Thursday, 2023 from 09:30 to 17:00</span>
                                             </li>
                                             <li className="list-inline-item">
-                                                <span className="icon icon-location" />
+                                                <span className="icon icon-map-marker" />
                                                 <span>Offline</span>
                                             </li>
                                         </ul>
@@ -64,7 +64,7 @@ export const ProgramEventsEvent = () => {
                                         <p>This event takes place offline. Here is the information to attend to the event.</p>
                                         <div className="list-group list-group-flush list-group-metas">
                                             <div className="list-group-item">
-                                                <span className="icon icon-location" />
+                                                <span className="icon icon-map-marker" />
                                                 <div className="list-group-item--content">
                                                     <span> 15 rue de Milan 75009 Paris </span>
                                                 </div>
