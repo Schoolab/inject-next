@@ -71,10 +71,10 @@ export const ModalParticipant = ({}: ModalParticipantProps) => {
                                 </div>
                             </div>
                             <div className="d-flex gap-xs align-items-center">
-                                <a href="#" className="btn btn-lg btn-primary">
+                                {/* <a href="#" className="btn btn-lg btn-primary">
                                     <span className="icon icon-bookmark-outline" />
                                     <span>Follow</span>
-                                </a>
+                                </a> */}
                                 <div className="dropdown">
                                     <a className="btn btn-default btn-lg dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <span className="icon icon-email" />

@@ -7,7 +7,7 @@ export const searchControl = () => {
             let search, filter, elements;
             search = $(this);
             filter = search.val().toUpperCase();
-            elements = $(this).parents(".dropdown-menu").find(".custom-control").not( ".noRefer" );
+            elements = $(this).parents(".dropdown-menu").find(".custom-control");
 
             elements.each(function (index) {
                 if ($(this).find("label").text().toUpperCase().indexOf(filter) > -1) {
