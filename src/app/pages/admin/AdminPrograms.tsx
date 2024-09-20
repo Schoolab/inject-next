@@ -4,10 +4,8 @@ import { Layout } from "../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { ChallengesTable } from "../../../../public/utils/tables/challengesTable.js";
 
+
 export const AdminPrograms = () => {
-    useEffect(() => {
-        ChallengesTable();
-    }, []);
     return (
         <Layout sideBar="Admin" showShortcutbar={false}>
             <AppContent sections="transparent">
@@ -116,44 +114,7 @@ export const AdminPrograms = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
-                                                <form name="organization" method="post" className="d-flex">
-                                                    <select id="chFilters_organization" name="chFilters[organization]" className="flex-fill mb-3 text-center custom-select form-control has-default  text-nowrap">
-                                                        <option value="_default">Toutes les organisations</option>
-                                                        <option value={2}>Schoolab</option>
-                                                        <option value={4}>MoHo</option>
-                                                        <option value={12}>Ambassade de France à Madagascar</option>
-                                                        <option value={21}>Shibuya QWS</option>
-                                                        <option value={25}>La Scène</option>
-                                                        <option value={27}>Ravinala Airports</option>
-                                                        <option value={29}>Rungis &amp; Co</option>
-                                                        <option value={31}>Université Paris Cité</option>
-                                                        <option value={32}>GEFE</option>
-                                                        <option value={34}>Refactory</option>
-                                                        <option value={37}>Le Perqo</option>
-                                                        <option value={38}>Grand Prix Diversité &amp; Inclusion</option>
-                                                        <option value={39}>French Event Booster</option>
-                                                        <option value={41}>SIREHNA Aquabot</option>
-                                                        <option value={42}>RaiseLab</option>
-                                                        <option value={43}>ESFAM</option>
-                                                        <option value={44}>L'Institut français</option>
-                                                        <option value={45}>GIZ</option>
-                                                        <option value={46}>Better Than Plastic</option>
-                                                        <option value={49}>Les Mousquetaires</option>
-                                                        <option value={50}>Lyreco Pioneers</option>
-                                                        <option value={51}>CA Lead'up</option>
-                                                        <option value={52}>INNO FOR HEROES</option>
-                                                        <option value={53}>CFTR</option>
-                                                        <option value={57}>Hectar</option>
-                                                        <option value={58}>Incubateur Station numixs</option>
-                                                        <option value={59}>Système U</option>
-                                                        <option value={61}>KEDGE BS</option>
-                                                        <option value={62}>JCDecaux</option>
-                                                        <option value={63}>TDF</option>
-                                                        <option value={73}>EIC Tech 2 Market virtual training space</option>
-                                                    </select>
-                                                </form>
-                                            </div>
+                                            
                                             <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
                                                 <div className="dropdown position-static mb-3">
                                                     <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
@@ -300,6 +261,7 @@ export const AdminPrograms = () => {
                                                     </div>
                                                 </div>
                                             </div>
+                  
                                             <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
                                                 <div className="dropdown position-static mb-3">
                                                     <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
