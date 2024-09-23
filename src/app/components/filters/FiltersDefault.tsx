@@ -28,7 +28,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="challenges_status" method="post" data-col={17} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_challenges_status" data-col={17} className="dataTableFilter table-filter">
-                                        <input type="text" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
+                                        <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
 
                                         <div className="custom-control custom-radio">
                                             <input type="radio" id="challenges_filters_challenges_status_0" name="challenges_filters[challenges_status]" required className="custom-control-input" defaultValue="" defaultChecked />
@@ -67,7 +67,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="1" method="post" data-col={3} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_1" data-col={3} className="dataTableFilter table-filter">
-                                        <input type="text" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
+                                        <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
                                             <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
@@ -101,7 +101,6 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             </div>
                         </div>
                     </div>
-
                     <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
                         <div className="dropdown position-static mb-3">
                             <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
@@ -110,7 +109,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="9" method="post" data-col={4} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_9" data-col={4} className="dataTableFilter table-filter">
-                                        <input type="text" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
+                                        <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
                                             <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
@@ -146,7 +145,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="13" method="post" data-col={5} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_13" data-col={5} className="dataTableFilter table-filter">
-                                        <input type="text" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
+                                        <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
                                             <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
@@ -258,7 +257,6 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             </div>
                         </div>
                     </div>
-
                     <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
                         <div className="dropdown position-static mb-3">
                             <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
@@ -267,7 +265,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="31" method="post" data-col={6} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_31" data-col={6} className="dataTableFilter table-filter">
-                                        <input type="text" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
+                                        <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
                                             <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
@@ -303,7 +301,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="36" method="post" data-col={7} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_36" data-col={7} className="dataTableFilter table-filter">
-                                        <input type="text" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
+                                        <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
                                             <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
@@ -375,7 +373,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="46" method="post" data-col={8} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_46" data-col={8} className="dataTableFilter table-filter">
-                                        <input type="text" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
+                                        <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
                                             <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
@@ -417,7 +415,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="51" method="post" data-col={9} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_51" data-col={9} className="dataTableFilter table-filter">
-                                        <input type="text" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
+                                        <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
                                             <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
@@ -507,7 +505,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="form_value_owner" method="post" data-col={11} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_form_value_owner" data-col={11} className="dataTableFilter table-filter">
-                                        <input type="text" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
+                                        <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
 
                                         <div className="custom-control custom-radio">
                                             <input type="radio" id="challenges_filters_form_value_owner_0" name="challenges_filters[form_value_owner]" className="custom-control-input" defaultValue="" defaultChecked />
@@ -1045,11 +1043,11 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                 </div>
                 <div className="d-flex flex-column flex-lg-row">
                     <div className="mr-lg-3 mr-0 mb-5 mb-lg-0">
-                        <a className="btn btn-default btn-block btn-icon btn-lg text-nowrap" href="/organization/challenges/export" data-toggle="tooltip" data-placement="top" data-original-title="export" data-boundary="window">
+                        <a className="btn btn-default btn-block btn-icon btn-lg text-nowrap" href="/organization/challenges/export" data-toggle="tooltip" data-placement="left" data-original-title="export" data-boundary="window">
                             <span className="icon icon-cloud-download" />
                         </a>
                     </div>
-                    <div className="mr-lg-3 mr-0 mb-5 mb-lg-0">
+                    <div className="mr-lg-3 mr-0 mb-5 mb-lg-0" data-toggle="tooltip" data-placement="left" data-original-title="Sort by range dates" data-boundary="window">
                         <FilterDateRange />
                     </div>
                     <div className="mb-5 mb-lg-0">
