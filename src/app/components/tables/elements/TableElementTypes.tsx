@@ -1,12 +1,13 @@
 import React from "react";
 import { useEffect } from "react";
 import { types } from "../../../../../public/utils/tables/types";
-
+import { tooltips } from "../../../../../public/utils/tooltips";
 export interface TableElementTypesProps {}
 
 export const TableElementTypes = ({}: TableElementTypesProps) => {
     useEffect(() => {
         types();
+        tooltips();
     }, []);
     return (
         <div>

@@ -1,6 +1,6 @@
 export const searchControl = () => {
     $(function () {
-        $(".searchControl").on("keyup change focus click", function () {
+        $(".searchControl").on("keyup change focus click search", function () {
             
             // $(this).parents(".dropdown-menu").find("[type=checkbox]").prop( "checked", false );
 
