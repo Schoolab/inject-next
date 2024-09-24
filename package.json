@@ -19,7 +19,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@schoolab/inject-icons": "^1.8.0",
+    "@schoolab/inject-icons": "^1.9.1",
     "jquery": "3.7.1",
     "next": "14.2.5",
     "react": "^18",

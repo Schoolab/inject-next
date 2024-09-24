@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { PageAsideLarge } from "@/app/components/asides/pages/studies/PageAsideLarge";
+import { PageAsideLarge } from "@/app/components/asides/pages/study/PageAsideLarge";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
