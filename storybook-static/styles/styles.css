@@ -62,3 +62,11 @@ pre {
     content: "\f005"
 }
 
+.nav-main .nav-link[data-toggle=collapse]::after {
+    content: "\f138"!important;
+    font: normal normal normal 24px / 1 "inject-icons"!important;
+    font-size: 1rem!important;;
+    line-height: 1rem!important;;
+ }
+
+
