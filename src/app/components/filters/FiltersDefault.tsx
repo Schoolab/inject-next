@@ -1042,14 +1042,15 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                     </div>
                 </div>
                 <div className="d-flex flex-column flex-lg-row">
+                    <div className="mr-lg-3 mr-0 mb-5 mb-lg-0" data-toggle="tooltip" data-placement="top" data-original-title="Sort by range dates" data-boundary="window">
+                        <FilterDateRange />
+                    </div>
                     <div className="mr-lg-3 mr-0 mb-5 mb-lg-0">
                         <a className="btn btn-default btn-block btn-icon btn-lg text-nowrap" href="/organization/challenges/export" data-toggle="tooltip" data-placement="top" data-original-title="export" data-boundary="window">
                             <span className="icon icon-cloud-download" />
                         </a>
                     </div>
-                    <div className="mr-lg-3 mr-0 mb-5 mb-lg-0" data-toggle="tooltip" data-placement="top" data-original-title="Sort by range dates" data-boundary="window">
-                        <FilterDateRange />
-                    </div>
+
                     <div className="mb-5 mb-lg-0">
                         <a id="btn-new-challenge" className="btn btn-primary btn-icon btn-lg btn-block text-nowrap" data-form-url="/organization/challenge/modal/new" href="#">
                             <span className="icon icon-plus-circle" />
