@@ -8,179 +8,7 @@ export const ProjectOverview = () => {
         <Layout shortcutBarExpanded={true}>
             <AppContent>
                 <div className="row">
-                    <div className="col-12 order-lg-1 order-2 col-lg-6 col-xl-4 ">
-                        <div className="application-section">
-                            <div
-                                className="cover-container rounded mb-5"
-                                style={{
-                                    backgroundImage: 'url("img/hero-3.png")',
-                                    backgroundRepeat: "no-repeat",
-                                    backgroundPosition: "center",
-                                    backgroundSize: "cover",
-                                }}
-                            />
-                            <div className="h1 m-none mb-5">Welcome to My-project overview </div>
-                            <div className="m-none mb-5">At lacus vitae nulla sagittis scelerisque nisl. Pellentesque duis cursus vestibulum, facilisi ac, sed faucibus.</div>
-                            <ul className="list-inline list-dotted">
-                                <li className="list-inline-item">
-                                    <ul className="metas is-list">
-                                        <li>
-                                            <div className="thumbnail-stack mr-2">
-                                                <div className="thumbnail is-oval is-xs">
-                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/ade60d22-593c-49cd-a53e-a89b8557a94f/sq150.jpeg" />
-                                                </div>
-                                            </div>
-                                            <a href="/program/71/project/2903/users">
-                                                <small className="text-muted">1 member</small>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="list-inline-item">
-                                    <ul className="metas is-list">
-                                        <li>
-                                            <div className="thumbnail-stack mr-2">
-                                                <div className="thumbnail is-oval is-xs">
-                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
-                                                </div>
-                                                <div className="thumbnail is-oval is-xs">
-                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
-                                                </div>
-                                            </div>
-                                            <a href="/program/71/project/2903/mentors">
-                                                <small className="text-muted">2 Experts</small>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <button className="btn btn-default btn-lg btn-block btn-icon text-decoration-none" role="button">
-                                <span className="icon icon-settings" />
-                                <span>Settings</span>
-                            </button>
-                            <button className="btn btn-default btn-lg btn-block dropdown-toggle d-none d-lg-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span>Chat &amp; Video</span>
-                            </button>
-                            <div className="dropdown-menu">
-                                <a className="dropdown-item text-decoration-none" href="#" target="_blank">
-                                    <span className="icon icon-comment-text-multiple-outline mr-3" />
-                                    <span>Team Chat</span>
-                                </a>
-                                <a className="dropdown-item text-decoration-none" href="#" target="_blank">
-                                    <span className="icon icon-video mr-3" />
-                                    <span>Team video</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="application-section">
-                            <h3 className="application-section--title">Project progression</h3>
-                            <div className="row">
-                                <div className=" col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
-                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row">
-                                        <div className="flex-fill text-center">
-                                            <p className="h1 ">
-                                                15<small className="text-muted"> %</small>
-                                            </p>
-                                            <small>Project progression</small>
-                                        </div>
-                                        <div className="flex-fill text-center">
-                                            <p className="h1">
-                                                160<small className="text-muted"> days</small>
-                                            </p>
-                                            <small>End of program</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
-                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row ">
-                                        <div className="flex-fill text-center">
-                                            <p className="h1 ">
-                                                1<small className="text-muted"> /5</small>
-                                            </p>
-                                            <small>Objectives</small>
-                                        </div>
-                                        <div className="flex-fill text-center">
-                                            <p className="h1">
-                                                3<small className="text-muted"> /9</small>
-                                            </p>
-                                            <small>Tasks</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="application-section">
-                            <h3 className="application-section--title"> Your project experts </h3>
-                            <p>Project experts are here to guide you during your project.</p>
-                            <div className="item is-bordered">
-                                <div className="item-row">
-                                    <div className="item-row">
-                                        <a href="/user/u/0d3e2b04">
-                                            <div className="thumbnail is-oval " title="" data-toggle="tooltip" data-original-title="La piscine 2022 overview">
-                                                <img src="https://inject-prod.s3.amazonaws.com/images/c5268f41-f646-4fe1-b783-315029757ad2/sq150.png" />
-                                            </div>
-                                        </a>
-                                        <div className="item-content ml-4 py-1">
-                                            <a href="/user/u/0d3e2b04" className="item-title h4 font-weight-normal mb-none stretched-link">
-                                                Marine Martinez
-                                            </a>
-                                            <ul className="metas is-list ">
-                                                <li> Startup Manager Schoolab </li>
-                                                <li> Paris, FR </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="item-options dropdown">
-                                        <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span className="icon icon-options" />
-                                        </a>
-                                        <div className="dropdown-menu dropdown-menu-right">
-                                            <a className="dropdown-item" href="/user/u/0d3e2b04">
-                                                Show profile
-                                            </a>
-                                            <a className="dropdown-item" data-toggle="modal" data-target="#modalOpenThread" data-user-id={320} href="#">
-                                                Send a message
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item is-bordered">
-                                <div className="item-row">
-                                    <div className="item-row">
-                                        <a href="/user/u/158c2ec5">
-                                            <div className="thumbnail is-oval " title="" data-toggle="tooltip" data-original-title="La piscine 2022 overview">
-                                                <img src="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" />
-                                            </div>
-                                        </a>
-                                        <div className="item-content ml-4 py-1">
-                                            <a href="/user/u/158c2ec5" className="item-title h4 font-weight-normal mb-none stretched-link">
-                                                Pierre Forestier
-                                            </a>
-                                            <ul className="metas is-list ">
-                                                <li> Startup Manager Schoolab </li>
-                                                <li> Paris, FR </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="item-options dropdown">
-                                        <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span className="icon icon-options" />
-                                        </a>
-                                        <div className="dropdown-menu dropdown-menu-right">
-                                            <a className="dropdown-item" href="/user/u/158c2ec5">
-                                                Show profile
-                                            </a>
-                                            <a className="dropdown-item" data-toggle="modal" data-target="#modalOpenThread" data-user-id={1782} href="#">
-                                                Send a message
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-12 col-lg-6 col-xl-8 order-lg-2 order-1">
+                    <div className="col-12 col-lg-6 col-xl-8 ">
                         <div className="application-section">
                             <div className="d-flex flex-lg-row flex-column align-items-start">
                                 <h3 className="application-section--title flex-fill"> Coaching sessions </h3>
@@ -670,6 +498,179 @@ export const ProjectOverview = () => {
                                 {" "}
                                 View all 5 shared files{" "}
                             </a>
+                        </div>
+                    </div>
+                    <div className="col-12 col-lg-6 col-xl-4">
+                        <div className="application-section">
+                            <div
+                                className="cover-container rounded mb-5"
+                                style={{
+                                    backgroundImage: 'url("img/hero-3.png")',
+                                    backgroundRepeat: "no-repeat",
+                                    backgroundPosition: "center",
+                                    backgroundSize: "cover",
+                                }}
+                            />
+                            <div className="h1 m-none mb-5">Welcome to My-project overview </div>
+                            <div className="m-none mb-5">At lacus vitae nulla sagittis scelerisque nisl. Pellentesque duis cursus vestibulum, facilisi ac, sed faucibus.</div>
+                            <ul className="list-inline list-dotted">
+                                <li className="list-inline-item">
+                                    <ul className="metas is-list">
+                                        <li>
+                                            <div className="thumbnail-stack mr-2">
+                                                <div className="thumbnail is-oval is-xs">
+                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/ade60d22-593c-49cd-a53e-a89b8557a94f/sq150.jpeg" />
+                                                </div>
+                                            </div>
+                                            <a href="/program/71/project/2903/users">
+                                                <small className="text-muted">1 member</small>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li className="list-inline-item">
+                                    <ul className="metas is-list">
+                                        <li>
+                                            <div className="thumbnail-stack mr-2">
+                                                <div className="thumbnail is-oval is-xs">
+                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
+                                                </div>
+                                                <div className="thumbnail is-oval is-xs">
+                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
+                                                </div>
+                                            </div>
+                                            <a href="/program/71/project/2903/mentors">
+                                                <small className="text-muted">2 Experts</small>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <button className="btn btn-default btn-lg btn-block btn-icon text-decoration-none" role="button">
+                                <span className="icon icon-settings" />
+                                <span>Settings</span>
+                            </button>
+                            <button className="btn btn-default btn-lg btn-block dropdown-toggle d-none d-lg-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Chat &amp; Video</span>
+                            </button>
+                            <div className="dropdown-menu">
+                                <a className="dropdown-item text-decoration-none" href="#" target="_blank">
+                                    <span className="icon icon-comment-text-multiple-outline mr-3" />
+                                    <span>Team Chat</span>
+                                </a>
+                                <a className="dropdown-item text-decoration-none" href="#" target="_blank">
+                                    <span className="icon icon-video mr-3" />
+                                    <span>Team video</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div className="application-section">
+                            <h3 className="application-section--title"> Your project experts </h3>
+                            <p>Project experts are here to guide you during your project.</p>
+                            <div className="item is-bordered">
+                                <div className="item-row">
+                                    <div className="item-row">
+                                        <a href="/user/u/0d3e2b04">
+                                            <div className="thumbnail is-oval " title="" data-toggle="tooltip" data-original-title="La piscine 2022 overview">
+                                                <img src="https://inject-prod.s3.amazonaws.com/images/c5268f41-f646-4fe1-b783-315029757ad2/sq150.png" />
+                                            </div>
+                                        </a>
+                                        <div className="item-content ml-4 py-1">
+                                            <a href="/user/u/0d3e2b04" className="item-title h4 font-weight-normal mb-none stretched-link">
+                                                Marine Martinez
+                                            </a>
+                                            <ul className="metas is-list ">
+                                                <li> Startup Manager Schoolab </li>
+                                                <li> Paris, FR </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="item-options dropdown">
+                                        <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span className="icon icon-options" />
+                                        </a>
+                                        <div className="dropdown-menu dropdown-menu-right">
+                                            <a className="dropdown-item" href="/user/u/0d3e2b04">
+                                                Show profile
+                                            </a>
+                                            <a className="dropdown-item" data-toggle="modal" data-target="#modalOpenThread" data-user-id={320} href="#">
+                                                Send a message
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="item is-bordered">
+                                <div className="item-row">
+                                    <div className="item-row">
+                                        <a href="/user/u/158c2ec5">
+                                            <div className="thumbnail is-oval " title="" data-toggle="tooltip" data-original-title="La piscine 2022 overview">
+                                                <img src="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" />
+                                            </div>
+                                        </a>
+                                        <div className="item-content ml-4 py-1">
+                                            <a href="/user/u/158c2ec5" className="item-title h4 font-weight-normal mb-none stretched-link">
+                                                Pierre Forestier
+                                            </a>
+                                            <ul className="metas is-list ">
+                                                <li> Startup Manager Schoolab </li>
+                                                <li> Paris, FR </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="item-options dropdown">
+                                        <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span className="icon icon-options" />
+                                        </a>
+                                        <div className="dropdown-menu dropdown-menu-right">
+                                            <a className="dropdown-item" href="/user/u/158c2ec5">
+                                                Show profile
+                                            </a>
+                                            <a className="dropdown-item" data-toggle="modal" data-target="#modalOpenThread" data-user-id={1782} href="#">
+                                                Send a message
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="application-section">
+                            <h3 className="application-section--title">Project progression</h3>
+                            <div className="row">
+                                <div className=" col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
+                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row">
+                                        <div className="flex-fill text-center">
+                                            <p className="h1 ">
+                                                15<small className="text-muted"> %</small>
+                                            </p>
+                                            <small>Project progression</small>
+                                        </div>
+                                        <div className="flex-fill text-center">
+                                            <p className="h1">
+                                                160<small className="text-muted"> days</small>
+                                            </p>
+                                            <small>End of program</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
+                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row ">
+                                        <div className="flex-fill text-center">
+                                            <p className="h1 ">
+                                                1<small className="text-muted"> /5</small>
+                                            </p>
+                                            <small>Objectives</small>
+                                        </div>
+                                        <div className="flex-fill text-center">
+                                            <p className="h1">
+                                                3<small className="text-muted"> /9</small>
+                                            </p>
+                                            <small>Tasks</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -43,12 +43,12 @@ export const ExpertCoachingSession = () => {
                                             </a>
                                         </div>
                                     </div>
-                                    <div className="mt-7">
+                                    <div className="mt-5">
                                         <a className="btn btn-default btn-lg btn-block" href="#challengeEventAddToCalendar" data-toggle="modal">
-                                            Add to calendar
+                                            <span className="icon icon-plus-circle"></span>Add to calendar
                                         </a>
                                     </div>
-                                    <div className="mt-7">
+                                    <div className="mt-5">
                                         <h4>Détails</h4>
                                         <div className="ck-content">
                                             <p>
@@ -57,7 +57,7 @@ export const ExpertCoachingSession = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="mt-7">
+                                    <div className="mt-5">
                                         <h4>
                                             <span> Location: venue address </span>
                                         </h4>
@@ -159,7 +159,7 @@ export const ExpertCoachingSession = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="aside-buttons-bottom d-flex flex-column flex-lg-row mt-7">
+                                    <div className="aside-buttons-bottom d-flex flex-column flex-lg-row mt-5">
                                         <button id="btn-comment" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
                                             <span className="icon icon-format-list-bulleted mr-2" />
                                             Notes
