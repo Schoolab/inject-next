@@ -32,10 +32,6 @@ export const ProgramEventsEvent = () => {
                                         <h2 className="d-flex mb-2">Tradeshow</h2>
                                         <ul className="list-inline text-muted">
                                             <li className="list-inline-item">
-                                                <span className="icon icon-time" />
-                                                <span>March 30 Thursday, 2023 from 09:30 to 17:00</span>
-                                            </li>
-                                            <li className="list-inline-item">
                                                 <span className="icon icon-map-marker" />
                                                 <span>Offline</span>
                                             </li>
