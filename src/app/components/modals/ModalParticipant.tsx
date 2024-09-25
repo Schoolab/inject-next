@@ -107,8 +107,8 @@ export const ModalParticipant = ({}: ModalParticipantProps) => {
                                         </a>
                                     </div>
                                 </div>
-                                <div className="dropdown z-2">
-                                    <a className="btn btn-transparent btn-lg btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div className="dropdown">
+                                    <a className="btn btn-transparent btn-lg btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <span className="icon is-20px icon-options" />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right">

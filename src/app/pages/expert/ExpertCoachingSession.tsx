@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { Layout } from "../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { AsideEvent } from "@/app/components/asides/AsideEvent";
+import { AsideExpertSession } from "@/app/components/asides/AsideExpertSession";
 import { aside } from "../../../../public/utils/aside";
 
 export const ExpertCoachingSession = () => {
@@ -177,7 +177,7 @@ export const ExpertCoachingSession = () => {
                         </div>
                 </div>
             </AppContent>
-            <AsideEvent />
+            <AsideExpertSession />
         </Layout>
     );
 };

@@ -52,8 +52,8 @@ export const JurySessionUsers = () => {
                                                 </a>
                                             </div>
                                         </div>
-                                        <div className="dropdown z-2 position-absolute" style={{ top: ".75rem", right: ".75rem" }}>
-                                            <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div className="dropdown position-absolute" style={{ top: ".75rem", right: ".75rem" }}>
+                                            <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span className="icon is-20px icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
@@ -116,8 +116,8 @@ export const JurySessionUsers = () => {
                                                 </a>
                                             </div>
                                         </div>
-                                        <div className="dropdown z-2 position-absolute" style={{ top: ".75rem", right: ".75rem" }}>
-                                            <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div className="dropdown position-absolute" style={{ top: ".75rem", right: ".75rem" }}>
+                                            <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span className="icon is-20px icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
@@ -180,8 +180,8 @@ export const JurySessionUsers = () => {
                                                 </a>
                                             </div>
                                         </div>
-                                        <div className="dropdown z-2 position-absolute" style={{ top: ".75rem", right: ".75rem" }}>
-                                            <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div className="dropdown position-absolute" style={{ top: ".75rem", right: ".75rem" }}>
+                                            <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span className="icon is-20px icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
@@ -244,8 +244,8 @@ export const JurySessionUsers = () => {
                                                 </a>
                                             </div>
                                         </div>
-                                        <div className="dropdown z-2 position-absolute" style={{ top: ".75rem", right: ".75rem" }}>
-                                            <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div className="dropdown position-absolute" style={{ top: ".75rem", right: ".75rem" }}>
+                                            <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span className="icon is-20px icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
@@ -308,8 +308,8 @@ export const JurySessionUsers = () => {
                                                 </a>
                                             </div>
                                         </div>
-                                        <div className="dropdown z-2 position-absolute" style={{ top: ".75rem", right: ".75rem" }}>
-                                            <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div className="dropdown position-absolute" style={{ top: ".75rem", right: ".75rem" }}>
+                                            <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span className="icon is-20px icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">

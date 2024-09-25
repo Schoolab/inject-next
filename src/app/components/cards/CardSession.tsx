@@ -19,27 +19,33 @@ export const CardSession = ({}: CardSessionProps) => {
                                 </div>
                             </div>
                             <div className="card-title flex-grow-1">
-                                <a href="#" className="h4 mb-none stretched-link line-clamp-1 d-flex flex-wrap column-gap-2xs">
-                                    <span>Project 24</span>
-                                    <span>/</span>
-                                    <span>
-                                        {"{"}expert.name{"}"}
-                                    </span>
+                                <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
+                                    <span className="line-clamp-1"> Project 24 / expert.name</span>
                                 </a>
+                                <div className="text-muted small line-clamp-1" >
+                                        <span>FirstName LastName</span>
+                                        <span> · </span>
+                                        <span>FirstName LastName</span>
+                                        <span> · </span>
+                                        <span>FirstName LastName</span>
+                                        <span> · </span>
+                                        <span>FirstName LastName </span>
+                                 </div>
                                 <ul className="text-muted small metas is-list mb-none">
                                     <li>
-                                        <span className="icon icon-notifications text-accent">Today</span>
+                                        <span>July 12, 2024</span>
                                     </li>
                                     <li>
-                                        <span>2 PM (30min)</span>
+                                        <span>4:30 PM</span>
                                     </li>
                                 </ul>
+                                
                             </div>
-                            <div className="dropdown z-2">
-                                <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div className="dropdown">
+                                <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span className="icon is-20px icon-options" />
                                 </a>
-                                <div className="dropdown-menu dropdown-menu-right">
+                                <div className="dropdown-menu dropdown-menu-left">
                                     <a className="dropdown-item" href="#">
                                         Show profile
                                     </a>
@@ -64,26 +70,22 @@ export const CardSession = ({}: CardSessionProps) => {
                             </div>
                             <div className="card-title flex-grow-1">
                                 <a href="#" className="h4 mb-none stretched-link line-clamp-1 d-flex flex-wrap column-gap-2xs">
-                                    <span>
-                                        {"{"}expert.name{"}"}
-                                    </span>
-                                    <span>/</span>
-                                    <span>Project 24</span>
+                                    <span className="line-clamp-1">expert.name / Project 24</span>
                                 </a>
                                 <ul className="text-muted small metas is-list mb-none">
                                     <li>
-                                        <span>Tomorrow</span>
+                                        <span>July 12, 2024</span>
                                     </li>
                                     <li>
-                                        <span>2:45 PM (45min)</span>
+                                        <span>4:30 PM</span>
                                     </li>
                                 </ul>
                             </div>
-                            <div className="dropdown z-2">
-                                <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div className="dropdown">
+                                <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span className="icon is-20px icon-options" />
                                 </a>
-                                <div className="dropdown-menu dropdown-menu-right">
+                                <div className="dropdown-menu dropdown-menu-left">
                                     <a className="dropdown-item" href="#">
                                         Show profile
                                     </a>
@@ -108,22 +110,22 @@ export const CardSession = ({}: CardSessionProps) => {
                             </div>
                             <div className="card-title flex-grow-1">
                                 <a href="#" className="h4 mb-none stretched-link line-clamp-1 d-flex flex-wrap column-gap-2xs">
-                                    <span>Project 24</span>
+                                    <span className="line-clamp-1">Project 24</span>
                                 </a>
                                 <ul className="text-muted small metas is-list mb-none">
                                     <li>
-                                        <span>Yesterday</span>
+                                        <span>July 12, 2024</span>
                                     </li>
                                     <li>
-                                        <span>4 PM (1h)</span>
+                                        <span>4:30 PM</span>
                                     </li>
                                 </ul>
                             </div>
-                            <div className="dropdown z-2">
-                                <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div className="dropdown">
+                                <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span className="icon is-20px icon-options" />
                                 </a>
-                                <div className="dropdown-menu dropdown-menu-right">
+                                <div className="dropdown-menu dropdown-menu-left">
                                     <a className="dropdown-item" href="#">
                                         Show profile
                                     </a>
@@ -167,11 +169,11 @@ export const CardSession = ({}: CardSessionProps) => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="dropdown z-2">
-                                <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div className="dropdown">
+                                <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span className="icon is-20px icon-options" />
                                 </a>
-                                <div className="dropdown-menu dropdown-menu-right">
+                                <div className="dropdown-menu dropdown-menu-left">
                                     <a className="dropdown-item" href="#">
                                         Show profile
                                     </a>
