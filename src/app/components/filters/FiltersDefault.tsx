@@ -69,7 +69,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                                     <div id="challenges_filters_1" data-col={3} className="dataTableFilter table-filter">
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
-                                            <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
+                                            <a className="btn btn-sm btn-default w-50 checkControl">All</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
                                         </div>
                                         <div className="custom-control custom-checkbox">
@@ -111,7 +111,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                                     <div id="challenges_filters_9" data-col={4} className="dataTableFilter table-filter">
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
-                                            <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
+                                            <a className="btn btn-sm btn-default w-50 checkControl">All</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
                                         </div>
                                         <div className="custom-control custom-checkbox">
@@ -147,7 +147,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                                     <div id="challenges_filters_13" data-col={5} className="dataTableFilter table-filter">
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
-                                            <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
+                                            <a className="btn btn-sm btn-default w-50 checkControl">All</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
                                         </div>
                                         <div className="custom-control custom-checkbox">
@@ -267,7 +267,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                                     <div id="challenges_filters_31" data-col={6} className="dataTableFilter table-filter">
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
-                                            <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
+                                            <a className="btn btn-sm btn-default w-50 checkControl">All</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
                                         </div>
                                         <div className="custom-control custom-checkbox">
@@ -303,7 +303,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                                     <div id="challenges_filters_36" data-col={7} className="dataTableFilter table-filter">
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
-                                            <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
+                                            <a className="btn btn-sm btn-default w-50 checkControl">All</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
                                         </div>
                                         <div className="custom-control custom-checkbox">
@@ -375,7 +375,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                                     <div id="challenges_filters_46" data-col={8} className="dataTableFilter table-filter">
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
-                                            <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
+                                            <a className="btn btn-sm btn-default w-50 checkControl">All</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
                                         </div>
                                         <div className="custom-control custom-checkbox">
@@ -417,7 +417,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                                     <div id="challenges_filters_51" data-col={9} className="dataTableFilter table-filter">
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
-                                            <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
+                                            <a className="btn btn-sm btn-default w-50 checkControl">All</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
                                         </div>
                                         <div className="custom-control custom-checkbox">

@@ -23,7 +23,7 @@ export const FiltersSearchControl = ({}: FiltersSearchControlProps) => {
                                         
                                             <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                             <div className="btn-group w-100 mb-3" role="group">
-                                                <a className="btn btn-sm btn-default w-50 checkControl">Select all</a>
+                                                <a className="btn btn-sm btn-default w-50 checkControl">All</a>
                                                 <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
                                             </div>
                                     
