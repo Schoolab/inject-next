@@ -45,7 +45,7 @@ export const ExpertCoachingSession = () => {
                                     </div>
                                     <div className="mt-5">
                                         <a className="btn btn-default btn-lg btn-block" href="#challengeEventAddToCalendar" data-toggle="modal">
-                                            <span className="icon icon-plus-circle"></span>Add to calendar
+                                            <span className="icon icon-calendar"></span>Add to calendar
                                         </a>
                                     </div>
                                     <div className="mt-5">
