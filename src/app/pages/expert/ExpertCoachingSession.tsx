@@ -175,7 +175,7 @@ export const ExpertCoachingSession = () => {
                         </div>
                     </div>
                     <div className="aside-buttons no-subnav">
-                            <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Chat">
+                            <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Notes">
                                 <span className="icon icon-format-list-bulleted" />
                             </button>
                             <button className="btn  btn-lg btn-default mb-3" data-toggle="tooltip" data-original-title="Resources">
