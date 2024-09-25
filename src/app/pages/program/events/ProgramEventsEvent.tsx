@@ -148,7 +148,9 @@ export const ProgramEventsEvent = () => {
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
+                                    
                                     <div className="aside-buttons-bottom d-flex flex-column flex-lg-row">
                                         <button id="btn-quiz" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0 active">
                                             <span className="icon icon-comment mr-2" />

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { LearningCapsule } from '@/app/pages/jury/LearningCapsule';
+import { LearningCapsule } from '@/app/pages/learning/LearningCapsule';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {

@@ -159,13 +159,24 @@ export const ExpertCoachingSession = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    <div className="aside-buttons-bottom d-flex flex-column flex-lg-row mt-7">
+                                        <button id="btn-comment" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
+                                            <span className="icon icon-format-list-bulleted mr-2" />
+                                            Notes
+                                        </button>
+                                        <button id="btn-quiz" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
+                                            <span className="icon icon-cloud-download mr-2" />
+                                            Ressources
+                                        </button>
+                                  
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="aside-buttons no-subnav">
                             <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Chat">
-                                <span className="icon icon-comment" />
+                                <span className="icon icon-format-list-bulleted" />
                             </button>
                             <button className="btn  btn-lg btn-default mb-3" data-toggle="tooltip" data-original-title="Resources">
                                 <span className="icon icon-cloud-download" />
