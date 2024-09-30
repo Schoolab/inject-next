@@ -50,7 +50,7 @@ export const ProgramEventsEvent = () => {
                                     </div>
                                     <div className="mt-7">
                                         <a className="btn btn-default btn-lg btn-block" href="#challengeEventAddToCalendar" data-toggle="modal">
-                                            Add to calendar
+                                        <span className="icon icon-calendar"></span> Add to calendar
                                         </a>
                                     </div>
                                     <div className="mt-7">
