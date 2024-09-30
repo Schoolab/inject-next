@@ -511,7 +511,7 @@ export const ProjectOverview = () => {
                                     backgroundSize: "cover",
                                 }}
                             />
-                            <div className="h1 m-none mb-5">Welcome to My-project overview </div>
+                            <div className="h3 m-none mb-5">Welcome to My-project overview </div>
                             <div className="m-none mb-5">At lacus vitae nulla sagittis scelerisque nisl. Pellentesque duis cursus vestibulum, facilisi ac, sed faucibus.</div>
                             <ul className="list-inline list-dotted">
                                 <li className="list-inline-item">
