@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { Layout } from "../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { AsideExpertSession } from "@/app/components/asides/AsideExpertSession";
+import { AsideEvent } from "@/app/components/asides/AsideEvent";
 import { aside } from "../../../../public/utils/aside";
 
 export const ExpertCoachingSession = () => {
@@ -80,6 +80,154 @@ export const ExpertCoachingSession = () => {
                                     <div className="eventActionsContainer">
                                         <a className="btn btn-lg btn-block btn-primary mt-5 eventAction" data-url="/api/event/417/attendees/register">
                                             Register to access the event
+                                        </a>
+                                    </div>
+                                    
+                                    <div className="mt-5">
+                                        <h4 className="application-section--title"> Notes</h4>
+                                        <div id="challenge-blogposts-container">
+                                            <a className="message mb-5 startMessageButton" href="/program/75/manage/updates/new-update">
+                                                <span className="thumbnail is-oval is-lg" data-toggle="tooltip" title="" data-original-title="John Doe">
+                                                    <div className="thumbnail is-oval">
+                                                        <span className="icon icon-account" />
+                                                    </div>
+                                                </span>
+                                                <div className="message-body">
+                                                    <div className="message-list">
+                                                        <div className="message-row">
+                                                            <input type="text" className="form-control message-content bg-white cursorLink" placeholder="Start a new note..." />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div className="blogPostsWall" data-url="/program/75/workspace/updates/wall?preview=3">
+                                                <div className="card m-none p-5 wallLoader d-none">
+                                                    <div className="pb-0 pt-3 pt-sm-5">
+                                                        <div className="item is-wide is-static">
+                                                            <h4 className="text-center w-100 mb-3">Loading...</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="cardsContainer">
+                                                    <div className="cardsContainer">
+                                                        <div className="card blogPostCard">
+                                                            <div className="card-infos d-flex flex-column align-items-stretch gap-md p-24px">
+                                                                <div className="d-flex flex-grow-1 gap-sm">
+                                                                    <div className="thumbnail-relation m-auto">
+                                                                        <a href="#" className="thumbnail is-oval is-lg is-bordered">
+                                                                            <img src="https://inject-prod.s3.amazonaws.com/images/0ee71840-6d78-4784-acff-6f8d2722dbb7/sq150.jpeg" />
+                                                                        </a>
+                                                                    </div>
+                                                                    <div className="card-title flex-grow-1">
+                                                                        <a href="#" className="h4 mb-none line-clamp-1 d-flex align-items-center gap-2xs">
+                                                                            <span>Sarah Lamoureux</span>
+                                                                            <span className="badge badge-role is-manager z-2" data-toggle="tooltip" data-placement="top" data-original-title="Program Manager" data-boundary="window" />
+                                                                        </a>
+                                                                        <ul className="text-muted small metas is-list mb-none">
+                                                                            <li>
+                                                                                <a href="#" className="text-muted text-decoration-none">
+                                                                                    Community Builder, Schoolab
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span>May 13</span>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span>3:39 PM</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div className="dropdown">
+                                                                        <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                            <span className="icon is-20px icon-options" />
+                                                                        </a>
+                                                                        <div className="dropdown-menu dropdown-menu-right">
+                                                                            <a className="dropdown-item" href="#">
+                                                                                <span>Open post</span>
+                                                                            </a>
+                                                                            <div className="dropdown-divider" />
+                                                                            <a className="dropdown-item" href="#">
+                                                                                <span className="dropdown-item--label">Open profile</span>
+                                                                                <span className="dropdown-item--shortcut icon icon-new-tab" />
+                                                                            </a>
+                                                                            <a className="dropdown-item" href="#">
+                                                                                <span className="dropdown-item--label">Open program</span>
+                                                                                <span className="dropdown-item--shortcut icon icon-new-tab" />
+                                                                            </a>
+                                                                            <div className="dropdown-divider" />
+                                                                            <a className="dropdown-item" href="#">
+                                                                                <span>Edit</span>
+                                                                            </a>
+                                                                            <a className="dropdown-item is-danger" href="#">
+                                                                                <span>Delete</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="d-flex flex-column gap-md">
+                                                                    <p>Bonjour à tous·tes,</p>
+                                                                    <p>Nous sommes heureux de vous accueillir au sein de Schoolab Saint-Lazare !</p>
+                                                                    <p>
+                                                                        Le système de réservation de salles de réunion est maintenant disponible, <a href="https://schoolab.skedda.com/register?i=277598&k=0tUkWBHX4UlHvcRlvn6Cx60VhMZD7EZl">cliquez sur ce lien pour activer vos accès</a>.
+                                                                    </p>
+                                                                    <p>Ensuite, pour y accéder il vous suffira de cliquer sur le petit 🏢 dans la barre de navigation de gauche, vous retrouverez le p...</p>
+                                                                    <a href="#">Read more -&gt;</a>
+                                                                </div>
+                                                                <div className="item is-bordered resource">
+                                                                    <div className="item-row p-sm">
+                                                                        <div className="item-row gap-xs">
+                                                                            <div className="item-icon icon icon-file-pdf-box text-danger" />
+                                                                            <div className="item-content">
+                                                                                <a className="item-title h4 mb-none stretched-link text-truncate" href="#" target="_blank">
+                                                                                    stakeholdermap-model.pdf
+                                                                                </a>
+                                                                                <ul className="item-caption metas small is-list">
+                                                                                    <li>
+                                                                                        <span>PDF File</span>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <span>120 KB</span>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div className="item-options">
+                                                                            <a className="btn btn-lg btn-transparent btn-icon z-1" href="#" target="_blank">
+                                                                                <span className="icon icon-cloud-download is-24px" />
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="d-flex justify-content-between flex-nowrap">
+                                                                    <div className="d-flex gap-xs flex-fill">
+                                                                        <a href="#" className="btn btn-secondary active">
+                                                                            <span className="icon icon-thumb-up" />
+                                                                            <span>9</span>
+                                                                        </a>
+                                                                        <a href="#" className="btn btn-secondary">
+                                                                            <span className="icon icon-comment" />
+                                                                            <span>4</span>
+                                                                        </a>
+                                                                    </div>
+                                                                    {/* <a href="#" className="btn btn-secondary" data-toggle="tooltip" data-placement="top" data-original-title="Click to copy link" data-boundary="window">
+                                                                        <span className="icon icon-share" />
+                                                                        <span>Copy link</span>
+                                                                    </a> */}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="pagerContainer mt-5 d-none">
+                                                    <button className="btn btn-lg btn-block btn-default pagerLoadMoreButton">
+                                                        Load more
+                                                        <span className="icon icon-loading icon-spin ml-1 d-none buttonLoader" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a id="challenge-blogposts-page-btn" className="btn btn-lg btn-block btn-default mt-3 d-none" href="/program/75/updates">
+                                            Show more
                                         </a>
                                     </div>
                                     <div className="mt-5">
@@ -161,30 +309,29 @@ export const ExpertCoachingSession = () => {
                                     </div>
                                     <div className="aside-buttons-bottom d-flex flex-column flex-lg-row mt-5">
                                         <button id="btn-comment" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
-                                            <span className="icon icon-format-list-bulleted mr-2" />
-                                            Notes
+                                            <span className="icon icon-comment mr-2" />
+                                            Chat
                                         </button>
                                         <button id="btn-quiz" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
                                             <span className="icon icon-cloud-download mr-2" />
                                             Ressources
                                         </button>
-                                  
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="aside-buttons no-subnav">
-                            <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Notes">
-                                <span className="icon icon-format-list-bulleted" />
-                            </button>
-                            <button className="btn  btn-lg btn-default mb-3" data-toggle="tooltip" data-original-title="Resources">
-                                <span className="icon icon-cloud-download" />
-                            </button>
-                        </div>
+                        <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Chat">
+                            <span className="icon icon-comment" />
+                        </button>
+                        <button className="btn  btn-lg btn-default mb-3" data-toggle="tooltip" data-original-title="Resources">
+                            <span className="icon icon-cloud-download" />
+                        </button>
+                    </div>
                 </div>
             </AppContent>
-            <AsideExpertSession />
+            <AsideEvent />
         </Layout>
     );
 };

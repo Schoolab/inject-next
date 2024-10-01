@@ -7,8 +7,9 @@ export const aside = () => {
             aside : $( ".application-aside" ),
             asideContent: $( ".aside-content-container" ),
             btnClose :  $( ".close-aside" ),
-            btnContent : $( ".aside-buttons .btn" ),
-            btnBottom : $( ".aside-buttons-bottom .btn" )
+            btnContent : $( ".aside-buttons .btn" ),            
+            btnBottom : $( ".aside-buttons-bottom .btn" ),
+            btnDefault : $( ".aside-btn" ),
         }
 
         var presenterAside = {
@@ -44,11 +45,18 @@ export const aside = () => {
                     view.update();
                     presenterAside.localStorageSetItem();
                 }); 
+                modelAside.btnDefault.on( "click", function() {
+                    modelAside.index = 0;
+                    view.update();
+                    presenterAside.localStorageSetItem();
+                }); 
+
                 modelAside.btnClose.on( "click", function() {
                     modelAside.index = "undefined";
                     view.update();
                     presenterAside.localStorageSetItem(); 
                 });
+
             },              
             localStorageSetItem : function(){ 
                 if( $( ".aside-body" ).length > 1 ){               

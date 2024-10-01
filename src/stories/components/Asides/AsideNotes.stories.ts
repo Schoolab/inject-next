@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { PageAsideNotes } from "@/app/components/asides/PageAsideNotes";
+import { PageAsideNotes } from "@/app/components/asides/pages/PageAsideNotes";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {

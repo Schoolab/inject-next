@@ -359,10 +359,10 @@ export const ProgramDashboardDefault = () => {
                                                                 <span>4</span>
                                                             </a>
                                                         </div>
-                                                        <a href="#" className="btn btn-secondary" data-toggle="tooltip" data-placement="top" data-original-title="Click to copy link" data-boundary="window">
+                                                        {/* <a href="#" className="btn btn-secondary" data-toggle="tooltip" data-placement="top" data-original-title="Click to copy link" data-boundary="window">
                                                             <span className="icon icon-share" />
                                                             <span>Copy link</span>
-                                                        </a>
+                                                        </a> */}
                                                     </div>
                                                 </div>
                                             </div>

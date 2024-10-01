@@ -1,8 +1,8 @@
 import React from "react";
 
-interface AsideExpertSessionProps {}
+interface AsideNotesProps {}
 
-export const AsideExpertSession = ({}: AsideExpertSessionProps) => {
+export const AsideNotes = ({}: AsideNotesProps) => {
     return (
         <aside className="application-aside is-large">
                     <div className="aside-content-container">
