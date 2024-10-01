@@ -4,7 +4,7 @@ import { Layout } from "../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { FiltersDefault } from "@/app/components/filters/FiltersDefault";
 import { aside } from "../../../../public/utils/aside";
-import { TableElementNotes } from "@/app/components/tables/elements/TableElementNotes";
+import { TableElementAsideNotes } from "@/app/components/tables/elements/TableElementAsideNotes";
 import { AsideNotes } from "@/app/components/asides/AsideNotes";
 
 export const AdminAsideNotes = () => {
@@ -43,14 +43,12 @@ export const AdminAsideNotes = () => {
                                     </div>
                                 </div>
                                 <div className="datatableFiltersWrapper ">
-                                    
                                         <FiltersDefault />
-                                  
                                 </div>
                                 <div id="sg-datatables-challenges_list_datatable_wrapper" className="dataTables_wrapper dt-bootstrap4 no-footer">
                                     <div className="row">
                                         <div className="col-sm-12">
-                                            <TableElementNotes />
+                                            <TableElementAsideNotes />
                                             <div id="sg-datatables-challenges_list_datatable_processing" className="dataTables_processing" style={{ display: "none" }}>
                                                 <div className="card">
                                                     <div className="card-body text-center">

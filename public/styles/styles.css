@@ -71,5 +71,8 @@ pre {
     font-size: 1rem!important;;
     line-height: 1rem!important;;
  }
+.modal-backdrop{
+    display: none;
+}
 
 

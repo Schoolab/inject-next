@@ -4,7 +4,7 @@ import { types } from "../../../../../public/utils/tables/types";
 import { tooltips } from "../../../../../public/utils/tooltips";
 export interface TableElementTypesProps {}
 
-export const TableElementNotes = ({}: TableElementTypesProps) => {
+export const TableElementAsideNotes = ({}: TableElementTypesProps) => {
     useEffect(() => {
         types();
         tooltips();
