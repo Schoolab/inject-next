@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { FilterDateRange } from "./FilterDateRange";
 import { searchControl } from "../../../../public/utils/searchControl";
 import { tooltips } from "../../../../public/utils/tooltips";
+import { dataFilters } from "../../../../public/utils/dataFilters";
 
 interface FiltersDefaultProps {}
 
@@ -10,6 +11,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
     useEffect(() => {
         searchControl();
         tooltips();
+        dataFilters();
     }, []);
     return (
         <div className="datatableFiltersWrapper ">
@@ -20,7 +22,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                     </div>
                 </div>
                 <div className="d-flex flex-column flex-lg-row scroll-h mr-lg-3 mr-0 flex-fill">
-                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
+                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0 dataFilter d-none">
                         <div className="dropdown position-static mb-3">
                             <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
                                 Status
@@ -59,7 +61,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
+                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0 dataFilter d-none">
                         <div className="dropdown position-static mb-3">
                             <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
                                 Impact
@@ -101,7 +103,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
+                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0 dataFilter d-none">
                         <div className="dropdown position-static mb-3">
                             <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
                                 Verticals
@@ -137,7 +139,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
+                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0 dataFilter d-none">
                         <div className="dropdown position-static mb-3">
                             <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
                                 SDGs
@@ -257,7 +259,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
+                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0 dataFilter d-none">
                         <div className="dropdown position-static mb-3">
                             <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
                                 Ecosystems
@@ -293,7 +295,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
+                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0 dataFilter d-none">
                         <div className="dropdown position-static mb-3">
                             <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
                                 Use case
@@ -365,7 +367,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
+                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0 dataFilter d-none">
                         <div className="dropdown position-static mb-3">
                             <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
                                 Capability
@@ -407,7 +409,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
+                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0 dataFilter d-none">
                         <div className="dropdown position-static mb-3">
                             <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
                                 Business line
@@ -497,7 +499,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
+                    <div className="mr-lg-3 mr-0 mb-5 mb-lg-0 dataFilter d-none">
                         <div className="dropdown position-static mb-3">
                             <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
                                 Owner
@@ -1037,6 +1039,35 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                                         </div>
                                     </div>
                                 </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="dropdown dataFitlersControl mr-lg-3 mr-0 mb-5 mb-lg-0" data-save-to-close="true">
+                        <a className="btn btn-lg btn-muted" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
+                            <span className="icon icon-plus-circle" />
+                            <span>Add filter</span>
+                        </a>
+                        <div className="dropdown-menu gap-xs">
+                            <form className="d-flex flex-column gap-md px-16px">
+                                <div className="form-group">
+                                    <label>Filters</label>
+                                    <select required data-hint="type" aria-describedby="exemple_help" className="form-control custom-select" defaultValue="">
+                                        <option value="" disabled>
+                                            Choose a filter...
+                                        </option>
+                                    </select>
+                                    <div className="invalid-feedback">Please choose an option in the select.</div>
+                                </div>
+                            </form>
+                            <div className="d-flex flex-column dataFitlersControlRemove px-16px"></div>
+
+                            <div className="d-flex gap-xs justify-content-end px-16px ">
+                                <button className="btn btn-lg btn-default dataFitlersControlCancel">
+                                    Cancel
+                                </button>
+                                <button type="submit" className="btn btn-lg btn-primary dataFitlersControlApply">
+                                    Apply
+                                </button>
                             </div>
                         </div>
                     </div>

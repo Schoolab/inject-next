@@ -222,16 +222,7 @@ export const TableElementModalNotes = ({}: TableElementTypesProps) => {
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div className="w-100 standaloneThreadForm" data-mark-as-read-url="/mark-as-read/60">
-                                                                <form className="w-100 message-composer is-sticky mt-auto" name="message_light" method="post" action="/messages/conversation/60" data-disable-on-submit={1}>
-                                                                    <div className="w-100 message-composer-row">
-                                                                        <textarea className="message-composer-input form-control" required placeholder="Write a note…" autoComplete="off" defaultValue={""} />
-                                                                        <button className="btn btn-transparent btn-icon message-composer-action is-disabled">
-                                                                            <span className="icon icon-send" />
-                                                                        </button>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>

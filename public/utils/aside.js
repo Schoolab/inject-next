@@ -60,12 +60,12 @@ export const aside = () => {
             },              
             localStorageSetItem : function(){ 
                 if( $( ".aside-body" ).length > 1 ){               
-                    window.localStorage.setItem(modelAside.currentPathname, modelAside.index);  
+                    window.localStorage.setItem("@Inject/Aside/" + modelAside.currentPathname, modelAside.index);  
                 }
             },
             
             localStorageGetItem : function(){
-               if(window.localStorage.getItem(modelAside.currentPathname) !== null) {
+               if(window.localStorage.getItem("@Inject/Aside/" + modelAside.currentPathname) !== null) {
                     modelAside.index = window.localStorage.getItem(modelAside.currentPathname);
                }
             },

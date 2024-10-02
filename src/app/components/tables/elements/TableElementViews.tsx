@@ -37,10 +37,10 @@ export const TableElementViews = ({}: TableElementViewsProps) => {
                     </label>
                 </div>
             </form>
-            <a href="#" className="btn btn-lg btn-muted">
+            {/* <a href="#" className="btn btn-lg btn-muted">
                 <span className="icon icon-plus-circle" />
                 <span>Add view</span>
-            </a>
+            </a> */}
         </div>
     );
 };

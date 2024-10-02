@@ -5,7 +5,7 @@ import { Navbar } from "../components/NavBar";
 import { ShortcutBar } from "../components/ShortcutBar";
 import { SidebarManage } from "../components/sidebar/SidebarManage";
 import { SidebarAdmin } from "../components/sidebar/SidebarAdmin";
-import { select } from "../../../public/utils/select";
+// import { select } from "../../../public/utils/select";
 
 interface LayoutProps {
     children?: ReactNode;
@@ -17,9 +17,9 @@ interface LayoutProps {
 
 }
 export const Layout = ({ children, sideBar, theme, shortcutBarExpanded, showShortcutbar = true,  }: LayoutProps) => {
-    useEffect(() => {
-        select();
-    }, []);
+    // useEffect(() => {
+    //     select();
+    // }, []);
 
     return (
         <div className="application-ui">
