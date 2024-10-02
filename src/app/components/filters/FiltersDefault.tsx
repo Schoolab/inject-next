@@ -63,7 +63,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                     </div>
                     <div className="mr-lg-3 mr-0 mb-3 mb-lg-0 dataFilter d-none">
                         <div className="dropdown position-static mb-3">
-                            <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
+                            <a className="btn btn-lg btn-default custom-select small text-nowrap active" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
                                 Impact
                             </a>
                             <div className="dropdown-menu">
