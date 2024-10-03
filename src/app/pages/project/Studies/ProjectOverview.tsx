@@ -540,38 +540,35 @@ export const ProjectOverview = () => {
                     <div className="col-12 col-lg-6 col-xl-4">
                         <div className="application-section">
                             <h3 className="application-section--title">Project progression</h3>
-                            <div className="row">
-                                <div className=" col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
-                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row">
-                                        <div className="flex-fill text-center">
-                                            <p className="h1 ">
-                                                15<small className="text-muted"> %</small>
-                                            </p>
-                                            <small>Project progression</small>
-                                        </div>
-                                        <div className="flex-fill text-center">
-                                            <p className="h1">
-                                                160<small className="text-muted"> days</small>
-                                            </p>
-                                            <small>End of program</small>
-                                        </div>
+                            <div className="row gap-xs">
+                                <div className="col-lg-12 col-lg-6 col-xl-12 d-flex align-items-stretch gap-xs">
+                                    <div className="bg-light rounded p-3 flex-fill gap-xs text-center">
+                                        <p className="h1 mb-2">
+                                            15<small className="text-muted"> %</small>
+                                        </p>
+                                        <small>Project progression</small>
+                                    </div>
+                                    <div className="bg-light rounded p-3 flex-fill gap-xs text-center">
+                                        <p className="h1 mb-2">
+                                            160<small className="text-muted"> days</small>
+                                        </p>
+                                        <small>End of program</small>
                                     </div>
                                 </div>
-                                <div className="col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
-                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row ">
-                                        <div className="flex-fill text-center">
-                                            <p className="h1 ">
+                                <div className="col-lg-12 col-lg-6 col-xl-12 d-flex align-items-stretch gap-xs">
+                                         <div className="bg-light rounded p-3 flex-fill gap-xs text-center">
+                                            <p className="h1 mb-2">
                                                 1<small className="text-muted"> /5</small>
                                             </p>
                                             <small>Objectives</small>
                                         </div>
-                                        <div className="flex-fill text-center">
-                                            <p className="h1">
+                                        <div className="bg-light rounded p-3 flex-fill gap-xs text-center">
+                                            <p className="h1 mb-2">
                                                 3<small className="text-muted"> /9</small>
                                             </p>
                                             <small>Tasks</small>
                                         </div>
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>

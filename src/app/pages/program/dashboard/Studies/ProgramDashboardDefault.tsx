@@ -46,6 +46,12 @@ export const ProgramDashboardDefault = () => {
                                                             <div className="thumbnail is-oval is-xs">
                                                                 <img src="https://inject-intrap.s3.amazonaws.com/images/ade60d22-593c-49cd-a53e-a89b8557a94f/sq150.jpeg" />
                                                             </div>
+                                                            <div className="thumbnail is-oval is-xs">
+                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/ade60d22-593c-49cd-a53e-a89b8557a94f/sq150.jpeg" />
+                                                            </div>
+                                                            <div className="thumbnail is-oval is-xs">
+                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/ade60d22-593c-49cd-a53e-a89b8557a94f/sq150.jpeg" />
+                                                            </div>
                                                         </div>
                                                         <a href="/program/71/project/2903/users">
                                                             <small className="text-muted">8 members</small>
@@ -82,12 +88,6 @@ export const ProgramDashboardDefault = () => {
                                             </li>
                                         </ul>
                                     </div>
-                                    <a href="#" className="badge is-pill">
-                                        <span className="icon icon-school" />
-                                        <span>
-                                            {"{"}Organization.name{"}"}
-                                        </span>
-                                    </a>
                                 </div>
                                 <div className="d-flex gap-xs">
                                     <div className="dropdown">
@@ -109,7 +109,24 @@ export const ProgramDashboardDefault = () => {
                                             </a>
                                         </div>
                                     </div>
+                                    <div className="dropdown">
+                                        <a className="btn btn-transparent btn-lg btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span className="icon is-20px icon-options" />
+                                        </a>
+                                        <div className="dropdown-menu dropdown-menu-right">
+                                            <a className="dropdown-item" href="#">
+                                                <span>Setting 1</span>
+                                            </a>
+                                            <a className="dropdown-item" href="#">
+                                                <span>Setting 2</span>
+                                            </a>
+                                            <a className="dropdown-item" href="#">
+                                                <span>Setting 3</span>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
+                                
                             </div>
                             <div className="to-collapse is-collapsed d-block border-top mt-5 pt-5" data-toggle="collapse" data-target="#Aboutprogram" aria-expanded="false">
                                 <div className="d-flex align-items-center flex-fill">
