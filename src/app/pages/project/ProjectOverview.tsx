@@ -14,7 +14,7 @@ export const ProjectOverview = () => {
                                 <h3 className="application-section--title flex-fill"> Coaching sessions </h3>
                                 <Button size="sm" iconStartName="plus-circle" type="default" label="Add Session" />
                             </div>
-                            <div className="cards-list">
+                            <div className="cards">
                                 <div className="card">
                                     <div className="card-infos is-linked d-flex align-items-start gap-sm">
                                         <div className="thumbnail-relation m-auto">
@@ -638,7 +638,7 @@ export const ProjectOverview = () => {
                         <div className="application-section">
                             <h3 className="application-section--title">Project progression</h3>
                             <div className="row">
-                                <div className=" col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
+                                <div className=" col-lg-12 col-md-6 col-12 mb-3 d-flex align-items-stretch">
                                     <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row">
                                         <div className="flex-fill text-center">
                                             <p className="h1 ">
@@ -654,7 +654,7 @@ export const ProjectOverview = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
+                                <div className="col-lg-12 col-md-6 col-12 mb-3 d-flex align-items-stretch">
                                     <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row ">
                                         <div className="flex-fill text-center">
                                             <p className="h1 ">

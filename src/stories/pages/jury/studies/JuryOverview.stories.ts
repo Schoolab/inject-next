@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ProjectOverview } from '@/app/pages/project/studies/ProjectOverview';
+import { JuryOverview } from '@/app/pages/jury/studies/JuryOverview';
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#Carousel-export
+// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Pages/Project/Studies/Overview',
-  component: ProjectOverview,
+  title: 'Pages/Jury/Studies/Overview',
+  component: JuryOverview,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: 'fullscreen',
   },
-} satisfies Meta<typeof ProjectOverview>;
+} satisfies Meta<typeof JuryOverview>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
