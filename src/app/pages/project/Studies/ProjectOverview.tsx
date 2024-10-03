@@ -30,7 +30,11 @@ export const ProjectOverview = () => {
                                             </div>
                                         </div>
                                         <ul className="list-inline list-dotted">
-                                            <li className="list-inline-item">
+                                            <li className="list-inline-item" data-toggle="tooltip"
+                                                data-placement="bottom"
+                                                data-original-title="<ul class='list-unstyled d-flex flex-column gap-2xs m-none'><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/2216e7ab-c701-4503-83a2-ae7b91afb15d/sq150.jpeg'></div><span>Alexandra Jolly</span></li>"
+                                                data-html="true"
+                                                data-boundary="window">
                                                 <ul className="metas is-list">
                                                     <li>
                                                         <div className="thumbnail-stack mr-2">
