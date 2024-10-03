@@ -6,7 +6,7 @@ import { AppContent } from "@/app/layouts/AppContent";
 export const JuryOverview = () => {
     return (
         <Layout shortcutBarExpanded={true}>
-            <AppContent isAsside={true}>
+            <AppContent>
                 <div className="row">
                     <div className="col-12 col-lg-6 col-xl-8">
                         <div className="application-section">
