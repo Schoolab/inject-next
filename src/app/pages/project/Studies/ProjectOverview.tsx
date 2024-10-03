@@ -535,82 +535,7 @@ export const ProjectOverview = () => {
                                 Show more
                             </a>
                         </div>
-                        <div className="application-section">
-                            <h3 className="application-section--title"> Project files </h3>
-                            <div className="item is-bordered resource mb-3">
-                                <div className="item-row">
-                                    <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
-                                        <div className="item-icon icon icon-file-pdf-box text-danger" />
-                                        <div className="item-content ml-3">
-                                            <a className="item-title h5 mb-none stretched-link" href="#">
-                                                Lorem-ipsum_FR.pdf
-                                            </a>
-                                            <ul className="item-caption metas small is-list">
-                                                <li>application/pdf</li>
-                                                <li>
-                                                    <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="item-options">
-                                        <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
-                                            <span className="icon icon-cloud-download" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item is-bordered resource mb-3">
-                                <div className="item-row">
-                                    <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
-                                        <div className="item-icon icon icon-file-pdf-box text-danger" />
-                                        <div className="item-content ml-3">
-                                            <a className="item-title h5 mb-none stretched-link" href="#">
-                                                Lorem-ipsum_FR.pdf
-                                            </a>
-                                            <ul className="item-caption metas small is-list">
-                                                <li>application/pdf</li>
-                                                <li>
-                                                    <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="item-options">
-                                        <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
-                                            <span className="icon icon-cloud-download" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item is-bordered resource mb-3">
-                                <div className="item-row">
-                                    <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
-                                        <div className="item-icon icon icon-file-pdf-box text-danger" />
-                                        <div className="item-content ml-3">
-                                            <a className="item-title h5 mb-none stretched-link" href="#">
-                                                Lorem-ipsum_FR.pdf
-                                            </a>
-                                            <ul className="item-caption metas small is-list">
-                                                <li>application/pdf</li>
-                                                <li>
-                                                    <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="item-options">
-                                        <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
-                                            <span className="icon icon-cloud-download" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a className="btn btn-lg btn-block btn-default" href="#">
-                                {" "}
-                                View all 5 shared files{" "}
-                            </a>
-                        </div>
+                        
                     </div>
                     <div className="col-12 col-lg-6 col-xl-4">
                         <div className="application-section">
@@ -719,6 +644,82 @@ export const ProjectOverview = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div className="application-section">
+                            <h3 className="application-section--title"> Project files </h3>
+                            <div className="item is-bordered resource mb-3">
+                                <div className="item-row">
+                                    <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
+                                        <div className="item-icon icon icon-file-pdf-box text-danger" />
+                                        <div className="item-content ml-3">
+                                            <a className="item-title h5 mb-none stretched-link" href="#">
+                                                Lorem-ipsum_FR.pdf
+                                            </a>
+                                            <ul className="item-caption metas small is-list">
+                                                <li>application/pdf</li>
+                                                <li>
+                                                    <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="item-options">
+                                        <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
+                                            <span className="icon icon-cloud-download" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="item is-bordered resource mb-3">
+                                <div className="item-row">
+                                    <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
+                                        <div className="item-icon icon icon-file-pdf-box text-danger" />
+                                        <div className="item-content ml-3">
+                                            <a className="item-title h5 mb-none stretched-link" href="#">
+                                                Lorem-ipsum_FR.pdf
+                                            </a>
+                                            <ul className="item-caption metas small is-list">
+                                                <li>application/pdf</li>
+                                                <li>
+                                                    <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="item-options">
+                                        <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
+                                            <span className="icon icon-cloud-download" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="item is-bordered resource mb-3">
+                                <div className="item-row">
+                                    <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
+                                        <div className="item-icon icon icon-file-pdf-box text-danger" />
+                                        <div className="item-content ml-3">
+                                            <a className="item-title h5 mb-none stretched-link" href="#">
+                                                Lorem-ipsum_FR.pdf
+                                            </a>
+                                            <ul className="item-caption metas small is-list">
+                                                <li>application/pdf</li>
+                                                <li>
+                                                    <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="item-options">
+                                        <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
+                                            <span className="icon icon-cloud-download" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a className="btn btn-lg btn-block btn-default" href="#">
+                                {" "}
+                                View all 5 shared files{" "}
+                            </a>
                         </div>
                         
                     </div>
