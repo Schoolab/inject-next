@@ -7,7 +7,7 @@ import { AppContent } from "@/app/layouts/AppContent";
 export const LearningLesson = () => {
     return (
         <Layout>
-            <AppContent isAsside={true}>
+            <AppContent>
                 <div className="row">
                     <div className="col-12 ">
                         <div className="row">
