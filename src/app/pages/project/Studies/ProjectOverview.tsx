@@ -606,6 +606,43 @@ export const ProjectOverview = () => {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
                         </div>
                         <div className="application-section">
+                            <h3 className="application-section--title">Project progression</h3>
+                            <div className="row">
+                                <div className=" col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
+                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row">
+                                        <div className="flex-fill text-center">
+                                            <p className="h1 ">
+                                                15<small className="text-muted"> %</small>
+                                            </p>
+                                            <small>Project progression</small>
+                                        </div>
+                                        <div className="flex-fill text-center">
+                                            <p className="h1">
+                                                160<small className="text-muted"> days</small>
+                                            </p>
+                                            <small>End of program</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
+                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row ">
+                                        <div className="flex-fill text-center">
+                                            <p className="h1 ">
+                                                1<small className="text-muted"> /5</small>
+                                            </p>
+                                            <small>Objectives</small>
+                                        </div>
+                                        <div className="flex-fill text-center">
+                                            <p className="h1">
+                                                3<small className="text-muted"> /9</small>
+                                            </p>
+                                            <small>Tasks</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="application-section">
                             <h3 className="application-section--title"> Your project experts </h3>
                             <p>Project experts are here to guide you during your project.</p>
                             <div className="item is-bordered">
@@ -675,43 +712,7 @@ export const ProjectOverview = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="application-section">
-                            <h3 className="application-section--title">Project progression</h3>
-                            <div className="row">
-                                <div className=" col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
-                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row">
-                                        <div className="flex-fill text-center">
-                                            <p className="h1 ">
-                                                15<small className="text-muted"> %</small>
-                                            </p>
-                                            <small>Project progression</small>
-                                        </div>
-                                        <div className="flex-fill text-center">
-                                            <p className="h1">
-                                                160<small className="text-muted"> days</small>
-                                            </p>
-                                            <small>End of program</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
-                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row ">
-                                        <div className="flex-fill text-center">
-                                            <p className="h1 ">
-                                                1<small className="text-muted"> /5</small>
-                                            </p>
-                                            <small>Objectives</small>
-                                        </div>
-                                        <div className="flex-fill text-center">
-                                            <p className="h1">
-                                                3<small className="text-muted"> /9</small>
-                                            </p>
-                                            <small>Tasks</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </AppContent>
