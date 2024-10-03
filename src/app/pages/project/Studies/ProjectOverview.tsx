@@ -63,12 +63,6 @@ export const ProjectOverview = () => {
                                             </li>
                                         </ul>
                                     </div>
-                                    <a href="#" className="badge is-pill">
-                                        <span className="icon icon-school" />
-                                        <span>
-                                            {"{"}Program.name{"}"}
-                                        </span>
-                                    </a>
                                 </div>
                                 <div className="d-flex gap-xs">
                                     <div className="dropdown">
