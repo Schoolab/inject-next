@@ -107,6 +107,19 @@ export const ProjectOverview = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className="to-collapse is-collapsed d-block border-top mt-5 pt-5" data-toggle="collapse" data-target="#Aboutproject" aria-expanded="false">
+                                <div className="d-flex align-items-center flex-fill">
+                                    <div className="d-flex align-items-center gap-2xs flex-grow-1">
+                                        <span className="icon icon-clipboard-text is-sm" />
+                                        <span>About the project</span>
+                                    </div>
+                                    <span className="icon icon-chevron-right is-sm" />
+                                </div>
+                                <div className="collapse bg-highlight rounded-sm p-md mb-2xs mt-md" id="Aboutproject">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
+                                </div>
+                            </div>
                         </div>
                         <div className="application-section">
                             <div className="d-flex flex-lg-row flex-column align-items-start">
@@ -600,11 +613,6 @@ export const ProjectOverview = () => {
                         </div>
                     </div>
                     <div className="col-12 col-lg-6 col-xl-4">
-                        <div className="application-section">
-                            <h3 className="application-section--title"> About the project</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
-                        </div>
                         <div className="application-section">
                             <h3 className="application-section--title">Project progression</h3>
                             <div className="row">
