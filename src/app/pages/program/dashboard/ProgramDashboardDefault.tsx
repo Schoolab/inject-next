@@ -6,7 +6,7 @@ import { Button } from "@/app/components/Button";
 
 export const ProgramDashboardDefault = () => {
     return (
-        <Layout >
+        <Layout shortcutBarExpanded={true}>
             <AppContent>
                 <div className="row">
                     <div className="col-12 col-lg-6">
