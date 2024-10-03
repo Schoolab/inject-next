@@ -66,7 +66,7 @@ export const ProjectOverview = () => {
                                     <a href="#" className="badge is-pill">
                                         <span className="icon icon-school" />
                                         <span>
-                                            {"{"}Organization.name{"}"}
+                                            {"{"}Program.name{"}"}
                                         </span>
                                     </a>
                                 </div>
@@ -94,17 +94,15 @@ export const ProjectOverview = () => {
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right">
                                             <a className="dropdown-item" href="#">
-                                                <span>Edit profile</span>
+                                                <span>Setting 1</span>
                                             </a>
                                             <a className="dropdown-item" href="#">
-                                                <span>Manage tags</span>
+                                                <span>Setting 2</span>
                                             </a>
                                             <a className="dropdown-item" href="#">
-                                                <span>Manage data</span>
+                                                <span>Setting 3</span>
                                             </a>
-                                            <a className="dropdown-item is-danger" href="#">
-                                                <span>Disable this project</span>
-                                            </a>
+                                         
                                         </div>
                                     </div>
                                 </div>
