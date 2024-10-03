@@ -26,9 +26,9 @@ export const ProgramDashboardDefault = () => {
                                 <div className="d-flex flex-column align-items-center align-items-xl-start gap-xs flex-fill">
                                     <div className="d-flex flex-column align-items-center align-items-xl-start gap-0">
                                         <div className="d-flex align-items-center gap-2xs">
-                                            <a href="#" className="h2 line-clamp-1 d-flex align-items-center gap-2xs">
+                                            <div className="h2 line-clamp-1 d-flex align-items-center gap-2xs">
                                                 <span>Program-1 dashboard</span>
-                                            </a>
+                                            </div>
                                         </div>
                                         <ul className="text-muted small metas is-list mb-none">
                                             <li
@@ -70,7 +70,6 @@ export const ProgramDashboardDefault = () => {
                                                 <span className="dropdown-item--label">Custom shortcut</span>
                                                 <span className="dropdown-item--shortcut icon icon-new-tab" />
                                             </a>
-                                            
                                         </div>
                                     </div>
                                     {/* <div className="dropdown">
@@ -95,31 +94,8 @@ export const ProgramDashboardDefault = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="application-section">
-                            <div
-                                className="cover-container rounded mb-5"
-                                style={{
-                                    backgroundImage: 'url("img/hero.png")',
-                                    backgroundRepeat: "no-repeat",
-                                    backgroundPosition: "center",
-                                    backgroundSize: "cover",
-                                }}
-                            />
-                            <div className="h1 m-none mb-5">Program-1 dashboard</div>
-                            <div className="m-none mb-5">At lacus vitae nulla sagittis scelerisque nisl. Pellentesque duis cursus vestibulum, facilisi ac, sed faucibus.</div>
-                            <h4>shortcut</h4>
-                            <a className="btn btn-lg btn-block btn-default" href="/program/75/managers">
-                                Custom shortcut
-                            </a>
-                            <a className="btn btn-lg btn-block btn-default" href="/program/75/managers">
-                                Custom shortcut
-                            </a>
-                        </div> */}
-                          <div className="application-section">
-                            <h3 className="application-section--title"> About the program</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
-                          </div>
+         
+
                         <div className="application-section">
                             <h3 className="application-section--title"> Newsfeed</h3>
                             <div id="challenge-blogposts-container">
@@ -415,6 +391,11 @@ export const ProgramDashboardDefault = () => {
                         </div>
                     </div>
                     <div className="col-12 col-lg-6 col-xl-4">
+                        <div className="application-section">
+                            <h3 className="application-section--title"> About the program</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
+                        </div>
                         <div className="application-section is-highlighted">
                             <div className="row justify-content-center">
                                 <div className="col-12">
