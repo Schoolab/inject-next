@@ -27,7 +27,7 @@ export const ProgramDashboardDefault = () => {
                                     <div className="d-flex flex-column align-items-center align-items-xl-start gap-0">
                                         <div className="d-flex align-items-center gap-2xs">
                                             <div className="h2 line-clamp-1 d-flex align-items-center gap-2xs">
-                                                <span>Program-1 dashboard</span>
+                                                <span>Program name</span>
                                             </div>
                                         </div>
                                         <ul className="text-muted small metas is-list mb-none">
