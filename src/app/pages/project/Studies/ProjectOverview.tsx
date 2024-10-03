@@ -77,7 +77,7 @@ export const ProjectOverview = () => {
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right">
                                             <a className="dropdown-item" href="#">
-                                                <span className="icon icon-comment-text-multiple-outline mr-3" />
+                                                <span className="icon icon-comment-text-multiple-outline" />
                                                 <span className="dropdown-item--label">Team Chat</span>
                                                 
                                             </a>
