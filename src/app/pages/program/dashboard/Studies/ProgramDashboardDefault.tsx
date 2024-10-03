@@ -398,7 +398,7 @@ export const ProgramDashboardDefault = () => {
                         <div className="application-section">
                             <h3 className="application-section--title"> Your Program Managers </h3>
                             <p>Program Managers are here to guide you during the program.</p>
-                            <div className="ittems">
+                            <div className="items">
                                 <div className="item is-bordered">
                                     <div className="item-row">
                                         <div className="item-row">
