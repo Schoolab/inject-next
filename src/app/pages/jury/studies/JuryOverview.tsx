@@ -285,7 +285,7 @@ export const JuryOverview = () => {
                     </div>
                     <div className="col-12 col-lg-6 col-xl-4">
                         <div className="application-section">
-                            <h3 className="application-section--title">Juries progression</h3>
+                            <h3 className="application-section--title">Progression</h3>
                             <div className="row">
                                 <div className=" col-lg-12 col-md-6 col-12 mb-3 d-flex align-items-stretch">
                                     <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row">
