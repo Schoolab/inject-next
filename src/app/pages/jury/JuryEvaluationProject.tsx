@@ -20,7 +20,7 @@ export const JuryEvaluationProject = () => {
                                 <div className="application-section">
                                     <h3>Criteria</h3>
                                     <p>Here are all the criteria that were selected for this jury session. Use them to evaluate the project and submit your evaluation.</p>
-                                    <div className="card p-5 d-flex mb-5">
+                                    <div className="card p-5 d-flex">
                                         <div className="row">
                                             <div className="col-12 col-lg-5 mb-5 mb-lg-0">
                                                 <div
@@ -58,7 +58,7 @@ export const JuryEvaluationProject = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card mb-5">
+                                    <div className="card ">
                                         <div className="card-header" data-toggle="collapse" data-target="#delivrables" aria-expanded="false">
                                             <div className="d-flex align-items-center">
                                                 <div className="mr-3 d-none">
@@ -167,7 +167,7 @@ export const JuryEvaluationProject = () => {
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem entum felis diam eget massa.</p>
                                         </div>
                                     </div>
-                                    <div className="card mb-5">
+                                    <div className="card ">
                                         <div className="card-header" data-toggle="collapse" data-target="#Note" aria-expanded="false">
                                             <div className="d-flex align-items-center">
                                                 <div className="mr-3 d-none">

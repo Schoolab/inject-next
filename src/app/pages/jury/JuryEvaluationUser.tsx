@@ -20,7 +20,7 @@ export const JuryEvaluationUser = () => {
                                 <div className="application-section">
                                     <h3>Criteria</h3>
                                     <p>Here are all the criteria that were selected for this jury session. Use them to evaluate the user and submit your evaluation.</p>
-                                    <div className="card p-5 d-flex mb-5">
+                                    <div className="card p-5 d-flex-">
                                         <div className="d-flex flex-column flex-sm-row align-items-center align-items-sm-start justify-content-sm-start">
                                             <div className="thumbnail-relation">
                                                 <div className="thumbnail is-oval is-2xl is-bordered mb-3">
@@ -51,7 +51,7 @@ export const JuryEvaluationUser = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card mb-5">
+                                    <div className="card">
                                         <div className="card-header" data-toggle="collapse" data-target="#delivrables" aria-expanded="false">
                                             <div className="d-flex align-items-center">
                                                 <div className="mr-3 d-none">
@@ -160,7 +160,7 @@ export const JuryEvaluationUser = () => {
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem entum felis diam eget massa.</p>
                                         </div>
                                     </div>
-                                    <div className="card mb-5">
+                                    <div className="card">
                                         <div className="card-header" data-toggle="collapse" data-target="#Note" aria-expanded="false">
                                             <div className="d-flex align-items-center">
                                                 <div className="mr-3 d-none">
