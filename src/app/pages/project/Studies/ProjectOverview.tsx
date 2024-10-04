@@ -541,38 +541,30 @@ export const ProjectOverview = () => {
                     <div className="col-12 col-lg-6 col-xl-4">
                         <div className="application-section">
                             <h3 className="application-section--title">Progression</h3>
-                            <div className="row">
-                                <div className=" col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
-                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row">
-                                        <div className="flex-fill text-center">
-                                            <p className="h1 ">
-                                                15<small className="text-muted"> %</small>
-                                            </p>
-                                            <small>Project progression</small>
-                                        </div>
-                                        <div className="flex-fill text-center">
-                                            <p className="h1">
-                                                160<small className="text-muted"> days</small>
-                                            </p>
-                                            <small>End of program</small>
-                                        </div>
-                                    </div>
+                            <div className="d-flex gap-xs flex-wrap align-items-stretch align-content-stretch">
+                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
+                                    <small className=" text-nowrap">Project progression</small>
+                                    <span className="h1 mb-0 text-nowrap ">
+                                        15<small className="text-muted"> %</small>
+                                    </span>
                                 </div>
-                                <div className="col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
-                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row ">
-                                        <div className="flex-fill text-center">
-                                            <p className="h1 ">
-                                                1<small className="text-muted"> /5</small>
-                                            </p>
-                                            <small>Objectives</small>
-                                        </div>
-                                        <div className="flex-fill text-center">
-                                            <p className="h1">
-                                                3<small className="text-muted"> /9</small>
-                                            </p>
-                                            <small>Tasks</small>
-                                        </div>
-                                    </div>
+                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
+                                    <small className="text-nowrap">End of program</small>
+                                    <span className="h1 mb-0 text-nowrap ">
+                                        160<small className="text-muted"> days</small>
+                                    </span>
+                                </div>
+                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
+                                    <small className="text-nowrap">Objectives</small>
+                                    <span className="h1 mb-0 text-nowrap ">
+                                        1<small className="text-muted"> /5</small>
+                                    </span>
+                                </div>
+                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
+                                    <small className="text-nowrap">Tasks</small>
+                                    <span className="h1 mb-0 text-nowrap ">
+                                        3<small className="text-muted"> /9</small>
+                                    </span>
                                 </div>
                             </div>
                         </div>

@@ -582,30 +582,23 @@ export const ExpertOverview = () => {
                     </div>
                     <div className="col-12 col-lg-6 col-xl-4">
                         <div className="application-section">
-                            <h3 className="application-section--title">Activities</h3>
-                            <div className="row">
-                                <div className="col-xl-6 col-lg-12 col-md-6 col-12 mb-3 d-flex align-items-stretch">
-                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row">
-                                        <div className="flex-fill text-center">
-                                            <p className="h1">
-                                                2<small className="text-muted"> sessions</small>
-                                            </p>
-                                            <small>Coaching</small>
-                                        </div>
-                                    </div>
+                            <h3 className="application-section--title">Progression</h3>
+                            <div className="d-flex gap-xs flex-wrap align-items-stretch align-content-stretch">
+                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
+                                    <small className=" text-nowrap">Coaching</small>
+                                    <span className="h1 mb-0 text-nowrap ">
+                                     2<small className="text-muted"> sessions</small>
+                                    </span>
                                 </div>
-                                <div className="col-xl-6 col-lg-12 col-md-6 col-12 mb-3 d-flex align-items-stretch">
-                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row">
-                                        <div className="flex-fill text-center">
-                                            <p className="h1">
-                                                1<small className="text-muted"> heure</small>
-                                            </p>
-                                            <small>Temps total</small>
-                                        </div>
-                                    </div>
+                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
+                                    <small className="text-nowrap">Total time</small>
+                                    <span className="h1 mb-0 text-nowrap ">
+                                        1<small className="text-muted"> hour</small>
+                                    </span>
                                 </div>
                             </div>
                         </div>
+                        
                         <div className="application-section">
                             <h3 className="application-section--title"> Expert learning </h3>
                             <div className="d-flex flex-column gap-xs">
