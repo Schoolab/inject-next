@@ -167,7 +167,7 @@ export const JuryOverview = () => {
                         </div>
                         <div className="application-section">
                             <h3 className="application-section--title">
-                                <span>Project newsfeed</span>
+                                <span>Juries newsfeed</span>
                             </h3>
                             <div id="challenge-blogposts-container">
                                 <a className="message mb-5 startMessageButton" href="/program/75/manage/updates/new-update">
