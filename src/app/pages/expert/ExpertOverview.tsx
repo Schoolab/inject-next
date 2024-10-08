@@ -10,6 +10,81 @@ export const ExpertOverview = () => {
                 <div className="row ">
                     <div className="col-12 col-lg-6 col-xl-8 ">
                         <div className="application-section">
+                            <div className="d-flex flex-column flex-xl-row align-items-center flex-wrap flex-xl-nowrap gap-md">
+                                <div className="d-flex flex-shrink-0" style={{ width: 144, height: 96 }}>
+                                    <div className="card-image bg-highlight">
+                                        <span className="icon icon-account-supervisor-circle is-40px position-absolute top-50 start-50 translate-middle"></span>
+                                    </div>
+                                </div>
+                                <div className="d-flex flex-column align-items-center align-items-xl-start gap-xs flex-fill">
+                                    <div className="d-flex flex-column align-items-center align-items-xl-start gap-0">
+                                        <div className="d-flex align-items-center gap-2xs">
+                                            <div className="h2 line-clamp-1 d-flex align-items-center gap-2xs">
+                                                <span>Welcome to the Expert space!</span>
+                                            </div>
+                                        </div>
+                                        <ul className="list-inline list-dotted">
+                                            <li
+                                                className="list-inline-item"
+                                                data-toggle="tooltip"
+                                                data-placement="bottom"
+                                                data-original-title="<ul class='list-unstyled d-flex flex-column gap-2xs m-none'><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/2216e7ab-c701-4503-83a2-ae7b91afb15d/sq150.jpeg'></div><span>Alexandra Jolly</span></li><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/3155b942-7535-4b0b-8ded-97eb42a92e1b/sq150.jpeg'></div><span>Emma Salvarelli</span></li>"
+                                                data-html="true"
+                                                data-boundary="window"
+                                            >
+                                                <ul className="metas is-list">
+                                                    <li>
+                                                        <div className="thumbnail-stack mr-2">
+                                                            <div className="thumbnail is-oval is-xs">
+                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
+                                                            </div>
+                                                            <div className="thumbnail is-oval is-xs">
+                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
+                                                            </div>
+                                                        </div>
+                                                        <a href="/program/71/project/2903/mentors">
+                                                            <small className="text-muted">2 Experts</small>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="d-flex gap-xs">
+                                    <div className="dropdown">
+                                        <a className="btn btn-transparent btn-lg btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span className="icon is-20px icon-options" />
+                                        </a>
+                                        <div className="dropdown-menu dropdown-menu-right">
+                                            <a className="dropdown-item" href="#">
+                                                <span>Setting 1</span>
+                                            </a>
+                                            <a className="dropdown-item" href="#">
+                                                <span>Setting 2</span>
+                                            </a>
+                                            <a className="dropdown-item" href="#">
+                                                <span>Setting 3</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="to-collapse is-collapsed d-block border-top mt-5 pt-5" data-toggle="collapse" data-target="#Aboutproject" aria-expanded="false">
+                                <div className="d-flex align-items-center flex-fill">
+                                    <div className="d-flex align-items-center gap-2xs flex-grow-1">
+                                        <span className="icon icon-clipboard-text is-sm" />
+                                        <span>Brief</span>
+                                    </div>
+                                    <span className="icon icon-chevron-right is-sm" />
+                                </div>
+                                <div className="collapse bg-highlight rounded-sm p-md mb-2xs mt-md" id="Aboutproject">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="application-section">
                             <div className="d-flex flex-lg-row flex-column align-items-start">
                                 <h3 className="application-section--title flex-fill"> Coaching sessions </h3>
                                 <Button size="sm" iconStartName="plus-circle" type="default" label="Add Session" />
@@ -271,7 +346,7 @@ export const ExpertOverview = () => {
                                 <span>Expert newsfeed</span>
                             </h3>
                             <div id="challenge-blogposts-container">
-                                <a className="message mb-5 startMessageButton" href="/program/75/manage/updates/new-update">
+                                <a className="message mb-3 startMessageButton" href="/program/75/manage/updates/new-update">
                                     <span className="thumbnail is-oval is-lg" data-toggle="tooltip" title="" data-original-title="John Doe">
                                         <div className="thumbnail is-oval">
                                             <span className="icon icon-account" />
@@ -504,8 +579,28 @@ export const ExpertOverview = () => {
                                 View all{" "}
                             </a>
                         </div>
+                    </div>
+                    <div className="col-12 col-lg-6 col-xl-4">
                         <div className="application-section">
-                            <h3 className="application-section--title"> Expert learning </h3>
+                            <h3 className="application-section--title">Progression</h3>
+                            <div className="d-flex gap-xs flex-wrap align-items-stretch align-content-stretch">
+                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
+                                    <small className=" text-nowrap">Coaching</small>
+                                    <span className="h1 mb-0 text-nowrap ">
+                                     2<small className="text-muted"> sessions</small>
+                                    </span>
+                                </div>
+                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
+                                    <small className="text-nowrap">Total time</small>
+                                    <span className="h1 mb-0 text-nowrap ">
+                                        1<small className="text-muted"> hour</small>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="application-section">
+                            <h3 className="application-section--title"> Ressources</h3>
                             <div className="d-flex flex-column gap-xs">
                                 <div className="item is-bordered resource">
                                     <div className="item-row p-sm">
@@ -586,40 +681,6 @@ export const ExpertOverview = () => {
                                     {" "}
                                     View all{" "}
                                 </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-12 col-lg-6 col-xl-4">
-                        <div className="application-section">
-                            <h3 className="application-section--title">Welcome to the Expert space!</h3>
-                            <p>The entire team is delighted to welcome you to this new edition of the Impact program.</p>
-                            <p>This innovation program would not be the same without your expertise and the quality of support that students are lucky to have at your side.On this platform, you will find a space for communication with your teams as well as the events and highlights of the program. </p>
-                            <p>You will also find a link to the Schoolab team and the necessary support.We are always looking for your feedback and comments to improve the experience and make your space on Inject even easier, more enjoyable and more optimal! </p>
-                            <p>Enjoy the program!</p>
-                        </div>
-                        <div className="application-section">
-                            <h4 className="application-section--title">Activities</h4>
-                            <div className="row">
-                                <div className="col-xl-6 col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
-                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row">
-                                        <div className="flex-fill text-center">
-                                            <p className="h1">
-                                                2<small className="text-muted"> sessions</small>
-                                            </p>
-                                            <small>Coaching</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-6 col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch">
-                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row">
-                                        <div className="flex-fill text-center">
-                                            <p className="h1">
-                                                1<small className="text-muted"> heure</small>
-                                            </p>
-                                            <small>Temps total</small>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

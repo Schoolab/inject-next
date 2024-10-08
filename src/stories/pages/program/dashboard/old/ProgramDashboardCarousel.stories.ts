@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ProgramDashboardCarousel } from '@/app/pages/program/dashboard/ProgramDashboardCarousel';
+import { ProgramDashboardCarousel } from '@/app/pages/program/dashboard/old/ProgramDashboardCarousel';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#Carousel-export
 const meta = {
-  title: 'Pages/Program/Dashboard/Carousel',
+  title: 'Pages/Program/Dashboard/Old/Carousel',
   component: ProgramDashboardCarousel,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout

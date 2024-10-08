@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout } from "../../../layouts/layout";
+import { Layout } from "../../../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { CardEvent } from "@/app/components/cards/CardEvent";
 import { Button } from "@/app/components/Button";

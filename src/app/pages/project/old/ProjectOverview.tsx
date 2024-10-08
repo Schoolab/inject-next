@@ -10,120 +10,6 @@ export const ProjectOverview = () => {
                 <div className="row">
                     <div className="col-12 col-lg-6 col-xl-8 ">
                         <div className="application-section">
-                            <div className="d-flex flex-column flex-xl-row align-items-center flex-wrap flex-xl-nowrap gap-md">
-                                <div className="d-flex flex-shrink-0" style={{ width: 144, height: 96 }}>
-                                    <div
-                                        className="card-image"
-                                        style={{
-                                            backgroundImage: 'url("img/hero-3.png")',
-                                            backgroundRepeat: "no-repeat",
-                                            backgroundPosition: "center",
-                                            backgroundSize: "cover",
-                                        }}
-                                    ></div>
-                                </div>
-                                <div className="d-flex flex-column align-items-center align-items-xl-start gap-xs flex-fill">
-                                    <div className="d-flex flex-column align-items-center align-items-xl-start gap-0">
-                                        <div className="d-flex align-items-center gap-2xs">
-                                            <div className="h2 line-clamp-1 d-flex align-items-center gap-2xs">
-                                                <span>Project Name</span>
-                                            </div>
-                                        </div>
-                                        <ul className="list-inline list-dotted">
-                                            <li className="list-inline-item" data-toggle="tooltip"
-                                                data-placement="bottom"
-                                                data-original-title="<ul class='list-unstyled d-flex flex-column gap-2xs m-none'><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/2216e7ab-c701-4503-83a2-ae7b91afb15d/sq150.jpeg'></div><span>Alexandra Jolly</span></li>"
-                                                data-html="true"
-                                                data-boundary="window">
-                                                <ul className="metas is-list">
-                                                    <li>
-                                                        <div className="thumbnail-stack mr-2">
-                                                            <div className="thumbnail is-oval is-xs">
-                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/ade60d22-593c-49cd-a53e-a89b8557a94f/sq150.jpeg" />
-                                                            </div>
-                                                        </div>
-                                                        <a href="/program/71/project/2903/users">
-                                                            <small className="text-muted">1 member</small>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li
-                                                className="list-inline-item"
-                                                data-toggle="tooltip"
-                                                data-placement="bottom"
-                                                data-original-title="<ul class='list-unstyled d-flex flex-column gap-2xs m-none'><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/2216e7ab-c701-4503-83a2-ae7b91afb15d/sq150.jpeg'></div><span>Alexandra Jolly</span></li><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/3155b942-7535-4b0b-8ded-97eb42a92e1b/sq150.jpeg'></div><span>Emma Salvarelli</span></li>"
-                                                data-html="true"
-                                                data-boundary="window"
-                                            >
-                                                <ul className="metas is-list">
-                                                    <li>
-                                                        <div className="thumbnail-stack mr-2">
-                                                            <div className="thumbnail is-oval is-xs">
-                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
-                                                            </div>
-                                                            <div className="thumbnail is-oval is-xs">
-                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
-                                                            </div>
-                                                        </div>
-                                                        <a href="/program/71/project/2903/mentors">
-                                                            <small className="text-muted">2 Experts</small>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="d-flex gap-xs">
-                                    <div className="dropdown">
-                                        <a className="btn btn-default btn-lg dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span>Chat &amp; Video</span>
-                                        </a>
-                                        <div className="dropdown-menu dropdown-menu-right">
-                                            <a className="dropdown-item" href="#">
-                                                <span className="icon icon-comment-text-multiple-outline" />
-                                                <span className="dropdown-item--label">Team Chat</span>
-                                            </a>
-                                            <a className="dropdown-item" href="#">
-                                                <span className="icon icon-video" />
-                                                <span className="dropdown-item--label">Team video</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="dropdown">
-                                        <a className="btn btn-transparent btn-lg btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span className="icon is-20px icon-options" />
-                                        </a>
-                                        <div className="dropdown-menu dropdown-menu-right">
-                                            <a className="dropdown-item" href="#">
-                                                <span>Setting 1</span>
-                                            </a>
-                                            <a className="dropdown-item" href="#">
-                                                <span>Setting 2</span>
-                                            </a>
-                                            <a className="dropdown-item" href="#">
-                                                <span>Setting 3</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="to-collapse is-collapsed d-block border-top mt-5 pt-5" data-toggle="collapse" data-target="#Aboutproject" aria-expanded="false">
-                                <div className="d-flex align-items-center flex-fill">
-                                    <div className="d-flex align-items-center gap-2xs flex-grow-1">
-                                        <span className="icon icon-clipboard-text is-sm" />
-                                        <span>About the project</span>
-                                    </div>
-                                    <span className="icon icon-chevron-right is-sm" />
-                                </div>
-                                <div className="collapse bg-highlight rounded-sm p-md mb-2xs mt-md" id="Aboutproject">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="application-section">
                             <div className="d-flex flex-lg-row flex-column align-items-start">
                                 <h3 className="application-section--title flex-fill"> Coaching sessions </h3>
                                 <Button size="sm" iconStartName="plus-circle" type="default" label="Add Session" />
@@ -537,187 +423,254 @@ export const ProjectOverview = () => {
                                 Show more
                             </a>
                         </div>
-                    </div>
-                    <div className="col-12 col-lg-6 col-xl-4">
-                        <div className="application-section">
-                            <h3 className="application-section--title">Progression</h3>
-                            <div className="d-flex gap-xs flex-wrap align-items-stretch align-content-stretch">
-                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
-                                    <small className=" text-nowrap">Project progression</small>
-                                    <span className="h1 mb-0 text-nowrap ">
-                                        15<small className="text-muted"> %</small>
-                                    </span>
-                                </div>
-                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
-                                    <small className="text-nowrap">End of program</small>
-                                    <span className="h1 mb-0 text-nowrap ">
-                                        160<small className="text-muted"> days</small>
-                                    </span>
-                                </div>
-                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
-                                    <small className="text-nowrap">Objectives</small>
-                                    <span className="h1 mb-0 text-nowrap ">
-                                        1<small className="text-muted"> /5</small>
-                                    </span>
-                                </div>
-                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
-                                    <small className="text-nowrap">Tasks</small>
-                                    <span className="h1 mb-0 text-nowrap ">
-                                        3<small className="text-muted"> /9</small>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="application-section">
-                            <h3 className="application-section--title"> Your project experts </h3>
-                            <p>Project experts are here to guide you during your project.</p>
-                            <div className="items">
-                                <div className="item is-bordered">
-                                    <div className="item-row">
-                                        <div className="item-row">
-                                            <a href="/user/u/0d3e2b04">
-                                                <div className="thumbnail is-oval " title="" data-toggle="tooltip" data-original-title="La piscine 2022 overview">
-                                                    <img src="https://inject-prod.s3.amazonaws.com/images/c5268f41-f646-4fe1-b783-315029757ad2/sq150.png" />
-                                                </div>
-                                            </a>
-                                            <div className="item-content ml-4 py-1">
-                                                <a href="/user/u/0d3e2b04" className="item-title h4 font-weight-normal mb-none stretched-link">
-                                                    Marine Martinez
-                                                </a>
-                                                <ul className="metas is-list ">
-                                                    <li> Startup Manager Schoolab </li>
-                                                    <li> Paris, FR </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="item-options dropdown">
-                                            <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span className="icon icon-options" />
-                                            </a>
-                                            <div className="dropdown-menu dropdown-menu-right">
-                                                <a className="dropdown-item" href="/user/u/0d3e2b04">
-                                                    Show profile
-                                                </a>
-                                                <a className="dropdown-item" data-toggle="modal" data-target="#modalOpenThread" data-user-id={320} href="#">
-                                                    Send a message
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item is-bordered">
-                                    <div className="item-row">
-                                        <div className="item-row">
-                                            <a href="/user/u/158c2ec5">
-                                                <div className="thumbnail is-oval " title="" data-toggle="tooltip" data-original-title="La piscine 2022 overview">
-                                                    <img src="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" />
-                                                </div>
-                                            </a>
-                                            <div className="item-content ml-4 py-1">
-                                                <a href="/user/u/158c2ec5" className="item-title h4 font-weight-normal mb-none stretched-link">
-                                                    Pierre Forestier
-                                                </a>
-                                                <ul className="metas is-list ">
-                                                    <li> Startup Manager Schoolab </li>
-                                                    <li> Paris, FR </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="item-options dropdown">
-                                            <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span className="icon icon-options" />
-                                            </a>
-                                            <div className="dropdown-menu dropdown-menu-right">
-                                                <a className="dropdown-item" href="/user/u/158c2ec5">
-                                                    Show profile
-                                                </a>
-                                                <a className="dropdown-item" data-toggle="modal" data-target="#modalOpenThread" data-user-id={1782} href="#">
-                                                    Send a message
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div className="application-section">
                             <h3 className="application-section--title"> Project files </h3>
-                            <div className="items">
-                                <div className="item is-bordered resource mb-3">
-                                    <div className="item-row">
-                                        <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
-                                            <div className="item-icon icon icon-file-pdf-box text-danger" />
-                                            <div className="item-content ml-3">
-                                                <a className="item-title h5 mb-none stretched-link" href="#">
-                                                    Lorem-ipsum_FR.pdf
-                                                </a>
-                                                <ul className="item-caption metas small is-list">
-                                                    <li>application/pdf</li>
-                                                    <li>
-                                                        <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="item-options">
-                                            <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
-                                                <span className="icon icon-cloud-download" />
+                            <div className="item is-bordered resource mb-3">
+                                <div className="item-row">
+                                    <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
+                                        <div className="item-icon icon icon-file-pdf-box text-danger" />
+                                        <div className="item-content ml-3">
+                                            <a className="item-title h5 mb-none stretched-link" href="#">
+                                                Lorem-ipsum_FR.pdf
                                             </a>
+                                            <ul className="item-caption metas small is-list">
+                                                <li>application/pdf</li>
+                                                <li>
+                                                    <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="item is-bordered resource mb-3">
-                                    <div className="item-row">
-                                        <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
-                                            <div className="item-icon icon icon-file-pdf-box text-danger" />
-                                            <div className="item-content ml-3">
-                                                <a className="item-title h5 mb-none stretched-link" href="#">
-                                                    Lorem-ipsum_FR.pdf
-                                                </a>
-                                                <ul className="item-caption metas small is-list">
-                                                    <li>application/pdf</li>
-                                                    <li>
-                                                        <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="item-options">
-                                            <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
-                                                <span className="icon icon-cloud-download" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item is-bordered resource mb-3">
-                                    <div className="item-row">
-                                        <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
-                                            <div className="item-icon icon icon-file-pdf-box text-danger" />
-                                            <div className="item-content ml-3">
-                                                <a className="item-title h5 mb-none stretched-link" href="#">
-                                                    Lorem-ipsum_FR.pdf
-                                                </a>
-                                                <ul className="item-caption metas small is-list">
-                                                    <li>application/pdf</li>
-                                                    <li>
-                                                        <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="item-options">
-                                            <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
-                                                <span className="icon icon-cloud-download" />
-                                            </a>
-                                        </div>
+                                    <div className="item-options">
+                                        <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
+                                            <span className="icon icon-cloud-download" />
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-
+                            <div className="item is-bordered resource mb-3">
+                                <div className="item-row">
+                                    <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
+                                        <div className="item-icon icon icon-file-pdf-box text-danger" />
+                                        <div className="item-content ml-3">
+                                            <a className="item-title h5 mb-none stretched-link" href="#">
+                                                Lorem-ipsum_FR.pdf
+                                            </a>
+                                            <ul className="item-caption metas small is-list">
+                                                <li>application/pdf</li>
+                                                <li>
+                                                    <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="item-options">
+                                        <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
+                                            <span className="icon icon-cloud-download" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="item is-bordered resource mb-3">
+                                <div className="item-row">
+                                    <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
+                                        <div className="item-icon icon icon-file-pdf-box text-danger" />
+                                        <div className="item-content ml-3">
+                                            <a className="item-title h5 mb-none stretched-link" href="#">
+                                                Lorem-ipsum_FR.pdf
+                                            </a>
+                                            <ul className="item-caption metas small is-list">
+                                                <li>application/pdf</li>
+                                                <li>
+                                                    <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="item-options">
+                                        <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
+                                            <span className="icon icon-cloud-download" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                             <a className="btn btn-lg btn-block btn-default" href="#">
                                 {" "}
                                 View all 5 shared files{" "}
                             </a>
+                        </div>
+                    </div>
+                    <div className="col-12 col-lg-6 col-xl-4">
+                        <div className="application-section">
+                            <div
+                                className="cover-container rounded mb-5"
+                                style={{
+                                    backgroundImage: 'url("img/hero-3.png")',
+                                    backgroundRepeat: "no-repeat",
+                                    backgroundPosition: "center",
+                                    backgroundSize: "cover",
+                                }}
+                            />
+                            <div className="h3 m-none mb-5">Welcome to My-project overview </div>
+                            <div className="m-none mb-5">At lacus vitae nulla sagittis scelerisque nisl. Pellentesque duis cursus vestibulum, facilisi ac, sed faucibus.</div>
+                            <ul className="list-inline list-dotted">
+                                <li className="list-inline-item">
+                                    <ul className="metas is-list">
+                                        <li>
+                                            <div className="thumbnail-stack mr-2">
+                                                <div className="thumbnail is-oval is-xs">
+                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/ade60d22-593c-49cd-a53e-a89b8557a94f/sq150.jpeg" />
+                                                </div>
+                                            </div>
+                                            <a href="/program/71/project/2903/users">
+                                                <small className="text-muted">1 member</small>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li className="list-inline-item">
+                                    <ul className="metas is-list">
+                                        <li>
+                                            <div className="thumbnail-stack mr-2">
+                                                <div className="thumbnail is-oval is-xs">
+                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
+                                                </div>
+                                                <div className="thumbnail is-oval is-xs">
+                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
+                                                </div>
+                                            </div>
+                                            <a href="/program/71/project/2903/mentors">
+                                                <small className="text-muted">2 Experts</small>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <button className="btn btn-default btn-lg btn-block btn-icon text-decoration-none" role="button">
+                                <span className="icon icon-settings" />
+                                <span>Settings</span>
+                            </button>
+                            <button className="btn btn-default btn-lg btn-block dropdown-toggle d-none d-lg-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Chat &amp; Video</span>
+                            </button>
+                            <div className="dropdown-menu">
+                                <a className="dropdown-item text-decoration-none" href="#" target="_blank">
+                                    <span className="icon icon-comment-text-multiple-outline mr-3" />
+                                    <span>Team Chat</span>
+                                </a>
+                                <a className="dropdown-item text-decoration-none" href="#" target="_blank">
+                                    <span className="icon icon-video mr-3" />
+                                    <span>Team video</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div className="application-section">
+                            <h3 className="application-section--title"> Your project experts </h3>
+                            <p>Project experts are here to guide you during your project.</p>
+                            <div className="item is-bordered">
+                                <div className="item-row">
+                                    <div className="item-row">
+                                        <a href="/user/u/0d3e2b04">
+                                            <div className="thumbnail is-oval " title="" data-toggle="tooltip" data-original-title="La piscine 2022 overview">
+                                                <img src="https://inject-prod.s3.amazonaws.com/images/c5268f41-f646-4fe1-b783-315029757ad2/sq150.png" />
+                                            </div>
+                                        </a>
+                                        <div className="item-content ml-4 py-1">
+                                            <a href="/user/u/0d3e2b04" className="item-title h4 font-weight-normal mb-none stretched-link">
+                                                Marine Martinez
+                                            </a>
+                                            <ul className="metas is-list ">
+                                                <li> Startup Manager Schoolab </li>
+                                                <li> Paris, FR </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="item-options dropdown">
+                                        <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span className="icon icon-options" />
+                                        </a>
+                                        <div className="dropdown-menu dropdown-menu-right">
+                                            <a className="dropdown-item" href="/user/u/0d3e2b04">
+                                                Show profile
+                                            </a>
+                                            <a className="dropdown-item" data-toggle="modal" data-target="#modalOpenThread" data-user-id={320} href="#">
+                                                Send a message
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="item is-bordered">
+                                <div className="item-row">
+                                    <div className="item-row">
+                                        <a href="/user/u/158c2ec5">
+                                            <div className="thumbnail is-oval " title="" data-toggle="tooltip" data-original-title="La piscine 2022 overview">
+                                                <img src="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" />
+                                            </div>
+                                        </a>
+                                        <div className="item-content ml-4 py-1">
+                                            <a href="/user/u/158c2ec5" className="item-title h4 font-weight-normal mb-none stretched-link">
+                                                Pierre Forestier
+                                            </a>
+                                            <ul className="metas is-list ">
+                                                <li> Startup Manager Schoolab </li>
+                                                <li> Paris, FR </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="item-options dropdown">
+                                        <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span className="icon icon-options" />
+                                        </a>
+                                        <div className="dropdown-menu dropdown-menu-right">
+                                            <a className="dropdown-item" href="/user/u/158c2ec5">
+                                                Show profile
+                                            </a>
+                                            <a className="dropdown-item" data-toggle="modal" data-target="#modalOpenThread" data-user-id={1782} href="#">
+                                                Send a message
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="application-section">
+                            <h3 className="application-section--title">Progression</h3>
+                            <div className="row">
+                                <div className=" col-lg-12 col-md-6 col-12 mb-3 d-flex align-items-stretch">
+                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row">
+                                        <div className="flex-fill text-center">
+                                            <p className="h1 ">
+                                                15<small className="text-muted"> %</small>
+                                            </p>
+                                            <small>Project progression</small>
+                                        </div>
+                                        <div className="flex-fill text-center">
+                                            <p className="h1">
+                                                160<small className="text-muted"> days</small>
+                                            </p>
+                                            <small>End of program</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-12 col-md-6 col-12 mb-3 d-flex align-items-stretch">
+                                    <div className="bg-light rounded m-0 p-7 flex-fill d-flex flex-row ">
+                                        <div className="flex-fill text-center">
+                                            <p className="h1 ">
+                                                1<small className="text-muted"> /5</small>
+                                            </p>
+                                            <small>Objectives</small>
+                                        </div>
+                                        <div className="flex-fill text-center">
+                                            <p className="h1">
+                                                3<small className="text-muted"> /9</small>
+                                            </p>
+                                            <small>Tasks</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
