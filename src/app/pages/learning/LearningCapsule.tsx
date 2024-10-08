@@ -535,12 +535,16 @@ export const LearningCapsule = () => {
                                             Capsules
                                         </button>
                                         <button id="btn-quiz" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
-                                            <span className="icon icon-questionnaire mr-2" />
+                                            <span className="icon icon-clipboard-text mr-2" />
                                             Take a quiz
                                         </button>
                                         <button id="btn-quiz" className="btn btn-default btn-lg mr-lg-3 mb-3 mr-0">
-                                            <span className="icon icon-votes  mr-2" />
+                                            <span className="icon icon-thumbs-up-down  mr-2" />
                                             Give a feedback
+                                        </button>
+                                        <button id="btn-quiz" className="btn btn-default btn-lg mr-lg-3 mb-3 mr-0">
+                                            <span className="icon icon-cloud-download  mr-2" />
+                                            Ressources
                                         </button>
                                     </div>
                                     <div className="d-flex flex-column flex-lg-row justify-content-between">
@@ -572,10 +576,13 @@ export const LearningCapsule = () => {
                             <span className="icon icon-format-list-bulleted" />
                         </button>
                         <button className="btn  btn-lg btn-default mb-3" data-toggle="tooltip" data-original-title="Take a quiz">
-                            <span className="icon icon-questionnaire" />
+                            <span className="icon icon-clipboard-text" />
                         </button>
-                        <button className="btn btn-lg btn-default" data-toggle="tooltip" data-original-title="Give feedback">
-                            <span className="icon icon-votes" />
+                        <button className="btn btn-lg btn-default mb-3" data-toggle="tooltip" data-original-title="Give feedback">
+                            <span className="icon icon-thumbs-up-down" />
+                        </button>
+                        <button className="btn  btn-lg btn-default" data-toggle="tooltip" data-original-title="Resources">
+                            <span className="icon icon-cloud-download" />
                         </button>
                     </div>
                 </div>
