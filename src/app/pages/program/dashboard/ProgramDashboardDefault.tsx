@@ -403,7 +403,7 @@ export const ProgramDashboardDefault = () => {
                                                 </text>
                                             </svg>
                                         </div>
-                                        <a className="btn btn-sm btn-block btn-default stretched-link" href="#">
+                                        <a className="btn btn-block btn-default stretched-link" href="#">
                                             {" "}
                                             View lessons{" "}
                                         </a>
@@ -424,7 +424,7 @@ export const ProgramDashboardDefault = () => {
                                                 </text>
                                             </svg>
                                         </div>
-                                        <a className="btn btn-sm btn-block btn-default stretched-link" href="#">
+                                        <a className="btn btn-block btn-default stretched-link" href="#">
                                             {" "}
                                             View objectives{" "}
                                         </a>
