@@ -449,7 +449,7 @@ export const ProgramDashboardDefault = () => {
                                         <div className="item-row">
                                             <a href="/user/u/0d3e2b04">
                                                 <div className="thumbnail is-oval " title="" data-toggle="tooltip" data-original-title="La piscine 2022 overview">
-                                                    <img src="https://inject-prod.s3.amazonaws.com/images/c5268f41-f646-4fe1-b783-315029757ad2/sq150.png" />
+                                                    <img src="https://inject-prod.s3.amazonaws.com/images/78d42906-72f6-4820-86b8-892d1cd377ce/sq150.png" />
                                                 </div>
                                             </a>
                                             <div className="item-content ml-4 py-1">
