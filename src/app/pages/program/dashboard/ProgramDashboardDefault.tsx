@@ -126,7 +126,6 @@ export const ProgramDashboardDefault = () => {
                                         </div>
                                     </div>
                                 </div>
-                                
                             </div>
                             <div className="to-collapse is-collapsed d-block border-top mt-5 pt-5" data-toggle="collapse" data-target="#Aboutprogram" aria-expanded="false">
                                 <div className="d-flex align-items-center flex-fill">
@@ -159,7 +158,7 @@ export const ProgramDashboardDefault = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>               
+                        </div>
                         <div className="application-section">
                             <h3 className="application-section--title"> Newsfeed</h3>
                             <div id="challenge-blogposts-container">
@@ -386,7 +385,54 @@ export const ProgramDashboardDefault = () => {
                         </div>
                     </div>
                     <div className="col-12 col-lg-6 col-xl-4">
-                        
+                        <div className="application-section">
+                            <h3 className="application-section--title">Progression</h3>
+                            <div className="d-flex gap-xs flex-wrap align-items-stretch align-content-stretch ">
+                                <div className="item is-bordered m-none d-flex position-relative flex-fill-0">
+                                    <div className="item-row flex-column align-items-center justify-content-between">
+                                        <p className="h5 text-center mb-5">Learning</p>
+                                        <div className="mb-5 d-flex flex-column align-items-center">
+                                            <svg className="progress-circle-container is-xl mb-3" viewBox="0 0 32 32" data-percent={20} style={{ ["--percent" as any]: 20 }}>
+                                                <circle className="progress-circle progress-circle-bg" />
+                                                <circle className="progress-circle progress-circle-percent" />
+                                                <text className="progress-circle-text" x={16} y={15}>
+                                                    1/5
+                                                </text>
+                                                <text className="progress-circle-subtext" x={16} y={20}>
+                                                    Lessons
+                                                </text>
+                                            </svg>
+                                        </div>
+                                        <a className="btn btn-sm btn-block btn-default stretched-link" href="#">
+                                            {" "}
+                                            View lessons{" "}
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="item is-bordered m-none d-flex position-relative flex-fill-0">
+                                    <div className="item-row flex-column align-items-center justify-content-between">
+                                        <p className="h5 text-center mb-5">Objectives</p>
+                                        <div className="mb-5 d-flex flex-column align-items-center">
+                                            <svg className="progress-circle-container is-xl mb-3" viewBox="0 0 32 32" data-percent={33} style={{ ["--percent" as any]: 33 }}>
+                                                <circle className="progress-circle progress-circle-bg" />
+                                                <circle className="progress-circle progress-circle-percent" />
+                                                <text className="progress-circle-text" x={16} y={15}>
+                                                    2/6
+                                                </text>
+                                                <text className="progress-circle-subtext" x={16} y={20}>
+                                                    Objectives
+                                                </text>
+                                            </svg>
+                                        </div>
+                                        <a className="btn btn-sm btn-block btn-default stretched-link" href="#">
+                                            {" "}
+                                            View objectives{" "}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="application-section d-flex flex-column gap-xs">
                             <h3 className="application-section--title"> Upcoming events </h3>
                             <CardEvent title="event.name" start={{ day: "8", month: "June", startTime: "10am", endTime: "11am" }} img="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg" location="InPerson" />
@@ -583,7 +629,6 @@ export const ProgramDashboardDefault = () => {
                             </a>
                         </div>
 
-                       
                         {/* <div className="application-section">
                             <div className="mb-7">
                                 <div className="d-flex align-items-center mb-7">
