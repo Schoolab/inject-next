@@ -30,8 +30,8 @@ export const ModalProject = ({}: ModalProjectProps) => {
                         </div>
                     </div>
                     <div className="modal-body d-flex flex-column gap-md">
-                        <div className="d-flex flex-column flex-md-row align-items-center flex-wrap flex-md-nowrap gap-md">
-                            <div className="d-flex flex-shrink-0" style={{ width: 144, height: 96 }}>
+                        <div className="d-flex flex-column flex-lg-row align-items-center flex-wrap flex-lg-nowrap gap-md">
+                            <div className="card-image-container" >
                                 {/* <div class="card-image">
                               <picture>
                                   <img src="https://inject-prod.s3.amazonaws.com/challenge/cover/pink_co900x600.png" alt="">
@@ -43,8 +43,8 @@ export const ModalProject = ({}: ModalProjectProps) => {
                                     </span>
                                 </div>
                             </div>
-                            <div className="d-flex flex-column align-items-center align-items-md-start gap-xs flex-fill">
-                                <div className="d-flex flex-column align-items-center align-items-md-start gap-0">
+                            <div className="d-flex flex-column align-items-center align-items-lg-start gap-xs flex-fill">
+                                <div className="d-flex flex-column align-items-center align-items-lg-start gap-0">
                                     <div className="d-flex align-items-center gap-2xs">
                                         {/* <span class="icon icon-pin is-24px z-2" data-toggle="tooltip" data-placement="top" data-original-title="Pinned projects are visible on the organization Hub" data-boundary="window"></span> */}
                                         <a href="#" className="h3 line-clamp-1 d-flex align-items-center gap-2xs">
