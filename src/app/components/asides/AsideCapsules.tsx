@@ -67,7 +67,7 @@ export const AsideCapsules = ({}: AsideCapsulesProps) => {
                                         <div className="form-row">
                                             <div className="col-auto">
                                                 <div className="d-flex px-1 mx-3">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={99} style={{ ["--percent" as any]: 99 }}>
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={50} style={{ ["--percent" as any]: 50 }}>
                                                         <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
@@ -85,7 +85,7 @@ export const AsideCapsules = ({}: AsideCapsulesProps) => {
                                         <div className="form-row">
                                             <div className="col-auto">
                                                 <div className="d-flex px-1 mx-3">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={99} style={{ ["--percent" as any]: 99 }}>
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
                                                         <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
@@ -103,7 +103,7 @@ export const AsideCapsules = ({}: AsideCapsulesProps) => {
                                         <div className="form-row">
                                             <div className="col-auto">
                                                 <div className="d-flex px-1 mx-3">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={99} style={{ ["--percent" as any]: 99 }}>
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
                                                         <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
@@ -121,7 +121,7 @@ export const AsideCapsules = ({}: AsideCapsulesProps) => {
                                         <div className="form-row">
                                             <div className="col-auto">
                                                 <div className="d-flex px-1 mx-3">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={99} style={{ ["--percent" as any]: 99 }}>
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
                                                         <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
@@ -139,7 +139,7 @@ export const AsideCapsules = ({}: AsideCapsulesProps) => {
                                         <div className="form-row">
                                             <div className="col-auto">
                                                 <div className="d-flex px-1 mx-3">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={99} style={{ ["--percent" as any]: 99 }}>
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
                                                         <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
@@ -157,7 +157,7 @@ export const AsideCapsules = ({}: AsideCapsulesProps) => {
                                         <div className="form-row">
                                             <div className="col-auto">
                                                 <div className="d-flex px-1 mx-3">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={99} style={{ ["--percent" as any]: 99 }}>
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
                                                         <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
@@ -175,7 +175,7 @@ export const AsideCapsules = ({}: AsideCapsulesProps) => {
                                         <div className="form-row">
                                             <div className="col-auto">
                                                 <div className="d-flex px-1 mx-3">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={99} style={{ ["--percent" as any]: 99 }}>
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
                                                         <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
