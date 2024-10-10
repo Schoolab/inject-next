@@ -10,14 +10,14 @@ export const JuryOverview = () => {
                 <div className="row">
                     <div className="col-12 col-lg-6 col-xl-8">
                         <div className="application-section">
-                            <div className="d-flex flex-column flex-xl-row align-items-center flex-wrap flex-xl-nowrap gap-md">
-                                <div className="d-flex flex-shrink-0" style={{ width: 144, height: 96 }}>
+                            <div className="d-flex flex-column flex-md-row flex-lg-column flex-xl-row align-items-center flex-wrap flex-xl-nowrap gap-md">
+                                <div className="card-image-container">
                                     <div className="card-image bg-highlight">
                                         <span className="icon icon-gavel is-40px position-absolute top-50 start-50 translate-middle"></span>
                                     </div>
                                 </div>
-                                <div className="d-flex flex-column align-items-center align-items-xl-start gap-xs flex-fill">
-                                    <div className="d-flex flex-column align-items-center align-items-xl-start gap-0">
+                                <div className="d-flex flex-column align-items-center align-items-md-start align-items-lg-center align-items-xl-start gap-xs flex-fill">
+                                    <div className="d-flex flex-column align-items-center align-items-md-start align-items-lg-center align-items-xl-start gap-0">
                                         <div className="d-flex align-items-center gap-2xs">
                                             <div className="h2 line-clamp-1 d-flex align-items-center gap-2xs">
                                                 <span>Welcome to the Juries space!</span>
