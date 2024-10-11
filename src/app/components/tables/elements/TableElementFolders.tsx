@@ -5,7 +5,7 @@ export const TableElementFolders = ({}: TableElementFoldersProps) => {
     return (
         <div id="tables-folders" className="grid row-gap-md pb-16px border-bottom">
             <div className="g-col-12 g-col-sm-6 g-col-lg-3">
-                <div className="item is-bordered active">
+                <div className="item is-bordered h-100 active">
                     <div className="item-row gap-sm">
                         <span className="icon icon-folder is-sm text-muted" />
                         <div className="item-content">
@@ -31,7 +31,7 @@ export const TableElementFolders = ({}: TableElementFoldersProps) => {
                 </div>
             </div>
             <div className="g-col-12 g-col-sm-6 g-col-lg-3">
-                <div className="item is-bordered ">
+                <div className="item is-bordered h-100 ">
                     <div className="item-row gap-sm">
                         <span className="icon icon-folder is-sm text-muted" />
                         <div className="item-content">
@@ -57,7 +57,7 @@ export const TableElementFolders = ({}: TableElementFoldersProps) => {
                 </div>
             </div>
             <div className="g-col-12 g-col-sm-6 g-col-lg-3">
-                <div className="item is-bordered ">
+                <div className="item is-bordered h-100 ">
                     <div className="item-row gap-sm">
                         <span className="icon icon-folder is-sm text-muted" />
                         <div className="item-content">
@@ -83,7 +83,7 @@ export const TableElementFolders = ({}: TableElementFoldersProps) => {
                 </div>
             </div>
             <div className="g-col-12 g-col-sm-6 g-col-lg-3">
-                <div className="item is-bordered ">
+                <div className="item is-bordered h-100 ">
                     <div className="item-row gap-sm">
                         <span className="icon icon-folder is-sm text-muted" />
                         <div className="item-content">
