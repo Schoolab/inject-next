@@ -10,10 +10,12 @@ interface AppContentProps {
     children?: ReactNode;
     showSubnav?: boolean;
     isAsside?: boolean;
+    showBreadcrumb?: boolean;
+    showTitle?: boolean;
     layout?: "centered" | "fluid" | "narrow";
     sections?: "cards" | "bordered" | "transparent" | "separated";
 }
-export const AppContent = ({ children,   showSubnav = true,  isAsside, layout = "centered", sections = "cards" }: AppContentProps) => {
+export const AppContent = ({ children,   showSubnav = true,  isAsside, layout = "centered", sections = "cards", showBreadcrumb = true, showTitle = true }: AppContentProps) => {
 
     let appMainContainerClass = "application-main-content container-lg container-lg-fluid p-xl";
     isAsside && (appMainContainerClass = "application-main-content container-fluid p-xl");
@@ -27,8 +29,11 @@ export const AppContent = ({ children,   showSubnav = true,  isAsside, layout = 
 
     return (
         <main className={appContentClass} >
-            <Breadcrumb />
-            {!showSubnav ? <Title addClass="border-bottom" /> : <Title />}
+            {showBreadcrumb && <Breadcrumb />}
+            {showTitle && 
+                (!showSubnav ? <Title addClass="border-bottom" /> : <Title />)
+            }
+            
             {showSubnav && <SubNav />}
             <div id="appMainContainer" className={appMainContainerClass}>
                 {children}

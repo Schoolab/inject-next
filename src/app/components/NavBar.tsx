@@ -77,6 +77,9 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                                     </div>
                                     {isLogged ? (
                                         <div className="d-flex gap-xs align-items-center">
+                                            <div className="navbar-option">
+                                                <Button label="My space" type="default" isActive={false} addClass="navbar-main-btn" />
+                                            </div>
                                             <div className="navbar-option d-none d-lg-flex">
                                                 <a className="navbar-option--link" href="#">
                                                     <span
@@ -171,12 +174,17 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                                     </div>
                                     <div className="nav-item">
                                         <a className="nav-link" href="#">
-                                            Toolbox
+                                            Programs
                                         </a>
                                     </div>
                                     <div className="nav-item">
                                         <a className="nav-link" href="#">
-                                            Portfolio
+                                            Projects
+                                        </a>
+                                    </div>
+                                    <div className="nav-item">
+                                        <a className="nav-link" href="#">
+                                            Community
                                         </a>
                                     </div>
                                     <div className="nav-item">
@@ -189,6 +197,11 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                                             Newsfeed
                                         </a>
                                     </div>
+                                    <div className="nav-item">
+                                        <a className="nav-link" href="#">
+                                            Faq
+                                        </a>
+                                    </div>
                                     <div className="nav-divider" />
                                     <div className="nav-item">
                                         <a className="nav-link" href="#">
@@ -196,6 +209,11 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                                         </a>
                                     </div>
                                     <div className="nav-divider" />
+                                    <div className="nav-item">
+                                        <a className="nav-link" href="#">
+                                            My space
+                                        </a>
+                                    </div>
                                     <div className="nav-item">
                                         <a className="nav-link" href="#">
                                             Profile

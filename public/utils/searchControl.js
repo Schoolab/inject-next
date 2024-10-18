@@ -11,21 +11,19 @@ export const searchControl = () => {
 
             elements.each(function (index) {
                 if ($(this).find("label").text().toUpperCase().indexOf(filter) > -1) {
-                    $(this).css("display", "");
+                    $(this).removeClass("d-none")
                 } else {
-                    $(this).css("display", "none");
+                    $(this).addClass("d-none")
                 }
             });
         });
         $(".checkControl").on("click", function () {
-            $(this).parents(".dropdown-menu").find(".searchControl").val('');
             $(this).parents(".dropdown-menu").find(".searchControl").trigger('change');
-            $(this).parents(".dropdown-menu").find("[type=checkbox]").prop( "checked", true );
+            $(this).parents(".dropdown-menu").find(".custom-control").not(".d-none").find("[type=checkbox]").prop( "checked", true );
         });
         $(".uncheckControl").on("click", function () {
-            $(this).parents(".dropdown-menu").find(".searchControl").val('');
             $(this).parents(".dropdown-menu").find(".searchControl").trigger('change');
-            $(this).parents(".dropdown-menu").find("[type=checkbox]").prop( "checked", false );
+            $(this).parents(".dropdown-menu").find(".custom-control").not(".d-none").find("[type=checkbox]").prop( "checked", false );
         });
 
     });

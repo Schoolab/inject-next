@@ -1045,7 +1045,7 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                     <div className="dropdown dataFitlersControl mr-lg-3 mr-0 mb-5 mb-lg-0" data-save-to-close="true">
                         <a className="btn btn-lg btn-muted" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
                             <span className="icon icon-plus-circle" />
-                            <span>Add filter</span>
+                            <span>Filter</span>
                         </a>
                         <div className="dropdown-menu gap-xs">
                             <form className="d-flex flex-column gap-md px-16px">
@@ -1061,14 +1061,14 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             </form>
                             <div className="d-flex flex-column dataFitlersControlRemove px-16px"></div>
 
-                            <div className="d-flex gap-xs justify-content-end px-16px ">
+                            {/* <div className="d-flex gap-xs justify-content-end px-16px ">
                                 <button className="btn btn-lg btn-default dataFitlersControlCancel">
                                     Cancel
                                 </button>
                                 <button type="submit" className="btn btn-lg btn-primary dataFitlersControlApply">
                                     Apply
                                 </button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

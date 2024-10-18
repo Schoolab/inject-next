@@ -1,54 +1,50 @@
 import React from "react";
-import { Layout } from "../../layouts/layout";
+import { Layout } from "../../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Button } from "@/app/components/Button";
+import { CardEvent } from "@/app/components/cards/CardEvent";
+import { FiltersHub } from "@/app/components/filters/FiltersHub";
 
-export const ExpertOverview = () => {
+export const programHubMySpace = () => {
     return (
-        <Layout shortcutBarExpanded={true}>
-            <AppContent>
+        <Layout shortcutBarExpanded={false} showShortcutbar={false}>
+            <AppContent showSubnav={false} showTitle={false} showBreadcrumb={false} sections="cards">
                 <div className="row ">
                     <div className="col-12 col-lg-6 col-xl-8 ">
-                        <div className="application-section">
+                        {/* <div className="application-section">
                             <div className="d-flex flex-column flex-xl-row align-items-center flex-wrap flex-xl-nowrap gap-md">
                                 <div className="card-image-container">
                                     <div className="card-image bg-highlight">
-                                        <span className="icon icon-account-supervisor-circle is-40px position-absolute top-50 start-50 translate-middle"></span>
+                                        <div className="thumbnail is-oval is-bordered  is-40px position-absolute top-50 start-50 translate-middle">
+                                            <img src="img/thumbnails/john-doe.webp" />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="d-flex flex-column align-items-center align-items-xl-start gap-xs flex-fill">
                                     <div className="d-flex flex-column align-items-center align-items-xl-start gap-0">
                                         <div className="d-flex align-items-center gap-2xs">
                                             <div className="h2 line-clamp-1 d-flex align-items-center gap-2xs">
-                                                <span>Welcome to the Expert space!</span>
+                                                <span>Welcome to your space!</span>
                                             </div>
                                         </div>
-                                        <ul className="list-inline list-dotted">
-                                            <li
-                                                className="list-inline-item"
-                                                data-toggle="tooltip"
-                                                data-placement="bottom"
-                                                data-original-title="<ul class='list-unstyled d-flex flex-column gap-2xs m-none'><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/2216e7ab-c701-4503-83a2-ae7b91afb15d/sq150.jpeg'></div><span>Alexandra Jolly</span></li><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/3155b942-7535-4b0b-8ded-97eb42a92e1b/sq150.jpeg'></div><span>Emma Salvarelli</span></li>"
-                                                data-html="true"
-                                                data-boundary="window"
-                                            >
-                                                <ul className="metas is-list">
-                                                    <li>
-                                                        <div className="thumbnail-stack mr-2">
-                                                            <div className="thumbnail is-oval is-xs">
-                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
-                                                            </div>
-                                                            <div className="thumbnail is-oval is-xs">
-                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
-                                                            </div>
-                                                        </div>
-                                                        <a href="/program/71/project/2903/mentors">
-                                                            <small className="text-muted">2 Experts</small>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                        <div className="badges small">
+                                            <a href="#" className="badge is-pill">
+                                                <span className="icon icon-program" />
+                                                <span>Programs (3)</span>
+                                            </a>
+                                            <a href="#" className="badge is-pill">
+                                                <span className="icon icon-project" />
+                                                <span>Projects (3)</span>
+                                            </a>
+                                            <a href="#" className="badge is-pill">
+                                                <span className="icon icon-coaching" />
+                                                <span>Coaching (5)</span>
+                                            </a>
+                                            <a href="#" className="badge is-pill">
+                                                <span className="icon icon-gavel" />
+                                                <span>Evaluations (10)</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="d-flex gap-xs">
@@ -70,17 +66,285 @@ export const ExpertOverview = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="to-collapse is-collapsed d-block border-top mt-5 pt-5" data-toggle="collapse" data-target="#Aboutproject" aria-expanded="false">
-                                <div className="d-flex align-items-center flex-fill">
-                                    <div className="d-flex align-items-center gap-2xs flex-grow-1">
-                                        <span className="icon icon-clipboard-text is-sm" />
-                                        <span>Brief</span>
-                                    </div>
-                                    <span className="icon icon-chevron-right is-sm" />
+                        </div> */}
+                        <div className="application-section">
+                            <h3 className="application-section--title">
+                                <span>Programs (3)</span>
+                            </h3>
+                            <div className="items row card-row">
+                                <div className="col-12 d-flex flex-column  gap-md">
+                                    <FiltersHub />
                                 </div>
-                                <div className="collapse bg-highlight rounded-sm p-md mb-2xs mt-md" id="Aboutproject">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
+
+                                <div className="col-12 col-md-6">
+                                    <div className="card h-100">
+                                        <div className="card-infos is-linked">
+                                            <div className="card-banner">
+                                                <div className="card-image">
+                                                    <picture>
+                                                        <img src="https://inject-prod.s3.amazonaws.com/challenge/cover/pink_co900x600.png" alt="" />
+                                                    </picture>
+                                                </div>
+                                                <div className="card-external">
+                                                    <div className="small">External: </div>
+                                                    <div className="small font-weight-bold text-truncate mx-2">
+                                                        {"{"}
+                                                        {"{"}Organization name {"}"}
+                                                        {"}"}
+                                                    </div>
+                                                    <div className="small icon icon-new-tab" />
+                                                </div>
+                                            </div>
+                                            <div className="card-title">
+                                                <a href="/program/142/details" className="h3 mb-none stretched-link line-clamp-1">
+                                                    {" "}
+                                                    {"{"}
+                                                    {"{"}Program name{"}"}
+                                                    {"}"}
+                                                </a>
+                                            </div>
+                                            <div className="d-flex justify-content-between align-items-center flex-wrap row-gap-2xs">
+                                                <div className="d-flex align-items-center flex-wrap">
+                                                    <div className="badges mr-3">
+                                                        <div className="badge is-pill">Food</div>
+                                                        <a className="badge is-pill" href="#">
+                                                            Plastic
+                                                        </a>
+                                                        <a className="badge is-pill" href="#">
+                                                            DEI
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div className="badges">
+                                                    <div className="badge is-pill is-open">
+                                                        <span className="icon icon-status-filled"></span>
+                                                        <span>Open</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-targets">
+                                            <div className="card-target">
+                                                <a href="#" className="stretched-link d-flex align-items-center">
+                                                    <span className="icon icon-information is-sm mr-2" />
+                                                    Public page{" "}
+                                                </a>
+                                                <span className="icon icon-chevron-right is-sm" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-md-6">
+                                    <div className="card h-100">
+                                        <div className="card-infos is-linked">
+                                            <div className="card-banner">
+                                                <div className="card-image">
+                                                    <picture>
+                                                        <img src="https://inject-prod.s3.amazonaws.com/images/f5e0a581-76e3-413a-a462-88dc98361172/co1800x1200.png" alt="" />
+                                                    </picture>
+                                                </div>
+                                                <div className="card-external">
+                                                    <div className="small">External: </div>
+                                                    <div className="small font-weight-bold text-truncate mx-2">
+                                                        {"{"}
+                                                        {"{"}Organization name{"}"}
+                                                        {"}"}
+                                                    </div>
+                                                    <div className="small icon icon-new-tab" />
+                                                </div>
+                                            </div>
+                                            <div className="card-title">
+                                                <a href="/program/142/details" className="h3 mb-none stretched-link line-clamp-1">
+                                                    {" "}
+                                                    {"{"}
+                                                    {"{"}Program name{"}"}
+                                                    {"}"}
+                                                </a>
+                                            </div>
+                                            <div className="d-flex justify-content-between align-items-center flex-wrap row-gap-2xs">
+                                                <div className="d-flex align-items-center flex-wrap">
+                                                    <div className="badges mr-3">
+                                                        <div className="badge is-pill">Food</div>
+                                                        <a className="badge is-pill" href="#">
+                                                            Plastic
+                                                        </a>
+                                                        <a className="badge is-pill" href="#">
+                                                            DEI
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div className="badges">
+                                                    <div className="badge is-pill is-open">
+                                                        <span className="icon icon-status-filled"></span>
+                                                        <span>Open</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-links">
+                                            <div className="d-flex align-items-center justify-content-between text-muted mb-3">
+                                                <span className="small font-weight-bold">Join the program</span>
+                                                <span className="small">
+                                                    Canditates{" "}
+                                                    <span className="font-weight-bold">
+                                                        <span className="icon icon-account" /> 48
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div className="card-actions">
+                                                <a className="btn btn-lg btn-primary btn-block" href="#">
+                                                    {" "}
+                                                    Join{" "}
+                                                </a>
+                                                <a className="btn btn-lg btn-default btn-block" href="#">
+                                                    {" "}
+                                                    Learn more{" "}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-md-6">
+                                    <div className="card h-100">
+                                        <div className="card-infos is-linked">
+                                            <div className="card-banner">
+                                                <div className="card-image">
+                                                    <picture>
+                                                        <img src="https://inject-prod.s3.amazonaws.com/images/b9751cfd-f746-4963-af9e-23f335a5792f/co1920x640.png" alt="" />
+                                                    </picture>
+                                                </div>
+                                                <div className="card-external">
+                                                    <div className="small">External: </div>
+                                                    <div className="small font-weight-bold text-truncate mx-2">
+                                                        {"{"}
+                                                        {"{"}Organization name{"}"}
+                                                        {"}"}
+                                                    </div>
+                                                    <div className="small icon icon-new-tab" />
+                                                </div>
+                                            </div>
+                                            <div className="card-title">
+                                                <a href="/program/142/details" className="h3 mb-none stretched-link line-clamp-1">
+                                                    {" "}
+                                                    {"{"}
+                                                    {"{"}Program name{"}"}
+                                                    {"}"}
+                                                </a>
+                                            </div>
+                                            <div className="d-flex justify-content-between align-items-center flex-wrap row-gap-2xs">
+                                                <div className="d-flex align-items-center flex-wrap">
+                                                    <div className="badges mr-3">
+                                                        <div className="badge is-pill">Food</div>
+                                                        <a className="badge is-pill" href="#">
+                                                            Plastic
+                                                        </a>
+                                                        <a className="badge is-pill" href="#">
+                                                            DEI
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div className="badges">
+                                                    <div className="badge is-pill is-progress">
+                                                        <span className="icon icon-status-dashed"></span>
+                                                        <span>In progress</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-targets">
+                                            <div className="card-target">
+                                                <a href="#" className="stretched-link d-flex align-items-center">
+                                                    <span className="icon icon-settings is-sm mr-2" />
+                                                    Manage program{" "}
+                                                </a>
+                                                <span className="icon icon-chevron-right is-sm" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-md-6">
+                                    <div className="card h-100">
+                                        <div className="card-infos is-linked">
+                                            <div className="card-banner">
+                                                <div className="card-image">
+                                                    <picture>
+                                                        <img src="https://inject-prod.s3.amazonaws.com/images/d5623bc5-fafa-49f4-8f9c-763d1f12fe44/co1920x640.png" alt="" />
+                                                    </picture>
+                                                </div>
+                                                <div className="card-external">
+                                                    <div className="small">External: </div>
+                                                    <div className="small font-weight-bold text-truncate mx-2">
+                                                        {"{"}
+                                                        {"{"}Organization name with a super long text{"}"}
+                                                        {"}"}
+                                                    </div>
+                                                    <div className="small icon icon-new-tab" />
+                                                </div>
+                                            </div>
+                                            <div className="card-title">
+                                                <a href="/program/142/details" className="h3 mb-none stretched-link line-clamp-1">
+                                                    {" "}
+                                                    {"{"}
+                                                    {"{"}Program name{"}"}
+                                                    {"}"}
+                                                </a>
+                                            </div>
+                                            <div className="d-flex justify-content-between align-items-center flex-wrap row-gap-2xs">
+                                                <div className="mr-3 mb-3">
+                                                    <span className="text-muted small text-nowrap">No category...</span>
+                                                </div>
+                                                <div className="badges">
+                                                    <div className="badge is-pill is-closed">
+                                                        <span className="icon icon-minus-circle" />
+                                                        <span>Closed</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-md-6">
+                                    <div className="card h-100">
+                                        <div className="card-infos is-linked">
+                                            <div className="card-banner">
+                                                <div className="card-image">
+                                                    <picture>
+                                                        <img src="https://inject-prod.s3.amazonaws.com/images/bc84f5cc-c5be-45ac-a0f8-f2ad3b7efa91/co1800x1200.jpeg" alt="" />
+                                                    </picture>
+                                                </div>
+                                                <div className="card-external">
+                                                    <div className="small">External: </div>
+                                                    <div className="small font-weight-bold text-truncate mx-2">
+                                                        {"{"}
+                                                        {"{"}Organization name with a super long text{"}"}
+                                                        {"}"}
+                                                    </div>
+                                                    <div className="small icon icon-new-tab" />
+                                                </div>
+                                            </div>
+                                            <div className="card-title">
+                                                <a href="/program/142/details" className="h3 mb-none stretched-link line-clamp-1">
+                                                    {" "}
+                                                    {"{"}
+                                                    {"{"}Program name{"}"}
+                                                    {"}"}
+                                                </a>
+                                            </div>
+                                            <div className="d-flex justify-content-between align-items-center flex-wrap row-gap-2xs">
+                                                <div className="d-flex align-items-center flex-wrap">
+                                                    <div className="badges mr-3">
+                                                        <div className="badge is-pill">Food</div>
+                                                    </div>
+                                                </div>
+                                                <div className="badges">
+                                                    <div className="badge is-pill is-draft">
+                                                        <span className="icon icon-status-bordered"></span>
+                                                        <span>Draft</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -88,6 +352,20 @@ export const ExpertOverview = () => {
                             <div className="d-flex flex-lg-row flex-column align-items-start">
                                 <h3 className="application-section--title flex-fill"> Coaching sessions </h3>
                                 <Button size="sm" iconStartName="plus-circle" type="default" label="Add Session" />
+                            </div>
+                            <div className="d-flex gap-xs flex-wrap align-items-stretch align-content-stretch">
+                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
+                                    <small className=" text-nowrap">Coaching</small>
+                                    <span className="h1 mb-0 text-nowrap ">
+                                        2<small className="text-muted"> sessions</small>
+                                    </span>
+                                </div>
+                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
+                                    <small className="text-nowrap">Total time</small>
+                                    <span className="h1 mb-0 text-nowrap ">
+                                        1<small className="text-muted"> hour</small>
+                                    </span>
+                                </div>
                             </div>
                             <div className="cards-list">
                                 <div className="card">
@@ -104,32 +382,16 @@ export const ExpertOverview = () => {
                                             <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
                                                 <span className="line-clamp-1"> Project 24 / expert.name</span>
                                             </a>
-
+                                            <div className="text-muted small line-clamp-1">
+                                                <span>FirstName LastName</span>
+                                                <span> · </span>
+                                                <span>FirstName LastName</span>
+                                                <span> · </span>
+                                                <span>FirstName LastName</span>
+                                                <span> · </span>
+                                                <span>FirstName LastName </span>
+                                            </div>
                                             <ul className="text-muted small metas is-list mb-none">
-                                                <li
-                                                    className="list-inline-item z-1"
-                                                    data-toggle="tooltip"
-                                                    data-placement="bottom"
-                                                    data-original-title="<ul class='list-unstyled d-flex flex-column gap-2xs m-none'><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/2216e7ab-c701-4503-83a2-ae7b91afb15d/sq150.jpeg'></div><span>Alexandra Jolly</span></li><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/3155b942-7535-4b0b-8ded-97eb42a92e1b/sq150.jpeg'></div><span>Emma Salvarelli</span></li>"
-                                                    data-html="true"
-                                                    data-boundary="window"
-                                                >
-                                                    <ul className="metas is-list">
-                                                        <li>
-                                                            <div className="thumbnail-stack mr-2">
-                                                                <div className="thumbnail is-oval is-xs">
-                                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
-                                                                </div>
-                                                                <div className="thumbnail is-oval is-xs">
-                                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
-                                                                </div>
-                                                            </div>
-                                                            <a href="/program/71/project/2903/mentors">
-                                                                <small className="text-muted">2 Members</small>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
                                                 <li>
                                                     <span>July 12, 2024</span>
                                                 </li>
@@ -167,33 +429,16 @@ export const ExpertOverview = () => {
                                             <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
                                                 <span className="line-clamp-1"> Project 24 / expert.name</span>
                                             </a>
-
+                                            <div className="text-muted small line-clamp-1">
+                                                <span>FirstName LastName</span>
+                                                <span> · </span>
+                                                <span>FirstName LastName</span>
+                                                <span> · </span>
+                                                <span>FirstName LastName</span>
+                                                <span> · </span>
+                                                <span>FirstName LastName </span>
+                                            </div>
                                             <ul className="text-muted small metas is-list mb-none">
-                                                <li
-                                                    className="list-inline-item z-1"
-                                                    data-toggle="tooltip"
-                                                    data-placement="bottom"
-                                                    data-original-title="<ul class='list-unstyled d-flex flex-column gap-2xs m-none'><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/2216e7ab-c701-4503-83a2-ae7b91afb15d/sq150.jpeg'></div><span>Alexandra Jolly</span></li><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/3155b942-7535-4b0b-8ded-97eb42a92e1b/sq150.jpeg'></div><span>Emma Salvarelli</span></li>"
-                                                    data-html="true"
-                                                    data-boundary="window"
-                                                >
-                                                    <ul className="metas is-list">
-                                                        <li>
-                                                            <div className="thumbnail-stack mr-2">
-                                                                <div className="thumbnail is-oval is-xs">
-                                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
-                                                                </div>
-                                                                <div className="thumbnail is-oval is-xs">
-                                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
-                                                                </div>
-                                                            </div>
-                                                            <a href="/program/71/project/2903/mentors">
-                                                                <small className="text-muted">2 Members</small>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-
                                                 <li>
                                                     <span>July 12, 2024</span>
                                                 </li>
@@ -237,6 +482,7 @@ export const ExpertOverview = () => {
                             <div className="d-flex flex-lg-row flex-column align-items-start">
                                 <h3 className="application-section--title flex-fill"> Coaching sessions </h3>
                             </div>
+
                             <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
                                 <div className="d-flex pb-16px">
                                     <span className="icon icon-account-supervisor-circle is-24px" />
@@ -253,126 +499,6 @@ export const ExpertOverview = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="application-section">
-                            <h3 className="application-section--title">Coaching sessions</h3>
-                            <div className="dataTableContainer  loaded mb-3">
-                                <div className="mb-3 title-filter-block">
-                                    <div className="level">
-                                        <div className="level-left">
-                                            <div className="level-item">
-                                                <form name="status" method="post" title="Tous" data-col={11} className="dataTableFilter">
-                                                    <div className="dropdown bootstrap-select dataTableFilter fit-width">
-                                                        <select id="event_main_filters_status" name="event_main_filters[status]" title="Tous" data-col={11} className="dataTableFilter form-control" tabIndex={-98}>
-                                                            <option className="bs-title-option" value="" />
-                                                            <option value="all">Tous</option>
-                                                            <option value="upcoming">A venir</option>
-                                                            <option value="finished">Passés</option>
-                                                        </select>
-                                                        <div className="dropdown-menu " role="combobox">
-                                                            <div className="inner show" role="listbox" aria-expanded="false" tabIndex={-1}>
-                                                                <ul className="dropdown-menu inner show" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div className="level-right">
-                                            <div className="level-item">
-                                                <div className="level-item">
-                                                    <a className="btn btn-primary btn-icon" href="/program/53/expert/coaching-session/create">
-                                                        <span className="icon icon-plus-circle" />
-                                                        <span>Add a coaching</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="sg-datatables-coaching_event_datatable_wrapper" className="overflow-hidden dataTables_wrapper dt-bootstrap4 no-footer">
-                                    <div className="row">
-                                        <div className="col-sm-12 ">
-                                            <table id="sg-datatables-coaching_event_datatable" className="table dataTable no-footer dtr-inline" cellSpacing={0} width="100%" role="grid" aria-describedby="sg-datatables-coaching_event_datatable_info" style={{ width: "100%" }}>
-                                                <thead>
-                                                    <tr role="row">
-                                                        <th className="sorting_desc" tabIndex={0} aria-controls="sg-datatables-coaching_event_datatable" rowSpan={1} colSpan={1} style={{ width: 129 }} aria-sort="descending" aria-label="Date: activer pour trier la colonne par ordre croissant">
-                                                            Session
-                                                        </th>
-                                                        <th className="sorting_disabled" rowSpan={1} colSpan={1} style={{ width: 59 }} aria-label="Durée">
-                                                            Duration
-                                                        </th>
-                                                        <th className="sorting_disabled" rowSpan={1} colSpan={1} style={{ width: 21 }} aria-label="" />
-                                                        <th className="sorting_disabled" rowSpan={1} colSpan={1} style={{ width: 329 }} aria-label="Note pour les PM">
-                                                            Note for PM
-                                                        </th>
-                                                        <th className="sorting" tabIndex={0} aria-controls="sg-datatables-coaching_event_datatable" rowSpan={1} colSpan={1} style={{ width: 147 }} aria-label="Feedback équipe: activer pour trier la colonne par ordre croissant">
-                                                            Team note
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr role="row" className="odd">
-                                                        <td className="sorting_1" tabIndex={0}>
-                                                            <div className="d-flex align-items-center">
-                                                                <div className="thumbnail is-session" title="30/11/2023">
-                                                                    <span className="date">30 NOV</span>
-                                                                    <span className="hour">18h30</span>
-                                                                </div>
-                                                                <div className="item-content ml-4 py-1">
-                                                                    <a href="#" className="item-title h4 font-weight-normal mb-none">
-                                                                        Project Name
-                                                                    </a>
-                                                                    <p className="metas small  d-inline-block text-truncate" style={{ maxWidth: 200 }}>
-                                                                        <span>FirstName LastName</span>
-                                                                        <span>, </span>
-                                                                        <span>FirstName LastName</span>
-                                                                        <span>, </span>
-                                                                        <span>FirstName LastName</span>
-                                                                        <span>, </span>
-                                                                        <span>FirstName LastName </span>
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>30 min</td>
-                                                        <td>
-                                                            <span className="icon icon-flag text-success" />
-                                                        </td>
-                                                        <td>
-                                                            <a className="btn btn-default btn-xs py-3 px-4" href="/program/53/coaching-session/32/edit/posts">
-                                                                <span className="icon icon-note-text-outline text-muted" />
-                                                            </a>
-                                                        </td>
-                                                        <td>
-                                                            <a className="btn btn-default btn-xs py-3 px-4" href="/program/53/coaching-session/32/edit/posts">
-                                                                <span className="icon icon-note-text-outline text-muted" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <div id="sg-datatables-coaching_event_datatable_processing" className="dataTables_processing" style={{ display: "none" }}>
-                                                <div className="card">
-                                                    <div className="card-body text-center">
-                                                        <div className="spinner-border spinner-border-sm mr-3 text-center" role="status">
-                                                            <span className="sr-only">Loading…</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="row" />
-                                    <div className="row">
-                                        <div className="col-sm-12 col-md-7" />
-                                    </div>
-                                </div>
-                            </div>
-                            <a className="btn btn-lg btn-block btn-default" href="#">
-                                {" "}
-                                View all{" "}
-                            </a>
-                        </div> */}
 
                         <div className="application-section">
                             <h3 className="application-section--title">
@@ -615,7 +741,24 @@ export const ExpertOverview = () => {
                     </div>
                     <div className="col-12 col-lg-6 col-xl-4">
                         <div className="application-section">
-                            <h3 className="application-section--title">Progression</h3>
+                            <h3 className="application-section--title">Participations</h3>
+                            <div className="d-flex gap-xs flex-wrap align-items-stretch align-content-stretch">
+                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
+                                    <small className=" text-nowrap">Coaching</small>
+                                    <span className="h1 mb-0 text-nowrap ">
+                                        2<small className="text-muted"> sessions</small>
+                                    </span>
+                                </div>
+                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
+                                    <small className="text-nowrap">Total time</small>
+                                    <span className="h1 mb-0 text-nowrap ">
+                                        1<small className="text-muted"> hour</small>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="application-section">
+                            <h3 className="application-section--title">Activities</h3>
                             <div className="d-flex gap-xs flex-wrap align-items-stretch align-content-stretch">
                                 <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
                                     <small className=" text-nowrap">Coaching</small>
@@ -632,89 +775,11 @@ export const ExpertOverview = () => {
                             </div>
                         </div>
 
-                        <div className="application-section">
-                            <h3 className="application-section--title"> Ressources</h3>
-                            <div className="d-flex flex-column gap-xs">
-                                <div className="item is-bordered resource">
-                                    <div className="item-row p-sm">
-                                        <div className="item-row gap-xs">
-                                            <div className="item-icon icon icon-file-pdf-box text-danger" />
-                                            <div className="item-content">
-                                                <a className="item-title h4 mb-none stretched-link text-truncate" href="#" target="_blank">
-                                                    stakeholdermap-model.pdf
-                                                </a>
-                                                <ul className="item-caption metas small is-list">
-                                                    <li>
-                                                        <span>PDF File</span>
-                                                    </li>
-                                                    <li>
-                                                        <span>120 KB</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="item-options">
-                                            <a className="btn btn-lg btn-transparent btn-icon z-1" href="#" target="_blank">
-                                                <span className="icon icon-cloud-download" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item is-bordered resource">
-                                    <div className="item-row p-sm">
-                                        <div className="item-row gap-xs">
-                                            <div className="item-icon icon icon-file-pdf-box text-danger" />
-                                            <div className="item-content">
-                                                <a className="item-title h4 mb-none stretched-link text-truncate" href="#" target="_blank">
-                                                    stakeholdermap-model.pdf
-                                                </a>
-                                                <ul className="item-caption metas small is-list">
-                                                    <li>
-                                                        <span>PDF File</span>
-                                                    </li>
-                                                    <li>
-                                                        <span>120 KB</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="item-options">
-                                            <a className="btn btn-lg btn-transparent btn-icon z-1" href="#" target="_blank">
-                                                <span className="icon icon-cloud-download" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item is-bordered resource">
-                                    <div className="item-row p-sm">
-                                        <div className="item-row gap-xs">
-                                            <div className="item-icon icon icon-file-pdf-box text-danger" />
-                                            <div className="item-content">
-                                                <a className="item-title h4 mb-none stretched-link text-truncate" href="#" target="_blank">
-                                                    stakeholdermap-model.pdf
-                                                </a>
-                                                <ul className="item-caption metas small is-list">
-                                                    <li>
-                                                        <span>PDF File</span>
-                                                    </li>
-                                                    <li>
-                                                        <span>120 KB</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="item-options">
-                                            <a className="btn btn-lg btn-transparent btn-icon z-1" href="#" target="_blank">
-                                                <span className="icon icon-cloud-download" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a className="btn btn-lg btn-block btn-default" href="#">
-                                    {" "}
-                                    View all{" "}
-                                </a>
-                            </div>
+                        <div className="application-section d-flex flex-column gap-xs">
+                            <h3 className="application-section--title">My Upcoming events </h3>
+                            <CardEvent title="event.name" start={{ day: "8", month: "June", startTime: "10am", endTime: "11am" }} img="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg" location="InPerson" />
+                            <CardEvent title="event.name" start={{ day: "8", month: "June", startTime: "10am", endTime: "11am" }} location="InPerson" />
+                            <CardEvent title="event.name" start={{ day: "8", month: "June", startTime: "10am", endTime: "11am" }} location="InPerson" />
                         </div>
                     </div>
                 </div>
