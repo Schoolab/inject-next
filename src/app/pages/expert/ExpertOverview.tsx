@@ -19,7 +19,7 @@ export const ExpertOverview = () => {
                                 <div className="d-flex flex-column align-items-center align-items-xl-start gap-xs flex-fill">
                                     <div className="d-flex flex-column align-items-center align-items-xl-start gap-0">
                                         <div className="d-flex align-items-center gap-2xs">
-                                            <div className="h2 line-clamp-1 d-flex align-items-center gap-2xs">
+                                            <div className="h2  text-center text-xl-left d-flex align-items-center gap-2xs">
                                                 <span>Welcome to the Expert space!</span>
                                             </div>
                                         </div>
