@@ -166,6 +166,20 @@ export const JuryOverview = () => {
                             </a>
                         </div>
                         <div className="application-section">
+                            <div className="d-flex flex-lg-row flex-column align-items-start">
+                                <h3 className="application-section--title flex-fill"> Evaluations sessions</h3>
+                            </div>
+                            <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
+                                <div className="d-flex pb-16px">
+                                    <span className="icon icon-gavel is-24px" />
+                                </div>
+                                <div className="d-flex flex-column gap-2xs">
+                                    <p className="font-weight-bold">No sessions</p>
+                                    <p className="small text-muted">Your evaluations sessions will be listed here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="application-section">
                             <h3 className="application-section--title">
                                 <span>Juries newsfeed</span>
                             </h3>

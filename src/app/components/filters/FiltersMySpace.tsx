@@ -3,11 +3,11 @@ import { useEffect } from "react";
 import { FilterDateRange } from "./FilterDateRange";
 import { searchControl } from "../../../../public/utils/searchControl";
 import { tooltips } from "../../../../public/utils/tooltips";
-import { dataFilters } from "../../../../public/utils/dataFilters";
+// import { dataFilters } from "../../../../public/utils/dataFilters";
 
 interface FiltersDefaultProps {}
 
-export const FiltersHub = ({}: FiltersDefaultProps) => {
+export const FiltersMySpace = ({}: FiltersDefaultProps) => {
     useEffect(() => {
         searchControl();
         tooltips();
@@ -15,14 +15,14 @@ export const FiltersHub = ({}: FiltersDefaultProps) => {
     }, []);
     return (
         <div className="datatableFiltersWrapper ">
-            <div className="d-flex flex-column flex-lg-row align-items-lg-start">
-                <div className="d-flex flex-column flex-lg-row mr-lg-3 mr-0">
-                    <div id="sg-datatables-challenges_list_datatable_filter" className="dataTables_filter mb-5 mb-lg-0">
+            <div className="d-flex flex-column flex-xl-row align-items-xl-start">
+                <div className="d-flex flex-column flex-xl-row mr-xl-3 mr-0">
+                    <div id="sg-datatables-challenges_list_datatable_filter" className="dataTables_filter mb-5 mb-xl-0">
                         <input type="search" className="form-control form-control-md" placeholder="Search" aria-controls="sg-datatables-challenges_list_datatable" style={{ minWidth: 150, width: "100%" }} />
                     </div>
                 </div>
-                <div className="d-flex flex-column flex-lg-row scroll-h mr-lg-3 mr-0 flex-fill">
-                    {/* <div className="mr-lg-3 mr-0 mb-3 mb-lg-0 dataFilter d-none">
+                <div className="d-flex flex-column flex-xl-row scroll-h mr-xl-3 mr-0 flex-fill">
+                    {/* <div className="mr-xl-3 mr-0 mb-3 mb-xl-0 dataFilter d-none">
                         <div className="dropdown position-static mb-3">
                             <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
                                 Status
@@ -60,7 +60,7 @@ export const FiltersHub = ({}: FiltersDefaultProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0 dataFilter d-none">
+                    <div className="mr-xl-3 mr-0 mb-3 mb-xl-0 dataFilter d-none">
                         <div className="dropdown position-static mb-3">
                             <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
                                 Role
@@ -104,7 +104,7 @@ export const FiltersHub = ({}: FiltersDefaultProps) => {
                             </div>
                         </div>
                     </div> */}
-                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0 dataFilter">
+                    <div className="mr-xl-3 mr-0 mb-3 mb-xl-0 dataFilter">
                         <div className="dropdown position-static mb-3">
                             <a className="btn btn-lg btn-default custom-select small text-nowrap" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" style={{ fontSize: ".9375rem" }}>
                                 Organization
@@ -155,7 +155,7 @@ export const FiltersHub = ({}: FiltersDefaultProps) => {
                         </div>
                     </div>
 
-                    {/* <div className="dropdown dataFitlersControl mr-lg-3 mr-0 mb-5 mb-lg-0" data-save-to-close="true">
+                    {/* <div className="dropdown dataFitlersControl mr-xl-3 mr-0 mb-5 mb-xl-0" data-save-to-close="true">
                         <a className="btn btn-lg btn-muted" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
                             <span className="icon icon-plus-circle" />
                             <span>Filter</span>
@@ -176,14 +176,14 @@ export const FiltersHub = ({}: FiltersDefaultProps) => {
                         </div>
                     </div> */}
                 </div>
-                <div className="d-flex flex-column flex-lg-row">
-                    <form name="views" className="dataTableFilter mr-lg-3 mr-0 mb-5 mb-lg-0">
+                <div className="d-flex flex-column flex-xl-row">
+                    <form name="views" className="dataTableFilter mr-xl-3 mr-0 mb-5 mb-xl-0">
                         <div className="d-flex btn-group btn-group-lg btn-group-toggle btn-filter-radios" data-toggle="buttons" data-col={0}>
-                            <label className="btn btn-default btn-lg active">
+                            <label className="btn btn-default btn-lg ">
                                 <input type="radio" className="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_0" defaultValue="_default" autoComplete="off" required defaultChecked />
                                 Open
                             </label>
-                            <label className="btn btn-default btn-lg">
+                            <label className="btn btn-default btn-lg active">
                                 <input type="radio" className="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_1" defaultValue="draft" autoComplete="off" required />
                                 In progress
                             </label>
@@ -193,7 +193,7 @@ export const FiltersHub = ({}: FiltersDefaultProps) => {
                             </label>
                         </div>
                     </form>
-                    <div className="mb-5 mb-lg-0" data-toggle="tooltip" data-placement="top" data-original-title="Sort by range dates" data-boundary="window">
+                    <div className="mb-5 mb-xl-0" data-toggle="tooltip" data-placement="top" data-original-title="Sort by range dates" data-boundary="window">
                         <FilterDateRange />
                     </div>
                 </div>

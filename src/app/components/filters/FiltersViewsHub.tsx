@@ -3,7 +3,7 @@ export interface FiltersViewHub {}
 
 export const FiltersViewHub = ({}: FiltersViewHub) => {
     return (
-        <div id="tables-views" className="d-flex flex-column flex-lg-row gap-xs pb-16px border-bottom flex-wrap">
+        <div id="tables-views" className="d-flex gap-xs pb-16px border-bottom flex-nowrap scroll-h">
             <form name="views" className="dataTableFilter">
                 <div className="d-flex btn-group btn-group-lg btn-group-toggle btn-filter-radios" data-toggle="buttons" data-col={0}>
                     <label className="btn btn-default btn-lg active">
