@@ -34,7 +34,7 @@ export const ExpertOverview = () => {
                                             >
                                                 <ul className="metas is-list">
                                                     <li>
-                                                        <div className="thumbnail-stack mr-2">
+                                                        <div className="thumbnail-stack">
                                                             <div className="thumbnail is-oval is-xs">
                                                                 <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
                                                             </div>
@@ -116,7 +116,7 @@ export const ExpertOverview = () => {
                                                 >
                                                     <ul className="metas is-list">
                                                         <li>
-                                                            <div className="thumbnail-stack mr-2">
+                                                            <div className="thumbnail-stack">
                                                                 <div className="thumbnail is-oval is-xs">
                                                                     <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
                                                                 </div>
@@ -179,7 +179,7 @@ export const ExpertOverview = () => {
                                                 >
                                                     <ul className="metas is-list">
                                                         <li>
-                                                            <div className="thumbnail-stack mr-2">
+                                                            <div className="thumbnail-stack">
                                                                 <div className="thumbnail is-oval is-xs">
                                                                     <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
                                                                 </div>

@@ -11,72 +11,16 @@ export const programHubMySpace = () => {
             <AppContent showSubnav={false} showTitle={false} showBreadcrumb={false} sections="cards">
                 <div className="row ">
                     <div className="col-12 col-lg-6 col-xl-8 ">
-                        {/* <div className="application-section">
-                            <div className="d-flex flex-column flex-xl-row align-items-center flex-wrap flex-xl-nowrap gap-md">
-                                <div className="card-image-container">
-                                    <div className="card-image bg-highlight">
-                                        <div className="thumbnail is-oval is-bordered  is-40px position-absolute top-50 start-50 translate-middle">
-                                            <img src="img/thumbnails/john-doe.webp" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="d-flex flex-column align-items-center align-items-xl-start gap-xs flex-fill">
-                                    <div className="d-flex flex-column align-items-center align-items-xl-start gap-0">
-                                        <div className="d-flex align-items-center gap-2xs">
-                                            <div className="h2 line-clamp-1 d-flex align-items-center gap-2xs">
-                                                <span>Welcome to your space!</span>
-                                            </div>
-                                        </div>
-                                        <div className="badges small">
-                                            <a href="#" className="badge is-pill">
-                                                <span className="icon icon-program" />
-                                                <span>Programs (3)</span>
-                                            </a>
-                                            <a href="#" className="badge is-pill">
-                                                <span className="icon icon-project" />
-                                                <span>Projects (3)</span>
-                                            </a>
-                                            <a href="#" className="badge is-pill">
-                                                <span className="icon icon-coaching" />
-                                                <span>Coaching (5)</span>
-                                            </a>
-                                            <a href="#" className="badge is-pill">
-                                                <span className="icon icon-gavel" />
-                                                <span>Evaluations (10)</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="d-flex gap-xs">
-                                    <div className="dropdown">
-                                        <a className="btn btn-transparent btn-lg btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span className="icon is-20px icon-options" />
-                                        </a>
-                                        <div className="dropdown-menu dropdown-menu-right">
-                                            <a className="dropdown-item" href="#">
-                                                <span>Setting 1</span>
-                                            </a>
-                                            <a className="dropdown-item" href="#">
-                                                <span>Setting 2</span>
-                                            </a>
-                                            <a className="dropdown-item" href="#">
-                                                <span>Setting 3</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
                         <div className="application-section">
                             <h3 className="application-section--title">
                                 <span>Programs (3)</span>
                             </h3>
                             <div className="items row card-row">
-                                <div className="col-12 d-flex flex-column  gap-md">
+                                <div className="col-12 d-flex flex-column gap-md">
                                     <FiltersHub />
                                 </div>
 
-                                <div className="col-12 col-md-6">
+                                <div className="col-12 col-md-6 col-lg-12 col-xl-6">
                                     <div className="card h-100">
                                         <div className="card-infos is-linked">
                                             <div className="card-banner">
@@ -134,7 +78,7 @@ export const programHubMySpace = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-md-6">
+                                <div className="col-12 col-md-6 col-lg-12 col-xl-6">
                                     <div className="card h-100">
                                         <div className="card-infos is-linked">
                                             <div className="card-banner">
@@ -204,7 +148,7 @@ export const programHubMySpace = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-md-6">
+                                <div className="col-12 col-md-6 col-lg-12 col-xl-6">
                                     <div className="card h-100">
                                         <div className="card-infos is-linked">
                                             <div className="card-banner">
@@ -262,7 +206,7 @@ export const programHubMySpace = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-md-6">
+                                <div className="col-12 col-md-6 col-lg-12 col-xl-6">
                                     <div className="card h-100">
                                         <div className="card-infos is-linked">
                                             <div className="card-banner">
@@ -303,7 +247,7 @@ export const programHubMySpace = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-md-6">
+                                <div className="col-12 col-md-6 col-lg-12 col-xl-6">
                                     <div className="card h-100">
                                         <div className="card-infos is-linked">
                                             <div className="card-banner">
@@ -741,19 +685,62 @@ export const programHubMySpace = () => {
                     </div>
                     <div className="col-12 col-lg-6 col-xl-4">
                         <div className="application-section">
-                            <h3 className="application-section--title">Participations</h3>
-                            <div className="d-flex gap-xs flex-wrap align-items-stretch align-content-stretch">
-                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
-                                    <small className=" text-nowrap">Coaching</small>
-                                    <span className="h1 mb-0 text-nowrap ">
-                                        2<small className="text-muted"> sessions</small>
-                                    </span>
-                                </div>
-                                <div className="bg-light rounded p-5 d-flex flex-column flex-fill-0">
-                                    <small className="text-nowrap">Total time</small>
-                                    <span className="h1 mb-0 text-nowrap ">
-                                        1<small className="text-muted"> hour</small>
-                                    </span>
+                            <h3 className="application-section--title">Activities</h3>
+                            <div className="cards">
+                                <div className="card pt-2">
+                                <div className="card-external"><div className="icon icon-program is-16px ml-n6px"></div><div className="small font-weight-bold text-truncate mx-2">Program Name</div></div>
+                                    <div className="card-infos is-linked d-flex align-items-start gap-sm">
+                                        <div className="thumbnail-relation m-auto">
+                                            <span className="icon icon--letter is-40px">
+                                                <span>P</span>
+                                            </span>
+                                            <div className="thumbnail is-oval is-sm is-bordered is-top">
+                                                <img src="https://inject-prod.s3.amazonaws.com/images/41c42fb1-35bd-4a31-bf08-3b2267df4b95/sq150.jpeg" />
+                                            </div>
+                                        </div>
+                                        <div className="card-title flex-grow-1">
+                                            <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
+                                                <span className="line-clamp-1"> Project 24 / expert.name</span>
+                                            </a>
+
+                                            <ul className="text-muted small metas is-list mb-none">
+                                                <li
+                                                    className="list-inline-item z-1"
+                                                    data-toggle="tooltip"
+                                                    data-placement="bottom"
+                                                    data-original-title="<ul class='list-unstyled d-flex flex-column gap-2xs m-none'><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/2216e7ab-c701-4503-83a2-ae7b91afb15d/sq150.jpeg'></div><span>Alexandra Jolly</span></li><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/3155b942-7535-4b0b-8ded-97eb42a92e1b/sq150.jpeg'></div><span>Emma Salvarelli</span></li>"
+                                                    data-html="true"
+                                                    data-boundary="window"
+                                                >
+                                                    <ul className="metas is-list">
+                                                        <li>
+                                                            <div className="thumbnail-stack">
+                                                                <div className="thumbnail is-oval is-xs">
+                                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
+                                                                </div>
+                                                                <div className="thumbnail is-oval is-xs">
+                                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
+                                                                </div>
+                                                            </div>
+                                                            <a href="/program/71/project/2903/mentors">
+                                                                <small className="text-muted">2 Members</small>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span>July 12, 2024</span>
+                                                </li>
+                                                <li>
+                                                    <span>4:30 PM</span>
+                                                </li>
+                                                   <li>
+                                                    <span>4:30 PM</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                       
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -775,7 +762,7 @@ export const programHubMySpace = () => {
                             </div>
                         </div>
 
-                        <div className="application-section d-flex flex-column gap-xs">
+                        <div className="application-section d-flex flex-column">
                             <h3 className="application-section--title">My Upcoming events </h3>
                             <CardEvent title="event.name" start={{ day: "8", month: "June", startTime: "10am", endTime: "11am" }} img="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg" location="InPerson" />
                             <CardEvent title="event.name" start={{ day: "8", month: "June", startTime: "10am", endTime: "11am" }} location="InPerson" />
