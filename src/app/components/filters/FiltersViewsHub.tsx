@@ -45,7 +45,7 @@ export const FiltersViewHub = ({}: FiltersViewHub) => {
                     </label>
                 </div>
             </form>
-            <form name="views" className="dataTableFilter">
+            {/* <form name="views" className="dataTableFilter">
                 <div className="d-flex btn-group btn-group-lg btn-group-toggle btn-filter-radios" data-toggle="buttons" data-col={0}>
                     <label className="btn btn-default btn-lg active">
                         <input type="radio" className="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_0" defaultValue="_default" autoComplete="off" required defaultChecked />
@@ -68,7 +68,7 @@ export const FiltersViewHub = ({}: FiltersViewHub) => {
                         Manager
                     </label>
                 </div>
-            </form>
+            </form> */}
       
         </div>
     );
