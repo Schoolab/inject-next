@@ -115,7 +115,7 @@ export const ProgramDashboardDefault = () => {
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right">
                                             <a className="dropdown-item" href="#">
-                                                <span>Setting 1</span>
+                                                <span>My submission</span>
                                             </a>
                                             <a className="dropdown-item" href="#">
                                                 <span>Setting 2</span>
@@ -386,48 +386,66 @@ export const ProgramDashboardDefault = () => {
                     </div>
                     <div className="col-12 col-lg-6 col-xl-4">
                         <div className="application-section">
-                            <h3 className="application-section--title">Progression</h3>
-                            <div className="d-flex gap-xs flex-wrap align-items-stretch align-content-stretch ">
-                                <div className="item is-bordered m-none d-flex position-relative flex-fill-0">
-                                    <div className="item-row flex-column align-items-center justify-content-between">
-                                        <p className="h5 text-center mb-5">Learning</p>
-                                        <div className="mb-5 d-flex flex-column align-items-center">
-                                            <svg className="progress-circle-container is-xl mb-3" viewBox="0 0 32 32" data-percent={20} style={{ ["--percent" as any]: 20 }}>
-                                                <circle className="progress-circle progress-circle-bg" />
-                                                <circle className="progress-circle progress-circle-percent" />
-                                                <text className="progress-circle-text" x={16} y={15}>
-                                                    1/5
-                                                </text>
-                                                <text className="progress-circle-subtext" x={16} y={20}>
-                                                    Lessons
-                                                </text>
-                                            </svg>
+                            <h3 className="application-section--title">Activities</h3>
+                            <div className="cards">
+                                <div className="card h-100">
+                                    <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
+                                        <span className="icon icon-library is-md"></span>
+
+                                        <div className="card-title flex-grow-1">
+                                            <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
+                                                <span className="line-clamp-1"> Learning Courses</span>
+                                            </a>
+
+                                            <ul className="text-muted small metas is-list mb-none">
+                                                <li>
+                                                    <div className="d-flex align-items-center gap-xs">
+                                                        <svg className="progress-circle-container is-sm" viewBox="0 0 32 32" data-percent={25} style={{ ["--percent" as any]: 25 }}>
+                                                            <circle className="progress-circle progress-circle-bg" />
+                                                            <circle className="progress-circle progress-circle-percent" />
+                                                            <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                            {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
+                                                        </svg>
+                                                        <div className="d-flex flex-fill gap-2xs">
+                                                            <span className="small">1/4</span>
+                                                            <span className="small">Lessons</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <a className="btn btn-block btn-default stretched-link" href="#">
-                                            {" "}
-                                            View lessons{" "}
-                                        </a>
                                     </div>
                                 </div>
-                                <div className="item is-bordered m-none d-flex position-relative flex-fill-0">
-                                    <div className="item-row flex-column align-items-center justify-content-between">
-                                        <p className="h5 text-center mb-5">Objectives</p>
-                                        <div className="mb-5 d-flex flex-column align-items-center">
-                                            <svg className="progress-circle-container is-xl mb-3" viewBox="0 0 32 32" data-percent={33} style={{ ["--percent" as any]: 33 }}>
-                                                <circle className="progress-circle progress-circle-bg" />
-                                                <circle className="progress-circle progress-circle-percent" />
-                                                <text className="progress-circle-text" x={16} y={15}>
-                                                    2/6
-                                                </text>
-                                                <text className="progress-circle-subtext" x={16} y={20}>
-                                                    Objectives
-                                                </text>
-                                            </svg>
+
+                                <div className="card h-100">
+                                    <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
+                                        <span className="icon icon-rocket is-md"></span>
+
+                                        <div className="card-title flex-grow-1">
+                                            <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
+                                                <span className="line-clamp-1">Objectives</span>
+                                            </a>
+
+                                            <ul className="text-muted small metas is-list mb-none">
+                                                <li>
+                                                    <div className="d-flex align-items-center gap-xs">
+                                                        <svg className="progress-circle-container is-sm" viewBox="0 0 32 32" data-percent={25} style={{ ["--percent" as any]: 66 }}>
+                                                            <circle className="progress-circle progress-circle-bg" />
+                                                            <circle className="progress-circle progress-circle-percent" />
+                                                            <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                            {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
+                                                        </svg>
+                                                        <div className="d-flex flex-fill gap-2xs">
+                                                            <span className="small">4/6</span>
+                                                            <span className="small">Tasks</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span>Until July 12, 2024</span>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <a className="btn btn-block btn-default stretched-link" href="#">
-                                            {" "}
-                                            View objectives{" "}
-                                        </a>
                                     </div>
                                 </div>
                             </div>
