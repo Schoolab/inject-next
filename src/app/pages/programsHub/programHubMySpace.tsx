@@ -680,19 +680,14 @@ export const programHubMySpace = () => {
                                             </div>
                                         </div>
                                         <div className="card-links">
-                                            <div className="d-flex align-items-center justify-content-between text-muted mb-3">
+                                            <div className="d-flex align-items-center justify-content-between text-muted">
                                                 <span className="small font-weight-bold text-truncate mr-2">Application status</span>
                                                 <div className="badges">
-                                                    <div className="badge is-pill is-closed">
-                                                        <span className="icon icon-minus-circle"></span>
-                                                        <span>Rejected</span>
+                                                    <div className="badge is-pill is-progress">
+                                                        <span className="icon icon-status-dashed"></span>
+                                                        <span>In review</span>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div className="card-actions">
-                                                <a className="btn btn-lg btn-default btn-block" href="#">
-                                                    <span>Delete Submission</span>
-                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -730,18 +725,24 @@ export const programHubMySpace = () => {
                                             </div>
                                         </div>
                                         <div className="card-links">
-                                            <div className="d-flex align-items-center justify-content-between text-muted">
+                                            <div className="d-flex align-items-center justify-content-between text-muted mb-3">
                                                 <span className="small font-weight-bold text-truncate mr-2">Application status</span>
                                                 <div className="badges">
-                                                    <div className="badge is-pill is-progress">
-                                                        <span className="icon icon-status-dashed"></span>
-                                                        <span>In review</span>
+                                                    <div className="badge is-pill is-closed">
+                                                        <span className="icon icon-minus-circle"></span>
+                                                        <span>Rejected</span>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div className="card-actions">
+                                                <a className="btn btn-lg btn-default btn-block" href="#">
+                                                    <span>Delete Submission</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <a className="btn btn-default btn-block" href="/user/projects">
                                      Show more
                                 </a>
