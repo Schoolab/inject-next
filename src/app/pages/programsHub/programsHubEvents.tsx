@@ -4,7 +4,7 @@ import { AppContent } from "@/app/layouts/AppContent";
 
 export const ProgramsHubEvents = () => {
     return (
-        <Layout showShortcutbar={false}>
+        <Layout showShortcutbar={false} hub={true}>
             <AppContent>
                 <div className="application-section">
                     <div className="row">

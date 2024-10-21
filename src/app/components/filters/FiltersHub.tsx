@@ -179,7 +179,11 @@ export const FiltersHub = ({}: FiltersDefaultProps) => {
                 <div className="d-flex flex-column flex-lg-row">
                     <form name="views" className="dataTableFilter mr-lg-3 mr-0 mb-5 mb-lg-0">
                         <div className="d-flex btn-group btn-group-lg btn-group-toggle btn-filter-radios" data-toggle="buttons" data-col={0}>
-                            <label className="btn btn-default btn-lg active">
+                        <label className="btn btn-default btn-lg active">
+                                <input type="radio" className="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_0" defaultValue="_default" autoComplete="off" required defaultChecked />
+                                All
+                            </label>
+                            <label className="btn btn-default btn-lg">
                                 <input type="radio" className="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_0" defaultValue="_default" autoComplete="off" required defaultChecked />
                                 Open
                             </label>

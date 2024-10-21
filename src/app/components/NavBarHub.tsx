@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { tooltips } from "../../../public/utils/tooltips";
 import { Button } from "./Button";
 import { Theme } from "./Theme";
-export interface NavBarProps {
+export interface NavBarHubProps {
     /**
      * User is logged ?
      */
@@ -14,7 +14,7 @@ export interface NavBarProps {
     theme?: "default" | "Schoolab" | "Moho" | "Raiselab";
 }
 
-export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
+export const NavbarHub = ({ isLogged = true, theme }: NavBarHubProps) => {
     useEffect(() => {
         tooltips();
     }, []);
@@ -56,6 +56,24 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                                 </div>
                                 <div className="navbar-options ml-lg-auto">
                                     <div className="d-none d-lg-flex flex-fill">
+                                        <div className="navbar-option">
+                                            <Button label="Programs" iconStartName="program" isActive={true} addClass="navbar-main-btn" />
+                                        </div>
+                                        <div className="navbar-option">
+                                            <Button label="Projects" iconStartName="project" addClass="navbar-main-btn" />
+                                        </div>
+                                        <div className="navbar-option">
+                                            <Button label="Community" iconStartName="community" addClass="navbar-main-btn" />
+                                        </div>
+                                        <div className="navbar-option">
+                                            <Button label="Events" iconStartName="calendar" addClass="navbar-main-btn" />
+                                        </div>
+                                        <div className="navbar-option">
+                                            <Button label="Newsfeed" iconStartName="newsfeed" addClass="navbar-main-btn" />
+                                        </div>
+                                        <div className="navbar-option">
+                                            <Button label="F.A.Q." iconStartName="faq" addClass="navbar-main-btn" />
+                                        </div>
                                     </div>
                                     {isLogged ? (
                                         <div className="d-flex gap-xs align-items-center">

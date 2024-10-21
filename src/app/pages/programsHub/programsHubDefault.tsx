@@ -1,75 +1,21 @@
 import React from "react";
-import { Layout } from "../../layouts/layout";
+import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
+import { FiltersHub } from "@/app/components/filters/FiltersHub";
+import { FiltersViewHub } from "@/app/components/filters/FiltersViewsHub";
+import { FilterDateRange } from "@/app/components/filters/FilterDateRange";
 
 export const ProgramsHubDefault = () => {
     return (
-        <Layout showShortcutbar={false}>
-            <AppContent>
+        <Layout showShortcutbar={false} hub={true}>
+            <AppContent showSubnav={false} showTitle={false} showBreadcrumb={false} sections="cards">
                 <div className="application-section">
                     <div className="items row card-row">
-                        <div className="col-12 d-flex d-lg-inline-flex flex-column flex-lg-row mb-8">
-                            <div className=" reloadChallenges btn-group btn-group-toggle btn-filter-radios mr-lg-3 mr-0 mb-4 mb-lg-0" data-toggle="buttons">
-                                <label className="btn btn-default btn-lg active text-nowrap">
-                                    <input type="radio" name="" defaultValue="" id="" defaultChecked />
-                                    My&nbsp;programs{" "}
-                                </label>
-                                <label className="btn btn-default btn-lg text-nowrap">
-                                    <input type="radio" name="" id="" defaultValue="" />
-                                    All programs
-                                </label>
-                            </div>
-                            <div className="reloadChallenges btn-group btn-group-toggle btn-filter-radios mr-lg-3 mr-0  mb-4 mb-lg-0" data-toggle="buttons">
-                                <label className="btn btn-default btn-lg active">
-                                    <input type="radio" name="showprograms" id="" defaultValue="all" defaultChecked />
-                                    All
-                                </label>
-                                <label className="btn btn-default btn-lg">
-                                    <input type="radio" name="showprograms" defaultValue="Plastic" id="all" />
-                                    Plastic{" "}
-                                </label>
-                                <label className="btn btn-default btn-lg">
-                                    <input type="radio" name="showprograms" defaultValue="Food" id="all" />
-                                    Food{" "}
-                                </label>
-                                <label className="btn btn-default btn-lg">
-                                    <input type="radio" name="showprograms" defaultValue="DEI" id="all" />
-                                    DEI{" "}
-                                </label>
-                            </div>
-                            <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
-                                <select defaultValue="" className="custom-select small">
-                                    <option value="" className="small">
-                                        All roles
-                                    </option>
-                                    <option value={1}>Participant</option>
-                                    <option value={2}>Expert</option>
-                                    <option value={3}>Jury</option>
-                                    <option value={4}>Manager</option>
-                                </select>
-                            </div>
-                            <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
-                                <select defaultValue="" className="custom-select small">
-                                    <option value="" className="small">
-                                        All registration
-                                    </option>
-                                    <option value={1}>Open</option>
-                                    <option value={2}> In progress</option>
-                                    <option value={3}> Closed</option>
-                                </select>
-                            </div>
-                            <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
-                                <select defaultValue="" className="custom-select">
-                                    <option value="">All organization</option>
-                                    <option value={1}>Schoolab</option>
-                                    <option value={2}>Moho</option>
-                                    <option value={3}>Raiselab</option>
-                                </select>
-                            </div>
-                            <div>
-                                <input type="search" className="form-control" id="exampleInputEmail1" aria-describedby="search" placeholder="Search ..." />
-                            </div>
+                        <div className="col-12 d-flex flex-column  gap-md">
+                            <FiltersViewHub /> 
+                            <FiltersHub />
                         </div>
+
                         <div className="col-12 col-md-6 col-lg-4">
                             <div className="card h-100">
                                 <div className="card-infos is-linked">
@@ -111,7 +57,8 @@ export const ProgramsHubDefault = () => {
                                         </div>
                                         <div className="badges">
                                             <div className="badge is-pill is-open">
-                                                <span className="icon icon-circle" /> Open
+                                                <span className="icon icon-status-filled"></span>
+                                                <span>Open</span>
                                             </div>
                                         </div>
                                     </div>
@@ -168,7 +115,8 @@ export const ProgramsHubDefault = () => {
                                         </div>
                                         <div className="badges">
                                             <div className="badge is-pill is-open">
-                                                <span className="icon icon-circle" /> Open
+                                                <span className="icon icon-status-filled"></span>
+                                                <span>Open</span>
                                             </div>
                                         </div>
                                     </div>
@@ -237,7 +185,8 @@ export const ProgramsHubDefault = () => {
                                         </div>
                                         <div className="badges">
                                             <div className="badge is-pill is-progress">
-                                                <span className="icon icon-circle-slice-3" /> In progress
+                                                <span className="icon icon-status-dashed"></span>
+                                                <span>In progress</span>
                                             </div>
                                         </div>
                                     </div>
@@ -286,7 +235,8 @@ export const ProgramsHubDefault = () => {
                                         </div>
                                         <div className="badges">
                                             <div className="badge is-pill is-closed">
-                                                <span className="icon icon-minus-circle" /> Closed
+                                                <span className="icon icon-minus-circle" />
+                                                <span>Closed</span> 
                                             </div>
                                         </div>
                                     </div>
@@ -328,7 +278,8 @@ export const ProgramsHubDefault = () => {
                                         </div>
                                         <div className="badges">
                                             <div className="badge is-pill is-draft">
-                                                <span className="icon icon-circle-outline" /> Draft
+                                                <span className="icon icon-status-bordered"></span>
+                                                <span>Draft</span>
                                             </div>
                                         </div>
                                     </div>

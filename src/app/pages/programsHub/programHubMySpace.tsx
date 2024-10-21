@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout } from "../../../layouts/layout";
+import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Button } from "@/app/components/Button";
 import { CardEvent } from "@/app/components/cards/CardEvent";
@@ -7,7 +7,7 @@ import { FiltersMySpace } from "@/app/components/filters/FiltersMySpace";
 
 export const programHubMySpace = () => {
     return (
-        <Layout shortcutBarExpanded={false} showShortcutbar={false}>
+        <Layout shortcutBarExpanded={false} showShortcutbar={false} hub={true}>
             <AppContent showSubnav={false} showTitle={false} showBreadcrumb={false} sections="cards">
                 
                 <div className="row ">
