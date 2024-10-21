@@ -327,6 +327,57 @@ export const programHubMySpace = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="col-12 col-md-6 col-lg-12 col-xl-6">
+                                    <div className="card h-100">
+                                        <div className="card-infos is-linked">
+                                            <div className="card-banner">
+                                                <div className="card-image">
+                                                    <picture>
+                                                        <img src="https://inject-prod.s3.amazonaws.com/images/bc84f5cc-c5be-45ac-a0f8-f2ad3b7efa91/co1800x1200.jpeg" alt="" />
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                            <div className="card-title">
+                                                <a href="/program/142/details" className="h3 mb-none stretched-link line-clamp-1">
+                                                    {" "}
+                                                    {"{"}
+                                                    {"{"}Program name{"}"}
+                                                    {"}"}
+                                                </a>
+                                            </div>
+                                            <div className="d-flex justify-content-between align-items-center flex-wrap row-gap-2xs">
+                                                <div className="d-flex align-items-center flex-wrap">
+                                                    <div className="badges mr-3">
+                                                        <div className="badge is-pill">Food</div>
+                                                    </div>
+                                                </div>
+                                                <div className="badges">
+                                                    <div className="badge is-pill is-draft">
+                                                        <span className="icon icon-status-bordered"></span>
+                                                        <span>Draft</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-links">
+                                            <div className="d-flex align-items-center justify-content-between text-muted mb-3">
+                                                <span className="small font-weight-bold text-truncate mr-2">Application status</span>
+                                                <div className="badges">
+                                                    <div className="badge is-pill is-closed">
+                                                        <span className="icon icon-minus-circle"></span>
+                                                        <span>Rejected</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="card-actions">
+                                             
+                                                <a className="btn btn-lg btn-default btn-block" href="#">
+                                                    <span>Delete Submission</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <a className="btn btn-default btn-block" href="/user/projects">
                                 Show more
@@ -523,6 +574,60 @@ export const programHubMySpace = () => {
                                         </div>
                                         <div className="card-links">
                                             <div className="d-flex align-items-center justify-content-between text-muted mb-3">
+                                                <span className="small font-weight-bold text-truncate mr-2"># coaching sessions</span>
+                                                <span className="small">
+                                                    Total hours{" "}
+                                                    <span className="font-weight-bold">
+                                                        <span className="icon icon--clock" /> 1h30
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div className="card-actions">
+                                                <a className="btn btn-lg btn-primary btn-block" href="#">
+                                                    <span className="icon icon-plus-circle is-sm mr-2" />
+                                                    <span>Add session</span>
+                                                </a>
+                                                <a className="btn btn-lg btn-default btn-block" href="#">
+                                                    <span>View project</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-md-6 col-lg-12 col-xl-6">
+                                    <div className="card h-100">
+                                        <div className="card-infos is-linked">
+                                            <div className="card-banner">
+                                                <div className="card-external">
+                                                    <div className="icon icon-program is-16px ml-n6px"></div>
+                                                    <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
+                                                </div>
+                                                <div className="card-image">
+                                                    <picture>
+                                                        <img src="https://inject-demo.s3.amazonaws.com/images/7241300b-a008-4101-b202-7f65d47c7382/co1140x380.jpeg" alt="" />
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                            <div className="card-title d-flex align-items-center gap-2xs mb-none">
+                                                <a href="#" className="h3 mb-none stretched-link line-clamp-1">
+                                                    Wind turbine
+                                                </a>
+                                            </div>
+                                            <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
+                                                <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
+                                                    <div className="d-flex gap-2xs text-muted small">
+                                                        <span className="icon icon-members is-xs" />
+                                                        <span className="text-nowrap">2 members</span>
+                                                    </div>
+                                                    <div className="badges flex-nowrap">
+                                                        <div className="badge is-pill">2words tag</div>
+                                                        <div className="badge is-pill">2words tag</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-links">
+                                            <div className="d-flex align-items-center justify-content-between text-muted mb-3">
                                                 <span className="small font-weight-bold text-truncate mr-2">Application status</span>
                                                 <div className="badges">
                                                     <div className="badge is-pill is-draft">
@@ -535,6 +640,56 @@ export const programHubMySpace = () => {
                                                 <a className="btn btn-lg btn-primary btn-block" href="#">
                                                     <span>Complete</span>
                                                 </a>
+                                                <a className="btn btn-lg btn-default btn-block" href="#">
+                                                    <span>Delete Submission</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-md-6 col-lg-12 col-xl-6">
+                                    <div className="card h-100">
+                                        <div className="card-infos is-linked">
+                                            <div className="card-banner">
+                                                <div className="card-external">
+                                                    <div className="icon icon-program is-16px ml-n6px"></div>
+                                                    <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
+                                                </div>
+                                                <div className="card-image">
+                                                    <picture>
+                                                        <img src="https://inject-demo.s3.amazonaws.com/images/7241300b-a008-4101-b202-7f65d47c7382/co1140x380.jpeg" alt="" />
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                            <div className="card-title d-flex align-items-center gap-2xs mb-none">
+                                                <a href="#" className="h3 mb-none stretched-link line-clamp-1">
+                                                    Wind turbine
+                                                </a>
+                                            </div>
+                                            <div className="d-flex justify-content-between align-items-end flex-nowrap gap-0">
+                                                <div className="d-flex align-items-center flex-wrap flex-lg-nowrap flex-shrink-1 gap-xs overflow-hidden">
+                                                    <div className="d-flex gap-2xs text-muted small">
+                                                        <span className="icon icon-members is-xs" />
+                                                        <span className="text-nowrap">2 members</span>
+                                                    </div>
+                                                    <div className="badges flex-nowrap">
+                                                        <div className="badge is-pill">2words tag</div>
+                                                        <div className="badge is-pill">2words tag</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-links">
+                                            <div className="d-flex align-items-center justify-content-between text-muted mb-3">
+                                                <span className="small font-weight-bold text-truncate mr-2">Application status</span>
+                                                <div className="badges">
+                                                    <div className="badge is-pill is-closed">
+                                                        <span className="icon icon-minus-circle"></span>
+                                                        <span>Rejected</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="card-actions">
                                                 <a className="btn btn-lg btn-default btn-block" href="#">
                                                     <span>Delete Submission</span>
                                                 </a>
