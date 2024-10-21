@@ -9,6 +9,7 @@ export const programHubMySpace = () => {
     return (
         <Layout shortcutBarExpanded={false} showShortcutbar={false}>
             <AppContent showSubnav={false} showTitle={false} showBreadcrumb={false} sections="cards">
+                
                 <div className="row ">
                     <div className="col-12 col-lg-6 col-xl-8 ">
                         <div className="application-section">
@@ -327,6 +328,28 @@ export const programHubMySpace = () => {
                                     </div>
                                 </div>
                             </div>
+                            <a className="btn btn-default btn-block" href="/user/projects">
+                                Show more
+                            </a>
+                        </div>
+                        <div className="application-section">
+                            <div className="d-flex flex-lg-row flex-column align-items-start">
+                                <h3 className="application-section--title flex-fill"> Programs (0) </h3>
+                            </div>
+                            <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
+                                <div className="d-flex pb-16px">
+                                    <span className="icon icon-school is-24px" />
+                                </div>
+                                <div className="d-flex flex-column gap-2xs">
+                                    <p className="font-weight-bold">You're not taking part in any programs yet.</p>
+                                    <p className="small text-muted">Your programs will be listed here.</p>
+                                </div>
+                                <div className="d-flex pt-32px">
+                                    <a href="#" className="btn btn-lg btn-default">
+                                        <span>Show Programs</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="application-section">
@@ -564,6 +587,23 @@ export const programHubMySpace = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <a className="btn btn-default btn-block" href="/user/projects">
+                                     Show more
+                                </a>
+                            </div>
+                        </div>
+                        <div className="application-section">
+                            <div className="d-flex flex-lg-row flex-column align-items-start">
+                                <h3 className="application-section--title flex-fill"> Projects (0) </h3>
+                            </div>
+                            <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
+                                <div className="d-flex pb-16px">
+                                    <span className="icon icon-clipboard-text is-24px" />
+                                </div>
+                                <div className="d-flex flex-column gap-2xs">
+                                    <p className="font-weight-bold">No project</p>
+                                    <p className="small text-muted">Your projects will be listed here.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -657,8 +697,7 @@ export const programHubMySpace = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="cards">
+                    
                                 <div className="card h-100">
                                     <div className="card-external">
                                         <div className="icon icon-program is-16px ml-n6px"></div>
@@ -694,8 +733,7 @@ export const programHubMySpace = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="cards">
+                      
                                 <div className="card h-100">
                                     <div className="card-external">
                                         <div className="icon icon-program is-16px ml-n6px"></div>
@@ -728,8 +766,7 @@ export const programHubMySpace = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="cards">
+               
                                 <div className="card h-100">
                                     <div className="card-external">
                                         <div className="icon icon-program is-16px ml-n6px"></div>
@@ -764,6 +801,23 @@ export const programHubMySpace = () => {
                                             </ul>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <a className="btn btn-default btn-block" href="/user/projects">
+                                Show more
+                            </a>
+                        </div>
+                        <div className="application-section">
+                            <div className="d-flex flex-lg-row flex-column align-items-start">
+                                <h3 className="application-section--title flex-fill"> Activities (0) </h3>
+                            </div>
+                            <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
+                                <div className="d-flex pb-16px">
+                                    <span className="icon icon-format-list-bulleted is-24px" />
+                                </div>
+                                <div className="d-flex flex-column gap-2xs">
+                                    <p className="font-weight-bold">No activities</p>
+                                    <p className="small text-muted">Your activities will be listed here.</p>
                                 </div>
                             </div>
                         </div>
@@ -845,6 +899,23 @@ export const programHubMySpace = () => {
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <a className="btn btn-default btn-block" href="/user/projects">
+                                Show more
+                            </a>
+                        </div>
+                        <div className="application-section">
+                            <div className="d-flex flex-lg-row flex-column align-items-start">
+                                <h3 className="application-section--title flex-fill"> Upcoming events (0) </h3>
+                            </div>
+                            <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
+                                <div className="d-flex pb-16px">
+                                    <span className="icon icon-calendar is-24px" />
+                                </div>
+                                <div className="d-flex flex-column gap-2xs">
+                                    <p className="font-weight-bold">No upcoming events</p>
+                                    <p className="small text-muted">Your upcoming events will be listed here.</p>
                                 </div>
                             </div>
                         </div>
