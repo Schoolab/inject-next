@@ -64,7 +64,7 @@ export const programHubMySpace = () => {
                                                 </a>
                                             </div>
                                             <div className="d-flex justify-content-between align-items-center flex-wrap row-gap-2xs">
-                                                <div className="d-flex align-items-center flex-wrap">
+                                                <div className="d-flex align-items- center flex-wrap">
                                                     <div className="badges mr-3">
                                                         <div className="badge is-pill">Food</div>
                                                         <a className="badge is-pill" href="#">
@@ -103,15 +103,6 @@ export const programHubMySpace = () => {
                                                     <picture>
                                                         <img src="https://inject-prod.s3.amazonaws.com/images/b9751cfd-f746-4963-af9e-23f335a5792f/co1920x640.png" alt="" />
                                                     </picture>
-                                                </div>
-                                                <div className="card-external">
-                                                    <div className="small">External: </div>
-                                                    <div className="small font-weight-bold text-truncate mx-2">
-                                                        {"{"}
-                                                        {"{"}Organization name{"}"}
-                                                        {"}"}
-                                                    </div>
-                                                    <div className="small icon icon-new-tab" />
                                                 </div>
                                             </div>
                                             <div className="card-title">
@@ -162,15 +153,6 @@ export const programHubMySpace = () => {
                                                         <img src="https://inject-prod.s3.amazonaws.com/images/d5623bc5-fafa-49f4-8f9c-763d1f12fe44/co1920x640.png" alt="" />
                                                     </picture>
                                                 </div>
-                                                <div className="card-external">
-                                                    <div className="small">External: </div>
-                                                    <div className="small font-weight-bold text-truncate mx-2">
-                                                        {"{"}
-                                                        {"{"}Organization name with a super long text{"}"}
-                                                        {"}"}
-                                                    </div>
-                                                    <div className="small icon icon-new-tab" />
-                                                </div>
                                             </div>
                                             <div className="card-title">
                                                 <a href="/program/142/details" className="h3 mb-none stretched-link line-clamp-1">
@@ -211,15 +193,6 @@ export const programHubMySpace = () => {
                                                     <picture>
                                                         <img src="https://inject-prod.s3.amazonaws.com/images/bc84f5cc-c5be-45ac-a0f8-f2ad3b7efa91/co1800x1200.jpeg" alt="" />
                                                     </picture>
-                                                </div>
-                                                <div className="card-external">
-                                                    <div className="small">External: </div>
-                                                    <div className="small font-weight-bold text-truncate mx-2">
-                                                        {"{"}
-                                                        {"{"}Organization name with a super long text{"}"}
-                                                        {"}"}
-                                                    </div>
-                                                    <div className="small icon icon-new-tab" />
                                                 </div>
                                             </div>
                                             <div className="card-title">
@@ -263,15 +236,6 @@ export const programHubMySpace = () => {
                                                     <picture>
                                                         <img src="https://inject-prod.s3.amazonaws.com/images/bc84f5cc-c5be-45ac-a0f8-f2ad3b7efa91/co1800x1200.jpeg" alt="" />
                                                     </picture>
-                                                </div>
-                                                <div className="card-external">
-                                                    <div className="small">External: </div>
-                                                    <div className="small font-weight-bold text-truncate mx-2">
-                                                        {"{"}
-                                                        {"{"}Organization name with a super long text{"}"}
-                                                        {"}"}
-                                                    </div>
-                                                    <div className="small icon icon-new-tab" />
                                                 </div>
                                             </div>
                                             <div className="card-title">
@@ -325,15 +289,6 @@ export const programHubMySpace = () => {
                                                     <picture>
                                                         <img src="https://inject-prod.s3.amazonaws.com/images/bc84f5cc-c5be-45ac-a0f8-f2ad3b7efa91/co1800x1200.jpeg" alt="" />
                                                     </picture>
-                                                </div>
-                                                <div className="card-external">
-                                                    <div className="small">External: </div>
-                                                    <div className="small font-weight-bold text-truncate mx-2">
-                                                        {"{"}
-                                                        {"{"}Organization name with a super long text{"}"}
-                                                        {"}"}
-                                                    </div>
-                                                    <div className="small icon icon-new-tab" />
                                                 </div>
                                             </div>
                                             <div className="card-title">
@@ -666,7 +621,6 @@ export const programHubMySpace = () => {
                                                 <li>
                                                     <span>4:30 PM</span>
                                                 </li>
-                                           
                                             </ul>
                                         </div>
                                     </div>
@@ -693,14 +647,12 @@ export const programHubMySpace = () => {
                                             </a>
 
                                             <ul className="text-muted small metas is-list mb-none">
-                                                
                                                 <li>
                                                     <span>July 12, 2024</span>
                                                 </li>
                                                 <li>
                                                     <span>4:30 PM</span>
                                                 </li>
-                                           
                                             </ul>
                                         </div>
                                     </div>
@@ -713,18 +665,14 @@ export const programHubMySpace = () => {
                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                     </div>
                                     <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
-                                      
-                                            <span className="icon icon-gavel is-md">
-                                               
-                                            </span>
-                                 
+                                        <span className="icon icon-gavel is-md"></span>
+
                                         <div className="card-title flex-grow-1">
                                             <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
                                                 <span className="line-clamp-1"> Evaluation session name</span>
                                             </a>
 
                                             <ul className="text-muted small metas is-list mb-none">
-                                                
                                                 <li>
                                                     <div className="d-flex align-items-center gap-xs">
                                                         <svg className="progress-circle-container is-sm" viewBox="0 0 32 32" data-percent={25} style={{ ["--percent" as any]: 25 }}>
@@ -754,18 +702,14 @@ export const programHubMySpace = () => {
                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                     </div>
                                     <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
-                                      
-                                            <span className="icon icon-library is-md">
-                                               
-                                            </span>
-                                 
+                                        <span className="icon icon-library is-md"></span>
+
                                         <div className="card-title flex-grow-1">
                                             <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
                                                 <span className="line-clamp-1"> Learning Courses</span>
                                             </a>
 
                                             <ul className="text-muted small metas is-list mb-none">
-                                                
                                                 <li>
                                                     <div className="d-flex align-items-center gap-xs">
                                                         <svg className="progress-circle-container is-sm" viewBox="0 0 32 32" data-percent={25} style={{ ["--percent" as any]: 25 }}>
@@ -792,18 +736,14 @@ export const programHubMySpace = () => {
                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                     </div>
                                     <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
-                                      
-                                            <span className="icon icon-rocket is-md">
-                                               
-                                            </span>
-                                 
+                                        <span className="icon icon-rocket is-md"></span>
+
                                         <div className="card-title flex-grow-1">
                                             <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
                                                 <span className="line-clamp-1">Objectives</span>
                                             </a>
 
                                             <ul className="text-muted small metas is-list mb-none">
-                                                
                                                 <li>
                                                     <div className="d-flex align-items-center gap-xs">
                                                         <svg className="progress-circle-container is-sm" viewBox="0 0 32 32" data-percent={25} style={{ ["--percent" as any]: 66 }}>
