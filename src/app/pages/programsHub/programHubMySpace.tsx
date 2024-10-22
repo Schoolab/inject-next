@@ -1,11 +1,16 @@
 import React from "react";
+import { useEffect } from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Button } from "@/app/components/Button";
 import { CardEvent } from "@/app/components/cards/CardEvent";
 import { FiltersMySpace } from "@/app/components/filters/FiltersMySpace";
+import { showMore } from "../../../../public/utils/showMore";
 
 export const programHubMySpace = () => {
+    useEffect(() => {
+        showMore();
+    }, []);
     return (
         <Layout shortcutBarExpanded={false} showShortcutbar={false} hub={true}>
             <AppContent showSubnav={false} showTitle={false} showBreadcrumb={false} sections="cards">
@@ -46,7 +51,7 @@ export const programHubMySpace = () => {
                                     </div>
                                     <FiltersMySpace />
                                 </div>
-                                <div className="col-12 col-md-6 col-lg-12 col-xl-6">
+                                <div className="col-12 col-md-6 col-lg-12 col-xl-6 itemToShow">
                                     <div className="card h-100">
                                         <div className="card-infos is-linked">
                                             <div className="card-banner">
@@ -267,7 +272,7 @@ export const programHubMySpace = () => {
                                                 <div className="badges">
                                                     <div className="badge is-pill is-draft">
                                                         <span className="icon icon-status-bordered"></span>
-                                                        <span>Submission</span>
+                                                        <span>Submitted</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -276,7 +281,7 @@ export const programHubMySpace = () => {
                                                     <span>Complete</span>
                                                 </a>
                                                 <a className="btn btn-lg btn-default btn-block" href="#">
-                                                    <span>Delete Submission</span>
+                                                    <span>Delete application</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -372,14 +377,15 @@ export const programHubMySpace = () => {
                                             <div className="card-actions">
                                              
                                                 <a className="btn btn-lg btn-default btn-block" href="#">
-                                                    <span>Delete Submission</span>
+                                                    <span>Delete application</span>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                               
                             </div>
-                            <a className="btn btn-default btn-block" href="/user/projects">
+                            <a className="btn btn-default btn-block showMoreBtn" href="/user/projects">
                                 Show more
                             </a>
                         </div>
@@ -632,7 +638,7 @@ export const programHubMySpace = () => {
                                                 <div className="badges">
                                                     <div className="badge is-pill is-draft">
                                                         <span className="icon icon-status-bordered"></span>
-                                                        <span>Submission</span>
+                                                        <span>Submitted</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -641,7 +647,7 @@ export const programHubMySpace = () => {
                                                     <span>Complete</span>
                                                 </a>
                                                 <a className="btn btn-lg btn-default btn-block" href="#">
-                                                    <span>Delete Submission</span>
+                                                    <span>Delete application</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -736,7 +742,7 @@ export const programHubMySpace = () => {
                                             </div>
                                             <div className="card-actions">
                                                 <a className="btn btn-lg btn-default btn-block" href="#">
-                                                    <span>Delete Submission</span>
+                                                    <span>Delete application</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -765,7 +771,7 @@ export const programHubMySpace = () => {
                     </div>
                     <div className="col-12 col-lg-6 col-xl-4">
                         <div className="application-section">
-                            <h3 className="application-section--title">Activities (5)</h3>
+                            <h3 className="application-section--title">Coaching (2)</h3>
                             <div className="cards">
                                 <div className="card h-100">
                                     <div className="card-external">
@@ -821,8 +827,6 @@ export const programHubMySpace = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="cards">
                                 <div className="card h-100">
                                     <div className="card-external">
                                         <div className="icon icon-program is-16px ml-n6px"></div>
@@ -853,6 +857,15 @@ export const programHubMySpace = () => {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <a className="btn btn-default btn-block" href="/user/projects">
+                                Show more
+                            </a>
+                        </div>
+                        <div className="application-section">
+                            <h3 className="application-section--title">Evaluation (1)</h3>
+                            <div className="cards">
+                                
                     
                                 <div className="card h-100">
                                     <div className="card-external">
@@ -889,6 +902,17 @@ export const programHubMySpace = () => {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <a className="btn btn-default btn-block" href="/user/projects">
+                                Show more
+                            </a>
+                        </div>
+                        <div className="application-section">
+                            <h3 className="application-section--title">Progression (2)</h3>
+                            <div className="cards">
+                                
+                    
+                                
                       
                                 <div className="card h-100">
                                     <div className="card-external">
@@ -929,7 +953,7 @@ export const programHubMySpace = () => {
                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                     </div>
                                     <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
-                                        <span className="icon icon-rocket is-md"></span>
+                                        <span className="icon icon-bullseye-arrow is-md"></span>
 
                                         <div className="card-title flex-grow-1">
                                             <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
@@ -965,15 +989,15 @@ export const programHubMySpace = () => {
                         </div>
                         <div className="application-section">
                             <div className="d-flex flex-lg-row flex-column align-items-start">
-                                <h3 className="application-section--title flex-fill"> Activities (0) </h3>
+                                <h3 className="application-section--title flex-fill"> Coaching (0) </h3>
                             </div>
                             <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
                                 <div className="d-flex pb-16px">
-                                    <span className="icon icon-format-list-bulleted is-24px" />
+                                    <span className="icon icon-account-supervisor-circle is-24px" />
                                 </div>
                                 <div className="d-flex flex-column gap-2xs">
-                                    <p className="font-weight-bold">No activities</p>
-                                    <p className="small text-muted">Your activities will be listed here.</p>
+                                    <p className="font-weight-bold">No coaching</p>
+                                    <p className="small text-muted">Your coaching will be listed here.</p>
                                 </div>
                             </div>
                         </div>
