@@ -783,7 +783,7 @@ export const programHubMySpace = () => {
                                 <span className="application-section--title-content">Upcoming events (2)</span>
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
-                            <div className="collapse show d-flex flex-column gap-xs" id="events">
+                            <div className="collapse show" id="events">
                                 <div className="cards">
                                     <div className="card">
                                         <div className="card-infos is-linked">
@@ -862,7 +862,7 @@ export const programHubMySpace = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <a className="btn btn-default btn-block" href="/user/projects">
+                                <a className="btn btn-default btn-block mt-3" href="/user/projects">
                                     Show more
                                 </a>
                             </div>
@@ -872,7 +872,7 @@ export const programHubMySpace = () => {
                                 <span className="application-section--title-content">Coaching (2)</span>
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
-                            <div className="collapse show d-flex flex-column gap-xs" id="coaching">
+                            <div className="collapse show" id="coaching">
                                 <div className="cards">
                                     <div className="card h-100">
                                         <div className="card-external">
@@ -959,7 +959,7 @@ export const programHubMySpace = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <a className="btn btn-default btn-block" href="/user/projects">
+                                <a className="btn btn-default btn-block mt-3" href="/user/projects">
                                     Show more
                                 </a>
                             </div>
@@ -969,7 +969,7 @@ export const programHubMySpace = () => {
                                 <span className="application-section--title-content">Evaluations (1)</span>
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
-                            <div className="collapse show d-flex flex-column gap-xs" id="evaluations">
+                            <div className="collapse show" id="evaluations">
                             <div className="cards">
                                 <div className="card h-100">
                                     <div className="card-external">
@@ -1007,7 +1007,7 @@ export const programHubMySpace = () => {
                                     </div>
                                 </div>
                             </div>
-                            <a className="btn btn-default btn-block" href="/user/projects">
+                            <a className="btn btn-default btn-block mt-3" href="/user/projects">
                                 Show more
                             </a>
                             </div>
@@ -1019,7 +1019,7 @@ export const programHubMySpace = () => {
                                 <span className="application-section--title-content">Progression (2)</span>
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
-                            <div className="collapse show d-flex flex-column gap-xs" id="progression">
+                            <div className="collapse show" id="progression">
                             <div className="cards">
                                 <div className="card h-100">
                                     <div className="card-external">
@@ -1090,7 +1090,7 @@ export const programHubMySpace = () => {
                                     </div>
                                 </div>
                             </div>
-                            <a className="btn btn-default btn-block" href="/user/projects">
+                            <a className="btn btn-default btn-block mt-3" href="/user/projects">
                                 Show more
                             </a>
                             </div>
@@ -1102,7 +1102,7 @@ export const programHubMySpace = () => {
                                 <span className="application-section--title-content">Coaching (0)</span>
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
-                            <div className="collapse show d-flex flex-column gap-xs" id="coachingEmpty">
+                            <div className="collapse show" id="coachingEmpty">
                             <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
                                 <div className="d-flex pb-16px">
                                     <span className="icon icon-account-supervisor-circle is-24px" />
@@ -1118,10 +1118,10 @@ export const programHubMySpace = () => {
 
                         <div className="application-section">
                             <h3 className="application-section--title" data-toggle="collapse" data-target="#eventsEmpty" aria-expanded="true">
-                                <span className="application-section--title-content">Upcoming events (0))</span>
+                                <span className="application-section--title-content">Events (0))</span>
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
-                            <div className="collapse show d-flex flex-column gap-xs" id="eventsEmpty">
+                            <div className="collapse show" id="eventsEmpty">
                             <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
                                 <div className="d-flex pb-16px">
                                     <span className="icon icon-calendar is-24px" />
