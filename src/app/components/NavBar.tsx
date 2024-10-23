@@ -63,7 +63,7 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                                 <div className="navbar-options ml-lg-auto">
                                     <div className="d-none d-lg-flex flex-fill">
                                         <div className="navbar-option dropdown">
-                                            <a href="#" className="btn navbar-main-btn" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" style={{ maxWidth: 256 }}>
+                                            <a href="#" className="btn navbar-main-btn border" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" style={{ maxWidth: 256 }}>
                                                 <span className="icon icon-school" aria-hidden="true" />
                                                 <span className="text-truncate">Schoolab - Saint Lazare Schoolab - Saint Lazare</span>
                                                 <span className="icon icon-chevron-down" aria-hidden="true" />
@@ -184,7 +184,7 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                                     </div>
                                     <div className="nav-divider" />
                                     <div className="nav-item dropdown ">
-                                        <a href="#" className="nav-link d-flex gap-xs" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false">
+                                        <a href="#" className="nav-link d-flex gap-xs border rounded" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false">
                                             <span className="d-flex gap-xs flex-fill">
                                                 <span className="icon icon-school" aria-hidden="true" />
                                                 <span className="text-truncate" style={{ maxWidth: 256 }}>Schoolab - Saint Lazare Schoolab - Saint Lazare</span>
