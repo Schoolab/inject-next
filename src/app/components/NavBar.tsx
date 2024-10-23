@@ -182,37 +182,37 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                                             Home
                                         </a>
                                     </div>
-                                    <div className="nav-item">
-                                        <a className="nav-link" href="#">
-                                            Programs
-                                        </a>
-                                    </div>
-                                    <div className="nav-item">
-                                        <a className="nav-link" href="#">
-                                            Projects
-                                        </a>
-                                    </div>
-                                    <div className="nav-item">
-                                        <a className="nav-link" href="#">
-                                            Community
-                                        </a>
-                                    </div>
-                                    <div className="nav-item">
-                                        <a className="nav-link" href="#">
-                                            Events
-                                        </a>
-                                    </div>
-                                    <div className="nav-item">
-                                        <a className="nav-link" href="#">
-                                            Newsfeed
-                                        </a>
-                                    </div>
-                                    <div className="nav-item">
-                                        <a className="nav-link" href="#">
-                                            Faq
-                                        </a>
-                                    </div>
                                     <div className="nav-divider" />
+                                    <div className="nav-item dropdown ">
+                                        <a href="#" className="nav-link d-flex gap-xs" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false">
+                                            <span className="d-flex gap-xs flex-fill">
+                                                <span className="icon icon-school" aria-hidden="true" />
+                                                <span className="text-truncate" style={{ maxWidth: 256 }}>Schoolab - Saint Lazare Schoolab - Saint Lazare</span>
+                                            </span>
+                                            
+                                            <span className="icon icon-chevron-down" aria-hidden="true" />
+                                        </a>
+
+                                        <div className="dropdown-menu">
+                                            <h6 className="dropdown-header">Switch program</h6>
+                                            <a className="dropdown-item active" href="#">
+                                                <span className="text-truncate">Schoolab - Saint Lazare Schoolab - Saint Lazare</span>
+                                            </a>
+                                            <a className="dropdown-item" href="#">
+                                                <span>Starter S20</span>
+                                            </a>
+                                            <div className="dropdown-divider" />
+                                            <a className="dropdown-item" href="#">
+                                                <span>My programs (3)</span>
+                                                <span className="ml-3 icon icon-new-tab" aria-hidden="true" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="nav-item">
+                                        <a className="nav-link" href="#">
+                                            My space
+                                        </a>
+                                    </div>   
                                     <div className="nav-item">
                                         <a className="nav-link" href="#">
                                             Admin
@@ -221,7 +221,7 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                                     <div className="nav-divider" />
                                     <div className="nav-item">
                                         <a className="nav-link" href="#">
-                                            My space
+                                            Notifications
                                         </a>
                                     </div>
                                     <div className="nav-item">
