@@ -1,4 +1,3 @@
-import React from "react";
 import { Icon } from "./Icon";
 
 export interface ButtonProps {
@@ -30,7 +29,7 @@ export interface ButtonProps {
     /**
      * Is this the principal call to action on the page?
      */
-    type?: "default" | "primary" | "transparent" | "muted" | "danger" | "warning" | "secondary";
+    type?: "default" | "primary" | "transparent" | "muted" | "danger" | "warning" | "secondary" ;
     /**
      * How large should the button be?
      */

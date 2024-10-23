@@ -487,7 +487,7 @@ export const programHubMySpace = () => {
                                             <div className="card-infos is-linked">
                                                 <div className="card-banner">
                                                     <div className="card-external">
-                                                        <div className="icon icon-program is-16px ml-n6px"></div>
+                                                        <div className="icon icon-school is-16px ml-n6px"></div>
                                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                                     </div>
                                                     <div className="card-image">
@@ -521,7 +521,7 @@ export const programHubMySpace = () => {
                                             <div className="card-infos is-linked">
                                                 <div className="card-banner">
                                                     <div className="card-external">
-                                                        <div className="icon icon-program is-16px ml-n6px"></div>
+                                                        <div className="icon icon-school is-16px ml-n6px"></div>
                                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                                     </div>
                                                     <div className="card-image">
@@ -555,7 +555,7 @@ export const programHubMySpace = () => {
                                             <div className="card-infos is-linked">
                                                 <div className="card-banner">
                                                     <div className="card-external">
-                                                        <div className="icon icon-program is-16px ml-n6px"></div>
+                                                        <div className="icon icon-school is-16px ml-n6px"></div>
                                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                                     </div>
                                                     <div className="card-image">
@@ -609,7 +609,7 @@ export const programHubMySpace = () => {
                                             <div className="card-infos is-linked">
                                                 <div className="card-banner">
                                                     <div className="card-external">
-                                                        <div className="icon icon-program is-16px ml-n6px"></div>
+                                                        <div className="icon icon-school is-16px ml-n6px"></div>
                                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                                     </div>
                                                     <div className="card-image">
@@ -662,7 +662,7 @@ export const programHubMySpace = () => {
                                             <div className="card-infos is-linked">
                                                 <div className="card-banner">
                                                     <div className="card-external">
-                                                        <div className="icon icon-program is-16px ml-n6px"></div>
+                                                        <div className="icon icon-school is-16px ml-n6px"></div>
                                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                                     </div>
                                                     <div className="card-image">
@@ -707,7 +707,7 @@ export const programHubMySpace = () => {
                                             <div className="card-infos is-linked">
                                                 <div className="card-banner">
                                                     <div className="card-external">
-                                                        <div className="icon icon-program is-16px ml-n6px"></div>
+                                                        <div className="icon icon-school is-16px ml-n6px"></div>
                                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                                     </div>
                                                     <div className="card-image">
@@ -789,7 +789,7 @@ export const programHubMySpace = () => {
                                         <div className="card-infos is-linked">
                                             <div className="card-banner">
                                                 <div className="card-external">
-                                                    <div className="icon icon-program is-16px ml-n6px"></div>
+                                                    <div className="icon icon-school is-16px ml-n6px"></div>
                                                     <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                                 </div>
                                                 <div className="card-image is-3by1">
@@ -827,7 +827,7 @@ export const programHubMySpace = () => {
                                         <div className="card-infos is-linked">
                                             <div className="card-banner">
                                                 <div className="card-external">
-                                                    <div className="icon icon-program is-16px ml-n6px"></div>
+                                                    <div className="icon icon-school is-16px ml-n6px"></div>
                                                     <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                                 </div>
                                                 <div className="card-image is-3by1">
@@ -876,7 +876,7 @@ export const programHubMySpace = () => {
                                 <div className="cards">
                                     <div className="card h-100">
                                         <div className="card-external">
-                                            <div className="icon icon-program is-16px ml-n6px"></div>
+                                            <div className="icon icon-school is-16px ml-n6px"></div>
                                             <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                         </div>
                                         <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
@@ -930,7 +930,7 @@ export const programHubMySpace = () => {
                                     </div>
                                     <div className="card h-100">
                                         <div className="card-external">
-                                            <div className="icon icon-program is-16px ml-n6px"></div>
+                                            <div className="icon icon-school is-16px ml-n6px"></div>
                                             <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                         </div>
                                         <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
@@ -973,7 +973,7 @@ export const programHubMySpace = () => {
                             <div className="cards">
                                 <div className="card h-100">
                                     <div className="card-external">
-                                        <div className="icon icon-program is-16px ml-n6px"></div>
+                                        <div className="icon icon-school is-16px ml-n6px"></div>
                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                     </div>
                                     <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
@@ -1023,7 +1023,7 @@ export const programHubMySpace = () => {
                             <div className="cards">
                                 <div className="card h-100">
                                     <div className="card-external">
-                                        <div className="icon icon-program is-16px ml-n6px"></div>
+                                        <div className="icon icon-school is-16px ml-n6px"></div>
                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                     </div>
                                     <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
@@ -1056,7 +1056,7 @@ export const programHubMySpace = () => {
 
                                 <div className="card h-100">
                                     <div className="card-external">
-                                        <div className="icon icon-program is-16px ml-n6px"></div>
+                                        <div className="icon icon-school is-16px ml-n6px"></div>
                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                     </div>
                                     <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">

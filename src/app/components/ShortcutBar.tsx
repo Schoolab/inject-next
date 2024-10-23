@@ -14,7 +14,7 @@ export const ShortcutBar = ({ isExpanded }: ShortcutBarProps) => {
     return (
         <div className={classTab.join(" ")}>
             <div className="shortcutbar-container flex-fill" aria-label="Shortcut Bar">
-                <div className="shortcutbar-option dropright mb-lg-5 mb-none" data-toggle="tooltip" data-placement="top" data-original-title="Switch program" data-boundary="window" style={{ zIndex: 2 }}>
+                {/* <div className="shortcutbar-option dropright mb-lg-5 mb-none" data-toggle="tooltip" data-placement="top" data-original-title="Switch program" data-boundary="window" style={{ zIndex: 2 }}>
                     <a href="#" className="shortcutbar-option--link" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false">
                         <span className="icon icon--program">
                             <span aria-hidden="true">SSL</span>
@@ -37,7 +37,7 @@ export const ShortcutBar = ({ isExpanded }: ShortcutBarProps) => {
                         </a>
                     </div>
                     <div className="shortcutbar-option--label">Switch program</div>
-                </div>
+                </div> */}
                 <div className="d-flex flex-row flex-lg-column">
                     <div className="shortcutbar-option">
                         <a className="shortcutbar-option--link " href="#" data-toggle="tooltip" data-placement="top" data-original-title="Program dashboard" data-boundary="window">

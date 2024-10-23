@@ -43,19 +43,47 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                 <div className="navbar-container">
                     <div className="navbar">
                         <div className="container-fluid">
-                            <div className="flex-nowrap d-flex w-100">
+                            <div className="flex-nowrap d-flex w-100 gap-xs">
                                 <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                     <span className="navbar-toggler-icon">
                                         <span className="icon icon-menu" />
                                     </span>
                                 </button>
+                                <div className="navbar-option d-none d-lg-flex">
+                                    <a href="#" className="btn navbar-main-btn ">
+                                        <span className="icon icon-arrow-left" aria-hidden="true" />
+                                    </a>
+                                </div>
                                 <div className="navbar-brand">
                                     <a tabIndex={1} title="" data-toggle="tooltip" href="#" data-original-title="schoolab home">
                                         <img className="img-fluid d-block" src={logoUrl} style={{ maxWidth: 150, width: "100%" }} />
                                     </a>
                                 </div>
+
                                 <div className="navbar-options ml-lg-auto">
                                     <div className="d-none d-lg-flex flex-fill">
+                                        <div className="navbar-option dropdown">
+                                            <a href="#" className="btn navbar-main-btn" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" style={{ maxWidth: 256 }}>
+                                                <span className="icon icon-school" aria-hidden="true" />
+                                                <span className="text-truncate">Schoolab - Saint Lazare Schoolab - Saint Lazare</span>
+                                                <span className="icon icon-chevron-down" aria-hidden="true" />
+                                            </a>
+
+                                            <div className="dropdown-menu" style={{ maxWidth: 225 }}>
+                                                <h6 className="dropdown-header">Switch program</h6>
+                                                <a className="dropdown-item active" href="#">
+                                                    <span className="text-truncate">Schoolab - Saint Lazare Schoolab - Saint Lazare</span>
+                                                </a>
+                                                <a className="dropdown-item" href="#">
+                                                    <span>Starter S20</span>
+                                                </a>
+                                                <div className="dropdown-divider" />
+                                                <a className="dropdown-item" href="#">
+                                                    <span>My programs (3)</span>
+                                                    <span className="ml-3 icon icon-new-tab" aria-hidden="true" />
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                     {isLogged ? (
                                         <div className="d-flex gap-xs align-items-center">
