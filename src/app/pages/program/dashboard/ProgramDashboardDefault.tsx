@@ -6,7 +6,7 @@ import { Button } from "@/app/components/Button";
 
 export const ProgramDashboardDefault = () => {
     return (
-        <Layout shortcutBarExpanded={true}>
+        <Layout shortcutBarExpanded={true} theme="Moho">
             <AppContent>
                 <div className="row">
                     <div className="col-12 col-lg-6 col-xl-8">

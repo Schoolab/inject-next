@@ -63,7 +63,7 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                                 <div className="navbar-options ml-lg-auto">
                                     <div className="d-none d-lg-flex flex-fill">
                                         <div className="navbar-option dropdown">
-                                            <a href="#" className="btn navbar-main-btn border" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" style={{ maxWidth: 256 }}>
+                                            <a href="#" className="btn navbar-main-btn" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" style={{ maxWidth: 256 }}>
                                                 <span className="icon icon-school" aria-hidden="true" />
                                                 <span className="text-truncate">Schoolab - Saint Lazare Schoolab - Saint Lazare</span>
                                                 <span className="icon icon-chevron-down" aria-hidden="true" />
