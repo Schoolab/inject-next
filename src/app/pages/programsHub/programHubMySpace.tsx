@@ -976,7 +976,7 @@ export const programHubMySpace = () => {
                                         <div className="icon icon-school is-16px ml-n6px"></div>
                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                     </div>
-                                    <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
+                                    <div className="card-infos is-linked d-flex align-items-start gap-xs pt-7">
                                         <span className="icon icon-gavel is-md"></span>
 
                                         <div className="card-title flex-grow-1">
@@ -1026,7 +1026,7 @@ export const programHubMySpace = () => {
                                         <div className="icon icon-school is-16px ml-n6px"></div>
                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                     </div>
-                                    <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
+                                    <div className="card-infos is-linked d-flex align-items-start gap-xs pt-7">
                                         <span className="icon icon-library is-md"></span>
 
                                         <div className="card-title flex-grow-1">
@@ -1059,7 +1059,7 @@ export const programHubMySpace = () => {
                                         <div className="icon icon-school is-16px ml-n6px"></div>
                                         <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
                                     </div>
-                                    <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
+                                    <div className="card-infos is-linked d-flex align-items-start gap-xs pt-7">
                                         <span className="icon icon-bullseye-arrow is-md"></span>
 
                                         <div className="card-title flex-grow-1">

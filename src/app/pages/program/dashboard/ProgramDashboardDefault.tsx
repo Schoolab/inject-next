@@ -389,7 +389,7 @@ export const ProgramDashboardDefault = () => {
                             <h3 className="application-section--title">Progression</h3>
                             <div className="cards">
                                 <div className="card h-100">
-                                    <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
+                                    <div className="card-infos is-linked d-flex align-items-start gap-xs">
                                         <span className="icon icon-library is-md"></span>
 
                                         <div className="card-title flex-grow-1">
@@ -418,7 +418,7 @@ export const ProgramDashboardDefault = () => {
                                 </div>
 
                                 <div className="card h-100">
-                                    <div className="card-infos is-linked d-flex align-items-start gap-sm pt-7">
+                                    <div className="card-infos is-linked d-flex align-items-start gap-xs">
                                         <span className="icon icon-bullseye-arrow is-md"></span>
 
                                         <div className="card-title flex-grow-1">

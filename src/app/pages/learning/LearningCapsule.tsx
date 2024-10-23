@@ -529,38 +529,25 @@ export const LearningCapsule = () => {
                                             </form>
                                         </div>
                                     </div>
-                                    <div className="aside-buttons-bottom d-flex flex-column flex-lg-row">
-                                        <button id="btn-quiz" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
-                                            <span className="icon icon-format-list-bulleted mr-2" />
-                                            Capsules
-                                        </button>
-                                        <button id="btn-quiz" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
-                                            <span className="icon icon-clipboard-text mr-2" />
-                                            Take a quiz
-                                        </button>
-                                        <button id="btn-quiz" className="btn btn-default btn-lg mr-lg-3 mb-3 mr-0">
-                                            <span className="icon icon-thumbs-up-down  mr-2" />
-                                            Give a feedback
-                                        </button>
-                                        <button id="btn-quiz" className="btn btn-default btn-lg mr-lg-3 mb-3 mr-0">
-                                            <span className="icon icon-cloud-download  mr-2" />
-                                            Ressources
-                                        </button>
-                                    </div>
-                                    <div className="d-flex flex-column flex-lg-row justify-content-between">
-                                        <div className="d-flex flex-column flex-lg-row ">
-                                            <div className="dropdown mr-lg-3 mb-3 mr-0">
-                                                <button className="btn btn-lg btn-block dropdown-toggle btn-default" type="button" id="completeButton1704326950" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i className="fas fa-check-circle" />
-                                                    &nbsp;Completed{" "}
-                                                </button>
-                                                <div className="dropdown-menu" aria-labelledby="completeButton1704326950">
-                                                    <a data-url="/rest/challenge/147/state/5211/ch-user/7474/uncomplete?html=1&small=1" className="dropdown-item cursorLink" href="#">
-                                                        {" "}
-                                                        Mark as not completed{" "}
-                                                    </a>
-                                                </div>
-                                            </div>
+                                 
+                                    <div className="d-flex flex-column flex-lg-row justify-content-between flex-wrap">
+                                        <div className="aside-buttons-bottom d-flex flex-column flex-lg-row">
+                                            <button id="btn-quiz" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
+                                                <span className="icon icon-format-list-bulleted mr-2" />
+                                                Capsules
+                                            </button>
+                                            <button id="btn-quiz" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
+                                                <span className="icon icon-clipboard-text mr-2" />
+                                                Take a quiz
+                                            </button>
+                                            <button id="btn-quiz" className="btn btn-default btn-lg mr-lg-3 mb-3 mr-0">
+                                                <span className="icon icon-thumbs-up-down  mr-2" />
+                                                Give a feedback
+                                            </button>
+                                            <button id="btn-quiz" className="btn btn-default btn-lg mr-lg-3 mb-3 mr-0">
+                                                <span className="icon icon-cloud-download  mr-2" />
+                                                Ressources
+                                            </button>
                                         </div>
                                         <div className="d-flex flex-column flex-lg-row">
                                             <button className="btn btn-default btn-lg mr-lg-3 mb-3 mr-0">Previous</button>
