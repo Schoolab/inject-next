@@ -168,12 +168,7 @@ export const NavbarHub = ({ isLogged = true, theme }: NavBarHubProps) => {
                                 <div className="navbar-nav pt-3 pt-lg-0">
                                     <div className="nav-item">
                                         <a className="nav-link" href="#">
-                                            Home
-                                        </a>
-                                    </div>
-                                    <div className="nav-item">
-                                        <a className="nav-link" href="#">
-                                            Programs
+                                            Programs Hub
                                         </a>
                                     </div>
                                     <div className="nav-item">

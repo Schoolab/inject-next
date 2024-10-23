@@ -179,7 +179,7 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                                 <div className="navbar-nav pt-3 pt-lg-0">
                                     <div className="nav-item">
                                         <a className="nav-link" href="#">
-                                            Home
+                                            Programs Hub
                                         </a>
                                     </div>
                                     <div className="nav-divider" />
