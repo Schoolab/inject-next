@@ -77,7 +77,7 @@ export const NavbarHub = ({ isLogged = true, theme }: NavBarHubProps) => {
                                     </div>
                                     {isLogged ? (
                                         <div className="d-flex gap-xs align-items-center">
-                                            <div className="navbar-option">
+                                            <div className="navbar-option  d-none d-lg-flex">
                                                 <Button label="My space" type="default" isActive={false} addClass="navbar-main-btn" />
                                             </div>
                                             <div className="navbar-option d-none d-lg-flex">
@@ -102,13 +102,12 @@ export const NavbarHub = ({ isLogged = true, theme }: NavBarHubProps) => {
                                                 </a>
                                             </div>
                                             <div className="nav-horizontal-divider d-none d-lg-block" />
-                                            <div className="navbar-option dropdown">
+                                            <div className="navbar-option dropdown  d-none d-lg-flex">
                                                 <a className="navbar-option--link" data-toggle="dropdown" role="button" href="#">
                                                     <span className="icon icon-notifications has-dot" title="" data-toggle="tooltip" data-content="" data-original-title="Notifications" />
                                                 </a>
-                                                <div className="dropdown-menu dropdown-menu-right" />
                                             </div>
-                                            <div className="navbar-option">
+                                            <div className="navbar-option ">
                                                 <a className="navbar-option--link" href="#" data-toggle="modal" data-target="#messagesModal">
                                                     <span className="icon icon-comment" title="" data-toggle="tooltip" data-original-title="Messages" />
                                                 </a>
