@@ -201,7 +201,7 @@ export const AsideNoteManager = ({}: AsideNoteManagerProps) => {
                             </div>
                             <div className="form-group">
                                 <label className="active checkbox-custom font-weight-bold" htmlFor="event_adminNote">
-                                    Notes for the Program Managers
+                                    Notes
                                 </label>
                                 <textarea
                                     id="event_adminNote"
