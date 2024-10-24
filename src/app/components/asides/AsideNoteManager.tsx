@@ -110,7 +110,7 @@ export const AsideNoteManager = ({}: AsideNoteManagerProps) => {
             <div className="aside-content-container d-none">
                 <div className="aside-header">
                     <h3 className="aside-title line-clamp-1">
-                        <span className="text-truncate">Note managers</span>
+                        <span className="text-truncate">Expert’s notes</span>
                     </h3>
                     <div className="aside-actions">
                         <button className="btn btn-transparent border-0 p-2xs text-muted close-aside" type="button" data-dismiss="aside" aria-label="Fermer">

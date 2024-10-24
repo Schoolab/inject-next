@@ -315,7 +315,7 @@ export const ExpertCoachingSession = () => {
                                         </button>
                                         <button id="btn-comment" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
                                             <span className="icon icon-note-text-outline mr-2" />
-                                            Note managers
+                                            Expert’s notes
                                         </button>
                                     </div>
                                 </div>
@@ -327,7 +327,7 @@ export const ExpertCoachingSession = () => {
                         <button className="btn  btn-lg btn-default mb-3" data-toggle="tooltip" data-original-title="Resources">
                             <span className="icon icon-cloud-download" />
                         </button>
-                        <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Note managers">
+                        <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Expert’s notes">
                             <span className="icon icon-note-text-outline" />
                         </button>
                     </div>
