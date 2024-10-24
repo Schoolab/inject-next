@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Layout } from "../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { AsideEvent } from "@/app/components/asides/AsideEvent";
+import { AsideNoteManager } from "@/app/components/asides/AsideNoteManager";
 import { aside } from "../../../../public/utils/aside";
 
 export const ExpertCoachingSession = () => {
@@ -308,13 +309,13 @@ export const ExpertCoachingSession = () => {
                                         </div>
                                     </div>
                                     <div className="aside-buttons-bottom d-flex flex-column flex-lg-row mt-5">
-                                        <button id="btn-comment" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
-                                            <span className="icon icon-comment mr-2" />
-                                            Chat
-                                        </button>
                                         <button id="btn-quiz" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
                                             <span className="icon icon-cloud-download mr-2" />
                                             Ressources
+                                        </button>
+                                        <button id="btn-comment" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
+                                            <span className="icon icon-note-text-outline mr-2" />
+                                            Note managers
                                         </button>
                                     </div>
                                 </div>
@@ -322,16 +323,17 @@ export const ExpertCoachingSession = () => {
                         </div>
                     </div>
                     <div className="aside-buttons no-subnav">
-                        <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Chat">
-                            <span className="icon icon-comment" />
-                        </button>
+                      
                         <button className="btn  btn-lg btn-default mb-3" data-toggle="tooltip" data-original-title="Resources">
                             <span className="icon icon-cloud-download" />
+                        </button>
+                        <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Note managers">
+                            <span className="icon icon-note-text-outline" />
                         </button>
                     </div>
                 </div>
             </AppContent>
-            <AsideEvent />
+            <AsideNoteManager />
         </Layout>
     );
 };
