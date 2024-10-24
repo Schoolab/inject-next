@@ -390,7 +390,7 @@ export const ProgramDashboardDefault = () => {
                             <div className="cards">
                                 <div className="card h-100">
                                     <div className="card-infos is-linked d-flex align-items-start gap-xs">
-                                        <span className="icon icon-library is-md"></span>
+                                        <span className="card-icon icon icon-library"></span>
 
                                         <div className="card-title flex-grow-1">
                                             <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
@@ -419,7 +419,7 @@ export const ProgramDashboardDefault = () => {
 
                                 <div className="card h-100">
                                     <div className="card-infos is-linked d-flex align-items-start gap-xs">
-                                        <span className="icon icon-bullseye-arrow is-md"></span>
+                                        <span className="card-icon icon icon-bullseye-arrow"></span>
 
                                         <div className="card-title flex-grow-1">
                                             <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
