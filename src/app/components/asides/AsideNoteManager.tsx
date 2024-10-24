@@ -223,7 +223,7 @@ export const AsideNoteManager = ({}: AsideNoteManagerProps) => {
                                 </small>
                             </div>
                         </div>
-                        <input type="hidden" id="event__token" name="event[_token]" defaultValue="01b7eab0c82a1ad714444d729.-IrhMgbYWqbAVvFj8kqEyDmPNJ-pkzxpb2aBn1dCZAk.neS4dEK_LvSPBccHkDzhrHbpXNPu9gpEK1Tgrh0uSUGr8Jt_Z6kr74wzkg" />
+                        <input type="hidden" id="event__token" name="event[_token]" defaultValue="" />
                     </form>
                 </div>
                 <div className="aside-footer">
