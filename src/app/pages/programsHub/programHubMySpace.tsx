@@ -780,7 +780,7 @@ export const programHubMySpace = () => {
                     <div className="col-12 col-lg-6 col-xl-4">
                         <div className="application-section">
                             <h3 className="application-section--title" data-toggle="collapse" data-target="#events" aria-expanded="true">
-                                <span className="application-section--title-content">Upcoming events (2)</span>
+                                <span className="application-section--title-content">Events (2)</span>
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
                             <div className="collapse show" id="events">
@@ -869,7 +869,7 @@ export const programHubMySpace = () => {
                         </div>
                         <div className="application-section">
                             <h3 className="application-section--title" data-toggle="collapse" data-target="#coaching" aria-expanded="true">
-                                <span className="application-section--title-content">Coaching (2)</span>
+                                <span className="application-section--title-content">Expert's meeting (2)</span>
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
                             <div className="collapse show" id="coaching">

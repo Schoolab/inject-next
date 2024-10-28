@@ -17,10 +17,10 @@ interface AppContentProps {
 }
 export const AppContent = ({ children,   showSubnav = true,  isAsside, layout = "centered", sections = "cards", showBreadcrumb = true, showTitle = true }: AppContentProps) => {
 
-    let appMainContainerClass = "application-main-content container-lg container-lg-fluid p-xl";
-    isAsside && (appMainContainerClass = "application-main-content container-fluid p-xl");
-    layout === "fluid" && (appMainContainerClass = "application-main-content container-fluid p-xl");
-    layout === "narrow" && (appMainContainerClass = "application-main-content container-md p-xl");
+    let appMainContainerClass = "application-main-content container-lg container-lg-fluid p-sm p-md-md p-lg-xl";
+    isAsside && (appMainContainerClass = "application-main-content container-fluid p-sm p-md-md p-lg-xl");
+    layout === "fluid" && (appMainContainerClass = "application-main-content container-fluid p-sm p-md-md p-lg-xl");
+    layout === "narrow" && (appMainContainerClass = "application-main-content container-md p-sm p-md-md p-lg-xl");
 
     let appContentClass = "application-content card-sections"
     sections === "bordered" && (appContentClass = "application-content bordered-sections")
