@@ -22,17 +22,17 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                     </div>
                 </th> */}
                     <tr>
-                        <th scope="col" style={{ minWidth: 320 }}>
+                        <th scope="col" style={{ minWidth: 320, maxWidth: 320, width: 320 }}>
                             Name
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed d-flex align-items-center gap-xs">
                                     <p className="font-weight-bold text-truncate flex-fill">Progression</p>
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed d-flex align-items-end gap-xs">
                                     <p className="nav-title text-truncate flex-fill">Before starting</p>
@@ -45,7 +45,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -57,7 +57,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed d-flex align-items-end gap-xs">
                                     <p className="nav-title text-truncate flex-fill">1. Les enjeux de l'observation</p>
@@ -70,7 +70,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -82,7 +82,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -94,7 +94,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed d-flex align-items-end gap-xs">
                                     <p className="nav-title text-truncate flex-fill">2. Cadrer la problématique</p>
@@ -107,7 +107,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -119,7 +119,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -131,7 +131,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -143,7 +143,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -155,7 +155,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed d-flex align-items-end gap-xs">
                                     <p className="nav-title text-truncate flex-fill">3. Lancer sa stratégie d'observation</p>
@@ -168,7 +168,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -180,7 +180,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -192,7 +192,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -204,7 +204,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -216,7 +216,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -234,7 +234,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -252,7 +252,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -270,7 +270,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-emoji">
@@ -288,7 +288,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed d-flex align-items-end gap-xs">
                                     <p className="nav-title text-truncate flex-fill">Afterwords</p>
@@ -301,7 +301,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th scope="col" style={{ minWidth: 32 }}>
+                        <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>
                             <div className="th-skewed-container">
                                 <div className="th-skewed-icon text-muted">
                                     <div aria-hidden="true" className="icon icon-file-document-box" />
@@ -311,7 +311,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </th>
-                        <th style={{ width: 148 }} />
+                        <th style={{ width: '100%', padding: '0 124px' }} />
                     </tr>
                 </thead>
                 <tbody>
@@ -565,7 +565,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </td>
-                        <td style={{ width: 148 }} />
+                        <td style={{ width: "100%", padding: '0 124px' }} />
                     </tr>
                     <tr role="row" className="table-active">
                         {/* <td class="table-checkbox">
@@ -831,7 +831,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </td>
-                        <td style={{ width: 148 }} />
+                        <td style={{ width: "100%", padding: '0 124px' }} />
                     </tr>
                     <tr role="row" className="table-active">
                         {/* <td class="table-checkbox">
@@ -1097,7 +1097,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </td>
-                        <td style={{ width: 148 }} />
+                        <td style={{ width: "100%", padding: '0 124px' }} />
                     </tr>
                     <tr role="row">
                         {/* <td class="table-checkbox">
@@ -1365,7 +1365,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                                 </div>
                             </div>
                         </td>
-                        <td style={{ width: 148 }} />
+                        <td style={{ width: "100%", padding: '0 124px' }} />
                     </tr>
                     <tr role="row">
                         {/* <td class="table-checkbox">
@@ -1457,7 +1457,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                         <td />
                         <td />
                         <td />
-                        <td style={{ width: 148 }} />
+                        <td style={{ width: "100%", padding: '0 124px' }} />
                     </tr>
                     <tr role="row">
                         {/* <td class="table-checkbox">
@@ -1549,7 +1549,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                         <td />
                         <td />
                         <td />
-                        <td style={{ width: 148 }} />
+                        <td style={{ width: "100%", padding: '0 124px' }} />
                     </tr>
                 </tbody>
             </table>
