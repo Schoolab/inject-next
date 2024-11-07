@@ -57,8 +57,8 @@ export const ManageDashboard = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="items row card-row">
-                                    <div className="col-12 col-md-6 col-lg-4">
+                                <div className="items grid gap-md">
+                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -79,7 +79,7 @@ export const ManageDashboard = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-12 col-md-6 col-lg-4">
+                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -100,7 +100,7 @@ export const ManageDashboard = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-12 col-md-6 col-lg-4">
+                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -121,7 +121,7 @@ export const ManageDashboard = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-12 col-md-6 col-lg-4">
+                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -177,7 +177,7 @@ export const ManageDashboard = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-12 col-md-6 col-lg-4">
+                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -198,7 +198,7 @@ export const ManageDashboard = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-12 col-md-6 col-lg-4">
+                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -219,7 +219,7 @@ export const ManageDashboard = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-12 col-md-6 col-lg-4">
+                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -240,7 +240,7 @@ export const ManageDashboard = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-12 col-md-6 col-lg-4">
+                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -271,7 +271,7 @@ export const ManageDashboard = () => {
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
                             <div className="collapse show" id="keyInsight">
-                                <div className="grid gap-sm">
+                                <div className="grid gap-md">
                                     <StatCard number="5" variation="-10" caption="total applicants" link="#" addClass="g-col-6 g-col-lg-4" />
                                     <StatCard number="6" caption="total participants" link="#" addClass="g-col-6 g-col-lg-4" />
                                     <StatCard number="0%" caption="courses completions" link="#" addClass="g-col-6 g-col-lg-4" />
