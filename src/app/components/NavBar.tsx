@@ -88,7 +88,7 @@ export const Navbar = ({ isLogged = true, theme }: NavBarProps) => {
                                     {isLogged ? (
                                         <div className="d-flex gap-xs align-items-center">
                                             <div className="navbar-option  d-none d-lg-flex">
-                                                <Button label="My space" type="default" isActive={false} addClass="navbar-main-btn" />
+                                                <Button label="My dashboard" type="default" isActive={false} addClass="navbar-main-btn" />
                                             </div>
                                             <div className="navbar-option d-none d-lg-flex">
                                                 <a className="navbar-option--link" href="#">

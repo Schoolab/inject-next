@@ -14,9 +14,12 @@ export interface ButtonProps {
      */
     isActive?: Boolean;
     /**
+     * Has Dropdown?
+     */
+    hasDropdown?: Boolean;
+    /**
      * Icon name, names refer to the <a href="https://schoolab.github.io/inject-next/storybook-static/?path=/story/components-icons-list--list" target="_blank">Inject Icons</a> list
      */
-
     iconStartName?: string;
     /**
      * Icon name, names refer to the <a href="https://schoolab.github.io/inject-next/storybook-static/?path=/story/components-icons-list--list" target="_blank">Inject Icons</a> list
@@ -43,17 +46,19 @@ export interface ButtonProps {
 /**
  * Buttons drive actions in forms, dialogs, etc. and should be used to guide the user to their next best action. Button component has support for multiple sizes, type and can have a start or an end icon.
  */
-export const Button = ({ size = "default", type, disabled, isActive = false, label, addClass, extended, iconStartName, iconEndName, ...props }: ButtonProps) => {
+export const Button = ({ size = "default", type = "default", disabled, isActive = false, hasDropdown = false, label, addClass, extended, iconStartName, iconEndName, ...props }: ButtonProps) => {
     let classTab = ["btn"];
     type && classTab.push(`btn-${type}`);
     size !== "default" && classTab.push(`btn-${size}`);
     isActive && classTab.push("active");
+    hasDropdown && classTab.push("dropdown-toggle");
     extended && classTab.push("btn-block");
     disabled && classTab.push("disabled");
     addClass && classTab.push(addClass);
 
     return (
         <a href="#" className={classTab.join(" ")} {...props}>
+            {isActive && <Icon name="check" />}
             {iconStartName && <Icon name={iconStartName} />}
             {label && <span>{label}</span>} 
             {iconEndName && <Icon name={iconEndName} />}

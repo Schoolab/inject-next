@@ -18,11 +18,13 @@ const meta = {
   argTypes: {
     disabled: { control: "boolean" },
     isActive: { control: "boolean" },
+    hasDropdown: { control: "boolean" },
     extended: { control: "boolean" },
   },
   args:{
     disabled: false,
     isActive: false,
+    hasDropdown: false,
     type: "default",
     size: "default",
     extended: false,
@@ -43,9 +45,15 @@ export const Default: Story = {
 
 export const Active: Story = {
   args: {
-    iconStartName: "link",
     label: "Button",   
     isActive: true,
+  },
+};
+
+export const Dropdown: Story = {
+  args: {
+    label: "Button",   
+    hasDropdown: true,
   },
 };
 
