@@ -404,7 +404,7 @@ export const programHubMySpace = () => {
                                         <p className="small text-muted">Your programs will be listed here.</p>
                                     </div>
                                     <div className="d-flex pt-32px">
-                                        <a href="#" className="btn btn-lg btn-default">
+                                        <a href="#" className="btn btn-lg btn-primary">
                                             <span>Show Programs</span>
                                         </a>
                                     </div>
@@ -1129,7 +1129,7 @@ export const programHubMySpace = () => {
 
                                 <div className="d-flex flex-column gap-2xs">
                                     <p className="font-weight-bold">No upcoming events</p>
-                                    <p className="small text-muted">Your upcoming events will be listed here.</p>
+                                    <p className="small text-muted">Your upcoming events will be listed here</p>
                                 </div>
                             </div>
                             </div>

@@ -218,7 +218,7 @@ export const ManageSetup = () => {
                                         <div className="item is-static is-bordered resource mb-3">
                                             <div className="item-row flex-column flex-md-row">
                                                 <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-questionnaire" />
+                                                    <div className="item-icon is-darker icon icon-format-list-checks" />
                                                     <div className="item-content ml-3">
                                                         <h4 className="mb-none">Fill form questionnaires</h4>
                                                         <span className="small text-muted">Add questions to registration and submission forms</span>
@@ -319,7 +319,7 @@ export const ManageSetup = () => {
                                         <div className="item is-static is-bordered resource mb-3">
                                             <div className="item-row flex-column flex-md-row">
                                                 <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-learning" />
+                                                    <div className="item-icon is-darker icon icon-library" />
                                                     <div className="item-content ml-3">
                                                         <h4 className="mb-none">Add content and resources to the learning course</h4>
                                                         <span className="small text-muted">Add at least a module, a capsule and a task to the learning course</span>
@@ -356,7 +356,7 @@ export const ManageSetup = () => {
                                         <div className="item is-static is-bordered resource mb-3">
                                             <div className="item-row flex-column flex-md-row">
                                                 <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-content" />
+                                                    <div className="item-icon is-darker icon icon-book-open-blank-variant" />
                                                     <div className="item-content ml-3">
                                                         <h4 className="mb-none">Add content and resources to the project objective</h4>
                                                         <span className="small text-muted">Add at least a module, a capsule and a task to the objectives</span>
@@ -457,7 +457,7 @@ export const ManageSetup = () => {
                                         <div className="item is-static is-bordered resource mb-3">
                                             <div className="item-row flex-column flex-md-row">
                                                 <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-summary" />
+                                                    <div className="item-icon is-darker icon icon-text" />
                                                     <div className="item-content ml-3">
                                                         <h4 className="mb-none">Add a brief for experts</h4>
                                                         <span className="small text-muted">Use this to give instructions on the expert dashboard</span>
@@ -595,7 +595,7 @@ export const ManageSetup = () => {
                                         <div className="item is-static is-bordered resource mb-3">
                                             <div className="item-row flex-column flex-md-row">
                                                 <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-evaluation" />
+                                                    <div className="item-icon is-darker icon icon-gavel" />
                                                     <div className="item-content ml-3">
                                                         <h4 className="mb-none">Evaluation dates and rights</h4>
                                                         <span className="small text-muted">Add public sessions and evaluation sessions</span>
@@ -632,7 +632,7 @@ export const ManageSetup = () => {
                                         <div className="item is-static is-bordered resource mb-3">
                                             <div className="item-row flex-column flex-md-row">
                                                 <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-summary" />
+                                                    <div className="item-icon is-darker icon icon-text" />
                                                     <div className="item-content ml-3">
                                                         <h4 className="mb-none">Add a brief for jury members</h4>
                                                         <span className="small text-muted">Use this to give instructions on the jury dashboard</span>
