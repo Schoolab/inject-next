@@ -24,11 +24,9 @@ export const Icon = ({ name, size="default", addClass }: IconProps) => {
   name && classTab.push(`icon-${name}`);
   addClass && classTab.push(addClass);
 
-
   const sizeContent = size !=="default" ? `is-${size}`: "" ;
   addClass && classTab.push(addClass);
   return (
-    <span  className={classTab.join(" ")}></span>
-   
+    <span className={classTab.join(" ")}></span>
   );
 };

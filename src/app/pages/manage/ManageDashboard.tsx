@@ -1,33 +1,19 @@
 import React from "react";
 import { Layout } from "../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
+import { StatCard } from "@/app/components/StatCard";
+import { Button } from "@/app/components/Button";
+import { Icon } from "@/app/components/Icon";
 
 export const ManageDashboard = () => {
     return (
-        <Layout  sideBar="Manage">
-            <AppContent showSubnav={false}>
+        <Layout sideBar="Manage">
+            <AppContent showSubnav={false} sections="transparent">
                 <div className="row">
                     <div className="col-12">
-                        <div className="d-flex align-items-center justify-content-between mb-3">
-                            <h1>Hello, Firstname 👋</h1>
-                            <div className="d-flex flex-column align-items-end">
-                                <span className="text-muted small mb-2"> Program managers</span>
-                                <div className="thumbnail-stack">
-                                    <div className="thumbnail is-oval is-sm">
-                                        <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
-                                    </div>
-                                    <div className="thumbnail is-oval is-sm">
-                                        <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
-                                    </div>
-                                    <div className="thumbnail is-oval is-sm">
-                                        <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div className="application-section is-highlighted">
-                            <div className="row justify-content-center">
-                                <div className="col-12 col-lg-8 d-flex flex-column flex-lg-row justify-content-center align-items-center py-lg-8 py-5">
+                            <div className="d-flex justify-content-center">
+                                <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center py-lg-8 py-5" style={{ width: "100%", maxWidth: "680px" }}>
                                     <div className="mr-lg-8 mr-0 order-2 order-lg-1">
                                         <h2>Getting started with your program setup</h2>
                                         <p>Before starting sharing your program to participants you have some tasks to complete. First of all you need to finish to setup your program, the registrations, forms and the program’s learning and objectives content.</p>
@@ -73,11 +59,11 @@ export const ManageDashboard = () => {
                                 </div>
                                 <div className="items row card-row">
                                     <div className="col-12 col-md-6 col-lg-4">
-                                        <div className="item is-bordered is-static h-100">
+                                        <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
                                                     <h4 className="to-collapse mb-none " data-toggle="collapse" data-target="#desc-1" aria-expanded="true">
-                                                        <span>Applicants to review</span>
+                                                        <span className="text-truncate">Applicants to review</span>
                                                         <span className="icon icon-chevron-right ml-auto" />
                                                     </h4>
                                                     <div className="collapse" id="desc-1">
@@ -86,26 +72,19 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <div className="item-content bg-light rounded p-5 h-100 d-flex flex-column justify-content-center">
-                                                    <div className="d-flex align-items-center">
-                                                        <span className="h2 mb-none">16</span>
-                                                    </div>
-                                                    <span className="text-muted small">waiting for validation</span>
-                                                </div>
+                                                <StatCard number="16" caption="waiting for validation" />
                                             </div>
                                             <div className="mt-auto">
-                                                <a className="btn btn-default btn-lg btn-block btn-icon text-decoration-none text-nowrap" href="#" role="button">
-                                                    View registration
-                                                </a>
+                                                <Button label="View registrations" extended={true} />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-4">
-                                        <div className="item is-bordered is-static h-100">
+                                        <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
                                                     <h4 className="to-collapse mb-none " data-toggle="collapse" data-target="#desc-2" aria-expanded="true">
-                                                        <span>Projects to review</span>
+                                                        <span className="text-truncate">Projects to review</span>
                                                         <span className="icon icon-chevron-right ml-auto" />
                                                     </h4>
                                                     <div className="collapse" id="desc-2">
@@ -114,26 +93,19 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <div className="item-content bg-light rounded p-5 h-100 d-flex flex-column justify-content-center">
-                                                    <div className="d-flex align-items-center">
-                                                        <span className="h2 mb-none">23</span>
-                                                    </div>
-                                                    <span className="text-muted small">waiting for approval</span>
-                                                </div>
+                                                <StatCard number="23" caption="waiting for approval" />
                                             </div>
                                             <div className="mt-auto">
-                                                <a className="btn btn-default btn-lg btn-block btn-icon text-decoration-none text-nowrap" href="#" role="button">
-                                                    View registration
-                                                </a>
+                                                <Button label="View applications" extended={true} />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-4">
-                                        <div className="item is-bordered is-static h-100">
+                                        <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
-                                                    <h4 className="to-collapse mb-none " data-toggle="collapse" data-target="#desc-3" aria-expanded="true">
-                                                        <span>Some applicants may be stuck</span>
+                                                    <h4 className="to-collapse mb-none " data-toggle="collapse" data-target="#desc-3" aria-expanded="false">
+                                                        <span className="text-truncate">Some applicants may be stuck</span>
                                                         <span className="icon icon-chevron-right ml-auto" />
                                                     </h4>
                                                     <div className="collapse" id="desc-3">
@@ -142,27 +114,19 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <div className="item-content bg-light rounded p-5 h-100 d-flex flex-column justify-content-center">
-                                                    <div className="d-flex align-items-center">
-                                                        <span className="h2 mb-none">4</span>
-                                                        <span className="ml-3 icon is-sm icon-alert text-warning" />
-                                                    </div>
-                                                    <span className="text-muted small">ongoing registrations (&gt; 2 days)</span>
-                                                </div>
+                                                <StatCard number="4" warning={true} caption="ongoing registrations (&gt; 2 days)" />
                                             </div>
                                             <div className="mt-auto">
-                                                <a className="btn btn-default btn-lg btn-block btn-icon text-decoration-none text-nowrap" href="#" role="button">
-                                                    View particpants
-                                                </a>
+                                                <Button label="View participants" extended={true} />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-4">
-                                        <div className="item is-bordered is-static h-100">
+                                        <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
                                                     <h4 className="to-collapse mb-none " data-toggle="collapse" data-target="#desc-4" aria-expanded="true">
-                                                        <span>Registration pipeline</span>
+                                                        <span className="text-truncate">Registration pipeline</span>
                                                         <span className="icon icon-chevron-right ml-auto" />
                                                     </h4>
                                                     <div className="collapse" id="desc-4">
@@ -171,38 +135,42 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <div className="item-content bg-light rounded p-5 h-100 d-flex flex-column justify-content-center">
-                                                    <div className="d-flex align-items-center">
-                                                        <span className="h2 mb-none">72</span>
+                                                <div className="bg-light rounded p-sm w-100 d-flex flex-column gap-md justify-content-center text-decoration-none">
+                                                    <div className="d-flex flex-column gap-2xs">
+                                                        <div className="d-flex align-items-center">
+                                                            <span className="h2 mb-none" style={{ fontSize: "2rem", lineHeight: "2rem", fontWeight: "600" }}>72</span>
+                                                        </div>
+                                                        <span className="text-muted small">total registrations</span>
                                                     </div>
-                                                    <span className="text-muted small">total registrations</span>
-                                                    <div className="progress progress--custom my-3">
-                                                        <div className="progress-bar bg-success" role="progressbar" style={{ width: "40%" }} aria-valuenow={40} aria-valuemin={0} aria-valuemax={100} />
-                                                        <div className="progress-bar bg-info" role="progressbar" style={{ width: "30%" }} aria-valuenow={30} aria-valuemin={0} aria-valuemax={100} />
-                                                        <div className="progress-bar bg-warning" role="progressbar" style={{ width: "15%" }} aria-valuenow={15} aria-valuemin={0} aria-valuemax={100} />
-                                                        <div className="progress-bar bg-danger" role="progressbar" style={{ width: "10%" }} aria-valuenow={10} aria-valuemin={0} aria-valuemax={100} />
-                                                        <div className="progress-bar bg-secondary" role="progressbar" style={{ width: "5%" }} aria-valuenow={5} aria-valuemin={0} aria-valuemax={100} />
-                                                    </div>
-                                                    <div className="d-flex flex-wrap">
-                                                        <div className="small text-mutted mr-3 ">
-                                                            <span className="icon icon-circle text-success mr-1" />
-                                                            <span>42 done</span>
+                                                    <div className="d-flex flex-column gap-xs">
+                                                        <div className="progress progress--custom">
+                                                            <div className="progress-bar bg-success" role="progressbar" style={{ width: "40%" }} aria-valuenow={40} aria-valuemin={0} aria-valuemax={100} />
+                                                            <div className="progress-bar bg-primary" role="progressbar" style={{ width: "30%" }} aria-valuenow={30} aria-valuemin={0} aria-valuemax={100} />
+                                                            <div className="progress-bar bg-warning" role="progressbar" style={{ width: "15%" }} aria-valuenow={15} aria-valuemin={0} aria-valuemax={100} />
+                                                            <div className="progress-bar bg-danger" role="progressbar" style={{ width: "10%" }} aria-valuenow={10} aria-valuemin={0} aria-valuemax={100} />
+                                                            <div className="progress-bar bg-secondary" role="progressbar" style={{ width: "5%" }} aria-valuenow={5} aria-valuemin={0} aria-valuemax={100} />
                                                         </div>
-                                                        <div className="small text-mutted mr-3 ">
-                                                            <span className="icon icon-circle text-info mr-1" />
-                                                            <span>16 waiting</span>
-                                                        </div>
-                                                        <div className="small text-mutted mr-3 ">
-                                                            <span className="icon icon-circle text-success mr-1" />
-                                                            <span>9 ongoing</span>
-                                                        </div>
-                                                        <div className="small text-mutted mr-3 ">
-                                                            <span className="icon icon-circle text-warning mr-1" />
-                                                            <span>4 stuck</span>
-                                                        </div>
-                                                        <div className="small text-mutted mr-3 ">
-                                                            <span className="icon icon-circle text-secondary mr-1" />
-                                                            <span>5 not started (invited)</span>
+                                                        <div className="d-flex flex-wrap column-gap-xs row-gap-3xs">
+                                                            <div className="d-flex align-items-center small text-muted gap-2xs">
+                                                                <Icon name="circle" addClass="text-success" />
+                                                                <span>42 done</span>
+                                                            </div>
+                                                            <div className="d-flex align-items-center small text-muted gap-2xs">
+                                                                <Icon name="circle" addClass="text-primary" />
+                                                                <span>16 waiting</span>
+                                                            </div>
+                                                            <div className="d-flex align-items-center small text-muted gap-2xs">
+                                                                <Icon name="circle" addClass="text-warning" />
+                                                                <span>9 ongoing</span>
+                                                            </div>
+                                                            <div className="d-flex align-items-center small text-muted gap-2xs">
+                                                                <Icon name="circle" addClass="text-danger" />
+                                                                <span>4 stuck</span>
+                                                            </div>
+                                                            <div className="d-flex align-items-center small text-muted gap-2xs">
+                                                                <Icon name="circle" addClass="text-secondary" />
+                                                                <span>5 not started (invited)</span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -210,11 +178,11 @@ export const ManageDashboard = () => {
                                         </div>
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-4">
-                                        <div className="item is-bordered is-static h-100">
+                                        <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
                                                     <h4 className="to-collapse mb-none " data-toggle="collapse" data-target="#desc-5" aria-expanded="true">
-                                                        <span>Emails address not verified</span>
+                                                        <span className="text-truncate">Emails address not verified</span>
                                                         <span className="icon icon-chevron-right ml-auto" />
                                                     </h4>
                                                     <div className="collapse" id="desc-5">
@@ -223,27 +191,19 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <div className="item-content bg-light rounded p-5 h-100 d-flex flex-column justify-content-center">
-                                                    <div className="d-flex align-items-center">
-                                                        <span className="h2 mb-none">13</span>
-                                                        <span className="ml-3 icon is-sm icon-alert text-warning" />
-                                                    </div>
-                                                    <span className="text-muted small">ongoing registrations (&gt; 2 days)</span>
-                                                </div>
+                                                <StatCard number="13" warning={true} caption="not verified emails" />
                                             </div>
                                             <div className="mt-auto">
-                                                <a className="btn btn-default btn-lg btn-block btn-icon text-decoration-none text-nowrap" href="#" role="button">
-                                                    View particpants
-                                                </a>
+                                                <Button label="View participants" extended={true} />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-4">
-                                        <div className="item is-bordered is-static h-100">
+                                        <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
                                                     <h4 className="to-collapse mb-none " data-toggle="collapse" data-target="#desc-6" aria-expanded="true">
-                                                        <span>Never signed in</span>
+                                                        <span className="text-truncate">Never signed in</span>
                                                         <span className="icon icon-chevron-right ml-auto" />
                                                     </h4>
                                                     <div className="collapse" id="desc-6">
@@ -252,26 +212,19 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <div className="item-content bg-light rounded p-5 h-100 d-flex flex-column justify-content-center">
-                                                    <div className="d-flex align-items-center">
-                                                        <span className="h2 mb-none">3</span>
-                                                    </div>
-                                                    <span className="text-muted small">never signed in (validation + 7 days)</span>
-                                                </div>
+                                                <StatCard number="3" caption="never signed in (validation + 7 days)" />
                                             </div>
                                             <div className="mt-auto">
-                                                <a className="btn btn-default btn-lg btn-block btn-icon text-decoration-none text-nowrap" href="#" role="button">
-                                                    View particpants
-                                                </a>
+                                                <Button label="View participants" extended={true} />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-4">
-                                        <div className="item is-bordered is-static h-100">
+                                        <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
                                                     <h4 className="to-collapse mb-none " data-toggle="collapse" data-target="#desc-7" aria-expanded="true">
-                                                        <span>Projects without experts</span>
+                                                        <span className="text-truncate">Projects without experts</span>
                                                         <span className="icon icon-chevron-right ml-auto" />
                                                     </h4>
                                                     <div className="collapse" id="desc-7">
@@ -280,26 +233,19 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <div className="item-content bg-light rounded p-5 h-100 d-flex flex-column justify-content-center">
-                                                    <div className="d-flex align-items-center">
-                                                        <span className="h2 mb-none">1</span>
-                                                    </div>
-                                                    <span className="text-muted small">projects without experts</span>
-                                                </div>
+                                                <StatCard number="1" caption="projects without experts" />
                                             </div>
                                             <div className="mt-auto">
-                                                <a className="btn btn-default btn-lg btn-block btn-icon text-decoration-none text-nowrap" href="#" role="button">
-                                                    View projects
-                                                </a>
+                                                <Button label="View projects" extended={true} />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-4">
-                                        <div className="item is-bordered is-static h-100">
+                                        <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
                                                     <h4 className="to-collapse mb-none " data-toggle="collapse" data-target="#desc-8" aria-expanded="true">
-                                                        <span>Mail opening rates</span>
+                                                        <span className="text-truncate">Mail opening rates</span>
                                                         <span className="icon icon-chevron-right ml-auto" />
                                                     </h4>
                                                     <div className="collapse" id="desc-8">
@@ -307,24 +253,12 @@ export const ManageDashboard = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="item-row ">
-                                                <div className="item-content bg-light rounded p-5 h-100 d-flex flex-column justify-content-center">
-                                                    <div className="d-flex align-items-center">
-                                                        <span className="h2 mb-none">42%</span>
-                                                    </div>
-                                                    <span className="text-muted small">openend</span>
-                                                </div>
-                                                <div className="item-content bg-light rounded p-5 h-100 d-flex flex-column justify-content-center ml-3">
-                                                    <div className="d-flex align-items-center">
-                                                        <span className="h2 mb-none">12%</span>
-                                                    </div>
-                                                    <span className="text-muted small">clicked</span>
-                                                </div>
+                                            <div className="item-row grid gap-xs">
+                                                <StatCard number="42%" caption="opened" addClass="g-col-6" />
+                                                <StatCard number="12%" caption="clicked" addClass="g-col-6" />
                                             </div>
                                             <div className="mt-auto">
-                                                <a className="btn btn-default btn-lg btn-block btn-icon text-decoration-none text-nowrap" href="#" role="button">
-                                                    View mails
-                                                </a>
+                                                <Button label="View mails" extended={true} />
                                             </div>
                                         </div>
                                     </div>
@@ -337,119 +271,15 @@ export const ManageDashboard = () => {
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
                             <div className="collapse show" id="keyInsight">
-                                <div className="row">
-                                    <div className="col-6 col-lg-4 mb-5">
-                                        <div className="btn-tile statCard bg-light rounded" data-url="/program/141/participants-stat-ajax">
-                                            <a className="text-muted" href="#">
-                                                <h5 className="card-title text-muted">
-                                                    Total applicants&nbsp;
-                                                    <i className="icon icon-chevron-right" />
-                                                </h5>
-                                            </a>
-                                            <div className="d-flex justify-content-left align-items-center w-100">
-                                                <div>
-                                                    <div className="statLoader spinner-border spinner-border-sm mr-3 d-none" />
-                                                    <div className="statCardValue h2">5</div>
-                                                    <div className="statCardEvolution h4" />
-                                                    <div className="statCardExtra h6" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-6 col-lg-4 mb-5">
-                                        <div className="btn-tile statCard bg-light rounded" data-url="/program/141/mentors-stat-ajax">
-                                            <a className="text-muted" href="#">
-                                                <h5 className="card-title text-muted">
-                                                    Total participants&nbsp;
-                                                    <i className="icon icon-chevron-right" />
-                                                </h5>
-                                            </a>
-                                            <div className="d-flex justify-content-left align-items-center w-100">
-                                                <div>
-                                                    <div className="statLoader spinner-border spinner-border-sm mr-3 d-none" />
-                                                    <div className="statCardValue h2">6</div>
-                                                    <div className="statCardEvolution h4" />
-                                                    <div className="statCardExtra h6" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-6 col-lg-4 mb-5">
-                                        <div className="btn-tile statCard bg-light rounded" data-url="/program/141/juries-stat-ajax">
-                                            <a className="text-muted" href="#">
-                                                <h5 className="card-title text-muted">
-                                                    Courses completions&nbsp;
-                                                    <i className="icon icon-chevron-right" />
-                                                </h5>
-                                            </a>
-                                            <div className="d-flex justify-content-left align-items-center w-100">
-                                                <div>
-                                                    <div className="statLoader spinner-border spinner-border-sm mr-3 d-none" />
-                                                    <div className="statCardValue h2">0%</div>
-                                                    <div className="statCardEvolution h4" />
-                                                    <div className="statCardExtra h6" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-6 col-lg-4 mb-5">
-                                        <div className="btn-tile statCard bg-light rounded" data-url="/program/141/admins-stat-ajax">
-                                            <a className="text-muted" href="#">
-                                                <h5 className="card-title text-muted">
-                                                    Mail delivred&nbsp;
-                                                    <i className="icon icon-chevron-right" />
-                                                </h5>
-                                            </a>
-                                            <div className="d-flex justify-content-left align-items-center w-100">
-                                                <div>
-                                                    <div className="statLoader spinner-border spinner-border-sm mr-3 d-none" />
-                                                    <div className="statCardValue h2">5</div>
-                                                    <div className="statCardEvolution h4" />
-                                                    <div className="statCardExtra h6" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-6 col-lg-4 mb-5">
-                                        <div className="btn-tile statCard bg-light rounded" data-url="/program/141/projects-stat-ajax">
-                                            <a className="text-muted" href="#">
-                                                <h5 className="card-title text-muted">
-                                                    Projects&nbsp;
-                                                    <i className="icon icon-chevron-right" />
-                                                </h5>
-                                            </a>
-                                            <div className="d-flex justify-content-left align-items-center w-100">
-                                                <div>
-                                                    <div className="statLoader spinner-border spinner-border-sm mr-3 d-none" />
-                                                    <div className="statCardValue h2">0</div>
-                                                    <div className="statCardEvolution h4" />
-                                                    <div className="statCardExtra h6" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-6 col-lg-4 mb-5">
-                                        <div className="btn-tile statCard bg-light rounded" data-url="/program/141/project-followers-stat-ajax">
-                                            <a className="text-muted" href="#">
-                                                <h5 className="card-title text-muted">
-                                                    Followers&nbsp;
-                                                    <i className="icon icon-chevron-right" />
-                                                </h5>
-                                            </a>
-                                            <div className="d-flex justify-content-left align-items-center w-100">
-                                                <div>
-                                                    <div className="statLoader spinner-border spinner-border-sm mr-3 d-none" />
-                                                    <div className="statCardValue h2">0</div>
-                                                    <div className="statCardEvolution h4" />
-                                                    <div className="statCardExtra h6" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div className="grid gap-sm">
+                                    <StatCard number="5" variation="-10" caption="total applicants" link="#" addClass="g-col-6 g-col-lg-4" />
+                                    <StatCard number="6" caption="total participants" link="#" addClass="g-col-6 g-col-lg-4" />
+                                    <StatCard number="0%" caption="courses completions" link="#" addClass="g-col-6 g-col-lg-4" />
+                                    <StatCard number="5" caption="mail delivered" link="#" addClass="g-col-6 g-col-lg-4" />
+                                    <StatCard number="0" caption="projects" link="#" addClass="g-col-6 g-col-lg-4" />
+                                    <StatCard number="0" caption="followers" link="#" addClass="g-col-6 g-col-lg-4" />
+                                    <Button label="Show more" extended={true} addClass="g-col-12" />
                                 </div>
-                                <a className="btn btn-default btn-lg btn-block btn-icon text-decoration-none text-nowrap" href="#" role="button">
-                                    Show more
-                                </a>
                             </div>
                         </div>
                         <div className="application-section">
@@ -461,7 +291,7 @@ export const ManageDashboard = () => {
                                 <p>Find here all the release notes from the Schoolab team about Inject.</p>
                                 <div className="items row card-row">
                                     <div className="col-12 col-md-6 col-lg-4">
-                                        <div className="item is-bordered is-static h-100">
+                                        <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content flex-row align-items-center">
                                                     <div className="text-primary small flex-fill d-flex gap-2xs">
@@ -485,7 +315,7 @@ export const ManageDashboard = () => {
                                         </div>
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-4">
-                                        <div className="item is-bordered is-static h-100">
+                                        <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content flex-row align-items-center">
                                                     <div className="small flex-fill d-flex gap-2xs">
@@ -508,7 +338,7 @@ export const ManageDashboard = () => {
                                         </div>
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-4">
-                                        <div className="item is-bordered is-static h-100">
+                                        <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content flex-row align-items-center">
                                                     <div className="small flex-fill d-flex gap-2xs">
