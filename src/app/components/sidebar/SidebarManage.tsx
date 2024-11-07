@@ -73,7 +73,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                             <ul id="collapseSetup" className="collapse show" aria-labelledby="headingSetup" data-parent="#accordionManageNav">
                             <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Getting Started</span>
+                                        <span className="nav-link--label">🚀 Getting Started</span>
                                     </a>
                                 </li>
                                 <li>
