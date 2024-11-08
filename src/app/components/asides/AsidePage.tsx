@@ -27,9 +27,9 @@ export const AsidePage = ({}: AsidePageProps) => {
                         </a>
                     </nav>
                 </div>
-                <div className="tab-content h-100" id="projectTabsContent">
+                <div className="tab-content aside-body" id="projectTabsContent">
                     <div id="content" role="tabpanel" aria-labelledby="content-tab" className="tab-pane h-100 fade active show">
-                        <div className="aside-body d-flex flex-column gap-md">
+                        <div className=" d-flex flex-column gap-md">
                             <LangSwitch />
                             <ItemsGroup>
                                 <ItemsGroupHeader label="Sections" number="15" />
@@ -55,17 +55,17 @@ export const AsidePage = ({}: AsidePageProps) => {
                         </div>
                     </div>
                     <div id="info" role="tabpanel" aria-labelledby="info-tab" className="tab-pane h-100 fade">
-                        <div className="aside-body d-flex flex-column gap-md">
+                        <div className=" d-flex flex-column gap-md">
                             <p>Content here...</p>
                         </div>
                     </div>
                     <div id="seo" role="tabpanel" aria-labelledby="seo-tab" className="tab-pane h-100 fade">
-                        <div className="aside-body d-flex flex-column gap-md">
+                        <div className=" d-flex flex-column gap-md">
                             <p>Content here...</p>
                         </div>
                     </div>
                     <div id="advanced" role="tabpanel" aria-labelledby="advanced-tab" className="tab-pane h-100 fade">
-                        <div className="aside-body d-flex flex-column gap-md">
+                        <div className=" d-flex flex-column gap-md">
                             <p>Content here...</p>
                         </div>
                     </div>
