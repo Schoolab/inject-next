@@ -5,9 +5,9 @@ import { ItemsGroupHeader } from "../items-group/ItemsGroupHeader";
 import { ItemSection } from "../items/ItemSection";
 import { Button } from "../Button";
 
-interface AsidePageProps {}
+interface AsideEditPageProps {}
 
-export const AsidePage = ({}: AsidePageProps) => {
+export const AsideEditPage = ({}: AsideEditPageProps) => {
     return (
         <aside className="application-aside">
             <div className="aside-content-container">

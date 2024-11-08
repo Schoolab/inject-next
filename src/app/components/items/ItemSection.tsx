@@ -1,4 +1,5 @@
 import React from "react";
+import { Avatar } from "../avatars/Avatar";
 export interface ItemSectionProps {
     /**
     * Item label
@@ -9,13 +10,18 @@ export interface ItemSectionProps {
     * Item caption
     */
      caption?: string; 
+
+    /**
+     * Image URL
+     */
+    image?: string;
 }
 
-export const ItemSection = ({ label = "{section.title}", caption = "{section.type.name}", ...props }: ItemSectionProps) => {
+export const ItemSection = ({ label = "{section.title}", caption = "{section.type.name}", image = "https://placehold.co/1080x720/f5f5f5/262626.svg?font=Inter&text=3%3A2", ...props }: ItemSectionProps) => {
     return (
-        <div className="item is-bordered gap-0px">
+        <div className="item is-small is-bordered gap-0px">
             <div className="item-row align-items-center gap-xs py-xs">
-                <div className="item-icon icon icon-section"></div>
+                <Avatar iconName="section" isOval={false} isFreeRatio={true} image={image} />
 
                 <div className="item-content d-flex flex-column align-items-start justify-content-center overflow-hidden">
                     <a href="#" className="item-title stretched-link line-clamp-1">

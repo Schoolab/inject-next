@@ -29,7 +29,7 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                                     <span className="icon icon-visibility-off is-20px text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Private response" data-boundary="window" />
                                     <span className="icon icon-lock is-20px text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Locked. Can't be moved or deleted." data-boundary="window" />
                                     <div className="dropdown-container">
-                                        <a className="btn btn-xs btn-transparent btn-icon" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                        <a className="btn btn-muted btn-icon" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                                             <span className="icon icon-options" data-toggle="tooltip" data-placement="top" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right">
@@ -261,7 +261,7 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                                         <span className="icon icon-visibility-off is-20px text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Private response" data-boundary="window" />
                                         <span className="icon icon-lock is-20px text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Locked. Can't be moved or deleted." data-boundary="window" />
                                         <div className="dropdown-container">
-                                            <a className="btn btn-xs btn-transparent btn-icon" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                            <a className="btn btn-muted btn-icon" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                                                 <span className="icon icon-options" data-toggle="tooltip" data-placement="top" data-original-title="Click to toggle." data-boundary="window" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
@@ -506,7 +506,7 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                                         <h4 className="nav-title flex-fill mb-none">1. Step name</h4>
                                         <span className="badge badge-notification is-highlight">0</span>
                                         <div className="dropdown-container">
-                                            <a className="btn btn-xs btn-transparent btn-icon text-muted" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                            <a className="btn btn-transparent btn-icon text-muted" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                                                 <span className="icon icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
@@ -548,7 +548,7 @@ export const ItemQuestionnaires = ({}: ItemQuestionnairesProps) => {
                                         <h4 className="nav-title flex-fill mb-none">2. Step name</h4>
                                         <span className="badge badge-notification is-highlight">0</span>
                                         <div className="dropdown-container">
-                                            <a className="btn btn-xs btn-transparent btn-icon text-muted" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                            <a className="btn btn-transparent btn-icon text-muted" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                                                 <span className="icon icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">

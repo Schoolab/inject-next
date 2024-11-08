@@ -67,18 +67,18 @@ export const ItemResource = ({ img, resource, action, icon, isSmall = false }: I
                 </div>
                 <div className="item-options">
                     {action == "download" && (
-                        <a className="btn btn-transparent btn-icon z-1" href="#" role="button" data-toggle="tooltip" data-placement="top" data-title="Download file" data-boundary="window" data-original-title="" title="">
-                            <span className="icon icon-cloud-download" />
+                        <a className="btn btn-muted btn-icon z-1" href="#" role="button" data-toggle="tooltip" data-placement="top" data-title="Download file" data-boundary="window" data-original-title="" title="">
+                            <span className="icon icon-download" />
                         </a>
                     )}
                     {action == "openLink" && (
-                        <a className="btn btn-transparent btn-icon z-1" href="#" role="button" data-toggle="tooltip" data-placement="top" data-title="Open in new tab" data-boundary="window" data-original-title="" title="">
+                        <a className="btn btn-muted btn-icon z-1" href="#" role="button" data-toggle="tooltip" data-placement="top" data-title="Open in new tab" data-boundary="window" data-original-title="" title="">
                             <span className="icon icon-new-tab" />
                         </a>
                     )}
 
                     <div className="dropdown" data-toggle="tooltip" data-placement="top" data-title="Options" data-boundary="window" data-original-title="" title="">
-                        <a className="btn btn-transparent btn-icon z-1" href="#" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
+                        <a className="btn btn-muted btn-icon z-1" href="#" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span className="icon icon-options" />
                         </a>
                         <div className="dropdown-menu dropdown-menu-right">

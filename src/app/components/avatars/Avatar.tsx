@@ -26,13 +26,16 @@ interface AvatarProps {
      * Image URL
      */
     image?: string;
+
+    isFreeRatio?: Boolean;
 }
 
-export const Avatar = ({ addClass, size = "lg", isOval = true, isBordered = false, iconName = "account", image, ...props }: AvatarProps) => {
+export const Avatar = ({ addClass, size = "lg", isOval = true, isBordered = false, iconName = "account", image, isFreeRatio, ...props }: AvatarProps) => {
     let classTab = ["thumbnail"];
     size && classTab.push(`is-${size}`);
     isOval && classTab.push(`is-oval`);
     isBordered && classTab.push(`is-bordered`);
+    isFreeRatio && classTab.push(`is-free-ratio`);
     addClass && classTab.push(addClass);
 
     return (

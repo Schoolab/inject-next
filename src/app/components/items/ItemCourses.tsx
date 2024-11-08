@@ -27,7 +27,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                 </div>
                                 <div className="d-flex align-items-center gap-xs dropdown">
                                     <div className="dropdown-container">
-                                        <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                        <a className="btn btn-muted btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                                             <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right">
@@ -75,7 +75,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                 </div>
                                 <div className="d-flex align-items-center gap-xs dropdown">
                                     <div className="dropdown-container">
-                                        <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                        <a className="btn btn-muted btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                                             <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right">
@@ -121,7 +121,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                         </div>
                                         <span className="badge badge-notification is-highlight">0</span>
                                         <div className="dropdown-container">
-                                            <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a className="btn btn-muted btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span className="icon icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
@@ -169,7 +169,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                         </div>
                                         <span className="badge badge-notification is-highlight">8</span>
                                         <div className="dropdown-container">
-                                            <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a className="btn btn-muted btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span className="icon icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
@@ -215,7 +215,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 </div>
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
-                                                        <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                                        <a className="btn btn-muted btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                                                             <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
@@ -257,7 +257,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 </div>
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
-                                                        <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                                        <a className="btn btn-muted btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                                                             <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
@@ -299,7 +299,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 </div>
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
-                                                        <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                                        <a className="btn btn-muted btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                                                             <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
@@ -341,7 +341,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 </div>
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
-                                                        <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                                        <a className="btn btn-muted btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                                                             <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
@@ -390,7 +390,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 </div>
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
-                                                        <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                                        <a className="btn btn-muted btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                                                             <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
@@ -439,7 +439,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 </div>
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
-                                                        <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                                        <a className="btn btn-muted btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                                                             <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
@@ -487,7 +487,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 </div>
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
-                                                        <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                                        <a className="btn btn-muted btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                                                             <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
@@ -536,7 +536,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                                 </div>
                                                 <div className="d-flex align-items-center gap-xs dropdown">
                                                     <div className="dropdown-container">
-                                                        <a className="btn btn-transparent btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                                        <a className="btn btn-muted btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                                                             <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                                                         </a>
                                                         <div className="dropdown-menu dropdown-menu-right">
@@ -583,7 +583,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                         </div>
                                         <span className="badge badge-notification is-highlight">0</span>
                                         <div className="dropdown-container">
-                                            <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a className="btn btn-muted btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span className="icon icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
@@ -631,7 +631,7 @@ export const ItemCourses = ({}: ItemCoursesProps) => {
                                         </div>
                                         <span className="badge badge-notification is-highlight">0</span>
                                         <div className="dropdown-container">
-                                            <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a className="btn btn-muted btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span className="icon icon-options" />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">

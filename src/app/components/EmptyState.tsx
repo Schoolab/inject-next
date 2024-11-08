@@ -7,13 +7,18 @@ export interface EmptyStateProps {
     iconBtn?: string;
     labelBtn?: string;
     labelLink?: string;
+    bordered?: Boolean;
+    spacious?:  Boolean;
 }
 
-export const EmptyState = ({ title="No category", text="Your category will be listed here", labelLink, iconTitle, iconBtn= "plus-circle", labelBtn  }: EmptyStateProps) => {
-
+export const EmptyState = ({ title="No category", text="Your category will be listed here", labelLink, iconTitle, iconBtn= "plus-circle", labelBtn, bordered = true, spacious = false, ...props  }: EmptyStateProps) => {
+    let classTab = ["bg-white d-flex flex-column align-items-center gap-0px text-center"];
+    bordered && classTab.push("border rounded");
+    !spacious && classTab.push("px-2xl py-2xl");
+    spacious && classTab.push("px-3xl py-80px");
 
     return (
-        <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
+        <div className={classTab.join(" ")} {...props}>
             {iconTitle && 
                 <div className="d-flex pb-16px">
                 <Icon size="sm" name={iconTitle} />
