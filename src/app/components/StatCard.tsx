@@ -5,12 +5,12 @@ export interface StatCardProps {
     /**
      * Stat Number
      */
-    number?: String;
+    number?: string;
 
     /**
      * Stat variation compared to previous period
      */
-    variation?: String;
+    variation?: string;
 
     /**
      * Warning
@@ -20,12 +20,12 @@ export interface StatCardProps {
     /** 
      * Caption
      */
-    caption?: String;
+    caption?: string;
 
     /**
      * Link
      */
-    link?: String;
+    link?: string;
 
     /**
      * Custom class
