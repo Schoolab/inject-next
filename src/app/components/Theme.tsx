@@ -2,12 +2,22 @@ export interface ThemeProps {
     /**
      * Root css theme
      */
-    themeName?: "Schoolab" | "Moho" | "Raiselab";
+    themeName?: "Inject" | "Schoolab" | "Moho" | "Raiselab";
 }
 
 export const Theme = ({ themeName }: ThemeProps) => {
     return (
         <>
+            {themeName === "Inject" && (
+                <style>{`
+                   :root {
+                        --bg-brand-hero: #181B56;
+                        --bg-brand-on-hero-highlight: rgba(255,255,255,.1);
+                        --bg-brand-on-hero-active: #FFF;
+                        --fg-brand-hero: #FFF;
+                    }
+            `}</style>
+            )}
             {themeName === "Moho" && (
                 <style>{`
                     :root {

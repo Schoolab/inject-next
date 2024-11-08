@@ -1,35 +1,46 @@
 import React from "react";
+import { Button } from "../Button";
+import { Icon } from "../Icon";
 
 export interface TitleProps {
+    /**
+     * Title
+     */
+    title?: string;
+
+    /**
+     * Icon
+     */
+    iconName?: string;
+
+    /** 
+     * Emoji
+     */
+    emoji?: string;
+
     /**
    * Custom class
    */
     addClass?: string;
 }
 
-export const Title = ({addClass}: TitleProps) => {
+export const Title = ({ title = "Page title", iconName, emoji, addClass }: TitleProps) => {
     let classTab = ["application-title"];
     addClass && classTab.push(addClass);
     return (
         <div className={classTab.join(" ")}>
             <div className="d-lg-none flex-grow-1">
                 <div className="d-flex justify-content-between mb-3">
-                    <a className="btn btn-sm btn-default mr-5" data-toggle="tooltip" data-original-title="Back" href="#">
-                        <span className="icon icon-arrow-left" />
-                    </a>
+                    <Button type="default" iconStartName="arrow-left" size="sm" data-toggle="tooltip" data-original-title="Back" />
                     <div className="d-flex align-items-center gap-xs">
                         <small className="text-muted">1&nbsp;on&nbsp;6</small>
-                        <a className="btn btn-sm btn-default" data-toggle="tooltip" data-original-title="previous" href="#">
-                            <span className="icon icon-chevron-left" />
-                        </a>
-                        <a className="btn btn-sm btn-default" data-toggle="tooltip" data-original-title="Next" href="#">
-                            <span className="icon icon-chevron-right" />
-                        </a>
+                        <Button type="default" iconStartName="chevron-left" size="sm" data-toggle="tooltip" data-original-title="Previous" />
+                        <Button type="default" iconStartName="chevron-right" size="sm" data-toggle="tooltip" data-original-title="Next" />
                     </div>
                 </div>
                 <div className="dropdown">
                     <div className="h2 m-none dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="titleDropdown">
-                        Title Mobile
+                        {title}
                     </div>               
                     <div className="dropdown-menu" aria-labelledby="titleDropdown">
                         <a className="dropdown-item" href="#">
@@ -60,29 +71,23 @@ export const Title = ({addClass}: TitleProps) => {
                 <div className="d-flex">
                     <div className="flex-grow-1">
                         <div className="d-flex gap-xs">
-                            <a className="btn btn-sm btn-default" data-toggle="tooltip" data-original-title="Back" href="#">
-                                <span className="icon icon-arrow-left" />
-                            </a>
-                            <div className="h2 m-none">Title Desktop</div>
+                            <Button type="default" iconStartName="arrow-left" size="sm" data-toggle="tooltip" data-original-title="Back" />
+                            <div className="h2 d-flex gap-xs m-none">
+                                {iconName && <Icon name={iconName} />}
+                                {emoji && <span>{emoji}</span>}
+                                <span>{title}</span>
+                            </div>
                         </div>        
                     </div>
                     <div className="d-flex align-items-center gap-xs">
                         <small className="text-muted">1&nbsp;of&nbsp;6</small>
-                        <a className="btn btn-sm btn-default" data-toggle="tooltip" data-original-title="previous" href="#">
-                            <span className="icon icon-chevron-left" />
-                        </a>
-                        <a className="btn btn-sm btn-default" data-toggle="tooltip" data-original-title="Next" href="#">
-                            <span className="icon icon-chevron-right" />
-                        </a>
+                        <Button type="default" iconStartName="chevron-left" size="sm" data-toggle="tooltip" data-original-title="Previous" />
+                        <Button type="default" iconStartName="chevron-right" size="sm" data-toggle="tooltip" data-original-title="Next" />
                     </div>
                 </div>
             </div>
-            <a className="btn btn-sm btn-default" href="#">
-                <span>If button</span>
-            </a>
-            <a className="btn btn-sm btn-default" href="#">
-                <span>If button</span>
-            </a>
+            <Button label="Preview" type="default" iconStartName="preview" iconEndName="new-tab" size="sm" />
+            <Button label="Save changes" type="primary" size="sm" />
         </div>
     );
 };

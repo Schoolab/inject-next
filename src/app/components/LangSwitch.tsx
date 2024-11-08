@@ -10,8 +10,8 @@ export const LangSwitch = ({}: LangSwitchProps) => {
             <Icon name="translate" addClass="text-muted" />
             <span className="small text-muted">Edit for each language</span>
             <div className="btn-group btn-group-toggle btn-filter-radios">
-                <Button label="English" size="sm" isActive={true}></Button>
-                <Button label="French – Français" size="sm"></Button>
+                <Button label="English" type="default" size="sm" isActive={true}></Button>
+                <Button label="French – Français" type="default" size="sm"></Button>
             </div>
         </div>
     );

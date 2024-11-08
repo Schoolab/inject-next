@@ -50,35 +50,35 @@ export const NavbarHub = ({ isLogged = true, theme }: NavBarHubProps) => {
                                     </span>
                                 </button>
                                 <div className="navbar-brand">
-                                    <a tabIndex={1} title="" data-toggle="tooltip" href="#" data-original-title="schoolab home">
+                                    <a tabIndex={1} title="" data-toggle="tooltip" href="#" data-original-title="Organization Hub">
                                         <img className="img-fluid d-block" src={logoUrl} style={{ maxWidth: 150, width: "100%" }} />
                                     </a>
                                 </div>
                                 <div className="navbar-options ml-lg-auto">
                                     <div className="d-none d-lg-flex flex-fill">
                                         <div className="navbar-option">
-                                            <Button label="Programs" iconStartName="program" isActive={true} addClass="navbar-main-btn" />
+                                            <Button label="Programs" iconStartName="program" isActive={true} showActive={false} addClass="navbar-main-btn" />
                                         </div>
                                         <div className="navbar-option">
-                                            <Button label="Projects" iconStartName="project" addClass="navbar-main-btn" />
+                                            <Button label="Projects" iconStartName="project" showActive={false} addClass="navbar-main-btn" />
                                         </div>
                                         <div className="navbar-option">
-                                            <Button label="Community" iconStartName="community" addClass="navbar-main-btn" />
+                                            <Button label="Community" iconStartName="community"showActive={false} addClass="navbar-main-btn" />
                                         </div>
                                         <div className="navbar-option">
-                                            <Button label="Events" iconStartName="calendar" addClass="navbar-main-btn" />
+                                            <Button label="Events" iconStartName="calendar" showActive={false} addClass="navbar-main-btn" />
                                         </div>
                                         <div className="navbar-option">
-                                            <Button label="Newsfeed" iconStartName="newsfeed" addClass="navbar-main-btn" />
+                                            <Button label="Newsfeed" iconStartName="newsfeed" showActive={false} addClass="navbar-main-btn" />
                                         </div>
                                         <div className="navbar-option">
-                                            <Button label="F.A.Q." iconStartName="faq" addClass="navbar-main-btn" />
+                                            <Button label="F.A.Q." iconStartName="faq" showActive={false} addClass="navbar-main-btn" />
                                         </div>
                                     </div>
                                     {isLogged ? (
                                         <div className="d-flex gap-xs align-items-center">
                                             <div className="navbar-option  d-none d-lg-flex">
-                                                <Button label="My dashboard" type="default" isActive={false} addClass="navbar-main-btn" />
+                                                <Button label="My dashboard" type="default" isActive={false} iconStartName="account-circle" addClass="navbar-main-btn" />
                                             </div>
                                             <div className="navbar-option d-none d-lg-flex">
                                                 <a className="navbar-option--link" href="#">
