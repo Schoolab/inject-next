@@ -237,7 +237,7 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                             <span className="icon icon-chevron-down" aria-hidden="true" />
                                         </a>
 
-                                        <div className="dropdown-menu">
+                                        <div className="dropdown-menu" style={{ maxWidth : `100%` }}>
                                             <h6 className="dropdown-header">Switch program</h6>
                                             <a className="dropdown-item active" href="#">
                                                 <span className="text-truncate">Schoolab - Saint Lazare Schoolab - Saint Lazare</span>
