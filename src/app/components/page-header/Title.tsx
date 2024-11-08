@@ -72,7 +72,7 @@ export const Title = ({ title = "Page title", iconName, emoji, addClass }: Title
                     <div className="flex-grow-1">
                         <div className="d-flex gap-xs">
                             <Button type="default" iconStartName="arrow-left" size="sm" data-toggle="tooltip" data-original-title="Back" />
-                            <div className="h2 d-flex gap-xs m-none">
+                            <div className="h3 d-flex gap-xs m-none">
                                 {iconName && <Icon name={iconName} />}
                                 {emoji && <span>{emoji}</span>}
                                 <span>{title}</span>

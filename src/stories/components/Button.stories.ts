@@ -20,6 +20,7 @@ const meta = {
     isActive: { control: "boolean" },
     hasDropdown: { control: "boolean" },
     extended: { control: "boolean" },
+    outlined: { control: "boolean" },
   },
   args:{
     disabled: false,
@@ -28,6 +29,7 @@ const meta = {
     type: "default",
     size: "default",
     extended: false,
+    outlined: false
   },
 } satisfies Meta<typeof Button>;
 

@@ -36,23 +36,28 @@ export interface ButtonProps {
     /**
      * Is this the principal call to action on the page?
      */
-    type?: "default" | "primary" | "transparent" | "muted" | "danger" | "warning" | "secondary" ;
+    type?: "default" | "primary" | "secondary" | "transparent" | "muted" | "success" | "warning" | "danger" | "brand-primary" | "brand-secondary" | "brand-tertiary" ;
     /**
      * How large should the button be?
      */
     size?: "default" | "sm" | "xs";
-     /**
+    /**
      * Does the button have a btn-block class ?
      */
     extended?: Boolean;
+    /**
+     * Does the button have a btn-block class ?
+     */
+    outlined?: Boolean;
 }
 
 /**
  * Buttons drive actions in forms, dialogs, etc. and should be used to guide the user to their next best action. Button component has support for multiple sizes, type and can have a start or an end icon.
  */
-export const Button = ({ size = "default", type, disabled, isActive = false, showActive = true, hasDropdown = false, label, addClass, extended, iconStartName, iconEndName, ...props }: ButtonProps) => {
+export const Button = ({ size = "default", type, disabled, isActive = false, showActive = true, hasDropdown = false, label, addClass, extended, outlined, iconStartName, iconEndName, ...props }: ButtonProps) => {
     let classTab = ["btn"];
-    type && classTab.push(`btn-${type}`);
+    type && outlined && classTab.push(`btn-outline-${type}`);
+    type && !outlined && classTab.push(`btn-${type}`);
     size !== "default" && classTab.push(`btn-${size}`);
     isActive && classTab.push("active");
     hasDropdown && classTab.push("dropdown-toggle");
