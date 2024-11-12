@@ -40,7 +40,7 @@ export const ManageSetup = () => {
                                         </div>
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item is-complet is-static is-bordered resource mb-3">
+                                        <div className="item is-completed is-static is-bordered resource mb-3">
                                             <div className="item-row flex-column flex-md-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-information" />
@@ -74,7 +74,7 @@ export const ManageSetup = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="item is-complet is-static is-bordered resource mb-3">
+                                        <div className="item is-completed is-static is-bordered resource mb-3">
                                             <div className="item-row flex-column flex-md-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-account-plus" />
@@ -135,7 +135,7 @@ export const ManageSetup = () => {
                                         </div>
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item is-complet is-static is-bordered resource mb-3">
+                                        <div className="item is-completed is-static is-bordered resource mb-3">
                                             <div className="item-row flex-column flex-md-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-calendar" />
@@ -201,7 +201,7 @@ export const ManageSetup = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="item is-complet is-static is-bordered resource mb-3">
+                                        <div className="item is-completed is-static is-bordered resource mb-3">
                                             <div className="item-row flex-column flex-md-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-information" />
