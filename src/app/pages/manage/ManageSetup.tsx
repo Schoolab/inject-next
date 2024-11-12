@@ -494,7 +494,7 @@ export const ManageSetup = () => {
                                             </div>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="progress flex-fill mr-3" style={{ height: 5 }}>
-                                                    <div className="progress-bar" role="progressbar" style={{ width: "20%" }} aria-valuenow={20} aria-valuemin={0} aria-valuemax={100} />
+                                                    <div className="progress-bar" role="progressbar" style={{ width: "0%" }} aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} />
                                                 </div>
                                                 <span className="small text-muted">0/3</span>
                                             </div>
