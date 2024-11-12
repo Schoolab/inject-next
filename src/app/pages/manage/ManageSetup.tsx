@@ -130,7 +130,7 @@ export const ManageSetup = () => {
                                                 <div className="progress flex-fill mr-3" style={{ height: 5 }}>
                                                     <div className="progress-bar" role="progressbar" style={{ width: "25%" }} aria-valuenow={25} aria-valuemin={0} aria-valuemax={100} />
                                                 </div>
-                                                <span className="small text-muted">1/4</span>
+                                                <span className="small text-muted">2/4</span>
                                             </div>
                                         </div>
                                     </div>
@@ -276,7 +276,7 @@ export const ManageSetup = () => {
                                         <div className="my-5">
                                             <div className="d-flex justify-content-between mb-3">
                                                 <span className="small text-muted">Tasks</span>
-                                                <span className="small text-muted">Not completd</span>
+                                                <span className="small text-muted">Not completed</span>
                                             </div>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="progress flex-fill mr-3" style={{ height: 5 }}>
@@ -490,7 +490,7 @@ export const ManageSetup = () => {
                                         <div className="my-5">
                                             <div className="d-flex justify-content-between mb-3">
                                                 <span className="small text-muted">Tasks</span>
-                                                <span className="small text-muted">In progress</span>
+                                                <span className="small text-muted">Not completed</span>
                                             </div>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="progress flex-fill mr-3" style={{ height: 5 }}>
@@ -611,7 +611,7 @@ export const ManageSetup = () => {
                                         <div className="my-5">
                                             <div className="d-flex justify-content-between mb-3">
                                                 <span className="small text-muted">Tasks</span>
-                                                <span className="small text-muted">Not completd</span>
+                                                <span className="small text-muted">Not completed</span>
                                             </div>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="progress flex-fill mr-3" style={{ height: 5 }}>
@@ -731,7 +731,7 @@ export const ManageSetup = () => {
                                         <div className="my-5">
                                             <div className="d-flex justify-content-between mb-3">
                                                 <span className="small text-muted">Tasks</span>
-                                                <span className="small text-muted">Not completd</span>
+                                                <span className="small text-muted">Not completed</span>
                                             </div>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="progress flex-fill mr-3" style={{ height: 5 }}>
@@ -882,7 +882,7 @@ export const ManageSetup = () => {
                                         <div className="my-5">
                                             <div className="d-flex justify-content-between mb-3">
                                                 <span className="small text-muted">Tasks</span>
-                                                <span className="small text-muted">Not completd</span>
+                                                <span className="small text-muted">Not completed</span>
                                             </div>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <div className="progress flex-fill mr-3" style={{ height: 5 }}>
