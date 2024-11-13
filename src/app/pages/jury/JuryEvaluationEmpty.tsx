@@ -6,7 +6,7 @@ import { AppContent } from "@/app/layouts/AppContent";
 import { AsideJury } from "@/app/components/asides/AsideJury";
 import { aside } from "../../../../public/utils/aside";
 
-export const JuryEvaluationProject = () => {
+export const JuryEvaluationEmpty = () => {
     useEffect(() => {
         aside();
     }, []);
@@ -18,155 +18,16 @@ export const JuryEvaluationProject = () => {
                         <div className="row justify-content-center flex-grow-1">
                             <div className="col-12 col-xl-10">
                                 <div className="application-section">
-                                    <h3>Criteria</h3>
-                                    <p>Here are all the criteria that were selected for this jury session. Use them to evaluate the project and submit your evaluation.</p>
-                                    <div className="card p-5 d-flex">
-                                        <div className="row">
-                                            <div className="col-12 col-lg-5 mb-5 mb-lg-0">
-                                                <div
-                                                    className="cover-container rounded "
-                                                    style={{
-                                                        backgroundImage: 'url("img/hero-3.png")',
-                                                        backgroundRepeat: "no-repeat",
-                                                        backgroundPosition: "center",
-                                                        backgroundSize: "cover",
-                                                    }}
-                                                />
-                                            </div>
-                                            <div className="col-12 col-lg-7">
-                                                <h3 className="mb-2">Green energy</h3>
-                                                <ul className="list-inline list-dotted text-muted">
-                                                    <li className="list-inline-item">
-                                                        <a className="icon icon-program" href="/program/esg-awards">
-                                                            ESG Awards
-                                                        </a>
-                                                    </li>
-                                                    <li className="list-inline-item small">
-                                                        <span className="icon icon-time">01/30/2023</span>
-                                                    </li>
-                                                    <li className="list-inline-item small">2 members</li>
-                                                </ul>
-                                                <p>Linking our illuminated ads to green energy</p>
-                                                <ul className="list-inline ">
-                                                    <li className="list-inline-item mr-3">
-                                                        <a className="btn btn-lg btn-default" href="">
-                                                            <span className="icon icon-new-tab mr-2" />
-                                                            show more
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                    <div className="bg-white border rounded px-40px py-80px d-flex flex-column align-items-center gap-0px text-center">
+                                        <div className="d-flex pb-16px">
+                                            <span className="icon icon-gavel is-24px"></span>
+                                        </div>
+                                        <div className="d-flex flex-column gap-2xs">
+                                            <p className="font-weight-bold">Free evaluation</p>
+                                            <p className="small text-muted">This Evaluation does not include any support</p>
                                         </div>
                                     </div>
-                                    <div className="card ">
-                                        <div className="card-header" data-toggle="collapse" data-target="#delivrables" aria-expanded="false">
-                                            <div className="d-flex align-items-center">
-                                                <div className="mr-3 d-none">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </div>
-                                                <strong>Project delivrables</strong>
-                                                <span className="icon icon-chevron-right ml-auto" />
-                                            </div>
-                                        </div>
-                                        <div className="card-body collapse" id="delivrables">
-                                            <h4>Lorem ipsum</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem </p>
-                                            <h4>Lorem ipsum</h4>
-                                            <div className="badges mb-3">
-                                                <a className="badge is-pill" href="#">
-                                                    Lorem
-                                                </a>
-                                                <a className="badge is-pill" href="#">
-                                                    Ipsum
-                                                </a>
-                                                <a className="badge is-pill" href="#">
-                                                    Lorem
-                                                </a>
-                                            </div>
-                                            <h4>Lorem ipsum</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem entum felis diam eget massa.</p>
-                                            <h4>Lorem ipsum</h4>
-                                            <div className="badges mb-3">
-                                                <a className="badge is-pill" href="#">
-                                                    Isum
-                                                </a>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem entum felis diam eget massa.</p>
-                                            <h4>Lorem ipsum</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem </p>
-                                            <h4>Lorem ipsum</h4>
-                                            <div className="badges mb-3">
-                                                <a className="badge is-pill" href="#">
-                                                    Lorem
-                                                </a>
-                                                <a className="badge is-pill" href="#">
-                                                    Ipsum
-                                                </a>
-                                                <a className="badge is-pill" href="#">
-                                                    Lorem
-                                                </a>
-                                            </div>
-                                            <h4>Lorem ipsum</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem entum felis diam eget massa.</p>
-                                            <h4>Lorem ipsum</h4>
-                                            <div className="badges mb-3">
-                                                <a className="badge is-pill" href="#">
-                                                    Isum
-                                                </a>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem entum felis diam eget massa.</p>
-                                            <h4>Lorem ipsum</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem </p>
-                                            <h4>Lorem ipsum</h4>
-                                            <div className="badges mb-3">
-                                                <a className="badge is-pill" href="#">
-                                                    Lorem
-                                                </a>
-                                                <a className="badge is-pill" href="#">
-                                                    Ipsum
-                                                </a>
-                                                <a className="badge is-pill" href="#">
-                                                    Lorem
-                                                </a>
-                                            </div>
-                                            <h4>Lorem ipsum</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem entum felis diam eget massa.</p>
-                                            <h4>Lorem ipsum</h4>
-                                            <div className="badges mb-3">
-                                                <a className="badge is-pill" href="#">
-                                                    Isum
-                                                </a>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem entum felis diam eget massa.</p>
-                                            <h4>Lorem ipsum</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem </p>
-                                            <h4>Lorem ipsum</h4>
-                                            <div className="badges mb-3">
-                                                <a className="badge is-pill" href="#">
-                                                    Lorem
-                                                </a>
-                                                <a className="badge is-pill" href="#">
-                                                    Ipsum
-                                                </a>
-                                                <a className="badge is-pill" href="#">
-                                                    Lorem
-                                                </a>
-                                            </div>
-                                            <h4>Lorem ipsum</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem entum felis diam eget massa.</p>
-                                            <h4>Lorem ipsum</h4>
-                                            <div className="badges mb-3">
-                                                <a className="badge is-pill" href="#">
-                                                    Isum
-                                                </a>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem entum felis diam eget massa.</p>
-                                        </div>
-                                    </div>
+
                                     <div className="card ">
                                         <div className="card-header" data-toggle="collapse" data-target="#Note" aria-expanded="false">
                                             <div className="d-flex align-items-center">
@@ -358,7 +219,6 @@ export const JuryEvaluationProject = () => {
                         </button>
                     </div>
                 </div>
-              
             </AppContent>
             <AsideJury />
         </Layout>
