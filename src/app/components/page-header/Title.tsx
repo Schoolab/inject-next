@@ -34,7 +34,7 @@ export const Title = ({ title = "Page title", iconName, emoji, addClass }: Title
                     <Button type="default" iconStartName="arrow-left" size="sm" data-toggle="tooltip" data-original-title="Back" />
                     <div className="d-flex align-items-center gap-xs">
                         <small className="text-muted">1&nbsp;on&nbsp;6</small>
-                        <Button type="default" iconStartName="chevron-left" size="sm" data-toggle="tooltip" data-original-title="Previous" />
+                        <Button type="default" iconStartName="chevron-left" disabled={true} size="sm" data-toggle="tooltip" data-original-title="Previous" />
                         <Button type="default" iconStartName="chevron-right" size="sm" data-toggle="tooltip" data-original-title="Next" />
                     </div>
                 </div>
@@ -81,7 +81,7 @@ export const Title = ({ title = "Page title", iconName, emoji, addClass }: Title
                     </div>
                     <div className="d-flex align-items-center gap-xs">
                         <small className="text-muted">1&nbsp;of&nbsp;6</small>
-                        <Button type="default" iconStartName="chevron-left" size="sm" data-toggle="tooltip" data-original-title="Previous" />
+                        <Button type="default" iconStartName="chevron-left" disabled={true} size="sm" data-toggle="tooltip" data-original-title="Previous" />
                         <Button type="default" iconStartName="chevron-right" size="sm" data-toggle="tooltip" data-original-title="Next" />
                     </div>
                 </div>
