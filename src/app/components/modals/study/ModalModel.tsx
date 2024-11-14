@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "../../Button";
 export interface ModalModelProps {}
 
 export const ModalModel = ({}: ModalModelProps) => {
@@ -24,12 +25,8 @@ export const ModalModel = ({}: ModalModelProps) => {
                         </nav>
                         <div className="modal-pagination d-flex align-items-center ml-auto gap-xs">
                             <small className="pagination-label text-muted">1&nbsp;of&nbsp;6</small>
-                            <a className="btn btn-sm btn-default" data-toggle="tooltip" data-original-title="Previous" href="#">
-                                <span className="icon icon-chevron-left" />
-                            </a>
-                            <a className="btn btn-sm btn-default" data-toggle="tooltip" data-original-title="Next" href="#">
-                                <span className="icon icon-chevron-right" />
-                            </a>
+                            <Button type="default" size="sm" iconStartName="chevron-left" data-toggle="tooltip" data-original-title="Previous" />
+                            <Button type="default" size="sm" iconStartName="chevron-right" data-toggle="tooltip" data-original-title="Next" />
                         </div>
                         <div className="modal-actions">
                             <a className="btn btn-transparent border-0 p-2xs text-muted" data-toggle="tooltip" data-original-title="Open in new tab" href="#">

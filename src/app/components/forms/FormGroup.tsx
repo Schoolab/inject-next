@@ -26,7 +26,7 @@ export interface FormGroupProps {
  */
 export const FormGroup = ({ label, hint, id, required = false, addClass, children, ...props }: FormGroupProps) => {
     let classGroup = ["form-group"];
-    let classLabel = [""];
+    let classLabel = ["label"];
 
     required && classLabel.push("required")
     addClass && classGroup.push(addClass);
