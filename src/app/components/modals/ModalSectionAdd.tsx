@@ -264,7 +264,7 @@ export const ModalSectionAdd = ({}: ModalSectionAddProps) => {
                 <div className="modal-footer border-top">
                     <div className="d-flex gap-xs ml-auto">
                         <Button type="default" label="Cancel" />
-                        <Button type="primary" label="Add and next" />
+                        <Button type="primary" label="Add" />
                     </div>
                 </div>
             </div>
