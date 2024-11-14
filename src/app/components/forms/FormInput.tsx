@@ -1,18 +1,41 @@
-import React from "react";
+export interface FormInputProps {
+    id?: string;
+    defaultValue?: string;
+    placeholder?: string;
+    /**
+     * Is the input disabled?
+     */
+    disabled?: boolean;
+    /**
+     * Is the input required?
+     */
+    required?: boolean;
+    /**
+     * Custom class
+     */
+    addClass?: string;
+    /**
+     * Choose the type of input
+     */
+    type?: "text" | "email" | "tel" | "number" | "date" | "datetime-local" | "time" | "color" | "file" | "password" | "range" ;
+}
 
-interface FormInputProps {}
+/**
+ * Buttons drive actions in forms, dialogs, etc. and should be used to guide the user to their next best action. Button component has support for multiple sizes, type and can have a start or an end icon.
+ */
+export const FormInput = ({ type = "text", id, defaultValue, placeholder, required = false, disabled = false, addClass, ...props }: FormInputProps) => {
 
-export const FormInput = ({}: FormInputProps) => {
-    return (
-        <div className="form-group">
-            <label className="required" htmlFor="exemple">
-                Name
-            </label>
-            <small id="exemple_help" className="form-text text-muted">
-                This is visible to participants on <a href="#">courses list</a>.
-            </small>
-            <input type="text" id="exemple" required data-hint="name" aria-describedby="exemple_help" className="form-control" defaultValue="" placeholder="Your response here..." />
-            <div className="invalid-feedback">Please enter a message in the textarea.</div>
-        </div>
+    return(
+        <input 
+            type={type} 
+            defaultValue={defaultValue} 
+            placeholder={placeholder} 
+            id={id}
+            disabled={disabled}
+            required={required}
+            aria-required={required ? "true" : "false"}
+            aria-describedby={'hint-' + id}
+            className="form-control"
+        />
     );
 };

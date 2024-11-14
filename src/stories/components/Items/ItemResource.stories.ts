@@ -13,6 +13,7 @@ const meta = {
     tags: ["autodocs"],
     argTypes: {
         isSmall: { control: "boolean" },
+        options: { control: "boolean" },
     },
     args: {
         isSmall: false,
@@ -35,6 +36,7 @@ export const Default: Story = {
             name: "file-pdf-box",
             addClass: "text-danger",
         },
+        options: true,
     },
 };
 export const Small: Story = {
@@ -50,6 +52,7 @@ export const Small: Story = {
             addClass: "text-danger",
         },
         isSmall: true,
+        options: true,
     },
 };
 
@@ -66,5 +69,6 @@ export const WithImage: Story = {
             addClass: "text-danger",
         },
         img: "img/placeholder-ideation-cover.png",
+        options: true,
     },
 };

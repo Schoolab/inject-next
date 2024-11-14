@@ -4,6 +4,11 @@ import { ItemsGroup } from "../items-group/ItemsGroup";
 import { ItemsGroupHeader } from "../items-group/ItemsGroupHeader";
 import { ItemSection } from "../items/ItemSection";
 import { Button } from "../Button";
+import { FormGroup } from "../forms/FormGroup";
+import { FormInput } from "../forms/FormInput";
+import { FormTextarea } from "../forms/FormTextarea";
+import { ItemResource } from "../items/ItemResource";
+import { Alert } from "../Alert";
 
 interface AsideEditPageProps {}
 
@@ -56,17 +61,74 @@ export const AsideEditPage = ({}: AsideEditPageProps) => {
                     </div>
                     <div id="info" role="tabpanel" aria-labelledby="info-tab" className="tab-pane h-100 fade">
                         <div className=" d-flex flex-column gap-md">
-                            <p>Content here...</p>
+                            <LangSwitch />
+                            <div className="form-row">
+                                <FormGroup id="name" label="Name" required={true} addClass="col-10">
+                                    <FormInput id="name" placeholder="A short name" defaultValue="About" required={true} />
+                                </FormGroup>
+                                <FormGroup id="icon" label="Icon" required={false} addClass="col-2">
+                                    <FormInput id="icon" placeholder="" defaultValue="👋" required={false} />
+                                </FormGroup>
+                            </div>
+                            <div className="d-flex flex-column gap-md p-md bg-highlight rounded-lg">
+                                <FormGroup id="type" label="Page type">
+                                <div className="btn-group btn-group-toggle btn-filter-radios">
+                                    <Button label="Custom" type="default" isActive={true}></Button>
+                                    <Button label="Events" type="default"></Button>
+                                    <Button label="Participants" type="default"></Button>
+                                    <Button label="Experts" type="default"></Button>
+                                    <Button label="Jury" type="default"></Button>
+                                </div>
+                                </FormGroup>
+                            </div>
                         </div>
                     </div>
                     <div id="seo" role="tabpanel" aria-labelledby="seo-tab" className="tab-pane h-100 fade">
                         <div className=" d-flex flex-column gap-md">
-                            <p>Content here...</p>
+                            <LangSwitch />
+                            <p>This information will only be used in your landing page metadata and won't appear in your management interface.</p>
+                            <FormGroup id="title" label="Title tag" hint="Optimal title length is approximatively 55 characters.">
+                                <FormInput id="title" placeholder="A short name" defaultValue="CPI Concept" />
+                            </FormGroup>
+                            <FormGroup id="description" label="Meta description" hint="Optimal description length is 155 to 300 characters. ">
+                                <FormTextarea id="description" placeholder="Write page description here..." defaultValue="Rethink your future, reinvent your offering, change your organization" />
+                            </FormGroup>
+                            <FormGroup id="cover" label="Open Graph image" hint="Make sure your images are at least 1200px by 630px and have a 1.91:1 aspect ratio.">
+                                <ItemResource
+                                    isSmall={false}
+                                    action="delete"
+                                    icon={{
+                                        name: "image",
+                                    }}
+                                    resource={{
+                                        details: "1.2 MB",
+                                        name: "cpi-concept-cover.png",
+                                        type: "PNG Image",
+                                    }}
+                                    options={false}
+                                />
+                                <div className="dropdown">
+                                    <Button type="default" label="Replace image" iconStartName="plus-circle" extended={true} addClass="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" />
+                                    <div className="dropdown-menu">
+                                        <a className="dropdown-item" href="#">Upload from computer</a>
+                                        <a className="dropdown-item" href="#">Choose from gallery</a>
+                                        <a className="dropdown-item is-danger" href="#">Remove</a>
+                                    </div>
+                                </div>
+                            </FormGroup>
+                            <Alert type="info" icon="information" text="Open Graph are the info that shows up when sharing content on Facebook, X (Twitter), LinkedIn, and Pinterest." />
                         </div>
                     </div>
                     <div id="advanced" role="tabpanel" aria-labelledby="advanced-tab" className="tab-pane h-100 fade">
                         <div className=" d-flex flex-column gap-md">
-                            <p>Content here...</p>
+                            <p>The code included here will only apply to this page, and will appear after any landing-wide custom code.</p>
+                            <FormGroup label="Inside <head> tag">
+                                <FormTextarea placeholder="Your code here..." />
+                            </FormGroup>
+                            <FormGroup label="Before </body> tag">
+                                <FormTextarea placeholder="Your code here..." />
+                            </FormGroup>
+                            <Alert type="warning" icon="alert" text="Custom code is not validated. Incorrect code may cause issues with the published page." />
                         </div>
                     </div>
                 </div>

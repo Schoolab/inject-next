@@ -1,5 +1,6 @@
 import React from "react";
 import { Icon } from "../Icon";
+import { Button } from "../Button";
 
 type ResourceType = {
     name: string;
@@ -23,7 +24,8 @@ export interface ItemResourceProps {
     /**
      * What kind of action is possible?
      */
-    action: "download" | "openLink";
+    action: "download" | "openLink" | "delete";
+    options: Boolean;
     /**
      * Icon parameters
      */
@@ -34,7 +36,7 @@ export interface ItemResourceProps {
     isSmall: Boolean;
 }
 
-export const ItemResource = ({ img, resource, action, icon, isSmall = false }: ItemResourceProps) => {
+export const ItemResource = ({ img, resource, action, options = true, icon, isSmall = false }: ItemResourceProps) => {
     let classTab = ["item is-bordered"];
     isSmall && classTab.push("is-small");
 
@@ -67,29 +69,29 @@ export const ItemResource = ({ img, resource, action, icon, isSmall = false }: I
                 </div>
                 <div className="item-options">
                     {action == "download" && (
-                        <a className="btn btn-muted btn-icon z-1" href="#" role="button" data-toggle="tooltip" data-placement="top" data-title="Download file" data-boundary="window" data-original-title="" title="">
-                            <span className="icon icon-download" />
-                        </a>
+                        <Button type="muted" iconStartName="download" addClass="z-1" data-toggle="tooltip" data-placement="top" data-title="Download file" data-boundary="window" />
                     )}
                     {action == "openLink" && (
-                        <a className="btn btn-muted btn-icon z-1" href="#" role="button" data-toggle="tooltip" data-placement="top" data-title="Open in new tab" data-boundary="window" data-original-title="" title="">
-                            <span className="icon icon-new-tab" />
-                        </a>
+                        <Button type="muted" iconStartName="new-tab" addClass="z-1" data-toggle="tooltip" data-placement="top" data-title="Open in new tab" data-boundary="window" />
                     )}
-
-                    <div className="dropdown" data-toggle="tooltip" data-placement="top" data-title="Options" data-boundary="window" data-original-title="" title="">
-                        <a className="btn btn-muted btn-icon z-1" href="#" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
-                            <span className="icon icon-options" />
-                        </a>
-                        <div className="dropdown-menu dropdown-menu-right">
-                            <a href="#" className="dropdown-item">
-                                Edit file
+                    {action == "delete" && (
+                        <Button type="muted" iconStartName="delete" addClass="z-1 btn-danger-on-hover" data-toggle="tooltip" data-placement="top" data-title="Delete file" data-boundary="window" />
+                    )}
+                    {options && (
+                        <div className="dropdown" data-toggle="tooltip" data-placement="top" data-title="Options" data-boundary="window" data-original-title="" title="">
+                            <a className="btn btn-muted btn-icon z-1" href="#" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
+                                <span className="icon icon-options" />
                             </a>
-                            <a href="#" className="dropdown-item is-danger">
-                                Delete file
-                            </a>
+                            <div className="dropdown-menu dropdown-menu-right">
+                                <a href="#" className="dropdown-item">
+                                    Edit file
+                                </a>
+                                <a href="#" className="dropdown-item is-danger">
+                                    Delete file
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    )}
                 </div>
             </div>
         </div>

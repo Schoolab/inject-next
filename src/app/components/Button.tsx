@@ -66,7 +66,7 @@ export const Button = ({ size = "default", type, disabled, isActive = false, sho
     addClass && classTab.push(addClass);
 
     return (
-        <a href="#" className={classTab.join(" ")} {...props}>
+        <a href="#" className={classTab.join(" ")} role="button" {...props}>
             {isActive && showActive && <Icon name="check" />}
             {iconStartName && <Icon name={iconStartName} />}
             {label && <span>{label}</span>} 
