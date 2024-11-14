@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Placeholder } from "../Placeholder";
 
 export interface FormGroupProps {
     children?: ReactNode;
@@ -39,14 +40,8 @@ export const FormGroup = ({ label, hint, id, required = false, addClass, childre
             <small id={'hint-' + id} className="form-text text-muted">
                 {hint}
             </small>
-            {children && (
-                children
-            )}
-            {!children && (
-                <div className="bg-highlight rounded p-xs w-100">
-                    <em>Add children here...</em>
-                </div>
-            )}
+            {children && children}
+            {!children && <Placeholder />}
             <div className="invalid-feedback">Please enter a message in the textarea.</div>
         </div>
     );

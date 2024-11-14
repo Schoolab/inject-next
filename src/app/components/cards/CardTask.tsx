@@ -1,36 +1,13 @@
 import React from "react";
+import { CardCollapse } from "./CardCollapse";
 
 interface CardTaskProps {}
 
 export const CardTask = ({}: CardTaskProps) => {
     return (
-        <>
-            <div className="card" data-form={543}>
-                <div className="card-header" data-toggle="collapse" data-target="#form-543" aria-expanded="true">
-                    <div className="d-flex align-items-center">
-                        <div className="mr-3">
-                            <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                <circle className="progress-circle progress-circle-bg" />
-                                <circle className="progress-circle progress-circle-percent" />
-                                <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                            </svg>
-                        </div>
-                        <span>
-                            <strong>Livrables</strong>
-                            <span className="formRequiredFieldsContainer d-none">
-                                <p className="text-muted">
-                                    <span className="formRequiredFieldsNb">0</span>
-                                    <span className="formRequiredFieldsText" data-singletext="tâche obligatoire restante" data-multipletext="tâches obligatoires restantes">
-                                        {" "}
-                                        tâche obligatoire restante{" "}
-                                    </span>
-                                </p>
-                            </span>
-                        </span>
-                        <span className="icon icon-chevron-right ml-auto" />
-                    </div>
-                </div>
-                <form className="card-body collapse show" id="form-543">
+        <div id="accordionTasks">
+            <CardCollapse id="1" parentId="accordionTasks" title="Livrables" progress={33}>
+                <form>
                     <fieldset className="form-group">
                         <legend className="label">Stakeholder Map</legend>
                         <small className="form-text text-muted">Using the templates below, upload your files</small>
@@ -180,33 +157,10 @@ export const CardTask = ({}: CardTaskProps) => {
                         </div>
                     </fieldset>
                 </form>
-            </div>
-            <div className="card" data-form={544}>
-                <div className="card-header" data-toggle="collapse" data-target="#form-544" aria-expanded="true">
-                    <div className="d-flex align-items-center">
-                        <div className="mr-3">
-                            <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                <circle className="progress-circle progress-circle-bg" />
-                                <circle className="progress-circle progress-circle-percent" />
-                                <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                            </svg>
-                        </div>
-                        <span>
-                            <strong>Livrables</strong>
-                            <span className="formRequiredFieldsContainer d-none">
-                                <p className="text-muted">
-                                    <span className="formRequiredFieldsNb">0</span>
-                                    <span className="formRequiredFieldsText" data-singletext="tâche obligatoire restante" data-multipletext="tâches obligatoires restantes">
-                                        {" "}
-                                        tâche obligatoire restante{" "}
-                                    </span>
-                                </p>
-                            </span>
-                        </span>
-                        <span className="icon icon-chevron-right ml-auto" />
-                    </div>
-                </div>
-                <form className="card-body collapse show" id="form-544">
+            </CardCollapse>
+
+            <CardCollapse id="2" parentId="accordionTasks" title="Livrables" progress={100} metas={[{label: "Read only"},{label:"4 required fields"}]}>
+                <form>
                     <fieldset className="form-group">
                         <legend className="label">Stakeholder Map</legend>
                         <small className="form-text text-muted">Using the templates below, upload your files</small>
@@ -343,7 +297,7 @@ export const CardTask = ({}: CardTaskProps) => {
                         </div>
                     </fieldset>
                 </form>
-            </div>
-        </>
+            </CardCollapse>
+        </div>
     );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { ReactNode } from "react";
 import { Icon } from "../Icon";
 import { Progress } from "../Progress";
+import { Placeholder } from "../Placeholder";
 
 type MetaType = {
     label: string;
@@ -42,14 +43,8 @@ export const CardCollapse = ({ id = "Card", parentId, children, title = "Card Ti
             </div>
             <div className="collapse" id={'body' + id}  aria-labelledby={'header' + id} {...(parentId && { "data-parent": '#' + parentId })}>
                 <div className="card-body">
-                    {children && (
-                        children
-                    )}
-                    {!children && (
-                        <div className="bg-highlight rounded p-xs w-100">
-                            <em>Add children here...</em>
-                        </div>
-                    )}
+                    {children && children}
+                    {!children && <Placeholder />}
                 </div>
             </div>
         </div>

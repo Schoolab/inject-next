@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Placeholder } from "../Placeholder";
 
 export interface FormFieldSetProps {
     children?: ReactNode;
@@ -37,14 +38,8 @@ export const FormFieldSet = ({ name, legend, hint, disabled = false, addClass, c
             <legend className={classLegend.join(" ")}>
                 {legend}
             </legend>
-            {children && (
-                children
-            )}
-            {!children && (
-                <div className="bg-highlight rounded p-xs w-100">
-                    <em>Add children here...</em>
-                </div>
-            )}
+            {children && children}
+            {!children && <Placeholder />}
         </fieldset>
     );
 };
