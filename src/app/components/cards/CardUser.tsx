@@ -23,16 +23,18 @@ export const CardUser = ({}: CardUserProps) => {
                             <li> FR </li>
                         </ul>
                     </div>
-                    <a className="btn btn-lg btn-transparent btn-icon z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span className="icon icon-options" />
-                    </a>
-                    <div className="dropdown-menu dropdown-menu-right">
-                        <a className="dropdown-item" href="/user/u/53825949">
-                            Show profile
+                    <div className="dropdown z-1">
+                        <a className="btn btn-lg btn-transparent btn-icon z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span className="icon icon-options" />
                         </a>
-                        <a className="dropdown-item" data-toggle="modal" data-target="#modalOpenThread" data-user-id={2286} href="#">
-                            Send a message
-                        </a>
+                        <div className="dropdown-menu dropdown-menu-right">
+                            <a className="dropdown-item" href="/user/u/53825949">
+                                Show profile
+                            </a>
+                            <a className="dropdown-item" data-toggle="modal" data-target="#modalOpenThread" data-user-id={2286} href="#">
+                                Send a message
+                            </a>
+                        </div>
                     </div>
                 </CardInfos>
                 <div className="card-targets">

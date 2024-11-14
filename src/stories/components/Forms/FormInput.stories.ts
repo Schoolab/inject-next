@@ -17,10 +17,12 @@ const meta = {
     argTypes: {
         required: { control: "boolean" },
         disabled: { control: "boolean" },
+        readonly: { control: "boolean" },
     },
     args:{
         required: false,
         disabled: false,
+        readonly: false,
     },
 } satisfies Meta<typeof FormInput>;
 
@@ -29,12 +31,46 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 
-export const Default: Story = {
+export const Text: Story = {
     args: {
         id: "name",
         type: "text",
         placeholder: "A short name",
         required: false,
         disabled: false,
+        readonly: false,
+    }
+};
+
+export const Readonly: Story = {
+    args: {
+        id: "name",
+        type: "text",
+        placeholder: "A short name",
+        required: false,
+        disabled: false,
+        readonly: true,
+    }
+};
+
+export const Disabled: Story = {
+    args: {
+        id: "name",
+        type: "text",
+        placeholder: "A short name",
+        required: false,
+        disabled: true,
+        readonly: false,
+    }
+};
+
+export const Number: Story = {
+    args: {
+        id: "name",
+        type: "number",
+        placeholder: "0",
+        required: false,
+        disabled: false,
+        readonly: false,
     }
 };

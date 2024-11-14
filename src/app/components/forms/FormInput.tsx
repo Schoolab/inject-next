@@ -10,6 +10,7 @@ export interface FormInputProps {
      * Is the input required?
      */
     required?: boolean;
+    readonly?: boolean,
     /**
      * Custom class
      */
@@ -23,7 +24,7 @@ export interface FormInputProps {
 /**
  * Buttons drive actions in forms, dialogs, etc. and should be used to guide the user to their next best action. Button component has support for multiple sizes, type and can have a start or an end icon.
  */
-export const FormInput = ({ type = "text", id, defaultValue, placeholder, required = false, disabled = false, addClass, ...props }: FormInputProps) => {
+export const FormInput = ({ type = "text", id, defaultValue, placeholder, required = false, disabled = false, readonly = false, addClass, ...props }: FormInputProps) => {
 
     return(
         <input 
@@ -33,6 +34,7 @@ export const FormInput = ({ type = "text", id, defaultValue, placeholder, requir
             id={id}
             disabled={disabled}
             required={required}
+            readOnly={readonly}
             aria-required={required ? "true" : "false"}
             aria-describedby={'hint-' + id}
             className="form-control"
