@@ -22,25 +22,27 @@ export const ModalPageAdd = ({}: ModalPageAddProps) => {
                     </div>
                 </div>
                 <div className="modal-body">
-                    <LangSwitch />
-                    <div className="form-row">
-                        <FormGroup id="name" label="Name" required={true} addClass="col-10">
-                            <FormInput id="name" placeholder="A short name" defaultValue="About" required={true} />
-                        </FormGroup>
-                        <FormGroup id="icon" label="Icon" required={false} addClass="col-2">
-                            <FormInput id="icon" placeholder="" defaultValue="👋" required={false} />
-                        </FormGroup>
-                    </div>
-                    <div className="d-flex flex-column gap-md p-md bg-highlight rounded-lg">
-                        <FormGroup id="type" label="Page type">
-                        <div className="btn-group btn-group-toggle btn-filter-radios">
-                            <Button label="Custom" type="default" isActive={true}></Button>
-                            <Button label="Events" type="default"></Button>
-                            <Button label="Participants" type="default"></Button>
-                            <Button label="Experts" type="default"></Button>
-                            <Button label="Jury" type="default"></Button>
+                    <div className=" d-flex flex-column gap-md">
+                        <LangSwitch />
+                        <div className="form-row">
+                            <FormGroup id="name" label="Name" required={true} addClass="col-10 m-none">
+                                <FormInput id="name" placeholder="A short name" defaultValue="About" required={true} />
+                            </FormGroup>
+                            <FormGroup id="icon" label="Icon" required={false} addClass="col-2 m-none">
+                                <FormInput id="icon" placeholder="" defaultValue="👋" required={false} />
+                            </FormGroup>
                         </div>
-                        </FormGroup>
+                        <div className="d-flex flex-column gap-md p-md bg-highlight rounded-lg">
+                            <FormGroup id="type" label="Page type">
+                            <div className="btn-group btn-group-toggle btn-filter-radios">
+                                <Button label="Custom" type="default" isActive={true}></Button>
+                                <Button label="Events" type="default"></Button>
+                                <Button label="Participants" type="default"></Button>
+                                <Button label="Experts" type="default"></Button>
+                                <Button label="Jury" type="default"></Button>
+                            </div>
+                            </FormGroup>
+                        </div>
                     </div>
                 </div>
                 <div className="modal-footer border-top">

@@ -63,10 +63,10 @@ export const AsideEditPage = ({}: AsideEditPageProps) => {
                         <div className=" d-flex flex-column gap-md">
                             <LangSwitch />
                             <div className="form-row">
-                                <FormGroup id="name" label="Name" required={true} addClass="col-10">
+                                <FormGroup id="name" label="Name" required={true} addClass="col-10 m-none">
                                     <FormInput id="name" placeholder="A short name" defaultValue="About" required={true} />
                                 </FormGroup>
-                                <FormGroup id="icon" label="Icon" required={false} addClass="col-2">
+                                <FormGroup id="icon" label="Icon" required={false} addClass="col-2 m-none">
                                     <FormInput id="icon" placeholder="" defaultValue="👋" required={false} />
                                 </FormGroup>
                             </div>
