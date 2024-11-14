@@ -6,6 +6,7 @@ import { FormInput } from "../forms/FormInput";
 import { FormTextarea } from "../forms/FormTextarea";
 import { Icon } from "../Icon";
 import { FormFieldSet } from "../forms/FormFieldSet";
+import { CardCollapse } from "../cards/CardCollapse";
 export interface ModalSectionEditProps {}
 
 export const ModalSectionEdit = ({}: ModalSectionEditProps) => {
@@ -60,118 +61,88 @@ export const ModalSectionEdit = ({}: ModalSectionEditProps) => {
                             </FormGroup>
                             <FormGroup id="buttons" label="Buttons" hint="If not needed, leave blank. Elements will follow the main content.">
                                 <div className="accordion" id="accordionButtons">
-                                    <div className="card">
-                                    <div className="card-header d-flex gap-sm align-items-center" id="collapse-heading-1" data-toggle="collapse" data-target="#collapse-button-1" aria-expanded="false" aria-controls="collabse-button-1">
-                                            <div className="d-flex flex-column w-100 gap-none">
-                                                <p className="h4">Join today</p>
-                                                <ul className="metas is-list small">
-                                                    <li>Primary button</li>
-                                                    <li>domain.tld</li>
-                                                </ul>
-                                            </div>
-                                            <Icon name="chevron-right" />
+                                    <CardCollapse id="1" parentId="accordionButtons" title="Join today" metas={[{label: "Primary button"},{label: "domain.tld"}]}>
+                                        <div className="form-row">
+                                            <FormGroup label="Label" addClass="col-6">
+                                                <FormInput placeholder="e.g. Learn more" defaultValue="Join today" />
+                                            </FormGroup>
+                                            <FormGroup label="URL" addClass="col-6">
+                                                <FormInput placeholder="e.g. https://inject.theschoolab.com" defaultValue="https://domain.tld" />
+                                            </FormGroup>
                                         </div>
-                                        <div className="collapse" id="collapse-button-1"  aria-labelledby="collapse-heading-1" data-parent="#accordionButtons">
-                                            <div className="card-body">
-                                                <div className="form-row">
-                                                    <FormGroup label="Label" addClass="col-6">
-                                                        <FormInput placeholder="e.g. Learn more" defaultValue="Join today" />
-                                                    </FormGroup>
-                                                    <FormGroup label="URL" addClass="col-6">
-                                                        <FormInput placeholder="e.g. https://inject.theschoolab.com" defaultValue="https://domain.tld" />
-                                                    </FormGroup>
+                                        <FormFieldSet legend="Behaviors">
+                                            <div className="form-options" id="checkbox" aria-describedby="exemple_help">
+                                                <div className="custom-control custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" id="checkbox_0" name="checkbox" className="custom-control-input" defaultValue={0} />
+                                                    <label className="custom-control-label" htmlFor="checkbox_0">
+                                                        Open in new tab
+                                                    </label>
                                                 </div>
-                                                <FormFieldSet legend="Behaviors">
-                                                    <div className="form-options" id="checkbox" aria-describedby="exemple_help">
-                                                        <div className="custom-control custom-checkbox custom-control-inline">
-                                                            <input type="checkbox" id="checkbox_0" name="checkbox" className="custom-control-input" defaultValue={0} />
-                                                            <label className="custom-control-label" htmlFor="checkbox_0">
-                                                                Open in new tab
-                                                            </label>
-                                                        </div>
-                                                        <div className="custom-control custom-checkbox custom-control-inline">
-                                                            <input type="checkbox" id="checkbox_1" name="checkbox" className="custom-control-input" defaultValue={1} />
-                                                            <label className="custom-control-label" htmlFor="checkbox_1">
-                                                                Nofollow
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </FormFieldSet>
-                                                <FormGroup label="Style">
-                                                    <div className="btn-group btn-group-toggle btn-filter-radios align-self-start">
-                                                        <Button label="Primary" type="default" isActive={true}></Button>
-                                                        <Button label="Default" type="default"></Button>
-                                                        <Button label="Inverse" type="default"></Button>
-                                                    </div>
-                                                </FormGroup>
-                                                <FormFieldSet>
-                                                    <div className="custom-control custom-switch">
-                                                        <input type="checkbox" role="switch" id="switch_0" name="switch" className="custom-control-input" defaultValue={0} defaultChecked />
-                                                        <label className="custom-control-label" htmlFor="switch_0">
-                                                            Show button
-                                                        </label>
-                                                    </div>
-                                                </FormFieldSet>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="card">
-                                        <div className="card-header d-flex gap-sm align-items-center" id="collapse-heading-2" data-toggle="collapse" data-target="#collapse-button-2" aria-expanded="false" aria-controls="collabse-button-2">
-                                            <div className="d-flex flex-column w-100 gap-none">
-                                                <p className="h4">Learn more</p>
-                                                <ul className="metas is-list small">
-                                                    <li>Default button</li>
-                                                    <li>domain.tld</li>
-                                                    <li>Open in new tab</li>
-                                                    <li>Nofollow</li>
-                                                </ul>
-                                            </div>
-                                            <Icon name="chevron-right" />
-                                        </div>
-                                        <div className="collapse" id="collapse-button-2"  aria-labelledby="collapse-heading-2" data-parent="#accordionButtons">
-                                            <div className="card-body">
-                                            <div className="form-row">
-                                                    <FormGroup label="Label" addClass="col-6">
-                                                        <FormInput placeholder="e.g. Learn more" defaultValue="Learn more" />
-                                                    </FormGroup>
-                                                    <FormGroup label="URL" addClass="col-6">
-                                                        <FormInput placeholder="e.g. https://inject.theschoolab.com" defaultValue="https://domain.tld" />
-                                                    </FormGroup>
+                                                <div className="custom-control custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" id="checkbox_1" name="checkbox" className="custom-control-input" defaultValue={1} />
+                                                    <label className="custom-control-label" htmlFor="checkbox_1">
+                                                        Nofollow
+                                                    </label>
                                                 </div>
-                                                <FormFieldSet legend="Behaviors">
-                                                    <div className="form-options" id="checkbox" aria-describedby="exemple_help">
-                                                        <div className="custom-control custom-checkbox custom-control-inline">
-                                                            <input type="checkbox" id="checkbox_2" name="checkbox" className="custom-control-input" defaultValue={2} defaultChecked />
-                                                            <label className="custom-control-label" htmlFor="checkbox_2">
-                                                                Open in new tab
-                                                            </label>
-                                                        </div>
-                                                        <div className="custom-control custom-checkbox custom-control-inline">
-                                                            <input type="checkbox" id="checkbox_3" name="checkbox" className="custom-control-input" defaultValue={3} defaultChecked />
-                                                            <label className="custom-control-label" htmlFor="checkbox_3">
-                                                                Nofollow
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </FormFieldSet>
-                                                <FormGroup label="Style">
-                                                    <div className="btn-group btn-group-toggle btn-filter-radios align-self-start">
-                                                        <Button label="Primary" type="default"></Button>
-                                                        <Button label="Default" type="default" isActive={true}></Button>
-                                                        <Button label="Inverse" type="default"></Button>
-                                                    </div>
-                                                </FormGroup>
-                                                <FormFieldSet>
-                                                    <div className="custom-control custom-switch">
-                                                        <input type="checkbox" role="switch" id="switch_1" name="switch" className="custom-control-input" defaultValue={1} defaultChecked />
-                                                        <label className="custom-control-label" htmlFor="switch_1">
-                                                            Show button
-                                                        </label>
-                                                    </div>
-                                                </FormFieldSet>
                                             </div>
+                                        </FormFieldSet>
+                                        <FormGroup label="Style">
+                                            <div className="btn-group btn-group-toggle btn-filter-radios align-self-start">
+                                                <Button label="Primary" type="default" isActive={true}></Button>
+                                                <Button label="Default" type="default"></Button>
+                                                <Button label="Inverse" type="default"></Button>
+                                            </div>
+                                        </FormGroup>
+                                        <FormFieldSet>
+                                            <div className="custom-control custom-switch">
+                                                <input type="checkbox" role="switch" id="switch_0" name="switch" className="custom-control-input" defaultValue={0} defaultChecked />
+                                                <label className="custom-control-label" htmlFor="switch_0">
+                                                    Show button
+                                                </label>
+                                            </div>
+                                        </FormFieldSet>
+                                    </CardCollapse>
+                                    <CardCollapse id="2" parentId="accordionButtons" title=" Learn more" metas={[{label: "Primary button"},{label: "domain.tld"},{label: "Open in new tab"},{label: "Nofollow"}]}>
+                                        <div className="form-row">
+                                            <FormGroup label="Label" addClass="col-6">
+                                                <FormInput placeholder="e.g. Learn more" defaultValue="Learn more" />
+                                            </FormGroup>
+                                            <FormGroup label="URL" addClass="col-6">
+                                                <FormInput placeholder="e.g. https://inject.theschoolab.com" defaultValue="https://domain.tld" />
+                                            </FormGroup>
                                         </div>
-                                    </div>
+                                        <FormFieldSet legend="Behaviors">
+                                            <div className="form-options" id="checkbox" aria-describedby="exemple_help">
+                                                <div className="custom-control custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" id="checkbox_2" name="checkbox" className="custom-control-input" defaultValue={2} defaultChecked />
+                                                    <label className="custom-control-label" htmlFor="checkbox_2">
+                                                        Open in new tab
+                                                    </label>
+                                                </div>
+                                                <div className="custom-control custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" id="checkbox_3" name="checkbox" className="custom-control-input" defaultValue={3} defaultChecked />
+                                                    <label className="custom-control-label" htmlFor="checkbox_3">
+                                                        Nofollow
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </FormFieldSet>
+                                        <FormGroup label="Style">
+                                            <div className="btn-group btn-group-toggle btn-filter-radios align-self-start">
+                                                <Button label="Primary" type="default"></Button>
+                                                <Button label="Default" type="default" isActive={true}></Button>
+                                                <Button label="Inverse" type="default"></Button>
+                                            </div>
+                                        </FormGroup>
+                                        <FormFieldSet>
+                                            <div className="custom-control custom-switch">
+                                                <input type="checkbox" role="switch" id="switch_1" name="switch" className="custom-control-input" defaultValue={1} defaultChecked />
+                                                <label className="custom-control-label" htmlFor="switch_1">
+                                                    Show button
+                                                </label>
+                                            </div>
+                                        </FormFieldSet>
+                                    </CardCollapse>
                                 </div>
                             </FormGroup>
                         </div>

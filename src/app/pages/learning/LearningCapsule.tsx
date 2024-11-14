@@ -5,6 +5,7 @@ import { Layout } from "../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { AsideCapsules } from "@/app/components/asides/AsideCapsules";
 import { aside } from "../../../../public/utils/aside";
+import { CardCollapse } from "@/app/components/cards/CardCollapse";
 
 export const LearningCapsule = () => {
     useEffect(() => {
@@ -132,33 +133,9 @@ export const LearningCapsule = () => {
                                             <em>Vous pouvez retrouver les canvas vierges de la matrice concurrenrielle et du mapping de la concurrence dans l'onglet "ressources".</em>
                                         </p>
                                     </div>
-                                    <div className="card formContainer mb-5 mx-0" data-form={543}>
-                                        <div className="card-header" data-toggle="collapse" data-target="#form-543" aria-expanded="false">
-                                            <div className="d-flex align-items-center">
-                                                <div className="mr-3">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any] : 100 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </div>
-                                                <span>
-                                                    <strong>Livrables</strong>
-                                                    <span className="formRequiredFieldsContainer d-none">
-                                                        <p className="text-muted">
-                                                            <span className="formRequiredFieldsNb">0</span>
-                                                            <span className="formRequiredFieldsText" data-singletext="tâche obligatoire restante" data-multipletext="tâches obligatoires restantes">
-                                                                {" "}
-                                                                tâche obligatoire restante{" "}
-                                                            </span>
-                                                        </p>
-                                                    </span>
-                                                </span>
-                                                <span className="icon icon-chevron-right ml-auto" />
-                                            </div>
-                                        </div>
-                                        <div className="card-body collapse " id="form-543" style={{}}>
-                                            <form name="form_543" method="post" className="autoSaveForm">
+                                    <div className="accordion" id="accordionTasks">
+                                        <CardCollapse id="1" parentId="accordionTasks" title="Livrables" progress={100}>
+                                        <form name="form_543" method="post" className="autoSaveForm">
                                                 <div id="form_543" className="autoSaveForm">
                                                     <div className="form-group">
                                                         <div className="uploadSignedUrlFileContainer formUploadContainer mb-3" data-installed={1}>
@@ -527,7 +504,7 @@ export const LearningCapsule = () => {
                                                 </fieldset>{" "}
                                                 <input type="hidden" id="form_543__token" name="form_543[_token]" defaultValue="d1822fd93d79879ea2416041cdf.2k8pG54ovU9EYutIwfA-yuVSGgz55G-8uihPu9-Ww8s.nmJwXd0f9Ap2J4N6lclTmIYwVU6m1jv940ca5Oz1-6W9GGpC20PxPgcU3w" />
                                             </form>
-                                        </div>
+                                        </CardCollapse>
                                     </div>
                                  
                                     <div className="d-flex flex-column flex-lg-row justify-content-between flex-wrap">
