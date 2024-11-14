@@ -360,11 +360,11 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
                                                     <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Invit
+                                                    Edit
                                                     </button>
                                                     <div className="dropdown-menu dropdown-menu-right">
                                                         <a className="dropdown-item" href="#">
-                                                            Invit
+                                                        Edit
                                                         </a>
                                                         <a className="dropdown-item" href="#">
                                                             Complet
@@ -548,7 +548,7 @@ export const ManageSetup = () => {
                                                     </button>
                                                     <div className="dropdown-menu dropdown-menu-right">
                                                         <a className="dropdown-item" href="#">
-                                                            edit
+                                                        Edit
                                                         </a>
                                                         <a className="dropdown-item" href="#">
                                                             Complet
@@ -575,11 +575,11 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
                                                     <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Add
+                                                    Edit
                                                     </button>
                                                     <div className="dropdown-menu dropdown-menu-right">
                                                         <a className="dropdown-item" href="#">
-                                                            Add
+                                                        Edit
                                                         </a>
                                                         <a className="dropdown-item" href="#">
                                                             Complet
@@ -633,11 +633,11 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
                                                     <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Invit
+                                                    Edit
                                                     </button>
                                                     <div className="dropdown-menu dropdown-menu-right">
                                                         <a className="dropdown-item" href="#">
-                                                            Invit
+                                                        Edit
                                                         </a>
                                                         <a className="dropdown-item" href="#">
                                                             Complet
