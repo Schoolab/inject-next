@@ -52,9 +52,9 @@ export const ManageSetup = () => {
                                                     </div>
                                                 </div>
 
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as uncompleted" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -72,9 +72,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Invite your program managers to access and help run the program.</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as uncompleted" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -120,9 +120,9 @@ export const ManageSetup = () => {
                                                     </div>
                                                 </div>
 
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as uncompleted" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -141,9 +141,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Create forms to collect participant or project details</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -161,9 +161,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Set up a public-facing page to showcase your program</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as uncompleted" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -181,9 +181,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Create custom forms tailored for different participant types</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -228,9 +228,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Set dates and permissions for evaluations or jury sessions</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -248,9 +248,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Define scoring criteria and weighting for jury evaluations</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -268,9 +268,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Invite juries to assess submissions and participate in scoring</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -289,9 +289,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Set up notifications and reminders for jury members</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -309,9 +309,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Send emails to notify participants of acceptance or rejection</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -329,9 +329,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Confirm which projects advance based on scores or manual selection</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -376,9 +376,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Design a learning course with modules for participants</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -397,9 +397,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Set clear goals or milestones for participant projects</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -417,9 +417,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Upload documents and tools for participant reference</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -464,9 +464,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Invite your program experts</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -484,9 +484,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Link experts to specific projects for support and advice</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -504,9 +504,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Control whether experts are visible to all participants</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -551,9 +551,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Post updates and tips to keep participants informed and engaged with the program</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -571,9 +571,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Schedule automated emails to share news and reminders</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -591,9 +591,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Collect feedback from participants through custom surveys</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -611,9 +611,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Plan and manage program events like workshops or webinars</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -658,9 +658,9 @@ export const ManageSetup = () => {
                                                         <span className="small text-muted">Track participant engagement and program progress</span>
                                                     </div>
                                                 </div>
-                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
+                                                        <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
