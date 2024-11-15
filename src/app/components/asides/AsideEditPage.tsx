@@ -39,21 +39,21 @@ export const AsideEditPage = ({}: AsideEditPageProps) => {
                             <ItemsGroup>
                                 <ItemsGroupHeader label="Sections" number="15" />
                                 <div className="d-flex flex-column gap-2xs">
-                                    <ItemSection label="CPI Concept" caption="Hero (image right)"/>
-                                    <ItemSection label="Our mission" caption="Content (2 columns, image left)" />
-                                    <ItemSection label="Our programs to support your transformation" caption="Numbers (2 columns)" />
-                                    <ItemSection label="Tell a story with a timeline" caption="Timeline (3 columns)" />
-                                    <ItemSection label="Our vision" caption="Content (2 columns, image bleeding right)" />
-                                    <ItemSection label="Aligning action with values" caption="Content (2 columns, image bottom)" />
-                                    <ItemSection label="The digital team" caption="Content (2 columns, image right)" />
-                                    <ItemSection label="Our programs to support your transformation" caption="Cards (3 columns)" />
-                                    <ItemSection label="Our passionate team" caption="Team (5 columns)" />
-                                    <ItemSection label="Office life" caption="Gallery" />
-                                    <ItemSection label="Pierre Lemeteil" caption="Testimonial" />
-                                    <ItemSection label="How to apply?" caption="Featured video" />
-                                    <ItemSection label="Last season photos" caption="Gallery with lightbox" />
-                                    <ItemSection label="Learnings from the program" caption="Columns (3 columns)" />
-                                    <ItemSection label="Explain the value you provide with a last call to action" caption="Call to action (1 column)" />
+                                    <ItemSection image="img/covers/section_hero-right.png" label="CPI Concept" caption="Hero (image right)"/>
+                                    <ItemSection image="img/covers/section_content-left.png" label="Our mission" caption="Content (image left)" />
+                                    <ItemSection image="img/covers/section_number-big.png" label="Our programs to support your transformation" caption="Big number" />
+                                    <ItemSection image="img/covers/section_timeline.png" label="Tell a story with a timeline" caption="Timeline (3 columns)" />
+                                    <ItemSection image="img/covers/section_content-right.png" label="Our vision" caption="Content (image right)" />
+                                    <ItemSection image="img/covers/section_content-bottom.png" label="Aligning action with values" caption="Content split (image bottom)" />
+                                    <ItemSection image="img/covers/section_video.png" label="The digital team" caption="Video" />
+                                    <ItemSection image="img/covers/section_cards.png" label="Our programs to support your transformation" caption="Cards (3 columns)" />
+                                    <ItemSection image="img/covers/section_team.png" label="Our passionate team" caption="Team (5 columns)" />
+                                    <ItemSection image="img/covers/section_gallery.png" label="Office life" caption="Gallery" />
+                                    <ItemSection image="img/covers/section_testimonial.png" label="Pierre Lemeteil" caption="Testimonial" />
+                                    <ItemSection image="img/covers/section_video-featured.png" label="How to apply?" caption="Featured video" />
+                                    <ItemSection image="img/covers/section_custom-code.png" label="Last season photos" caption="Gallery with lightbox" />
+                                    <ItemSection image="img/covers/section_columns.png" label="Learnings from the program" caption="Columns (3 columns)" />
+                                    <ItemSection image="img/covers/section_cta.png" label="Explain the value you provide with a last call to action" caption="Call to action (1 column)" />
                                 </div>
                                 <Button label="Add section" iconStartName="plus-circle" size="sm" type="muted" addClass="align-self-start" />
                             </ItemsGroup>
