@@ -13,7 +13,7 @@ export const Stepper = ({}: StepperProps) => {
                             <div className="item-icon is-darker icon icon-information " />
                             <div className="item-content ml-3">
                                 <h4 className="mb-none ">Complete the basic info</h4>
-                                <span className="small text-body">
+                                <span className="small text-body line-clamp-2">
                                     Review key details: program name, description, dates, visibility.{" "}
                                     <a className="text-body font-weight-bold" href="#">
                                         Support center.
