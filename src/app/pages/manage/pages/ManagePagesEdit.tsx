@@ -71,7 +71,7 @@ export const ManagePagesEdit = () => {
                     </div>
                 </div>
               
-                <div className="aside-buttons d-block d-lg-none mr-3 mt-5 no-subnav right-5">
+                <div className="aside-buttons d-block d-lg-none mt-5 no-subnav right-5">
                     <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Edit">
                         <span className="icon icon-pencil" />
                     </button>
