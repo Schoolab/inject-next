@@ -54,7 +54,7 @@ export const ManageSetup = () => {
 
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -74,7 +74,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -122,7 +122,7 @@ export const ManageSetup = () => {
 
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -143,7 +143,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -163,7 +163,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -183,7 +183,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -230,7 +230,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -250,7 +250,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -270,7 +270,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -291,7 +291,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -311,7 +311,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -331,7 +331,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -378,7 +378,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -399,7 +399,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -419,7 +419,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -466,7 +466,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -486,7 +486,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -506,7 +506,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -553,7 +553,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -573,7 +573,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -593,7 +593,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -613,7 +613,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
@@ -660,7 +660,7 @@ export const ManageSetup = () => {
                                                 </div>
                                                 <button className="z-2 btn btn-lg btn-transparent">
                                                     <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-bg" style={{stroke:"#6F6F6F"}}/>
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
