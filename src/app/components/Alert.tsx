@@ -18,7 +18,7 @@ export interface AlertProps {
     /**
      * Contextual type 
      */
-    type: "primary" | "success" | "danger" | "warning" | "info";
+    type: "primary" | "secondary" | "info" | "success" | "warning" | "danger";
     icon?: string;
 }
 
@@ -26,23 +26,19 @@ export interface AlertProps {
  * Alert message is a contextual feedback message for typical user actions.
  */
 export const Alert = ({ icon, text, title, buttonLabel, type }: AlertProps) => {
-    let classTab = ["alert d-flex align-items-left align-items-lg-center flex-column flex-lg-row gap-xs"];
+    let classTab = ["alert"];
     type && classTab.push(`alert-${type}`);
 
     return (
         <div className={classTab.join(" ")}>
-            {icon && (
-                <div className="flex-lg-shrink-1 d-flex align-items-start align-self-stretch">
-                    <Icon name={icon} size="2sm" />
-                </div>
-            )}
-            <div className="flex-fill mb-5 mb-lg-0 mr-0 mr-lg-5">
+            {icon && <Icon name={icon} size="2sm" />}
+            <div className="flex-fill">
                 {title && <p className="m-none font-weight-bold">{title}</p>}
                 {text && <p>{text}</p>}
             </div>
             {buttonLabel && (
                 <div className="flex-lg-shrink-1">
-                    <Button label={buttonLabel} type="default" extended={true} />
+                    <Button type="default" label={buttonLabel} size="sm" extended={true} />
                 </div>
             )}
         </div>

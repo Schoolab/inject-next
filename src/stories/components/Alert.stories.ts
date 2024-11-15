@@ -14,7 +14,7 @@ const meta = {
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
-
+  
 } satisfies Meta<typeof Alert>;
 
 export default meta;
@@ -24,46 +24,58 @@ type Story = StoryObj<typeof meta>;
 
 
 export const Primary: Story = {
-    args: {
-      title: "Title",
-      text: "This is a primary alert—check it out!",
-      buttonLabel:"Action",
-      type: "primary",
-    },
-  };
+  args: {
+    title: "Title",
+    text: "This is a primary alert—check it out!",
+    buttonLabel:"Learn more",
+    type: "primary",
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    title: "Title",
+    text: "This is a primary alert—check it out!",
+    buttonLabel:"Learn more",
+    type: "secondary",
+  },
+};
+
+export const Info: Story = {
+  args: {
+    icon: "information",
+    title: "Title",
+    text: "This is a info alert—check it out!",
+    buttonLabel:"Learn more",
+    type: "info",
+  },
+};
 
 export const Success: Story = {
   args: {
+    icon: "check-circle",
     title: "Title",
     text: "This is a success alert—check it out!",
-    buttonLabel:"Action",
     type: "success",
   },
 };
 
+export const Warning: Story = {
+  args: {
+    icon: "alert",
+    title: "Title",
+    text: "This is a warning alert—check it out!",
+    buttonLabel:"Review",
+    type: "warning",
+  },
+};
+
 export const Danger: Story = {
-    args: {
-      title: "Title",
-      text: "This is a danger alert—check it out!",
-      buttonLabel: "Action",
-      type: "danger",
-    },
-  };
-
-  export const Warning: Story = {
-    args: {
-      title: "Title",
-      text: "This is a warning alert—check it out!",
-      buttonLabel:"CTA",
-      type: "warning",
-    },
-  };
-
-  export const Info: Story = {
-    args: {
-      title: "Title",
-      text: "This is a info alert—check it out!",
-      buttonLabel:"CTA",
-      type: "info",
-    },
-  };
+  args: {
+    icon: "alert-circle",
+    title: "Title",
+    text: "This is a danger alert—check it out!",
+    buttonLabel: "Delete permanently",
+    type: "danger",
+  },
+};

@@ -53,7 +53,7 @@ export const AsideEditPage = ({}: AsideEditPageProps) => {
                                     <ItemSection image="img/covers/section_video-featured.png" label="How to apply?" caption="Featured video" />
                                     <ItemSection image="img/covers/section_custom-code.png" label="Last season photos" caption="Gallery with lightbox" />
                                     <ItemSection image="img/covers/section_columns.png" label="Learnings from the program" caption="Columns (3 columns)" />
-                                    <ItemSection image="img/covers/section_cta.png" label="Explain the value you provide with a last call to action" caption="Call to action (1 column)" />
+                                    <ItemSection image="img/covers/section_cta.png" label="Explain the value you provide with a last call to action" caption="Call to action" />
                                 </div>
                                 <Button label="Add section" iconStartName="plus-circle" size="sm" type="muted" addClass="align-self-start" />
                             </ItemsGroup>

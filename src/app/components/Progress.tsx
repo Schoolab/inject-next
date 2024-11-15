@@ -14,9 +14,6 @@ export interface ProgressProps {
   addClass?: string;
 }
 
-/**
- * Icons are easily recognizable visual elements that convey meaning and cues to the user in a compact and efficient way.
- */
 export const Progress = ({ percentage = 0, text = "0/8", subtext = "completed", size="sm", addClass, ...props }: ProgressProps) => {
   let classTab = ["progress-circle-container flex-shrink-0"];
   size && classTab.push(`is-${size}`);
