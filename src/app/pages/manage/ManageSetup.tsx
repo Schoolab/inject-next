@@ -40,72 +40,45 @@ export const ManageSetup = () => {
                                         </div>
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item is-completed is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item is-completed is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-information" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Complete the basic info</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Complete the basic info
+                                                        </a>
                                                         <span className="small text-muted">Review key details: program name, description, dates, visibility</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <span className="small text-muted mr-3 d-none">0/3</span>
-                                                    <svg className="progress-circle-container is-small flex-shrink-0 mr-3" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
+
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
                                                         <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
-                                                    <button className="btn btn-lg btn-default dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        View
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            View
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Uncomplet
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div className="item is-completed is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item is-completed is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-account-plus" />
-                                                    <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Invite program managers</h4>
+                                                    <div className="item-content ml-3 strech-link">
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Invite program managers
+                                                        </a>
                                                         <span className="small text-muted">Invite your program managers to access and help run the program.</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <span className="small text-muted mr-3 d-none">0-3</span>
-                                                    <svg className="progress-circle-container is-small flex-shrink-0 mr-3" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
                                                         <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
-                                                    <button className="btn btn-lg btn-default dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        View
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            View
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Uncomplet
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -135,129 +108,86 @@ export const ManageSetup = () => {
                                         </div>
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item is-completed is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item is-completed is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-calendar" />
-                                                    <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Registrations dates and rights</h4>
+                                                    <div className="strecth-link item-content ml-3">
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Registrations dates and rights
+                                                        </a>
                                                         <span className="small text-muted">Set registration period and who can view the program</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <span className="small text-muted mr-3 d-none">0/3</span>
-                                                    <svg className="progress-circle-container is-small flex-shrink-0 mr-3" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
+
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
                                                         <circle className="progress-circle progress-circle-bg" />
                                                         <circle className="progress-circle progress-circle-percent" />
                                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
                                                     </svg>
-                                                    <button className="btn btn-lg btn-default dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        View
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            View
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Uncomplet
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                </button>
                                             </div>
                                         </div>
 
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item is-bordered resource mb-3">
+                                            <div className="item-row ">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-format-list-checks" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Setup Application Forms</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Setup Application Forms
+                                                        </a>
                                                         <span className="small text-muted">Create forms to collect participant or project details</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div className="item is-completed is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item is-completed  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-information" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Create a landing page (Optional)</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Create a landing page (Optional)
+                                                        </a>
                                                         <span className="small text-muted">Set up a public-facing page to showcase your program</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-default dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        View
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            View
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Unskip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-label" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Setup Participant Type (Optional / Advanced)</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Setup Participant Type (Optional / Advanced)
+                                                        </a>
                                                         <span className="small text-muted">Create custom forms tailored for different participant types</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -287,191 +217,125 @@ export const ManageSetup = () => {
                                         </div>
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-gavel" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Evaluation dates and rights</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Evaluation dates and rights
+                                                        </a>
                                                         <span className="small text-muted">Set dates and permissions for evaluations or jury sessions</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-format-list-checks" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Notation & Scorecard</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Notation & Scorecard
+                                                        </a>
                                                         <span className="small text-muted">Define scoring criteria and weighting for jury evaluations</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-account-plus" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Invite Jury Members</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Invite Jury Members
+                                                        </a>
                                                         <span className="small text-muted">Invite juries to assess submissions and participate in scoring</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                        Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
 
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-text" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Communication with Jury</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Communication with Jury
+                                                        </a>
                                                         <span className="small text-muted">Set up notifications and reminders for jury members</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-email" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Results Management</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Results Management
+                                                        </a>
                                                         <span className="small text-muted">Send emails to notify participants of acceptance or rejection</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-clipboard-text" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Project Validation</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Project Validation
+                                                        </a>
                                                         <span className="small text-muted">Confirm which projects advance based on scores or manual selection</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -501,98 +365,65 @@ export const ManageSetup = () => {
                                         </div>
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-library" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Learning course</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Learning course
+                                                        </a>
                                                         <span className="small text-muted">Design a learning course with modules for participants</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
 
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-bullseye-arrow" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Objectives</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Objectives
+                                                        </a>
                                                         <span className="small text-muted">Set clear goals or milestones for participant projects</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                        Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-book-open-blank-variant" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Add Ressources</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Add Ressources
+                                                        </a>
                                                         <span className="small text-muted">Upload documents and tools for participant reference</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                        Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -622,97 +453,64 @@ export const ManageSetup = () => {
                                         </div>
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-account-plus" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Invite Expert</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Invite Expert
+                                                        </a>
                                                         <span className="small text-muted">Invite your program experts</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                        Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-clipboard-text" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Assign Expert to Project</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Assign Expert to Project
+                                                        </a>
                                                         <span className="small text-muted">Link experts to specific projects for support and advice</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-eye" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Set Experts Visibility</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Set Experts Visibility
+                                                        </a>
                                                         <span className="small text-muted">Control whether experts are visible to all participants</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -742,128 +540,84 @@ export const ManageSetup = () => {
                                         </div>
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-newspaper-variant-outline" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Newsfeed</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Newsfeed
+                                                        </a>
                                                         <span className="small text-muted">Post updates and tips to keep participants informed and engaged with the program</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-email" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Mail</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Mail
+                                                        </a>
                                                         <span className="small text-muted">Schedule automated emails to share news and reminders</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-format-list-checks" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Survey</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Survey
+                                                        </a>
                                                         <span className="small text-muted">Collect feedback from participants through custom surveys</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-calendar" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Events</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Events
+                                                        </a>
                                                         <span className="small text-muted">Plan and manage program events like workshops or webinars</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -893,35 +647,24 @@ export const ManageSetup = () => {
                                         </div>
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item is-static is-bordered resource mb-3">
-                                            <div className="item-row flex-column flex-md-row">
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-chart-donut" />
                                                     <div className="item-content ml-3">
-                                                        <h4 className="mb-none">Insights & Analytics</h4>
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Insights & Analytics
+                                                        </a>
                                                         <span className="small text-muted">Track participant engagement and program progress</span>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex align-items-center dropdown align-self-end align-self-lg-start mt-3 mt-md-0">
-                                                    <button className="btn btn-lg btn-primary dropdown-toggle" data-boundary="window" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Edit
-                                                    </button>
-                                                    <div className="dropdown-menu dropdown-menu-right">
-                                                        <a className="dropdown-item" href="#">
-                                                            Edit
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Complet
-                                                        </a>
-                                                        <a className="dropdown-item" href="#">
-                                                            Skip
-                                                        </a>
-                                                        <div role="separator" className="dropdown-divider" />
-                                                        <a className="dropdown-item" href="#">
-                                                            Tutoriel
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <button className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
