@@ -5,7 +5,7 @@ import { AppContent } from "@/app/layouts/AppContent";
 export const ManageForms = () => {
     return (
         <Layout  sideBar="Manage">
-            <AppContent sections="separated" showSubnav={false}>
+            <AppContent showStepper={true}  sections="separated" showSubnav={false}>
                 <div className="row">
                     <div className="col-12">
                         <div className="application-section">

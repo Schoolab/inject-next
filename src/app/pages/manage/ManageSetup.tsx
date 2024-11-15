@@ -41,7 +41,7 @@ export const ManageSetup = () => {
                                     </div>
                                     <div className="col-12 col-lg-8">
                                         <div className="item is-completed is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-information" />
                                                     <div className="item-content ml-3">
@@ -62,7 +62,7 @@ export const ManageSetup = () => {
                                             </div>
                                         </div>
                                         <div className="item is-completed is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-account-plus" />
                                                     <div className="item-content ml-3 strech-link">
@@ -109,7 +109,7 @@ export const ManageSetup = () => {
                                     </div>
                                     <div className="col-12 col-lg-8">
                                         <div className="item is-completed is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-calendar" />
                                                     <div className="strecth-link item-content ml-3">
@@ -151,7 +151,7 @@ export const ManageSetup = () => {
                                             </div>
                                         </div>
                                         <div className="item is-completed  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-information" />
                                                     <div className="item-content ml-3">
@@ -171,7 +171,7 @@ export const ManageSetup = () => {
                                             </div>
                                         </div>
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-label" />
                                                     <div className="item-content ml-3">
@@ -218,7 +218,7 @@ export const ManageSetup = () => {
                                     </div>
                                     <div className="col-12 col-lg-8">
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-gavel" />
                                                     <div className="item-content ml-3">
@@ -238,7 +238,7 @@ export const ManageSetup = () => {
                                             </div>
                                         </div>
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-format-list-checks" />
                                                     <div className="item-content ml-3">
@@ -258,7 +258,7 @@ export const ManageSetup = () => {
                                             </div>
                                         </div>
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-account-plus" />
                                                     <div className="item-content ml-3">
@@ -279,7 +279,7 @@ export const ManageSetup = () => {
                                         </div>
 
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-text" />
                                                     <div className="item-content ml-3">
@@ -299,7 +299,7 @@ export const ManageSetup = () => {
                                             </div>
                                         </div>
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-email" />
                                                     <div className="item-content ml-3">
@@ -319,7 +319,7 @@ export const ManageSetup = () => {
                                             </div>
                                         </div>
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-clipboard-text" />
                                                     <div className="item-content ml-3">
@@ -366,7 +366,7 @@ export const ManageSetup = () => {
                                     </div>
                                     <div className="col-12 col-lg-8">
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-library" />
                                                     <div className="item-content ml-3">
@@ -387,7 +387,7 @@ export const ManageSetup = () => {
                                         </div>
 
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-bullseye-arrow" />
                                                     <div className="item-content ml-3">
@@ -407,7 +407,7 @@ export const ManageSetup = () => {
                                             </div>
                                         </div>
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-book-open-blank-variant" />
                                                     <div className="item-content ml-3">
@@ -454,7 +454,7 @@ export const ManageSetup = () => {
                                     </div>
                                     <div className="col-12 col-lg-8">
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-account-plus" />
                                                     <div className="item-content ml-3">
@@ -474,7 +474,7 @@ export const ManageSetup = () => {
                                             </div>
                                         </div>
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-clipboard-text" />
                                                     <div className="item-content ml-3">
@@ -494,7 +494,7 @@ export const ManageSetup = () => {
                                             </div>
                                         </div>
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-eye" />
                                                     <div className="item-content ml-3">
@@ -541,7 +541,7 @@ export const ManageSetup = () => {
                                     </div>
                                     <div className="col-12 col-lg-8">
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-newspaper-variant-outline" />
                                                     <div className="item-content ml-3">
@@ -561,7 +561,7 @@ export const ManageSetup = () => {
                                             </div>
                                         </div>
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-email" />
                                                     <div className="item-content ml-3">
@@ -581,7 +581,7 @@ export const ManageSetup = () => {
                                             </div>
                                         </div>
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-format-list-checks" />
                                                     <div className="item-content ml-3">
@@ -601,7 +601,7 @@ export const ManageSetup = () => {
                                             </div>
                                         </div>
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-calendar" />
                                                     <div className="item-content ml-3">
@@ -648,7 +648,7 @@ export const ManageSetup = () => {
                                     </div>
                                     <div className="col-12 col-lg-8">
                                         <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row">
+                                            <div className="item-row align-items-center">
                                                 <div className="mr-5 d-flex flex-fill">
                                                     <div className="item-icon is-darker icon icon-chart-donut" />
                                                     <div className="item-content ml-3">
