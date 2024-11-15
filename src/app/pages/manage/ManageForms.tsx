@@ -50,7 +50,7 @@ export const ManageForms = () => {
                                     </div>
                                 </div>
                                 <div className="alert alert-info d-flex align-items-left">
-                                    <div className="flex-lg-shrink-1 mr-3 d-flex align-items-center">
+                                    <div className="flex-lg-shrink-1 d-flex align-items-center">
                                         <span className="icon is-sm icon-information"></span>
                                     </div>
                                     <div className="flex-fill ">
@@ -155,7 +155,7 @@ export const ManageForms = () => {
                                     </div>
                                 </fieldset>
                                 <div className="alert alert-warning d-flex align-items-left">
-                                    <div className="flex-lg-shrink-1 mr-3 d-flex align-items-center">
+                                    <div className="flex-lg-shrink-1 d-flex align-items-center">
                                         <span className="icon is-sm icon-alert"></span>
                                     </div>
                                     <div className="flex-fill ">
@@ -210,7 +210,7 @@ export const ManageForms = () => {
                                     </small>
                                 </div>
                                 <div className="alert alert-info d-flex align-items-left">
-                                    <div className="flex-lg-shrink-1 mr-3 d-flex align-items-center">
+                                    <div className="flex-lg-shrink-1 d-flex align-items-center">
                                         <span className="icon is-sm icon-information"></span>
                                     </div>
                                     <div className="flex-fill ">
@@ -283,7 +283,7 @@ export const ManageForms = () => {
                                     />
                                 </div>
                                 <div className="alert alert-info d-flex align-items-left">
-                                    <div className="flex-lg-shrink-1 mr-3 d-flex align-items-center">
+                                    <div className="flex-lg-shrink-1 d-flex align-items-center">
                                         <span className="icon is-sm icon-information"></span>
                                     </div>
                                     <div className="flex-fill ">
