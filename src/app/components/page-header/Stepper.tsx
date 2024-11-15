@@ -12,10 +12,10 @@ export const Stepper = ({}: StepperProps) => {
                         <div className="mr-5 d-flex flex-fill">
                             <div className="item-icon is-darker icon icon-information " />
                             <div className="item-content ml-3">
-                                <h4 className="mb-none alert-warning">Complete the basic info</h4>
-                                <span className="small alert-warning">
+                                <h4 className="mb-none ">Complete the basic info</h4>
+                                <span className="small text-body">
                                     Review key details: program name, description, dates, visibility.{" "}
-                                    <a className="alert-link" href="#">
+                                    <a className="text-body font-weight-bold" href="#">
                                         Support center.
                                     </a>
                                 </span>
