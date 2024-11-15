@@ -25,45 +25,58 @@ export const ManagePagesEdit = () => {
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
             </style>
+            <div className="d-flex align-items-start">
+                <div className="container-fluid">
+                    <AddableBlock />
 
-                <AddableBlock />
+                    <EditableBlock>
+                        <SectionHero addClass="is-md" style={{ backgroundColor: "var(--bg-brand-hero)", color: "var(--fg-brand-hero)"}} />
+                    </EditableBlock>
 
-                <EditableBlock>
-                    <SectionHero addClass="is-md" style={{ backgroundColor: "var(--bg-brand-hero)", color: "var(--fg-brand-hero)"}} />
-                </EditableBlock>
+                    <AddableBlock />
+                    
+                    <EditableBlock>
+                        <SectionContent />
+                    </EditableBlock>
 
-                <AddableBlock />
-                
-                <EditableBlock>
-                    <SectionContent />
-                </EditableBlock>
+                    <AddableBlock />
 
-                <AddableBlock />
+                    <EditableBlock>
+                        <SectionNumber style={{ backgroundColor: "#F5F5F5" }} />
+                    </EditableBlock>
 
-                <EditableBlock>
-                    <SectionNumber style={{ backgroundColor: "#F5F5F5" }} />
-                </EditableBlock>
+                    <AddableBlock />
 
-                <AddableBlock />
+                    <EditableBlock>
+                        <SectionTimeline />
+                    </EditableBlock>
 
-                <EditableBlock>
-                    <SectionTimeline />
-                </EditableBlock>
+                    <AddableBlock />
 
-                <AddableBlock />
+                    <EditableBlock>
+                        <SectionContent title="Our vision" imageSide="right" imageUrl="https://www.theschoolab.com/wp-content/uploads/2024/09/465ECB00-FA3D-4965-8B62-A9EA66F90A1D_1_105_c.jpeg" />
+                    </EditableBlock>
 
-                <EditableBlock>
-                    <SectionContent title="Our vision" imageSide="right" imageUrl="https://www.theschoolab.com/wp-content/uploads/2024/09/465ECB00-FA3D-4965-8B62-A9EA66F90A1D_1_105_c.jpeg" />
-                </EditableBlock>
+                    <AddableBlock />
 
-                <AddableBlock />
+                    <EditableBlock>
+                        <SectionTwoColContent title="What we do" style={{ backgroundColor: "var(--bg-brand-tertiary)", color: "var(--fg-brand-tertiary)" }} />
+                    </EditableBlock>
 
-                <EditableBlock>
-                    <SectionTwoColContent title="What we do" style={{ backgroundColor: "var(--bg-brand-tertiary)", color: "var(--fg-brand-tertiary)" }} />
-                </EditableBlock>
-
-                <AddableBlock />
-
+                    <AddableBlock />    
+                    <div className="aside-buttons-bottom d-flex flex-column flex-lg-row d-block d-lg-none">
+                        <button className="btn btn-lg btn-default mb-3 active">
+                            <span className="icon icon-pencil mr-2" /> Edit
+                        </button>
+                    </div>
+                </div>
+              
+                <div className="aside-buttons d-block d-lg-none mt-5 top-5 right-5">
+                    <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Edit">
+                        <span className="icon icon-pencil" />
+                    </button>
+                </div>
+            </div>
             </AppContent>
             <AsideEditPage />
         </Layout>

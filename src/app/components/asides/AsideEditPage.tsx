@@ -31,6 +31,11 @@ export const AsideEditPage = ({}: AsideEditPageProps) => {
                             <span>Advanced</span>
                         </a>
                     </nav>
+                    <div className="aside-actions d-lg-none">
+                        <button className="btn btn-transparent border-0 p-2xs text-muted close-aside" type="button" data-dismiss="aside" aria-label="Fermer">
+                            <span className="icon icon-close is-24px" aria-hidden="true" />
+                        </button>
+                    </div>
                 </div>
                 <div className="tab-content aside-body" id="projectTabsContent">
                     <div id="content" role="tabpanel" aria-labelledby="content-tab" className="tab-pane h-100 fade active show">
