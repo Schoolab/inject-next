@@ -1,5 +1,6 @@
 import React from "react";
 import { Avatar } from "../avatars/Avatar";
+
 export interface ItemSectionProps {
     /**
     * Item label

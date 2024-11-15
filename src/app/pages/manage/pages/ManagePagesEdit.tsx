@@ -13,6 +13,7 @@ import { EditableBlock } from "@/app/components/EditableBlock";
 import { AddableBlock } from "@/app/components/AddableBlock";
 import { SectionTwoColContent } from "./sections/SectionTwoColContent";
 import { SectionHero } from "./sections/SectionHero";
+import { Button } from "@/app/components/Button";
 
 export const ManagePagesEdit = () => {
     useEffect(() => {
@@ -64,17 +65,10 @@ export const ManagePagesEdit = () => {
                     </EditableBlock>
 
                     <AddableBlock />    
-                    <div className="aside-buttons-bottom d-flex flex-column flex-lg-row d-block d-lg-none">
-                        <button className="btn btn-lg btn-default mb-3 active">
-                            <span className="icon icon-pencil mr-2" /> Edit
-                        </button>
-                    </div>
                 </div>
               
-                <div className="aside-buttons d-block d-lg-none mt-5 no-subnav right-5">
-                    <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Edit">
-                        <span className="icon icon-pencil" />
-                    </button>
+                <div className="aside-buttons no-subnav d-lg-none">
+                    <Button type="default" label="Edit content" iconStartName="pencil" showActive={false} data-toggle="tooltip" data-original-title="Edit" />
                 </div>
             </div>
             </AppContent>

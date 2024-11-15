@@ -30,12 +30,32 @@ export const AppContent = ({ children,   showSubnav = true,  showStepper= false,
     sections === "transparent" && (appContentClass = "application-content transparent-sections")
     sections === "separated" && (appContentClass = "application-content separated-sections")
 
+    let titleClass = [""];
+    !showSubnav && titleClass.push("border-bottom");
+
     return (
         <main className={appContentClass} >
             {showBreadcrumb && <Breadcrumb />}
-            {showTitle && 
-                (!showSubnav ? <Title addClass="border-bottom" /> : <Title />)
-            }
+            {showTitle && <Title 
+                backLink="#" 
+                nextLink="#" 
+                buttons={[
+                    {
+                        type: "default",
+                        label: "Preview",
+                        iconStartName: "preview",
+                        iconEndName: "new-tab",
+                        size: "sm",
+                    },
+                    {
+                        type: "primary",
+                        label: "Save changes",
+                        size: "sm",
+                    },
+                ]} 
+                addClass={titleClass.join(" ")}
+            />}
+            
             {showSubnav && <SubNav />}
             {showStepper && <Stepper />}
             <div id="appMainContainer" className={appMainContainerClass}>

@@ -275,14 +275,8 @@ export const ProgramDashboardDefault = () => {
                                                     </div>
                                                     <div className="d-flex justify-content-between flex-nowrap">
                                                         <div className="d-flex gap-xs flex-fill">
-                                                            <a href="#" className="btn btn-secondary active">
-                                                                <span className="icon icon-thumb-up" />
-                                                                <span>9</span>
-                                                            </a>
-                                                            <a href="#" className="btn btn-secondary">
-                                                                <span className="icon icon-comment" />
-                                                                <span>4</span>
-                                                            </a>
+                                                            <Button type="secondary" size="sm" label="9" iconStartName="thumb-up" isActive={true} showActive={false} />
+                                                            <Button type="secondary" size="sm" label="4" iconStartName="comment" />
                                                         </div>
                                                         {/* <a href="#" className="btn btn-secondary" data-toggle="tooltip" data-placement="top" data-original-title="Click to copy link" data-boundary="window">
                                                             <span className="icon icon-share" />
@@ -357,14 +351,8 @@ export const ProgramDashboardDefault = () => {
                                                     </div>
                                                     <div className="d-flex justify-content-between flex-nowrap">
                                                         <div className="d-flex gap-xs flex-fill">
-                                                            <a href="#" className="btn btn-secondary active">
-                                                                <span className="icon icon-thumb-up" />
-                                                                <span>9</span>
-                                                            </a>
-                                                            <a href="#" className="btn btn-secondary">
-                                                                <span className="icon icon-comment" />
-                                                                <span>4</span>
-                                                            </a>
+                                                            <Button type="secondary" size="sm" label="9" iconStartName="thumb-up" isActive={true} showActive={false} />
+                                                            <Button type="secondary" size="sm" label="4" iconStartName="comment" />
                                                         </div>
                                                     </div>
                                                 </div>

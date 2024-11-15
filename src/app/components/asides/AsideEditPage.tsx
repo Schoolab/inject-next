@@ -24,23 +24,22 @@ export const AsideEditPage = ({}: AsideEditPageProps) => {
                         <a href="#" className=" nav-link nav-item" id="info-tab" data-toggle="tab" data-target="#info" type="button" role="tab" aria-controls="info" aria-selected="false">
                             <span>Basic info</span>
                         </a>
-                        <a href="#" className=" nav-link nav-item" id="seo-tab" data-toggle="tab" data-target="#seo" type="button" role="tab" aria-controls="data" aria-selected="false">
+                        {/* <a href="#" className=" nav-link nav-item" id="seo-tab" data-toggle="tab" data-target="#seo" type="button" role="tab" aria-controls="data" aria-selected="false">
                             <span>SEO</span>
                         </a>
                         <a href="#" className=" nav-link nav-item" id="advanced-tab" data-toggle="tab" data-target="#advanced" type="button" role="tab" aria-controls="data" aria-selected="false">
                             <span>Advanced</span>
-                        </a>
-                        <div className="aside-actions d-lg-none ml-auto">
-                            <button className="btn btn-transparent border-0 p-2xs text-muted close-aside" type="button" data-dismiss="aside" aria-label="Fermer">
-                                <span className="icon icon-close is-24px" aria-hidden="true" />
-                            </button>
-                        </div>
+                        </a> */}
                     </nav>
-                    
+                    <div className="aside-actions d-lg-none">
+                        <button className="btn btn-transparent border-0 p-2xs text-muted close-aside" type="button" data-dismiss="aside" aria-label="Close">
+                            <span className="icon icon-close is-24px" aria-hidden="true" />
+                        </button>
+                    </div>
                 </div>
-                <div className="tab-content aside-body" id="projectTabsContent">
+                <div className="tab-content overflow-auto h-100" id="TabsContent">
                     <div id="content" role="tabpanel" aria-labelledby="content-tab" className="tab-pane h-100 fade active show">
-                        <div className=" d-flex flex-column gap-md">
+                        <div className="aside-body d-flex flex-column gap-md">
                             <LangSwitch />
                             <ItemsGroup>
                                 <ItemsGroupHeader label="Sections" number="15" />
@@ -66,7 +65,7 @@ export const AsideEditPage = ({}: AsideEditPageProps) => {
                         </div>
                     </div>
                     <div id="info" role="tabpanel" aria-labelledby="info-tab" className="tab-pane h-100 fade">
-                        <div className=" d-flex flex-column gap-md">
+                        <div className="aside-body d-flex flex-column gap-md">
                             <LangSwitch />
                             <div className="form-row">
                                 <FormGroup id="name" label="Name" required={true} addClass="col-10 m-none">
@@ -90,7 +89,7 @@ export const AsideEditPage = ({}: AsideEditPageProps) => {
                         </div>
                     </div>
                     <div id="seo" role="tabpanel" aria-labelledby="seo-tab" className="tab-pane h-100 fade">
-                        <div className=" d-flex flex-column gap-md">
+                        <div className="aside-body d-flex flex-column gap-md">
                             <LangSwitch />
                             <p>This information will only be used in your landing page metadata and won't appear in your management interface.</p>
                             <FormGroup id="title" label="Title tag" hint="Optimal title length is approximatively 55 characters.">
@@ -126,7 +125,7 @@ export const AsideEditPage = ({}: AsideEditPageProps) => {
                         </div>
                     </div>
                     <div id="advanced" role="tabpanel" aria-labelledby="advanced-tab" className="tab-pane h-100 fade">
-                        <div className=" d-flex flex-column gap-md">
+                        <div className="aside-body d-flex flex-column gap-md">
                             <p>The code included here will only apply to this page, and will appear after any landing-wide custom code.</p>
                             <FormGroup label="Inside <head> tag">
                                 <FormTextarea placeholder="Your code here..." />

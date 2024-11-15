@@ -2,6 +2,21 @@ import React from "react";
 import { Button } from "../Button";
 import { Icon } from "../Icon";
 
+type ButtonType = {
+    label?: string; 
+    disabled?: Boolean;
+    isActive?: Boolean;
+    showActive?: Boolean;
+    hasDropdown?: Boolean;
+    iconStartName?: string;
+    iconEndName?: string;
+    addClass?: string;
+    type?: "default" | "primary" | "secondary" | "transparent" | "muted" | "success" | "warning" | "danger" | "brand-primary" | "brand-secondary" | "brand-tertiary" ;
+    size?: "default" | "sm" | "xs";
+    extended?: Boolean;
+    outlined?: Boolean;
+};
+
 export interface TitleProps {
     /**
      * Title
@@ -22,21 +37,32 @@ export interface TitleProps {
    * Custom class
    */
     addClass?: string;
+
+    backLink?: string;
+    paginationLabel?: string;
+    prevLink?: string;
+    nextLink?: string;
+    buttons?: ButtonType[];
 }
 
-export const Title = ({ title = "Page title", iconName, emoji, addClass }: TitleProps) => {
+export const Title = ({ title = "Page title", iconName, emoji, backLink, paginationLabel, prevLink, nextLink, buttons, addClass }: TitleProps) => {
     let classTab = ["application-title"];
     addClass && classTab.push(addClass);
+
+    let listButtons = buttons?.map((button) => <Button label={button.label} disabled={button.disabled} isActive={button.isActive} showActive={button.showActive} hasDropdown={button.hasDropdown} iconStartName={button.iconStartName} iconEndName={button.iconEndName} addClass={button.addClass} type={button.type} size={button.size} extended={button.extended} outlined={button.outlined} />); 
+
     return (
         <div className={classTab.join(" ")}>
             <div className="d-lg-none flex-grow-1">
                 <div className="d-flex justify-content-between mb-3">
-                    <Button type="default" iconStartName="arrow-left" size="sm" data-toggle="tooltip" data-original-title="Back" />
-                    <div className="d-flex align-items-center gap-xs">
-                        <small className="text-muted">1&nbsp;on&nbsp;6</small>
-                        <Button type="default" iconStartName="chevron-left" disabled={true} size="sm" data-toggle="tooltip" data-original-title="Previous" />
-                        <Button type="default" iconStartName="chevron-right" size="sm" data-toggle="tooltip" data-original-title="Next" />
-                    </div>
+                    { backLink && <Button link={backLink} type="default" iconStartName="arrow-left" size="sm" data-toggle="tooltip" data-original-title="Back" /> }
+                    { (prevLink || nextLink) && (
+                        <div className="d-flex align-items-center gap-xs">
+                            { paginationLabel && (<small className="text-muted">{paginationLabel}</small>) }
+                            <Button type="default" iconStartName="chevron-left" disabled={!prevLink} size="sm" data-toggle="tooltip" data-original-title="Previous" />
+                            <Button type="default" iconStartName="chevron-right" disabled={!nextLink} size="sm" data-toggle="tooltip" data-original-title="Next" />
+                        </div>
+                    )}
                 </div>
                 <div className="dropdown">
                     <div className="h2 m-none dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="titleDropdown">
@@ -71,7 +97,7 @@ export const Title = ({ title = "Page title", iconName, emoji, addClass }: Title
                 <div className="d-flex">
                     <div className="flex-grow-1">
                         <div className="d-flex gap-xs">
-                            <Button type="default" iconStartName="arrow-left" size="sm" data-toggle="tooltip" data-original-title="Back" />
+                        { backLink && <Button link={backLink} type="default" iconStartName="arrow-left" size="sm" data-toggle="tooltip" data-original-title="Back" /> }
                             <div className="h3 d-flex gap-xs m-none">
                                 {iconName && <Icon name={iconName} />}
                                 {emoji && <span>{emoji}</span>}
@@ -79,15 +105,16 @@ export const Title = ({ title = "Page title", iconName, emoji, addClass }: Title
                             </div>
                         </div>        
                     </div>
-                    <div className="d-flex align-items-center gap-xs">
-                        <small className="text-muted">1&nbsp;of&nbsp;6</small>
-                        <Button type="default" iconStartName="chevron-left" disabled={true} size="sm" data-toggle="tooltip" data-original-title="Previous" />
-                        <Button type="default" iconStartName="chevron-right" size="sm" data-toggle="tooltip" data-original-title="Next" />
-                    </div>
+                    { (prevLink || nextLink) && (
+                        <div className="d-flex align-items-center gap-xs">
+                            { paginationLabel && (<small className="text-muted">{paginationLabel}</small>) }
+                            <Button type="default" iconStartName="chevron-left" disabled={!prevLink} size="sm" data-toggle="tooltip" data-original-title="Previous" />
+                            <Button type="default" iconStartName="chevron-right" disabled={!nextLink} size="sm" data-toggle="tooltip" data-original-title="Next" />
+                        </div>
+                    )}
                 </div>
             </div>
-            <Button label="Preview" type="default" iconStartName="preview" iconEndName="new-tab" size="sm" />
-            <Button label="Save changes" type="primary" size="sm" />
+            { buttons && listButtons }
         </div>
     );
 };
