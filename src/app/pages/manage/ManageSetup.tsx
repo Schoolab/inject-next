@@ -678,12 +678,7 @@ export const ManageSetup = () => {
                                         Show complet tasks
                                     </label>
                                 </div>
-                                <div className="custom-control custom-switch">
-                                    <input type="checkbox" className="custom-control-input" id="customSwitch2" />
-                                    <label className="custom-control-label" htmlFor="customSwitch2">
-                                        Show skipped tasks
-                                    </label>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
