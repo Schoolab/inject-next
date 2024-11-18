@@ -352,7 +352,7 @@ export const JuryEvaluationProject = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="aside-buttons no-subnav d-block d-lg-none">
+                    <div className="aside-buttons no-subnav d-flex d-lg-none">
                         <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Evaluations">
                             <span className="icon icon-star-outline" />
                         </button>
