@@ -11,7 +11,7 @@ export interface NavBarHubProps {
     /**
      *theme add a Root css variables
      */
-    theme?: "default" | "Schoolab" | "Moho" | "Raiselab";
+    theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
 }
 
 export const NavbarHub = ({ isLogged = true, theme }: NavBarHubProps) => {

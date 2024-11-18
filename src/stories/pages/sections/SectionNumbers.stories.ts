@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { SectionTimeline } from "@/app/pages/sections/SectionTimeline";
+import { SectionNumbers } from "@/app/pages/sections/SectionNumbers";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: "Pages/Sections/Timeline",
-  component: SectionTimeline,
+  title: "Pages/Sections/Numbers",
+  component: SectionNumbers,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: "padded",
@@ -21,7 +21,7 @@ const meta = {
   args:{
 
   },
-} satisfies Meta<typeof SectionTimeline>;
+} satisfies Meta<typeof SectionNumbers>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

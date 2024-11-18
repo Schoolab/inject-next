@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { SectionNumber } from "@/app/pages/manage/pages/sections/SectionNumber";
+import { SectionNumber } from "@/app/pages/sections/SectionNumber";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {

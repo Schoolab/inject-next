@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { SectionContent } from "@/app/pages/sections/SectionContent";
+import { SectionContent2col } from "@/app/pages/sections/SectionContent2col";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-    title: "Pages/Sections/Content",
-    component: SectionContent,
+    title: "Pages/Sections/Content (2 columns)",
+    component: SectionContent2col,
     parameters: {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
         layout: "padded",
@@ -18,10 +18,10 @@ const meta = {
     argTypes: {
         
     },
-    args: {
-        mediaSide: "left",
+    args:{
+        
     },
-} satisfies Meta<typeof SectionContent>;
+} satisfies Meta<typeof SectionContent2col>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -29,31 +29,28 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Default: Story = {
     args: {
-        mediaSide: "left",
     },
 };
 
-export const MediaRight: Story = {
+export const WithMedia: Story = {
     args: {
-        mediaSide: "right",
+        mediaUrl: "https://www.theschoolab.com/wp-content/uploads/2022/06/Homepage-header-diversity-scaled.jpg",
     },
 };
 
 export const WithColumns: Story = {
     args: {
-        mediaSide: "left",
         columns: [
             { label: "20 years", caption: "of experience in design thinking and lean startup" },
             { label: "700+", caption: "accelerated startups" },
+            { label: "24", caption: "countries where we operate" },
             { label: "30,000+", caption: "people who have used our digital platform" },
-            { label: "250+", caption: "corporate innovation projects initiated and accelerated"},
-        ],
+        ]
     },
 };
 
 export const WithButtons: Story = {
     args: {
-        mediaSide: "left",
         buttons: [
             { type: "primary", label: "Join today" },
             { type: "default", label: "Learn more" },
@@ -63,10 +60,11 @@ export const WithButtons: Story = {
 
 export const WithColumnsAndButtons: Story = {
     args: {
-        mediaSide: "left",
         columns: [
             { label: "20 years", caption: "of experience in design thinking and lean startup" },
             { label: "700+", caption: "accelerated startups" },
+            { label: "24", caption: "countries where we operate" },
+            { label: "30,000+", caption: "people who have used our digital platform" },
         ],
         buttons: [
             { type: "primary", label: "Join today" },

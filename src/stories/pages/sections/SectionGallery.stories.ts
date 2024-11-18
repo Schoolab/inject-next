@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { SectionHero } from "@/app/pages/sections/SectionHero";
+import { SectionGallery } from "@/app/pages/sections/SectionGallery";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-    title: "Pages/Sections/Hero",
-    component: SectionHero,
+    title: "Pages/Sections/Gallery",
+    component: SectionGallery,
     parameters: {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-        layout: "fullscreen",
+        layout: "padded",
         docs: {
             controls: { sort: "requiredFirst" },
         },
@@ -19,16 +19,9 @@ const meta = {
         
     },
     args:{
-        columns: [
-            { label: "Dates", caption: "July 4 – Sept 2, 2024"},
-            { label: "Location", caption: "Schoolab St-Lazare"},
-        ],
-        buttons: [
-            { type: "primary", label: "Join today"},
-            { type: "default", label: "Learn more" },
-        ],
+        
     },
-} satisfies Meta<typeof SectionHero>;
+} satisfies Meta<typeof SectionGallery>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

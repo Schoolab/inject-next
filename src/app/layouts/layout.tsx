@@ -13,7 +13,7 @@ interface LayoutProps {
     shortcutBarExpanded?: boolean;
     hub?: boolean;
     sideBar?: "Admin" | "Manage";
-    theme?: "default" | "Schoolab" | "Moho" | "Raiselab";
+    theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
 
     showShortcutbar?: boolean;
 
