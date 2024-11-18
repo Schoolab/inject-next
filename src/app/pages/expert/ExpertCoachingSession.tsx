@@ -5,6 +5,7 @@ import { AppContent } from "@/app/layouts/AppContent";
 import { AsideEvent } from "@/app/components/asides/AsideEvent";
 import { AsideNoteManager } from "@/app/components/asides/AsideNoteManager";
 import { aside } from "../../../../public/utils/aside";
+import { Alert } from "@/app/components/Alert";
 
 export const ExpertCoachingSession = () => {
     useEffect(() => {
@@ -33,17 +34,7 @@ export const ExpertCoachingSession = () => {
                                             </li>
                                         </ul>
                                     </div>
-                                    <div className="alert alert-info d-flex align-items-left align-items-lg-center flex-column flex-lg-row">
-                                        <div className="flex-fill mb-5 mb-lg-0 mr-0 mr-lg-5">
-                                            <p className="m-none font-weight-bold">You can manage this event</p>
-                                            <p>As a Program Manager of this program you have access to the event manager.</p>
-                                        </div>
-                                        <div className="flex-lg-shrink-1">
-                                            <a className="btn btn-lg btn-block btn-white" href="/event/417/manage">
-                                                Manage
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <Alert type="info" title="You can manage this event" text="As a Program Manager of this program you have access to the event manager." buttonLabel="Manage" />
                                     <div className="mt-5">
                                         <a className="btn btn-default btn-lg btn-block" href="#challengeEventAddToCalendar" data-toggle="modal">
                                             <span className="icon icon-calendar"></span>Add to calendar

@@ -1,4 +1,6 @@
 import React from "react";
+import DOMPurify from 'dompurify';
+
 import { Button } from "./Button";
 import { Icon } from "./Icon";
 
@@ -29,12 +31,14 @@ export const Alert = ({ icon, text, title, buttonLabel, type }: AlertProps) => {
     let classTab = ["alert"];
     type && classTab.push(`alert-${type}`);
 
+    let sanitizedText = DOMPurify.sanitize(text ?? '');
+
     return (
         <div className={classTab.join(" ")}>
             {icon && <Icon name={icon} size="2sm" />}
             <div className="flex-fill">
                 {title && <p className="m-none font-weight-bold">{title}</p>}
-                {text && <p>{text}</p>}
+                {sanitizedText && <p dangerouslySetInnerHTML={{ __html: sanitizedText }}></p>}
             </div>
             {buttonLabel && (
                 <div className="flex-lg-shrink-1">

@@ -4,13 +4,14 @@ import { AppContent } from "@/app/layouts/AppContent";
 import { StatCard } from "@/app/components/StatCard";
 import { Button } from "@/app/components/Button";
 import { Icon } from "@/app/components/Icon";
+import { Alert } from "@/app/components/Alert";
 
 export const ManageDashboard = () => {
     return (
         <Layout sideBar="Manage">
             <AppContent showSubnav={false} sections="transparent">
-                <div className="row">
-                    <div className="col-12">
+                <div className="cq">
+                    <div className="cq-12">
                         <div className="application-section is-highlighted">
                             <div className="d-flex justify-content-center">
                                 <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center py-lg-8 py-5" style={{ width: "100%", maxWidth: "680px" }}>
@@ -42,23 +43,9 @@ export const ManageDashboard = () => {
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
                             <div className="collapse show" id="dailyDigest">
-                                <div className="alert alert-warning d-flex align-items-left">
-                                    <div className="flex-lg-shrink-1 mr-3 d-flex align-items-center">
-                                        <span className="icon is-sm icon-alert"></span>
-                                    </div>
-                                    <div className="flex-fill ">
-                                        <p>
-                                            {" "}
-                                            Reminder: don’t forget to{" "}
-                                            <a href="#" className="alert-link">
-                                                publish the program
-                                            </a>{" "}
-                                            to participants when you’re ready! The program will appear on the lists of available programs and be accessible to the public. Program’s current visibility: <span className="font-weight-bold">Admins only</span> (draft).
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="items grid gap-md">
-                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
+                                <Alert type="warning" icon="alert" text={`Reminder: don’t forget to <a href="#" class="alert-link">publish the program</a> to participants when you’re ready! The program will appear on the lists of available programs and be accessible to the public. Program’s current visibility: <span class="font-weight-bold">Admins only</span> (draft).`} />
+                                <div className="items cq row-gap-md">
+                                    <div className="cq-12 cq-sm-6 cq-md-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -75,11 +62,11 @@ export const ManageDashboard = () => {
                                                 <StatCard number="16" caption="waiting for validation" />
                                             </div>
                                             <div className="mt-auto">
-                                                <Button label="View registrations" extended={true} />
+                                                <Button type="default" label="View registrations" extended={true} />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
+                                    <div className="cq-12 cq-sm-6 cq-md-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -96,11 +83,11 @@ export const ManageDashboard = () => {
                                                 <StatCard number="23" caption="waiting for approval" />
                                             </div>
                                             <div className="mt-auto">
-                                                <Button label="View applications" extended={true} />
+                                                <Button type="default" label="View applications" extended={true} />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
+                                    <div className="cq-12 cq-sm-6 cq-md-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -117,11 +104,11 @@ export const ManageDashboard = () => {
                                                 <StatCard number="4" warning={true} caption="ongoing registrations (&gt; 2 days)" />
                                             </div>
                                             <div className="mt-auto">
-                                                <Button label="View participants" extended={true} />
+                                                <Button type="default" label="View participants" extended={true} />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
+                                    <div className="cq-12 cq-sm-6 cq-md-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -177,7 +164,7 @@ export const ManageDashboard = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
+                                    <div className="cq-12 cq-sm-6 cq-md-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -194,11 +181,11 @@ export const ManageDashboard = () => {
                                                 <StatCard number="13" warning={true} caption="not verified emails" />
                                             </div>
                                             <div className="mt-auto">
-                                                <Button label="View participants" extended={true} />
+                                                <Button type="default" label="View participants" extended={true} />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
+                                    <div className="cq-12 cq-sm-6 cq-md-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -215,11 +202,11 @@ export const ManageDashboard = () => {
                                                 <StatCard number="3" caption="never signed in (validation + 7 days)" />
                                             </div>
                                             <div className="mt-auto">
-                                                <Button label="View participants" extended={true} />
+                                                <Button type="default" label="View participants" extended={true} />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
+                                    <div className="cq-12 cq-sm-6 cq-md-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -236,11 +223,11 @@ export const ManageDashboard = () => {
                                                 <StatCard number="1" caption="projects without experts" />
                                             </div>
                                             <div className="mt-auto">
-                                                <Button label="View projects" extended={true} />
+                                                <Button type="default" label="View projects" extended={true} />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="g-col-12 g-col-md-6 g-col-lg-4">
+                                    <div className="cq-12 cq-sm-6 cq-md-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content">
@@ -258,7 +245,7 @@ export const ManageDashboard = () => {
                                                 <StatCard number="12%" caption="clicked" addClass="g-col-6" />
                                             </div>
                                             <div className="mt-auto">
-                                                <Button label="View mails" extended={true} />
+                                                <Button type="default" label="View mails" extended={true} />
                                             </div>
                                         </div>
                                     </div>
@@ -271,14 +258,28 @@ export const ManageDashboard = () => {
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
                             <div className="collapse show" id="keyInsight">
-                                <div className="grid gap-md">
-                                    <StatCard number="5" variation="-10" caption="total applicants" link="#" addClass="g-col-6 g-col-lg-4" />
-                                    <StatCard number="6" caption="total participants" link="#" addClass="g-col-6 g-col-lg-4" />
-                                    <StatCard number="0%" caption="courses completions" link="#" addClass="g-col-6 g-col-lg-4" />
-                                    <StatCard number="5" caption="mail delivered" link="#" addClass="g-col-6 g-col-lg-4" />
-                                    <StatCard number="0" caption="projects" link="#" addClass="g-col-6 g-col-lg-4" />
-                                    <StatCard number="0" caption="followers" link="#" addClass="g-col-6 g-col-lg-4" />
-                                    <Button label="Show more" extended={true} addClass="g-col-12" />
+                                <div className="cq row-gap-md">
+                                    <div className="cq-xs-6 cq-sm-4">
+                                        <StatCard number="5" variation="-10" caption="total applicants" link="#" />
+                                    </div>
+                                    <div className="cq-xs-6 cq-sm-4">
+                                        <StatCard number="6" caption="total participants" link="#" />
+                                    </div>
+                                    <div className="cq-xs-6 cq-sm-4">
+                                        <StatCard number="0%" caption="courses completions" link="#" />
+                                    </div>
+                                    <div className="cq-xs-6 cq-sm-4">
+                                        <StatCard number="5" caption="mail delivered" link="#" />
+                                    </div>
+                                    <div className="cq-xs-6 cq-sm-4">
+                                        <StatCard number="0" caption="projects" link="#" />
+                                    </div>
+                                    <div className="cq-xs-6 cq-sm-4">
+                                        <StatCard number="0" caption="followers" link="#" />
+                                    </div>
+                                    <div className="cq-12">
+                                        <Button type="default" label="Show more" extended={true} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -289,8 +290,8 @@ export const ManageDashboard = () => {
                             </h3>
                             <div className="collapse show" id="lastReleaseNotes">
                                 <p>Find here all the release notes from the Schoolab team about Inject.</p>
-                                <div className="items row card-row">
-                                    <div className="col-12 col-md-6 col-lg-4">
+                                <div className="items cq card-row row-gap-md">
+                                    <div className="cq-12 cq-sm-6 cq-md-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content flex-row align-items-center">
@@ -308,13 +309,11 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="mt-auto">
-                                                <a className="btn btn-default btn-lg btn-block btn-icon text-decoration-none text-nowrap" href="#" role="button">
-                                                    Read more
-                                                </a>
+                                                <Button type="default" label="Read more" extended={true} />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-12 col-md-6 col-lg-4">
+                                    <div className="cq-12 cq-sm-6 cq-md-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content flex-row align-items-center">
@@ -331,13 +330,11 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="mt-auto">
-                                                <a className="btn btn-default btn-lg btn-block btn-icon text-decoration-none text-nowrap" href="#" role="button">
-                                                    Read more
-                                                </a>
+                                                <Button type="default" label="Read more" extended={true} />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-12 col-md-6 col-lg-4">
+                                    <div className="cq-12 cq-sm-6 cq-md-4">
                                         <div className="item is-bordered is-static gap-xs h-100">
                                             <div className="item-row">
                                                 <div className="item-content flex-row align-items-center">
@@ -354,16 +351,15 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="mt-auto">
-                                                <a className="btn btn-default btn-lg btn-block btn-icon text-decoration-none text-nowrap" href="#" role="button">
-                                                    Read more
-                                                </a>
+                                                <Button type="default" label="Read more" extended={true} />
                                             </div>
                                         </div>
                                     </div>
+                                    <div className="cq-12">
+                                        <Button type="default" label="Show more" extended={true} />
+                                    </div>
                                 </div>
-                                <a className="btn btn-default btn-lg btn-block btn-icon text-decoration-none text-nowrap" href="#" role="button">
-                                    Show more
-                                </a>
+                                
                             </div>
                         </div>
                     </div>

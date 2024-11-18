@@ -1,6 +1,7 @@
 import React from "react";
 import { Layout } from "../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
+import { Alert } from "@/app/components/Alert";
 
 export const ManageForms = () => {
     return (
@@ -49,23 +50,9 @@ export const ManageForms = () => {
                                         <input type="date" id="translations_wrapper_lang_fr_dateEnd" name="translations_wrapper[lang_fr][dateEnd]" disabled className="form-control" />
                                     </div>
                                 </div>
-                                <div className="alert alert-info d-flex align-items-left">
-                                    <div className="flex-lg-shrink-1 d-flex align-items-center">
-                                        <span className="icon is-sm icon-information"></span>
-                                    </div>
-                                    <div className="flex-fill ">
-                                        <p>
-                                            To edit the registrations dates go to{" "}
-                                            <a href="#" className="alert-link">
-                                                Registration
-                                            </a>{" "}
-                                            then{" "}
-                                            <a href="#" className="alert-link">
-                                                Dates &amp; Rights
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
+
+                                <Alert type="info" icon="information" text={`To edit the registrations dates go to <a href="#" class="alert-link">Registration</a> then <a href="#" class="alert-link">Dates &amp; Rights</a>`} />
+                                
                                 <div className="form-group">
                                     <label className="font-weight-bold" htmlFor="translations_wrapper_lang_en_overview">
                                         Short description
@@ -154,14 +141,9 @@ export const ManageForms = () => {
                                         </div>
                                     </div>
                                 </fieldset>
-                                <div className="alert alert-warning d-flex align-items-left">
-                                    <div className="flex-lg-shrink-1 d-flex align-items-center">
-                                        <span className="icon is-sm icon-alert"></span>
-                                    </div>
-                                    <div className="flex-fill ">
-                                        <p>Reminder: don’t forget to publish the program to participants when you’re ready!</p>
-                                    </div>
-                                </div>
+
+                                <Alert type="warning" icon="alert" text="Reminder: don’t forget to publish the program to participants when you’re ready!" />
+                                
                                 <div className="d-flex justify-content-end">
                                     <button type="submit" className="btn btn-primary btn-flat btn-lg">
                                         Save
@@ -209,19 +191,9 @@ export const ManageForms = () => {
                                         This Javascript code will be executed on the program public page.
                                     </small>
                                 </div>
-                                <div className="alert alert-info d-flex align-items-left">
-                                    <div className="flex-lg-shrink-1 d-flex align-items-center">
-                                        <span className="icon is-sm icon-information"></span>
-                                    </div>
-                                    <div className="flex-fill ">
-                                        <p>
-                                            To add a public page go to More then Content{" "}
-                                            <a href="#" className="alert-link">
-                                                Content
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
+
+                                <Alert type="info" icon="information" text={`To add a public page go to More then Content <a href="#" class="alert-link">Content</a>`} />
+                                
                                 <div className="form-group">
                                     <div className="custom-control custom-checkbox">
                                         <input type="checkbox" id="id-1" name="name-1" autoComplete="off" aria-describedby="id-1_help" className="custom-control-input" defaultValue={1} />
@@ -282,14 +254,9 @@ export const ManageForms = () => {
                                         defaultValue={""}
                                     />
                                 </div>
-                                <div className="alert alert-info d-flex align-items-left">
-                                    <div className="flex-lg-shrink-1 d-flex align-items-center">
-                                        <span className="icon is-sm icon-information"></span>
-                                    </div>
-                                    <div className="flex-fill ">
-                                        <p>Only people for whom the brief is intended can see it.</p>
-                                    </div>
-                                </div>
+
+                                <Alert type="info" icon="information" text="Only people for whom the brief is intended can see it" />
+
                                 <div className="d-flex justify-content-end">
                                     <button type="submit" className="btn btn-primary btn-flat btn-lg">
                                         Save

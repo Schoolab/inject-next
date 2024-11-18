@@ -1,4 +1,5 @@
 import React from "react";
+import { Alert } from "../Alert";
 export interface ModalExternalProgramProps {}
 
 export const ModalExternalProgram = ({}: ModalExternalProgramProps) => {
@@ -72,11 +73,7 @@ export const ModalExternalProgram = ({}: ModalExternalProgramProps) => {
                                 <h4>About the program</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elem entum felis diam eget massa.</p>
                             </div>
-                            <div className="alert alert-info d-flex align-items-left align-items-lg-center flex-column flex-lg-row">
-                                <div className="d-flex flex-column gap-0 flex-fill">
-                                    <p>This program is on an external organization and has its own website. Click on the button to learn more!</p>
-                                </div>
-                            </div>
+                            <Alert type="info" icon="information" text="This program is on an external organization and has its own website. Click on the button to learn more!" />
                         </div>
                     </div>
                     <div className="modal-footer border-top">

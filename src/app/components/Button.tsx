@@ -2,6 +2,10 @@ import { Icon } from "./Icon";
 
 export interface ButtonProps {
     /**
+     * Children Content
+     */
+    children?: React.ReactNode
+    /**
      * Button contents
      */
     label?: string; 
@@ -72,6 +76,7 @@ export const Button = ({ size = "default", type, disabled, isActive = false, sho
             {isActive && showActive && <Icon name="check" />}
             {iconStartName && <Icon name={iconStartName} />}
             {label && <span>{label}</span>} 
+            {props.children && props.children}
             {iconEndName && <Icon name={iconEndName} />}
         </a>
     );
