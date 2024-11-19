@@ -45,7 +45,7 @@ export const SectionTeam = (
         addClass && classSection.push(addClass);
 
         let listColumns = columns?.map((column) => (
-            <div className="cq-12 d-flex flex-column gap-sm" style={{minWidth: "8rem", maxWidth: "20cqw"}}>
+            <div className="cq-12 d-flex flex-column gap-sm team-item" style={{minWidth: "8rem", maxWidth: "20cqw"}}>
                 <Avatar size="2xl" image={column.image} addClass="w-100" />
                 <div className="d-flex flex-column gap-2xs text-center">
                     <h3 className="display-4">{column.label}</h3>

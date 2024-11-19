@@ -45,7 +45,7 @@ export const SectionNumbers = (
         let sanitizedContent = DOMPurify.sanitize(content); 
 
         let listColumns = columns?.map((column) => (
-            <div className="cq-xs-6 cq-md-3 d-flex flex-column gap-2xs">
+            <div className="cq-2sm-6 cq-md-3 d-flex flex-column gap-2xs">
                 <p className="display-2">{column.label}</p>
                 <p className="small text-muted">{column.caption}</p>
             </div>

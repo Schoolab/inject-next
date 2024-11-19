@@ -31,8 +31,8 @@ interface SectionVideoProps {
 export const SectionVideo = (
     
     {
-        title = "The Digital Team", 
-        subtitle = "The Digital Team designs and develops Schoolab's websites and SaaS platforms with our clients and users.", 
+        title = "Section title", 
+        subtitle = "Use this line to summarize this section. View it as a TL:DR;",  
         content = ``,
         columns,
         buttons,
@@ -58,7 +58,7 @@ export const SectionVideo = (
         let sanitizedContent = DOMPurify.sanitize(content); 
 
         let listColumns = columns?.map((column) => (
-            <div className="cq-xs-6 cq-md-3 d-flex flex-column gap-2xs">
+            <div className="cq-2sm-6 cq-md-3 d-flex flex-column gap-2xs">
                 <p className="display-2">{column.label}</p>
                 <p className="small text-muted">{column.caption}</p>
             </div>
@@ -76,7 +76,7 @@ export const SectionVideo = (
                             <img src={mediaUrl} alt={'Illustration of ' + title} />
                         </picture>}
 
-                        {mediaType === "video" && <div className="media embed-responsive embed-responsive-16by9">
+                        {mediaType === "video" && <div className="media embed-responsive embed-responsive-16by9 embed-item">
                             <iframe className="embed-responsive-item" src={mediaUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>}
                     </div>

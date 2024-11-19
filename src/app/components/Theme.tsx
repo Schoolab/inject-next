@@ -160,16 +160,20 @@ export const Theme = ({ themeName }: ThemeProps) => {
                         --paragraph-font-family: "GT America";
                     }
 
-                    .landing-section picture {
+                    .landing-section .illustration-item {
                         border-radius: var(--radius-full);
                     }
 
-                    .landing-section picture img {
+                    .landing-section .illustration-item img {
                         border-radius: var(--radius-full);
                     }
 
-                    .landing-section .thumbnail {
+                    .landing-section .team-item .thumbnail {
                         aspect-ratio: 1 / 2;
+                    }
+
+                    .landing-section .quote-item {
+                        border: none;
                     }
             `}</style>
             )}
@@ -240,7 +244,7 @@ export const Theme = ({ themeName }: ThemeProps) => {
                         --paragraph-font-family: "DM Sans";
                     }
 
-                    .landing-section .media {
+                    .landing-section .media:not(.gallery-item) {
                         background-color: unset;
                         background-image: linear-gradient(#ffffff0d, #fff3);
                         border-radius: 1.5rem;
@@ -256,8 +260,12 @@ export const Theme = ({ themeName }: ThemeProps) => {
                         border-radius: .5rem;
                     }
 
-                    .landing-section .thumbnail {
+                    .landing-section .team-item .thumbnail {
                         aspect-ratio: 1 / 2;
+                    }
+
+                    .landing-section .quote-item {
+                        border: none;
                     }
             `}</style>
             )}

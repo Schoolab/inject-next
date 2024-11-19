@@ -10,6 +10,9 @@ import { SectionVideo } from "../sections/SectionVideo";
 import { SectionCards } from "../sections/SectionCards";
 import { SectionCallToAction } from "../sections/SectionCallToAction";
 import { SectionTeam } from "../sections/SectionTeam";
+import { SectionGallery } from "../sections/SectionGallery";
+import { SectionTestimonial } from "../sections/SectionTestimonial";
+import { SectionColumns } from "../sections/SectionColumns";
 
 interface ProgramLandingProps {
     theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
@@ -95,7 +98,11 @@ export const ProgramLanding = ( { theme = "default" }: ProgramLandingProps) => {
                     style={{ backgroundColor: "var(--bg-brand-tertiary)", color: "var(--fg-brand-tertiary)" }}
                 />
                 
-                <SectionVideo mediaSide="right" />
+                <SectionVideo
+                    title = "The Digital Team"
+                    subtitle = "The Digital Team designs and develops Schoolab's websites and SaaS platforms with our clients and users."
+                    mediaSide="right"
+                />
 
                 <SectionCards
                     columns={[
@@ -161,6 +168,53 @@ export const ProgramLanding = ( { theme = "default" }: ProgramLandingProps) => {
                             image: "img/thumbnails/emma.jpg",
                             label: "Emma Salvarelli",
                             caption: "Customer Success, Schoolab",
+                        },
+                    ]}
+                />
+
+                <SectionGallery
+                    title="Office life"
+                    subtitle="Experience the vibrant atmosphere of our office, where we prioritize a serene and harmonious environment for all our team members."
+                    columns={[
+                        { label: "31 years", caption: "average age" },
+                        { label: "3%", caption: "turnover" }
+                    ]}
+                />
+
+                <SectionTestimonial
+                    quote={`
+                        <p>“L’équipe Digitale de Schoolab conçoit, design et développe les sites Web et les Plateformes SaaS Schoolab en collaboration étroite avec nos équipes, nos clients et notre écosystème. Ce positionnement unique permet à chaque membre de l’équipe de contribuer directement au succès de nos programmes pour faire bouger les lignes sur nos missions.”</p>
+                    `}
+                    avatar="img/thumbnails/pierre.jpg"
+                    author="Pierre Lemeteil"
+                    source="Head of Digital @ Schoolab"
+                    style={{ backgroundColor: "var(--bg-brand-tertiary)", color: "var(--fg-brand-tertiary)"}}
+                />
+
+                <SectionColumns
+                    title="Our programs to support your transformation"
+                    subtitle="Conception and deployment of your innovation strategy"
+                    columns={[
+                        {
+                            image: "img/placeholder-events-green.png",
+                            label: "Open Innovation",
+                            content: `
+                                <p>Innovating with students from the most prestigious French and international schools and universities</p>
+                            `,
+                        },
+                        {
+                            image: "img/placeholder-events-orange.png",
+                            label: "Project Acceleration",
+                            content: `
+                                <p>Launching your innovation projects faster with our entrepreneurs, designers, developers and analysts</p>
+                            `,
+                        },
+                        {
+                            image: "img/placeholder-events-pink.png",
+                            label: "Coaching & Training",
+                            content: `
+                                <p>Leading your collective efforts: Hackathons, Seminars, Innovation Labs, Learning Expeditions</p>
+                            `,
                         },
                     ]}
                 />

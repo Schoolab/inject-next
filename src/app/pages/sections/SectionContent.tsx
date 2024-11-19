@@ -58,14 +58,14 @@ export const SectionContent = (
         mediaSide === "left" && classMedia.push("cq-offset-lg-1 cq-order-md-0");
         mediaSide === "right" && classMedia.push("cq-offset-md-1");
 
-        let classContent = ["cq-12 cq-md-6 cq-lg-5 d-flex flex-column gap-xl justify-content-center"];
+        let classContent = ["cq-12 cq-md-6 cq-lg-5 d-flex flex-column gap-xl py-3xl justify-content-center"];
         mediaSide === "left" && classContent.push("cq-offset-md-1");
         mediaSide === "right" && classContent.push("cq-offset-lg-1");
 
         let sanitizedContent = DOMPurify.sanitize(content);
 
         let listColumns = columns?.map((column) => (
-            <div className="cq-xs-6 cq-md-3 d-flex flex-column gap-2xs">
+            <div className="cq-2sm-6 cq-md-3 d-flex flex-column gap-2xs">
                 <p className="display-2">{column.label}</p>
                 <p className="small text-muted">{column.caption}</p>
             </div>
@@ -79,7 +79,7 @@ export const SectionContent = (
                 <div className="cq row-gap-3xl">
 
                     <div className={classMedia.join(" ")}>
-                        <picture className="media vertical-stretch">
+                        <picture className="media vertical-stretch illustration-item">
                             <img src={mediaUrl} alt={'Illustration of ' + title} />
                         </picture>
                     </div>

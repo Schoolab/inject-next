@@ -56,7 +56,7 @@ export const SectionContent2col = (
         let sanitizedContent2 = DOMPurify.sanitize(contentRight); 
 
         let listColumns = columns?.map((column) => (
-            <div className="cq-xs-6 cq-md-3 d-flex flex-column gap-2xs">
+            <div className="cq-2sm-6 cq-md-3 d-flex flex-column gap-2xs">
                 <p className="display-2">{column.label}</p>
                 <p className="small text-muted">{column.caption}</p>
             </div>
@@ -105,7 +105,7 @@ export const SectionContent2col = (
                     </div>
 
                     { mediaUrl && <div className={classMedia.join(" ")}>
-                        <picture className="media horizontal-stretch">
+                        <picture className="media horizontal-stretch illustration-item">
                             <img src={mediaUrl} alt={'Illustration of ' + title} />
                         </picture>
                     </div> }

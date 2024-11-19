@@ -22,7 +22,7 @@ export const ItemSection = ({ label = "{section.title}", caption = "{section.typ
     return (
         <div className="item is-small is-bordered gap-0px">
             <div className="item-row align-items-center gap-xs py-xs">
-                <Avatar iconName="section" isOval={false} isFreeRatio={true} image={image} />
+                <Avatar size="xl" iconName="section" isOval={false} image={image} addClass="is-16by10" />
 
                 <div className="item-content d-flex flex-column align-items-start justify-content-center overflow-hidden">
                     <a href="#" className="item-title stretched-link line-clamp-1">

@@ -55,7 +55,7 @@ export const SectionNumber = (
                     </div>
 
                     <div className="cq-12 cq-md-6 cq-lg-5 cq-offset-md-1 align-self-stretch">
-                        <div className="card gap-2xs p-3xl h-100 justify-content-center">
+                        <div className="card gap-2xs p-3xl h-100 justify-content-center number-item">
                             <p className="display-2" style={{ fontSize: "80px", lineHeight: "80px" }}>{numberLabel}</p>
                             <p className="lead text-muted">{numberCaption}</p>
                         </div>

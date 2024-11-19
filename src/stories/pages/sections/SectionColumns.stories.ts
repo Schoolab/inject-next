@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { SectionCards } from "@/app/pages/sections/SectionCards";
+import { SectionColumns } from "@/app/pages/sections/SectionColumns";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-    title: "Pages/Sections/Cards",
-    component: SectionCards,
+    title: "Pages/Sections/Columns",
+    component: SectionColumns,
     parameters: {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
         layout: "padded",
@@ -23,38 +23,29 @@ const meta = {
         subtitle: "Conception and deployment of your innovation strategy",
         columns: [
             {
-                backgroundColor: "var(--bg-brand-primary)",
+                image: "img/placeholder-events-green.png",
                 label: "Open Innovation",
                 content: `
-                    <p class="font-weight-bold mb-2xs">Innovating with students</p>
-                    <p class="small">from the most prestigious French and international schools and universities</p>
-                    <p class="font-weight-bold mb-2xs">Innovating with startups</p>
-                    <p class="small">from across all industries and geographical zones</p>
+                    <p>Innovating with students from the most prestigious French and international schools and universities</p>
                 `,
             },
             {
-                backgroundColor: "var(--bg-brand-secondary)",
+                image: "img/placeholder-events-orange.png",
                 label: "Project Acceleration",
                 content: `
-                    <p class="font-weight-bold mb-2xs">Launching your innovation projects faster</p>
-                    <p class="small">with our entrepreneurs, designers, developers and analysts</p>
-                    <p class="font-weight-bold mb-2xs">Designing and running your intrapreneurship programs</p>
-                    <p class="small">with our experts and entrepreneurial coaches</p>
+                    <p>Launching your innovation projects faster with our entrepreneurs, designers, developers and analysts</p>
                 `,
             },
             {
-                backgroundColor: "var(--bg-brand-tertiary)",
+                image: "img/placeholder-events-pink.png",
                 label: "Coaching & Training",
                 content: `
-                    <p class="font-weight-bold mb-2xs">Leading your collective efforts</p>
-                    <p class="small">Hackathons, Seminars, Innovation Labs, Learning Expeditions</p>
-                    <p class="font-weight-bold mb-2xs">Training your leaders</p>
-                    <p class="small">on innovation, digital and impact</p>
+                    <p>Leading your collective efforts: Hackathons, Seminars, Innovation Labs, Learning Expeditions</p>
                 `,
             },
         ]
     },
-} satisfies Meta<typeof SectionCards>;
+} satisfies Meta<typeof SectionColumns>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
