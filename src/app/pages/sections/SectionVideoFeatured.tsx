@@ -8,16 +8,12 @@ type ButtonType = {
 }
 
 interface SectionVideoFeaturedProps {
-    /**
-     * Custom class
-     */
-    addClass?: string;
-
     title?: string;
     subtitle?: string;
     content?: string;
     buttons?: ButtonType[];
 
+    addClass?: string;
     style?: CSSProperties;
 }
 

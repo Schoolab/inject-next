@@ -35,7 +35,6 @@ interface SectionContentProps {
 }
 
 export const SectionContent = (
-    
     {
         title = "Section title", 
         subtitle = "Use this line to summarize this section. View it as a TL:DR;", 
@@ -55,11 +54,11 @@ export const SectionContent = (
         let classSection = ["landing-section"];
         addClass && classSection.push(addClass);
     
-        let classMedia = ["cq-12 cq-md-5 cq-lg-4"];
-        mediaSide === "left" && classMedia.push("cq-offset-lg-1 cq-order-sm-0");
-        mediaSide === "right" && classMedia.push("cq-offset-md-1 cq-order-sm-12");
+        let classMedia = ["cq-12 cq-md-5 cq-lg-4 cq-order-xs-12"];
+        mediaSide === "left" && classMedia.push("cq-offset-lg-1 cq-order-md-0");
+        mediaSide === "right" && classMedia.push("cq-offset-md-1");
 
-        let classContent = ["cq-12 cq-md-6 cq-lg-5 d-flex flex-column gap-2xl justify-content-center"];
+        let classContent = ["cq-12 cq-md-6 cq-lg-5 d-flex flex-column gap-xl justify-content-center"];
         mediaSide === "left" && classContent.push("cq-offset-md-1");
         mediaSide === "right" && classContent.push("cq-offset-lg-1");
 
@@ -77,7 +76,7 @@ export const SectionContent = (
     return (
         <section className={classSection.join(" ")} style={style} {...props}>
             <div className="container-xl">
-                <div className="cq row-gap-md">
+                <div className="cq row-gap-3xl">
 
                     <div className={classMedia.join(" ")}>
                         <picture className="media vertical-stretch">

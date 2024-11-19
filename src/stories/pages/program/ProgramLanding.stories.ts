@@ -15,7 +15,32 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Landing: Story = {};
+export const Default: Story = {
+  args: {
+    theme: "default",
+  },
+};
 
+export const Inject: Story = {
+  args: {
+    theme: "Inject",
+  },
+};
 
+export const Schoolab: Story = {
+  args: {
+    theme: "Schoolab",
+  },
+};
 
+export const Moho: Story = {
+  args: {
+    theme: "Moho",
+  },
+};
+
+export const Raiselab: Story = {
+  args: {
+    theme: "Raiselab",
+  },
+};

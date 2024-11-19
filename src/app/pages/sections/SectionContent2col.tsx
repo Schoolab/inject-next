@@ -27,7 +27,6 @@ interface SectionContent2colProps {
 }
 
 export const SectionContent2col = (
-    
     {
         title = "Section title", 
         subtitle = "Use this line to summarize this section. View it as a TL:DR;", 
@@ -72,7 +71,7 @@ export const SectionContent2col = (
 
                     <div className={classContent.join(" ")}>
 
-                        <div className="cq row-gap-2xl">
+                        <div className="cq row-gap-xl">
 
                             <div className="cq-12 cq-md-8">
                                 <div className="d-flex flex-column gap-xs">
@@ -81,11 +80,11 @@ export const SectionContent2col = (
                                 </div>
                             </div>
                             
-                            { sanitizedContent && <div className="cq-12 cq-md-6">
+                            { sanitizedContent && <div className="cq-12 cq-sm-6">
                                 <div className="d-flex flex-column gap-sm" dangerouslySetInnerHTML={{ __html: sanitizedContent }}></div>
                             </div> }
 
-                            { sanitizedContent2 && <div className="cq-12 cq-md-6">
+                            { sanitizedContent2 && <div className="cq-12 cq-sm-6">
                                 <div className="d-flex flex-column gap-sm" dangerouslySetInnerHTML={{ __html: sanitizedContent2 }}></div>
                             </div> }
 

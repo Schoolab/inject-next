@@ -13,8 +13,13 @@ type ButtonType = {
 }
 
 interface SectionTimelineProps {
+    title?: string;
+    subtitle?: string;
+    content?: string;
     columns?: ColumnType[];
     buttons?: ButtonType[];
+
+    addClass?: string;
 }
 
 export const SectionTimeline = ({ ...props }: SectionTimelineProps) => {

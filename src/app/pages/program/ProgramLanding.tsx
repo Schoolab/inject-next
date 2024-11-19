@@ -7,10 +7,17 @@ import { SectionNumber } from "../sections/SectionNumber";
 import { SectionTimeline } from "../sections/SectionTimeline";
 import { SectionContent2col } from "../sections/SectionContent2col";
 import { SectionVideo } from "../sections/SectionVideo";
+import { SectionCards } from "../sections/SectionCards";
+import { SectionCallToAction } from "../sections/SectionCallToAction";
+import { SectionTeam } from "../sections/SectionTeam";
 
-export const ProgramLanding = () => {
+interface ProgramLandingProps {
+    theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
+}
+
+export const ProgramLanding = ( { theme = "default" }: ProgramLandingProps) => {
     return (
-        <Layout shortcutBarExpanded={true} theme="Raiselab">
+        <Layout shortcutBarExpanded={true} theme={theme}>
             <AppContent layout="full">
 
                 <SectionHero
@@ -28,7 +35,6 @@ export const ProgramLanding = () => {
                         { type: "primary", label: "Join today"},
                         { type: "default", label: "Learn more" },
                     ]}
-                    addClass="is-md"
                     style={{ backgroundColor: "var(--bg-brand-hero)", color: "var(--fg-brand-hero)"}}
                 />
                 
@@ -48,7 +54,12 @@ export const ProgramLanding = () => {
                     `}
                 />
 
-                <SectionNumber style={{ backgroundColor: "#F5F5F5" }} />
+                <SectionNumber
+                    title="Our programs to support your transformation"
+                    numberLabel="30,000+"
+                    numberCaption="people have used our digital platform"
+                    style={{ backgroundColor: "#F5F5F5" }}
+                />
                 
                 <SectionTimeline />
                 
@@ -85,6 +96,84 @@ export const ProgramLanding = () => {
                 />
                 
                 <SectionVideo mediaSide="right" />
+
+                <SectionCards
+                    columns={[
+                        {
+                            backgroundColor: "var(--bg-brand-primary)",
+                            label: "Open Innovation",
+                            content: `
+                                <p class="font-weight-bold mb-2xs">Innovating with students</p>
+                                <p class="small">from the most prestigious French and international schools and universities</p>
+                                <p class="font-weight-bold mb-2xs">Innovating with startups</p>
+                                <p class="small">from across all industries and geographical zones</p>
+                            `,
+                        },
+                        {
+                            backgroundColor: "var(--bg-brand-secondary)",
+                            label: "Project Acceleration",
+                            content: `
+                                <p class="font-weight-bold mb-2xs">Launching your innovation projects faster</p>
+                                <p class="small">with our entrepreneurs, designers, developers and analysts</p>
+                                <p class="font-weight-bold mb-2xs">Designing and running your intrapreneurship programs</p>
+                                <p class="small">with our experts and entrepreneurial coaches</p>
+                            `,
+                        },
+                        {
+                            backgroundColor: "var(--bg-brand-tertiary)",
+                            color: "#111",
+                            label: "Coaching & Training",
+                            content: `
+                                <p class="font-weight-bold mb-2xs">Leading your collective efforts</p>
+                                <p class="small">Hackathons, Seminars, Innovation Labs, Learning Expeditions</p>
+                                <p class="font-weight-bold mb-2xs">Training your leaders</p>
+                                <p class="small">on innovation, digital and impact</p>
+                            `,
+                        },
+                    ]}
+                />
+
+                <SectionTeam
+                    title="Our passionnate team"
+                    subtitle="We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients."
+                    columns={[
+                        {
+                            image: "img/thumbnails/julien.jpg",
+                            label: "Julien Fayet",
+                            caption: "Founder, Schoolab",
+                        },
+                        {
+                            image: "img/thumbnails/sasha.jpg",
+                            label: "Sasha Lehmann",
+                            caption: "Marketing, Freelance",
+                        },
+                        {
+                            image: "img/thumbnails/marjorie.jpg",
+                            label: "Marjorie Pouzadoux Bokobza",
+                            caption: "DG, Schoolab",
+                        },
+                        {
+                            image: "img/thumbnails/guillaume.jpg",
+                            label: "Guillaume Larieu",
+                            caption: "PM CPi, Schoolab",
+                        },
+                        {
+                            image: "img/thumbnails/emma.jpg",
+                            label: "Emma Salvarelli",
+                            caption: "Customer Success, Schoolab",
+                        },
+                    ]}
+                />
+
+                <SectionCallToAction
+                    title="Explain the value you provide with a last call to action"
+                    subtitle="Explain shortly how you will provide the value you promised to the people reading this landing page. Explain the range of tactics you have designed and implemented to help them effectively in their mission."
+                    buttons={[
+                        { type: "primary", label: "Join today"},
+                        { type: "default", label: "Learn more" },
+                    ]}
+                    style={{ backgroundColor: "var(--bg-brand-hero)", color: "var(--fg-brand-hero)"}}
+                />
 
             </AppContent>
         </Layout>

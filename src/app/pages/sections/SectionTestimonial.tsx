@@ -2,14 +2,11 @@ import React, { CSSProperties } from "react";
 import DOMPurify from 'dompurify';
 
 interface SectionTestimonialProps {
-    /**
-     * Custom class
-     */
-    addClass?: string;
-
     title?: string;
     subtitle?: string;
     content?: string;
+
+    addClass?: string;
     style?: CSSProperties;
 }
 

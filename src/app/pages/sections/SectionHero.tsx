@@ -14,13 +14,6 @@ type ButtonType = {
 }
 
 interface SectionHeroProps {
-    /**
-     * Custom class
-     */
-    addClass?: string;
-    /**
-     * On which side is the illustration
-     */
     mediaSide?: "left" | "right";
     mediaUrl?: string;
 
@@ -31,6 +24,7 @@ interface SectionHeroProps {
     columns?: ColumnType[];
     buttons?: ButtonType[];
 
+    addClass?: string;
     style?: CSSProperties;
 }
 
@@ -54,21 +48,21 @@ export const SectionHero = (
         ...props
     }: SectionHeroProps) => {
 
-        let classSection = ["landing-section"];
+        let classSection = ["landing-section is-md"];
         addClass && classSection.push(addClass);
     
-        let classMedia = ["cq-12 cq-sm-5 cq-lg-4 d-none cq-d-sm-flex"];
-        mediaSide === "left" && classMedia.push("cq-offset-lg-1 cq-order-sm-0");
-        mediaSide === "right" && classMedia.push("cq-offset-sm-1 cq-order-sm-12");
+        let classMedia = ["cq-12 cq-sm-5 cq-lg-4 cq-order-xs-12"];
+        mediaSide === "left" && classMedia.push("cq-offset-lg-1 cq-order-md-0");
+        mediaSide === "right" && classMedia.push("cq-offset-md-1");
 
-        let classContent = ["cq-12 cq-sm-6 cq-lg-5 d-flex flex-column gap-2xl justify-content-center"];
+        let classContent = ["cq-12 cq-sm-7 cq-md-6 cq-lg-5 d-flex flex-column gap-2xl justify-content-center"];
         mediaSide === "left" && classContent.push("cq-offset-sm-1");
         mediaSide === "right" && classContent.push("cq-offset-lg-1");
 
         let sanitizedContent = DOMPurify.sanitize(content);
 
         let listColumns = columns?.map((column) => (
-            <div className="cq-xs-6 d-flex flex-column gap-2xs">
+            <div className="cq-2sm-6 d-flex flex-column gap-2xs">
                 <p className="small text-muted">{column.label}</p>
                 <p className="display-4">{column.caption}</p>
             </div>
@@ -79,7 +73,7 @@ export const SectionHero = (
     return (
         <section className={classSection.join(" ")} style={style} {...props}>
             <div className="container-xl">
-                <div className="cq row-gap-md">
+                <div className="cq row-gap-3xl">
 
                     <div className={classMedia.join(" ")}>
                         <picture className="media vertical-stretch">

@@ -73,6 +73,19 @@ export const Theme = ({ themeName }: ThemeProps) => {
                         --display-font-weight: "Bold";
                         --paragraph-font-family: "Roboto Mono";
                     }
+
+                    .landing-section .media {
+                        border-radius: var(--radius-none);
+                    }
+
+                    .landing-section .card {
+                        border-radius: var(--radius-none);
+                    }
+
+                    .landing-section .thumbnail,
+                    .landing-section .thumbnail:after {
+                        border-radius: var(--radius-none);
+                    }
             `}</style>
             )}
             {themeName === "Schoolab" && (
@@ -154,6 +167,10 @@ export const Theme = ({ themeName }: ThemeProps) => {
                     .landing-section picture img {
                         border-radius: var(--radius-full);
                     }
+
+                    .landing-section .thumbnail {
+                        aspect-ratio: 1 / 2;
+                    }
             `}</style>
             )}
             {themeName === "Raiselab" && (
@@ -229,12 +246,18 @@ export const Theme = ({ themeName }: ThemeProps) => {
                         border-radius: 1.5rem;
                         box-shadow: inset 1px 1px #ffffffb3;
                         padding: 1rem;
-                        margin: -1rem;
+                        margin: 0 -1rem;
+                        width: calc(100% + 2rem);
+                        min-width: calc(100% + 2rem);
                         max-width: calc(100% + 2rem);
                     }
 
                     .landing-section .media img {
                         border-radius: .5rem;
+                    }
+
+                    .landing-section .thumbnail {
+                        aspect-ratio: 1 / 2;
                     }
             `}</style>
             )}

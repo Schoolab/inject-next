@@ -14,13 +14,6 @@ type ButtonType = {
 }
 
 interface SectionVideoProps {
-    /**
-     * Custom class
-     */
-    addClass?: string;
-    /**
-     * On which side is the media
-     */
     mediaSide?: "left" | "right";
     mediaUrl?: string;
     mediaType?: "video" | "image";
@@ -31,6 +24,7 @@ interface SectionVideoProps {
     columns?: ColumnType[];
     buttons?: ButtonType[];
 
+    addClass?: string;
     style?: CSSProperties;
 }
 
@@ -53,11 +47,11 @@ export const SectionVideo = (
         let classSection = ["landing-section"];
         addClass && classSection.push(addClass);
     
-        let classMedia = ["cq-12 cq-sm-6 cq-lg-5"];
-        mediaSide === "left" && classMedia.push("cq-offset-lg-1 cq-order-sm-0");
-        mediaSide === "right" && classMedia.push("cq-offset-md-1 cq-order-sm-12");
+        let classMedia = ["cq-12 cq-md-6 cq-lg-5 cq-order-xs-12"];
+        mediaSide === "left" && classMedia.push("cq-offset-lg-1 cq-order-md-0");
+        mediaSide === "right" && classMedia.push("cq-offset-md-1");
 
-        let classContent = ["cq-12 cq-sm-6 cq-md-5 cq-lg-4 d-flex flex-column gap-2xl justify-content-center"];
+        let classContent = ["cq-12 cq-md-5 cq-lg-4 d-flex flex-column gap-xl justify-content-center"];
         mediaSide === "left" && classContent.push("cq-offset-md-1");
         mediaSide === "right" && classContent.push("cq-offset-lg-1");
 
@@ -75,15 +69,15 @@ export const SectionVideo = (
     return (
         <section className={classSection.join(" ")} style={style} {...props}>
             <div className="container-xl">
-                <div className="cq row-gap-md">
+                <div className="cq row-gap-3xl">
 
                     <div className={classMedia.join(" ")}>
                         {mediaType === "image" && <picture className="media vertical-stretch">
                             <img src={mediaUrl} alt={'Illustration of ' + title} />
                         </picture>}
 
-                        {mediaType === "video" && <div className="rounded-lg embed-responsive embed-responsive-16by9">
-                            <iframe className="media embed-responsive-item" src={mediaUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        {mediaType === "video" && <div className="media embed-responsive embed-responsive-16by9">
+                            <iframe className="embed-responsive-item" src={mediaUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>}
                     </div>
 

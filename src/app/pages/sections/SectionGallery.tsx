@@ -13,17 +13,13 @@ type ButtonType = {
 }
 
 interface SectionGalleryProps {
-    /**
-     * Custom class
-     */
-    addClass?: string;
-
     title?: string;
     subtitle?: string;
     content?: string;
     columns?: ColumnType[];
     buttons?: ButtonType[];
     
+    addClass?: string;
     style?: CSSProperties;
 }
 

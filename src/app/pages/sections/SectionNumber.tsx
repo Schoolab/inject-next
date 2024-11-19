@@ -1,24 +1,63 @@
-import React from "react";
+import React, { CSSProperties } from "react";
+import DOMPurify from 'dompurify';
+import { Button } from "@/app/components/Button";
 
-export const SectionNumber = ({ ...props }) => {
+type ButtonType = {
+    type?: "primary" | "default";
+    label?: string;
+    link?: string;
+}
+
+interface SectionNumbersProps {
+    title?: string;
+    subtitle?: string;
+    content?: string;
+    numberLabel?: string;
+    numberCaption?: string;
+    buttons?: ButtonType[];
+    
+    addClass?: string;
+    style?: CSSProperties;
+}
+
+export const SectionNumber = (
+    {
+        title = "Section title", 
+        subtitle,
+        content = ``,
+        numberLabel,
+        numberCaption,
+        buttons,
+        ...props
+    }: SectionNumbersProps
+) => {
+    
+    let sanitizedContent = DOMPurify.sanitize(content);
+
+    let listButtons = buttons?.map((button) => <Button type={button.type} label={button.label} link={button.link} />);
+
     return (
         <section className="landing-section" {...props}>
             <div className="container-xl">
-                <div className="cq row-gap-md">
+                <div className="cq row-gap-3xl align-items-center">
 
-                    <div className="cq-12 cq-sm-6 cq-lg-4 cq-offset-lg-1">
-                        <div className="d-flex flex-column gap-2xs">
-                            <h2 className="display-2">Our programs to support your transformation</h2>
-                            {/* <p className="lead">SCHOOLAB is an innovation studio that educates, advises, and supports its clients in responsible innovation</p> */}
+                    <div className="cq-12 cq-md-5 cq-lg-4 cq-offset-lg-1 d-flex flex-column gap-xl py-3xl">
+                        <div className="d-flex flex-column gap-xs">
+                            <h2 className="display-2">{title}</h2>
+                            { subtitle && <p className="lead">{subtitle}</p> }
                         </div>
+
+                        { sanitizedContent && <div className="d-flex flex-column gap-sm" dangerouslySetInnerHTML={{ __html: sanitizedContent }}></div> }
+
+                        { buttons && <div className="d-flex gap-sm">
+                            {listButtons}
+                        </div>}
                     </div>
 
-                    <div className="cq-12 cq-sm-6 cq-lg-5 cq-offset-lg-1 d-flex flex-column gap-2xl">
-                        <div className="cq">
-                            <div className="cq-md-12 d-flex flex-column gap-2xs">
-                                <p className="display-2" style={{ fontSize: "80px", lineHeight: "80px" }}>30,000+</p>
-                                <p className="lead text-muted">people have used our digital platform</p>
-                            </div>
+                    <div className="cq-12 cq-md-6 cq-lg-5 cq-offset-md-1 align-self-stretch">
+                        <div className="card gap-2xs p-3xl h-100 justify-content-center">
+                            <p className="display-2" style={{ fontSize: "80px", lineHeight: "80px" }}>{numberLabel}</p>
+                            <p className="lead text-muted">{numberCaption}</p>
                         </div>
                     </div>
 
