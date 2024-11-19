@@ -6,10 +6,10 @@ export interface StepperProps {}
 
 export const Stepper = ({}: StepperProps) => {
     return (
-        <div className="alert-warning position-sticky top-0 z-3 border-bottom">
+        <div className="application-post-it">
             <div className="container-lg container-lg-fluid px-sm px-md-md px-lg-xl">
                 <div className="item is-static resource">
-                    <div className="alert-warning item-row  gap-xs">
+                    <div className="item-row  gap-xs">
                         <div className="mr-5 d-flex flex-fill">
                             <div className="item-icon is-darker icon icon-information " />
                             <div className="item-content ml-3">

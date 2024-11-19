@@ -5,8 +5,8 @@ import { Alert } from "@/app/components/Alert";
 
 export const ManageForms = () => {
     return (
-        <Layout  sideBar="Manage">
-            <AppContent showStepper={true}  sections="separated" showSubnav={false}>
+        <Layout sideBar="Manage">
+            <AppContent showStepper={true} sections="separated" showSubnav={false}>
                 <div className="row">
                     <div className="col-12">
                         <div className="application-section">
@@ -52,7 +52,7 @@ export const ManageForms = () => {
                                 </div>
 
                                 <Alert type="info" icon="information" text={`To edit the registrations dates go to <a href="#" class="alert-link">Registration</a> then <a href="#" class="alert-link">Dates &amp; Rights</a>`} />
-                                
+
                                 <div className="form-group">
                                     <label className="font-weight-bold" htmlFor="translations_wrapper_lang_en_overview">
                                         Short description
@@ -143,8 +143,8 @@ export const ManageForms = () => {
                                 </fieldset>
 
                                 <Alert type="warning" icon="alert" text="Reminder: don’t forget to publish the program to participants when you’re ready!" />
-                                
-                                <div className="d-flex justify-content-end">
+
+                                <div className="application-section-save">
                                     <button type="submit" className="btn btn-primary btn-flat btn-lg">
                                         Save
                                     </button>
@@ -193,7 +193,7 @@ export const ManageForms = () => {
                                 </div>
 
                                 <Alert type="info" icon="information" text={`To add a public page go to More then Content <a href="#" class="alert-link">Content</a>`} />
-                                
+
                                 <div className="form-group">
                                     <div className="custom-control custom-checkbox">
                                         <input type="checkbox" id="id-1" name="name-1" autoComplete="off" aria-describedby="id-1_help" className="custom-control-input" defaultValue={1} />
@@ -257,7 +257,7 @@ export const ManageForms = () => {
 
                                 <Alert type="info" icon="information" text="Only people for whom the brief is intended can see it" />
 
-                                <div className="d-flex justify-content-end">
+                                <div className="application-section-save">
                                     <button type="submit" className="btn btn-primary btn-flat btn-lg">
                                         Save
                                     </button>
@@ -304,6 +304,11 @@ export const ManageForms = () => {
                                         </label>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="application-section-save">
+                                <button type="submit" className="btn btn-primary btn-flat btn-lg">
+                                    Save
+                                </button>
                             </div>
                         </div>
                     </div>

@@ -55,12 +55,12 @@ export const Title = ({ title = "Page title", iconName, emoji, backLink, paginat
         <div className={classTab.join(" ")}>
             <div className="d-lg-none flex-grow-1">
                 <div className="d-flex justify-content-between mb-3">
-                    { backLink && <Button link={backLink} type="default" iconStartName="arrow-left" size="sm" data-toggle="tooltip" data-original-title="Back" /> }
+                    { backLink && <Button link={backLink} type="default" iconStartName="arrow-left" size="default" data-toggle="tooltip" data-original-title="Back" /> }
                     { (prevLink || nextLink) && (
                         <div className="d-flex align-items-center gap-xs">
                             { paginationLabel && (<small className="text-muted">{paginationLabel}</small>) }
-                            <Button type="default" iconStartName="chevron-left" disabled={!prevLink} size="sm" data-toggle="tooltip" data-original-title="Previous" />
-                            <Button type="default" iconStartName="chevron-right" disabled={!nextLink} size="sm" data-toggle="tooltip" data-original-title="Next" />
+                            <Button type="default" iconStartName="chevron-left" disabled={!prevLink} size="default" data-toggle="tooltip" data-original-title="Previous" />
+                            <Button type="default" iconStartName="chevron-right" disabled={!nextLink} size="default" data-toggle="tooltip" data-original-title="Next" />
                         </div>
                     )}
                 </div>
@@ -97,7 +97,7 @@ export const Title = ({ title = "Page title", iconName, emoji, backLink, paginat
                 <div className="d-flex">
                     <div className="flex-grow-1">
                         <div className="d-flex gap-xs">
-                        { backLink && <Button link={backLink} type="default" iconStartName="arrow-left" size="sm" data-toggle="tooltip" data-original-title="Back" /> }
+                        { backLink && <Button link={backLink} type="default" iconStartName="arrow-left" size="default" data-toggle="tooltip" data-original-title="Back" /> }
                             <div className="h3 d-flex gap-xs m-none">
                                 {iconName && <Icon name={iconName} />}
                                 {emoji && <span>{emoji}</span>}
@@ -108,8 +108,8 @@ export const Title = ({ title = "Page title", iconName, emoji, backLink, paginat
                     { (prevLink || nextLink) && (
                         <div className="d-flex align-items-center gap-xs">
                             { paginationLabel && (<small className="text-muted">{paginationLabel}</small>) }
-                            <Button type="default" iconStartName="chevron-left" disabled={!prevLink} size="sm" data-toggle="tooltip" data-original-title="Previous" />
-                            <Button type="default" iconStartName="chevron-right" disabled={!nextLink} size="sm" data-toggle="tooltip" data-original-title="Next" />
+                            <Button type="default" iconStartName="chevron-left" disabled={!prevLink} size="default" data-toggle="tooltip" data-original-title="Previous" />
+                            <Button type="default" iconStartName="chevron-right" disabled={!nextLink} size="default" data-toggle="tooltip" data-original-title="Next" />
                         </div>
                     )}
                 </div>
