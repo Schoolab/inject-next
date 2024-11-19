@@ -26,7 +26,7 @@ export const Theme = ({ themeName }: ThemeProps) => {
                     @font-face {
                         font-family: "Noe Display";
                         src: url("https://www.moho.co/wp-content/themes/moho/fonts/NoeDisplay-Black.eot");
-                        src: url("https://www.moho.co/wp-content/themes/moho/fonts/NoeDisplay-Black.eot?#iefix") format("embedded-opentype"),url("fonts/NoeDisplay-Black.woff2") format("woff2"),url("fonts/NoeDisplay-Black.woff") format("woff"),url("fonts/NoeDisplay-Black.svg#NoeDisplay-Black") format("svg");
+                        src: url("https://www.moho.co/wp-content/themes/moho/fonts/NoeDisplay-Black.eot?#iefix") format("embedded-opentype"),url("https://www.moho.co/wp-content/themes/moho/fonts/NoeDisplay-Black.woff2") format("woff2"),url("https://www.moho.co/wp-content/themes/moho/fonts/NoeDisplay-Black.woff") format("woff"),url("https://www.moho.co/wp-content/themes/moho/fonts/NoeDisplay-Black.svg#NoeDisplay-Black") format("svg");
                         font-weight: 900;
                         font-style: normal;
                         font-display: swap
@@ -35,7 +35,7 @@ export const Theme = ({ themeName }: ThemeProps) => {
                     @font-face {
                         font-family: "Noe Display";
                         src: url("https://www.moho.co/wp-content/themes/moho/fonts/NoeDisplay-Bold.eot");
-                        src: url("https://www.moho.co/wp-content/themes/moho/fonts/NoeDisplay-Bold.eot?#iefix") format("embedded-opentype"),url("fonts/NoeDisplay-Bold.woff2") format("woff2"),url("fonts/NoeDisplay-Bold.woff") format("woff"),url("fonts/NoeDisplay-Bold.svg#NoeDisplay-Bold") format("svg");
+                        src: url("https://www.moho.co/wp-content/themes/moho/fonts/NoeDisplay-Bold.eot?#iefix") format("embedded-opentype"),url("https://www.moho.co/wp-content/themes/moho/fonts/NoeDisplay-Bold.woff2") format("woff2"),url("https://www.moho.co/wp-content/themes/moho/fonts/NoeDisplay-Bold.woff") format("woff"),url("https://www.moho.co/wp-content/themes/moho/fonts/NoeDisplay-Bold.svg#NoeDisplay-Bold") format("svg");
                         font-weight: bold;
                         font-style: normal;
                         font-display: swap
