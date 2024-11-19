@@ -24,7 +24,7 @@ export const Stepper = ({}: StepperProps) => {
                         </div>
 
                         <Button type="default" size="sm" addClass="z-2" data-toggle="tooltip" data-original-title="Mark as completed">
-                            <Progress percentage={25} size="sm" style={{width:"1rem", height: "1rem"}} />
+                            <Progress percentage={0} size="sm" style={{width:"1rem", height: "1rem"}} />
                         </Button>
                         <Button type="default" iconStartName="chevron-left" size="sm" data-toggle="tooltip" addClass="z-2 bg-none" data-original-title="Previous" />
                         <Button type="default" iconStartName="chevron-right" size="sm" data-toggle="tooltip" addClass="z-2" data-original-title="Next" />
