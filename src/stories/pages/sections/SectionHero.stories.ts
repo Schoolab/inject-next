@@ -19,6 +19,7 @@ const meta = {
         
     },
     args:{
+        mediaSide: "right",
         columns: [
             { label: "Dates", caption: "July 4 – Sept 2, 2024"},
             { label: "Location", caption: "Schoolab St-Lazare"},

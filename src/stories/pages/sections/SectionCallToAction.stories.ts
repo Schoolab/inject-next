@@ -19,7 +19,10 @@ const meta = {
         
     },
     args:{
-        
+        buttons: [
+            { type: "primary", label: "Join today"},
+            { type: "default", label: "Learn more" },
+        ],
     },
 } satisfies Meta<typeof SectionCallToAction>;
 

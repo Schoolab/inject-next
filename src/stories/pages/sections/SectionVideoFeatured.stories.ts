@@ -31,3 +31,12 @@ export const Default: Story = {
     args: {
     },
 };
+
+export const WithButtons: Story = {
+    args: {
+        buttons: [
+            { type: "primary", label: "Join today" },
+            { type: "default", label: "Learn more" },
+        ],
+    },
+};

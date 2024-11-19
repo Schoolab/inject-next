@@ -70,7 +70,7 @@ export const SectionTestimonials = (
             <div className="container-xl">
                 <div className="cq row-gap-3xl">
 
-                    <div className="cq-12 cq-md-10 cq-lg-8 cq-offset-md-1 cq-offset-lg-2 text-center d-flex flex-column gap-xl align-items-center">
+                    { (title || subtitle || listButtons) && <div className="cq-12 cq-md-10 cq-lg-8 cq-offset-md-1 cq-offset-lg-2 text-center d-flex flex-column gap-xl align-items-center">
                         <div className="d-flex flex-column gap-xs">
                             <h2 className="display-2">{title}</h2>
                             { subtitle && <p className="lead">{subtitle}</p> }
@@ -79,7 +79,7 @@ export const SectionTestimonials = (
                         { buttons && <div className="d-flex gap-sm">
                             {listButtons}
                         </div>}
-                    </div>
+                    </div> }
 
                     <div className="cq-12 cq-md-10 cq-lg-8 cq-offset-md-1 cq-offset-lg-2 d-flex flex-column gap-2xl">
                         { quotes && <div className="cq-12">

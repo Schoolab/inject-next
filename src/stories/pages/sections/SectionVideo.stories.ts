@@ -48,7 +48,7 @@ export const WithContent: Story = {
     },
 };
 
-export const Withbuttons: Story = {
+export const WithButtons: Story = {
     args: {
         content: `
       <p>Here is the content from the WYSIWYG.</p>
