@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import { ReactNode } from "react";
 
 interface CardProps {
@@ -7,10 +7,11 @@ interface CardProps {
      * Custom class
      */
     addClass?: string;
+    style?: CSSProperties;
 }
 
-export const Card = ({ children, addClass }: CardProps) => {
+export const Card = ({ children, addClass, style, ...props }: CardProps) => {
     let classTab = ["card"];
     addClass && classTab.push(addClass);
-    return <div className={classTab.join(" ")}>{children}</div>;
+    return <div className={classTab.join(" ")} style={{ ...style }} { ...props }>{children}</div>;
 };

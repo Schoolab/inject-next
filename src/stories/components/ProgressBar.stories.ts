@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Progress } from "../../app/components/Progress";
+import { ProgressBar } from "../../app/components/ProgressBar";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: "Components/Progress/Circle",
-  component: Progress,
+  title: "Components/Progress/Bar",
+  component: ProgressBar,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: "padded",
@@ -21,7 +21,7 @@ const meta = {
   args:{
 
   },
-} satisfies Meta<typeof Progress>;
+} satisfies Meta<typeof ProgressBar>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -33,8 +33,8 @@ export const Default: Story = {
 
 export const Incomplete: Story = {
     args: {
-        percentage: 13,
-        text: "1/8",
+        percentage: 25,
+        text: "25%",
 
     },
 };
@@ -42,33 +42,6 @@ export const Incomplete: Story = {
 export const Completed: Story = {
     args: {
         percentage: 100,
-        text: "8/8",
-    },
-};
-
-export const Large: Story = {
-    args: {
-        percentage: 13,
-        text: "1/8",
-        size: "lg",
-    },
-};
-
-
-export const ExtraLarge: Story = {
-    args: {
-        percentage: 13,
-        text: "1/8",
-        subtext: "completed",
-        size: "xl",
-    },
-};
-
-export const DoubleExtraLarge: Story = {
-    args: {
-        percentage: 50,
-        text: "4/8",
-        subtext: "completed",
-        size: "2xl",
+        text: "100%",
     },
 };

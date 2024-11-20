@@ -24,8 +24,8 @@ export interface ItemResourceProps {
     /**
      * What kind of action is possible?
      */
-    action: "download" | "openLink" | "delete";
-    options: Boolean;
+    action?: "download" | "openLink" | "delete";
+    options?: Boolean;
     /**
      * Icon parameters
      */
@@ -33,7 +33,7 @@ export interface ItemResourceProps {
     /**
      * Is small ?
      */
-    isSmall: Boolean;
+    isSmall?: Boolean;
 }
 
 export const ItemResource = ({ img, resource, action, options = true, icon, isSmall = false }: ItemResourceProps) => {

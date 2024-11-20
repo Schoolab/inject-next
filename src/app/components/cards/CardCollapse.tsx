@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import { Icon } from "../Icon";
 import { Progress } from "../Progress";
 import { Placeholder } from "../Placeholder";
+import { Card } from "./Card";
 
 type MetaType = {
     label: string;
@@ -27,7 +28,7 @@ export const CardCollapse = ({ id = "Card", parentId, children, title = "Card Ti
     let listMetas = metas?.map((meta) => <li key={meta.label}>{meta.label}</li>); 
 
     return (
-        <div className={classTab.join(" ")}>
+        <Card addClass={classTab.join(" ")}>
             <div className="card-header d-flex gap-sm align-items-center" id={'header' + id} data-toggle="collapse" data-target={'#body' + id} aria-expanded="false" aria-controls={'body' + id}>
                 { progress && <Progress percentage={progress} /> }
                 <div className="d-flex flex-column w-100 gap-none">
@@ -47,7 +48,7 @@ export const CardCollapse = ({ id = "Card", parentId, children, title = "Card Ti
                     {!children && <Placeholder />}
                 </div>
             </div>
-        </div>
+        </Card>
     );
 };
 
