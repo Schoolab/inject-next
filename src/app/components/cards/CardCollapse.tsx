@@ -25,6 +25,7 @@ interface CardCollapseProps {
 export const CardCollapse = ({ id = "Card", parentId, children, title = "Card Title", metas, progress, addClass }: CardCollapseProps) => {
     let classTab = ["card"];
     addClass && classTab.push(addClass);
+    
     let listMetas = metas?.map((meta) => <li key={meta.label}>{meta.label}</li>); 
 
     return (

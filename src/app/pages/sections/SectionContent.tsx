@@ -14,15 +14,7 @@ type ButtonType = {
 }
 
 interface SectionContentProps {
-    /**
-     * Custom class
-     */
-    addClass?: string;
-    /**
-     * On which side is the media
-     */
     mediaSide?: "left" | "right";
-
     mediaUrl?: string;
 
     title?: string;
@@ -31,6 +23,7 @@ interface SectionContentProps {
     columns?: ColumnType[];
     buttons?: ButtonType[];
 
+    addClass?: string;
     style?: CSSProperties;
 }
 
@@ -49,8 +42,8 @@ export const SectionContent = (
         addClass,
         style,
         ...props
-    }: SectionContentProps) => {
-
+    }: SectionContentProps
+) => {
         let classSection = ["landing-section"];
         addClass && classSection.push(addClass);
     

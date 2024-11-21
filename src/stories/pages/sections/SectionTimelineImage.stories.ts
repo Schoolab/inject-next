@@ -31,3 +31,13 @@ export const Default: Story = {
     args: {
     },
 };
+
+export const WithImages: Story = {
+    args: {
+        columns: [
+            { image: "https://s3.eu-west-3.amazonaws.com/media-inject.schoolab.tools/schoolab/landing-page/earth.png", label: "Step title", caption: "Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae." },
+            { image: "https://s3.eu-west-3.amazonaws.com/media-inject.schoolab.tools/schoolab/landing-page/leaf.png", label: "Step title", caption: "Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae." },
+            { image: "https://s3.eu-west-3.amazonaws.com/media-inject.schoolab.tools/schoolab/landing-page/trophy.png", label: "Step title", caption: "Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae." },
+        ],
+    },
+};

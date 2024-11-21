@@ -8,7 +8,7 @@ export interface ButtonProps {
     /**
      * Button contents
      */
-    label?: string; 
+    label?: string | number; 
     /**
      * Is the button disabled?
      */

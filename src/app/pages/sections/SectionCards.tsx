@@ -50,7 +50,7 @@ export const SectionCards = (
                     <div className="card-header" style={{ backgroundColor: column.backgroundColor, color: column.color ?? "#FFF" }}>
                         <p className="font-weight-bold m-none text-truncate">{column.label}</p>
                     </div>
-                    {column.content && (<div className="card-body" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(column.content) }} />)}
+                    { column.content && (<div className="card-body" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(column.content) }} />) }
                 </div>
             </div>
         ));
@@ -70,7 +70,7 @@ export const SectionCards = (
 
                         { buttons && <div className="d-flex gap-sm">
                             {listButtons}
-                        </div>}
+                        </div> }
                     </div>
 
                     <div className="cq-12 cq-lg-10 cq-offset-lg-1 d-flex flex-column gap-2xl">

@@ -2,7 +2,7 @@ export interface ItemsGroupProps {
     /**
      * Children Content
      */
-    children: React.ReactNode
+    children: React.ReactNode;
 }
 
 /**

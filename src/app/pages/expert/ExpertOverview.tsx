@@ -2,6 +2,7 @@ import React from "react";
 import { Layout } from "../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Button } from "@/app/components/Button";
+import { CardFeed } from "@/app/components/cards/CardFeed";
 
 export const ExpertOverview = () => {
     return (
@@ -402,89 +403,30 @@ export const ExpertOverview = () => {
                                         </div>
                                     </div>
                                     <div className="cardsContainer d-flex flex-column gap-md">
-                                        <div className="card blogPostCard">
-                                            <div className="card-infos d-flex flex-column align-items-stretch gap-md p-24px">
-                                                <div className="d-flex flex-grow-1 gap-sm">
-                                                    <div className="thumbnail-relation m-auto">
-                                                        <a href="#" className="thumbnail is-oval is-lg is-bordered">
-                                                            <img src="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" />
-                                                        </a>
-                                                    </div>
-                                                    <div className="card-title flex-grow-1">
-                                                        <a href="#" className="h4 mb-none line-clamp-1 d-flex align-items-center gap-2xs">
-                                                            <span>Pierre Forestier</span>
-                                                            <span className="badge badge-role is-manager z-2" data-toggle="tooltip" data-placement="top" data-original-title="Program Manager" data-boundary="window" />
-                                                        </a>
-                                                        <ul className="text-muted small metas is-list mb-none">
-                                                            <li>
-                                                                <a href="#" className="text-muted text-decoration-none">
-                                                                    Program Manager, Schoolab
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <span>May 13</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>3:39 PM</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div className="dropdown">
-                                                        <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span className="icon is-20px icon-options" />
-                                                        </a>
-                                                        <div className="dropdown-menu dropdown-menu-right">
-                                                            <a className="dropdown-item" href="#">
-                                                                <span>Open post</span>
-                                                            </a>
-                                                            <div className="dropdown-divider" />
-                                                            <a className="dropdown-item" href="#">
-                                                                <span className="dropdown-item--label">Open profile</span>
-                                                                <span className="dropdown-item--shortcut icon icon-new-tab" />
-                                                            </a>
-                                                            <a className="dropdown-item" href="#">
-                                                                <span className="dropdown-item--label">Open program</span>
-                                                                <span className="dropdown-item--shortcut icon icon-new-tab" />
-                                                            </a>
-                                                            <div className="dropdown-divider" />
-                                                            <a className="dropdown-item" href="#">
-                                                                <span>Edit</span>
-                                                            </a>
-                                                            <a className="dropdown-item is-danger" href="#">
-                                                                <span>Delete</span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="d-flex flex-column gap-md">
-                                                    <p>Hello,</p>
-                                                    <p>Un petit message pour vous souhaiter la bienvenue parmi le programme d'incubation "La Piscine". Je serais ton interlocuteur privilégié pour ce programme, n'hésitez surtout pas à me solliciter sur slack ou par mail : pierre.forestier@theschoolab.com.&nbsp;</p>
-                                                    <p>Et pour rappel, ce programme va te permettre de te lancer rapidement, valide...</p>
-                                                    <a href="#">Read more -&gt;</a>
-                                                </div>
-                                                <div className="gallery">
-                                                    <div className="gallery-photo embed-responsive embed-responsive-16by9">
-                                                        <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/6cheowg6Rmk?si=Zi-3gDOnCZoEyk9m" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
-                                                    </div>
-                                                </div>
-                                                <div className="d-flex justify-content-between flex-nowrap">
-                                                    <div className="d-flex gap-xs flex-fill">
-                                                        <a href="#" className="btn btn-secondary active">
-                                                            <span className="icon icon-thumb-up" />
-                                                            <span>9</span>
-                                                        </a>
-                                                        <a href="#" className="btn btn-secondary">
-                                                            <span className="icon icon-comment" />
-                                                            <span>4</span>
-                                                        </a>
-                                                    </div>
-                                                    {/* <a href="#" className="btn btn-secondary" data-toggle="tooltip" data-placement="top" data-original-title="Click to copy link" data-boundary="window">
-                                                        <span className="icon icon-share" />
-                                                        <span>Copy link</span>
-                                                    </a> */}
+                                        <CardFeed
+                                            avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg"
+                                            author="Pierre Forestier"
+                                            role="manager"
+                                            metas={[
+                                                { label: "Program Manager, Schoolab" },
+                                            ]}
+                                            content={`
+                                                <p>Hello,</p>
+                                                <p>Un petit message pour vous souhaiter la bienvenue parmi le programme d'incubation "La Piscine". Je serais ton interlocuteur privilégié pour ce programme, n'hésitez surtout pas à me solliciter sur slack ou par mail : pierre.forestier@theschoolab.com.&nbsp;</p>
+                                                <p>Et pour rappel, ce programme va te permettre de te lancer rapidement, valide...</p>
+                                            `}
+                                            readMore={true}
+                                            liked={true}
+                                            likes={9}
+                                            comments={4}
+                                            copyLink={true}
+                                        >
+                                            <div className="gallery">
+                                                <div className="gallery-photo embed-responsive embed-responsive-16by9">
+                                                    <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/6cheowg6Rmk?si=Zi-3gDOnCZoEyk9m" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
                                                 </div>
                                             </div>
-                                        </div>
+                                        </CardFeed>
                                     </div>
                                     <div className="pagerContainer mt-5 d-none">
                                         <button className="btn btn-lg btn-block btn-default pagerLoadMoreButton">

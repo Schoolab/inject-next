@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import { Card } from "./Card";
 import { CardInfos } from "./CardInfos";
 import { ItemResource } from "../items/ItemResource";
@@ -7,46 +7,108 @@ import { Dropdown } from "../dropdown/Dropdown";
 import { DropdownMenu } from "../dropdown/DropdownMenu";
 import { DropdownItem } from "../dropdown/DropdownItem";
 import { DropdownDivider } from "../dropdown/DropdownDivider";
+import DOMPurify from 'dompurify';
+import { Avatar } from "../avatars/Avatar";
+import { Role } from "../badges/roles/Role";
+import { Button } from "../Button";
+
+type MetaType = {
+    label: string;
+};
 
 interface CardFeedProps {
-    /**
-     * commented ?
-     */
+    from?: string;
+    fromPrepend?: string;
+
+    avatar?: string;
+    author?: string;
+    role?: "admin" | "manager" | "expert" | "jury" | "participant";
+    type?: null | "org" | "program";
+    metas?: MetaType[];
+    date?: string;
+    time?: string;
+
+    title?: string;
+    content?: string;
+    readMore?: boolean;
+    children?: React.ReactNode;
+
     commented?: boolean;
-    /**
-     * liked ?
-     */
+    comments?: number;
     liked?: boolean;
+    likes?: number;
     copyLink?: boolean;
+
+    addClass?: string;
+    style?: CSSProperties;
 }
 
-export const CardFeed = ({ commented, liked, copyLink=false }: CardFeedProps) => {
+export const CardFeed = (
+    { 
+        from,
+        fromPrepend = "From program:",
+        avatar,
+        author = "Name",
+        role,
+        type,
+        metas,
+        date = "May 13", 
+        time = "3:39 PM", 
+        title,
+        content = `
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl ignissim est, at elementum felis diam eget massa.</p>
+        `,
+        readMore,
+        commented, 
+        comments = 0,
+        liked,
+        likes = 0,
+        copyLink = false,
+        /**
+         * Insert code inside the card to add a resource, an image, a video or more.
+         */
+        children, 
+        addClass,
+        style,
+        ...props 
+    }: CardFeedProps
+) => {
+    let listMetas = metas?.map((meta) => <li key={meta.label}>{meta.label}</li>); 
+
+    let sanitizedContent = DOMPurify.sanitize(content);
+
     return (
-        <Card>
+        <Card addClass={addClass} style={style} {...props}>
             <CardInfos addClass="d-flex flex-column align-items-stretch gap-md p-24px">
+                { from && <p className="text-muted small gap-2xs">
+                    <span>{fromPrepend}</span> <a href="#" className="text-muted font-weight-bold">{from}</a>
+                </p> }
+
                 <div className="d-flex flex-grow-1 gap-sm">
                     <div className="thumbnail-relation m-auto">
-                        <a href="#" className="thumbnail is-oval is-lg is-bordered">
-                            <img src="https://inject-prod.s3.amazonaws.com/images/b95837ec-6dcf-4600-8567-dfb71f4e3c38/sq150.jpeg" />
-                        </a>
+                        { type === "org" && <Avatar size="lg" iconName="org" image={avatar} isOval={false} /> }
+                        { type === "program" && <Avatar size="lg" iconName="program" image={avatar} isOval={false} /> }
+                        { !type && <Avatar size="lg" image={avatar} /> }
                     </div>
                     <div className="card-title flex-grow-1">
                         <a href="#" className="h4 mb-none line-clamp-1 d-flex align-items-center gap-2xs">
-                            <span>Nora Hechelef</span>
+                            <span>{author}</span>
+                            { role && <Role status={role} /> }
+                            { type === "org" && <Icon size="xs" name={type} addClass="text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Organization" data-boundary="window" /> }
+                            { type === "program" && <Icon size="xs" name={type} addClass="text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Program" data-boundary="window" /> }
                         </a>
                         <ul className="text-muted small metas is-list mb-none">
+                            {metas && listMetas}
                             <li>
-                                <span>May 13</span>
+                                <span>{date}</span>
                             </li>
                             <li>
-                                <span>3:39 PM</span>
+                                <span>{time}</span>
                             </li>
                         </ul>
                     </div>
                     <Dropdown addClass="z-2">
-                        <a className="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span className="icon is-20px icon-options" />
-                        </a>
+                        <Button type="muted" iconStartName="options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
                         <DropdownMenu direction="right">
                             <DropdownItem label="Open post" />
                             <DropdownDivider />
@@ -57,58 +119,31 @@ export const CardFeed = ({ commented, liked, copyLink=false }: CardFeedProps) =>
                             <DropdownItem type="danger" label="Delete" iconName="delete" />
                         </DropdownMenu>
                     </Dropdown>
-                    
                 </div>
-                <div className="d-flex flex-column gap-md">
-                    <p>Dans la gestion de projet, on entend souvent parler de "chemin critique". Mais qu'est-ce que cela signifie réellement ? Comment est-il déterminé et pourquoi est-il si crucial pour la réussite d'un projet ? Pourriez-vous donner un exemple concret pour illustrer son importance ?</p>
-                    <a href="#">Read more -&gt;</a>
-                </div>
-                <ItemResource
-                    isSmall={false}
-                    action="download"
-                    icon={{
-                        addClass: "text-danger",
-                        name: "file-pdf-box",
-                    }}
-                    resource={{
-                        details: "120 KB",
-                        name: "stakeholdermap-model.pdf",
-                        type: "PDF File",
-                    }}
-                />
+
+                { title && <h3>{title}</h3> }
+
+                { sanitizedContent && <div className="d-flex flex-column gap-md" dangerouslySetInnerHTML={{ __html: sanitizedContent }} /> }
+                
+                { readMore && <a href="#">Read more -&gt;</a> }
+                
+                {children}
 
                 <div className="d-flex justify-content-between flex-nowrap">
                     <div className="d-flex gap-xs flex-fill">
-                        {liked ? (
-                            <a href="#" className="btn btn-sm btn-secondary active">
-                                <Icon name="thumb-up" />
-                                <span>9</span>
-                            </a>
+                        { liked ? (
+                            <Button size="sm" type="secondary" label={likes} iconStartName="thumb-up" isActive={true} showActive={false} />
                         ) : (
-                            <a href="#" className="btn btn-sm btn-secondary">
-                                <Icon name="thumb-up" />
-                                <span>Like</span>
-                            </a>
-                        )}
+                            <Button size="sm" type="secondary" label={likes > 0 ? likes : "Like"} iconStartName="thumb-up" showActive={false} />
+                        ) }
 
-                        {commented ? (
-                            <a href="#" className="btn btn-sm btn-secondary">
-                                <Icon name="comment" />
-                                <span>4</span>
-                            </a>
+                        { commented ? (
+                            <Button size="sm" type="secondary" label={comments} iconStartName="comment" />
                         ) : (
-                            <a href="#" className="btn btn-sm btn-secondary">
-                                <Icon name="comment" />
-                                <span>Comment</span>
-                            </a>
-                        )}
+                            <Button size="sm" type="secondary" label={comments > 0 ? comments : "Comment"} iconStartName="comment" />
+                        ) }
                     </div>
-                    {copyLink && (
-                     <a href="#" className="btn btn-sm btn-secondary" data-toggle="tooltip" data-placement="top" data-original-title="Click to copy link" data-boundary="window">
-                        <Icon name="share" />
-                        <span>Copy link</span>
-                    </a> 
-                    )}
+                    { copyLink && <Button size="sm" type="secondary" label="Copy link" iconStartName="share" /> }
                 </div>
             </CardInfos>
         </Card>
