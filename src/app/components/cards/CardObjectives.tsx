@@ -8,6 +8,7 @@ import { CardInfos } from "./CardInfos";
 import { Tag } from "../badges/tags/Tag";
 import { Button } from "../Button";
 import { ProgressBar } from "../ProgressBar";
+import { Completed } from "@/stories/components/Progress.stories";
 
 interface CardObjectivesProps {
     name?: string;
@@ -17,6 +18,7 @@ interface CardObjectivesProps {
     dueDate?: string;
     tasksNb?: number;
     tasksLabel?: string;
+    tasksLabelPlural?: string;
     progress?: number;
     btnLabel?: string;
     btnUrl?: string;
@@ -25,7 +27,7 @@ interface CardObjectivesProps {
     style?: React.CSSProperties;
 }
 
-export const CardObjectives = ({ name = "Objective Name", description, emoji, date, dueDate, progress = 0, tasksNb = 1, tasksLabel = "tasks", btnLabel = "View tasks", btnUrl = "#", locked, addClass, style, ...props }: CardObjectivesProps) => {
+export const CardObjectives = ({ name = "Objective Name", description, emoji, date, dueDate, progress = 0, tasksNb = 1, tasksLabel = "task", tasksLabelPlural = "tasks", btnLabel = "Show tasks", btnUrl = "#", locked, addClass, style, ...props }: CardObjectivesProps) => {
     let classTab = ["card"];
     addClass && classTab.push(addClass);
 
@@ -48,15 +50,15 @@ export const CardObjectives = ({ name = "Objective Name", description, emoji, da
                         { (date && dueDate) && 
                             <Tag
                                 status={locked ? "default" : "progress"}
-                                iconName={locked ? "status-bordered" : "status-filled"}
+                                iconName={locked ? "status-bordered" : "status-dashed"}
                                 label={date + " -> " + dueDate}
                             />
                         }
                     </div>
                     <div className="d-flex flex-column gap-none">
-                        <p className="text-navigation-bold line-clamp-1">{name}</p>
+                        <p className="h4 line-clamp-1">{name}</p>
                         <ul className="metas is-list small">
-                            <li>{tasksNb} {tasksLabel}</li>
+                            <li>{tasksNb} {tasksNb > 1 ? tasksLabelPlural : tasksLabel }</li>
                         </ul>
                     </div>
                     { description && <p className="text-navigation">{description}</p> }

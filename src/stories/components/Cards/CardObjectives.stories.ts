@@ -46,6 +46,17 @@ export const AllInfo: Story = {
     }
 };
 
+export const DueDate: Story = {
+    args: {
+        emoji: "👀",
+        date: "Oct 1",
+        dueDate: "31",
+        name: "Initial observation points",
+        description: "Discover all the techniques and methods of observation to understand your customers",
+        tasksNb:4,
+    }
+};
+
 export const Progressing: Story = {
     args: {
         emoji: "👀",
@@ -57,19 +68,7 @@ export const Progressing: Story = {
     }
 };
 
-export const DueDate: Story = {
-    args: {
-        emoji: "👀",
-        date: "Oct 1",
-        dueDate: "31",
-        name: "Initial observation points",
-        description: "Discover all the techniques and methods of observation to understand your customers",
-        tasksNb:4,
-        progress: 1,
-    }
-};
-
-export const Complete: Story = {
+export const Completed: Story = {
     args: {
         emoji: "👀",
         date: "Oct 1",
