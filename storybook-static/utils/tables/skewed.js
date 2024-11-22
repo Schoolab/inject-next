@@ -19,6 +19,7 @@ export const skewed = () => {
                 { targets: "_all", orderable: false }, // other columns non orderable
             ],
             order: [[0, "desc"]],
+            ordering: false,
         });
         jQuery(window).on("resize", function () {
             var win = jQuery(this); //this = window

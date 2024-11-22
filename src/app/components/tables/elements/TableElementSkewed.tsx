@@ -22,7 +22,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                     </div>
                 </th> */}
                     <tr>
-                        <th scope="col" style={{ minWidth: 320, maxWidth: 320, width: 320 }}>
+                        <th scope="col" className="sorting" style={{ minWidth: 320, maxWidth: 320, width: 320 }}>
                             Name
                         </th>
                         <th scope="col" style={{ minWidth: 32, maxWidth: 32, width: 32 }}>

@@ -25,12 +25,10 @@ export const Layout = ({ children, sideBar, theme, shortcutBarExpanded, showShor
 
     return (
         <div className="application-ui">
-            {hub ?
-                (theme ? <NavbarHub theme={theme} /> : <NavbarHub />) : (theme ? <Navbar theme={theme} /> : <Navbar />) 
-            }
+            <Navbar theme={theme && theme} isHub={hub} />
            
             <div className="application-container">
-                {showShortcutbar && (shortcutBarExpanded ? <ShortcutBar isExpanded={true} /> : <ShortcutBar />)}
+                {showShortcutbar && <ShortcutBar isExpanded={shortcutBarExpanded} />}
                 {sideBar && sideBar === "Manage" && <SidebarManage />}
                 {sideBar && sideBar === "Admin" && <SidebarAdmin />}
                 {children}

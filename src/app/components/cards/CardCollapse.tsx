@@ -52,5 +52,3 @@ export const CardCollapse = ({ id = "Card", parentId, children, title = "Card Ti
         </Card>
     );
 };
-
-
