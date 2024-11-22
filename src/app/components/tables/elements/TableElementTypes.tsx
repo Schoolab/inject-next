@@ -22,19 +22,28 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                             </div>
                         </th>
                         <th id="large" className="sorting" style={{ minWidth: 320 }}>
-                            Large
+                            <div className="d-flex gap-2xs align-items-center">
+                                <span>Large</span>
+                            </div>
                         </th>
                         <th id="small" className="sorting" style={{ minWidth: 280 }}>
-                            Small
+                            <div className="d-flex gap-2xs align-items-center">
+                                <span>Small</span> <span className="text-muted icon is-2sm icon-information" data-toggle="tooltip" data-placement="top" data-title="Informations about the column" data-boundary="window"></span>
+                            </div>
                         </th>
                         <th id="multiple" className="sorting" style={{ minWidth: 280 }}>
-                            Multiple
+                            <div className="d-flex gap-2xs align-items-center">
+                                <span>Multiple</span>
+                            </div>
                         </th>
                         <th id="no-data" className="sorting_disabled" style={{ minWidth: 280 }}>
-                            No data
+                            <div className="d-flex gap-2xs align-items-center"></div>
+                            <span></span>No data
                         </th>
                         <th id="empty" className="sorting_disabled" style={{ minWidth: 280 }}>
-                            Empty
+                            <div className="d-flex gap-2xs align-items-center">
+                                <span>Empty</span>
+                            </div>
                         </th>
                     </tr>
                 </thead>
@@ -836,7 +845,7 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                         <td>
                             <div className="d-flex align-items-center flex-fill gap-0">
                                 <div className="d-flex align-items-start flex-fill gap-xs">
-                                    <div id="tags" className="badges flex-nowrap" role="button" aria-labelledby="multiple"  data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-none p-0"><li>Tag #1</li><li>Tag #2</li><li>Private</li><li>Tag #4</li><li>Tag #5</li></ul>' data-boundary="window">
+                                    <div id="tags" className="badges flex-nowrap" role="button" aria-labelledby="multiple" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-none p-0"><li>Tag #1</li><li>Tag #2</li><li>Private</li><li>Tag #4</li><li>Tag #5</li></ul>' data-boundary="window">
                                         <div className="badge is-pill">
                                             <span>Tag #1</span>
                                         </div>
@@ -852,8 +861,6 @@ export const TableElementTypes = ({}: TableElementTypesProps) => {
                                     <a href="#" className="badge is-pill">
                                         <span className="icon icon-plus" />
                                     </a>
-                                   
-                                   
                                 </div>
                                 <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                     <span className="icon icon-copy" />
