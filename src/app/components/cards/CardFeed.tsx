@@ -21,12 +21,11 @@ interface CardFeedProps {
     fromPrepend?: string;
 
     avatar?: string;
-    author?: string;
+    author: string;
     role?: "admin" | "manager" | "expert" | "jury" | "participant";
     type?: null | "org" | "program";
     metas?: MetaType[];
-    date?: string;
-    time?: string;
+    datetime?: string;
 
     title?: string;
     content?: string;
@@ -52,8 +51,7 @@ export const CardFeed = (
         role,
         type,
         metas,
-        date = "May 13", 
-        time = "3:39 PM", 
+        datetime = "May 13 at 3:39 PM", 
         title,
         content = `
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl ignissim est, at elementum felis diam eget massa.</p>
@@ -100,10 +98,7 @@ export const CardFeed = (
                         <ul className="text-muted small metas is-list mb-none">
                             {metas && listMetas}
                             <li>
-                                <span>{date}</span>
-                            </li>
-                            <li>
-                                <span>{time}</span>
+                                <span>{datetime}</span>
                             </li>
                         </ul>
                     </div>

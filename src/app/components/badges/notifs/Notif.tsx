@@ -4,7 +4,7 @@ interface NotifProps {
      /**
      * contents
      */
-     label?: string; 
+     label?: string | number; 
     /**
      * Custom class
      */
