@@ -5,12 +5,14 @@ export interface StatCardProps {
     /**
      * Stat Number
      */
-    number?: string;
+    number?: number | any;
+
+    isPercentage?: boolean;
 
     /**
      * Stat variation compared to previous period
      */
-    variation?: string;
+    variation?: number;
 
     /**
      * Warning
@@ -33,39 +35,65 @@ export interface StatCardProps {
     addClass?: string;
 }
 
-export const StatCard = ({ number = "0", variation, warning = false, caption = "Statistic Name", link = "", addClass, ...props }: StatCardProps) => {
-    let classTab = ["bg-light rounded p-sm w-100 d-flex flex-column gap-2xs justify-content-center text-decoration-none"];
+export const StatCard = ({ number = 0, isPercentage, variation, warning = false, caption = "Statistic Name", link = "", addClass, ...props }: StatCardProps) => {
+    let classTab = ["bg-light rounded p-sm w-100 h-100 d-flex flex-column gap-xs justify-content-start text-decoration-none"];
     addClass && classTab.push(addClass);
 
-    if (link !== "") {
+    let difference;
+    let formattedDifference;
+
+    if (variation !== undefined) {
+        difference = ((number - (number - variation)) / (number - variation)) * 100;
+        formattedDifference = Math.abs(difference).toFixed(1);
+    }
+
+    if (link) {
         return (
             <a href={`link`} className={classTab.join(" ")} {...props}>
-                <div className="d-flex align-items-baseline gap-xs">
-                    <span className="h2 mb-none" style={{ fontSize: "2rem", lineHeight: "2rem", fontWeight: "600" }}>
-                        {number}
-                    </span>
-                    {warning && <Icon name="alert" addClass="text-warning is-sm" />}
-                    {variation && <span className="small text-muted">{variation}</span>}
+                <div className="d-flex flex-column gap-2xs">
+                    <div className="d-flex gap-none align-items-center text-muted text-navigation-bold">
+                        <span>{caption}</span>
+                        <Icon name="chevron-right" size="xs" />
+                    </div>
+                    <div className="d-flex align-items-baseline gap-xs">
+                        <span className="h2 mb-none" style={{ fontSize: "2rem", lineHeight: "2rem", fontWeight: "600" }}>
+                            {number}{ isPercentage ? "%" : "" }
+                        </span>
+                        {warning && <Icon name="alert" addClass="text-warning is-sm" />}
+                    </div>
                 </div>
-                <div className="d-flex text-muted small">
-                    <span>{caption}</span>
-                    <Icon name="chevron-right" />
-                </div>
+                { (variation && variation !== 0) && 
+                    <div className="d-flex gap-3xs small">
+                        <Icon size="xs" name={variation >= 0 ? "arrow-up-circle" : "arrow-down-circle"} addClass={variation > 0 ? " text-success" : " text-danger"} />
+                        <span className={variation > 0 ? " text-success" : " text-danger"}>
+                            { (variation >= 0 ? "+" : "") + variation}{ isPercentage ? "%" : "" }
+                        </span>
+                        { difference && <span className="text-muted">({ difference >= 0 ? "+" : "-" }{ formattedDifference }%)</span> }
+                    </div>
+                }
             </a>
         )
     }
     return (
         <div className={classTab.join(" ")} {...props}>
-            <div className="d-flex align-items-baseline gap-xs">
-                <span className="h2 mb-none" style={{ fontSize: "2rem", lineHeight: "2rem", fontWeight: "600" }}>
-                    {number}
-                </span>
-                {warning && <Icon name="alert" addClass="text-warning is-sm" />}
-                {variation && <span className="small text-muted">{variation}</span>}
-            </div>
-            <div className="d-flex text-muted small">
+            <div className="d-flex text-muted text-navigation-bold">
                 <span>{caption}</span>
             </div>
+            <div className="d-flex align-items-baseline gap-xs">
+                <span className="h2 mb-none" style={{ fontSize: "2rem", lineHeight: "2rem", fontWeight: "600" }}>
+                    {number}{ isPercentage ? "%" : "" }
+                </span>
+                {warning && <Icon name="alert" addClass="text-warning is-sm" />}
+            </div>
+            { (variation && variation !== 0) && 
+                <div className="d-flex gap-3xs small">
+                    <Icon size="xs" name={variation >= 0 ? "arrow-up-circle" : "arrow-down-circle"} addClass={variation > 0 ? " text-success" : " text-danger"} />
+                    <span className={variation > 0 ? " text-success" : " text-danger"}>
+                        { (variation >= 0 ? "+" : "") + variation}{ isPercentage ? "%" : "" }
+                    </span>
+                    { difference && <span className="text-muted">({ difference >= 0 ? "+" : "-" }{ formattedDifference })</span> }
+                </div>
+            }
         </div>
     )
 };

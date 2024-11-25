@@ -59,7 +59,7 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <StatCard number="16" caption="waiting for validation" />
+                                                <StatCard number={16} caption="Waiting for validation" />
                                             </div>
                                             <div className="mt-auto">
                                                 <Button type="default" label="View registrations" extended={true} />
@@ -80,7 +80,7 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <StatCard number="23" caption="waiting for approval" />
+                                                <StatCard number={23} caption="Waiting for approval" />
                                             </div>
                                             <div className="mt-auto">
                                                 <Button type="default" label="View applications" extended={true} />
@@ -101,7 +101,7 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <StatCard number="4" warning={true} caption="ongoing registrations (&gt; 2 days)" />
+                                                <StatCard number={4} warning={true} caption="Ongoing registrations (&gt; 2 days)" />
                                             </div>
                                             <div className="mt-auto">
                                                 <Button type="default" label="View participants" extended={true} />
@@ -122,12 +122,14 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <div className="bg-light rounded p-sm w-100 d-flex flex-column gap-md justify-content-center text-decoration-none">
+                                                <div className="bg-light rounded p-sm w-100 d-flex flex-column gap-sm justify-content-center text-decoration-none">
                                                     <div className="d-flex flex-column gap-2xs">
+                                                        <div className="d-flex gap-none align-items-center text-muted text-navigation-bold">
+                                                            <span>Total registrations</span>
+                                                        </div>
                                                         <div className="d-flex align-items-center">
                                                             <span className="h2 mb-none" style={{ fontSize: "2rem", lineHeight: "2rem", fontWeight: "600" }}>72</span>
                                                         </div>
-                                                        <span className="text-muted small">total registrations</span>
                                                     </div>
                                                     <div className="d-flex flex-column gap-xs">
                                                         <div className="progress progress--custom">
@@ -178,7 +180,7 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <StatCard number="13" warning={true} caption="not verified emails" />
+                                                <StatCard number={13} warning={true} caption="Not verified emails" />
                                             </div>
                                             <div className="mt-auto">
                                                 <Button type="default" label="View participants" extended={true} />
@@ -199,7 +201,7 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <StatCard number="3" caption="never signed in (validation + 7 days)" />
+                                                <StatCard number={3} caption="Never signed in (validation + 7d)" />
                                             </div>
                                             <div className="mt-auto">
                                                 <Button type="default" label="View participants" extended={true} />
@@ -220,7 +222,7 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <StatCard number="1" caption="projects without experts" />
+                                                <StatCard number={1} caption="Projects without experts" />
                                             </div>
                                             <div className="mt-auto">
                                                 <Button type="default" label="View projects" extended={true} />
@@ -241,8 +243,8 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row grid gap-xs">
-                                                <StatCard number="42%" caption="opened" addClass="g-col-6" />
-                                                <StatCard number="12%" caption="clicked" addClass="g-col-6" />
+                                                <StatCard number={42} caption="Opened" addClass="g-col-6" />
+                                                <StatCard number={12} caption="Clicked" addClass="g-col-6" />
                                             </div>
                                             <div className="mt-auto">
                                                 <Button type="default" label="View mails" extended={true} />
@@ -254,28 +256,31 @@ export const ManageDashboard = () => {
                         </div>
                         <div className="application-section">
                             <h3 className="application-section--title" data-toggle="collapse" data-target="#keyInsight" aria-expanded="true">
-                                <span className="application-section--title-content">Key insight</span>
+                                <div className="d-flex flex-column gap-none w-100">
+                                    <span className="application-section--title-content">Key insight</span>
+                                    <span className="text-navigation text-muted">Last 28 days</span>
+                                </div>
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
                             <div className="collapse show" id="keyInsight">
                                 <div className="cq row-gap-md">
                                     <div className="cq-xs-6 cq-sm-4">
-                                        <StatCard number="5" variation="-10" caption="total applicants" link="#" />
+                                        <StatCard number={3896} variation={-209} caption="Sessions" link="#" />
                                     </div>
                                     <div className="cq-xs-6 cq-sm-4">
-                                        <StatCard number="6" caption="total participants" link="#" />
+                                        <StatCard number={5651} variation={+23} caption="Participants" link="#" />
                                     </div>
                                     <div className="cq-xs-6 cq-sm-4">
-                                        <StatCard number="0%" caption="courses completions" link="#" />
+                                        <StatCard number={10} isPercentage={true} variation={2} caption="Courses completions" link="#" />
                                     </div>
                                     <div className="cq-xs-6 cq-sm-4">
-                                        <StatCard number="5" caption="mail delivered" link="#" />
+                                        <StatCard number={5} caption="Mail delivered" link="#" />
                                     </div>
                                     <div className="cq-xs-6 cq-sm-4">
-                                        <StatCard number="0" caption="projects" link="#" />
+                                        <StatCard number={0} caption="Projects" link="#" />
                                     </div>
                                     <div className="cq-xs-6 cq-sm-4">
-                                        <StatCard number="0" caption="followers" link="#" />
+                                        <StatCard number={0} caption="Followers" link="#" />
                                     </div>
                                     <div className="cq-12">
                                         <Button type="default" label="Show more" extended={true} />

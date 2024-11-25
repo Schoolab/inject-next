@@ -30,8 +30,8 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     number: "13",
-    caption: "ongoing registrations (> 2 days)",
+    caption: "Ongoing registrations (> 2 days)",
     warning: true,
-    variation: "+2",
+    variation: 2,
   },
 };
