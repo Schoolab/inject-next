@@ -76,14 +76,16 @@ export const StatCard = ({ number = 0, isPercentage, variation, warning = false,
     }
     return (
         <div className={classTab.join(" ")} {...props}>
-            <div className="d-flex text-muted text-navigation-bold">
-                <span>{caption}</span>
-            </div>
-            <div className="d-flex align-items-baseline gap-xs">
-                <span className="h2 mb-none" style={{ fontSize: "2rem", lineHeight: "2rem", fontWeight: "600" }}>
-                    {number}{ isPercentage ? "%" : "" }
-                </span>
-                {warning && <Icon name="alert" addClass="text-warning is-sm" />}
+            <div className="d-flex flex-column gap-2xs">
+                <div className="d-flex gap-none align-items-center text-muted text-navigation-bold">
+                    <span>{caption}</span>
+                </div>
+                <div className="d-flex align-items-baseline gap-xs">
+                    <span className="h2 mb-none" style={{ fontSize: "2rem", lineHeight: "2rem", fontWeight: "600" }}>
+                        {number}{ isPercentage ? "%" : "" }
+                    </span>
+                    {warning && <Icon name="alert" addClass="text-warning is-sm" />}
+                </div>
             </div>
             { (variation && variation !== 0) && 
                 <div className="d-flex gap-3xs small">
@@ -91,7 +93,7 @@ export const StatCard = ({ number = 0, isPercentage, variation, warning = false,
                     <span className={variation > 0 ? " text-success" : " text-danger"}>
                         { (variation >= 0 ? "+" : "") + variation}{ isPercentage ? "%" : "" }
                     </span>
-                    { difference && <span className="text-muted">({ difference >= 0 ? "+" : "-" }{ formattedDifference })</span> }
+                    { difference && <span className="text-muted">({ difference >= 0 ? "+" : "-" }{ formattedDifference }%)</span> }
                 </div>
             }
         </div>
