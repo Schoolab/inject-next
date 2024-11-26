@@ -6,7 +6,7 @@ import { Alert } from "@/app/components/Alert";
 export const ManageForms = () => {
     return (
         <Layout sideBar="Manage">
-            <AppContent showStepper={true} sections="separated" showSubnav={false}>
+            <AppContent showStepper={true} sections="separated" showSubnav={true}>
                 <div className="row">
                     <div className="col-12">
                         <div className="application-section">

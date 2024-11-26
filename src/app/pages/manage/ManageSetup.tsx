@@ -298,46 +298,7 @@ export const ManageSetup = () => {
                                                 </button>
                                             </div>
                                         </div>
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-email" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Results Management
-                                                        </a>
-                                                        <span className="small text-muted">Send emails to notify participants of acceptance or rejection</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-clipboard-text" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Project Validation
-                                                        </a>
-                                                        <span className="small text-muted">Confirm which projects advance based on scores or manual selection</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -656,6 +617,66 @@ export const ManageSetup = () => {
                                                             Insights & Analytics
                                                         </a>
                                                         <span className="small text-muted">Track participant engagement and program progress</span>
+                                                    </div>
+                                                </div>
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row align-items-center">
+                                                <div className="mr-5 d-flex flex-fill">
+                                                    <div className="item-icon is-darker icon icon-library" />
+                                                    <div className="item-content ml-3">
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Learning Tracking
+                                                        </a>
+                                                        <span className="small text-muted">Track progress on learning course</span>
+                                                    </div>
+                                                </div>
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row align-items-center">
+                                                <div className="mr-5 d-flex flex-fill">
+                                                    <div className="item-icon is-darker icon icon-bullseye-arrow" />
+                                                    <div className="item-content ml-3">
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Objectives Tracking
+                                                        </a>
+                                                        <span className="small text-muted">Track progress on program objectives</span>
+                                                    </div>
+                                                </div>
+                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
+                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
+                                                        <circle className="progress-circle progress-circle-bg" />
+                                                        <circle className="progress-circle progress-circle-percent" />
+                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div className="item  is-bordered resource mb-3">
+                                            <div className="item-row align-items-center">
+                                                <div className="mr-5 d-flex flex-fill">
+                                                    <div className="item-icon is-darker icon icon-label" />
+                                                    <div className="item-content ml-3">
+                                                        <a href="#" className="mb-none item-title stretched-link">
+                                                            Segments
+                                                        </a>
+                                                        <span className="small text-muted">Create Segments across the different participant groups</span>
                                                     </div>
                                                 </div>
                                                 <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
