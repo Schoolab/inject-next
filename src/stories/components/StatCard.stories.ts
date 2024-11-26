@@ -29,9 +29,27 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Default: Story = {
   args: {
-    number: "13",
+    number: 13,
+    caption: "Ongoing registrations (> 2 days)",
+    warning: true,
+    variation: 0,
+  },
+};
+
+export const Up: Story = {
+  args: {
+    number: 13,
     caption: "Ongoing registrations (> 2 days)",
     warning: true,
     variation: 2,
+  },
+};
+
+export const Down: Story = {
+  args: {
+    number: 13,
+    caption: "Ongoing registrations (> 2 days)",
+    warning: true,
+    variation: -2,
   },
 };

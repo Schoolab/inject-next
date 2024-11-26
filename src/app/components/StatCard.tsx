@@ -42,9 +42,11 @@ export const StatCard = ({ number = 0, isPercentage, variation, warning = false,
     let difference;
     let formattedDifference;
 
-    if (variation !== undefined) {
+    if (variation !== undefined && variation !== 0) {
         difference = ((number - (number - variation)) / (number - variation)) * 100;
         formattedDifference = Math.abs(difference).toFixed(1);
+    } else {
+        formattedDifference = 0;
     }
 
     if (link) {
@@ -62,15 +64,19 @@ export const StatCard = ({ number = 0, isPercentage, variation, warning = false,
                         {warning && <Icon name="alert" addClass="text-warning is-sm" />}
                     </div>
                 </div>
-                { (variation && variation !== 0) && 
+                { variation !== undefined && (
                     <div className="d-flex gap-3xs small">
-                        <Icon size="xs" name={variation >= 0 ? "arrow-up-circle" : "arrow-down-circle"} addClass={variation > 0 ? " text-success" : " text-danger"} />
-                        <span className={variation > 0 ? " text-success" : " text-danger"}>
+                        <Icon 
+                            size="xs" 
+                            name={variation > 0 ? "arrow-up-circle" : variation < 0 ? "arrow-down-circle" : "arrow-right-circle"} 
+                            addClass={variation > 0 ? " text-success" : variation < 0 ? " text-danger" : " text-muted"} 
+                        />
+                        <span className={variation > 0 ? " text-success" : variation < 0 ? " text-danger" : "text-muted"}>
                             { (variation >= 0 ? "+" : "") + variation}{ isPercentage ? "%" : "" }
                         </span>
                         { difference && <span className="text-muted">({ difference >= 0 ? "+" : "-" }{ formattedDifference }%)</span> }
                     </div>
-                }
+                )}
             </a>
         )
     }
@@ -87,15 +93,19 @@ export const StatCard = ({ number = 0, isPercentage, variation, warning = false,
                     {warning && <Icon name="alert" addClass="text-warning is-sm" />}
                 </div>
             </div>
-            { (variation && variation !== 0) && 
+            { variation !== undefined && (
                 <div className="d-flex gap-3xs small">
-                    <Icon size="xs" name={variation >= 0 ? "arrow-up-circle" : "arrow-down-circle"} addClass={variation > 0 ? " text-success" : " text-danger"} />
-                    <span className={variation > 0 ? " text-success" : " text-danger"}>
+                    <Icon 
+                        size="xs" 
+                        name={variation > 0 ? "arrow-up-circle" : variation < 0 ? "arrow-down-circle" : "arrow-right-circle"} 
+                        addClass={variation > 0 ? " text-success" : variation < 0 ? " text-danger" : " text-muted"} 
+                    />
+                    <span className={variation > 0 ? " text-success" : variation < 0 ? " text-danger" : "text-muted"}>
                         { (variation >= 0 ? "+" : "") + variation}{ isPercentage ? "%" : "" }
                     </span>
                     { difference && <span className="text-muted">({ difference >= 0 ? "+" : "-" }{ formattedDifference }%)</span> }
                 </div>
-            }
+            )}
         </div>
     )
 };

@@ -243,8 +243,8 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row grid gap-xs">
-                                                <StatCard number={42} caption="Opened" addClass="g-col-6" />
-                                                <StatCard number={12} caption="Clicked" addClass="g-col-6" />
+                                                <StatCard number={42} isPercentage={true} caption="Opened" addClass="g-col-6" />
+                                                <StatCard number={12} isPercentage={true} caption="Clicked" addClass="g-col-6" />
                                             </div>
                                             <div className="mt-auto">
                                                 <Button type="default" label="View mails" extended={true} />
@@ -274,13 +274,13 @@ export const ManageDashboard = () => {
                                         <StatCard number={10} isPercentage={true} variation={2} caption="Courses completions" link="#" />
                                     </div>
                                     <div className="cq-xs-6 cq-sm-4">
-                                        <StatCard number={5} caption="Mail delivered" link="#" />
+                                        <StatCard number={103} variation={34} caption="Mail delivered" link="#" />
                                     </div>
                                     <div className="cq-xs-6 cq-sm-4">
-                                        <StatCard number={0} caption="Projects" link="#" />
+                                        <StatCard number={0} variation={0} caption="Projects" link="#" />
                                     </div>
                                     <div className="cq-xs-6 cq-sm-4">
-                                        <StatCard number={0} caption="Followers" link="#" />
+                                        <StatCard number={0} variation={0} caption="Followers" link="#" />
                                     </div>
                                     <div className="cq-12">
                                         <Button type="default" label="Show more" extended={true} />
