@@ -3,6 +3,7 @@ import { Layout } from "../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Button } from "@/app/components/Button";
 import { CardFeed } from "@/app/components/cards/CardFeed";
+import { Icon } from "@/app/components/Icon";
 
 export const ProjectOverview = () => {
     return (
@@ -10,7 +11,7 @@ export const ProjectOverview = () => {
             <AppContent>
                 <div className="row">
                     <div className="col-12 col-lg-6 col-xl-8 ">
-                        <div className="application-section">
+                        <div className="application-section gap-md">
                             <div className="d-flex flex-column flex-md-row flex-lg-column flex-xl-row align-items-center flex-wrap flex-xl-nowrap gap-md">
                                 <div className="card-image-container">
                                     <div
@@ -30,24 +31,15 @@ export const ProjectOverview = () => {
                                                 <span>Project Name</span>
                                             </div>
                                         </div>
-                                        <ul className="list-inline list-dotted">
+                                        <ul className="text-muted small metas is-list mb-none">
                                             <li className="list-inline-item" data-toggle="tooltip"
                                                 data-placement="bottom"
                                                 data-original-title="<ul class='list-unstyled d-flex flex-column gap-2xs m-none'><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/2216e7ab-c701-4503-83a2-ae7b91afb15d/sq150.jpeg'></div><span>Alexandra Jolly</span></li>"
                                                 data-html="true"
                                                 data-boundary="window">
-                                                <ul className="metas is-list">
-                                                    <li>
-                                                        <div className="thumbnail-stack mr-2">
-                                                            <div className="thumbnail is-oval is-xs">
-                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/ade60d22-593c-49cd-a53e-a89b8557a94f/sq150.jpeg" />
-                                                            </div>
-                                                        </div>
-                                                        <a href="/program/71/project/2903/users">
-                                                            <small className="text-muted">1 member</small>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                                <a href="/program/71/project/2903/users">
+                                                    <small className="text-muted">1 member</small>
+                                                </a>
                                             </li>
                                             <li
                                                 className="list-inline-item"
@@ -57,21 +49,9 @@ export const ProjectOverview = () => {
                                                 data-html="true"
                                                 data-boundary="window"
                                             >
-                                                <ul className="metas is-list">
-                                                    <li>
-                                                        <div className="thumbnail-stack mr-2">
-                                                            <div className="thumbnail is-oval is-xs">
-                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
-                                                            </div>
-                                                            <div className="thumbnail is-oval is-xs">
-                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
-                                                            </div>
-                                                        </div>
-                                                        <a href="/program/71/project/2903/mentors">
-                                                            <small className="text-muted">2 Experts</small>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                                <a href="/program/71/project/2903/mentors">
+                                                    <small className="text-muted">2 experts</small>
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -110,17 +90,17 @@ export const ProjectOverview = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="to-collapse is-collapsed d-block border-top mt-5 pt-5" data-toggle="collapse" data-target="#Aboutproject" aria-expanded="false">
-                                <div className="d-flex align-items-center flex-fill">
-                                    <div className="d-flex align-items-center gap-2xs flex-grow-1">
-                                        <span className="icon icon-clipboard-text is-sm" />
-                                        <span>About the project</span>
+                            <div className="d-block bg-highlight rounded">
+                                <div className="d-flex align-items-center flex-fill text-muted p-md" data-toggle="collapse" data-target="#Aboutprogram" aria-expanded="false">
+                                    <div className="d-flex align-items-center gap-xs flex-grow-1">
+                                        <Icon name="information" size="sm" />
+                                        <span className="font-weight-bold">About the project</span>
                                     </div>
-                                    <span className="icon icon-chevron-right is-sm" />
+                                    <Icon name="chevron-right" size="sm" />
                                 </div>
-                                <div className="collapse bg-highlight rounded-sm p-md mb-2xs mt-md" id="Aboutproject">
+                                <div className="collapse px-md pb-md" id="Aboutprogram">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
+                                    <p>Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est.</p>
                                 </div>
                             </div>
                         </div>
