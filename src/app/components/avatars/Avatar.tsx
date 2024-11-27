@@ -36,9 +36,9 @@ export const Avatar = ({ addClass, size = "lg", isOval = true, isBordered = fals
     addClass && classTab.push(addClass);
 
     return (
-        <span className={classTab.join(" ")} {...props}>
+        <div className={classTab.join(" ")} {...props}>
             {iconName && !image && <Icon name={iconName} />}
             {image && <img src={image}></img>}
-        </span> 
+        </div> 
     );
 };

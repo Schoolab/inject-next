@@ -5,6 +5,10 @@ import { CardEvent } from "@/app/components/cards/CardEvent";
 import { Button } from "@/app/components/Button";
 import { CardFeed } from "@/app/components/cards/CardFeed";
 import { ItemResource } from "@/app/components/items/ItemResource";
+import { Icon } from "@/app/components/Icon";
+import { Dropdown } from "@/app/components/dropdown/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
 
 export const ProgramDashboardDefault = () => {
     return (
@@ -12,7 +16,7 @@ export const ProgramDashboardDefault = () => {
             <AppContent>
                 <div className="row">
                     <div className="col-12 col-lg-6 col-xl-8">
-                        <div className="application-section">
+                        <div className="application-section gap-md">
                             <div className="d-flex flex-column flex-md-row flex-lg-column flex-xl-row align-items-center flex-wrap flex-xl-nowrap gap-md">
                                 <div className="card-image-container">
                                     <div
@@ -33,7 +37,7 @@ export const ProgramDashboardDefault = () => {
                                             </div>
                                         </div>
 
-                                        <ul className="list-inline list-dotted">
+                                        <ul className="text-muted small metas is-list mb-none">
                                             <li
                                                 className="list-inline-item"
                                                 data-toggle="tooltip"
@@ -42,24 +46,9 @@ export const ProgramDashboardDefault = () => {
                                                 data-html="true"
                                                 data-boundary="window"
                                             >
-                                                <ul className="metas is-list">
-                                                    <li>
-                                                        <div className="thumbnail-stack mr-2">
-                                                            <div className="thumbnail is-oval is-xs">
-                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/ade60d22-593c-49cd-a53e-a89b8557a94f/sq150.jpeg" />
-                                                            </div>
-                                                            <div className="thumbnail is-oval is-xs">
-                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/ade60d22-593c-49cd-a53e-a89b8557a94f/sq150.jpeg" />
-                                                            </div>
-                                                            <div className="thumbnail is-oval is-xs">
-                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/ade60d22-593c-49cd-a53e-a89b8557a94f/sq150.jpeg" />
-                                                            </div>
-                                                        </div>
-                                                        <a href="/program/71/project/2903/users">
-                                                            <small className="text-muted">8 members</small>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                                <a href="/program/71/project/2903/users">
+                                                    <small className="text-muted">8 members</small>
+                                                </a>
                                             </li>
                                             <li
                                                 className="list-inline-item"
@@ -69,24 +58,9 @@ export const ProgramDashboardDefault = () => {
                                                 data-html="true"
                                                 data-boundary="window"
                                             >
-                                                <ul className="metas is-list">
-                                                    <li>
-                                                        <div className="thumbnail-stack mr-2">
-                                                            <div className="thumbnail is-oval is-xs">
-                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
-                                                            </div>
-                                                            <div className="thumbnail is-oval is-xs">
-                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
-                                                            </div>
-                                                            <div className="thumbnail is-oval is-xs">
-                                                                <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
-                                                            </div>
-                                                        </div>
-                                                        <a href="/program/71/project/2903/mentors">
-                                                            <small className="text-muted">3 Managers</small>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                                <a href="/program/71/project/2903/mentors">
+                                                    <small className="text-muted">3 managers</small>
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -111,35 +85,27 @@ export const ProgramDashboardDefault = () => {
                                             </a>
                                         </div>
                                     </div>
-                                    <div className="dropdown">
-                                        <a className="btn btn-transparent btn-lg btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span className="icon is-20px icon-options" />
-                                        </a>
-                                        <div className="dropdown-menu dropdown-menu-right">
-                                            <a className="dropdown-item" href="#">
-                                                <span>My submission</span>
-                                            </a>
-                                            <a className="dropdown-item" href="#">
-                                                <span>Setting 2</span>
-                                            </a>
-                                            <a className="dropdown-item" href="#">
-                                                <span>Setting 3</span>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <Dropdown addClass="z-2">
+                                        <Button type="muted" iconStartName="options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
+                                        <DropdownMenu direction="right">
+                                            <DropdownItem label="My submissio" />
+                                            <DropdownItem label="Setting 1" />
+                                            <DropdownItem label="Setting 2" />
+                                        </DropdownMenu>
+                                    </Dropdown>
                                 </div>
                             </div>
-                            <div className="to-collapse is-collapsed d-block border-top mt-5 pt-5" data-toggle="collapse" data-target="#Aboutprogram" aria-expanded="false">
-                                <div className="d-flex align-items-center flex-fill">
-                                    <div className="d-flex align-items-center gap-2xs flex-grow-1">
-                                        <span className="icon icon-clipboard-text is-sm" />
-                                        <span>About the program</span>
+                            <div className="d-block bg-highlight rounded">
+                                <div className="d-flex align-items-center flex-fill text-muted p-md" data-toggle="collapse" data-target="#Aboutprogram" aria-expanded="false">
+                                    <div className="d-flex align-items-center gap-xs flex-grow-1">
+                                        <Icon name="information" size="sm" />
+                                        <span className="font-weight-bold">About the program</span>
                                     </div>
-                                    <span className="icon icon-chevron-right is-sm" />
+                                    <Icon name="chevron-right" size="sm" />
                                 </div>
-                                <div className="collapse bg-highlight rounded-sm p-md mb-2xs mt-md" id="Aboutprogram">
+                                <div className="collapse px-md pb-md" id="Aboutprogram">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
+                                    <p>Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est.</p>
                                 </div>
                             </div>
                         </div>
