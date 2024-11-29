@@ -16,7 +16,7 @@ export const ProgramEventsEvent = () => {
                 <div className="d-flex align-items-start">
                     <div className="container-lg container-fluid">
                         <div className="row justify-content-center flex-grow-1">
-                            <div className="col-12 col-xl-8 ">
+                            <div className="col-12">
                                 <div className="application-section">
                                     <div className="mb-5">
                                         <a href="/program/147/events/417">
@@ -143,98 +143,35 @@ export const ProgramEventsEvent = () => {
                                     </div>
                                     
                                     <div className="aside-buttons-bottom d-flex flex-column flex-lg-row">
-                                        <button id="btn-quiz" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0 active">
-                                            <span className="icon icon-comment mr-2" />
-                                            Chat
-                                        </button>
                                         <button id="btn-quiz" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
                                             <span className="icon icon-cloud-download mr-2" />
-                                            Resources
+                                            <span>Resources</span>
                                         </button>
+                                        <button id="btn-quiz" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
+                                            <span className="icon icon-calendar" />
+                                            <span>Upcoming events</span>
+                                        </button>
+                                        <button id="btn-quiz" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0 active">
+                                            <span className="icon icon-comment mr-2" />
+                                            <span>Chat</span>
+                                        </button>
+                                     
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-xl-4">
-                                <div className="application-section">
-                                    <h3 className="application-section--title"> Upcoming events </h3>
-                                    <div className="item is-bordered">
-                                        <div className="item-cover is-3by1">
-                                            <a href="/program/147/events/417">
-                                                <picture>
-                                                    <source media="(max-width:576px)" srcSet="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co576x192.jpeg" />
-                                                    <source media="(max-width:768px)" srcSet="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co768x256.jpeg" />
-                                                    <source media="(max-width:1140px)" srcSet="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg" />
-                                                    <img className="img-fluid d-block" src="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg" alt="" width={1140} height={380} />
-                                                </picture>
-                                            </a>
-                                        </div>
-                                        <div className="item-row">
-                                            <div className="thumbnail is-date" title="30/03/2023">
-                                                <span className="month">Mar</span>
-                                                <span className="day">30</span>
-                                            </div>
-                                            <div className="item-content ml-4 py-1">
-                                                <a className="item-title h4 mb-none stretched-link" href="/program/147/events/417">
-                                                    {" "}
-                                                    Tradeshow{" "}
-                                                </a>
-                                                <ul className="item-caption metas small is-list">
-                                                    <li>09:30</li>
-                                                    <li>Adresse</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item is-bordered">
-                                        <div className="item-row">
-                                            <div className="thumbnail is-date" title="30/03/2023">
-                                                <span className="month">Mar</span>
-                                                <span className="day">30</span>
-                                            </div>
-                                            <div className="item-content ml-4 py-1">
-                                                <a className="item-title h4 mb-none stretched-link" href="/program/147/events/417">
-                                                    {" "}
-                                                    Tradeshow{" "}
-                                                </a>
-                                                <ul className="item-caption metas small is-list">
-                                                    <li>09:30</li>
-                                                    <li>Adresse</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item is-bordered">
-                                        <div className="item-row">
-                                            <div className="thumbnail is-date" title="30/03/2023">
-                                                <span className="month">Mar</span>
-                                                <span className="day">30</span>
-                                            </div>
-                                            <div className="item-content ml-4 py-1">
-                                                <a className="item-title h4 mb-none stretched-link" href="/program/147/events/417">
-                                                    {" "}
-                                                    Tradeshow{" "}
-                                                </a>
-                                                <ul className="item-caption metas small is-list">
-                                                    <li>09:30</li>
-                                                    <li>Adresse</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a className="btn btn-lg btn-block btn-default" href="/program/75/managers">
-                                        {" "}
-                                        Show more{" "}
-                                    </a>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                     <div className="aside-buttons no-subnav">
-                        <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Chat">
-                            <span className="icon icon-comment" />
-                        </button>
+                 
                         <button className="btn  btn-lg btn-default mb-3" data-toggle="tooltip" data-original-title="Resources">
                             <span className="icon icon-cloud-download" />
+                        </button>
+                        <button className="btn  btn-lg btn-default mb-3" data-toggle="tooltip" data-original-title="Upcoming events">
+                            <span className="icon icon-calendar" />
+                        </button>
+                        <button className="btn btn-lg btn-default mb-3 active" data-toggle="tooltip" data-original-title="Chat">
+                            <span className="icon icon-comment" />
                         </button>
                     </div>
                 </div>
