@@ -41,9 +41,9 @@ export const ModalProjectTab = ({}: ModalProjectTabProps) => {
                             </button>
                         </div>
                     </div>
-                    <div className="tab-content" id="projectTabsContent">
+                    <div className="tab-content modal-body" id="projectTabsContent">
                         <div id="info" role="tabpanel" aria-labelledby="info-tab" className="tab-pane fade active show">
-                            <div className="modal-body d-flex flex-column gap-md">
+                            <div className=" d-flex flex-column gap-md">
                                 <div className="d-flex flex-column flex-lg-row align-items-center flex-wrap flex-lg-nowrap gap-md">
                                     <div className="card-image-container">
                                         <div className="card-image bg-highlight">
@@ -177,7 +177,7 @@ export const ModalProjectTab = ({}: ModalProjectTabProps) => {
                             </div>
                         </div>
                         <div id="responses" role="tabpanel" aria-labelledby="data-tab" className="tab-pane fade">
-                            <div className="modal-body d-flex flex-column gap-md">
+                            <div className=" d-flex flex-column gap-md">
                                 <div id="fields_configuration_form">
                                     <fieldset className="form-group">
                                         <div id="fields_configuration_form_categories">
@@ -572,7 +572,7 @@ export const ModalProjectTab = ({}: ModalProjectTabProps) => {
                             </div>
                         </div>
                         <div id="data" role="tabpanel" aria-labelledby="members-tab" className="tab-pane fade">
-                            <div className="modal-body d-flex flex-column gap-md">
+                            <div className=" d-flex flex-column gap-md">
                                 <div className="cards">
                                     <div className="card">
                                         <div className="card-infos is-linked d-flex align-items-start gap-sm">

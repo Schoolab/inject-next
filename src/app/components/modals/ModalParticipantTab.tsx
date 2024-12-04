@@ -41,9 +41,9 @@ export const ModalParticipantTab = ({}: ModalParticipantTabProps) => {
                             </button>
                         </div>
                     </div>
-                    <div className="tab-content" id="projectTabsContent">
+                    <div className="tab-content modal-body" id="projectTabsContent">
                         <div id="info" role="tabpanel" aria-labelledby="info-tab" className="tab-pane fade active show">
-                            <div className="modal-body d-flex flex-column gap-md">
+                            <div className="d-flex flex-column gap-md">
                                 <div className="d-flex flex-column flex-md-row align-items-center flex-wrap flex-md-nowrap gap-md">
                                     <a href="#" className="thumbnail is-oval is-2xl is-bordered mb-3">
                                         <img src="https://inject-prod.s3.amazonaws.com/images/41c42fb1-35bd-4a31-bf08-3b2267df4b95/sq150.jpeg" />
@@ -207,7 +207,7 @@ export const ModalParticipantTab = ({}: ModalParticipantTabProps) => {
                             </div>
                         </div>
                         <div id="responses" role="tabpanel" aria-labelledby="responses-tab" className="tab-pane fade">
-                            <div className="modal-body d-flex flex-column gap-md">
+                            <div className="d-flex flex-column gap-md">
                                 <p>(ici il y aura un rappel des consignes données aux participant·e·s)</p>
                                 <div className="form-group">
                                     <label className="font-weight-bold" htmlFor="q1">
@@ -301,7 +301,7 @@ export const ModalParticipantTab = ({}: ModalParticipantTabProps) => {
                             </div>
                         </div>
                         <div id="data" role="tabpanel" aria-labelledby="participations-tab" className="tab-pane fade">
-                            <div className="modal-body d-flex flex-column gap-md">
+                            <div className="d-flex flex-column gap-md">
                                 <div className="cards">
                                     <div className="card">
                                         <div className="card-infos is-linked d-flex align-items-start gap-sm">
