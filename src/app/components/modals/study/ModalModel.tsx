@@ -37,7 +37,7 @@ export const ModalModel = ({}: ModalModelProps) => {
                             </button>
                         </div>
                     </div>
-                    <div className="tab-content h-100" id="projectTabsContent">
+                    <div className="tab-content" id="projectTabsContent">
                         <div id="info" role="tabpanel" aria-labelledby="info-tab" className="tab-pane h-100 fade active show">
                             <div className="modal-body d-flex flex-column gap-md">
                                 <p>Content here...</p>
