@@ -33,7 +33,7 @@ export const ModalParticipantTab = ({}: ModalParticipantTabProps) => {
                             <Button type="default" size="sm" iconStartName="chevron-right" data-toggle="tooltip" data-original-title="Next" />
                         </div>
                         <div className="modal-actions">
-                            <a className="btn btn-transparent border-0 p-2xs text-muted" data-toggle="tooltip" data-original-title="Open in new tab" href="#">
+                            <a className="btn btn-transparent border-0 p-2xs text-muted" data-toggle="tooltip" data-original-title="Open full page" href="#">
                                 <span className="icon icon-new-tab is-24px" />
                             </a>
                             <button className="btn btn-transparent border-0 p-2xs text-muted" type="button" data-dismiss="modal" aria-label="Close">
@@ -419,8 +419,7 @@ export const ModalParticipantTab = ({}: ModalParticipantTabProps) => {
                     </div>
                     <div className="modal-footer border-top">
                         <div className="d-flex flex-fill" data-toggle="tooltip" data-placement="top" data-original-title="This page is not available or is private." data-html="true" data-boundary="window">
-                            <a className="btn btn-lg btn-block btn-default disabled" href="#">
-                                <span className="icon icon-lock" />
+                            <a className="btn btn-lg btn-block btn-default" href="#">
                                 <span>Open full page</span>
                             </a>
                         </div>

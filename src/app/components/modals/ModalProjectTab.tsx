@@ -33,7 +33,7 @@ export const ModalProjectTab = ({}: ModalProjectTabProps) => {
                             <Button type="default" size="sm" iconStartName="chevron-right" data-toggle="tooltip" data-original-title="Next" />
                         </div>
                         <div className="modal-actions">
-                            <a className="btn btn-transparent border-0 p-2xs text-muted" data-toggle="tooltip" data-original-title="Open in new tab" href="#">
+                            <a className="btn btn-transparent border-0 p-2xs text-muted" data-toggle="tooltip" data-original-title="Open full page" href="#">
                                 <span className="icon icon-new-tab is-24px" />
                             </a>
                             <button className="btn btn-transparent border-0 p-2xs text-muted" type="button" data-dismiss="modal" aria-label="Close">
@@ -46,11 +46,6 @@ export const ModalProjectTab = ({}: ModalProjectTabProps) => {
                             <div className="modal-body d-flex flex-column gap-md">
                                 <div className="d-flex flex-column flex-lg-row align-items-center flex-wrap flex-lg-nowrap gap-md">
                                     <div className="card-image-container">
-                                        {/* <div class="card-image">
-                              <picture>
-                                  <img src="https://inject-prod.s3.amazonaws.com/challenge/cover/pink_co900x600.png" alt="">
-                              </picture>
-                          </div> */}
                                         <div className="card-image bg-highlight">
                                             <span className="icon icon--letter is-40px position-absolute top-50 start-50 translate-middle">
                                                 <span>A</span>
@@ -60,7 +55,6 @@ export const ModalProjectTab = ({}: ModalProjectTabProps) => {
                                     <div className="d-flex flex-column align-items-center align-items-lg-start gap-xs flex-fill">
                                         <div className="d-flex flex-column align-items-center align-items-lg-start gap-0">
                                             <div className="d-flex align-items-center gap-2xs">
-                                                {/* <span class="icon icon-pin is-24px z-2" data-toggle="tooltip" data-placement="top" data-original-title="Pinned projects are visible on the organization Hub" data-boundary="window"></span> */}
                                                 <a href="#" className="h3 line-clamp-1 d-flex align-items-center gap-2xs">
                                                     <span>ACME</span>
                                                 </a>
@@ -184,95 +178,396 @@ export const ModalProjectTab = ({}: ModalProjectTabProps) => {
                         </div>
                         <div id="responses" role="tabpanel" aria-labelledby="data-tab" className="tab-pane fade">
                             <div className="modal-body d-flex flex-column gap-md">
-                                <p>(ici il y aura un rappel des consignes données aux participant·e·s)</p>
-                                <div className="form-group">
-                                    <label className="font-weight-bold" htmlFor="q1">
-                                        À quel problème répondez-vous ?
-                                    </label>
-                                    <textarea disabled id="q1" name="translations_wrapper[lang_en][name]" data-q1="name" aria-describedby="q1_help" className="form-control" placeholder="e.g. What is you school name?" defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa."} />
-                                    <small id="q1_help" className="form-text text-muted">
-                                        Hint text
-                                    </small>
-                                </div>
-                                <div className="form-group">
-                                    <label className="font-weight-bold" htmlFor="q1">
-                                        Quelle est votre proposition de valeur / solution ?
-                                    </label>
-                                    <textarea disabled id="q1" name="translations_wrapper[lang_en][name]" data-q1="name" aria-describedby="q1_help" className="form-control" placeholder="e.g. What is you school name?" defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa."} />
-                                </div>
-                                <div className="form-group">
-                                    <label className="font-weight-bold" htmlFor="q1">
-                                        Un pitch deck a nous partager ?
-                                    </label>
-                                    <div className="d-flex flex-column gap-xs">
-                                        <div className="item is-bordered gap-0 resource">
-                                            <div className="item-cover">
-                                                <a href="#">
-                                                    <picture>
-                                                        <img src="../img/pitch-deck-tidycards.png" alt="" />
-                                                    </picture>
-                                                </a>
-                                            </div>
-                                            <div className="item-row p-sm">
-                                                <div className="item-row gap-xs">
-                                                    <div className="item-icon icon icon-file-pdf-box text-danger" />
-                                                    <div className="item-content">
-                                                        <a className="item-title h4 mb-none stretched-link text-truncate" href="#" target="_blank">
-                                                            pitch-deck-tidycards.pdf
-                                                        </a>
-                                                        <ul className="item-caption metas small is-list">
-                                                            <li>
-                                                                <span>PDF File</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>120 KB</span>
-                                                            </li>
-                                                        </ul>
+                                <div id="fields_configuration_form">
+                                    <fieldset className="form-group">
+                                        <div id="fields_configuration_form_categories">
+                                            <fieldset className="form-group">
+                                                <legend className="checkbox-custom font-weight-bold col-form-label">Impact</legend>
+                                                <div id="fields_configuration_form_categories_6" data-display="custom">
+                                                    <div className="d-flex flex-wrap">
+                                                        <div className="custom-label ">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_6_0" name="fields_configuration_form[categories][6][]" disabled className="is-solo d-none" defaultValue={35} />
+                                                            <label className="d-flex flex-column p-5" htmlFor="fields_configuration_form_categories_6_0" title="No impact">
+                                                                {/* <span className="icon icon-cancel is-md mb-3" /> */}
+                                                                <span className="text-truncate">No impact</span>
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label ">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_6_1" name="fields_configuration_form[categories][6][]" disabled className="d-none" defaultValue={7} />
+                                                            <label className="d-flex flex-column p-5" htmlFor="fields_configuration_form_categories_6_1" title="Sustainable">
+                                                                {/* <span className="icon icon-leaf is-md mb-3" /> */}
+                                                                <span className="text-truncate">Sustainable</span>
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label ">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_6_2" name="fields_configuration_form[categories][6][]" disabled className="d-none" defaultValue={8} />
+                                                            <label className="d-flex flex-column p-5" htmlFor="fields_configuration_form_categories_6_2" title="Equitable">
+                                                                {/* <span className="icon icon-scale-balance is-md mb-3" /> */}
+                                                                <span className="text-truncate">Equitable</span>
+                                                            </label>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div className="item-options">
-                                                    <a className="btn btn-lg btn-transparent btn-icon z-2" href="https://schoolab.skedda.com/register?i=277598&k=0tUkWBHX4UlHvcRlvn6Cx60VhMZD7EZl" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Download" data-html="true" data-boundary="window">
-                                                        <span className="icon icon-cloud-download" />
-                                                    </a>
+                                            </fieldset>
+                                            <fieldset className="form-group">
+                                                <legend className="checkbox-custom font-weight-bold col-form-label">Verticals</legend>
+                                                <div id="fields_configuration_form_categories_9" data-display="custom">
+                                                    <div className="d-flex flex-wrap">
+                                                        <div className="custom-label ">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_9_0" name="fields_configuration_form[categories][9][]" disabled className="d-none" defaultValue={10} />
+                                                            <label className="d-flex flex-column p-5" htmlFor="fields_configuration_form_categories_9_0" title="Plastic">
+                                                                {/* <span className="icon icon-bottle-soda-classic-outline is-md mb-3" /> */}
+                                                                <span className="text-truncate">Plastic</span>
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label ">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_9_1" name="fields_configuration_form[categories][9][]" disabled className="d-none" defaultValue={11} />
+                                                            <label className="d-flex flex-column p-5" htmlFor="fields_configuration_form_categories_9_1" title="Food">
+                                                                {/* <span className="icon icon-corn is-md mb-3" /> */}
+                                                                <span className="text-truncate">Food</span>
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label ">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_9_2" name="fields_configuration_form[categories][9][]" disabled className="d-none" defaultValue={12} />
+                                                            <label className="d-flex flex-column p-5" htmlFor="fields_configuration_form_categories_9_2" title="DEI">
+                                                                {/* <span className="icon icon-account-group is-md mb-3" /> */}
+                                                                <span className="text-truncate">DEI</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset className="form-group">
+                                                <legend className="checkbox-custom font-weight-bold col-form-label">SDGs</legend>
+                                                <div id="fields_configuration_form_categories_13" data-display="custom">
+                                                    <div className="d-flex flex-wrap">
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_0" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={14} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_0" title="1 - No poverty">
+                                                                <img src="img/odd/F-WEB-Goal-01.png" alt="1 - No poverty" title="1 - No poverty" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_1" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={15} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_1" title="2 - Zero hunger">
+                                                                <img src="img/odd/F-WEB-Goal-02.png" alt="2 - Zero hunger" title="2 - Zero hunger" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_2" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={16} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_2" title="3 - Good health and well-being">
+                                                                <img src="img/odd/F-WEB-Goal-03.png" alt="3 - Good health and well-being" title="3 - Good health and well-being" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_3" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={17} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_3" title="4 - Quality education">
+                                                                <img src="img/odd/F-WEB-Goal-04.png" alt="4 - Quality education" title="4 - Quality education" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_4" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={18} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_4" title="5 - Gender equality">
+                                                                <img src="img/odd/F-WEB-Goal-05.png" alt="5 - Gender equality" title="5 - Gender equality" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_5" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={19} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_5" title="6 - Clean water and sanitation">
+                                                                <img src="img/odd/F-WEB-Goal-06.png" alt="6 - Clean water and sanitation" title="6 - Clean water and sanitation" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_6" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={20} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_6" title="7 - Affordable and clean energy">
+                                                                <img src="img/odd/F-WEB-Goal-07.png" alt="7 - Affordable and clean energy" title="7 - Affordable and clean energy" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_7" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={21} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_7" title="8 - Decent work and economic growth">
+                                                                <img src="img/odd/F-WEB-Goal-08.png" alt="8 - Decent work and economic growth" title="8 - Decent work and economic growth" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_8" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={22} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_8" title="9 - Industry, innovation and infrastructure">
+                                                                <img src="img/odd/F-WEB-Goal-09.png" alt="9 - Industry, innovation and infrastructure" title="9 - Industry, innovation and infrastructure" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_9" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={23} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_9" title="10 - Reduced inequalities">
+                                                                <img src="img/odd/F-WEB-Goal-10.png" alt="10 - Reduced inequalities" title="10 - Reduced inequalities" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_10" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={24} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_10" title="11 - Sustainable cities and communities">
+                                                                <img src="img/odd/F-WEB-Goal-11.png" alt="11 - Sustainable cities and communities" title="11 - Sustainable cities and communities" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_11" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={25} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_11" title="12 - Responsible consumption and production">
+                                                                <img src="img/odd/F-WEB-Goal-12.png" alt="12 - Responsible consumption and production" title="12 - Responsible consumption and production" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_12" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={26} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_12" title="13 - Climate action">
+                                                                <img src="img/odd/F-WEB-Goal-13.png" alt="13 - Climate action" title="13 - Climate action" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_13" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={27} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_13" title="14 - Life below water">
+                                                                <img src="img/odd/F-WEB-Goal-14.png" alt="14 - Life below water" title="14 - Life below water" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_14" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={28} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_14" title="15 - Life on land">
+                                                                <img src="img/odd/F-WEB-Goal-15.png" alt="15 - Life on land" title="15 - Life on land" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_15" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={29} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_15" title="16 - Peace, justice and strong institutions">
+                                                                <img src="img/odd/F-WEB-Goal-16.png" alt="16 - Peace, justice and strong institutions" title="16 - Peace, justice and strong institutions" />
+                                                            </label>
+                                                        </div>
+                                                        <div className="custom-label custom-label--sdg">
+                                                            <input type="checkbox" id="fields_configuration_form_categories_13_16" name="fields_configuration_form[categories][13][]" disabled className="d-none" defaultValue={30} />
+                                                            <label className="d-flex flex-column p-1" htmlFor="fields_configuration_form_categories_13_16" title="17 - Partnerships for the goals">
+                                                                <img src="img/odd/F-WEB-Goal-17.png" alt="17 - Partnerships for the goals" title="17 - Partnerships for the goals" />
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <div className="form-group">
+                                                {" "}
+                                                <label className="checkbox-custom font-weight-bold" htmlFor="fields_configuration_form_categories_51">
+                                                    Business line
+                                                </label>
+                                                <div className="dropdown bootstrap-select disabled form-control">
+                                                    <select id="fields_configuration_form_categories_51" name="fields_configuration_form[categories][51]" disabled data-display="custom" className="form-control" tabIndex={-98}>
+                                                        <option value="" />
+                                                        <option value={80}>Agriculture and Food Production</option>
+                                                        <option value={81}>Corporate services</option>
+                                                        <option value={82}>Education</option>
+                                                        <option value={58}>Energy and Utilities</option>
+                                                        <option value={83}>Entertainment</option>
+                                                        <option value={52}>Financial Services</option>
+                                                        <option value={53}>Healthcare and Life Sciences</option>
+                                                        <option value={62}>Hospitality and Tourism</option>
+                                                        <option value={56}>Manufacturing</option>
+                                                        <option value={84}>Media</option>
+                                                        <option value={61}>Mobility and Logistics</option>
+                                                        <option value={57}>Public Administration and Government Services</option>
+                                                        <option value={60}>Real Estate and Construction</option>
+                                                        <option value={55}>Retail and Consumer Goods</option>
+                                                        <option value={54}>Software and Technology</option>
+                                                        <option value={59}>Telecommunications</option>
+                                                        <option value={63}>Other</option>
+                                                    </select>
+                                                    <button type="button" className="btn btn-lg dropdown-toggle disabled btn-default bs-placeholder" data-toggle="dropdown" role="button" data-id="fields_configuration_form_categories_51" tabIndex={-1} aria-disabled="true" title="Nothing selected">
+                                                        <div className="filter-option">
+                                                            <div className="filter-option-inner">
+                                                                <div className="filter-option-inner-inner">Nothing selected</div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                    <div className="dropdown-menu " role="combobox">
+                                                        <div className="inner show" role="listbox" aria-expanded="false" tabIndex={-1}>
+                                                            <ul className="dropdown-menu inner show" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="form-group">
+                                                {" "}
+                                                <label className="checkbox-custom font-weight-bold" htmlFor="fields_configuration_form_categories_64">
+                                                    Technologies
+                                                </label>
+                                                <div className="dropdown bootstrap-select show-tick disabled form-control">
+                                                    <select id="fields_configuration_form_categories_64" name="fields_configuration_form[categories][64][]" disabled data-display="custom" className="form-control" multiple tabIndex={-98}>
+                                                        <option value={65}>Artificial Intelligence and Machine Learning</option>
+                                                        <option value={66}>Biotechnology</option>
+                                                        <option value={67}>Blockchain Technology (Web3…)</option>
+                                                        <option value={68}>Engineering Technology</option>
+                                                        <option value={69}>Entertainment</option>
+                                                        <option value={70}>Information Technology (IT, IoT, …)</option>
+                                                        <option value={71}>Medical Technology</option>
+                                                        <option value={72}>Nanotechnology</option>
+                                                        <option value={73}>Quantum Technology</option>
+                                                        <option value={74}>Renewable Energy Technology</option>
+                                                        <option value={75}>Robotics and Automation</option>
+                                                        <option value={76}>Space Technology</option>
+                                                        <option value={77}>Virtual Reality (VR) and Augmented Reality (AR)</option>
+                                                        <option value={78}>Other</option>
+                                                    </select>
+                                                    <button type="button" className="btn btn-lg dropdown-toggle disabled btn-default bs-placeholder" data-toggle="dropdown" role="button" data-id="fields_configuration_form_categories_64" tabIndex={-1} aria-disabled="true" title="Nothing selected">
+                                                        <div className="filter-option">
+                                                            <div className="filter-option-inner">
+                                                                <div className="filter-option-inner-inner">Nothing selected</div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                    <div className="dropdown-menu " role="combobox">
+                                                        <div className="inner show" role="listbox" aria-expanded="false" tabIndex={-1}>
+                                                            <ul className="dropdown-menu inner show" />
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="item is-bordered gap-0 resource">
-                                            <div className="item-row p-sm">
-                                                <div className="item-row gap-xs">
-                                                    <div className="item-icon icon icon-file-pdf-box text-danger" />
-                                                    <div className="item-content">
-                                                        <a className="item-title h4 mb-none stretched-link text-truncate" href="#" target="_blank">
-                                                            pitch-deck-tidycards.pdf
-                                                        </a>
-                                                        <ul className="item-caption metas small is-list">
-                                                            <li>
-                                                                <span>PDF File</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>120 KB</span>
-                                                            </li>
-                                                        </ul>
+                                    </fieldset>
+                                    <fieldset className="form-group">
+                                        <div id="fields_configuration_form_customData">
+                                            <div className="form-group">
+                                                {" "}
+                                                <label className="checkbox-custom font-weight-bold" htmlFor="fields_configuration_form_customData_problematics">
+                                                    Problems addressed
+                                                </label>
+                                                <textarea
+                                                    id="fields_configuration_form_customData_problematics"
+                                                    name="fields_configuration_form[customData][problematics]"
+                                                    disabled
+                                                    rows={4}
+                                                    className="form-control"
+                                                    style={{
+                                                        overflow: "hidden",
+                                                        overflowWrap: "break-word",
+                                                        resize: "none",
+                                                        height: 100,
+                                                    }}
+                                                    defaultValue={""}
+                                                />
+                                            </div>
+                                            <div className="form-group">
+                                                {" "}
+                                                <label className="checkbox-custom font-weight-bold" htmlFor="fields_configuration_form_customData_methodology">
+                                                    Methodology used
+                                                </label>
+                                                <div className="dropdown bootstrap-select show-tick disabled form-control">
+                                                    <select id="fields_configuration_form_customData_methodology" name="fields_configuration_form[customData][methodology][]" disabled className="form-control" multiple tabIndex={-98}>
+                                                        <option value="consulting">Consulting</option>
+                                                        <option value="design_fiction">Design fiction</option>
+                                                        <option value="design_thinking">Design thinking</option>
+                                                        <option value="educational_engineering">Educational engineering</option>
+                                                        <option value="sustainable_design">Sustainable design</option>
+                                                        <option value="ux_ui">UX / UI</option>
+                                                        <option value="other">Other</option>
+                                                    </select>
+                                                    <button type="button" className="btn btn-lg dropdown-toggle disabled btn-default bs-placeholder" data-toggle="dropdown" role="button" data-id="fields_configuration_form_customData_methodology" tabIndex={-1} aria-disabled="true" title="Nothing selected">
+                                                        <div className="filter-option">
+                                                            <div className="filter-option-inner">
+                                                                <div className="filter-option-inner-inner">Nothing selected</div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                    <div className="dropdown-menu " role="combobox">
+                                                        <div className="inner show" role="listbox" aria-expanded="false" tabIndex={-1}>
+                                                            <ul className="dropdown-menu inner show" />
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div className="item-options">
-                                                    <a className="btn btn-lg btn-transparent btn-icon z-2" href="https://schoolab.skedda.com/register?i=277598&k=0tUkWBHX4UlHvcRlvn6Cx60VhMZD7EZl" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Download" data-html="true" data-boundary="window">
-                                                        <span className="icon icon-cloud-download" />
-                                                    </a>
+                                            </div>
+                                            <div className="form-group">
+                                                {" "}
+                                                <label className="checkbox-custom font-weight-bold" htmlFor="fields_configuration_form_customData_impact">
+                                                    Results and impact (including environmental and social impact)
+                                                </label>
+                                                <textarea
+                                                    id="fields_configuration_form_customData_impact"
+                                                    name="fields_configuration_form[customData][impact]"
+                                                    disabled
+                                                    rows={4}
+                                                    className="form-control"
+                                                    style={{
+                                                        overflow: "hidden",
+                                                        overflowWrap: "break-word",
+                                                        resize: "none",
+                                                        height: 100,
+                                                    }}
+                                                    defaultValue={""}
+                                                />
+                                            </div>
+                                            <div className="form-group">
+                                                {" "}
+                                                <label className="checkbox-custom font-weight-bold" htmlFor="fields_configuration_form_customData_customer_verbatim">
+                                                    Customer verbatim
+                                                </label>
+                                                <textarea
+                                                    id="fields_configuration_form_customData_customer_verbatim"
+                                                    name="fields_configuration_form[customData][customer_verbatim]"
+                                                    disabled
+                                                    rows={4}
+                                                    className="form-control"
+                                                    style={{
+                                                        overflow: "hidden",
+                                                        overflowWrap: "break-word",
+                                                        resize: "none",
+                                                        height: 100,
+                                                    }}
+                                                    defaultValue={""}
+                                                />
+                                            </div>
+                                            <div className="form-group">
+                                                {" "}
+                                                <label className="checkbox-custom font-weight-bold" htmlFor="fields_configuration_form_customData_confidentiality">
+                                                    Confidentiality
+                                                </label>
+                                                <div className="dropdown bootstrap-select disabled form-control">
+                                                    <select id="fields_configuration_form_customData_confidentiality" name="fields_configuration_form[customData][confidentiality]" disabled className="form-control" tabIndex={-98}>
+                                                        <option value="" />
+                                                        <option value="public">Public</option>
+                                                        <option value="confidential">Confidential</option>
+                                                    </select>
+                                                    <button type="button" className="btn btn-lg dropdown-toggle disabled btn-default bs-placeholder" data-toggle="dropdown" role="button" data-id="fields_configuration_form_customData_confidentiality" tabIndex={-1} aria-disabled="true" title="Nothing selected">
+                                                        <div className="filter-option">
+                                                            <div className="filter-option-inner">
+                                                                <div className="filter-option-inner-inner">Nothing selected</div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                    <div className="dropdown-menu " role="combobox">
+                                                        <div className="inner show" role="listbox" aria-expanded="false" tabIndex={-1}>
+                                                            <ul className="dropdown-menu inner show" />
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <div className="form-group">
+                                                {" "}
+                                                <label className="checkbox-custom font-weight-bold" htmlFor="fields_configuration_form_customData_note">
+                                                    Note
+                                                </label>
+                                                <textarea
+                                                    id="fields_configuration_form_customData_note"
+                                                    name="fields_configuration_form[customData][note]"
+                                                    disabled
+                                                    aria-describedby="fields_configuration_form_customData_note_help"
+                                                    rows={4}
+                                                    className="form-control"
+                                                    style={{
+                                                        overflow: "hidden",
+                                                        overflowWrap: "break-word",
+                                                        resize: "none",
+                                                        height: 100,
+                                                    }}
+                                                    defaultValue={""}
+                                                />{" "}
+                                                <small id="fields_configuration_form_customData_note_help" className="form-text text-muted">
+                                                    Why do we believe in it (team, sales drive, etc.)?
+                                                </small>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div className="form-group">
-                                    <label className="font-weight-bold" htmlFor="q1">
-                                        Quelles sont les catégories de votre projet ?
-                                    </label>
-                                    <div className="badges w-100 m-none">
-                                        <div className="badge is-pill">tag</div>
-                                        <div className="badge is-pill">tag</div>
-                                        <div className="badge is-pill">tag</div>
-                                    </div>
+                                    </fieldset>{" "}
+                                    <input type="hidden" id="fields_configuration_form__token" name="fields_configuration_form[_token]" defaultValue="968bf603db9b215031347f.lXZldnVx_HfokafSpSrEvevhp5kSXshBTM1NYcCboZ8.z09TASY2jACZ5Oy1w1me8dur0qlaDokWCLwOMraokvKkAQgDJjKIGZL19g" />
+                                    <input type="hidden" name="_method" defaultValue="PATCH" />
                                 </div>
                             </div>
                         </div>
@@ -351,8 +646,7 @@ export const ModalProjectTab = ({}: ModalProjectTabProps) => {
                     </div>
                     <div className="modal-footer border-top">
                         <div className="d-flex flex-fill" data-toggle="tooltip" data-placement="top" data-original-title="This page is not available or is private." data-html="true" data-boundary="window">
-                            <a className="btn btn-lg btn-block btn-default disabled" href="#">
-                                <span className="icon icon-lock" />
+                            <a className="btn btn-lg btn-block btn-default" href="#">
                                 <span>Open full page</span>
                             </a>
                         </div>
