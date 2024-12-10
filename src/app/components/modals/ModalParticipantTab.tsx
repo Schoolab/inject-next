@@ -20,11 +20,11 @@ export const ModalParticipantTab = ({}: ModalParticipantTabProps) => {
                             <a href="#" className=" nav-link nav-item active" id="info-tab" data-toggle="tab" data-target="#info" type="button" role="tab" aria-controls="info" aria-selected="true">
                                 <span>About</span>
                             </a>
-                            <a href="#" className=" nav-link nav-item" id="responses-tab" data-toggle="tab" data-target="#responses" type="button" role="tab" aria-controls="responses" aria-selected="false">
-                                <span>Responses</span>
+                            <a href="#" className=" nav-link nav-item" id="application-tab" data-toggle="tab" data-target="#responses" type="button" role="tab" aria-controls="responses" aria-selected="false">
+                                <span>Application</span>
                             </a>
-                            <a href="#" className=" nav-link nav-item" id="participations-tab" data-toggle="tab" data-target="#data" type="button" role="tab" aria-controls="data" aria-selected="false">
-                                <span>Participations</span>
+                            <a href="#" className=" nav-link nav-item" id="projects-tab" data-toggle="tab" data-target="#data" type="button" role="tab" aria-controls="data" aria-selected="false">
+                                <span>Projects</span>
                             </a>
                         </nav>
                         <div className="modal-pagination d-flex align-items-center ml-auto gap-xs">
@@ -206,7 +206,7 @@ export const ModalParticipantTab = ({}: ModalParticipantTabProps) => {
                                 </div>
                             </div>
                         </div>
-                        <div id="responses" role="tabpanel" aria-labelledby="responses-tab" className="tab-pane fade">
+                        <div id="responses" role="tabpanel" aria-labelledby="application-tab" className="tab-pane fade">
                             <div className="d-flex flex-column gap-md">
                                 <p>(ici il y aura un rappel des consignes données aux participant·e·s)</p>
                                 <div className="form-group">
@@ -300,7 +300,7 @@ export const ModalParticipantTab = ({}: ModalParticipantTabProps) => {
                                 </div>
                             </div>
                         </div>
-                        <div id="data" role="tabpanel" aria-labelledby="participations-tab" className="tab-pane fade">
+                        <div id="data" role="tabpanel" aria-labelledby="projects-tab" className="tab-pane fade">
                             <div className="d-flex flex-column gap-md">
                                 <div className="cards">
                                     <div className="card">
