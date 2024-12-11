@@ -107,12 +107,12 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Registration</span>
+                                        <span className="nav-link--label">Application</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Application</span>
+                                        <span className="nav-link--label">Registration</span>
                                     </a>
                                 </li>
                                 <li>
@@ -195,15 +195,16 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Experts application</span>
-                                    </a>
-                                </li>
-                                <li>
                                     <a href="#" className="nav-link">
                                         <span className="nav-link--label">Experts registration</span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="#" className="nav-link ">
+                                        <span className="nav-link--label">Experts application</span>
+                                    </a>
+                                </li>
+                            
                                 <li>
                                     <a href="#" className="nav-link">
                                         <span className="nav-link--label">Experts list</span>
