@@ -170,7 +170,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                             <ul id="collapseCoaching" className="collapse" aria-labelledby="headingCoaching" data-parent="#accordionManageNav">
                                 <li>
                                     <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Experts configuration</span>
+                                        <span className="nav-link--label">Configuration</span>
                                     </a>
                                 </li>
                                 <li>
@@ -191,11 +191,6 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 <li>
                                     <a href="#" className="nav-link">
                                         <span className="nav-link--label">Experts types</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Delivrables</span>
                                     </a>
                                 </li>
                                 <li>
