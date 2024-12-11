@@ -278,12 +278,12 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                         <li className="nav-item">
                             <a id="headingContent" href="#" className="nav-link" type="button" data-toggle="collapse" data-target="#collapseContent" aria-expanded="false" aria-controls="collapseContent">
                                 <span className="nav-link--icon icon icon-book-open-blank-variant" />
-                                <span className="nav-link--label">Ressources</span>
+                                <span className="nav-link--label">Library</span>
                             </a>
                             <ul id="collapseContent" className="collapse" aria-labelledby="headingContent" data-parent="#accordionManageNav">
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Library</span>
+                                        <span className="nav-link--label">Ressources</span>
                                     </a>
                                 </li>
                                 <li>
