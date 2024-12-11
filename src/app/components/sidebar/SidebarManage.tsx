@@ -21,17 +21,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Configuration</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Registration rules</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Managers</span>
+                                        <span className="nav-link--label">Managers list</span>
                                     </a>
                                 </li>
                                 <li>
@@ -54,6 +44,16 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                         <span className="nav-link--label">Segment</span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Registration rules</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Configuration</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li className="nav-item">
@@ -62,22 +62,6 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 <span className="nav-link--label">Participants</span>
                             </a>
                             <ul id="collapseParticipants" className="collapse" aria-labelledby="headingParticipants" data-parent="#accordionManageNav">
-                                
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Application form</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Registration</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Types</span>
-                                    </a>
-                                </li>
                                 <li>
                                     <a href="#" className="nav-link">
                                         <span className="nav-link--label">List</span>
@@ -93,6 +77,22 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                         <span className="nav-link--label">Certificates</span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Application form</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link ">
+                                        <span className="nav-link--label">Registration</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Types</span>
+                                    </a>
+                                </li>
+                               
                             </ul>
                         </li>
                         <li className="nav-item">
@@ -101,9 +101,9 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 <span className="nav-link--label">Projects</span>
                             </a>
                             <ul id="collapseProjects" className="collapse" aria-labelledby="headingProjects" data-parent="#accordionManageNav">
-                                <li>
-                                    <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Configuration</span>
+                                 <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">List</span>
                                     </a>
                                 </li>
                                 <li>
@@ -122,10 +122,11 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">List</span>
+                                    <a href="#" className="nav-link ">
+                                        <span className="nav-link--label">Configuration</span>
                                     </a>
                                 </li>
+                            
                             </ul>
                         </li>
                         <li className="nav-item">
@@ -134,16 +135,6 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 <span className="nav-link--label">Evaluations</span>
                             </a>
                             <ul id="collapseEvaluations" className="collapse" aria-labelledby="headingEvaluations" data-parent="#accordionManageNav">
-                                <li>
-                                    <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Juries applications form</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Juries registration</span>
-                                    </a>
-                                </li>
                                 <li>
                                     <a href="#" className="nav-link">
                                         <span className="nav-link--label">Juries list</span>
@@ -159,6 +150,16 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                         <span className="nav-link--label">Public votes</span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="#" className="nav-link ">
+                                        <span className="nav-link--label">Juries applications form</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Juries registration</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         
@@ -169,33 +170,13 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                             </a>
                             <ul id="collapseCoaching" className="collapse" aria-labelledby="headingCoaching" data-parent="#accordionManageNav">
                                 <li>
-                                    <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Configuration</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Experts application form</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Experts registration</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Experts list</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Experts types</span>
-                                    </a>
-                                </li>
-                                <li>
                                     <a href="#" className="nav-link">
                                         <span className="nav-link--label">Coaching session</span>
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Experts list</span>
                                     </a>
                                 </li>
                                 <li>
@@ -208,6 +189,27 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                         <span className="nav-link--label">Newsfeed</span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="#" className="nav-link ">
+                                        <span className="nav-link--label">Experts application form</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Experts registration</span>
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Experts types</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link ">
+                                        <span className="nav-link--label">Configuration</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li className="nav-item">
@@ -216,11 +218,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 <span className="nav-link--label">Objectives</span>
                             </a>
                             <ul id="collapseObjectives" className="collapse" aria-labelledby="headingObjectives" data-parent="#accordionManageNav">
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Configuration</span>
-                                    </a>
-                                </li>
+                            
                                 <li>
                                     <a href="#" className="nav-link">
                                         <span className="nav-link--label">Milestones</span>
@@ -236,8 +234,11 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                         <span className="nav-link--label">Progression</span>
                                     </a>
                                 </li>
-                         
-                         
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Configuration</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     
@@ -247,11 +248,6 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 <span className="nav-link--label">Learning</span>
                             </a>
                             <ul id="collapseLearning" className="collapse" aria-labelledby="headingLearning" data-parent="#accordionManageNav">
-                                <li>
-                                    <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Configuration</span>
-                                    </a>
-                                </li>
                                 <li>
                                     <a href="#" className="nav-link ">
                                         <span className="nav-link--label">Courses</span>
@@ -265,6 +261,11 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 <li>
                                     <a href="#" className="nav-link">
                                         <span className="nav-link--label">Progression</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link ">
+                                        <span className="nav-link--label">Configuration</span>
                                     </a>
                                 </li>
                             </ul>
