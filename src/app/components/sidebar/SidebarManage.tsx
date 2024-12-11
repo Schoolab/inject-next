@@ -70,7 +70,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Registration list</span>
+                                        <span className="nav-link--label">Registration</span>
                                     </a>
                                 </li>
                                 <li>
@@ -113,7 +113,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Registration list</span>
+                                        <span className="nav-link--label">Registration</span>
                                     </a>
                                 </li>
                                 <li>
@@ -141,7 +141,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Juries registration list</span>
+                                        <span className="nav-link--label">Juries registration</span>
                                     </a>
                                 </li>
                                 <li>
@@ -180,7 +180,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Experts registration list</span>
+                                        <span className="nav-link--label">Experts registration</span>
                                     </a>
                                 </li>
                                 <li>
