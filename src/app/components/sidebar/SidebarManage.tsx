@@ -21,7 +21,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Details</span>
+                                        <span className="nav-link--label">Configuration</span>
                                     </a>
                                 </li>
                                 <li>
