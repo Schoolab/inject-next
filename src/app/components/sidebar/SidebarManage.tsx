@@ -220,12 +220,12 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                             <ul id="collapseObjectives" className="collapse" aria-labelledby="headingObjectives" data-parent="#accordionManageNav">
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Delivrables</span>
+                                        <span className="nav-link--label">Progression</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Progression</span>
+                                        <span className="nav-link--label">Delivrables</span>
                                     </a>
                                 </li>
                                 <li>
