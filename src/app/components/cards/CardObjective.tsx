@@ -10,7 +10,7 @@ import { Button } from "../Button";
 import { ProgressBar } from "../ProgressBar";
 import { Completed } from "@/stories/components/Progress.stories";
 
-interface CardObjectivesProps {
+interface CardObjectiveProps {
     name?: string;
     description?: string;
     emoji?: string;
@@ -27,7 +27,7 @@ interface CardObjectivesProps {
     style?: React.CSSProperties;
 }
 
-export const CardObjectives = ({ name = "Objective Name", description, emoji, date, dueDate, progress = 0, tasksNb = 1, tasksLabel = "task", tasksLabelPlural = "tasks", btnLabel = "Show tasks", btnUrl = "#", locked, addClass, style, ...props }: CardObjectivesProps) => {
+export const CardObjective = ({ name = "Objective Name", description, emoji, date, dueDate, progress = 0, tasksNb = 1, tasksLabel = "task", tasksLabelPlural = "tasks", btnLabel = "Show tasks", btnUrl = "#", locked, addClass, style, ...props }: CardObjectiveProps) => {
     let classTab = [""];
     addClass && classTab.push(addClass);
 

@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { CardObjectives } from "@/app/components/cards/CardObjectives";
+import { CardObjective } from "@/app/components/cards/CardObjective";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-    title: "Components/Cards/Objectives",
-    component: CardObjectives,
+    title: "Components/Cards/Objective",
+    component: CardObjective,
     parameters: {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
         layout: "centered",
@@ -24,7 +24,7 @@ const meta = {
         },
     },
     
-} satisfies Meta<typeof CardObjectives>;
+} satisfies Meta<typeof CardObjective>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
