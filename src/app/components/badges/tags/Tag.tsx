@@ -6,6 +6,7 @@ interface TagProps {
      * Contents
      */
     label?: string;
+    link?: string;
     /**
      * Custom class
      */
@@ -24,16 +25,25 @@ interface TagProps {
     iconName?: string;
 }
 
-export const Tag = ({ isPill = true, addClass, iconName, status = "default", label }: TagProps) => {
+export const Tag = ({ isPill = true, addClass, iconName, status = "default", label, link }: TagProps) => {
     let classTab = ["badge"];
     isPill && classTab.push("is-pill");
     status !== "default" && classTab.push(`is-${status}`);
     addClass && classTab.push(addClass);
 
+    if (link) {
+        return (
+            <a className={classTab.join(" ")} href={link}>
+                {iconName && <Icon name={iconName} />}
+                {label && <span>{label}</span>}
+            </a>
+        );
+    }
+
     return (
-        <a className={classTab.join(" ")} href="#">
+        <span className={classTab.join(" ")}>
             {iconName && <Icon name={iconName} />}
             {label && <span>{label}</span>}
-        </a>
+        </span>
     );
 };

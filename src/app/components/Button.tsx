@@ -40,7 +40,7 @@ export interface ButtonProps {
     /**
      * Is this the principal call to action on the page?
      */
-    type?: "default" | "primary" | "secondary" | "transparent" | "muted" | "success" | "warning" | "danger" | "brand-primary" | "brand-secondary" | "brand-tertiary" ;
+    type?: "default" | "primary" | "secondary" | "transparent" | "muted" | "success" | "warning" | "danger" | "outline-danger" | "brand-primary" | "brand-secondary" | "brand-tertiary" ;
     /**
      * How large should the button be?
      */
