@@ -23,6 +23,9 @@ const meta = {
         pin: false,
         ongoing: false,
         register: false,
+        style: {
+            width: "32rem",
+        },
     },
 } satisfies Meta<typeof CardEvent>;
 
@@ -36,12 +39,12 @@ export const Default: Story = {
         start: {
             month: "June",
             day: "8",
-            startTime: "10am",
-            endTime: "11am",
+            startTime: "10 AM",
+            endTime: "11 AM",
         },
         location: "Online",
         title: "Event Not started",
-        img: "https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg",
+        img: "img/placeholder-events-pink.png",
     },
 };
 
@@ -50,13 +53,25 @@ export const Register: Story = {
         start: {
             month: "June",
             day: "8",
-            startTime: "10am",
-            endTime: "11am",
+            startTime: "10 AM",
+            endTime: "11 AM",
         },
         location: "Online",
         title: "Event Not started",
-        img: "https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg",
-        register: true,
+        img: "img/placeholder-events-pink.png",
+        actions: [
+            {
+                title: "To access the event",
+                metas: [
+                    { label: "Attendees" },
+                    { iconName: "account", label: "32", addClass: "font-weight-bold" },
+                ],
+                buttons: [
+                    { label: "Register", type: "primary", link: "#" },
+                    { label: "Learn more", type: "default", link: "#" },
+                ],
+            }
+        ]
     },
 };
 
@@ -65,13 +80,13 @@ export const Ongoing: Story = {
         start: {
             month: "June",
             day: "8",
-            startTime: "10am",
-            endTime: "11am",
+            startTime: "10 AM",
+            endTime: "11 AM",
         },
         ongoing: true,
         location: "Hybride",
         title: "Ongoing Event Name",
-        img: "https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg",
+        img: "img/placeholder-events-pink.png",
     },
 };
 
@@ -80,8 +95,8 @@ export const Condensed: Story = {
         start: {
             month: "June",
             day: "8",
-            startTime: "10am",
-            endTime: "11am",
+            startTime: "10 AM",
+            endTime: "11 AM",
         },
         location: "InPerson",
         title: "Condensed Event ",

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import { Card } from "./Card";
 import { CardInfos } from "./CardInfos";
 import { CardBanner } from "./CardBanner";
 import { CardImage } from "./CardImage";
 import { Tag } from "../badges/tags/Tag";
+import { Icon } from "../Icon";
+import { CardActions } from "./CardActions";
 
 type StartType = {
     month: string;
@@ -11,6 +13,35 @@ type StartType = {
     startTime: string;
     endTime: string;
 };
+
+type MetaType = {
+    label: string;
+    iconName?: string;
+    addClass?: string;
+}
+
+type ButtonType = {
+    addClass?: string;
+    type: "default" | "primary" | "secondary" | "transparent" | "muted" | "success" | "warning" | "danger" | "brand-primary" | "brand-secondary" | "brand-tertiary" ;
+    label?: string | number; 
+    iconStartName?: string;
+    iconEndName?: string;
+    link?: string;
+    hasDropdown?: Boolean;
+}
+
+type LinkType = {
+    label: string;
+    iconLetter?: string;
+    iconName?: string;
+    link?: string;
+};
+
+type ActionType = {
+    title?: string;
+    metas?: MetaType[];
+    buttons?: ButtonType[];
+}
 
 interface CardEventProps {
     /**
@@ -37,13 +68,45 @@ interface CardEventProps {
      * is this event still ongoing
      */
     ongoing?: boolean; 
-    register?: boolean;
+    links?: LinkType[];
+    actions?: ActionType[];
 
+    addClass?: string;
+    style?: CSSProperties;
 }
 
-export const CardEvent = ({ img, start, title, pin, location, ongoing=false, register=false }: CardEventProps) => {
+export const CardEvent = (
+    { 
+        img,
+        start,
+        title,
+        pin,
+        location,
+        ongoing = false,
+        links,
+        actions,
+        addClass,
+        style,
+        ...props 
+    }: CardEventProps
+) => {
+    let listLinks = links?.map((link) => (
+        <div className="card-target">
+            <a href={link.link} className="stretched-link d-flex align-items-center">
+                { link.iconLetter && <span className="icon icon--letter is-sm"><span>{link.iconLetter}</span></span> }
+                { link.iconName && <Icon name={link.iconName} size="sm" /> }
+                <span>{link.label}</span>
+            </a>
+            <Icon name="chevron-right" size="sm" />
+        </div>
+    ));
+    let listActions = actions?.map((action) => (
+        <CardActions title={action.title} metas={action.metas} buttons={action.buttons} />
+    ))
+
     return (
-        <Card>
+        <Card addClass={addClass} style={style} {...props}>
+
             <CardInfos addClass="is-linked">
                 {img && (
                     <CardBanner>
@@ -69,34 +132,20 @@ export const CardEvent = ({ img, start, title, pin, location, ongoing=false, reg
                             {ongoing ? (
                                 <Tag iconName="status-filled" status="open" label={`Ongoing until ${start.endTime}`} />
                             ) :(
-                                <Tag iconName="status-bordered" status="draft" label={`Start at ${start.startTime}`} />
+                                <Tag iconName="status-bordered" status="draft" label={`Starts at ${start.startTime}`} />
                             )}
                             
                         </div>
                     </div>
                 </div>
             </CardInfos>
-            {register && (
-            <div className="card-links">
-                <div className="d-flex align-items-center justify-content-between text-muted mb-3">
-                    <span className="small font-weight-bold text-truncate mr-2">To access the event </span>
-                    <span className="small">
-                        Canditates
-                        <span className="font-weight-bold">
-                            <span className="icon icon-account" /> 48
-                        </span>
-                    </span>
-                </div>
-                <div className="card-actions">
-                    <a className="btn btn-lg btn-primary btn-block" href="#">
-                        <span>Register</span>
-                    </a>
-                    <a className="btn btn-lg btn-default btn-block" href="#">
-                        <span>Learn more</span>
-                    </a>
-                </div>
-            </div>
-            )}
+
+            { links && <div className="card-targets">
+               {listLinks} 
+            </div> }
+
+            { actions && listActions }
+
         </Card>
     );
 };

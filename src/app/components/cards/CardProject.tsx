@@ -5,6 +5,8 @@ import { Card } from "./Card";
 import { CardInfos } from "./CardInfos";
 import { CardActions } from "./CardActions";
 import { Badges } from "../badges/Badges";
+import { CardBanner } from "./CardBanner";
+import { CardImage } from "./CardImage";
 
 type TagType = {
     label: string;
@@ -93,17 +95,16 @@ export const CardProject = (
         <Card addClass={addClass} style={style} {...props}>
 
             <CardInfos addClass="is-linked">
-                <div className="card-banner">
-                    
+                <CardBanner>
                     { cover 
-                        ? <div className="card-image"><picture><img src={cover} alt="" /></picture></div>
+                        ? <CardImage src={cover} />
                         : <div className="card-image bg-highlight"><span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle"><span>{name.charAt(0)}</span></span></div>
                     }
                     { program && <div className="card-external">
                         <Icon name="program" size="xs" addClass="ml-n6px" />
                         <div className="small font-weight-bold text-truncate mx-2">{program}</div>
                     </div> }
-                </div>
+                </CardBanner>
                 <div className="card-title d-flex align-items-center gap-2xs mb-none">
                     { pinned && <span className="icon icon-pin is-24px z-2" data-toggle="tooltip" data-placement="top" data-original-title="Pinned programs are visible on the organization Hub" data-boundary="window" /> }
                     <a href={link} className="h3 mb-none stretched-link line-clamp-1">

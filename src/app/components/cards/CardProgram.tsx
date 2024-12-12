@@ -6,6 +6,8 @@ import { Tag } from "../badges/tags/Tag";
 import { Badges } from "../badges/Badges";
 import { Button } from "../Button";
 import { CardActions } from "./CardActions";
+import { CardBanner } from "./CardBanner";
+import { CardImage } from "./CardImage";
 
 type CategoryType = {
     label: string;
@@ -38,7 +40,7 @@ type LinkType = {
 type ActionType = {
     title?: string;
     metas?: MetaType[];
-    buttons: ButtonType[];
+    buttons?: ButtonType[];
 }
 
 interface CardProgramProps {
@@ -95,18 +97,14 @@ export const CardProgram = (
         <Card addClass={addClass} style={style} {...props}>
 
             <CardInfos addClass="is-linked">
-                <div className="card-banner">
-                    <div className="card-image">
-                        <picture>
-                            { cover ? <img src={cover} alt="" /> : <img src="img/placeholder-programs-pink.png" alt="" /> }
-                        </picture>
-                    </div>
+                <CardBanner>
+                    <CardImage src={cover ? cover : "img/placeholder-programs-pink.png"} />
                     { externalProgram && <div className="card-external">
                         <div className="small">External: </div>
                         <div className="small font-weight-bold text-truncate mx-2">{externalProgram}</div>
                         <span className="small icon icon-new-tab text-muted" />
                     </div> }
-                </div>
+                </CardBanner>
                 <div className="card-title d-flex align-items-center gap-2xs mb-none">
                     { pinned && <span className="icon icon-pin is-24px z-2" data-toggle="tooltip" data-placement="top" data-original-title="Pinned programs are visible on the organization Hub" data-boundary="window" /> }
                     <a href={link} className="h3 mb-none stretched-link line-clamp-1">
