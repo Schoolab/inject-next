@@ -76,6 +76,9 @@ export const CardProject = (
         ...props 
     }: CardProjectProps
 ) => {
+    let classTab = [""];
+    addClass && classTab.push(addClass);
+
     let listTags = tags?.slice(0, 2).map((tag) => <Tag label={tag.label} link={tag.link} />);
     let listLinks = links?.map((link) => (
         <div className="card-target">
@@ -92,7 +95,7 @@ export const CardProject = (
     ))
     
     return (
-        <Card addClass={addClass} style={style} {...props}>
+        <Card addClass={classTab.join(" ")} style={style} {...props}>
 
             <CardInfos addClass="is-linked">
                 <CardBanner>

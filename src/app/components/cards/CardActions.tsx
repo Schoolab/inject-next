@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import { Icon } from "../Icon";
 import { Button } from "../Button";
 import { Tag } from "../badges/tags/Tag";
+import { ProgressBar } from "../ProgressBar";
 
 type MetaType = {
     label: string;
@@ -23,6 +24,12 @@ type ButtonType = {
 interface CardActionsProps {
     title?: string;
     metas?: MetaType[];
+
+    tasksNb?: number;
+    tasksLabel?: string;
+    tasksLabelPlural?: string;
+    progress?: number;
+
     status?: "draft" | "submitted" | "review" | "accepted" | "rejected";
     buttons?: ButtonType[];
     
@@ -30,7 +37,21 @@ interface CardActionsProps {
     style?: CSSProperties;
 }
 
-export const CardActions = ({ title, metas, status, buttons, addClass, style, ...props }: CardActionsProps) => {
+export const CardActions = (
+    {
+        title,
+        metas,
+        tasksNb,
+        tasksLabel,
+        tasksLabelPlural,
+        progress,
+        status,
+        buttons,
+        addClass,
+        style,
+        ...props
+    }: CardActionsProps
+) => {
     let classTab = ["card-links d-flex flex-column gap-xs"];
     addClass && classTab.push(addClass);
 
@@ -62,6 +83,9 @@ export const CardActions = ({ title, metas, status, buttons, addClass, style, ..
                     { status === "rejected" && <Tag label="Rejected" iconName="status-stop" status="closed" /> }
                 </div>
             }
+
+            { tasksNb && progress && <ProgressBar max={tasksNb} percentage={ (progress / tasksNb) * 100 } text={ progress + "/" + tasksNb } inline={true} /> }
+
             { listButtons && <div className="card-actions">
                 { listButtons }
             </div> }

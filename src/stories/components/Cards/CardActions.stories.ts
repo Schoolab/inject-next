@@ -42,6 +42,22 @@ export const Default: Story = {
     },
 };
 
+export const WithProgress: Story = {
+    args: {
+        title: "Final selection",
+        metas: [
+            { label: "Average" },
+            { iconName: "rating", label: "4.8", addClass: "font-weight-bold text-warning" },
+        ],
+        progress: 2,
+        tasksNb: 8,
+        buttons: [
+            { label: "Evaluate", type: "primary", link: "#", iconStartName: "rating" },
+            { label: "Participations", type: "default", link: "#" },
+        ],
+    },
+};
+
 export const Status: Story = {
     args: {
         title: "Application status",

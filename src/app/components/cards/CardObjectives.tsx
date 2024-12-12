@@ -28,7 +28,7 @@ interface CardObjectivesProps {
 }
 
 export const CardObjectives = ({ name = "Objective Name", description, emoji, date, dueDate, progress = 0, tasksNb = 1, tasksLabel = "task", tasksLabelPlural = "tasks", btnLabel = "Show tasks", btnUrl = "#", locked, addClass, style, ...props }: CardObjectivesProps) => {
-    let classTab = ["card"];
+    let classTab = [""];
     addClass && classTab.push(addClass);
 
     return (

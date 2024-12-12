@@ -6,6 +6,7 @@ export interface ProgressBarProps {
     min?: number;
     max?: number;
     text?: string;
+    inline?: boolean;
   /**
    * How large should the progress icon be?
    */
@@ -17,26 +18,29 @@ export interface ProgressBarProps {
   style?: React.CSSProperties;
 }
 
-export const ProgressBar = ({ label = "Progression", percentage = 0, min = 0, max = 100, text = "0%", size="sm", addClass, style, ...props }: ProgressBarProps) => {
+export const ProgressBar = ({ label = "Progression", percentage = 0, min = 0, max = 100, text = "0%", size="sm", inline, addClass, style, ...props }: ProgressBarProps) => {
   let classTab = ["progress-circle-container flex-shrink-0"];
   size && classTab.push(`is-${size}`);
   addClass && classTab.push(addClass);
 
   return (
     <div className="d-flex flex-column gap-2xs">
-        <div className="d-flex justify-content-between">
+        { !inline && <div className="d-flex justify-content-between">
             <span className="small text-muted">{label}</span>
             <span className="small text-muted">{text}</span>
-        </div>
-        <div className="progress flex-fill mr-3" style={{ height: ".5rem" }}>
-            <div 
-                className="progress-bar"
-                role="progressbar"
-                aria-valuenow={Math.round(percentage)}
-                aria-valuemin={min}
-                aria-valuemax={max}
-                style={{ width: percentage + '%' }}
-            />
+        </div> }
+        <div className="d-flex gap-xs align-items-center">
+            <div className="progress flex-fill mr-3" style={{ height: ".5rem" }}>
+                <div 
+                    className="progress-bar"
+                    role="progressbar"
+                    aria-valuenow={Math.round(percentage)}
+                    aria-valuemin={min}
+                    aria-valuemax={max}
+                    style={{ width: percentage + '%' }}
+                />
+            </div>
+            { inline && <span className="small text-muted">{text}</span> }
         </div>
     </div>
   );

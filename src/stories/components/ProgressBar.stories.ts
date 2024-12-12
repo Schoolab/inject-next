@@ -31,6 +31,12 @@ export const Default: Story = {
     args: {},
 };
 
+export const Inline: Story = {
+  args: {
+    inline: true,
+  },
+};
+
 export const Incomplete: Story = {
     args: {
         percentage: 25,

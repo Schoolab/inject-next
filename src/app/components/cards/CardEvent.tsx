@@ -90,6 +90,9 @@ export const CardEvent = (
         ...props 
     }: CardEventProps
 ) => {
+    let classTab = [""];
+    addClass && classTab.push(addClass);
+
     let listLinks = links?.map((link) => (
         <div className="card-target">
             <a href={link.link} className="stretched-link d-flex align-items-center">
@@ -105,7 +108,7 @@ export const CardEvent = (
     ))
 
     return (
-        <Card addClass={addClass} style={style} {...props}>
+        <Card addClass={classTab.join(" ")} style={style} {...props}>
 
             <CardInfos addClass="is-linked">
                 {img && (

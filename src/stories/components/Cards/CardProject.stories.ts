@@ -130,7 +130,7 @@ export const Evaluations: Story = {
                 title: "Final selection",
                 metas: [
                     { label: "Average" },
-                    { iconName: "rating", label: "19", addClass: "font-weight-bold text-warning" },
+                    { iconName: "rating", label: "4.8", addClass: "font-weight-bold text-warning" },
                 ],
                 buttons: [
                     { label: "Evaluate", type: "primary", link: "#", iconStartName: "rating" },

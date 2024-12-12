@@ -78,6 +78,9 @@ export const CardProgram = (
         ...props 
     }: CardProgramProps
 ) => {
+    let classTab = [""];
+    addClass && classTab.push(addClass);
+
     let listCategories = categories?.map((category) => <Tag label={category.label} link={link} />);
     let listLinks = links?.map((link) => (
         <div className="card-target">
@@ -94,7 +97,7 @@ export const CardProgram = (
     ))
     
     return (
-        <Card addClass={addClass} style={style} {...props}>
+        <Card addClass={classTab.join(" ")} style={style} {...props}>
 
             <CardInfos addClass="is-linked">
                 <CardBanner>

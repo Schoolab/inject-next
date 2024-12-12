@@ -17,12 +17,10 @@ const meta = {
     argTypes: {
         pin: { control: "boolean" },
         ongoing: { control: "boolean" },
-        register: { control: "boolean" },
     },
     args: {
         pin: false,
         ongoing: false,
-        register: false,
         style: {
             width: "32rem",
         },

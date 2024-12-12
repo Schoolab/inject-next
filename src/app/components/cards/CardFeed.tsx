@@ -71,12 +71,15 @@ export const CardFeed = (
         ...props 
     }: CardFeedProps
 ) => {
+    let classTab = [""];
+    addClass && classTab.push(addClass);
+
     let listMetas = metas?.map((meta) => <li key={meta.label}>{meta.label}</li>); 
 
     let sanitizedContent = DOMPurify.sanitize(content);
 
     return (
-        <Card addClass={addClass} style={style} {...props}>
+        <Card addClass={classTab.join(" ")} style={style} {...props}>
             <CardInfos addClass="d-flex flex-column align-items-stretch gap-md p-24px">
                 { from && <p className="text-muted small gap-2xs">
                     <span>{fromPrepend}</span> <a href="#" className="text-muted font-weight-bold">{from}</a>
