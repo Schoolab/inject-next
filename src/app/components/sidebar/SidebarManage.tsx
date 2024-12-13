@@ -21,7 +21,17 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Configuration</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link">
                                         <span className="nav-link--label">Managers list</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Registration rules</span>
                                     </a>
                                 </li>
                                 <li>
@@ -39,21 +49,6 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                         <span className="nav-link--label">Hooks</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Segment</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Registration rules</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Configuration</span>
-                                    </a>
-                                </li>
                             </ul>
                         </li>
                         <li className="nav-item">
@@ -68,6 +63,11 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                     </a>
                                 </li>
                                 <li>
+                                    <a href="#" className="nav-link ">
+                                        <span className="nav-link--label">Applicants</span>
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="#" className="nav-link">
                                         <span className="nav-link--label">Signatures</span>
                                     </a>
@@ -79,19 +79,16 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Application form</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Registration</span>
+                                        <span className="nav-link--label">Types</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Types</span>
+                                        <span className="nav-link--label">Application form</span>
                                     </a>
                                 </li>
+                         
+                        
                                
                             </ul>
                         </li>
@@ -108,17 +105,17 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Application form</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Registration</span>
+                                        <span className="nav-link--label">Applications</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
                                         <span className="nav-link--label">Types</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Application form</span>
                                     </a>
                                 </li>
                                 <li>
@@ -132,17 +129,22 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                         <li className="nav-item">
                             <a id="headingRegistrations" href="#" className="nav-link" type="button" data-toggle="collapse" data-target="#collapseEvaluations" aria-expanded="false" aria-controls="collapseEvaluations">
                                 <span className="nav-link--icon icon icon-gavel" aria-hidden="true" />
-                                <span className="nav-link--label">Evaluations</span>
+                                <span className="nav-link--label">Juries</span>
                             </a>
                             <ul id="collapseEvaluations" className="collapse" aria-labelledby="headingEvaluations" data-parent="#accordionManageNav">
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Juries list</span>
+                                        <span className="nav-link--label">List</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Juries votes</span>
+                                        <span className="nav-link--label">Applicants</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Votes</span>
                                     </a>
                                 </li>
                                 <li>
@@ -152,31 +154,37 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Juries applications form</span>
+                                        <span className="nav-link--label">Applications form</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Juries registration</span>
-                                    </a>
-                                </li>
+                              
                             </ul>
                         </li>
                         
                         <li className="nav-item">
                             <a id="headingLearning" href="#" className="nav-link" type="button" data-toggle="collapse" data-target="#collapseCoaching" aria-expanded="false" aria-controls="collapseCoaching">
                                 <span className="nav-link--icon icon icon-account-supervisor-circle" aria-hidden="true" />
-                                <span className="nav-link--label">Coaching</span>
+                                <span className="nav-link--label">Experts</span>
                             </a>
                             <ul id="collapseCoaching" className="collapse" aria-labelledby="headingCoaching" data-parent="#accordionManageNav">
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Coaching session</span>
+                                        <span className="nav-link--label">Meetings</span>
                                     </a>
                                 </li>
                                  <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Experts list</span>
+                                        <span className="nav-link--label">List</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Applicants</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Newsfeed</span>
                                     </a>
                                 </li>
                                 <li>
@@ -186,23 +194,40 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Newsfeed</span>
+                                        <span className="nav-link--label">Types</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Experts application form</span>
+                                        <span className="nav-link--label">Application form</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link ">
+                                        <span className="nav-link--label">Configuration</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li className="nav-item">
+                            <a id="headingLearning" href="#" className="nav-link" type="button" data-toggle="collapse" data-target="#collapseLearning" aria-expanded="false" aria-controls="collapseLearning">
+                                <span className="nav-link--icon icon icon-library" aria-hidden="true" />
+                                <span className="nav-link--label">Learning</span>
+                            </a>
+                            <ul id="collapseLearning" className="collapse" aria-labelledby="headingLearning" data-parent="#accordionManageNav">
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Progression</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Experts registration</span>
+                                        <span className="nav-link--label">Delivrables</span>
                                     </a>
                                 </li>
-                            
                                 <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Experts types</span>
+                                    <a href="#" className="nav-link ">
+                                        <span className="nav-link--label">Courses</span>
                                     </a>
                                 </li>
                                 <li>
@@ -240,31 +265,20 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 </li>
                             </ul>
                         </li>
-                    
                         <li className="nav-item">
-                            <a id="headingLearning" href="#" className="nav-link" type="button" data-toggle="collapse" data-target="#collapseLearning" aria-expanded="false" aria-controls="collapseLearning">
-                                <span className="nav-link--icon icon icon-library" aria-hidden="true" />
-                                <span className="nav-link--label">Learning</span>
+                            <a id="headingSurveys" href="#" className="nav-link" type="button" data-toggle="collapse" data-target="#collapseSurveys" aria-expanded="false" aria-controls="collapseSurveys">
+                                <span className="nav-link--icon icon icon-format-list-checks" aria-hidden="true" />
+                                <span className="nav-link--label">Surveys</span>
                             </a>
-                            <ul id="collapseLearning" className="collapse" aria-labelledby="headingLearning" data-parent="#accordionManageNav">
+                            <ul id="collapseSurveys" className="collapse" aria-labelledby="headingSurveys" data-parent="#accordionManageNav">
                                 <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Progression</span>
+                                    <a href="#" className="nav-link ">
+                                        <span className="nav-link--label">Campaigns</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
                                         <span className="nav-link--label">Delivrables</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Courses</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Configuration</span>
                                     </a>
                                 </li>
                             </ul>
@@ -288,24 +302,7 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                       
                             </ul>
                         </li>
-                        <li className="nav-item">
-                            <a id="headingSurveys" href="#" className="nav-link" type="button" data-toggle="collapse" data-target="#collapseSurveys" aria-expanded="false" aria-controls="collapseSurveys">
-                                <span className="nav-link--icon icon icon-format-list-checks" aria-hidden="true" />
-                                <span className="nav-link--label">Surveys</span>
-                            </a>
-                            <ul id="collapseSurveys" className="collapse" aria-labelledby="headingSurveys" data-parent="#accordionManageNav">
-                                <li>
-                                    <a href="#" className="nav-link ">
-                                        <span className="nav-link--label">Campaigns</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Delivrables</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+                 
                     </ul>
                     <ul className="nav nav-main flex-column">
                         <li className="nav-item ">
@@ -424,12 +421,17 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Juries</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link">
                                         <span className="nav-link--label">Experts</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" className="nav-link">
-                                        <span className="nav-link--label">Evaluations</span>
+                                        <span className="nav-link--label">Events</span>
                                     </a>
                                 </li>
                                 <li>
@@ -455,6 +457,11 @@ export const SidebarManage = ({}: SidebarManageProps) => {
                                 <li>
                                     <a href="#" className="nav-link">
                                         <span className="nav-link--label">Projects</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Segment</span>
                                     </a>
                                 </li>
                                 <li>
