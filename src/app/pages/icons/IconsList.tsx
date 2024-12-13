@@ -10,7 +10,7 @@ export const IconsList = () => {
             <span className="inner">
                 <span className={`icon icon-${icon}`}></span>
             </span>
-            <span className="preview-label">{icon}</span>
+            <span className="preview-label text-center">{icon}</span>
         </div>
     ));
 

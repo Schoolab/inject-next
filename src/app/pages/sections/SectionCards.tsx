@@ -47,7 +47,7 @@ export const SectionCards = (
         let listColumns = columns?.map((column) => (
             <div className="cq-sm-6 cq-md-4 d-flex flex-column">
                 <div className="card h-100 cards-item" style={{ borderColor: column.backgroundColor }}>
-                    <div className="card-header" style={{ backgroundColor: column.backgroundColor, color: column.color ?? "#FFF" }}>
+                    <div className="card-header is-floating" style={{ backgroundColor: column.backgroundColor, color: column.color ?? "#FFF" }}>
                         <p className="font-weight-bold m-none text-truncate">{column.label}</p>
                     </div>
                     { column.content && (<div className="card-body" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(column.content) }} />) }

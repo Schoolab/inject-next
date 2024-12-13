@@ -20,17 +20,25 @@ interface CardCollapseProps {
     title?: string;
     metas?: MetaType[];
     progress?: number;
+    headerClass?: string;
+    bodyClass?: string;
 }
 
-export const CardCollapse = ({ id = "Card", parentId, children, title = "Card Title", metas, progress, addClass }: CardCollapseProps) => {
+export const CardCollapse = ({ id = "Card", parentId, children, title = "Card Title", metas, progress, headerClass, bodyClass, addClass }: CardCollapseProps) => {
     let classTab = [""];
     addClass && classTab.push(addClass);
+
+    let classTabHeader = ["card-header d-flex gap-sm align-items-center"];
+    headerClass && classTabHeader.push(headerClass);
+
+    let classTabBody = ["card-body"];
+    bodyClass && classTabBody.push(bodyClass);
     
     let listMetas = metas?.map((meta) => <li key={meta.label}>{meta.label}</li>); 
 
     return (
         <Card addClass={classTab.join(" ")}>
-            <div className="card-header d-flex gap-sm align-items-center" id={'header' + id} data-toggle="collapse" data-target={'#body' + id} aria-expanded="false" aria-controls={'body' + id}>
+            <div className={classTabHeader.join(" ")} id={'header' + id} data-toggle="collapse" data-target={'#body' + id} aria-expanded="false" aria-controls={'body' + id}>
                 { progress && <Progress percentage={progress} /> }
                 <div className="d-flex flex-column w-100 gap-none">
                     <p className="h4">{title}</p>
@@ -43,8 +51,8 @@ export const CardCollapse = ({ id = "Card", parentId, children, title = "Card Ti
                 </div>
                 <Icon name="chevron-right" />
             </div>
-            <div className="collapse" id={'body' + id}  aria-labelledby={'header' + id} {...(parentId && { "data-parent": '#' + parentId })}>
-                <div className="card-body">
+            <div className="collapse" id={'body' + id} aria-labelledby={'header' + id} {...(parentId && { "data-parent": '#' + parentId })}>
+                <div className={classTabBody.join(" ")}>
                     {children && children}
                     {!children && <Placeholder />}
                 </div>
