@@ -1,31 +1,32 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import { Icon } from "../../Icon";
 
 interface TagProps {
-    /**
-     * Contents
-     */
     label?: string;
     link?: string;
-    /**
-     * Custom class
-     */
-    addClass?: string;
-    /**
-     * is pill ?
-     */
     isPill?: Boolean;
-    /**
-     * Status
-     */
     status?: "default" | "open" | "progress" | "closed" | "done" | "draft";
     /**
      * Icon name, names refer to the <a href="https://pictogrammers.com/learning/mdi/" target="_blank">mdi list</a>
      */
     iconName?: string;
+
+    addClass?: string;
+    style?: CSSProperties;
 }
 
-export const Tag = ({ isPill = true, addClass, iconName, status = "default", label, link }: TagProps) => {
+export const Tag = (
+    { 
+        isPill = true, 
+        iconName, 
+        status = "default", 
+        label, 
+        link,
+        addClass,
+        style,
+        ...props 
+    }: TagProps
+) => {
     let classTab = ["badge"];
     isPill && classTab.push("is-pill");
     status !== "default" && classTab.push(`is-${status}`);
@@ -33,7 +34,7 @@ export const Tag = ({ isPill = true, addClass, iconName, status = "default", lab
 
     if (link) {
         return (
-            <a className={classTab.join(" ")} href={link}>
+            <a href={link} className={classTab.join(" ")} style={style} {...props}>
                 {iconName && <Icon name={iconName} />}
                 {label && <span>{label}</span>}
             </a>
@@ -41,7 +42,7 @@ export const Tag = ({ isPill = true, addClass, iconName, status = "default", lab
     }
 
     return (
-        <span className={classTab.join(" ")}>
+        <span className={classTab.join(" ")} style={style} {...props}>
             {iconName && <Icon name={iconName} />}
             {label && <span>{label}</span>}
         </span>

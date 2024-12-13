@@ -101,7 +101,11 @@ export const CardProject = (
                 <CardBanner>
                     { cover 
                         ? <CardImage src={cover} />
-                        : <div className="card-image bg-highlight"><span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle"><span>{name.charAt(0)}</span></span></div>
+                        : <div className="card-image bg-highlight">
+                            <span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle">
+                                <span>{name.charAt(0)}</span>
+                            </span>
+                        </div>
                     }
                     { program && <div className="card-external">
                         <Icon name="program" size="xs" addClass="ml-n6px" />

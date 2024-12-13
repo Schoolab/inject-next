@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import { ReactNode } from "react";
 
 interface DropdownProps {
@@ -7,10 +7,11 @@ interface DropdownProps {
      * Custom class
      */
     addClass?: string;
+    style?: CSSProperties;
 }
 
-export const Dropdown = ({ children, addClass }: DropdownProps) => {
+export const Dropdown = ({ children, addClass, style, ...props }: DropdownProps) => {
     let classTab = ["dropdown"];
     addClass && classTab.push(addClass);
-    return <div className={classTab.join(" ")}>{children}</div>;
+    return <div className={classTab.join(" ")} style={style} {...props}>{children}</div>;
 };

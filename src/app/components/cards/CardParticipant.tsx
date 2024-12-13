@@ -8,6 +8,9 @@ import { Button } from "../Button";
 import { CardActions } from "./CardActions";
 import { Avatar } from "../avatars/Avatar";
 import { Role } from "../badges/roles/Role";
+import { Dropdown } from "../dropdown/Dropdown";
+import { DropdownMenu } from "../dropdown/DropdownMenu";
+import { DropdownItem } from "../dropdown/DropdownItem";
 
 type TagType = {
     label: string;
@@ -122,19 +125,13 @@ export const CardParticipant = (
                         { tags.length - 2 > 0 && <span className="text-muted small text-nowrap">+{tags.length - 2}</span> }
                     </Badges> }
                 </div>
-                <div className={`dropdown ${vertical ? 'position-absolute' : ''}`} style={vertical ? { top: ".75rem", right: ".75rem" } : {}}>
-                    <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span className="icon is-20px icon-options" />
-                    </a>
-                    <div className="dropdown-menu dropdown-menu-right">
-                        <a className="dropdown-item" href="#">
-                            Show profile
-                        </a>
-                        <a className="dropdown-item" data-toggle="modal" data-target="#modalOpenThread" data-user-id={320} href="#">
-                            Send a message
-                        </a>
-                    </div>
-                </div>
+                <Dropdown addClass={`${vertical ? 'position-absolute' : ''}`} style={vertical ? { top: ".75rem", right: ".75rem" } : {}}>
+                    <Button addClass="position-relative z-1" type="muted" iconStartName="options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
+                    <DropdownMenu direction="right">
+                        <DropdownItem label="Show profile" />
+                        <DropdownItem label="Send a message" />
+                    </DropdownMenu>
+                </Dropdown>
                 { vertical && showButton && <div className="card-actions z-2">
                     <Button label="Message" type="default" iconStartName="comment" />
                 </div> }
