@@ -36,28 +36,31 @@ export const AppContent = ({ children,   showSubnav = true,  showStepper= false,
     return (
         <main className={appContentClass} >
             {showBreadcrumb && <Breadcrumb />}
-            {showTitle && <Title 
-                backLink="#" 
-                nextLink="#" 
-                buttons={[
-                    {
-                        type: "default",
-                        label: "Preview",
-                        iconStartName: "preview",
-                        iconEndName: "new-tab",
-                        size: "sm",
-                    },
-                    {
-                        type: "primary",
-                        label: "Save changes",
-                        size: "sm",
-                    },
-                ]} 
-                addClass={titleClass.join(" ")}
-            />}
-            
-            {showSubnav && <SubNav />}
-            {showStepper && <Stepper />}
+            <div className="application-header">
+                {showTitle && <Title 
+                    backLink="#" 
+                    nextLink="#" 
+                    buttons={[
+                        {
+                            type: "default",
+                            label: "Preview",
+                            iconStartName: "preview",
+                            iconEndName: "new-tab",
+                            size: "sm",
+                        },
+                        {
+                            type: "primary",
+                            label: "Save changes",
+                            size: "sm",
+                        },
+                    ]} 
+                    addClass={titleClass.join(" ")}
+                />}
+                
+                {showSubnav && <SubNav />}
+                {showStepper && <Stepper />}
+            </div>
+       
             <div id="appMainContainer" className={appMainContainerClass}>
                 {children}
             </div>
