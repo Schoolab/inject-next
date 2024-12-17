@@ -4,7 +4,7 @@ export interface ButtonProps {
     /**
      * Children Content
      */
-    children?: React.ReactNode
+    children?: React.ReactNode;
     /**
      * Button contents
      */
