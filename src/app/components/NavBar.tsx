@@ -102,14 +102,14 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                             <div className="navbar-option dropdown">
                                                 <a href="#" className="btn navbar-main-btn" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" style={{ maxWidth: 256 }}>
                                                     <span className="icon icon-school" aria-hidden="true" />
-                                                    <span className="text-truncate">CPI Concept</span>
+                                                    <span className="text-truncate">Impact Innovators</span>
                                                     <span className="icon icon-chevron-down" aria-hidden="true" />
                                                 </a>
 
                                                 <div className="dropdown-menu" style={{ maxWidth: 225 }}>
                                                     <h6 className="dropdown-header">Switch program</h6>
                                                     <a className="dropdown-item active" href="#">
-                                                        <span className="text-truncate">CPI Concept</span>
+                                                        <span className="text-truncate">Impact Innovators</span>
                                                     </a>
                                                     <a className="dropdown-item" href="#">
                                                         <span>Starter S20</span>

@@ -44,7 +44,7 @@ export const AsideEditPage = ({}: AsideEditPageProps) => {
                             <ItemsGroup>
                                 <ItemsGroupHeader label="Sections" number="15" />
                                 <div className="d-flex flex-column gap-2xs">
-                                    <ItemSection image="img/covers/section_hero-right.png" label="CPI Concept" caption="Hero (image right)"/>
+                                    <ItemSection image="img/covers/section_hero-right.png" label="Impact Innovators" caption="Hero (image right)"/>
                                     <ItemSection image="img/covers/section_content-left.png" label="Our mission" caption="Content (image left)" />
                                     <ItemSection image="img/covers/section_number-big.png" label="Our programs to support your transformation" caption="Big number" />
                                     <ItemSection image="img/covers/section_timeline.png" label="Tell a story with a timeline" caption="Timeline (3 columns)" />
@@ -93,7 +93,7 @@ export const AsideEditPage = ({}: AsideEditPageProps) => {
                             <LangSwitch />
                             <p>This information will only be used in your landing page metadata and won't appear in your management interface.</p>
                             <FormGroup id="title" label="Title tag" hint="Optimal title length is approximatively 55 characters.">
-                                <FormInput id="title" placeholder="A short name" defaultValue="CPI Concept" />
+                                <FormInput id="title" placeholder="A short name" defaultValue="Impact Innovators" />
                             </FormGroup>
                             <FormGroup id="description" label="Meta description" hint="Optimal description length is 155 to 300 characters. ">
                                 <FormTextarea id="description" placeholder="Write page description here..." defaultValue="Rethink your future, reinvent your offering, change your organization" />

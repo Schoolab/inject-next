@@ -242,7 +242,7 @@ export const ProgramDashboardCarousel = () => {
                                     <h3>
                                         <span className="icon icon-questionnaire is-24px mr-2" />A survey is waiting your response!
                                     </h3>
-                                    <p>We need you to help us improve the CPI Concept program by responding to a survey. It will only take you a couple minutes.</p>
+                                    <p>We need you to help us improve the Impact Innovators program by responding to a survey. It will only take you a couple minutes.</p>
                                     <div className="mt-5 d-flex">
                                         <a className="btn btn-lg flex-fill btn-primary mr-3 text-nowrap" href="#">
                                             Respond to survey

@@ -73,7 +73,7 @@ export const WithMetas: Story = {
 
 export const WithFrom: Story = {
     args: {
-        from: "CPI Concept"
+        from: "Impact Innovators"
     },
 };
 

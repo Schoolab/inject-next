@@ -24,7 +24,7 @@ export const ProgramLanding = ( { theme = "default" }: ProgramLandingProps) => {
             <AppContent layout="full">
 
                 <SectionHero
-                    title="CPI Concept"
+                    title="Impact Innovators"
                     subtitle="Rethink your future, reinvent your offering, change your organization"
                     content={`
                         <p><strong>Objective:</strong> Prospective vision of a market, context, sector</p>
