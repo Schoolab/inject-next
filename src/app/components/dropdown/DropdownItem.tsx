@@ -9,7 +9,7 @@ interface DropdownItemProps {
     /**
      * is interactive or danger ?
      */
-    type?: "interactive" | "danger";
+    type?: "interactive" | "danger" | "ai";
     /**
      * is this an outbound link?
      */

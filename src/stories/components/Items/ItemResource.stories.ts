@@ -72,3 +72,21 @@ export const WithImage: Story = {
         options: true,
     },
 };
+
+export const WithCover: Story = {
+    args: {
+        resource: {
+            name: "Intro to Ideation.pdf",
+            type: "PDF File",
+            details: "420 KB",
+        },
+        action: "download",
+        icon: {
+            name: "file-pdf-box",
+            addClass: "text-danger",
+        },
+        img: "img/placeholder-ideation-cover.png",
+        cover: true,
+        options: true,
+    },
+};

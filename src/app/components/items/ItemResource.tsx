@@ -17,6 +17,7 @@ export interface ItemResourceProps {
      * Does the item have an image url
      */
     img?: string;
+    cover?: boolean;
     /**
      * Resource informations
      */
@@ -36,20 +37,23 @@ export interface ItemResourceProps {
     isSmall?: Boolean;
 }
 
-export const ItemResource = ({ img, resource, action, options = true, icon, isSmall = false }: ItemResourceProps) => {
+export const ItemResource = ({ img, cover, resource, action, options = true, icon, isSmall = false }: ItemResourceProps) => {
     let classTab = ["item is-bordered"];
     isSmall && classTab.push("is-small");
 
     return (
         <div className={classTab.join(" ")}>
-            {img && (
+            {cover && img && (
                 <div className="item-cover is-16by9">
                     <img src={img} alt="Intro to ideation file cover" />
                 </div>
             )}
             <div className="item-row">
                 <div className="item-row">
-                    {icon.addClass ? <Icon name={icon.name} addClass={`item-icon ${icon.addClass}`} /> : <Icon name={icon.name} addClass="item-icon" />}
+                    { cover
+                        ? <Icon name={icon.name} addClass={`item-icon ${icon.addClass}`} />
+                        : img ? <div className="thumbnail is-lg"><img src={img} /></div> : <Icon name={icon.name} addClass={`item-icon ${icon.addClass}`} />
+                    }
 
                     <div className="item-content">
                         <a className="item-title stretched-link text-truncate" href="#">

@@ -2,6 +2,16 @@ import React from "react";
 import { Layout } from "../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Alert } from "@/app/components/Alert";
+import { FormGroup } from "@/app/components/forms/FormGroup";
+import { FormInput } from "@/app/components/forms/FormInput";
+import { FormInputWrapper } from "@/app/components/forms/FormInputWrapper";
+import { Button } from "@/app/components/Button";
+import { Dropdown } from "@/app/components/dropdown/Dropdown";
+import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
+import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { FormTextarea } from "@/app/components/forms/FormTextarea";
+import { ItemResource } from "@/app/components/items/ItemResource";
 
 export const ManageForms = () => {
     return (
@@ -17,24 +27,36 @@ export const ManageForms = () => {
                             <div className="collapse show" id="BasicInfo">
                                 <p className="mb-5">Name the program and add details such as a description, dates, a cover image and an icon.</p>
                                 <div className="form-row">
-                                    <div className="form-group col-lg-6">
-                                        <label className="font-weight-bold required" htmlFor="translations_wrapper_lang_en_name">
-                                            Name
-                                        </label>
-                                        <input type="text" id="translations_wrapper_lang_en_name" name="translations_wrapper[lang_en][name]" required data-hint="name" aria-describedby="translations_wrapper_lang_en_name_help" className="form-control" defaultValue="We Design a Brighter Future" />
-                                        <small id="translations_wrapper_lang_en_name_help" className="form-text text-muted">
-                                            The program name should be short and descriptive. 3-60 characters
-                                        </small>
-                                    </div>
-                                    <div className="form-group col-lg-6">
-                                        <label className="font-weight-bold required" htmlFor="translations_wrapper_lang_en_slug">
-                                            Slug
-                                        </label>
-                                        <input type="text" id="translations_wrapper_lang_en_slug" name="translations_wrapper[lang_en][slug]" required data-hint="slug" className="form-control" defaultValue="schoolab-impact" />
-                                        <small id="translations_wrapper_lang_en_slug_help" className="form-text text-muted">
-                                            Slug must not be changed after you communicate it to your users.
-                                        </small>
-                                    </div>
+                                    <FormGroup id="name" required={true} label="Name" hint="Should be short and descriptive. 3-60 characters" addClass="col-lg-6">
+                                        <FormInputWrapper>
+                                            <FormInput id="name" required={true} defaultValue="Impact Innovators" />
+                                            <div className="input-floating-actions">
+                                                <Dropdown data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <Button iconStartName="ai" label="Ask AI" size="xs" type="transparent" addClass="dropdown-toggle text-ai" />
+                                                    <DropdownMenu direction="right">
+                                                        <DropdownItem type="ai" label="Improve writing" iconName="improve-writing" />
+                                                        <DropdownItem type="ai" label="Make shorter" iconName="shorter-text" />
+                                                        <DropdownItem type="ai" label="Change tone..." iconName="tone" />
+                                                        <DropdownItem type="ai" label="Translate to..." iconName="translate" />
+                                                        <DropdownDivider />
+                                                        <DropdownItem label="Copy from English" iconName="copy" />
+                                                        <DropdownItem label="Restore to saved value" iconName="restore" />
+                                                        <div className="dropdown-content text-center">
+                                                            <span>AInject can make mistakes. Check important info.</span>
+                                                        </div>
+                                                    </DropdownMenu>
+                                                </Dropdown>
+                                            </div>
+                                        </FormInputWrapper>
+                                    </FormGroup>
+                                    <FormGroup id="slug" required={true} label="Slug" hint="Slug must not be changed after you communicate it to your users." addClass="col-lg-6">
+                                        <FormInputWrapper>
+                                            <FormInput id="slug" required={true} defaultValue="impact-innovators" />
+                                            <div className="input-floating-actions">
+                                                <Button iconStartName="restore" label="Refresh" size="xs" type="muted" />
+                                            </div>
+                                        </FormInputWrapper>
+                                    </FormGroup>
                                 </div>
                                 <div className="form-row">
                                     <div className="form-group col-lg-6">
@@ -53,91 +75,76 @@ export const ManageForms = () => {
 
                                 <Alert type="info" icon="information" text={`To edit the registrations dates go to <a href="#" class="alert-link">Registration</a> then <a href="#" class="alert-link">Dates &amp; Rights</a>`} />
 
-                                <div className="form-group">
-                                    <label className="font-weight-bold" htmlFor="translations_wrapper_lang_en_overview">
-                                        Short description
-                                    </label>
-                                    <textarea
-                                        id="translations_wrapper_lang_en_overview"
-                                        name="translations_wrapper[lang_en][overview]"
-                                        maxLength={500}
-                                        data-hint="overview"
-                                        aria-describedby="translations_wrapper_lang_en_overview_help"
-                                        rows={4}
-                                        className="form-control"
-                                        style={{
-                                            overflow: "hidden",
-                                            overflowWrap: "break-word",
-                                            resize: "none",
-                                            height: 102,
-                                        }}
-                                        defaultValue={"A program to teach you our methodologies and the basics of impact, in your daily life as well as in your company, for a brighter future!"}
-                                    />
-                                    <small id="translations_wrapper_lang_en_overview_help" className="form-text text-muted">
-                                        A short sentence to explain what the program offers to participants. It will appear on lists.
-                                    </small>
-                                </div>
-                                <div className="form-group" id="challengeCoverManager">
-                                    <label className="font-weight-bold">Cover image</label>
-                                    <div className="imageUploadManagerContainer">
-                                        <div className="mb-3 imageUploadList">
-                                            <div className="item is-bordered imageUploadListItem" data-identifier="11718cfa-9796-48f4-86ab-467af8f5cf04">
-                                                <div className="item-row">
-                                                    <div className="thumbnail is-lg">
-                                                        <img src="https://inject-prod.s3.amazonaws.com/images/11718cfa-9796-48f4-86ab-467af8f5cf04/co300x200.png" />
+                                <FormGroup id="description" label="Short description" hint="A short sentence to explain what the program offers to participants. It will appear on lists.">
+                                    <FormInputWrapper>
+                                        <FormTextarea
+                                            id="description"
+                                            rows={4}
+                                            defaultValue={"A program to teach you our methodologies and the basics of impact, in your daily life as well as in your company, for a brighter future!"}
+                                        />
+                                        <div className="input-floating-actions">
+                                            <Dropdown data-toggle="dropdown">
+                                                <Button iconStartName="ai" size="xs" type="transparent" addClass="dropdown-toggle text-ai" data-toggle="dropdown" aria-expanded="false" />
+                                                <DropdownMenu direction="right">
+                                                    <DropdownItem type="ai" label="Write a course summary" caption="From all the content inside" iconName="summarize" />
+                                                    <DropdownItem type="ai" label="Translate to French" iconName="translate-generate" />
+                                                    <DropdownDivider />
+                                                    <DropdownItem type="ai" label="Improve writing" iconName="improve-writing" />
+                                                    <DropdownItem type="ai" label="Make shorter" iconName="shorter-text" />
+                                                    <DropdownItem type="ai" label="Change tone..." iconName="tone" />
+                                                    <DropdownItem type="ai" label="Translate to..." iconName="translate" />
+                                                    <DropdownDivider />
+                                                    <DropdownItem label="Copy from English" iconName="copy" />
+                                                    <DropdownItem label="Restore to saved value" iconName="restore" />
+                                                    <div className="dropdown-content text-center">
+                                                        <span>AInject can make mistakes. Check important info.</span>
                                                     </div>
-                                                    <div className="item-content ml-4 py-1">
-                                                        <span className="item-title is-truncated h4 mb-none">Screenshot 2023-08-02 at 20.11.34.png</span>
-                                                        <small className="text-muted">Image/png</small>
-                                                    </div>
-                                                    <div className="item-options dropdown">
-                                                        <button className="btn btn-lg btn-transparent btn-icon" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <span className="icon icon-options" />
-                                                        </button>
-                                                        <div className="dropdown-menu dropdown-menu-right">
-                                                            <a className="dropdown-item updateImageButton" href="#" data-width={1800} data-height={1200} data-maxfileweight={5242880} data-url="/program/142/manage/cover-pictures/206/update" data-signed-url="/rest/challenge/142/cover-picture/signed-url/206">
-                                                                {" "}
-                                                                Update{" "}
-                                                            </a>
-                                                            <a className="dropdown-item text-danger deleteImageButton cursorLink" href="#" data-url="/program/142/manage/cover-pictures/206/delete">
-                                                                {" "}
-                                                                Delete{" "}
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                </DropdownMenu>
+                                            </Dropdown>
+                                        </div>
+                                    </FormInputWrapper>
+                                </FormGroup>
+                                <FormGroup id="cover" label="Cover image" hint="PNG,JPG,JPEG, at least 1800x1200 px.">
+                                    <ItemResource icon={{ name: "image" }} img="img/program-innovators.png" cover={false} resource={{ name: "impact-innovators-cover.png", type: "PNG Image" }} action="delete" />
+                                    <Dropdown>
+                                        <Button iconStartName="plus-circle" label="Add image" type="default" extended={true} addClass="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
+                                        <DropdownMenu>
+                                            <DropdownItem type="ai" label="Generate an image..." iconName="attachment-generate" />
+                                            <DropdownDivider />
+                                            <DropdownItem label="Import image..." iconName="attachment" />
+                                            <DropdownItem label="Add image link..." iconName="link" />
+                                            <div className="dropdown-content text-center">
+                                                <span>AInject can make mistakes. Check important info.</span>
+                                            </div>
+                                        </DropdownMenu>
+                                    </Dropdown>
+                                </FormGroup>
+                                <fieldset className="form-group">
+                                    <legend className="label">Visibility</legend>
+                                    <div className="form-options grid gap-xs" id="id-4" aria-describedby="exemple_help">
+                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
+                                            <div className="flex-fill custom-control custom-control-card custom-radio">
+                                                <input type="radio" id="id-4_0" name="form2" className="custom-control-input" defaultValue={0} />
+                                                <label className="custom-control-label text-nowrap" htmlFor="id-4_0">
+                                                    Administrators only (draft mode)
+                                                </label>
                                             </div>
                                         </div>
-                                        <span className="btn btn-block btn-lg btn-icon btn-default createImageButton" data-width={1800} data-height={1200} data-url="/program/142/manage/cover-pictures/create" data-signed-url="/rest/challenge/142/cover-picture/signed-url" data-maxfiles={5} data-maxfileweight={5242880} data-file-types="image/png,image/jpg,image/jpeg" data-maxfilesremaining={4}>
-                                            <span className="icon icon-attachment" />
-                                            <span>Add image</span>
-                                        </span>
-                                        <small className="form-text text-muted">PNG,JPG,JPEG, at least 1800x1200 px.</small>
-                                    </div>
-                                </div>
-                                <fieldset className="form-group">
-                                    <h4>Visibility</h4>
-                                    <div className="d-flex flex-column flex-lg-row" id="challenge_advanced_form_visibility">
-                                        <div className="flex-fill mr-0 mr-lg-3 mb-3 mb-lg-0 custom-control custom-radio is-bordered">
-                                            <input type="radio" id="challenge_advanced_form_visibility_0" name="challenge_advanced_form[visibility]" className="custom-control-input" defaultValue={0} />
-                                            <label className="text-nowrap custom-control-label custom-control-label" htmlFor="challenge_advanced_form_visibility_0">
-                                                Administrators only (draft mode)
-                                            </label>
-                                            <div className="input-box" />
+                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
+                                            <div className="flex-fill custom-control custom-control-card custom-radio">
+                                                <input type="radio" id="id-4_1" name="form2" className="custom-control-input" defaultValue={1} defaultChecked />
+                                                <label className="custom-control-label text-nowrap" htmlFor="id-4_1">
+                                                    Members only
+                                                </label>
+                                            </div>
                                         </div>
-                                        <div className="flex-fill mr-0 mr-lg-3 mb-3 mb-lg-0 custom-control custom-radio is-bordered">
-                                            <input type="radio" id="challenge_advanced_form_visibility_1" name="challenge_advanced_form[visibility]" className="custom-control-input" defaultValue={1} defaultChecked />
-                                            <label className="text-nowrap checkbox-custom custom-control-label custom-control-label" htmlFor="challenge_advanced_form_visibility_1">
-                                                Members only
-                                            </label>
-                                            <div className="input-box" />
-                                        </div>
-                                        <div className="flex-fill mb-3 mb-lg-0 custom-control custom-radio is-bordered">
-                                            <input type="radio" id="challenge_advanced_form_visibility_2" name="challenge_advanced_form[visibility]" className="custom-control-input" defaultValue={2} />
-                                            <label className="text-nowrap checkbox-custom custom-control-label custom-control-label" htmlFor="challenge_advanced_form_visibility_2">
-                                                All visitors
-                                            </label>
-                                            <div className="input-box" />
+                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
+                                            <div className="flex-fill custom-control custom-control-card custom-radio">
+                                                <input type="radio" id="id-4_2" name="form2" className="custom-control-input" defaultValue={2} />
+                                                <label className="custom-control-label text-nowrap" htmlFor="id-4_2">
+                                                    All visitors
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </fieldset>

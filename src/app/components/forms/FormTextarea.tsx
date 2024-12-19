@@ -42,6 +42,7 @@ export const FormTextarea = ({ type = "text", id, defaultValue, placeholder, req
             aria-describedby={'hint-' + id}
             className={classInput.join(" ")}
             rows={rows}
+            {...props}
         />
     );
 };
