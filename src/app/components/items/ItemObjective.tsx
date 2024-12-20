@@ -1,37 +1,62 @@
 import React, { CSSProperties } from "react";
-import { Avatar } from "../avatars/Avatar";
+import { Icon } from "../Icon";
+import { Tag } from "../badges/tags/Tag";
 
-export interface ItemSectionProps {
-    label?: string; 
-    caption?: string; 
-    image?: string;
+export interface ItemObjectiveProps {
+    icon?: string;
+    emoji?: string;
+    name: string;
+    link?: string;
+    tasks?: number;
+    date?: string;
+    dueDate?: string;
+    locked?: boolean;
 
+    children?: React.ReactNode;
     addClass?: string;
     style?: CSSProperties;
 }
 
-export const ItemSection = ({
-    label = "{section.title}",
-    caption = "{section.type.name}",
-    image = "https://placehold.co/1080x720/f5f5f5/262626.svg?font=Inter&text=3%3A2",
+export const ItemObjective = ({
+    icon = "objective",
+    emoji,
+    name,
+    link = "#",
+    tasks = 0,
+    date,
+    dueDate,
+    locked = true,
+    children,
     addClass,
     style,
     ...props
-}: ItemSectionProps) => {
+}: ItemObjectiveProps) => {
     let classTab = ["item is-small is-bordered gap-0px"];
     addClass && classTab.push(addClass);
 
     return (
         <div className={classTab.join(" ")} style={style} {...props}>
-            <div className="item-row align-items-center gap-xs py-xs">
-                <Avatar size="xl" iconName="section" isOval={false} image={image} addClass="is-16by10" />
-
-                <div className="item-content d-flex flex-column align-items-start justify-content-center overflow-hidden">
-                    <a href="#" className="item-title stretched-link line-clamp-1">
-                        {label}
-                    </a>
-                    <span className="small text-muted">{caption}</span>
+            <div className="item-row gap-xs pb-8px">
+                <div className="d-flex p-3xs text-muted">
+                    { emoji && <span className="emoji is-20px">{emoji}</span> }
+                    {!emoji && <Icon name={icon} size="2sm" /> }
                 </div>
+                <div className="item-content d-flex flex-column align-items-start justify-content-center overflow-hidden">
+                    <a href={link} className="item-title stretched-link line-clamp-1">
+                        {name}
+                    </a>
+                    { (tasks > 0) && <span className="small text-muted">{ tasks === 1 ? "1 task" : tasks + " tasks"}</span> }
+                </div>
+                { date && !dueDate && <Tag
+                    status={locked ? "draft" : "open"}
+                    iconName={locked ? "status-bordered" : "status-filled"}
+                    label={date}
+                /> }
+                 { date && dueDate && <Tag
+                    status={locked ? "draft" : "progress"}
+                    iconName={locked ? "status-bordered" : "status-dashed"}
+                    label={date + " -> " + dueDate}
+                /> }
                 <div className="d-flex align-items-center gap-xs dropdown">
                     <div className="dropdown-container">
                         <a className="btn btn-muted btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
@@ -52,12 +77,9 @@ export const ItemSection = ({
                                 <span className="dropdown-item--label">Send to bottom</span>
                             </a>
                             <div className="dropdown-divider" />
-                            <h6 className="dropdown-header">Section</h6>
+                            <h6 className="dropdown-header">Actions</h6>
                             <a className="dropdown-item" data-toggle="collapse" data-target="#question1">
                                 <span className="dropdown-item--label">Edit</span>
-                            </a>
-                            <a className="dropdown-item" data-toggle="collapse" data-target="#question1">
-                                <span className="dropdown-item--label">Duplicate</span>
                             </a>
                             <a className="dropdown-item is-danger">
                                 <span className="dropdown-item--label">Delete</span>

@@ -42,7 +42,7 @@ export const AsideEditPage = ({}: AsideEditPageProps) => {
                         <div className="aside-body d-flex flex-column gap-md">
                             <LangSwitch />
                             <ItemsGroup>
-                                <ItemsGroupHeader label="Sections" number="15" />
+                                <ItemsGroupHeader label="Sections" number={15} />
                                 <div className="d-flex flex-column gap-2xs">
                                     <ItemSection image="img/covers/section_hero-right.png" label="Impact Innovators" caption="Hero (image right)"/>
                                     <ItemSection image="img/covers/section_content-left.png" label="Our mission" caption="Content (image left)" />

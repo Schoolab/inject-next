@@ -42,14 +42,14 @@ export const CardObjective = ({ name = "Objective Name", description, emoji, dat
                         }
                         { (date && !dueDate) && 
                             <Tag
-                                status={locked ? "default" : "open"}
+                                status={locked ? "draft" : "open"}
                                 iconName={locked ? "status-bordered" : "status-filled"}
                                 label={date}
                             />
                         }
                         { (date && dueDate) && 
                             <Tag
-                                status={locked ? "default" : "progress"}
+                                status={locked ? "draft" : "progress"}
                                 iconName={locked ? "status-bordered" : "status-dashed"}
                                 label={date + " -> " + dueDate}
                             />

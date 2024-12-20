@@ -1,6 +1,8 @@
 import React from "react";
 import { Layout } from "../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
+import { ItemSetupTask } from "@/app/components/items/ItemSetupTask";
+import { ProgressBar } from "@/app/components/ProgressBar";
 
 export const ManageSetup = () => {
     return (
@@ -23,63 +25,12 @@ export const ManageSetup = () => {
                                         <div className="collapse show" id="desc-1">
                                             <p className="small text-muted">Define the core details of your program and invite program managers to collaborate in setting it up</p>
                                         </div>
-                                        <div className="my-5">
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <span className="small text-muted">Tasks</span>
-                                                <span className="small text-primary">
-                                                    <span className="mr-2 icon icon-check" />
-                                                    Finished
-                                                </span>
-                                            </div>
-                                            <div className="d-flex justify-content-between align-items-center">
-                                                <div className="progress flex-fill mr-3" style={{ height: 5 }}>
-                                                    <div className="progress-bar" role="progressbar" style={{ width: "100%" }} aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} />
-                                                </div>
-                                                <span className="small text-primary">2/2</span>
-                                            </div>
-                                        </div>
+                                        <ProgressBar label="Tasks" percentage={100} min={0} max={100} text="2/2" addClass="my-md" />
                                     </div>
-                                    <div className="col-12 col-lg-8">
-                                        <div className="item is-completed is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-information" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Complete the basic info
-                                                        </a>
-                                                        <span className="small text-muted">Review key details: program name, description, dates, visibility</span>
-                                                    </div>
-                                                </div>
-
-                                                <button  data-toggle="tooltip" data-original-title="Mark as uncompleted" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div className="item is-completed is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-account-plus" />
-                                                    <div className="item-content ml-3 strech-link">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Invite program managers
-                                                        </a>
-                                                        <span className="small text-muted">Invite your program managers to access and help run the program.</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as uncompleted" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
+                                    <div className="col-12 col-lg-8 ">
+                                        <div className="d-flex flex-column gap-2xs">
+                                            <ItemSetupTask icon="information" title="Complete the basic info" caption="Review key details: program name, description, dates, visibility" progress={3} tasks={3} />
+                                            <ItemSetupTask icon="account-plus" title="Invite program managers" caption="Invite your program managers to access and help run the program." progress={3} tasks={3} />
                                         </div>
                                     </div>
                                 </div>
@@ -94,101 +45,14 @@ export const ManageSetup = () => {
                                         <div className="collapse show" id="desc-2">
                                             <p className="small text-muted">Configure essential registration settings and application forms to make the program accessible to participants</p>
                                         </div>
-                                        <div className="my-5">
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <span className="small text-muted">Tasks</span>
-                                                <span className="small text-muted">In progress</span>
-                                            </div>
-                                            <div className="d-flex justify-content-between align-items-center">
-                                                <div className="progress flex-fill mr-3" style={{ height: 5 }}>
-                                                    <div className="progress-bar" role="progressbar" style={{ width: "25%" }} aria-valuenow={25} aria-valuemin={0} aria-valuemax={100} />
-                                                </div>
-                                                <span className="small text-muted">2/4</span>
-                                            </div>
-                                        </div>
+                                        <ProgressBar label="Tasks" percentage={50} min={0} max={100} text="2/4" addClass="my-md" />
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item is-completed is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-calendar" />
-                                                    <div className="strecth-link item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Registrations dates and rights
-                                                        </a>
-                                                        <span className="small text-muted">Set registration period and who can view the program</span>
-                                                    </div>
-                                                </div>
-
-                                                <button  data-toggle="tooltip" data-original-title="Mark as uncompleted" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <div className="item is-bordered resource mb-3">
-                                            <div className="item-row ">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-format-list-checks" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Setup Application Forms
-                                                        </a>
-                                                        <span className="small text-muted">Create forms to collect participant or project details</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div className="item is-completed  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-information" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Create a landing page (Optional)
-                                                        </a>
-                                                        <span className="small text-muted">Set up a public-facing page to showcase your program</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as uncompleted" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={100} style={{ ["--percent" as any]: 100 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-label" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Setup Participant Type (Optional / Advanced)
-                                                        </a>
-                                                        <span className="small text-muted">Create custom forms tailored for different participant types</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
+                                        <div className="d-flex flex-column gap-2xs">
+                                            <ItemSetupTask icon="calendar" title="Registrations dates and rights" caption="Set registration period and who can view the program" progress={3} tasks={3} />
+                                            <ItemSetupTask icon="format-list-checks" title="Setup Application Forms" caption="Create forms to collect participant or project details" progress={1} tasks={3} />
+                                            <ItemSetupTask icon="information" title="Create a landing page (Optional)" caption="Set up a public-facing page to showcase your program" progress={3} tasks={3} />
+                                            <ItemSetupTask icon="label" title="Setup Participant Type (Optional / Advanced)" caption="Create custom forms tailored for different participant types" progress={0} tasks={3} />
                                         </div>
                                     </div>
                                 </div>
@@ -203,102 +67,15 @@ export const ManageSetup = () => {
                                         <div className="collapse show" id="desc-5">
                                             <p className="small text-muted">Schedule evaluation sessions, invite jury members, and manage project assessments to determine outcomes via jury sessions</p>
                                         </div>
-                                        <div className="my-5">
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <span className="small text-muted">Tasks</span>
-                                                <span className="small text-muted">Not completed</span>
-                                            </div>
-                                            <div className="d-flex justify-content-between align-items-center">
-                                                <div className="progress flex-fill mr-3" style={{ height: 5 }}>
-                                                    <div className="progress-bar" role="progressbar" style={{ width: "0%" }} aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} />
-                                                </div>
-                                                <span className="small text-muted">0/6</span>
-                                            </div>
-                                        </div>
+                                        <ProgressBar label="Tasks" percentage={0} min={0} max={100} text="0/4" addClass="my-md" />
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-gavel" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Evaluation dates and rights
-                                                        </a>
-                                                        <span className="small text-muted">Set dates and permissions for evaluations or jury sessions</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
+                                        <div className="d-flex flex-column gap-2xs">
+                                            <ItemSetupTask icon="gavel" title="Evaluation dates and rights" caption="Set dates and permissions for evaluations or jury sessions" progress={0} tasks={3} />
+                                            <ItemSetupTask icon="format-list-checks" title="Notation & Scorecard" caption="Define scoring criteria and weighting for jury evaluations" progress={0} tasks={3} />
+                                            <ItemSetupTask icon="account-plus" title="Invite Jury Members" caption="Invite juries to assess submissions and participate in scoring" progress={0} tasks={3} />
+                                            <ItemSetupTask icon="notifications" title="Communication with Jury" caption="Set up notifications and reminders for jury members" progress={0} tasks={3} />
                                         </div>
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-format-list-checks" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Notation & Scorecard
-                                                        </a>
-                                                        <span className="small text-muted">Define scoring criteria and weighting for jury evaluations</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-account-plus" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Invite Jury Members
-                                                        </a>
-                                                        <span className="small text-muted">Invite juries to assess submissions and participate in scoring</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-text" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Communication with Jury
-                                                        </a>
-                                                        <span className="small text-muted">Set up notifications and reminders for jury members</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -312,80 +89,13 @@ export const ManageSetup = () => {
                                         <div className="collapse show" id="desc-3">
                                             <p className="small text-muted">Add course modules, objectives, and supporting resources to guide participants through a structured learning journey</p>
                                         </div>
-                                        <div className="my-5">
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <span className="small text-muted">Tasks</span>
-                                                <span className="small text-muted">Not completed</span>
-                                            </div>
-                                            <div className="d-flex justify-content-between align-items-center">
-                                                <div className="progress flex-fill mr-3" style={{ height: 5 }}>
-                                                    <div className="progress-bar" role="progressbar" style={{ width: "0%" }} aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} />
-                                                </div>
-                                                <span className="small text-muted">0/3</span>
-                                            </div>
-                                        </div>
+                                        <ProgressBar label="Tasks" percentage={0} min={0} max={100} text="0/3" addClass="my-md" />
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-library" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Learning course
-                                                        </a>
-                                                        <span className="small text-muted">Design a learning course with modules for participants</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-bullseye-arrow" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Objectives
-                                                        </a>
-                                                        <span className="small text-muted">Set clear goals or milestones for participant projects</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-book-open-blank-variant" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Add Ressources
-                                                        </a>
-                                                        <span className="small text-muted">Upload documents and tools for participant reference</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
+                                        <div className="d-flex flex-column gap-2xs">
+                                            <ItemSetupTask icon="library" title="Learning course" caption="Design a learning course with modules for participants" progress={0} tasks={3} />
+                                            <ItemSetupTask icon="bullseye-arrow" title="Objectives" caption="Set clear goals or milestones for participant projects" progress={0} tasks={3} />
+                                            <ItemSetupTask icon="book-open-blank-variant" title="Add Ressources" caption="Upload documents and tools for participant reference" progress={0} tasks={3} />
                                         </div>
                                     </div>
                                 </div>
@@ -400,79 +110,13 @@ export const ManageSetup = () => {
                                         <div className="collapse show" id="desc-4">
                                             <p className="small text-muted">Set up spaces for experts to offer guidance, manage their visibility to participants, and provide resources for coaching sessions</p>
                                         </div>
-                                        <div className="my-5">
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <span className="small text-muted">Tasks</span>
-                                                <span className="small text-muted">Not completed</span>
-                                            </div>
-                                            <div className="d-flex justify-content-between align-items-center">
-                                                <div className="progress flex-fill mr-3" style={{ height: 5 }}>
-                                                    <div className="progress-bar" role="progressbar" style={{ width: "0%" }} aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} />
-                                                </div>
-                                                <span className="small text-muted">0/3</span>
-                                            </div>
-                                        </div>
+                                        <ProgressBar label="Tasks" percentage={0} min={0} max={100} text="0/3" addClass="my-md" />
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-account-plus" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Invite Expert
-                                                        </a>
-                                                        <span className="small text-muted">Invite your program experts</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-clipboard-text" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Assign Expert to Project
-                                                        </a>
-                                                        <span className="small text-muted">Link experts to specific projects for support and advice</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-eye" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Set Experts Visibility
-                                                        </a>
-                                                        <span className="small text-muted">Control whether experts are visible to all participants</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
+                                        <div className="d-flex flex-column gap-2xs">
+                                            <ItemSetupTask icon="account-plus" title="Invite experts" caption="Invite your program experts" progress={0} tasks={3} />
+                                            <ItemSetupTask icon="clipboard-text" title="Assign expert to project" caption="Link experts to specific projects for support and advice" progress={0} tasks={3} />
+                                            <ItemSetupTask icon="eye" title="Set experts visibility" caption="Control whether experts are visible to all participants" progress={0} tasks={3} />
                                         </div>
                                     </div>
                                 </div>
@@ -487,100 +131,16 @@ export const ManageSetup = () => {
                                         <div className="collapse show" id="desc-5">
                                             <p className="small text-muted">Maintain participant engagement through regular updates, emails, surveys, and events</p>
                                         </div>
-                                        <div className="my-5">
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <span className="small text-muted">Tasks</span>
-                                                <span className="small text-muted">Not completed</span>
-                                            </div>
-                                            <div className="d-flex justify-content-between align-items-center">
-                                                <div className="progress flex-fill mr-3" style={{ height: 5 }}>
-                                                    <div className="progress-bar" role="progressbar" style={{ width: "0%" }} aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} />
-                                                </div>
-                                                <span className="small text-muted">0/4</span>
-                                            </div>
-                                        </div>
+                                        <ProgressBar label="Tasks" percentage={0} min={0} max={100} text="0/4" addClass="my-md" />
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-newspaper-variant-outline" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Newsfeed
-                                                        </a>
-                                                        <span className="small text-muted">Post updates and tips to keep participants informed and engaged with the program</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
+                                        <div className="d-flex flex-column gap-2xs">
+                                            <ItemSetupTask icon="newspaper-variant-outline" title="Newsfeed" caption="Post updates and tips to keep participants informed and engaged with the program" progress={0} tasks={3} />
+                                            <ItemSetupTask icon="email" title="Mail" caption="Schedule automated emails to share news and reminders" progress={0} tasks={3} />
+                                            <ItemSetupTask icon="format-list-checks" title="Survey" caption="Collect feedback from participants through custom surveys" progress={0} tasks={3} />
+                                            <ItemSetupTask icon="calendar" title="Events" caption="Plan and manage program events like workshops or webinars" progress={0} tasks={3} />
                                         </div>
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-email" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Mail
-                                                        </a>
-                                                        <span className="small text-muted">Schedule automated emails to share news and reminders</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-format-list-checks" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Survey
-                                                        </a>
-                                                        <span className="small text-muted">Collect feedback from participants through custom surveys</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-calendar" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Events
-                                                        </a>
-                                                        <span className="small text-muted">Plan and manage program events like workshops or webinars</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -594,99 +154,14 @@ export const ManageSetup = () => {
                                         <div className="collapse show" id="desc-7">
                                             <p className="small text-muted">Access analytics to monitor participant engagement and measure program effectiveness</p>
                                         </div>
-                                        <div className="my-5">
-                                            <div className="d-flex justify-content-between mb-3">
-                                                <span className="small text-muted">Tasks</span>
-                                                <span className="small text-muted">Not completed</span>
-                                            </div>
-                                            <div className="d-flex justify-content-between align-items-center">
-                                                <div className="progress flex-fill mr-3" style={{ height: 5 }}>
-                                                    <div className="progress-bar" role="progressbar" style={{ width: "0%" }} aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} />
-                                                </div>
-                                                <span className="small text-muted">0/4</span>
-                                            </div>
-                                        </div>
+                                        <ProgressBar label="Tasks" percentage={0} min={0} max={100} text="0/4" addClass="my-md" />
                                     </div>
                                     <div className="col-12 col-lg-8">
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-chart-donut" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Insights & Analytics
-                                                        </a>
-                                                        <span className="small text-muted">Track participant engagement and program progress</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-library" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Learning Tracking
-                                                        </a>
-                                                        <span className="small text-muted">Track progress on learning course</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-bullseye-arrow" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Objectives Tracking
-                                                        </a>
-                                                        <span className="small text-muted">Track progress on program objectives</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div className="item  is-bordered resource mb-3">
-                                            <div className="item-row align-items-center">
-                                                <div className="mr-5 d-flex flex-fill">
-                                                    <div className="item-icon is-darker icon icon-label" />
-                                                    <div className="item-content ml-3">
-                                                        <a href="#" className="mb-none item-title stretched-link">
-                                                            Segments
-                                                        </a>
-                                                        <span className="small text-muted">Create Segments across the different participant groups</span>
-                                                    </div>
-                                                </div>
-                                                <button  data-toggle="tooltip" data-original-title="Mark as completed" className="z-2 btn btn-lg btn-transparent">
-                                                    <svg className="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent={0} style={{ ["--percent" as any]: 0 }}>
-                                                        <circle className="progress-circle progress-circle-bg" />
-                                                        <circle className="progress-circle progress-circle-percent" />
-                                                        <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
+                                        <div className="d-flex flex-column gap-2xs">
+                                            <ItemSetupTask icon="chart-donut" title="Insights & Analytics" caption="Track participant engagement and program progress" progress={0} tasks={3} />
+                                            <ItemSetupTask icon="library" title="Learning Tracking" caption="Track progress on learning course" progress={0} tasks={3} />
+                                            <ItemSetupTask icon="bullseye-arrow" title="Objectives Tracking" caption="Track progress on program objectives" progress={0} tasks={3} />
+                                            <ItemSetupTask icon="label" title="Segments" caption="Create Segments across the different participant groups" progress={0} tasks={3} />
                                         </div>
                                     </div>
                                 </div>

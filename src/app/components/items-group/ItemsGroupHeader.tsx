@@ -1,18 +1,25 @@
+import { Notif } from "../badges/notifs/Notif";
+import { Tag } from "../badges/tags/Tag";
+
 export interface ItemsGroupHeaderProps {
-    /**
-     * Label
-     */
     label?: string; 
-    /**
-     * Number
-     */
-    number?: string; 
+    number?: number; 
+    date?: string;
+    dueDate?: string;
+    locked?: boolean;
 }
 
 /**
  * Buttons drive actions in forms, dialogs, etc. and should be used to guide the user to their next best action. Button component has support for multiple sizes, type and can have a start or an end icon.
  */
-export const ItemsGroupHeader = ({ label, number, ...props }: ItemsGroupHeaderProps) => {
+export const ItemsGroupHeader = ({
+    label,
+    number,
+    date,
+    dueDate,
+    locked,
+    ...props
+}: ItemsGroupHeaderProps) => {
     let classTab = ["item-group-header"];
 
     return (
@@ -22,9 +29,18 @@ export const ItemsGroupHeader = ({ label, number, ...props }: ItemsGroupHeaderPr
                 {label}
             </h4>
 
-            <span className="badge badge-notification is-highlight">
-                {number}
-            </span>
+            { date && !dueDate && <Tag
+                status={locked ? "draft" : "open"}
+                iconName={locked ? "status-bordered" : "status-filled"}
+                label={date}
+            /> }
+                { date && dueDate && <Tag
+                status={locked ? "draft" : "progress"}
+                iconName={locked ? "status-bordered" : "status-dashed"}
+                label={date + " -> " + dueDate}
+            /> }
+            
+            <Notif label={number} status="highlight" />
 
             <div className="dropdown-container">
                 <a className="btn btn-xs btn-transparent btn-icon text-muted" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">

@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { ItemSection } from "@/app/components/items/ItemSection";
+import { ItemsGroupHeader } from "@/app/components/items-group/ItemsGroupHeader";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-    title: "Components/Items/Section",
-    component: ItemSection,
+    title: "Components/Items/Group Header",
+    component: ItemsGroupHeader,
     parameters: {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
         layout: "centered",
@@ -14,14 +14,16 @@ const meta = {
     },
      // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
      tags: ["autodocs"],
-     argTypes: {},
+     argTypes: {
+        date: { control: 'text' },
+        dueDate: { control: 'text' },
+     },
     args: {
-        style: {
-            width: "32rem",
-        },
+        label: "Items group header",
+        number: "0",
     },
 
-} satisfies Meta<typeof ItemSection>;
+} satisfies Meta<typeof ItemsGroupHeader>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -31,5 +33,26 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
     args: {
         
+    },
+};
+
+export const Date: Story = {
+    args: {
+        date: "Oct 1",
+    },
+};
+
+export const DueDate: Story = {
+    args: {
+        date: "Oct 1",
+        dueDate: "31",
+        locked: false,
+    },
+};
+
+export const Available: Story = {
+    args: {
+        date: "Oct 1",
+        locked: false,
     },
 };

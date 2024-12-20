@@ -19,12 +19,12 @@ export interface ProgressBarProps {
 }
 
 export const ProgressBar = ({ label = "Progression", percentage = 0, min = 0, max = 100, text = "0%", size="sm", inline, addClass, style, ...props }: ProgressBarProps) => {
-  let classTab = ["progress-circle-container flex-shrink-0"];
+  let classTab = ["d-flex flex-column gap-2xs"];
   size && classTab.push(`is-${size}`);
   addClass && classTab.push(addClass);
 
   return (
-    <div className="d-flex flex-column gap-2xs">
+    <div className={classTab.join(" ")} style={style} {...props}>
         { !inline && <div className="d-flex justify-content-between">
             <span className="small text-muted">{label}</span>
             <span className="small text-muted">{text}</span>
