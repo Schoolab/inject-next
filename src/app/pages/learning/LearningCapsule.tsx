@@ -164,6 +164,7 @@ export const LearningCapsule = () => {
                             </div>
                         </div>
                     </div>
+                    
                     <div className="aside-buttons">
                         <button className="btn btn-lg btn-default mb-3" data-toggle="tooltip" data-original-title="Capsules">
                             <span className="icon icon-format-list-bulleted" />

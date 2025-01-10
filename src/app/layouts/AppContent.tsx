@@ -12,15 +12,17 @@ interface AppContentProps {
     showSubnav?: boolean;
     showStepper?: boolean;
     isAsside?: boolean;
+    isIAchat?: boolean;
     showBreadcrumb?: boolean;
     showTitle?: boolean;
     layout?: "centered" | "fluid" | "narrow" | "full";
     sections?: "cards" | "bordered" | "transparent" | "separated";
 }
-export const AppContent = ({ children,   showSubnav = true,  showStepper= false, isAsside, layout = "centered", sections = "cards", showBreadcrumb = true, showTitle = true }: AppContentProps) => {
+export const AppContent = ({ children,   showSubnav = true,  showStepper= false, isAsside, layout = "centered", sections = "cards", isIAchat, showBreadcrumb = true, showTitle = true }: AppContentProps) => {
 
     let appMainContainerClass = "application-main-content container-lg container-lg-fluid p-sm p-md-md p-lg-xl";
     isAsside && (appMainContainerClass = "application-main-content container-fluid p-sm p-md-md p-lg-xl");
+    isIAchat && (appMainContainerClass = "application-main-content h-100 overflow-auto");
     layout === "fluid" && (appMainContainerClass = "application-main-content container-fluid p-sm p-md-md p-lg-xl");
     layout === "narrow" && (appMainContainerClass = "application-main-content container-md p-sm p-md-md p-lg-xl");
     layout === "full" && (appMainContainerClass = "application-landing");

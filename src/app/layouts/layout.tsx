@@ -22,12 +22,13 @@ export const Layout = ({ children, sideBar, theme, shortcutBarExpanded, showShor
     // useEffect(() => {
     //     select();
     // }, []);
-
+    let appContainerClass = "application-container";
+    sideBar === "Admin" && (appContainerClass = "application-container pb-0");
     return (
         <div className="application-ui">
             <Navbar theme={theme && theme} isHub={hub} />
            
-            <div className="application-container">
+            <div className={appContainerClass}>
                 {showShortcutbar && <ShortcutBar isExpanded={shortcutBarExpanded} />}
                 {sideBar && sideBar === "Manage" && <SidebarManage />}
                 {sideBar && sideBar === "Admin" && <SidebarAdmin />}

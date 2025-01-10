@@ -1,7 +1,7 @@
 export const tooltips = () => {
     $(function () { 
         //tooltips
-        $('[data-toggle="tooltip"]').tooltip({ trigger: "hover focus" }); 
+        $('[data-toggle="tooltip"]').tooltip({ trigger: "hover" }); 
         var tooltips = $('[data-toggle="tooltip"]');
         tooltips.tooltip();
         function disableTooltipInMobile() {

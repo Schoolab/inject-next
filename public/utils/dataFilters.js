@@ -153,11 +153,11 @@ export const dataFilters = () => {
                                 text: optionName,
                             })
                         );
-                        modelDataFilters.controlRemoveCtn.append('<button id="index-' + index + '" class="btn btn-sm btn-transparent d-none"><span class="d-flex flex-fill justify-content-between">' + optionName + '<span class="icon icon-md icon-delete"></span></span> </button>');
+                        modelDataFilters.controlRemoveCtn.append('<button id="index-' + index + '" class="btn btn-sm btn-transparent d-none"><span class="d-flex flex-nowrap flex-fill justify-content-between line-clamp-1"><span class="text-truncate">' + optionName + '</span><span class="icon icon-md icon-delete"></span></span> </button>');
                     } else {
                         modelDataFilters.filters.eq(index).removeClass("d-none");
 
-                        modelDataFilters.controlRemoveCtn.append('<button id="index-' + index + '" class="btn btn-sm btn-transparent"><span class="d-flex flex-fill justify-content-between">' + optionName + '<span class="icon icon-md icon-delete"></span></span> </button>');
+                        modelDataFilters.controlRemoveCtn.append('<button id="index-' + index + '" class="btn btn-sm btn-transparent"><span class="d-flex flex-nowrap flex-fill justify-content-between line-clamp-1"><span class="text-truncate">' + optionName + '</span><span class="icon icon-md icon-delete"></span></span> </button>');
                     }
                 });
             },
