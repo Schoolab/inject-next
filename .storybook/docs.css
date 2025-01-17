@@ -226,3 +226,14 @@
     line-height: 1rem;
     font-size: 1rem;
 }
+
+.css-1pae8pd:has(.icon.deprecated) {
+    background-color: var(--bg-support-danger-light) !important;
+    background-image: repeating-linear-gradient(-45deg, var(--border-default), var(--border-default) 1px, var(--bg-fullpage) 1px, var(--bg-fullpage) 4px) !important;
+    color: var(--fg-support-danger-light) !important;
+}
+
+.css-1pae8pd:has(.icon.deprecated) ~ .css-7woigg {
+    color: var(--fg-ui-accent) !important;
+    text-decoration: line-through;
+}
