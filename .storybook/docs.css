@@ -1,0 +1,211 @@
+.sbdocs-wrapper {
+    background-color: var(--bg-page) !important; 
+    color: var(--fg-ui) !important;
+}
+
+.css-10lkeuu {
+    transition-duration: 0ms !important;
+}
+
+.sbdocs-content > p {
+    color: var(--fg-ui-body) !important;
+}
+
+.sbdocs-title {
+    color: var(--fg-ui-heading) !important;
+}
+
+.sbdocs-preview {
+    background: var(--bg-card) !important;
+    border-color: var(--border-default) !important;
+}
+
+.sb-bar {
+    box-shadow: var(--border-default) 0 -1px 0 0 inset !important;
+    background: var(--bg-highlight) !important;
+    color: var(--fg-highlight) !important;
+}
+
+.sb-bar button:not(:hover) {
+    color: inherit !important;
+}
+
+.css-11xgcgt {
+    background: var(--bg-highlight) !important;
+}
+
+.docblock-code-toggle {
+    background: var(--bg-highlight) !important;
+    color: var(--fg-highlight) !important;
+    border-color: var(--border-default) !important;
+}
+
+.docblock-argstable {
+    color: var(--fg-ui-body) !important;
+    filter: drop-shadow(0px 0px 0px var(--border-default)) !important;
+    background-color: var(--bg-page) !important;
+}
+
+.docblock-argstable-head {
+    color: var(--fg-ui-muted) !important;
+}
+
+.docblock-argstable th {
+    color: inherit !important;
+}
+
+.docblock-argstable tbody {
+    background-color: var(--bg-card) !important;
+    filter: none !important;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.1) !important;
+}
+
+.docblock-argstable tbody >tr:not(:first-of-type)>td {
+    border-top: 1px solid var(--border-default) !important;
+}
+
+.docblock-argstable tbody >tr:first-of-type>td:last-of-type {
+    border-top-right-radius: var(--radius-rounded) !important;
+}
+
+.docblock-argstable tbody >tr:last-of-type>td:last-of-type {
+    border-bottom-right-radius: var(--radius-rounded) !important;
+}
+
+.docblock-argstable tbody >tr:last-of-type>td:first-of-type {
+    border-bottom-left-radius: var(--radius-rounded) !important;
+}
+
+.docblock-argstable  tbody >tr:first-of-type>td:first-of-type {
+    border-top-left-radius: var(--radius-rounded) !important;
+}
+
+.docblock-argstable tbody >tr>* {
+    background-color: var(--bg-card) !important;
+    border-color: var(--border-default) !important;
+}
+
+.docblock-argstable tbody>tr>*:first-of-type {
+    border-inline-start: 0px solid var(--border-default) !important;
+}
+
+.docblock-argstable tbody >tr>*:last-of-type {
+    border-inline-end: 0px solid var(--border-default) !important;
+}
+
+.docblock-argstable tbody >tr:first-of-type>* {
+    border-block-start: 0px solid var(--border-default) !important;
+}
+
+.docblock-argstable tbody >tr:last-of-type>* {
+    border-block-end: 0px solid var(--border-default) !important;
+}
+
+.docblock-argstable button:not(:hover) {
+    color: inherit !important;
+}
+
+/* Tags */
+.css-o1d7ko, code {
+    background-color: var(--bg-highlight) !important;
+    color: var(--fg-highlight) !important;
+    border-color: var(--border-default) !important;
+}
+
+.docblock-argstable tbody >tr button {
+    background-color: var(--bg-card) !important;
+    color: var(--fg-ui-body) !important;
+    box-shadow: var(--border-default) 0 0 0 1px inset !important;
+}
+
+.docblock-argstable tbody >tr svg {
+    fill: var(--fg-ui-muted) !important;
+}
+
+.docblock-argstable tbody >tr button:hover {
+    background-color: var(--bg-ui-hover) !important;
+}
+
+.docblock-argstable tbody >tr textarea,
+.docblock-argstable tbody >tr select,
+.docblock-argstable tbody >tr input:not([role="switch"]) {
+    background-color: var(--bg-card) !important;
+    color: var(--fg-ui-body) !important;
+    box-shadow: var(--border-default) 0 0 0 1px inset !important;
+}
+
+.docblock-argstable tbody >tr textarea:hover,
+.docblock-argstable tbody >tr select:hover,
+.docblock-argstable tbody >tr input:not([role="switch"]):hover {
+    box-shadow: var(--border-default-hover) 0 0 0 1px inset !important;
+}
+
+.docblock-argstable tbody >tr textarea:focus,
+.docblock-argstable tbody >tr select:focus,
+.docblock-argstable tbody >tr input:not([role="switch"]):focus {
+    box-shadow: var(--border-active) 0 0 0 1px inset !important;
+    outline-color: var(--bg-interactive) !important;
+    outline-offset: var(--stroke-thick) !important;
+    outline-width: var(--stroke-thin) !important;
+    outline-style: dashed !important;
+}
+
+/* Switches */
+.css-177r6r9 {
+    background-color: var(--bg-highlight) !important;
+}
+
+.css-177r6r9 span {
+    color: var(--fg-ui-muted) !important;
+}
+
+.css-177r6r9 input:checked~span:last-of-type,
+.css-177r6r9 input:not(:checked)~span:first-of-type {
+    background-color: var(--bg-highlight-hover) !important;
+    color: var(--fg-highlight) !important;
+}
+
+.css-177r6r9 input:focus {
+    box-shadow: var(--border-active) 0 0 0 1px inset !important;
+    outline-color: var(--bg-interactive) !important;
+    outline-offset: var(--stroke-thick) !important;
+    outline-width: var(--stroke-thin) !important;
+    outline-style: dashed !important;
+}
+
+/* Headers */
+.css-wzniqs {
+    color: var(--fg-ui-muted) !important;
+}
+
+.css-cgg8c7 {
+    color: var(--fg-ui-muted) !important;
+}
+
+.css-a5y6l8 {
+    color: var(--fg-ui-headings) !important;
+}
+
+.css-5j8njo {
+    color: var(--fg-ui-muted) !important;
+}
+
+.css-rs8390 {
+    color: var(--fg-ui-muted) !important;
+}
+
+.css-1njl3fa {
+    background: var(--bg-fullpage) !important;
+    background-color: var(--bg-fullpage) !important;
+    background-image: repeating-linear-gradient(-45deg, var(--border-default), var(--border-default) 1px, var(--bg-fullpage) 1px, var(--bg-fullpage) 16px) !important;
+    border-color: var(--border-default) !important;
+}
+
+.docblock-typeset {
+    background-color: var(--bg-card) !important;
+    border-color: var(--border-default) !important;
+}
+
+.css-1kojprk {
+    color: var(--fg-ui-muted) !important;
+}

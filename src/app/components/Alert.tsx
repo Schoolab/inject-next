@@ -20,7 +20,7 @@ export interface AlertProps {
     /**
      * Contextual type 
      */
-    type: "primary" | "secondary" | "info" | "success" | "warning" | "danger";
+    type: "primary" | "secondary" | "tertiary" | "interactive" | "accent" | "assistant" | "info" | "success" | "warning" | "danger";
     icon?: string;
 }
 

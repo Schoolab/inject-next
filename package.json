@@ -19,7 +19,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@schoolab/inject-icons": "^1.15.0",
+    "@schoolab/inject-icons": "^1.15.1",
     "dompurify": "^3.2.0",
     "jquery": "3.7.1",
     "next": "14.2.5",
@@ -52,6 +52,7 @@
     "prettier": "^3.3.3",
     "react-syntax-highlighter": "^15.5.0",
     "storybook": "^8.2.5",
+    "storybook-dark-mode": "^4.0.2",
     "typescript": "^5"
   },
   "resolutions": {

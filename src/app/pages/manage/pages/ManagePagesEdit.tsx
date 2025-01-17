@@ -84,7 +84,7 @@ export const ManagePagesEdit = () => {
                                 title="Our programs to support your transformation"
                                 numberLabel="30,000+"
                                 numberCaption="people have used our digital platform"
-                                style={{ backgroundColor: "#F5F5F5" }}
+                                style={{ backgroundColor: "#F5F5F5", color: "#111" }}
                             />
                         </EditableBlock>
 

@@ -370,7 +370,7 @@ export const TableElementSkewed = ({}: TableElementSkewedProps) => {
                         </th>
                         <td
                             style={{
-                                backgroundColor: "var(--bg-interactive)",
+                                backgroundColor: "var(--bg-interactive)!important",
                                 color: "var(--fg-interactive)",
                             }}
                         >

@@ -115,7 +115,7 @@ export const TableElementSkewedEmpty = ({}: TableElementSkewedEmptyProps) => {
                         </th>
                         <td
                             style={{
-                                backgroundColor: "var(--bg-interactive)",
+                                backgroundColor: "var(--bg-interactive)!important",
                                 color: "var(--fg-interactive)",
                             }}
                         >

@@ -1,6 +1,7 @@
 import React from "react";
 import { ItemResource } from "../items/ItemResource";
 import { CardEvent } from "../cards/CardEvent";
+import { MessageChat } from "../messages/MessageChat";
 
 interface AsideEventProps {}
 
@@ -127,15 +128,17 @@ export const AsideEvent = ({}: AsideEventProps) => {
                                         &nbsp;Voir plus
                                     </a>
                                 </div>
-                                <div className="messages-module-content standaloneThreadContainer" data-current-user={2363}>
-                                    <div className="threads-empty mt-5"> Pas de messages...</div>
+                                <div className="messages-module-content p-none">
+                                    <div className="threads-empty mt-5 d-none">No messages...</div>
                                     <div className="justify-content-center align-items-center text-muted py-3 standaloneChatLoader d-none">
                                         <div className="spinner-border spinner-border-sm mr-3 text-primary" role="status">
                                             <span className="sr-only">Loading…</span>
                                         </div>
                                         Loading…
                                     </div>
-                                    <div className="message-container standaloneChatContainer" data-current={0} data-url=""></div>
+                                    <div className="message-container p-none">
+                                        <MessageChat />
+                                    </div>
                                 </div>
                                 <div className="w-100 standaloneThreadForm" data-mark-as-read-url="/mark-as-read/60">
                                     <form className="w-100 message-composer is-sticky mt-auto" name="message_light" method="post" action="/messages/conversation/60" data-disable-on-submit={1}>

@@ -32,6 +32,16 @@
     --custom-bottom-navbar-nav-link-color: #41C696; */
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --custom-navbar-bg-color: #111;
+    }
+}
+
+.theme-dark {
+    --custom-navbar-bg-color: #111;
+}
+
 pre {
     color: #fff;
 }

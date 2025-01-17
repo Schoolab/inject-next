@@ -170,7 +170,7 @@
 }
 
 .daterangepicker td.in-range {
-    background-color: var(--bg-interactive-highlight);
+    background-color: var(--bg-interactive-light);
     border-color: transparent;
     color: #000;
     border-radius: 0

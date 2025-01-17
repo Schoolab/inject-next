@@ -1,9 +1,20 @@
 import type { Preview } from "@storybook/react";
+import { themes } from '@storybook/theming';
+
 import "../public/styles/styles.css";
+import './docs.css'; 
 
 const preview: Preview = {
   parameters: {
-    
+    darkMode: {
+      dark: { ...themes.dark, appBg: '#171717', appPreviewBg: "#0D0D0D" },
+      light: { ...themes.normal, appBg: '#FFFFFF', appPreviewBg: "#FFFFFF" },
+      darkClass: 'theme-dark',
+      lightClass: 'theme-light',
+      current: 'light',
+      stylePreview: true,
+
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -19,6 +30,7 @@ const preview: Preview = {
         htmlWhitespaceSensitivity: "ignore",
       },
     },
+    
   },
 };
 

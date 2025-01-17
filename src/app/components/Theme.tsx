@@ -13,7 +13,7 @@ export const Theme = ({ themeName }: ThemeProps) => {
                     @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
                    :root {
-                        --bg-brand-hero: #1D1301;
+                        --bg-brand-hero: #0F0A01;
                         --bg-brand-on-hero-highlight: rgba(255,255,255,.1);
                         --bg-brand-on-hero-active: #FFF;
                         --fg-brand-hero: #FFF;
@@ -66,8 +66,8 @@ export const Theme = ({ themeName }: ThemeProps) => {
                         --bg-interactive-hover: #E84230;
                         --fg-interactive: #FFFFFF;
 
-                        --fg-card-interactive: #ED6B5D;
-                        --fg-card-interactive-hover: #E84230;
+                        --fg-ui-interactive: #ED6B5D;
+                        --fg-ui-interactive-hover: #E84230;
 
                         --display-font-family: "Noe Display";
                         --display-font-weight: "Bold";
@@ -151,8 +151,8 @@ export const Theme = ({ themeName }: ThemeProps) => {
                         --bg-interactive-hover: #2143D4;
                         --fg-interactive: #FFFFFF;
 
-                        --fg-card-interactive: #4462E2;
-                        --fg-card-interactive-hover: #2143D4;
+                        --fg-ui-interactive: #4462E2;
+                        --fg-ui-interactive-hover: #2143D4;
                         
                         --display-font-family: "GT America";
                         // --display-font-weight: "700";
@@ -236,8 +236,8 @@ export const Theme = ({ themeName }: ThemeProps) => {
                         --bg-interactive-hover: #4C301F;
                         --fg-interactive: #FFFFFF;
 
-                        --fg-card-interactive: #70462D;
-                        --fg-card-interactive-hover: #4C301F;
+                        --fg-ui-interactive: #70462D;
+                        --fg-ui-interactive-hover: #4C301F;
 
                         --display-font-family: "Canela";
                         --display-font-weight: "Regular";

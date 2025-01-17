@@ -150,12 +150,6 @@ export const ManageForms = () => {
                                 </fieldset>
 
                                 <Alert type="warning" icon="alert" text="Reminder: don’t forget to publish the program to participants when you’re ready!" />
-
-                                <div className="d-flex justify-content-end">
-                                    <button type="submit" className="btn btn-primary btn-flat btn-lg">
-                                        Save
-                                    </button>
-                                </div>
                             </div>
                         </div>
                         <div className="application-section">
@@ -263,12 +257,6 @@ export const ManageForms = () => {
                                 </div>
 
                                 <Alert type="info" icon="information" text="Only people for whom the brief is intended can see it" />
-
-                                <div className="d-flex justify-content-end">
-                                    <button type="submit" className="btn btn-primary btn-flat btn-lg">
-                                        Save
-                                    </button>
-                                </div>
                             </div>
                         </div>
                         <div className="application-section">
@@ -311,11 +299,6 @@ export const ManageForms = () => {
                                         </label>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="d-flex justify-content-end">
-                                <button type="submit" className="btn btn-primary btn-flat btn-lg">
-                                    Save
-                                </button>
                             </div>
                         </div>
                     </div>
