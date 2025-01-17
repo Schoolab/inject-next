@@ -1,0 +1,17 @@
+import { Meta, IconGallery, IconItem } from '@storybook/blocks';
+ 
+import { Icon } from "@/app/components/Icon";
+
+import icons from'@schoolab/inject-icons/dist/inject-icons.json';
+
+<Meta title="Iconography" />
+ 
+# Iconography
+
+<IconGallery>
+  {Object.keys(icons).map((icon) => (
+    <IconItem name={icon}>
+      <Icon name={icon} />
+    </IconItem>
+  ))}
+</IconGallery>
