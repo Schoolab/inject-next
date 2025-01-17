@@ -209,3 +209,20 @@
 .css-1kojprk {
     color: var(--fg-ui-muted) !important;
 }
+
+.css-7woigg {
+    color: var(--fg-ui-muted) !important;
+}
+
+.css-1pae8pd {
+    background-color: var(--bg-card) !important;
+    border-color: var(--border-default) !important;
+    color: var(--fg-ui-heading) !important;
+}
+
+.css-1pae8pd .icon {
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 1rem;
+}
