@@ -1,18 +1,272 @@
-import React from "react";
-import "./styles.css";
-import data from'@schoolab/inject-icons/dist/inject-icons.json';
+// IconGallery.tsx
+import { IconGallery, IconItem } from '@storybook/blocks';
+import { Icon } from "@/app/components/Icon";
 
+interface Icon {
+  [key: string]: any;
+}
 
-export const IconsList = () => {
-    const icons = Object.keys(data);
-    const listItems = icons.map((icon) => (
-        <div className="preview" data-value={icon} key={icon}>
-            <span className="inner">
-                <span className={`icon icon-${icon}`}></span>
-            </span>
-            <span className="preview-label text-center">{icon}</span>
+export function renderIconGallery(icons: Icon) {
+  const iconList = [
+    'account-circle',
+    'account-plus',
+    'account',
+    'admin',
+    'ai',
+    'alert-circle',
+    'alert',
+    'apple',
+    'arrow-bottom',
+    'arrow-down',
+    'arrow-left',
+    'arrow-right',
+    'arrow-top',
+    'arrow-up',
+    'arrow-down-circle',
+    'arrow-left-circle',
+    'arrow-right-circle',
+    'arrow-up-circle',
+    'attachment',
+    'attachment-generate',
+    'board',
+    'bookmark-outline',
+    'bookmark',
+    'calendar-blank',
+    'calendar',
+    'cancel',
+    'certificate',
+    'chart-line',
+    'chart-pie',
+    'check-circle',
+    'check',
+    'chevron-down',
+    'chevron-left',
+    'chevron-right',
+    'chevron-up',
+    'close-circle',
+    'close',
+    'cloud-download',
+    'coaching',
+    'code',
+    'comment',
+    'community',
+    'console',
+    'content',
+    'copy',
+    'cut',
+    'dashboard',
+    'delete',
+    'download',
+    'drag',
+    'dropdown',
+    'ecosystem-corporate',
+    'ecosystem-startups',
+    'ecosystem-student',
+    'email',
+    'evaluation',
+    'faq',
+    'file-audio-box',
+    'file-csv-box',
+    'file-document-box',
+    'file-excel-box',
+    'file-google-spreadsheet',
+    'file-pdf-box',
+    'file-play-box',
+    'file-powerpoint-box',
+    'file-presentation-box',
+    'file-word-box',
+    'file-zip-box',
+    'filter',
+    'flag',
+    'folder',
+    'form-checkbox-marked',
+    'form-checklist',
+    'form-radiobox-marked',
+    'form-redo',
+    'form-select',
+    'form-textarea',
+    'form-textbox',
+    'form-undo',
+    'format-align-center',
+    'format-align-justify',
+    'format-align-left',
+    'format-align-right',
+    'format-bold',
+    'format-clear',
+    'format-color-fill',
+    'format-color-text',
+    'format-italic',
+    'format-list-bulleted',
+    'format-list-numbered',
+    'format-quote',
+    'format-size',
+    'format-strikethrough',
+    'format-title',
+    'format-underlined',
+    'fullscreen-exit',
+    'fullscreen',
+    'help-center',
+    'help',
+    'home',
+    'image-plus',
+    'image',
+    'impact-equitable',
+    'impact-native',
+    'impact-none',
+    'impact-not-obvious',
+    'impact-push',
+    'impact-sustainable',
+    'improve-writing',
+    'information',
+    'label',
+    'language',
+    'learning',
+    'link-off',
+    'link',
+    'loading',
+    'location',
+    'lock-open',
+    'lock',
+    'longer-text',
+    'markdown',
+    'medal',
+    'members',
+    'menu',
+    'minus-circle',
+    'minus',
+    'new-tab',
+    'newsfeed',
+    'notifications-active',
+    'notifications-none',
+    'notifications-off',
+    'notifications-paused',
+    'notifications',
+    'number',
+    'objective',
+    'options',
+    'org',
+    'paste',
+    'pause',
+    'pencil-off',
+    'pencil',
+    'phone',
+    'pin',
+    'plan-data',
+    'plan-native',
+    'play-circle',
+    'play',
+    'plus-circle',
+    'plus',
+    'point',
+    'preview',
+    'program',
+    'project',
+    'public-page',
+    'questionnaire',
+    'rating',
+    'shapes',
+    'release',
+    'restore',
+    'role-admin',
+    'role-expert',
+    'role-jury',
+    'role-manager',
+    'role-participant',
+    'role-visitor',
+    'save',
+    'search',
+    'selection',
+    'send-circle',
+    'send',
+    'service-saml',
+    'settings',
+    'share',
+    'shorter-text',
+    'signature',
+    'sort-ascending',
+    'sort-descending',
+    'spellcheck',
+    'star-outline',
+    'star',
+    'status-bordered',
+    'status-dashed',
+    'status-filled',
+    'status-iddle',
+    'status-stop',
+    'status-warning',
+    'summarize',
+    'summary',
+    'tab',
+    'table',
+    'tag',
+    'text',
+    'thumb-down',
+    'thumb-up',
+    'time',
+    'timeline',
+    'tone',
+    'toolbox',
+    'translate-generate',
+    'translate',
+    'unfold-less',
+    'unfold',
+    'upload',
+    'vertical-dei',
+    'vertical-food',
+    'vertical-plastic',
+    'visibility-off',
+    'visibility',
+    'volume-off',
+    'volume-on',
+    'votes',
+    'work',
+    'youtube',
+    'zoom-minus',
+    'zoom-plus',
+    'room',
+    'database',
+    'circle',
+    'seo',
+  ];
+
+  const iconsByFirstLetter: { [key: string]: string[] } = Object.keys(icons)
+    .sort()
+    .reduce((acc, icon) => {
+      const firstLetter = icon.charAt(0);
+      acc[firstLetter] = (acc[firstLetter] || []).concat(icon);
+      return acc;
+    }, {} as { [key: string]: string[] });
+
+  const deprecatedIcons: string[] = [];
+
+  // Parcourir les icônes et extraire celles qui sont Deprecated
+  Object.entries(iconsByFirstLetter).forEach(([letter, icons]) => {
+    iconsByFirstLetter[letter] = icons.filter((icon) => {
+      if (!iconList.includes(icon)) {
+        deprecatedIcons.push(icon);
+        return false; // Exclure l'icône de la liste principale
+      }
+      return true; // Garder l'icône dans la liste principale
+    });
+  });
+
+  // Ajouter les icônes Deprecated à la fin
+  iconsByFirstLetter['Deprecated'] = deprecatedIcons;
+
+  return (
+    <>
+      {Object.entries(iconsByFirstLetter).map(([letter, icons]) => (
+        <div key={letter}>
+          <h2>{letter === "Deprecated" ? letter : letter.toUpperCase()}</h2>
+          <IconGallery>
+            {icons.map((icon) => (
+              <IconItem key={icon} name={icon}>
+                <Icon name={icon} addClass={letter === 'Deprecated' ? 'deprecated' : ''} />
+              </IconItem>
+            ))}
+          </IconGallery>
         </div>
-    ));
-
-    return <div className="previews">{listItems}</div>;
-};
+      ))}
+    </>
+  );
+}
