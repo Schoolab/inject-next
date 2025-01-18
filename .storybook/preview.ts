@@ -13,7 +13,7 @@ const preview: Preview = {
       lightClass: 'theme-light',
       current: 'light',
       stylePreview: true,
-
+      classTarget: 'html',
     },
     controls: {
       matchers: {
