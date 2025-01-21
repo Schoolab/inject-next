@@ -49,7 +49,7 @@ export const Title = ({ title = "Page title", iconName, emoji, backLink, paginat
     let classTab = ["application-title"];
     addClass && classTab.push(addClass);
 
-    let listButtons = buttons?.map((button) => <Button label={button.label} disabled={button.disabled} isActive={button.isActive} showActive={button.showActive} hasDropdown={button.hasDropdown} iconStartName={button.iconStartName} iconEndName={button.iconEndName} addClass={button.addClass} type={button.type} size={button.size} extended={button.extended} outlined={button.outlined} />);
+    let listButtons = buttons?.map((button, index) => <Button key={index} label={button.label} disabled={button.disabled} isActive={button.isActive} showActive={button.showActive} hasDropdown={button.hasDropdown} iconStartName={button.iconStartName} iconEndName={button.iconEndName} addClass={button.addClass} type={button.type} size={button.size} extended={button.extended} outlined={button.outlined} />);
 
     return (
         <div className={classTab.join(" ")}>
@@ -102,7 +102,7 @@ export const Title = ({ title = "Page title", iconName, emoji, backLink, paginat
                                 {iconName && <Icon name={iconName} />}
                                 {emoji && <span>{emoji}</span>}
                                 <div className="dropdown">
-                                    <div className="h3 m-none dropdown-toggle  d-flex align-items-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="titleDropdown" style={{ ["white-space" as any]: "normal" }} >
+                                    <div className="h3 m-none dropdown-toggle  d-flex align-items-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="titleDropdown" style={{ ["whiteSpace" as any]: "normal" }} >
                                         <span className="line-clamp-1">
                                             {title}
                                         </span>

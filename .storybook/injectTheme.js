@@ -1,11 +1,11 @@
 import { create } from '@storybook/theming/create';
  
 export default create({
-    base: 'light',
+    // base: 'light',
 
     // Typography
-    fontBase: '"Inter", sans-serif',
-    fontCode: 'IBM Plex Mono',
+    // fontBase: '"Inter", sans-serif',
+    // fontCode: '"IBM Plex Mono", monospace',
 
     // Brand
     brandTitle: 'Schoolab',

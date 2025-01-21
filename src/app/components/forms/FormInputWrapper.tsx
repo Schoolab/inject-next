@@ -5,7 +5,7 @@ import { Dropdown } from "../dropdown/Dropdown";
 import { DropdownMenu } from "../dropdown/DropdownMenu";
 import { DropdownItem } from "../dropdown/DropdownItem";
 import { DropdownDivider } from "../dropdown/DropdownDivider";
-import { DropdownCaptions } from "../dropdown/DropdownCaptions";
+import { DropdownCaptions } from "../dropdown/DropdownAI";
 
 export interface FormInputWrapperProps {
     children?: ReactNode;

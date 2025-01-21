@@ -5,9 +5,9 @@ import { DropdownMenu } from "./DropdownMenu";
 import { DropdownItem } from "./DropdownItem";
 import { DropdownDivider } from "./DropdownDivider";
 
-interface DropdownCaptionsProps {}
+interface DropdownAIProps {}
 
-export const DropdownCaptions = ({}: DropdownCaptionsProps) => {
+export const DropdownAI = ({}: DropdownAIProps) => {
     return (
         <Dropdown>
             <DropdownMenu direction="left" show={true}>

@@ -1,9 +1,17 @@
 import React from "react";
 import { useEffect } from "react";
 import { tooltips } from "../../../public/utils/tooltips";
+import { nestedDropdown } from "../../../public/utils/nestedDropdown";
 import { Button } from "./Button";
 import { Theme } from "./Theme";
 import { Avatar } from "./avatars/Avatar";
+import { DropdownMenu } from "./dropdown/DropdownMenu";
+import { DropdownDivider } from "./dropdown/DropdownDivider";
+import { DropdownItem } from "./dropdown/DropdownItem";
+import { Role } from "./badges/roles/Role";
+import { DropdownNested } from "./dropdown/DropdownNested";
+import { DropdownHeader } from "./dropdown/DropdownHeader";
+import { EmptyState } from "./EmptyState";
 export interface NavBarProps {
     /**
      * User is logged?
@@ -34,6 +42,7 @@ export interface NavBarProps {
 export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showNotifs = true, showMessages = true, theme = "Inject" }: NavBarProps) => {
     useEffect(() => {
         tooltips();
+        nestedDropdown();
     }, []);
     let logoUrl = "img/inject-logo-dark.svg";
     switch (theme) {
@@ -162,6 +171,9 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                                     <a className="navbar-option--link" data-toggle="dropdown" role="button" href="#">
                                                         <span className="icon icon-notifications has-dot" title="" data-toggle="tooltip" data-content="" data-original-title="Notifications" />
                                                     </a>
+                                                    <DropdownMenu direction="right" addClass="dropdown-menu-medium">
+                                                        <EmptyState iconTitle="notifications-none" title="You've caught up!" text="There is no new notification yet." labelLink="Manage notifications" bordered={false} spacious={true} />
+                                                    </DropdownMenu>
                                                 </div>
                                             )}
                                             {showMessages && (
@@ -171,40 +183,44 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                                     </a>
                                                 </div>
                                             )}
+
                                             <div className="navbar-option dropdown d-none d-lg-flex ml-8px">
-                                                <a className="navbar-thumbnail" data-toggle="dropdown" role="button" href="#">
-                                                    <Avatar image="img/thumbnails/john-doe.webp" data-toggle="tooltip" data-original-title="Account" />
+                                                <a className="navbar-thumbnail" data-toggle="dropdown" data-boundary="viewport" role="button" href="#">
+                                                    <Avatar data-toggle="tooltip" data-original-title="Account" />
                                                 </a>
-                                                <div className="dropdown-menu dropdown-menu-right">
-                                                    <a className="dropdown-item d-flex gap-xs">
-                                                        <Avatar image="img/thumbnails/john-doe.webp" />
-                                                        <div className="d-flex flex-column justify-content-center">
-                                                            <h4 className="mb-none">John Doe</h4>
+                                                <DropdownMenu direction="right" addClass="dropright">
+                                                    <DropdownItem label="Profile" addClass="gap-xs">
+                                                        <Avatar />
+                                                        <div className="d-flex flex-column justify-content-center w-100">
+                                                            <span className="d-flex align-items-center gap-2xs">John Doe <Role status="admin" /></span>
                                                             <span className="small text-muted mb-none">Head of Tests</span>
                                                         </div>
-                                                    </a>
-                                                    <div className="dropdown-divider" />
-                                                    <a className="dropdown-item" href="#">
-                                                        Profile
-                                                    </a>
-                                                    <a className="dropdown-item" href="#">
-                                                        Invitations
-                                                    </a>
-                                                    <a className="dropdown-item" href="#">
-                                                        History
-                                                    </a>
-                                                    <div className="dropdown-divider" />
-                                                    <a className="dropdown-item" href="#">
-                                                        Settings
-                                                    </a>
-                                                    <a className="dropdown-item" target="_blank" rel="nofollow" href="https://www.notion.so/Help-Center-INSIDE-7e56175d45bc47e8947e7584f2e3837d">
-                                                        Help Center
-                                                    </a>
-                                                    <div className="dropdown-divider" />
-                                                    <a className="dropdown-item is-danger" href="#">
-                                                        Log out
-                                                    </a>
-                                                </div>
+                                                    </DropdownItem>
+                                                    <DropdownDivider />
+                                                    <DropdownItem label="Profile" />
+                                                    <DropdownItem label="Followings" />
+                                                    <DropdownItem label="Events" />
+                                                    <DropdownItem label="Surveys" />
+                                                    <DropdownDivider />
+                                                    <DropdownItem label="Settings" iconName="settings" />
+                                                    <DropdownNested direction="dropright">
+                                                        <DropdownItem 
+                                                            label="Theme: Device"
+                                                            iconName="theme-dark"
+                                                            toggle={true}
+                                                            data-toggle="dropdown"
+                                                            aria-haspopup="true"
+                                                            aria-expanded="false" />
+                                                        <DropdownMenu>
+                                                            <DropdownItem label="Device theme" active={true} />
+                                                            <DropdownItem label="Light theme" active={false} />
+                                                            <DropdownItem label="Dark theme" active={false} />
+                                                        </DropdownMenu>
+                                                    </DropdownNested>
+                                                    <DropdownItem label="Help center" iconName="help-center" target="_blank" rel="nofollow" href="https://www.notion.so/Help-Center-INSIDE-7e56175d45bc47e8947e7584f2e3837d" />
+                                                    <DropdownDivider />
+                                                    <DropdownItem label="Sign out" iconName="signout" type="danger" />
+                                                </DropdownMenu>
                                             </div>
                                         </div>
                                     ) : (

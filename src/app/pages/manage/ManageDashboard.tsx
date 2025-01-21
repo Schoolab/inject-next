@@ -122,7 +122,7 @@ export const ManageDashboard = () => {
                                                 </div>
                                             </div>
                                             <div className="item-row">
-                                                <div className="bg-light rounded p-sm w-100 d-flex flex-column gap-sm justify-content-center text-decoration-none">
+                                                <div className="bg-highlight rounded p-sm w-100 d-flex flex-column gap-sm justify-content-center text-decoration-none">
                                                     <div className="d-flex flex-column gap-2xs">
                                                         <div className="d-flex gap-none align-items-center text-muted text-navigation-bold">
                                                             <span>Total registrations</span>
@@ -137,7 +137,7 @@ export const ManageDashboard = () => {
                                                             <div className="progress-bar bg-primary" role="progressbar" style={{ width: "30%" }} aria-valuenow={30} aria-valuemin={0} aria-valuemax={100} />
                                                             <div className="progress-bar bg-warning" role="progressbar" style={{ width: "15%" }} aria-valuenow={15} aria-valuemin={0} aria-valuemax={100} />
                                                             <div className="progress-bar bg-danger" role="progressbar" style={{ width: "10%" }} aria-valuenow={10} aria-valuemin={0} aria-valuemax={100} />
-                                                            <div className="progress-bar bg-secondary" role="progressbar" style={{ width: "5%" }} aria-valuenow={5} aria-valuemin={0} aria-valuemax={100} />
+                                                            <div className="progress-bar bg-opacity" role="progressbar" style={{ width: "5%" }} aria-valuenow={5} aria-valuemin={0} aria-valuemax={100} />
                                                         </div>
                                                         <div className="d-flex flex-wrap column-gap-xs row-gap-3xs">
                                                             <div className="d-flex align-items-center small text-muted gap-2xs">
@@ -157,7 +157,7 @@ export const ManageDashboard = () => {
                                                                 <span>4 stuck</span>
                                                             </div>
                                                             <div className="d-flex align-items-center small text-muted gap-2xs">
-                                                                <Icon name="circle" addClass="text-secondary" />
+                                                                <Icon name="circle" addClass="text-opacity" />
                                                                 <span>5 not started (invited)</span>
                                                             </div>
                                                         </div>
