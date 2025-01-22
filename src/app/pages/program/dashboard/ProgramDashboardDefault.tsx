@@ -14,8 +14,8 @@ export const ProgramDashboardDefault = () => {
     return (
         <Layout shortcutBarExpanded={true} theme="Moho">
             <AppContent>
-                <div className="row">
-                    <div className="col-12 col-lg-6 col-xl-8">
+                <div className="cq">
+                    <div className="cq-12 cq-lg-6 cq-xl-8">
                         <div className="application-section gap-md">
                             <div className="d-flex flex-column flex-md-row flex-lg-column flex-xl-row align-items-center flex-wrap flex-xl-nowrap gap-md">
                                 <div className="card-image-container">
@@ -111,7 +111,7 @@ export const ProgramDashboardDefault = () => {
                         </div>
                         <div className="application-section is-highlighted">
                             <div className="row justify-content-center">
-                                <div className="col-12">
+                                <div className="cq-12">
                                     <h3>
                                         <span className="icon icon-format-list-checks is-24px mr-2" />A survey is waiting your response!
                                     </h3>
@@ -226,7 +226,7 @@ export const ProgramDashboardDefault = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="col-12 col-lg-6 col-xl-4">
+                    <div className="cq-12 cq-lg-6 cq-xl-4">
                         <div className="application-section">
                             <h3 className="application-section--title">Progression</h3>
                             <div className="cards">

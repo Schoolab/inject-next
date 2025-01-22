@@ -7,6 +7,7 @@ type ResourceType = {
     type: string;
     details?: string;
 };
+
 type IconTypeType = {
     name: string;
     addClass?: string;

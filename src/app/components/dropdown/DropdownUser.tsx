@@ -22,10 +22,10 @@ export const DropdownUser = ({}: DropdownUserProps) => {
         <Dropdown>
             <DropdownMenu show={true}>
                 <DropdownItem label="Profile" addClass="gap-xs">
-                    <Avatar />
+                    <Avatar image="img/avatar-pierre.jpeg" />
                     <div className="d-flex flex-column justify-content-center w-100">
-                        <span className="d-flex align-items-center gap-2xs">John Doe <Role status="admin" /></span>
-                        <span className="small text-muted mb-none">Head of Tests</span>
+                        <span className="d-flex align-items-center gap-2xs">Pierre Lemeteil <Role status="admin" /></span>
+                        <span className="small text-muted mb-none">CTO of Schoolab</span>
                     </div>
                 </DropdownItem>
                 <DropdownDivider />
