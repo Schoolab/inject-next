@@ -67,7 +67,7 @@ export const SectionAccordion = (
                         </div> }
                     </div>
 
-                    <div className="cq-12">
+                    <div className="cq-12 cq-lg-10 cq-offset-lg-1">
                         <div className=" d-flex flex-column gap-sm" id="accordion">
                             {listAccordions}
                         </div>

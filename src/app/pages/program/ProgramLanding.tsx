@@ -13,6 +13,7 @@ import { SectionTeam } from "../sections/SectionTeam";
 import { SectionGallery } from "../sections/SectionGallery";
 import { SectionTestimonial } from "../sections/SectionTestimonial";
 import { SectionColumns } from "../sections/SectionColumns";
+import { SectionAccordion } from "../sections/SectionAccordion";
 
 interface ProgramLandingProps {
     theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
@@ -218,6 +219,29 @@ export const ProgramLanding = ( { theme = "default" }: ProgramLandingProps) => {
                         },
                     ]}
                 />
+
+                <SectionAccordion
+                    accordions={[
+                        {
+                            "title": "Why use an Open Innovation platform for a challenge?",
+                            "content": `
+                                <p>Within an inspiring ecosystem, using an Open Innovation platform allows you to leverage high-performance technologies. Specifically, the Open Innovation platform enhances a company's strategy to tackle the challenge. The numerous services and technological tools available facilitate online activity management for all collaborators.</p>
+                            `,
+                        },
+                        {
+                            "title": "Can we automatically generate certificates of completion during Workshops/events?",
+                            "content": `
+                                <p>Yes, the services available on the Schoolab digital platform include the ability to automatically generate certificates of completion during your Workshops/events.</p>
+                            `,
+                        },
+                        {
+                            "title": "Is it possible to create an interface between the digital platform and a company's IT department?",
+                            "content": `
+                                <p>Yes. It is possible to create an interface between the digital platform and a company's IT department.</p>
+                            `,
+                        }
+                      ]}
+                 />
 
                 <SectionCallToAction
                     title="Explain the value you provide with a last call to action"

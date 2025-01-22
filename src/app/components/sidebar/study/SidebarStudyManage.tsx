@@ -396,6 +396,11 @@ export const SidebarStudyManage = ({}: SidebarStudyManageProps) => {
                                         <span className="nav-link--label">Participants pages</span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="#" className="nav-link">
+                                        <span className="nav-link--label">Files library</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li className="nav-item">

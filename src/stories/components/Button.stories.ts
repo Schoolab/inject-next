@@ -29,7 +29,8 @@ const meta = {
     type: "default",
     size: "default",
     extended: false,
-    outlined: false
+    outlined: false,
+    label: "Button",
   },
 } satisfies Meta<typeof Button>;
 
@@ -40,21 +41,18 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     iconStartName: "link",
-    label: "Button",
     type: "default",
   },
 };
 
 export const Active: Story = {
-  args: {
-    label: "Button",   
+  args: {   
     isActive: true,
   },
 };
 
 export const Dropdown: Story = {
-  args: {
-    label: "Button",   
+  args: {   
     hasDropdown: true,
   },
 };
@@ -62,7 +60,6 @@ export const Dropdown: Story = {
 export const Disabled: Story = {
   args: {
     iconStartName: "link",
-    label: "Button",
     disabled: true,
   },
 };
@@ -70,43 +67,55 @@ export const Disabled: Story = {
 export const Primary: Story = {
   args: {
     iconStartName: "link",
-    label: "Button",
     type: "primary",
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    iconStartName: "link",
+    type: "secondary",
+  },
+};
+
+export const Accent: Story = {
+  args: {
+    iconStartName: "link",
+    type: "accent",
+  },
+};
+
+export const Assistant: Story = {
+  args: {
+    iconStartName: "link",
+    type: "assistant",
+  },
+};
+
+export const Muted: Story = {
+  args: {
+    iconStartName: "link",
+    type: "muted",
   },
 };
 
 export const Transparent: Story = {
   args: {
     iconStartName: "link",
-    label: "Button",
     type: "transparent",
   },
 };
-export const Danger: Story = {
-  args: {
-    iconStartName: "link",
-    label: "Button",
-    type: "danger",
-  },
-};
+
 export const Warning: Story = {
   args: {
     iconStartName: "link",
-    label: "Button",
     type: "warning",
   },
 };
-export const Secondary: Story = {
+
+export const Danger: Story = {
   args: {
     iconStartName: "link",
-    label: "Button",
-    type: "secondary",
-  },
-};
-export const Muted: Story = {
-  args: {
-    iconStartName: "link",
-    label: "Button",
-    type: "muted",
+    type: "danger",
   },
 };
