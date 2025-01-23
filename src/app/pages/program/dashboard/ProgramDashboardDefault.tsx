@@ -9,31 +9,87 @@ import { Icon } from "@/app/components/Icon";
 import { Dropdown } from "@/app/components/dropdown/Dropdown";
 import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
 import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
+import { Section } from "@/app/components/Section";
+import { CardParticipant } from "@/app/components/cards/CardParticipant";
+import { ItemSetupTask } from "@/app/components/items/ItemSetupTask";
 
 export const ProgramDashboardDefault = () => {
     return (
-        <Layout shortcutBarExpanded={true} theme="Moho">
-            <AppContent>
+        <Layout shortcutBarExpanded={true}>
+            <AppContent
+                sections="cards"
+                breadcrumb={[
+                    {
+                        label: "Impact Innovators",
+                        href: "/?path=/story/pages-program-dashboard--dashboard",
+                    },
+                    {
+                        label: "Dashboard",
+                        href: "/?path=/story/pages-program-dashboard--dashboard"
+                    },
+                    {
+                        label: "Overview"
+                    }
+                ]}
+                title="Dashboard"
+                buttons={[
+                    {
+                        type: "default",
+                        label: "Public page",
+                        link: "/?path=/story/pages-program-landing--inject",
+                        iconStartName: "public-page",
+                    }
+                ]}
+                subnav={[
+                    {
+                        label: "Overview",
+                        href: "/?path=/story/pages-program-dashboard--dashboard",
+                        isActive: true,
+                    },
+                    {
+                        label: "Events",
+                        href: "#",
+                    },
+                    {
+                        label: "Library",
+                        href: "#",
+                    },
+                    {
+                        label: "Projects",
+                        href: "#",
+                    },
+                    {
+                        label: "Participants",
+                        href: "#",
+                    },
+                    {
+                        label: "Experts",
+                        href: "#",
+                    },
+                    {
+                        label: "Surveys",
+                        href: "#",
+                    },
+                    {
+                        label: "F.A.Q.",
+                        href: "#",
+                    },
+                ]}
+            >
                 <div className="cq">
                     <div className="cq-12 cq-lg-6 cq-xl-8">
-                        <div className="application-section gap-md">
+
+                        <Section addClass="gap-md">
                             <div className="d-flex flex-column flex-md-row flex-lg-column flex-xl-row align-items-center flex-wrap flex-xl-nowrap gap-md">
                                 <div className="card-image-container">
-                                    <div
-                                        className="card-image"
-                                        style={{
-                                            backgroundImage: 'url("img/hero.png")',
-                                            backgroundRepeat: "no-repeat",
-                                            backgroundPosition: "center",
-                                            backgroundSize: "cover",
-                                        }}
-                                    ></div>
+                                    <div className="card-image" style={{backgroundImage: 'url("img/program-innovators.png")', backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover" }}></div>
                                 </div>
                                 <div className="d-flex flex-column align-items-center align-items-md-start align-items-lg-center align-items-xl-start gap-xs flex-fill">
                                     <div className="d-flex flex-column align-items-center align-items-md-start align-items-lg-center align-items-xl-start gap-0">
                                         <div className="d-flex align-items-center gap-2xs">
                                             <div className="h2  text-center text-xl-left d-flex align-items-center gap-2xs">
-                                                <span>Program name</span>
+                                                <span>Impact Innovators</span>
                                             </div>
                                         </div>
 
@@ -68,7 +124,7 @@ export const ProgramDashboardDefault = () => {
                                 <div className="d-flex gap-xs">
                                     <div className="dropdown">
                                         <a className="btn btn-default btn-lg dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span>Shortcuts</span>
+                                            <span>More</span>
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right">
                                             <a className="dropdown-item" href="#">
@@ -88,13 +144,15 @@ export const ProgramDashboardDefault = () => {
                                     <Dropdown addClass="z-2">
                                         <Button type="muted" iconStartName="options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
                                         <DropdownMenu direction="right">
-                                            <DropdownItem label="My submissio" />
-                                            <DropdownItem label="Setting 1" />
-                                            <DropdownItem label="Setting 2" />
+                                            <DropdownItem label="Show my submission" />
+                                            <DropdownDivider />
+                                            <DropdownItem iconName="signout" label="Leave the program" caption="You will be asked to confirm this action." type="danger" />
                                         </DropdownMenu>
                                     </Dropdown>
                                 </div>
                             </div>
+
+
                             <div className="d-block bg-highlight rounded">
                                 <div className="d-flex align-items-center flex-fill text-muted p-md" data-toggle="collapse" data-target="#Aboutprogram" aria-expanded="false">
                                     <div className="d-flex align-items-center gap-xs flex-grow-1">
@@ -108,9 +166,10 @@ export const ProgramDashboardDefault = () => {
                                     <p>Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div className="application-section is-highlighted">
-                            <div className="row justify-content-center">
+                        </Section>
+
+                        <Section addClass="is-highlighted">
+                            <div className="cq justify-content-center">
                                 <div className="cq-12">
                                     <h3>
                                         <span className="icon icon-format-list-checks is-24px mr-2" />A survey is waiting your response!
@@ -126,439 +185,108 @@ export const ProgramDashboardDefault = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="application-section">
-                            <h3 className="application-section--title"> Newsfeed</h3>
-                            <div id="challenge-blogposts-container">
-                                <a className="message mb-5 startMessageButton" href="/program/75/manage/updates/new-update">
-                                    <span className="thumbnail is-oval is-lg" data-toggle="tooltip" title="" data-original-title="John Doe">
-                                        <div className="thumbnail is-oval">
-                                            <span className="icon icon-account" />
-                                        </div>
-                                    </span>
-                                    <div className="message-body">
-                                        <div className="message-list">
-                                            <div className="message-row">
-                                                <input type="text" className="form-control message-content bg-white cursorLink" placeholder="Start a new post..." />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div className="blogPostsWall" data-url="/program/75/workspace/updates/wall?preview=3">
-                                    <div className="card m-none p-5 wallLoader d-none">
-                                        <div className="pb-0 pt-3 pt-sm-5">
-                                            <div className="item is-wide is-static">
-                                                <h4 className="text-center w-100 mb-3">Loading...</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="cardsContainer">
-                                        <div className="cardsContainer">
-                                            <CardFeed
-                                                avatar="https://inject-prod.s3.amazonaws.com/images/0ee71840-6d78-4784-acff-6f8d2722dbb7/sq150.jpeg"
-                                                author="Sarah Lamoureux"
-                                                role="manager"
-                                                metas={[
-                                                    { label: "Community Builder, Schoolab" },
-                                                ]}
-                                                content={`
-                                                    <p>Bonjour à tous·tes,</p>
-                                                    <p>Nous sommes heureux de vous accueillir au sein de Schoolab Saint-Lazare !</p>
-                                                    <p>Le système de réservation de salles de réunion est maintenant disponible, <a href="https://schoolab.skedda.com/register?i=277598&k=0tUkWBHX4UlHvcRlvn6Cx60VhMZD7EZl">cliquez sur ce lien pour activer vos accès</a>.</p>
-                                                    <p>Ensuite, pour y accéder il vous suffira de cliquer sur le petit 🏢 dans la barre de navigation de gauche, vous retrouverez le p...</p>
-                                                `}
-                                                readMore={true}
-                                                liked={true}
-                                                likes={9}
-                                                comments={4}
-                                                copyLink={true}
-                                            >
-                                                <ItemResource
-                                                    isSmall={false}
-                                                    action="download"
-                                                    icon={{
-                                                        addClass: "text-danger",
-                                                        name: "file-pdf-box",
-                                                    }}
-                                                    resource={{
-                                                        details: "120 KB",
-                                                        name: "stakeholdermap-model.pdf",
-                                                        type: "PDF File",
-                                                    }}
-                                                />
-                                            </CardFeed>
-                                            <CardFeed 
-                                                avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg"
-                                                author="Pierre Forestier"
-                                                role="manager"
-                                                metas={[
-                                                    { label: "Program Manager, Schoolab" },
-                                                ]}
-                                                content={`
-                                                    <p>Hello,</p>
-                                                    <p>Un petit message pour vous souhaiter la bienvenue parmi le programme d'incubation "La Piscine". Je serais ton interlocuteur privilégié pour ce programme, n'hésitez surtout pas à me solliciter sur slack ou par mail : pierre.forestier@theschoolab.com.&nbsp;</p>
-                                                    <p>Et pour rappel, ce programme va te permettre de te lancer rapidement, valide...</p>
-                                                `}
-                                                readMore={true}
-                                                liked={true}
-                                                likes={9}
-                                                comments={4}
-                                                copyLink={true}
-                                            >
-                                                <div className="gallery">
-                                                    <div className="gallery-photo embed-responsive embed-responsive-16by9">
-                                                        <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/6cheowg6Rmk?si=Zi-3gDOnCZoEyk9m" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
-                                                    </div>
-                                                </div>
-                                            </CardFeed>
+                        </Section>
+
+                        <Section title="Newsfeed" subtitle="Only visible to participants" subtitleIcon="community" buttons={[{type: "default", label: "New post", iconStartName: "plus-circle"}]}>
+                            <div id="blogPostsWall" className="d-flex flex-column gap-xs">
+                                <CardFeed
+                                    avatar="https://inject-prod.s3.amazonaws.com/images/0ee71840-6d78-4784-acff-6f8d2722dbb7/sq150.jpeg"
+                                    author="Sarah Lamoureux"
+                                    role="manager"
+                                    metas={[
+                                        { label: "Community Builder, Schoolab" },
+                                    ]}
+                                    content={`
+                                        <p>Bonjour à tous·tes,</p>
+                                        <p>Nous sommes heureux de vous accueillir au sein de Schoolab Saint-Lazare !</p>
+                                        <p>Le système de réservation de salles de réunion est maintenant disponible, <a href="https://schoolab.skedda.com/register?i=277598&k=0tUkWBHX4UlHvcRlvn6Cx60VhMZD7EZl">cliquez sur ce lien pour activer vos accès</a>.</p>
+                                        <p>Ensuite, pour y accéder il vous suffira de cliquer sur le petit 🏢 dans la barre de navigation de gauche, vous retrouverez le p...</p>
+                                    `}
+                                    readMore={true}
+                                    liked={true}
+                                    likes={9}
+                                    comments={4}
+                                    copyLink={true}
+                                >
+                                    <ItemResource
+                                        isSmall={false}
+                                        action="download"
+                                        icon={{
+                                            addClass: "text-danger",
+                                            name: "file-pdf-box",
+                                        }}
+                                        resource={{
+                                            details: "120 KB",
+                                            name: "stakeholdermap-model.pdf",
+                                            type: "PDF File",
+                                        }}
+                                    />
+                                </CardFeed>
+                                <CardFeed 
+                                    avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg"
+                                    author="Pierre Forestier"
+                                    role="manager"
+                                    metas={[
+                                        { label: "Program Manager, Schoolab" },
+                                    ]}
+                                    content={`
+                                        <p>Hello,</p>
+                                        <p>Un petit message pour vous souhaiter la bienvenue parmi le programme d'incubation "La Piscine". Je serais ton interlocuteur privilégié pour ce programme, n'hésitez surtout pas à me solliciter sur slack ou par mail : pierre.forestier@theschoolab.com.&nbsp;</p>
+                                        <p>Et pour rappel, ce programme va te permettre de te lancer rapidement, valide...</p>
+                                    `}
+                                    readMore={true}
+                                    liked={true}
+                                    likes={9}
+                                    comments={4}
+                                    copyLink={true}
+                                >
+                                    <div className="gallery">
+                                        <div className="gallery-photo embed-responsive embed-responsive-16by9">
+                                            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/6cheowg6Rmk?si=Zi-3gDOnCZoEyk9m" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
                                         </div>
                                     </div>
-                                    <div className="pagerContainer mt-5 d-none">
-                                        <button className="btn btn-lg btn-block btn-default pagerLoadMoreButton">
-                                            Load more
-                                            <span className="icon icon-loading icon-spin ml-1 d-none buttonLoader" />
-                                        </button>
-                                    </div>
-                                </div>
+                                </CardFeed>
+                                <Button type="default" extended={true} label="Load more" />
                             </div>
-                            <a id="challenge-blogposts-page-btn" className="btn btn-lg btn-block btn-default mt-3 d-none" href="/program/75/updates">
-                                Show more
-                            </a>
-                        </div>
+                        </Section>
+
                     </div>
                     <div className="cq-12 cq-lg-6 cq-xl-4">
-                        <div className="application-section">
-                            <h3 className="application-section--title">Progression</h3>
-                            <div className="cards">
-                                <div className="card h-100">
-                                    <div className="card-infos is-linked d-flex align-items-start gap-xs">
-                                        <span className="card-icon icon icon-library"></span>
 
-                                        <div className="card-title flex-grow-1">
-                                            <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
-                                                <span className="line-clamp-1"> Learning Courses</span>
-                                            </a>
-
-                                            <ul className="text-muted small metas is-list mb-none">
-                                                <li>
-                                                    <div className="d-flex align-items-center gap-xs">
-                                                        <svg className="progress-circle-container is-sm" viewBox="0 0 32 32" data-percent={25} style={{ ["--percent" as any]: 25 }}>
-                                                            <circle className="progress-circle progress-circle-bg" />
-                                                            <circle className="progress-circle progress-circle-percent" />
-                                                            <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                            {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
-                                                        </svg>
-                                                        <div className="d-flex flex-fill gap-2xs">
-                                                            <span className="small">1/4</span>
-                                                            <span className="small">Lessons</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="card h-100">
-                                    <div className="card-infos is-linked d-flex align-items-start gap-xs">
-                                        <span className="card-icon icon icon-bullseye-arrow"></span>
-
-                                        <div className="card-title flex-grow-1">
-                                            <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
-                                                <span className="line-clamp-1">Objectives</span>
-                                            </a>
-
-                                            <ul className="text-muted small metas is-list mb-none">
-                                                <li>
-                                                    <div className="d-flex align-items-center gap-xs">
-                                                        <svg className="progress-circle-container is-sm" viewBox="0 0 32 32" data-percent={25} style={{ ["--percent" as any]: 66 }}>
-                                                            <circle className="progress-circle progress-circle-bg" />
-                                                            <circle className="progress-circle progress-circle-percent" />
-                                                            <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                            {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
-                                                        </svg>
-                                                        <div className="d-flex flex-fill gap-2xs">
-                                                            <span className="small">4/6</span>
-                                                            <span className="small">Tasks</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <span>Until July 12, 2024</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                        <Section title="Progression">
+                            <div className="d-flex flex-column gap-xs">
+                                <ItemSetupTask icon="learning" title="Learning Courses" caption="1/4 lessons" progress={1} tasks={4} />
+                                <ItemSetupTask icon="objective" title="Objectives" caption="6/6 tasks, until July 12, 2024" progress={6} tasks={6} />
                             </div>
-                        </div>
+                        </Section>
 
-                        <div className="application-section d-flex flex-column gap-xs">
-                            <h3 className="application-section--title"> Upcoming events </h3>
-                            <CardEvent title="event.name" start={{ day: "8", month: "June", startTime: "10am", endTime: "11am" }} img="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg" location="InPerson" />
-                            <CardEvent title="event.name" start={{ day: "8", month: "June", startTime: "10am", endTime: "11am" }} location="InPerson" />
-                            <CardEvent title="event.name" start={{ day: "8", month: "June", startTime: "10am", endTime: "11am" }} location="InPerson" />
-                            <Button extended={true} type="default" label="Show more" />
-                        </div>
-                        <div className="application-section">
-                            <h3 className="application-section--title"> Your Program Managers </h3>
-                            <p>Program Managers are here to guide you during the program.</p>
-                            <div className="items">
-                                <div className="item is-bordered">
-                                    <div className="item-row">
-                                        <div className="item-row">
-                                            <a href="/user/u/0d3e2b04">
-                                                <div className="thumbnail is-oval " title="" data-toggle="tooltip" data-original-title="La piscine 2022 overview">
-                                                    <img src="https://inject-prod.s3.amazonaws.com/images/78d42906-72f6-4820-86b8-892d1cd377ce/sq150.png" />
-                                                </div>
-                                            </a>
-                                            <div className="item-content ml-4 py-1">
-                                                <a href="/user/u/0d3e2b04" className="item-title h4 font-weight-normal mb-none stretched-link">
-                                                    Marine Martinez
-                                                </a>
-                                                <ul className="metas is-list ">
-                                                    <li> Startup Manager Schoolab </li>
-                                                    <li> Paris, FR </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="item-options dropdown">
-                                            <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span className="icon icon-options" />
-                                            </a>
-                                            <div className="dropdown-menu dropdown-menu-right">
-                                                <a className="dropdown-item" href="/user/u/0d3e2b04">
-                                                    Show profile
-                                                </a>
-                                                <a className="dropdown-item" data-toggle="modal" data-target="#modalOpenThread" data-user-id={320} href="#">
-                                                    Send a message
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item is-bordered">
-                                    <div className="item-row">
-                                        <div className="item-row">
-                                            <a href="/user/u/158c2ec5">
-                                                <div className="thumbnail is-oval " title="" data-toggle="tooltip" data-original-title="La piscine 2022 overview">
-                                                    <img src="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" />
-                                                </div>
-                                            </a>
-                                            <div className="item-content ml-4 py-1">
-                                                <a href="/user/u/158c2ec5" className="item-title h4 font-weight-normal mb-none stretched-link">
-                                                    Pierre Forestier
-                                                </a>
-                                                <ul className="metas is-list ">
-                                                    <li> Startup Manager Schoolab </li>
-                                                    <li> Paris, FR </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="item-options dropdown">
-                                            <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span className="icon icon-options" />
-                                            </a>
-                                            <div className="dropdown-menu dropdown-menu-right">
-                                                <a className="dropdown-item" href="/user/u/158c2ec5">
-                                                    Show profile
-                                                </a>
-                                                <a className="dropdown-item" data-toggle="modal" data-target="#modalOpenThread" data-user-id={1782} href="#">
-                                                    Send a message
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item is-bordered">
-                                    <div className="item-row">
-                                        <div className="item-row">
-                                            <a href="/user/u/53825949">
-                                                <div className="thumbnail is-oval " title="" data-toggle="tooltip" data-original-title="La piscine 2022 overview">
-                                                    <img src="https://inject-prod.s3.amazonaws.com/images/731305ed-0603-4910-9e93-65dd89ef302a/sq150.jpeg" />
-                                                </div>
-                                            </a>
-                                            <div className="item-content ml-4 py-1">
-                                                <a href="/user/u/53825949" className="item-title h4 font-weight-normal mb-none stretched-link">
-                                                    Sarah Mecheneau
-                                                </a>
-                                                <ul className="metas is-list ">
-                                                    <li> Business Developer / Program Manager - Programmes étudiants internationaux Schoolab </li>
-                                                    <li> FR </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="item-options dropdown">
-                                            <a className="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span className="icon icon-options" />
-                                            </a>
-                                            <div className="dropdown-menu dropdown-menu-right">
-                                                <a className="dropdown-item" href="/user/u/53825949">
-                                                    Show profile
-                                                </a>
-                                                <a className="dropdown-item" data-toggle="modal" data-target="#modalOpenThread" data-user-id={2286} href="#">
-                                                    Send a message
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <Section title="Upcoming events">
+                            <div className="d-flex flex-column gap-xs">
+                                <CardEvent title="event.name" start={{ day: "8", month: "June", startTime: "10am", endTime: "11am" }} location="InPerson" />
+                                <CardEvent title="event.name" start={{ day: "8", month: "June", startTime: "10am", endTime: "11am" }} location="InPerson" />
+                                <CardEvent title="event.name" start={{ day: "8", month: "June", startTime: "10am", endTime: "11am" }} location="InPerson" />
+                                <Button extended={true} type="default" label="Show more" />
                             </div>
+                        </Section>
 
-                            <a className="btn btn-lg btn-block btn-default" href="/program/75/managers">
-                                Show more
-                            </a>
-                        </div>
-                        <div className="application-section">
-                            <h3 className="application-section--title"> Ressources </h3>
-                            <div className="items">
-                                <div className="item is-bordered resource mb-3">
-                                    <div className="item-row">
-                                        <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
-                                            <div className="item-icon icon icon-file-pdf-box text-danger" />
-                                            <div className="item-content ml-3">
-                                                <a className="item-title h5 mb-none stretched-link" href="#">
-                                                    Lorem-ipsum_FR.pdf
-                                                </a>
-                                                <ul className="item-caption metas small is-list">
-                                                    <li>application/pdf</li>
-                                                    <li>
-                                                        <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="item-options">
-                                            <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
-                                                <span className="icon icon-cloud-download" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item is-bordered resource mb-3">
-                                    <div className="item-row">
-                                        <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
-                                            <div className="item-icon icon icon-file-pdf-box text-danger" />
-                                            <div className="item-content ml-3">
-                                                <a className="item-title h5 mb-none stretched-link" href="#">
-                                                    Lorem-ipsum_FR.pdf
-                                                </a>
-                                                <ul className="item-caption metas small is-list">
-                                                    <li>application/pdf</li>
-                                                    <li>
-                                                        <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="item-options">
-                                            <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
-                                                <span className="icon icon-cloud-download" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item is-bordered resource mb-3">
-                                    <div className="item-row">
-                                        <div className="item-row cursorLink triggerResource" data-toggle="modal" data-url="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/load?browse=0" data-target="#resourceLoadingModal">
-                                            <div className="item-icon icon icon-file-pdf-box text-danger" />
-                                            <div className="item-content ml-3">
-                                                <a className="item-title h5 mb-none stretched-link" href="#">
-                                                    Lorem-ipsum_FR.pdf
-                                                </a>
-                                                <ul className="item-caption metas small is-list">
-                                                    <li>application/pdf</li>
-                                                    <li>
-                                                        <span className="icon icon-time">&nbsp;15/10/2021 11:07</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="item-options">
-                                            <a className="btn btn-lg btn-transparent btn-icon" href="/resource/880f7e98-a5fe-4c9e-a7e1-765afd718d6d/download">
-                                                <span className="icon icon-cloud-download" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                        <Section title="Your program managers" subtitle="Program Managers are here to guide you during the program.">
+                            <div className="d-flex flex-column gap-xs">
+                                <CardParticipant name="Marine Martinez" metas={[{ label: "Program Manager, Schoolab" }]} avatar="img/avatar-marine.jpeg" />
+                                <CardParticipant name="Pierre Forestier" metas={[{ label: "Program Manager, Schoolab" }]} avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" />
+                                <CardParticipant name="Sarah Lamoureux" metas={[{ label: "Community Builder, Schoolab" }]} avatar="https://inject-prod.s3.amazonaws.com/images/0ee71840-6d78-4784-acff-6f8d2722dbb7/sq150.jpeg" />
                             </div>
+                            <Button type="default" extended={true} label="Show more" />
+                        </Section>
 
-                            <a className="btn btn-lg btn-block btn-default" href="#">
-                                {" "}
-                                View all 5 shared files{" "}
-                            </a>
-                        </div>
-
-                        {/* <div className="application-section">
-                            <div className="mb-7">
-                                <div className="d-flex align-items-center mb-7">
-                                    <div className="icon icon-learning  icon--letter is-sm mr-2 " />
-                                    <a href="#" className="item-title h3 mb-none">
-                                        Learning courses
-                                    </a>
-                                </div>
-                                <p>consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
+                        <Section title="Resources">
+                            <div className="d-flex flex-column gap-xs">
+                                <ItemResource isSmall={false} action="download" icon={{ addClass: "text-danger", name: "file-pdf-box" }} resource={{ details: "120 KB", name: "stakeholdermap-model.pdf", type: "PDF File" }} />
+                                <ItemResource isSmall={false} action="download" icon={{ addClass: "text-danger", name: "file-pdf-box" }} resource={{ details: "120 KB", name: "stakeholdermap-model.pdf", type: "PDF File" }} />
+                                <ItemResource isSmall={false} action="download" icon={{ addClass: "text-danger", name: "file-pdf-box" }} resource={{ details: "120 KB", name: "stakeholdermap-model.pdf", type: "PDF File" }} />
                             </div>
-                            <div>
-                                <div className="mb-7">
-                                    <div className="d-flex justify-content-between mb-3">
-                                        <span className="small text-muted">Courses</span>
-                                        <span className="small text-muted">In progress</span>
-                                    </div>
-                                    <div className="d-flex justify-content-between align-items-center">
-                                        <div className="progress flex-fill mr-3" style={{ height: 5 }}>
-                                            <div className="progress-bar" role="progressbar" style={{ width: "33%" }} aria-valuenow={33} aria-valuemin={0} aria-valuemax={100} />
-                                        </div>
-                                        <span className="small text-muted">33%</span>
-                                    </div>
-                                </div>
-                                <div className="mb-7">
-                                    <div className="d-flex justify-content-between mb-3">
-                                        <span className="small text-muted">Certificates</span>
-                                        <span className="small text-muted">Not started</span>
-                                    </div>
-                                    <div className="d-flex justify-content-between align-items-center">
-                                        <div className="progress flex-fill mr-3" style={{ height: 5 }}>
-                                            <div className="progress-bar" role="progressbar" style={{ width: "0%" }} aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} />
-                                        </div>
-                                        <span className="small text-muted">0%</span>
-                                    </div>
-                                </div>
-                                <button className="btn btn-lg btn-block btn-default stretched-link">View learning courses</button>
-                            </div>
-                        </div>
-                        <div className="application-section">
-                            <div className="mb-7">
-                                <div className="d-flex align-items-center mb-2">
-                                    <div className="icon icon--letter is-sm mr-2 ">
-                                        <span>m</span>
-                                    </div>
-                                    <a href="/program/75/project/2232/details" className="item-title h3 mb-none">
-                                        My-project
-                                    </a>
-                                </div>
-                                <ul className="item-caption metas small is-list mb-5">
-                                    <li>Created on 05/09/2022</li>
-                                    <li>By John Doe</li>
-                                </ul>
-                                <p>consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
-                            </div>
-                            <div>
-                                <div className="mb-7">
-                                    <div className="d-flex justify-content-between mb-3">
-                                        <span className="small text-muted">Objectives</span>
-                                        <span className="small text-muted">In progress</span>
-                                    </div>
-                                    <div className="d-flex justify-content-between align-items-center">
-                                        <div className="progress flex-fill mr-3" style={{ height: 5 }}>
-                                            <div className="progress-bar" role="progressbar" style={{ width: "33%" }} aria-valuenow={33} aria-valuemin={0} aria-valuemax={100} />
-                                        </div>
-                                        <span className="small text-muted">33%</span>
-                                    </div>
-                                </div>
-                                <button className="btn btn-lg btn-block btn-default stretched-link">View project overview</button>
-                            </div>
-                        </div> */}
+                            <Button type="default" extended={true} label="View all 5 shared files" />
+                        </Section>
+                        
                     </div>
                 </div>
             </AppContent>

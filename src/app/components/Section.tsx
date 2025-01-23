@@ -2,11 +2,23 @@ import React, { CSSProperties } from "react";
 import { ReactNode } from "react";
 import { Icon } from "./Icon";
 import { Placeholder } from "./Placeholder";
+import { Button } from "./Button";
+
+type ButtonType = {
+    addClass?: string;
+    type: "default" | "primary" | "secondary" | "transparent" | "muted" | "success" | "warning" | "danger" | "outline-danger" | "brand-primary" | "brand-secondary" | "brand-tertiary" ;
+    label?: string | number; 
+    iconStartName?: string;
+    iconEndName?: string;
+    link?: string;
+    hasDropdown?: Boolean;
+}
 
 interface SectionProps {
     title?: string;
     subtitle?: string;
     subtitleIcon?: string;
+    buttons?: ButtonType[];
     children?: ReactNode;
     collapsable?: boolean;
     collapsableId?: string;
@@ -21,6 +33,7 @@ export const Section = (
         title,
         subtitle,
         subtitleIcon,
+        buttons,
         children,
         collapsable,
         collapsableId,
@@ -35,6 +48,10 @@ export const Section = (
 
     let classCollapse = ["collapse"];
     isOpen && classCollapse.push("show");
+
+    let listButtons = buttons?.map((button) => (
+        <Button label={button.label} type={button.type} link={button.link} iconStartName={button.iconStartName} iconEndName={button.iconEndName} size="sm" />
+    ));
 
     return (
         <div className={classTab.join(" ")} style={{ ...style }} { ...props }>
@@ -51,7 +68,7 @@ export const Section = (
                                 </div>
                             }
                         </div>
-
+                        {buttons && listButtons}
                         <span className="icon icon-chevron-right ml-auto" />
                     </h3>
 
@@ -71,6 +88,7 @@ export const Section = (
                                 </div>
                             }
                         </div>
+                        {buttons && listButtons}
                     </h3>}
 
                     {children ? children : <Placeholder />}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "../Icon";
 
 export interface ShortcutBarProps {
     /**
@@ -40,41 +41,31 @@ export const ShortcutBar = ({ isExpanded }: ShortcutBarProps) => {
                 </div> */}
                 <div className="d-flex flex-row flex-lg-column">
                     <div className="shortcutbar-option">
-                        <a className="shortcutbar-option--link " href="#" data-toggle="tooltip" data-placement="top" data-original-title="Program dashboard" data-boundary="window">
+                        <a className="shortcutbar-option--link active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Program dashboard" data-boundary="window">
                             <span className="icon icon-home" aria-hidden="true" />
                             <div className="shortcutbar-option--label">Dashboard</div>
                         </a>
                         <div className="shortcutbar-option--label">Dashboard</div>
                     </div>
                     <div className="shortcutbar-option">
-                        <a className="shortcutbar-option--link active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Learning course" data-boundary="window">
+                        <a className="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Learning course" data-boundary="window">
                             <span className="icon icon-learning" aria-hidden="true" />
                             <div className="shortcutbar-option--label">Learning course</div>
                         </a>
                         <div className="shortcutbar-option--label">Learning course</div>
                     </div>
                     <div className="shortcutbar-option">
-                        <a className="shortcutbar-option--link" href="https://www.google.com" data-toggle="tooltip" data-placement="top" data-original-title="My project" data-boundary="window">
+                        <a className="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Healthify" data-boundary="window">
                             <span className="icon icon--letter" aria-hidden="true">
-                                <span aria-hidden="true">m</span>
+                                <span aria-hidden="true">H</span>
                             </span>
-                            <div className="shortcutbar-option--label">My Project</div>
+                            <div className="shortcutbar-option--label">Healthify</div>
                         </a>
-                        <div className="shortcutbar-option--label">My Project</div>
-                    </div>
-                    <div className="shortcutbar-option">
-                        <a className="shortcutbar-option--link active has-dot" data-content={9} href="#" data-toggle="tooltip" data-placement="top" data-original-title="Second project" data-boundary="window">
-                            <span className="icon icon--letter" aria-hidden="true">
-                                <span aria-hidden="true">s</span>
-                            </span>
-                            <div className="shortcutbar-option--label">Second project</div>
-                            <span className="sr-only">9 notifications</span>
-                        </a>
-                        <div className="shortcutbar-option--label">Second project</div>
+                        <div className="shortcutbar-option--label">Healthify</div>
                     </div>
                     <div className="shortcutbar-option dropright" data-toggle="tooltip" data-placement="top" data-original-title="More projects" data-boundary="window" style={{ zIndex: 2 }}>
                         <a href="#" className="shortcutbar-option--link" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false">
-                            <span className="icon icon-project" aria-hidden="true" />
+                            <span className="icon icon-more" aria-hidden="true" />
                             <div className="shortcutbar-option--label">More projects</div>
                             <span className="icon icon-chevron-down shortcutbar-expanded-item-show" aria-hidden="true" />
                         </a>
@@ -240,15 +231,6 @@ export const ShortcutBar = ({ isExpanded }: ShortcutBarProps) => {
                         <div className="shortcutbar-option--label">More projects</div>
                     </div>
                     <div className="shortcutbar-option ">
-                        <a className="shortcutbar-option--link active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Custom shortcut" data-boundary="window">
-                            <span className="icon icon--custom">
-                                <span aria-hidden="true">C</span>
-                            </span>
-                            <div className="shortcutbar-option--label">Custom shortcut</div>
-                        </a>
-                        <div className="shortcutbar-option--label">Custom shortcut</div>
-                    </div>
-                    <div className="shortcutbar-option ">
                         <a className="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Custom shortcut" data-boundary="window">
                             <span className="icon icon--custom" aria-hidden="true">
                                 👋
@@ -265,6 +247,13 @@ export const ShortcutBar = ({ isExpanded }: ShortcutBarProps) => {
                             <div className="shortcutbar-option--label">Custom shortcut</div>
                         </a>
                         <div className="shortcutbar-option--label">Custom shortcut</div>
+                    </div>
+                    <div className="shortcutbar-option">
+                        <a className="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Public page" data-boundary="window">
+                            <Icon name="public-page" aria-hidden="true" />
+                            <div className="shortcutbar-option--label">Public page</div>
+                        </a>
+                        <div className="shortcutbar-option--label">Public page</div>
                     </div>
                     <div className="shortcutbar-separator" />
                     <div className="shortcutbar-option">
@@ -328,7 +317,7 @@ export const ShortcutBar = ({ isExpanded }: ShortcutBarProps) => {
                         <div className="shortcutbar-option--label">Previews</div>
                     </div>
                     <div className="shortcutbar-option">
-                        <a className="shortcutbar-option--link active" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Manage program" data-boundary="window">
+                        <a className="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Manage program" data-boundary="window">
                             <span className="icon icon-settings" aria-hidden="true" />
                             <div className="shortcutbar-option--label">Manage program</div>
                         </a>

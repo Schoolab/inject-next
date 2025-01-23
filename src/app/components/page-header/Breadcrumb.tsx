@@ -13,7 +13,7 @@ export interface BreadcrumbProps {
 
 export const Breadcrumb = (
     {
-        homeIcon = "program",
+        homeIcon = "home",
         homeLink = "#",
         items = [
             {

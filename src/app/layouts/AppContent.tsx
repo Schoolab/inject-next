@@ -33,6 +33,7 @@ type ButtonType = {
     addClass?: string;
     type?: "default" | "primary"; // only authorized types
     size?: "sm"; // only authorized size in header
+    link?: string;
 };
 
 interface AppContentProps {
@@ -108,7 +109,7 @@ export const AppContent = (
     sections === "separated" && (appContentClass = "application-content separated-sections")
 
     let titleClass = [""];
-    !showSubnav && titleClass.push("border-bottom");
+    (!subnav || !showSubnav) && titleClass.push("border-bottom");
 
     return (
         <main className={appContentClass} >

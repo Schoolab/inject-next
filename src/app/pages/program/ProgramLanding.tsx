@@ -21,8 +21,19 @@ interface ProgramLandingProps {
 
 export const ProgramLanding = ( { theme = "default" }: ProgramLandingProps) => {
     return (
-        <Layout shortcutBarExpanded={true} theme={theme}>
-            <AppContent layout="full">
+        <Layout shortcutBarExpanded={false} theme={theme}>
+            <AppContent
+                breadcrumb={[
+                    {
+                        label: "Impact Innovators",
+                        href: "/?path=/story/pages-program-dashboard--dashboard",
+                    },
+                    {
+                        label: "Public page"
+                    }
+                ]}
+                layout="full"
+            >
 
                 <SectionHero
                     title="Impact Innovators"

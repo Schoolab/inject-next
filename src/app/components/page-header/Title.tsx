@@ -15,6 +15,7 @@ type ButtonType = {
     size?: "default" | "sm" | "xs";
     extended?: Boolean;
     outlined?: Boolean;
+    link?: string;
 };
 
 export interface TitleProps {
@@ -49,7 +50,7 @@ export const Title = ({ title = "Page title", iconName, emoji, backLink, paginat
     let classTab = ["application-title"];
     addClass && classTab.push(addClass);
 
-    let listButtons = buttons?.map((button, index) => <Button key={index} label={button.label} disabled={button.disabled} isActive={button.isActive} showActive={button.showActive} hasDropdown={button.hasDropdown} iconStartName={button.iconStartName} iconEndName={button.iconEndName} addClass={button.addClass} type={button.type} size={button.size} extended={button.extended} outlined={button.outlined} />);
+    let listButtons = buttons?.map((button, index) => <Button key={index} label={button.label} link={button.link} disabled={button.disabled} isActive={button.isActive} showActive={button.showActive} hasDropdown={button.hasDropdown} iconStartName={button.iconStartName} iconEndName={button.iconEndName} addClass={button.addClass} type={button.type} size={button.size} extended={button.extended} outlined={button.outlined} />);
 
     return (
         <div className={classTab.join(" ")}>
