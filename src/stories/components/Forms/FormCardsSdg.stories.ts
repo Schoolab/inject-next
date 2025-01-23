@@ -3,7 +3,7 @@ import { FormCardsSdg } from "@/app/components/forms/FormCardsSdg";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-    title: "Components/Form/Cards/Sdg",
+    title: "Components/Form/Exemples/Sdg",
     component: FormCardsSdg,
     parameters: {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout

@@ -12,6 +12,19 @@ const meta = {
         },
     },
 
+    args: {
+        options: [
+            { label: "Choose an option...", value: "", disabled: true },
+            { label: "SaaS", value: "saas", selected: true },
+            { label: "Project", value: "projects" },
+            { label: "Management", value: "management" },
+            { label: "Design", value: "design" },
+            { label: "UX design", value: "ux-design" },
+            { label: "Figma", value: "figma" },
+            { label: "Product", value: "product" },
+        ]
+    }
+
 } satisfies Meta<typeof FormSelectMultiple>;
 
 export default meta;

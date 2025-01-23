@@ -70,11 +70,11 @@ export const select = () => {
             valueField: "id",
             labelField: "name",
             searchField: "name",
-            options: [
-                { id: 1, name: "SaaS", url: "" },
-                { id: 2, name: "Projects", url: "" },
-                { id: 3, name: "Management", url: "" },
-            ],
+            // options: [
+            //     { id: 1, name: "SaaS", url: "" },
+            //     { id: 2, name: "Projects", url: "" },
+            //     { id: 3, name: "Management", url: "" },
+            // ],
             create: true,
             plugins: ["remove_button", "clear_button"],
             render: {

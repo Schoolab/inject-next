@@ -2,22 +2,11 @@ export interface FormInputProps {
     id?: string;
     defaultValue?: string;
     placeholder?: string;
-    /**
-     * Is the input disabled?
-     */
     disabled?: boolean;
-    /**
-     * Is the input required?
-     */
     required?: boolean;
     readonly?: boolean,
-    /**
-     * Custom class
-     */
+
     addClass?: string;
-    /**
-     * Choose the type of input
-     */
     type?: "text" | "email" | "tel" | "number" | "date" | "datetime-local" | "time" | "color" | "file" | "password" | "range" ;
 }
 

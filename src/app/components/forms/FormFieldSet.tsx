@@ -3,43 +3,48 @@ import { Placeholder } from "../Placeholder";
 
 export interface FormFieldSetProps {
     children?: ReactNode;
-    /**
-     * Fieldset group name
-     */
     name?: string;
-    /**
-     * Fieldset legend
-     */
     legend?: string; 
-    /**
-     * Is the fieldset disabled?
-     */
     disabled?: boolean;
-    /**
-     * A short text to help users to complete the input
-     */
+    grid?: boolean;
     hint?: string;
-    /**
-     * Custom class
-     */
+    id?: string;
     addClass?: string;
 }
 
 /**
  * The `fieldset` HTML element is used to group several controls as well as labels (`label`) within a web form.
  */
-export const FormFieldSet = ({ name, legend, hint, disabled = false, addClass, children, ...props }: FormFieldSetProps) => {
+export const FormFieldSet = (
+    { 
+        name,
+        legend,
+        hint,
+        id,
+        disabled = false,
+        grid,
+        addClass,
+        children,
+        ...props
+    }: FormFieldSetProps
+) => {
     let classGroup = ["form-group"];
     let classLegend = ["label"];
+    let classOptions = ["form-options"];
     addClass && classGroup.push(addClass);
+    grid && classOptions.push("grid gap-xs");
 
     return(
         <fieldset name={name} className={classGroup.join(" ")} {...props}>
             <legend className={classLegend.join(" ")}>
                 {legend}
             </legend>
-            {children && children}
-            {!children && <Placeholder />}
+            { hint && <small id={'hint-' + id} className="form-text text-muted">
+                {hint}
+            </small> }
+            <div className={classOptions.join(" ")} id={id} aria-describedby={'hint-' + id}>
+                {children ? children : <Placeholder />}
+            </div>
         </fieldset>
     );
 };

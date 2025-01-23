@@ -25,6 +25,3 @@ export const Default: Story = {
     
   },
 };
-
-
-

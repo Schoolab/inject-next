@@ -6,19 +6,94 @@ import { SubNav } from "../components/page-header/SubNav";
 import { Stepper } from "../components/page-header/Stepper";
 import { Footer } from "../components/Footer";
 
+type BreadcrumbType = {
+    label: string;
+    href?: string;
+}
+
+type SubnavType = {
+    label: string;
+    href: string;
+    badge?: string;
+    isActive?: boolean;
+    hasDropdown?: boolean;
+    dropdownItems?: SubnavType[];
+    icon?: string;
+    tooltip?: string;
+}
+
+type ButtonType = {
+    label?: string;
+    disabled?: Boolean;
+    isActive?: Boolean;
+    showActive?: Boolean;
+    hasDropdown?: Boolean;
+    iconStartName?: string;
+    iconEndName?: string;
+    addClass?: string;
+    type?: "default" | "primary"; // only authorized types
+    size?: "sm"; // only authorized size in header
+};
 
 interface AppContentProps {
     children?: ReactNode;
-    showSubnav?: boolean;
-    showStepper?: boolean;
-    isAsside?: boolean;
-    isIAchat?: boolean;
-    showBreadcrumb?: boolean;
-    showTitle?: boolean;
+
     layout?: "centered" | "fluid" | "narrow" | "full";
     sections?: "cards" | "bordered" | "transparent" | "separated";
+
+    isAsside?: boolean;
+    isIAchat?: boolean;
+
+    showBreadcrumb?: boolean;
+    breadcrumbIcon?: string;
+    breadcrumbHome?: string;
+    breadcrumb?: BreadcrumbType[];
+
+    backLink?: string;
+
+    showTitle?: boolean;
+    title?: string;
+
+    prevLink?: string;
+    nextLink?: string;
+
+    buttons?: ButtonType[];
+
+    showSubnav?: boolean;
+    subnav?: SubnavType[];
+
+    showStepper?: boolean;
 }
-export const AppContent = ({ children,   showSubnav = true,  showStepper= false, isAsside, layout = "centered", sections = "cards", isIAchat, showBreadcrumb = true, showTitle = true }: AppContentProps) => {
+export const AppContent = (
+    {
+        children,
+        layout = "centered",
+        sections = "cards",
+        
+        isAsside,
+        isIAchat,
+
+        showBreadcrumb = true,
+        breadcrumbIcon = "program",
+        breadcrumbHome = "#",
+        breadcrumb,
+
+        backLink,
+
+        showTitle = true,
+        title = "Page title",
+
+        prevLink,
+        nextLink,
+
+        buttons,
+
+        showSubnav = true,
+        subnav,
+
+        showStepper= false,
+    }: AppContentProps
+) => {
 
     let appMainContainerClass = "application-main-content container-lg container-lg-fluid p-sm p-md-md p-lg-xl";
     isAsside && (appMainContainerClass = "application-main-content container-fluid p-sm p-md-md p-lg-xl");
@@ -37,30 +112,30 @@ export const AppContent = ({ children,   showSubnav = true,  showStepper= false,
 
     return (
         <main className={appContentClass} >
-            {showBreadcrumb && <Breadcrumb />}
+            { showBreadcrumb &&
+                <Breadcrumb
+                    homeIcon={breadcrumbIcon}
+                    homeLink={breadcrumbHome}
+                    items={breadcrumb}
+                />
+            }
             <div className="application-header">
-                {showTitle && <Title 
-                    backLink="#" 
-                    nextLink="#" 
-                    buttons={[
-                        {
-                            type: "default",
-                            label: "Preview",
-                            iconStartName: "preview",
-                            iconEndName: "new-tab",
-                            size: "sm",
-                        },
-                        {
-                            type: "primary",
-                            label: "Save changes",
-                            size: "sm",
-                        },
-                    ]} 
-                    addClass={titleClass.join(" ")}
-                />}
+                { showTitle && 
+                    <Title 
+                        backLink={backLink} 
+                        title={title}
+                        prevLink={prevLink}
+                        nextLink={nextLink}
+                        buttons={buttons} 
+                        addClass={titleClass.join(" ")}
+                    />
+                }
                 
-                {showSubnav && <SubNav />}
-                {showStepper && <Stepper />}
+                { subnav &&
+                    <SubNav items={subnav} />
+                }
+
+                { showStepper && <Stepper /> }
             </div>
        
             <div id="appMainContainer" className={appMainContainerClass}>

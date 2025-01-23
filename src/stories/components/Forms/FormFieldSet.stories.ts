@@ -19,7 +19,9 @@ const meta = {
     disabled: { control: "boolean" },
   },
   args:{
-    disabled: false
+    name: "name",
+    legend: "Name",
+    disabled: false,
   },
 } satisfies Meta<typeof FormFieldSet>;
 
@@ -28,9 +30,11 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Default: Story = {
+  args: {},
+};
+
+export const Grid: Story = {
   args: {
-    name: "name",
-    legend: "Name",
-    disabled: false,
+    grid: true,
   },
 };
