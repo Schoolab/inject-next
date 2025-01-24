@@ -2,30 +2,16 @@ export interface FormTextareaProps {
     id?: string;
     defaultValue?: string;
     placeholder?: string;
-    /**
-     * Is the input disabled?
-     */
     disabled?: boolean;
-    /**
-     * Is the input required?
-     */
+    readonly?: boolean,
     required?: boolean;
-    /**
-     * Custom class
-     */
     addClass?: string;
-    /**
-     * Choose the type of input
-     */
     type?: "text" | "wysiwyg" ;
     rows?: number;
-    /**
-     * Allows form controls to adjust in size to fit their contents.
-     */
     fieldSizing?: boolean;
 }
 
-export const FormTextarea = ({ type = "text", id, defaultValue, placeholder, required = false, disabled = false, rows = 8, fieldSizing, addClass, ...props }: FormTextareaProps) => {
+export const FormTextarea = ({ type = "text", id, defaultValue, placeholder, required = false, disabled = false, readonly, rows = 8, fieldSizing, addClass, ...props }: FormTextareaProps) => {
     let classInput = ["form-control"];
     
     fieldSizing && classInput.push("field-sizing")
@@ -37,6 +23,7 @@ export const FormTextarea = ({ type = "text", id, defaultValue, placeholder, req
             placeholder={placeholder} 
             id={id}
             disabled={disabled}
+            readOnly={readonly}
             required={required}
             aria-required={required ? "true" : "false"}
             aria-describedby={'hint-' + id}

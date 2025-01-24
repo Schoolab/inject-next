@@ -21,9 +21,8 @@ import { FormSelectMultiple } from "@/app/components/forms/FormSelectMultiple";
 
 export const UserSettingsProfile = () => {
     return (
-        <Layout showShortcutbar={false} >
+        <Layout showShortcutbar={false}>
             <AppContent 
-                breadcrumbIcon="home"
                 breadcrumb = {[
                     {
                         label: "John Doe",
@@ -45,11 +44,13 @@ export const UserSettingsProfile = () => {
                         iconStartName: "preview",
                         iconEndName: "new-tab",
                         size: "sm",
+                        link: "/?path=/story/pages-user-profile--about",
                     },
                     {
                         type: "primary",
                         label: "Save changes",
                         size: "sm",
+                        link: "/?path=/story/pages-user-settings--profile",
                     },
                 ]}
                 subnav={[
@@ -150,6 +151,29 @@ export const UserSettingsProfile = () => {
                                         </div>
                                     </FormInputWrapper>
                                 </FormGroup>
+
+                                <FormGroup addClass="cq-12 cq-xs-6" id="city" required={true} label="City">
+                                    <FormInput id="city" required={true} defaultValue="Paris" />
+                                </FormGroup>
+
+                                <FormGroup addClass="cq-12 cq-xs-6" id="country" required={true} label="Country">
+                                    <FormSelect
+                                        id="country"
+                                        options={[
+                                            { label: "Choose an option...", value: "", disabled: true },
+                                            { label: "Austria", value: "au" },
+                                            { label: "Belgium", value: "be" },
+                                            { label: "France", value: "fr", selected: true },
+                                            { label: "Germany", value: "de" },
+                                            { label: "Italy", value: "it" },
+                                            { label: "Poland", value: "pl" },
+                                            { label: "Portugal", value: "pt" },
+                                            { label: "Spain", value: "es" },
+                                            { label: "United Kingdom", value: "uk" },
+                                            { label: "United States", value: "us" },
+                                        ]}
+                                    />
+                                </FormGroup>
                             </div>
                         </Section>
 
@@ -230,6 +254,7 @@ export const UserSettingsProfile = () => {
                                             { label: "Climbing", value: "climbing" },
                                             { label: "Cosplay", value: "cosplay", selected: true },
                                             { label: "Cycling", value: "cycling", selected: true },
+                                            { label: "Wind surf", value: "wind-surf", selected: true },
                                         ]}
                                     />
                                 </FormGroup>

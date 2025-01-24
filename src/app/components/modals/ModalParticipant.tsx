@@ -1,4 +1,10 @@
 import React from "react";
+import { Button } from "@/app/components/Button";
+import { Dropdown } from "@/app/components/dropdown/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
+
 export interface ModalParticipantProps {}
 
 export const ModalParticipant = ({}: ModalParticipantProps) => {
@@ -71,63 +77,28 @@ export const ModalParticipant = ({}: ModalParticipantProps) => {
                                 </div>
                             </div>
                             <div className="d-flex gap-xs align-items-center">
-                                {/* <a href="#" className="btn btn-lg btn-primary">
-                                    <span className="icon icon-bookmark-outline" />
-                                    <span>Follow</span>
-                                </a> */}
-                                <div className="dropdown">
-                                    <a className="btn btn-default btn-lg dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span className="icon icon-email" />
-                                        <span>Contact</span>
-                                    </a>
-                                    <div className="dropdown-menu dropdown-menu-right">
-                                        <a className="dropdown-item" href="#">
-                                            <span className="dropdown-item--label">Open profile</span>
-                                        </a>
-                                        <div className="dropdown-divider" />
-                                        <a className="dropdown-item" href="#">
-                                            <span className="dropdown-item--icon icon icon-comment" />
-                                            <span className="dropdown-item--label">Open Chat</span>
-                                            <span className="dropdown-item--shortcut icon icon-new-tab" />
-                                        </a>
-                                        <a className="dropdown-item" href="#">
-                                            <span className="dropdown-item--icon icon icon-video" />
-                                            <span className="dropdown-item--label">Open Video</span>
-                                            <span className="dropdown-item--shortcut icon icon-new-tab" />
-                                        </a>
-                                        <a className="dropdown-item" href="#">
-                                            <span className="dropdown-item--icon icon icon-email" />
-                                            <span className="dropdown-item--label">Send an email</span>
-                                            <span className="dropdown-item--shortcut icon icon-new-tab" />
-                                        </a>
-                                        <a className="dropdown-item" href="#">
-                                            <span className="dropdown-item--icon icon icon-calendar-plus" />
-                                            <span className="dropdown-item--label">Book a meeting</span>
-                                            <span className="dropdown-item--shortcut icon icon-new-tab" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className="dropdown">
-                                    <a className="btn btn-transparent btn-lg btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span className="icon is-20px icon-options" />
-                                    </a>
-                                    <div className="dropdown-menu dropdown-menu-right">
-                                        <a className="dropdown-item is-interactive" href="#">
-                                            <span className="dropdown-item--icon icon icon-key" />
-                                            <span className="dropdown-item--label">Login as Pierre</span>
-                                        </a>
-                                        <div className="dropdown-divider" />
-                                        <a className="dropdown-item" href="#">
-                                            <span>Edit profile</span>
-                                        </a>
-                                        <a className="dropdown-item" href="#">
-                                            <span>Manage roles</span>
-                                        </a>
-                                        <a className="dropdown-item is-danger" href="#">
-                                            <span>Disable this user</span>
-                                        </a>
-                                    </div>
-                                </div>
+                                {/* <Button type="primary" iconStartName="bookmark-outline" label="Follow" /> */}
+                                <Dropdown>
+                                    <Button type="default" iconStartName="email" label="Contact" hasDropdown={true} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
+                                    <DropdownMenu direction="right">
+                                        <DropdownItem label="Open profile" iconName="account-circle" href="/?path=/story/pages-user-profile--about" />
+                                        <DropdownDivider />
+                                        <DropdownItem label="Open chat" iconName="comment" />
+                                        <DropdownItem label="Open video" iconName="video" />
+                                        <DropdownItem label="Send an email" iconName="email" />
+                                        <DropdownItem label="Book a meeting" iconName="calendar-empty" />
+                                    </DropdownMenu>
+                                </Dropdown>
+                                <Dropdown>
+                                    <Button type="transparent" iconStartName="options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
+                                    <DropdownMenu direction="right">
+                                        <DropdownItem label="Login as Pierre" iconName="key" type="interactive" />
+                                        <DropdownItem label="Manage roles" iconName="settings" href="/?path=/story/pages-user-settings--data"/>
+                                        <DropdownItem label="Disable this user" iconName="cancel" type="danger" href="/?path=/story/pages-user-settings--data" />
+                                        <DropdownDivider />
+                                        <DropdownItem label="Edit profile" iconName="pencil" href="/?path=/story/pages-user-settings--profile" />
+                                    </DropdownMenu>
+                                </Dropdown>
                             </div>
                         </div>
                         <div className="d-flex flex-column gap-md">

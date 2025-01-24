@@ -48,11 +48,13 @@ export const UserSettingsAccount = () => {
                         iconStartName: "preview",
                         iconEndName: "new-tab",
                         size: "sm",
+                        link: "/?path=/story/pages-user-profile--about",
                     },
                     {
                         type: "primary",
                         label: "Save changes",
                         size: "sm",
+                        link: "/?path=/story/pages-user-settings--account",
                     },
                 ]}
                 subnav={[

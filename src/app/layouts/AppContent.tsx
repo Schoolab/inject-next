@@ -75,7 +75,7 @@ export const AppContent = (
         isIAchat,
 
         showBreadcrumb = true,
-        breadcrumbIcon = "program",
+        breadcrumbIcon,
         breadcrumbHome = "#",
         breadcrumb,
 
