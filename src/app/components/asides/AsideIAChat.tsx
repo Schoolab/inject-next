@@ -8,7 +8,7 @@ export const AsideIAChat = ({}: AsideIAChatProps) => {
             <div className="aside-content-container">
                 <div className="aside-header">
                     <h3 className="aside-title line-clamp-1">
-                        <span className="text-truncate">chat List</span>
+                        <span className="text-truncate">History</span>
                     </h3>
                     <div className="aside-actions gap-xs">
                          <button className="btn btn-default btn-sm text-ai" role="button">

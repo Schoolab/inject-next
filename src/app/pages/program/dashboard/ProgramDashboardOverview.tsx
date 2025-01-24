@@ -139,13 +139,13 @@ export const ProgramDashboardOverview = () => {
                                     <Dropdown addClass="z-2">
                                         <Button type="muted" iconStartName="options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
                                         <DropdownMenu direction="right">
-                                            <DropdownItem label="Invite participants" iconName="account-plus" />
-                                            <DropdownItem label="Edit details" iconName="pencil" />
-                                            <DropdownItem label="Manage program" iconName="settings" />
+                                            <DropdownItem label="Invite participants" iconName="account-plus" href="./?path=/story/pages-program-dashboard--overview" />
+                                            <DropdownItem label="Edit details" iconName="pencil" href="./?path=/story/pages-manage-forms--forms" />
+                                            <DropdownItem label="Manage program" iconName="settings" href="./?path=/story/pages-manage-dashboard--dashboard" />
                                             <DropdownDivider />
-                                            <DropdownItem label="Public page" iconName="public-page" />
-                                            <DropdownItem label="Show my submission" iconName="form-checklist" />
-                                            <DropdownItem iconName="signout" label="Leave the program" caption="You will be asked to confirm this action." type="danger" />
+                                            <DropdownItem label="Public page" iconName="public-page" href="./?path=/story/pages-program-landing--inject" />
+                                            <DropdownItem label="Show my submission" iconName="form-checklist" href="./?path=/story/pages-program-dashboard--overview" />
+                                            <DropdownItem iconName="signout" label="Leave the program" caption="You will be asked to confirm this action." type="danger" href="./?path=/story/pages-program-dashboard--overview" />
                                         </DropdownMenu>
                                     </Dropdown>
                                 </div>

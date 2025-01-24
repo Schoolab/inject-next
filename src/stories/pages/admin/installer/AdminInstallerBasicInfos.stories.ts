@@ -3,7 +3,7 @@ import { AdminInstallerBasicInfo } from '@/app/pages/admin/installer/AdminInstal
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Pages/Admin/Installer/Basic Info',
+  title: 'Pages/Admin/Installer',
   component: AdminInstallerBasicInfo,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
