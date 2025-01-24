@@ -81,7 +81,7 @@ export const ModalParticipant = ({}: ModalParticipantProps) => {
                                 <Dropdown>
                                     <Button type="default" iconStartName="email" label="Contact" hasDropdown={true} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
                                     <DropdownMenu direction="right">
-                                        <DropdownItem label="Open profile" iconName="account-circle" href="/?path=/story/pages-user-profile--about" />
+                                        <DropdownItem label="Open profile" iconName="account-circle" href="./?path=/story/pages-user-profile--about" />
                                         <DropdownDivider />
                                         <DropdownItem label="Open chat" iconName="comment" />
                                         <DropdownItem label="Open video" iconName="video" />
@@ -93,10 +93,10 @@ export const ModalParticipant = ({}: ModalParticipantProps) => {
                                     <Button type="transparent" iconStartName="options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
                                     <DropdownMenu direction="right">
                                         <DropdownItem label="Login as Pierre" iconName="key" type="interactive" />
-                                        <DropdownItem label="Manage roles" iconName="settings" href="/?path=/story/pages-user-settings--data"/>
-                                        <DropdownItem label="Disable this user" iconName="cancel" type="danger" href="/?path=/story/pages-user-settings--data" />
+                                        <DropdownItem label="Manage roles" iconName="settings" href="./?path=/story/pages-user-settings--data"/>
+                                        <DropdownItem label="Disable this user" iconName="cancel" type="danger" href="./?path=/story/pages-user-settings--data" />
                                         <DropdownDivider />
-                                        <DropdownItem label="Edit profile" iconName="pencil" href="/?path=/story/pages-user-settings--profile" />
+                                        <DropdownItem label="Edit profile" iconName="pencil" href="./?path=/story/pages-user-settings--profile" />
                                     </DropdownMenu>
                                 </Dropdown>
                             </div>

@@ -26,7 +26,7 @@ export const ProgramLanding = ( { theme = "default" }: ProgramLandingProps) => {
                 breadcrumb={[
                     {
                         label: "Impact Innovators",
-                        href: "/?path=/story/pages-program-dashboard--dashboard",
+                        href: "./?path=/story/pages-program-dashboard--dashboard",
                     },
                     {
                         label: "Public page"

@@ -22,7 +22,7 @@ export const ErrorMaintenance = () => {
                         
                     <div className="d-flex flex-column gap-3xl align-items-center w-100" style={{maxWidth: "42.5rem"}}>
                         <div className="navbar-brand">
-                            <a tabIndex={1} href="/?path=/story/pages-error--maintenance">
+                            <a tabIndex={1} href="./?path=/story/pages-error--maintenance">
                                 <img className="img-fluid d-block" src="img/inject-logo-light.svg" style={{ maxWidth: 150, width: "100%" }} />
                             </a>
                         </div>

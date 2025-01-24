@@ -23,17 +23,17 @@ export const UserProfileParticipations = () => {
                         label: "Edit profile",
                         iconStartName: "pencil",
                         size: "sm",
-                        link: "/?path=/story/pages-user-settings--profile",
+                        link: "./?path=/story/pages-user-settings--profile",
                     },
                 ]}
                 subnav={[
                     {
                         label: "About",
-                        href: "/?path=/story/pages-user-profile--about",
+                        href: "./?path=/story/pages-user-profile--about",
                     },
                     {
                         label: "Participations",
-                        href: "/?path=/story/pages-user-profile--participations",
+                        href: "./?path=/story/pages-user-profile--participations",
                         isActive: true,
                     },
                 ]}

@@ -37,7 +37,7 @@ export const UserSettingsData = () => {
                     },
                     {
                         label: "Settings",
-                        href: "/?path=/story/pages-user-settings--profile"
+                        href: "./?path=/story/pages-user-settings--profile"
                     },
                     {
                         label: "Notifications",
@@ -51,38 +51,38 @@ export const UserSettingsData = () => {
                         iconStartName: "preview",
                         iconEndName: "new-tab",
                         size: "sm",
-                        link: "/?path=/story/pages-user-profile--about",
+                        link: "./?path=/story/pages-user-profile--about",
                     },
                     {
                         type: "primary",
                         label: "Save changes",
                         size: "sm",
-                        link: "/?path=/story/pages-user-settings--data",
+                        link: "./?path=/story/pages-user-settings--data",
                     },
                 ]}
                 subnav={[
                     {
                         label: "Profile",
-                        href: "/?path=/story/pages-user-settings--profile",
+                        href: "./?path=/story/pages-user-settings--profile",
                     },
                     {
                         label: "Account",
-                        href: "/?path=/story/pages-user-settings--account",
+                        href: "./?path=/story/pages-user-settings--account",
                     },
                     {
                         label: "Notifications",
-                        href: "/?path=/story/pages-user-settings--notifications",
+                        href: "./?path=/story/pages-user-settings--notifications",
                     },
                     {
                         label: "Notes",
-                        href: "/?path=/story/pages-user-settings--notes",
+                        href: "./?path=/story/pages-user-settings--notes",
                         icon: "visibility-off",
                         tooltip: "Only visible to managers",
                         badge: "3",
                     },
                     {
                         label: "Data",
-                        href: "/?path=/story/pages-user-settings--data",
+                        href: "./?path=/story/pages-user-settings--data",
                         icon: "visibility-off",
                         tooltip: "Only visible to managers",
                         isActive: true,
