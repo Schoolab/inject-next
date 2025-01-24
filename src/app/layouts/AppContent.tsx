@@ -64,6 +64,7 @@ interface AppContentProps {
     subnav?: SubnavType[];
 
     showStepper?: boolean;
+    addClass?: string;
 }
 export const AppContent = (
     {
@@ -93,26 +94,30 @@ export const AppContent = (
         subnav,
 
         showStepper= false,
+        addClass,
     }: AppContentProps
 ) => {
 
-    let appMainContainerClass = "application-main-content container-lg container-lg-fluid p-sm p-md-md p-lg-xl";
-    isAsside && (appMainContainerClass = "application-main-content container-fluid p-sm p-md-md p-lg-xl");
-    isIAchat && (appMainContainerClass = "application-main-content h-100 overflow-auto");
-    layout === "fluid" && (appMainContainerClass = "application-main-content container-fluid p-sm p-md-md p-lg-xl");
-    layout === "narrow" && (appMainContainerClass = "application-main-content container-md p-sm p-md-md p-lg-xl");
-    layout === "full" && (appMainContainerClass = "application-landing");
+    let appMainContainerClass = ["application-main-content container-lg container-lg-fluid p-sm p-md-md p-lg-xl"];
+    isAsside && (appMainContainerClass = ["application-main-content container-fluid p-sm p-md-md p-lg-xl"]);
+    isIAchat && (appMainContainerClass = ["application-main-content h-100 overflow-auto"]);
 
-    let appContentClass = "application-content card-sections"
-    sections === "bordered" && (appContentClass = "application-content bordered-sections")
-    sections === "transparent" && (appContentClass = "application-content transparent-sections")
-    sections === "separated" && (appContentClass = "application-content separated-sections")
+    layout === "fluid" && (appMainContainerClass = ["application-main-content container-fluid p-sm p-md-md p-lg-xl"]);
+    layout === "narrow" && (appMainContainerClass = ["application-main-content container-md p-sm p-md-md p-lg-xl"]);
+    layout === "full" && (appMainContainerClass = ["application-landing"]);
+
+    let appContentClass = ["application-content card-sections"];
+    sections === "bordered" && appContentClass.push("bordered-sections");
+    sections === "transparent" && appContentClass.push("transparent-sections");
+    sections === "separated" && appContentClass.push("separated-sections");
+
+    addClass && appMainContainerClass.push(addClass);
 
     let titleClass = [""];
     (!subnav || !showSubnav) && titleClass.push("border-bottom");
 
     return (
-        <main className={appContentClass} >
+        <main className={appContentClass.join(" ")}>
             { showBreadcrumb &&
                 <Breadcrumb
                     homeIcon={breadcrumbIcon}
@@ -120,29 +125,31 @@ export const AppContent = (
                     items={breadcrumb}
                 />
             }
-            <div className="application-header">
-                { showTitle && 
-                    <Title 
-                        backLink={backLink} 
-                        title={title}
-                        prevLink={prevLink}
-                        nextLink={nextLink}
-                        buttons={buttons} 
-                        addClass={titleClass.join(" ")}
-                    />
-                }
-                
-                { subnav &&
-                    <SubNav items={subnav} />
-                }
+            { ( showTitle || showSubnav || showStepper) &&
+                <div className="application-header">
+                    { showTitle && 
+                        <Title 
+                            backLink={backLink} 
+                            title={title}
+                            prevLink={prevLink}
+                            nextLink={nextLink}
+                            buttons={buttons} 
+                            addClass={titleClass.join(" ")}
+                        />
+                    }
+                    
+                    { subnav &&
+                        <SubNav items={subnav} />
+                    }
 
-                { showStepper && <Stepper /> }
-            </div>
+                    { showStepper && <Stepper /> }
+                </div>
+            }
        
-            <div id="appMainContainer" className={appMainContainerClass}>
+            <div id="appMainContainer" className={appMainContainerClass.join(" ")}>
                 {children}
             </div>
-            <Footer />
+            <Footer addClass={addClass} />
         </main>
     );
 };

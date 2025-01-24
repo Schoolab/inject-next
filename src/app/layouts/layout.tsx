@@ -10,6 +10,7 @@ import { SidebarAdmin } from "../components/sidebar/SidebarAdmin";
 
 interface LayoutProps {
     children?: ReactNode;
+    showNavbar?: boolean;
     shortcutBarExpanded?: boolean;
     hub?: boolean;
     sideBar?: "Admin" | "Manage";
@@ -18,7 +19,20 @@ interface LayoutProps {
     showShortcutbar?: boolean;
 
 }
-export const Layout = ({ children, sideBar, theme, shortcutBarExpanded, showShortcutbar = true, hub = false  }: LayoutProps) => {
+export const Layout = (
+    { 
+        children,
+        theme,
+        
+        showNavbar = true,
+        hub = false,
+
+        showShortcutbar = true,
+        shortcutBarExpanded,
+
+        sideBar,
+    }: LayoutProps
+) => {
     // useEffect(() => {
     //     select();
     // }, []);
@@ -26,7 +40,7 @@ export const Layout = ({ children, sideBar, theme, shortcutBarExpanded, showShor
     sideBar === "Admin" && (appContainerClass = "application-container pb-0");
     return (
         <div className="application-ui">
-            <Navbar theme={theme && theme} isHub={hub} />
+            { showNavbar && <Navbar theme={theme && theme} isHub={hub} /> }
            
             <div className={appContainerClass}>
                 {showShortcutbar && <ShortcutBar isExpanded={shortcutBarExpanded} />}

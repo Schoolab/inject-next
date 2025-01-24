@@ -1,10 +1,15 @@
 import React from "react";
 
-export interface FooterProps {}
+export interface FooterProps {
+    addClass?: string;
+}
 
-export const Footer = ({}: FooterProps) => {
+export const Footer = ({addClass}: FooterProps) => {
+    let classTab = ["application-footer"];
+    addClass && classTab.push(addClass);
+
     return (
-        <footer className="application-footer">
+        <footer className={classTab.join(" ")}>
             <div className="container-fluid" style={{ maxWidth: 760 }}>
                 <div className="d-flex justify-content-center">
                     <ul className="metas is-list smaller justify-content-center">

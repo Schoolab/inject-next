@@ -55,12 +55,13 @@ export interface ButtonProps {
     outlined?: Boolean;
 
     link?: string;
+    target?: string;
 }
 
 /**
  * Buttons drive actions in forms, dialogs, etc. and should be used to guide the user to their next best action. Button component has support for multiple sizes, type and can have a start or an end icon.
  */
-export const Button = ({ size = "default", type, disabled, isActive = false, showActive = true, hasDropdown = false, label, link = "#", addClass, extended, outlined, iconStartName, iconEndName, ...props }: ButtonProps) => {
+export const Button = ({ size = "default", type, disabled, isActive = false, showActive = true, hasDropdown = false, label, link = "#", target, addClass, extended, outlined, iconStartName, iconEndName, ...props }: ButtonProps) => {
     let classTab = ["btn"];
     type && outlined && classTab.push(`btn-outline-${type}`);
     type && !outlined && classTab.push(`btn-${type}`);
@@ -72,7 +73,7 @@ export const Button = ({ size = "default", type, disabled, isActive = false, sho
     addClass && classTab.push(addClass);
 
     return (
-        <a href={link} className={classTab.join(" ")} role="button" {...props}>
+        <a href={link} className={classTab.join(" ")} role="button" target={target} {...props}>
             {isActive && showActive && <Icon name="check" />}
             {iconStartName && <Icon name={iconStartName} />}
             {label && <span>{label}</span>} 
