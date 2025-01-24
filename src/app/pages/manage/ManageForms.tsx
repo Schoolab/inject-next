@@ -31,8 +31,8 @@ export const ManageForms = () => {
                                         <FormInputWrapper>
                                             <FormInput id="name" required={true} defaultValue="Impact Innovators" />
                                             <div className="input-floating-actions">
-                                                <Dropdown data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <Button iconStartName="ai" label="Ask AI" size="xs" type="transparent" addClass="dropdown-toggle text-ai" />
+                                                <Dropdown>
+                                                    <Button iconStartName="ai" label="Ask AI" size="xs" type="transparent" addClass="dropdown-toggle text-ai"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
                                                     <DropdownMenu direction="right">
                                                         <DropdownItem type="ai" label="Improve writing" iconName="improve-writing" />
                                                         <DropdownItem type="ai" label="Make shorter" iconName="shorter-text" />
@@ -42,7 +42,7 @@ export const ManageForms = () => {
                                                         <DropdownItem label="Copy from English" iconName="copy" />
                                                         <DropdownItem label="Restore to saved value" iconName="restore" />
                                                         <div className="dropdown-content text-center">
-                                                            <span>AInject can make mistakes. Check important info.</span>
+                                                            <span>Ask AI can make mistakes. Check important info.</span>
                                                         </div>
                                                     </DropdownMenu>
                                                 </Dropdown>
@@ -83,7 +83,7 @@ export const ManageForms = () => {
                                             defaultValue={"A program to teach you our methodologies and the basics of impact, in your daily life as well as in your company, for a brighter future!"}
                                         />
                                         <div className="input-floating-actions">
-                                            <Dropdown data-toggle="dropdown">
+                                            <Dropdown>
                                                 <Button iconStartName="ai" size="xs" type="transparent" addClass="dropdown-toggle text-ai" data-toggle="dropdown" aria-expanded="false" />
                                                 <DropdownMenu direction="right">
                                                     <DropdownItem type="ai" label="Write a course summary" caption="From all the content inside" iconName="summarize" />
@@ -97,7 +97,7 @@ export const ManageForms = () => {
                                                     <DropdownItem label="Copy from English" iconName="copy" />
                                                     <DropdownItem label="Restore to saved value" iconName="restore" />
                                                     <div className="dropdown-content text-center">
-                                                        <span>AInject can make mistakes. Check important info.</span>
+                                                        <span>Ask AI can make mistakes. Check important info.</span>
                                                     </div>
                                                 </DropdownMenu>
                                             </Dropdown>
@@ -114,7 +114,7 @@ export const ManageForms = () => {
                                             <DropdownItem label="Import image..." iconName="attachment" />
                                             <DropdownItem label="Add image link..." iconName="link" />
                                             <div className="dropdown-content text-center">
-                                                <span>AInject can make mistakes. Check important info.</span>
+                                                <span>Ask AI can make mistakes. Check important info.</span>
                                             </div>
                                         </DropdownMenu>
                                     </Dropdown>

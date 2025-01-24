@@ -170,17 +170,14 @@ export const ProgramDashboardOverview = () => {
                         <Section addClass="is-highlighted">
                             <div className="cq justify-content-center">
                                 <div className="cq-12">
-                                    <h3>
-                                        <span className="icon icon-format-list-checks is-24px mr-2" />A survey is waiting your response!
+                                    <h3 className="d-flex gap-xs align-items-center">
+                                        <Icon size="sm" name="format-list-checks" />
+                                        <span>A survey is waiting your response!</span>
                                     </h3>
                                     <p>We need you to help us improve the Impact Innovators program by responding to a survey. It will only take you a couple minutes.</p>
-                                    <div className="mt-5 d-flex">
-                                        <a className="btn btn-lg flex-fill btn-primary mr-3 text-nowrap" href="#">
-                                            Respond to survey
-                                        </a>
-                                        <a className="btn btn-lg flex-fill btn-default text-nowrap" href="#">
-                                            See all surveys
-                                        </a>
+                                    <div className="d-flex mt-md gap-sm">
+                                        <Button type="primary" label="Respond to survey" addClass="flex-fill" />
+                                        <Button type="default" label="See all surveys" addClass="flex-fill" />
                                     </div>
                                 </div>
                             </div>

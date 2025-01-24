@@ -270,7 +270,7 @@ export const UserSettingsData = () => {
                                             placeholder="Your content here..."
                                         />
                                         <div className="input-floating-actions">
-                                            <Dropdown data-toggle="dropdown">
+                                            <Dropdown>
                                                 <Button iconStartName="ai" size="xs" type="transparent" addClass="dropdown-toggle text-ai" data-toggle="dropdown" aria-expanded="false" />
                                                 <DropdownMenu direction="right">
                                                     <DropdownItem type="ai" label="Write a bio" caption="From all the info in your settings" iconName="summarize" />
@@ -282,7 +282,7 @@ export const UserSettingsData = () => {
                                                     <DropdownDivider />
                                                     <DropdownItem label="Restore to saved value" iconName="restore" />
                                                     <div className="dropdown-content text-center">
-                                                        <span>AInject can make mistakes. Check important info.</span>
+                                                        <span>Ask AI can make mistakes. Check important info.</span>
                                                     </div>
                                                 </DropdownMenu>
                                             </Dropdown>

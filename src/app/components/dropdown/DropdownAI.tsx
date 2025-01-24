@@ -22,7 +22,7 @@ export const DropdownAI = ({}: DropdownAIProps) => {
                 <DropdownItem label="Copy from English" iconName="copy" />
                 <DropdownItem label="Restore to saved value" iconName="restore" />
                 <div className="dropdown-content text-center">
-                    <span>AInject can make mistakes. Check important info.</span>
+                    <span>Ask AI can make mistakes. Check important info.</span>
                 </div>
             </DropdownMenu>
         </Dropdown>

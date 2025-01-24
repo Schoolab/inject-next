@@ -5,7 +5,6 @@ import { Dropdown } from "../dropdown/Dropdown";
 import { DropdownMenu } from "../dropdown/DropdownMenu";
 import { DropdownItem } from "../dropdown/DropdownItem";
 import { DropdownDivider } from "../dropdown/DropdownDivider";
-import { DropdownCaptions } from "../dropdown/DropdownAI";
 
 export interface FormInputWrapperProps {
     children?: ReactNode;
@@ -20,7 +19,7 @@ export const FormInputWrapper = ({
     children,
     ...props
 }: FormInputWrapperProps) => {
-    let classTab = ["form-ai-wrapper"];
+    let classTab = ["form-input-wrapper"];
     addClass && classTab.push(addClass);
 
     return(
@@ -30,8 +29,8 @@ export const FormInputWrapper = ({
                 <>
                     <Placeholder />
                     <div className="input-floating-actions">
-                        <Dropdown data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <Button iconStartName="ai" label="Ask AI" size="xs" type="transparent" addClass="dropdown-toggle text-ai" />
+                        <Dropdown>
+                            <Button iconStartName="ai" label="Ask AI" size="xs" type="transparent" addClass="dropdown-toggle text-ai" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
                             <DropdownMenu direction="right">
                                 <DropdownItem type="ai" label="Write a course summary" caption="From all the content inside" iconName="summarize" />
                                 <DropdownItem type="ai" label="Translate to French" iconName="translate-generate" />
@@ -44,7 +43,7 @@ export const FormInputWrapper = ({
                                 <DropdownItem label="Copy from English" iconName="copy" />
                                 <DropdownItem label="Restore to saved value" iconName="restore" />
                                 <div className="dropdown-content text-center">
-                                    <span>AInject can make mistakes. Check important info.</span>
+                                    <span>Ask AI can make mistakes. Check important info.</span>
                                 </div>
                             </DropdownMenu>
                         </Dropdown>

@@ -11,7 +11,7 @@ interface DropdownProps {
 }
 
 export const Dropdown = ({ children, addClass, style, ...props }: DropdownProps) => {
-    let classTab = ["dropdown dropdown-container"];
+    let classTab = ["dropdown"];
     addClass && classTab.push(addClass);
     return <div className={classTab.join(" ")} style={style} {...props}>{children}</div>;
 };
