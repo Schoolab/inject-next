@@ -6,6 +6,7 @@ export const UserProfileParticipations = () => {
     return (
         <Layout showShortcutbar={false}>
             <AppContent
+                sections="transparent"
                 breadcrumb = {[
                     {
                         label: "John Doe",

@@ -22,6 +22,7 @@ export const UserProfileAbout = () => {
     return (
         <Layout showShortcutbar={false}>
             <AppContent
+                sections="transparent"
                 breadcrumb = {[
                     {
                         label: "John Doe",

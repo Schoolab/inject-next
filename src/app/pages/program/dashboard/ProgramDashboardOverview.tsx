@@ -39,7 +39,13 @@ export const ProgramDashboardOverview = () => {
                         label: "Public page",
                         link: "/?path=/story/pages-program-landing--inject",
                         iconStartName: "public-page",
-                    }
+                    },
+                    {
+                        type: "default",
+                        label: "Manage",
+                        link: "/?path=/story/pages-manage-dashboard--dashboard",
+                        iconStartName: "settings",
+                    },
                 ]}
                 subnav={[
                     {
@@ -122,30 +128,23 @@ export const ProgramDashboardOverview = () => {
                                     </div>
                                 </div>
                                 <div className="d-flex gap-xs">
-                                    <div className="dropdown">
-                                        <a className="btn btn-default btn-lg dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span>More</span>
-                                        </a>
-                                        <div className="dropdown-menu dropdown-menu-right">
-                                            <a className="dropdown-item" href="#">
-                                                <span className="dropdown-item--label">Custom shortcut</span>
-                                                <span className="dropdown-item--shortcut icon icon-new-tab" />
-                                            </a>
-                                            <a className="dropdown-item" href="#">
-                                                <span className="dropdown-item--label">Custom shortcut</span>
-                                                <span className="dropdown-item--shortcut icon icon-new-tab" />
-                                            </a>
-                                            <a className="dropdown-item" href="#">
-                                                <span className="dropdown-item--label">Custom shortcut</span>
-                                                <span className="dropdown-item--shortcut icon icon-new-tab" />
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <Dropdown>
+                                        <Button type="default" hasDropdown={true} label="More" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
+                                        <DropdownMenu direction="right">
+                                            <DropdownItem label="Custom shortcut" />
+                                            <DropdownItem label="Custom shortcut" />
+                                            <DropdownItem label="Custom shortcut" />
+                                        </DropdownMenu>
+                                    </Dropdown>
                                     <Dropdown addClass="z-2">
                                         <Button type="muted" iconStartName="options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
                                         <DropdownMenu direction="right">
-                                            <DropdownItem label="Show my submission" />
+                                            <DropdownItem label="Invite participants" iconName="account-plus" />
+                                            <DropdownItem label="Edit details" iconName="pencil" />
+                                            <DropdownItem label="Manage program" iconName="settings" />
                                             <DropdownDivider />
+                                            <DropdownItem label="Public page" iconName="public-page" />
+                                            <DropdownItem label="Show my submission" iconName="form-checklist" />
                                             <DropdownItem iconName="signout" label="Leave the program" caption="You will be asked to confirm this action." type="danger" />
                                         </DropdownMenu>
                                     </Dropdown>
