@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { Icon } from "../Icon";
+import { Notif } from "../badges/notifs/Notif";
 
 interface DropdownItemProps {
     children?: ReactNode;
@@ -14,9 +15,10 @@ interface DropdownItemProps {
     target?: string;
     rel?: string;
     addClass?: string;
+    badge?: string;
 }
 
-export const DropdownItem = ({ children, type, addClass, outbound, active, label, iconName, caption, toggle, href = "#", target, rel, ...props }: DropdownItemProps) => {
+export const DropdownItem = ({ children, type, addClass, outbound, active, label, iconName, caption, toggle, href = "#", target, rel, badge, ...props }: DropdownItemProps) => {
     let classTab = ["dropdown-item"];
     type && classTab.push(`is-${type}`);
     active && classTab.push("active");
@@ -28,7 +30,7 @@ export const DropdownItem = ({ children, type, addClass, outbound, active, label
                 <>
                     {iconName && <Icon name={iconName} addClass="dropdown-item--icon" />}
                     <div className="dropdown-item--label">
-                        <span>{label}</span>
+                        <span className="d-flex">{label} { badge && <Notif label={badge} status="highlight" addClass="ml-auto" />}</span>
                         {caption && <span className="caption">{caption}</span>}
                     </div>           
                     {outbound && <Icon name="arrow-top-right" addClass="dropdown-item--shortcut" />}

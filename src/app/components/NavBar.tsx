@@ -128,24 +128,14 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                                     <span className="text-truncate">Impact Innovators</span>
                                                     <span className="icon icon-chevron-down" aria-hidden="true" />
                                                 </a>
-
-                                                <div className="dropdown-menu" style={{ maxWidth: 225 }}>
-                                                    <h6 className="dropdown-header">Switch program</h6>
-                                                    <a className="dropdown-item active" href="#">
-                                                        <span className="text-truncate">Impact Innovators</span>
-                                                    </a>
-                                                    <a className="dropdown-item" href="#">
-                                                        <span>Starter S20</span>
-                                                    </a>
-                                                    <a className="dropdown-item" href="#">
-                                                        <span>Schoolab - Saint Lazare</span>
-                                                    </a>
-                                                    <div className="dropdown-divider" />
-                                                    <a className="dropdown-item" href="#">
-                                                        <span>My programs (3)</span>
-                                                        <span className="ml-3 icon icon-new-tab" aria-hidden="true" />
-                                                    </a>
-                                                </div>
+                                                <DropdownMenu style={{ maxWidth: 225 }}>
+                                                    <DropdownHeader label="Switch program" />
+                                                    <DropdownItem label="Impact Innovators" addClass="text-truncate" />
+                                                    <DropdownItem label="Starter 2025" addClass="text-truncate" />
+                                                    <DropdownItem label="Schoolab – Saint-Lazare" addClass="text-truncate" />
+                                                    <DropdownDivider />
+                                                    <DropdownItem label="My programs" badge="3" iconName="program" />
+                                                </DropdownMenu>
                                             </div>
                                         </div>
                                     )}
