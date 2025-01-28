@@ -10,7 +10,6 @@ const meta = {
             controls: { sort: "requiredFirst" },
         },
     },
-    tags: ["autodocs"],
     argTypes: {},
     args:{},
 } satisfies Meta<typeof Error>;

@@ -15,10 +15,9 @@ interface LayoutProps {
     hub?: boolean;
     sideBar?: "Admin" | "Manage";
     theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
-
     showShortcutbar?: boolean;
-
 }
+
 export const Layout = (
     { 
         children,

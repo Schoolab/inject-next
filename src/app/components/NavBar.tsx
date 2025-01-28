@@ -45,6 +45,9 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
         nestedDropdown();
     }, []);
     let logoUrl = "img/inject-logo-dark.svg";
+    let logoDarkUrl = "img/inject-logo-dark.svg";
+    let logoLightUrl = "img/inject-logo-light.svg";
+
     switch (theme) {
         case "Schoolab":
             logoUrl = "img/schoolab-logo-light.svg";
@@ -59,10 +62,12 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
             logoUrl = "img/inject-logo-light.svg";
             break;
         case "default":
-            logoUrl = "img/inject-logo-dark.svg";
+            logoDarkUrl = "img/inject-logo-dark.svg";
+            logoLightUrl = "img/inject-logo-light.svg";
             break;
         default:
-            logoUrl = "img/inject-logo-dark.svg";
+            logoDarkUrl = "img/inject-logo-dark.svg";
+            logoLightUrl = "img/inject-logo-light.svg";
             break;
     }
     return (
@@ -80,7 +85,16 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                 </button>
                                 <div className="navbar-brand">
                                     <a tabIndex={1} title="" data-toggle="tooltip" href="#" data-original-title="Organization Hub">
-                                        <img className="img-fluid d-block" src={logoUrl} style={{ maxWidth: 150, width: "100%" }} />
+                                        { theme && theme !== "default" ? 
+                                            <picture>
+                                                <img className="img-fluid d-block" src={logoUrl} style={{ maxWidth: 150, width: "100%" }} />
+                                            </picture>
+                                        :
+                                            <picture>
+                                                <source srcSet={logoLightUrl} media="(prefers-color-scheme: dark)" />
+                                                <img src={logoDarkUrl} />
+                                            </picture>
+                                        }
                                     </a>
                                 </div>
 
