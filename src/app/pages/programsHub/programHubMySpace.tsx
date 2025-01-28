@@ -778,6 +778,19 @@ export const programHubMySpace = () => {
                         </div>
                     </div>
                     <div className="col-12 col-lg-6 col-xl-4">
+                        <div className="application-section is-highlighted">
+                            <div className="align-items-center d-flex flex-column gap-md py-md">
+                                <span className="icon icon-program is-sm" />
+                                <div className="d-flex flex-column gap-2xs align-items-center">
+                                    <p className="font-weight-bold">Explore more programs!</p>
+                                    <p className="small text-muted">To enjoy the full experience, discover all our programs !</p>
+                                </div>
+                                <div className="d-flex justify-centent-center pt-md">
+                                    <a href="#" className="btn btn-primary">Show programs</a>
+                                </div>
+                                
+                            </div>
+                        </div>
                         <div className="application-section">
                             <h3 className="application-section--title" data-toggle="collapse" data-target="#events" aria-expanded="true">
                                 <span className="application-section--title-content">Events (2)</span>
@@ -970,49 +983,47 @@ export const programHubMySpace = () => {
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
                             <div className="collapse show" id="evaluations">
-                            <div className="cards">
-                                <div className="card h-100">
-                                    <div className="card-external">
-                                        <div className="icon icon-school is-16px ml-n6px"></div>
-                                        <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
-                                    </div>
-                                    <div className="card-infos is-linked d-flex align-items-start gap-xs pt-7">
-                                        <span className="card-icon icon icon-gavel"></span>
+                                <div className="cards">
+                                    <div className="card h-100">
+                                        <div className="card-external">
+                                            <div className="icon icon-school is-16px ml-n6px"></div>
+                                            <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
+                                        </div>
+                                        <div className="card-infos is-linked d-flex align-items-start gap-xs pt-7">
+                                            <span className="card-icon icon icon-gavel"></span>
 
-                                        <div className="card-title flex-grow-1">
-                                            <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
-                                                <span className="line-clamp-1"> Evaluation session name</span>
-                                            </a>
+                                            <div className="card-title flex-grow-1">
+                                                <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
+                                                    <span className="line-clamp-1"> Evaluation session name</span>
+                                                </a>
 
-                                            <ul className="text-muted small metas is-list mb-none">
-                                                <li>
-                                                    <div className="d-flex align-items-center gap-xs">
-                                                        <svg className="progress-circle-container is-sm" viewBox="0 0 32 32" data-percent={25} style={{ ["--percent" as any]: 25 }}>
-                                                            <circle className="progress-circle progress-circle-bg" />
-                                                            <circle className="progress-circle progress-circle-percent" />
-                                                            <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                            {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
-                                                        </svg>
-                                                        <div className="d-flex flex-fill gap-2xs">
-                                                            <span className="small">1/4</span>
-                                                            <span className="small">Projects</span>
+                                                <ul className="text-muted small metas is-list mb-none">
+                                                    <li>
+                                                        <div className="d-flex align-items-center gap-xs">
+                                                            <svg className="progress-circle-container is-sm" viewBox="0 0 32 32" data-percent={25} style={{ ["--percent" as any]: 25 }}>
+                                                                <circle className="progress-circle progress-circle-bg" />
+                                                                <circle className="progress-circle progress-circle-percent" />
+                                                                <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                                {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
+                                                            </svg>
+                                                            <div className="d-flex flex-fill gap-2xs">
+                                                                <span className="small">1/4</span>
+                                                                <span className="small">Projects</span>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <span>Until July 12, 2024</span>
-                                                </li>
-                                            </ul>
+                                                    </li>
+                                                    <li>
+                                                        <span>Until July 12, 2024</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <a className="btn btn-default btn-block mt-3" href="/user/projects">
+                                    Show more
+                                </a>
                             </div>
-                            <a className="btn btn-default btn-block mt-3" href="/user/projects">
-                                Show more
-                            </a>
-                            </div>
-                          
-                            
                         </div>
                         <div className="application-section">
                             <h3 className="application-section--title" data-toggle="collapse" data-target="#progression" aria-expanded="true">
@@ -1020,82 +1031,80 @@ export const programHubMySpace = () => {
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
                             <div className="collapse show" id="progression">
-                            <div className="cards">
-                                <div className="card h-100">
-                                    <div className="card-external">
-                                        <div className="icon icon-school is-16px ml-n6px"></div>
-                                        <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
-                                    </div>
-                                    <div className="card-infos is-linked d-flex align-items-start gap-xs pt-7">
-                                        <span className="card-icon icon icon-library"></span>
+                                <div className="cards">
+                                    <div className="card h-100">
+                                        <div className="card-external">
+                                            <div className="icon icon-school is-16px ml-n6px"></div>
+                                            <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
+                                        </div>
+                                        <div className="card-infos is-linked d-flex align-items-start gap-xs pt-7">
+                                            <span className="card-icon icon icon-library"></span>
 
-                                        <div className="card-title flex-grow-1">
-                                            <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
-                                                <span className="line-clamp-1"> Learning Courses</span>
-                                            </a>
+                                            <div className="card-title flex-grow-1">
+                                                <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
+                                                    <span className="line-clamp-1"> Learning Courses</span>
+                                                </a>
 
-                                            <ul className="text-muted small metas is-list mb-none">
-                                                <li>
-                                                    <div className="d-flex align-items-center gap-xs">
-                                                        <svg className="progress-circle-container is-sm" viewBox="0 0 32 32" data-percent={25} style={{ ["--percent" as any]: 25 }}>
-                                                            <circle className="progress-circle progress-circle-bg" />
-                                                            <circle className="progress-circle progress-circle-percent" />
-                                                            <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                            {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
-                                                        </svg>
-                                                        <div className="d-flex flex-fill gap-2xs">
-                                                            <span className="small">1/4</span>
-                                                            <span className="small">Lessons</span>
+                                                <ul className="text-muted small metas is-list mb-none">
+                                                    <li>
+                                                        <div className="d-flex align-items-center gap-xs">
+                                                            <svg className="progress-circle-container is-sm" viewBox="0 0 32 32" data-percent={25} style={{ ["--percent" as any]: 25 }}>
+                                                                <circle className="progress-circle progress-circle-bg" />
+                                                                <circle className="progress-circle progress-circle-percent" />
+                                                                <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                                {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
+                                                            </svg>
+                                                            <div className="d-flex flex-fill gap-2xs">
+                                                                <span className="small">1/4</span>
+                                                                <span className="small">Lessons</span>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="card h-100">
+                                        <div className="card-external">
+                                            <div className="icon icon-school is-16px ml-n6px"></div>
+                                            <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
+                                        </div>
+                                        <div className="card-infos is-linked d-flex align-items-start gap-xs pt-7">
+                                            <span className="card-icon icon icon-bullseye-arrow"></span>
+
+                                            <div className="card-title flex-grow-1">
+                                                <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
+                                                    <span className="line-clamp-1">Objectives</span>
+                                                </a>
+
+                                                <ul className="text-muted small metas is-list mb-none">
+                                                    <li>
+                                                        <div className="d-flex align-items-center gap-xs">
+                                                            <svg className="progress-circle-container is-sm" viewBox="0 0 32 32" data-percent={25} style={{ ["--percent" as any]: 66 }}>
+                                                                <circle className="progress-circle progress-circle-bg" />
+                                                                <circle className="progress-circle progress-circle-percent" />
+                                                                <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
+                                                                {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
+                                                            </svg>
+                                                            <div className="d-flex flex-fill gap-2xs">
+                                                                <span className="small">4/6</span>
+                                                                <span className="small">Tasks</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>Until July 12, 2024</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div className="card h-100">
-                                    <div className="card-external">
-                                        <div className="icon icon-school is-16px ml-n6px"></div>
-                                        <div className="small font-weight-bold text-truncate mx-2">Program Name</div>
-                                    </div>
-                                    <div className="card-infos is-linked d-flex align-items-start gap-xs pt-7">
-                                        <span className="card-icon icon icon-bullseye-arrow"></span>
-
-                                        <div className="card-title flex-grow-1">
-                                            <a href="#" className="h4 mb-none stretched-link d-flex flex-wrap column-gap-2xs">
-                                                <span className="line-clamp-1">Objectives</span>
-                                            </a>
-
-                                            <ul className="text-muted small metas is-list mb-none">
-                                                <li>
-                                                    <div className="d-flex align-items-center gap-xs">
-                                                        <svg className="progress-circle-container is-sm" viewBox="0 0 32 32" data-percent={25} style={{ ["--percent" as any]: 66 }}>
-                                                            <circle className="progress-circle progress-circle-bg" />
-                                                            <circle className="progress-circle progress-circle-percent" />
-                                                            <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                                            {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
-                                                        </svg>
-                                                        <div className="d-flex flex-fill gap-2xs">
-                                                            <span className="small">4/6</span>
-                                                            <span className="small">Tasks</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <span>Until July 12, 2024</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a className="btn btn-default btn-block mt-3" href="/user/projects">
+                                    Show more
+                                </a>
                             </div>
-                            <a className="btn btn-default btn-block mt-3" href="/user/projects">
-                                Show more
-                            </a>
-                            </div>
-                           
-                            
                         </div>
                         <div className="application-section">
                             <h3 className="application-section--title" data-toggle="collapse" data-target="#coachingEmpty" aria-expanded="true">
@@ -1103,17 +1112,16 @@ export const programHubMySpace = () => {
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
                             <div className="collapse show" id="coachingEmpty">
-                            <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
-                                <div className="d-flex pb-16px">
-                                    <span className="icon icon-account-supervisor-circle is-24px" />
-                                </div>
-                                <div className="d-flex flex-column gap-2xs">
-                                    <p className="font-weight-bold">No coaching</p>
-                                    <p className="small text-muted">Your coaching will be listed here.</p>
+                                <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
+                                    <div className="d-flex pb-16px">
+                                        <span className="icon icon-account-supervisor-circle is-24px" />
+                                    </div>
+                                    <div className="d-flex flex-column gap-2xs">
+                                        <p className="font-weight-bold">No coaching</p>
+                                        <p className="small text-muted">Your coaching will be listed here.</p>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                           
                         </div>
 
                         <div className="application-section">
@@ -1122,19 +1130,17 @@ export const programHubMySpace = () => {
                                 <span className="icon icon-chevron-right ml-auto" />
                             </h3>
                             <div className="collapse show" id="eventsEmpty">
-                            <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
-                                <div className="d-flex pb-16px">
-                                    <span className="icon icon-calendar is-24px" />
-                                </div>
+                                <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
+                                    <div className="d-flex pb-16px">
+                                        <span className="icon icon-calendar is-24px" />
+                                    </div>
 
-                                <div className="d-flex flex-column gap-2xs">
-                                    <p className="font-weight-bold">No upcoming events</p>
-                                    <p className="small text-muted">Your upcoming events will be listed here</p>
+                                    <div className="d-flex flex-column gap-2xs">
+                                        <p className="font-weight-bold">No upcoming events</p>
+                                        <p className="small text-muted">Your upcoming events will be listed here</p>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                         
-                            
                         </div>
                     </div>
                 </div>
