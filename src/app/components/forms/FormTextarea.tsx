@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { maxlength } from "../../../../public/utils/maxlength";
+
 export interface FormTextareaProps {
     id?: string;
     defaultValue?: string;
@@ -5,17 +8,22 @@ export interface FormTextareaProps {
     disabled?: boolean;
     readonly?: boolean,
     required?: boolean;
+    maxLength?: number;
     addClass?: string;
     type?: "text" | "wysiwyg" ;
     rows?: number;
     fieldSizing?: boolean;
 }
 
-export const FormTextarea = ({ type = "text", id, defaultValue, placeholder, required = false, disabled = false, readonly, rows = 8, fieldSizing, addClass, ...props }: FormTextareaProps) => {
+export const FormTextarea = ({ type = "text", id, defaultValue, placeholder, required = false, disabled = false, readonly = false, maxLength, rows = 8, fieldSizing, addClass, ...props }: FormTextareaProps) => {
     let classInput = ["form-control"];
     
     fieldSizing && classInput.push("field-sizing")
     addClass && classInput.push(addClass);
+
+    useEffect(() => {
+        maxlength();
+    }, []);
 
     return (
         <textarea
@@ -29,6 +37,7 @@ export const FormTextarea = ({ type = "text", id, defaultValue, placeholder, req
             aria-describedby={'hint-' + id}
             className={classInput.join(" ")}
             rows={rows}
+            maxLength={maxLength}
             {...props}
         />
     );

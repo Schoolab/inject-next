@@ -16,7 +16,33 @@ import { ItemResource } from "@/app/components/items/ItemResource";
 export const ManageForms = () => {
     return (
         <Layout sideBar="Manage">
-            <AppContent showStepper={true} sections="separated" showSubnav={true}>
+            <AppContent
+                showStepper={true}
+                sections="separated"
+                showSubnav={true}
+                subnav={[
+                    {
+                        label: "Label",
+                        href: "#",
+                        isActive: true,
+                    },
+                    {
+                        label: "Label",
+                        href: "#",
+                    },
+                    {
+                        label: "Dropdown",
+                        href: "#",
+                        hasDropdown: true,
+                        dropdownItems: [
+                            {
+                                label: "Label",
+                                href: "#",
+                            }
+                        ]
+                    },
+                ]}
+            >
                 <div className="row">
                     <div className="col-12">
                         <div className="application-section">
@@ -26,13 +52,13 @@ export const ManageForms = () => {
                             </h3>
                             <div className="collapse show" id="BasicInfo">
                                 <p className="mb-5">Name the program and add details such as a description, dates, a cover image and an icon.</p>
-                                <div className="form-row">
-                                    <FormGroup id="name" required={true} label="Name" hint="Should be short and descriptive. 3-60 characters" addClass="col-lg-6">
+                                <div className="cq">
+                                    <FormGroup id="name" required={true} label="Name" hint="Should be short and descriptive.">
                                         <FormInputWrapper>
-                                            <FormInput id="name" required={true} defaultValue="Impact Innovators" />
+                                            <FormInput id="name" required={true} defaultValue="Impact Innovators" maxLength={60} />
                                             <div className="input-floating-actions">
                                                 <Dropdown>
-                                                    <Button iconStartName="ai" label="Ask AI" size="xs" type="transparent" addClass="dropdown-toggle text-ai"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
+                                                    <Button iconStartName="ai" size="xs" type="transparent" addClass="text-ai"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
                                                     <DropdownMenu direction="right">
                                                         <DropdownItem type="ai" label="Improve writing" iconName="improve-writing" />
                                                         <DropdownItem type="ai" label="Make shorter" iconName="shorter-text" />
@@ -49,28 +75,22 @@ export const ManageForms = () => {
                                             </div>
                                         </FormInputWrapper>
                                     </FormGroup>
-                                    <FormGroup id="slug" required={true} label="Slug" hint="Slug must not be changed after you communicate it to your users." addClass="col-lg-6">
+                                    <FormGroup id="slug" required={true} label="Slug" hint="Slug must not be changed after you communicate it to your users.">
                                         <FormInputWrapper>
-                                            <FormInput id="slug" required={true} defaultValue="impact-innovators" />
+                                            <FormInput id="slug" required={true} defaultValue="impact-innovators" maxLength={60} />
                                             <div className="input-floating-actions">
-                                                <Button iconStartName="restore" label="Refresh" size="xs" type="muted" />
+                                                <Button iconStartName="restore" size="xs" type="muted" />
                                             </div>
                                         </FormInputWrapper>
                                     </FormGroup>
-                                </div>
-                                <div className="form-row">
-                                    <div className="form-group col-lg-6">
-                                        <label className="font-weight-bold" htmlFor="translations_wrapper[lang_fr][dateBegin]">
-                                            Start date
-                                        </label>
-                                        <input type="date" id="translations_wrapper_lang_fr_dateBegin" name="translations_wrapper[lang_fr][dateBegin]" disabled className="form-control" />
-                                    </div>
-                                    <div className="form-group col-lg-6">
-                                        <label className="font-weight-bold" htmlFor="translations_wrapper[lang_fr][dateEnd]">
-                                            End date
-                                        </label>
-                                        <input type="date" id="translations_wrapper_lang_fr_dateEnd" name="translations_wrapper[lang_fr][dateEnd]" disabled className="form-control" />
-                                    </div>
+
+                                    <FormGroup addClass="cq-12 cq-xs-6" id="start-date" label="Start date" required={true}>
+                                        <FormInput id="start-date" type="datetime-local" />
+                                    </FormGroup>
+
+                                    <FormGroup addClass="cq-12 cq-xs-6" id="end-date" label="End date" required={true}>
+                                        <FormInput id="end-date" type="datetime-local" />
+                                    </FormGroup>
                                 </div>
 
                                 <Alert type="info" icon="information" text={`To edit the registrations dates go to <a href="#" class="alert-link">Registration</a> then <a href="#" class="alert-link">Dates &amp; Rights</a>`} />
@@ -81,10 +101,11 @@ export const ManageForms = () => {
                                             id="description"
                                             rows={4}
                                             defaultValue={"A program to teach you our methodologies and the basics of impact, in your daily life as well as in your company, for a brighter future!"}
+                                            maxLength={500}
                                         />
                                         <div className="input-floating-actions">
                                             <Dropdown>
-                                                <Button iconStartName="ai" size="xs" type="transparent" addClass="dropdown-toggle text-ai" data-toggle="dropdown" aria-expanded="false" />
+                                                <Button iconStartName="ai" size="xs" type="transparent" addClass="text-ai" data-toggle="dropdown" aria-expanded="false" />
                                                 <DropdownMenu direction="right">
                                                     <DropdownItem type="ai" label="Write a course summary" caption="From all the content inside" iconName="summarize" />
                                                     <DropdownItem type="ai" label="Translate to French" iconName="translate-generate" />

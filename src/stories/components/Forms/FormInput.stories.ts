@@ -42,6 +42,18 @@ export const Text: Story = {
     }
 };
 
+export const MaxLength: Story = {
+    args: {
+        id: "name",
+        type: "text",
+        placeholder: "A short name",
+        required: false,
+        disabled: false,
+        readonly: false,
+        maxLength: 25,
+    }
+};
+
 export const Readonly: Story = {
     args: {
         id: "name",
