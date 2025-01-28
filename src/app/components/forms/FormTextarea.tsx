@@ -8,6 +8,7 @@ export interface FormTextareaProps {
     disabled?: boolean;
     readonly?: boolean,
     required?: boolean;
+    autofocus?: boolean;
     maxLength?: number;
     addClass?: string;
     type?: "text" | "wysiwyg" ;
@@ -15,7 +16,7 @@ export interface FormTextareaProps {
     fieldSizing?: boolean;
 }
 
-export const FormTextarea = ({ type = "text", id, defaultValue, placeholder, required = false, disabled = false, readonly = false, maxLength, rows = 8, fieldSizing, addClass, ...props }: FormTextareaProps) => {
+export const FormTextarea = ({ type = "text", id, defaultValue, placeholder, required = false, disabled = false, readonly = false, autofocus, maxLength, rows = 8, fieldSizing, addClass, ...props }: FormTextareaProps) => {
     let classInput = ["form-control"];
     
     fieldSizing && classInput.push("field-sizing")
@@ -32,6 +33,7 @@ export const FormTextarea = ({ type = "text", id, defaultValue, placeholder, req
             id={id}
             disabled={disabled}
             readOnly={readonly}
+            autoFocus={autofocus}
             required={required}
             aria-required={required ? "true" : "false"}
             aria-describedby={'hint-' + id}

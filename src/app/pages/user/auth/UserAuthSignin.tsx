@@ -96,7 +96,7 @@ export const UserAuthSignin = (
                                 
                                 { showEmail && <form method="post" action="/signin" id="loginForm" className="d-flex flex-column gap-sm">
                                     <FormGroup id="email" label="Email address" srOnly={true} required={true}>
-                                        <FormInput id="email" type="email" placeholder="Email address" />
+                                        <FormInput id="email" type="email" placeholder="Email address" autofocus={true} />
                                     </FormGroup>
                                     <FormGroup id="password" label="Password" srOnly={true} required={true}>
                                         <FormInput id="password" type="password" placeholder="Password" />

@@ -98,7 +98,7 @@ export const UserAuthSignup = (
                                 <form method="post" action="/signin" id="loginForm" className="d-flex flex-column">
                                     <div className="form-row">
                                         <FormGroup addClass="col-6 mb-xs" id="first-name" required={true} label="First Name" srOnly={true}>
-                                            <FormInput id="first-name" required={true} placeholder="First Name" />
+                                            <FormInput id="first-name" required={true} placeholder="First Name" autofocus={true} />
                                         </FormGroup>
         
                                         <FormGroup addClass="col-6 mb-xs" id="last-name" required={true} label="Last Name" srOnly={true}>

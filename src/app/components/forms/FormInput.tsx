@@ -8,6 +8,7 @@ export interface FormInputProps {
     disabled?: boolean;
     required?: boolean;
     readonly?: boolean;
+    autofocus?: boolean;
     maxLength?: number;
 
     addClass?: string;
@@ -17,7 +18,7 @@ export interface FormInputProps {
 /**
  * Buttons drive actions in forms, dialogs, etc. and should be used to guide the user to their next best action. Button component has support for multiple sizes, type and can have a start or an end icon.
  */
-export const FormInput = ({ type = "text", id, defaultValue, placeholder, required = false, disabled = false, readonly = false, maxLength, addClass, ...props }: FormInputProps) => {
+export const FormInput = ({ type = "text", id, defaultValue, placeholder, required = false, disabled = false, readonly = false, autofocus, maxLength, addClass, ...props }: FormInputProps) => {
     useEffect(() => {
         maxlength();
     }, []);
@@ -31,6 +32,7 @@ export const FormInput = ({ type = "text", id, defaultValue, placeholder, requir
             disabled={disabled}
             required={required}
             readOnly={readonly}
+            autoFocus={autofocus}
             aria-required={required ? "true" : "false"}
             aria-describedby={'hint-' + id}
             className="form-control"
