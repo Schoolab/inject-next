@@ -62,6 +62,7 @@ export const Danger: Story = {
 
 export const Interactive: Story = {
   args: {
+    icon: "account",
     title: "Title",
     text: "This is an interactive alert—check it out!",
     buttonLabel:"Learn more",
@@ -71,6 +72,7 @@ export const Interactive: Story = {
 
 export const Accent: Story = {
   args: {
+    icon: "alert",
     title: "Title",
     text: "This is an accent alert—check it out!",
     buttonLabel:"Learn more",
@@ -80,6 +82,7 @@ export const Accent: Story = {
 
 export const Assistant: Story = {
   args: {
+    icon: "ai",
     title: "Title",
     text: "This is an assistant alert—check it out!",
     buttonLabel:"Learn more",

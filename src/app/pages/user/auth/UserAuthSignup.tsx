@@ -86,7 +86,7 @@ export const UserAuthSignup = (
                         <div className="d-flex flex-column gap-xl">
                         
                             <div className="d-flex flex-column gap-md">
-                                <h2 className="h1 mb-md">Nice to meet you, join us today!</h2>
+                                <h2 className="display-2 mb-md">Nice to meet you,<br /> join us today!</h2>
                                 <p>Sign up or <a href="/signin">sign in</a> to the digital platform to simplify your learning journey and participate to the community.</p>
                             </div>
 

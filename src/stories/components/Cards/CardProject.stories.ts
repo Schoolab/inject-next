@@ -45,18 +45,21 @@ export const Cover: Story = {
 
 export const Pinned: Story = {
     args: {
+        cover: "img/project-healthify.png",
         pinned: true,
     },
 };
 
 export const Program: Story = {
     args: {
+        cover: "img/project-healthify.png",
         program: "Schoolab",
     },
 };
 
 export const Tags: Story = {
     args: {
+        cover: "img/project-healthify.png",
         tags: [
             { label: "Health" },
             { label: "Sustainable" },
@@ -68,6 +71,7 @@ export const Tags: Story = {
 
 export const WithLinks: Story = {
     args: {
+        cover: "img/project-healthify.png",
         links: [
             { iconName: "settings", label: "Manage project", link: "#" },
         ],
@@ -76,6 +80,7 @@ export const WithLinks: Story = {
 
 export const WithActions: Story = {
     args: {
+        cover: "img/project-healthify.png",
         actions: [
             { 
                 title: "Support this project",
@@ -94,6 +99,7 @@ export const WithActions: Story = {
 
 export const Join: Story = {
     args: {
+        cover: "img/project-healthify.png",
         actions: [
             { 
                 buttons: [
@@ -107,6 +113,7 @@ export const Join: Story = {
 
 export const Votes: Story = {
     args: {
+        cover: "img/project-healthify.png",
         actions: [
             { 
                 title: "Selection Round #1",
@@ -125,6 +132,7 @@ export const Votes: Story = {
 
 export const Evaluations: Story = {
     args: {
+        cover: "img/project-healthify.png",
         actions: [
             { 
                 title: "Final selection",
@@ -143,6 +151,7 @@ export const Evaluations: Story = {
 
 export const Coaching: Story = {
     args: {
+        cover: "img/project-healthify.png",
         actions: [
             { 
                 title: "3 coaching sessions",
@@ -161,6 +170,7 @@ export const Coaching: Story = {
 
 export const Application: Story = {
     args: {
+        cover: "img/project-healthify.png",
         actions: [
             { 
                 title: "Application status",
@@ -176,6 +186,7 @@ export const Application: Story = {
 
 export const ApplicationReview: Story = {
     args: {
+        cover: "img/project-healthify.png",
         actions: [
             { 
                 title: "Application status",
@@ -187,6 +198,7 @@ export const ApplicationReview: Story = {
 
 export const ApplicationRejected: Story = {
     args: {
+        cover: "img/project-healthify.png",
         actions: [
             { 
                 title: "Application status",
