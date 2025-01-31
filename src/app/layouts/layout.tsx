@@ -2,7 +2,6 @@ import React from "react";
 import { ReactNode } from "react";
 import { useEffect } from "react";
 import { Navbar } from "../components/NavBar";
-import { NavbarHub } from "../components/NavBarHub";
 import { ShortcutBar } from "../components/Shortcutbar/ShortcutBar";
 import { SidebarManage } from "../components/sidebar/SidebarManage";
 import { SidebarAdmin } from "../components/sidebar/SidebarAdmin";

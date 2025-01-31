@@ -20,7 +20,7 @@ export const DropdownUser = ({}: DropdownUserProps) => {
 
     return (
         <Dropdown>
-            <DropdownMenu show={true}>
+            <DropdownMenu addClass="dropright" show={true}>
                 <DropdownItem label="Profile" addClass="gap-xs">
                     <Avatar image="img/avatar-pierre.jpeg" />
                     <div className="d-flex flex-column justify-content-center w-100">
@@ -35,7 +35,7 @@ export const DropdownUser = ({}: DropdownUserProps) => {
                 <DropdownItem label="Surveys" />
                 <DropdownDivider />
                 <DropdownItem label="Settings" iconName="settings" />
-                <DropdownNested direction="dropright">
+                <DropdownNested>
                     <DropdownItem 
                         label="Theme: Device"
                         iconName="theme-dark"

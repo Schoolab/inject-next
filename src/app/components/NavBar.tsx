@@ -12,6 +12,7 @@ import { Role } from "./badges/roles/Role";
 import { DropdownNested } from "./dropdown/DropdownNested";
 import { DropdownHeader } from "./dropdown/DropdownHeader";
 import { EmptyState } from "./EmptyState";
+import { Dropdown } from "./dropdown/Dropdown";
 export interface NavBarProps {
     /**
      * User is logged?
@@ -171,14 +172,14 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                                 </>
                                             )}
                                             {showNotifs && (
-                                                <div className="navbar-option dropdown d-none d-lg-flex">
+                                                <Dropdown addClass="navbar-option d-none d-lg-flex">
                                                     <a className="navbar-option--link" data-toggle="dropdown" role="button" href="#">
                                                         <span className="icon icon-notifications has-dot" title="" data-toggle="tooltip" data-content="" data-original-title="Notifications" />
                                                     </a>
                                                     <DropdownMenu direction="right" addClass="dropdown-menu-medium">
                                                         <EmptyState iconTitle="notifications-none" title="You've caught up!" text="There is no new notification yet." labelLink="Manage notifications" bordered={false} spacious={true} />
                                                     </DropdownMenu>
-                                                </div>
+                                                </Dropdown>
                                             )}
                                             {showMessages && (
                                                 <div className="navbar-option">
@@ -188,7 +189,7 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                                 </div>
                                             )}
 
-                                            <div className="navbar-option dropdown d-none d-lg-flex ml-8px">
+                                            <Dropdown addClass="navbar-option d-none d-lg-flex ml-8px">
                                                 <a className="navbar-thumbnail" data-toggle="dropdown" data-boundary="viewport" role="button" href="#">
                                                     <Avatar data-toggle="tooltip" data-original-title="Account" />
                                                 </a>
@@ -207,7 +208,7 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                                     <DropdownItem label="Surveys" />
                                                     <DropdownDivider />
                                                     <DropdownItem label="Settings" iconName="settings" />
-                                                    <DropdownNested direction="dropright">
+                                                    <DropdownNested>
                                                         <DropdownItem 
                                                             label="Theme: Device"
                                                             iconName="theme-dark"
@@ -225,7 +226,7 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                                     <DropdownDivider />
                                                     <DropdownItem label="Sign out" iconName="signout" type="danger" />
                                                 </DropdownMenu>
-                                            </div>
+                                            </Dropdown>
                                         </div>
                                     ) : (
                                         <div className="d-flex gap-xs align-items-center">
