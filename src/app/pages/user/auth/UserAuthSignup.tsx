@@ -50,7 +50,8 @@ export const UserAuthSignup = (
             logoUrl = "img/raiselab-logo-light.svg";
             break;
         case "Inject":
-            logoUrl = "img/inject-logo-light.svg";
+            let logoDarkUrl = "img/inject-logo-dark.svg";
+            let logoLightUrl = "img/inject-logo-light.svg";
             break;
         case "default":
             logoDarkUrl = "img/inject-logo-dark.svg";
@@ -81,7 +82,7 @@ export const UserAuthSignup = (
                 <div className={splitedContainerClass.join(" ")}>
                     <div className={splitedContentClass.join(" ")}>
                         <nav className="navbar">
-                            <div className="container-fluid">
+                            <div className="container-fluid p-0">
                                 <a className="m-0" href="#">
                                     { theme && theme !== "default" ? 
                                         <picture className="img-fluid d-block">
