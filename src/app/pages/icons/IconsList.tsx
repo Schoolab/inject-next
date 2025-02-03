@@ -64,7 +64,7 @@ export function renderIconGallery(icons: Icon) {
     'newspaper': 'newsfeed',
     'menu-down': 'dropdown',
     'information-outline': 'information',
-    'key': 'service-saml',
+    'key': 'service-sso',
     'bell': 'notifications',
     'bell-outline': 'notifications-none',
     'comment-outline': 'comment',

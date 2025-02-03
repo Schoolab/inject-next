@@ -8,6 +8,8 @@ import { Theme } from "@/app/components/Theme";
 interface UserAuthSigninProps {
     theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
     showEmail?: boolean;
+    showPlatforms?: boolean;
+    showSso?: boolean;
     positionX?: "none" | "left" | "center" | "right";
     positionY?: "none" | "top" | "middle" | "bottom";
     boxed?: boolean;
@@ -21,6 +23,8 @@ export const UserAuthSignin = (
     {
         theme,
         showEmail = true,
+        showPlatforms = true,
+        showSso = false,
         positionX,
         positionY,
         boxed,
@@ -31,24 +35,29 @@ export const UserAuthSignin = (
     }:UserAuthSigninProps
 ) => {
     let logoUrl = "img/inject-logo-dark.svg";
+    let logoDarkUrl = "img/inject-logo-dark.svg";
+    let logoLightUrl = "img/inject-logo-light.svg";
+
     switch (theme) {
         case "Schoolab":
-            logoUrl = "img/schoolab-logo-dark.svg";
+            logoUrl = "img/schoolab-logo-light.svg";
             break;
         case "Moho":
-            logoUrl = "img/moho-logo-dark.svg";
+            logoUrl = "img/moho-logo-light.svg";
             break;
         case "Raiselab":
-            logoUrl = "img/raiselab-logo-dark.svg";
+            logoUrl = "img/raiselab-logo-light.svg";
             break;
         case "Inject":
-            logoUrl = "img/inject-logo-dark.svg";
+            logoUrl = "img/inject-logo-light.svg";
             break;
         case "default":
-            logoUrl = "img/inject-logo-dark.svg";
+            logoDarkUrl = "img/inject-logo-dark.svg";
+            logoLightUrl = "img/inject-logo-light.svg";
             break;
         default:
-            logoUrl = "img/inject-logo-dark.svg";
+            logoDarkUrl = "img/inject-logo-dark.svg";
+            logoLightUrl = "img/inject-logo-light.svg";
             break;
     }
 
@@ -73,11 +82,16 @@ export const UserAuthSignin = (
                         <nav className="navbar">
                             <div className="container-fluid">
                                 <a className="m-0" href="#">
-                                    <picture>
-                                        <source media="(max-width:150px)" srcSet={logoUrl} />
-                                        <source media="(max-width:320px)" srcSet={logoUrl} />
-                                        <img className="img-fluid d-block" src={logoUrl} alt="" height="40" />
-                                    </picture>
+                                    { theme && theme !== "default" ? 
+                                        <picture className="img-fluid d-block">
+                                            <img  src={logoUrl} height="40" />
+                                        </picture>
+                                    :
+                                        <picture className="img-fluid d-block">
+                                            <source srcSet={logoLightUrl} height="40" media="(prefers-color-scheme: dark)" />
+                                            <img src={logoDarkUrl} height="40" />
+                                        </picture>
+                                    }
                                 </a>
                             </div>
                         </nav>
@@ -90,9 +104,16 @@ export const UserAuthSignin = (
                             </div>
 
                             <div className="d-flex flex-column gap-md">
-                                <Button type="primary" label="Sign in with Google" iconStartImage="img/platform-google.png" extended={true} addClass="btn-service" />
+
+                                { (showPlatforms || showSso) && <div className="d-flex flex-column gap-sm}">
+
+                                    { showPlatforms && <Button type="primary" label="Sign in with Google" iconStartImage="img/platform-google.png" extended={true} addClass="btn-service" /> }
+
+                                    { showSso && <Button type="sso" label="Sign in with Schoolab" iconStartName="service-sso" extended={true} addClass="btn-service" /> }
                                 
-                                { showEmail && <hr className="text-muted" data-content="or" /> }
+                                </div>}
+
+                                { ((showPlatforms || showSso) && showEmail) && <hr className="text-muted" data-content="or" /> }
                                 
                                 { showEmail && <form method="post" action="/signin" id="loginForm" className="d-flex flex-column gap-sm">
                                     <FormGroup id="email" label="Email address" srOnly={true} required={true}>

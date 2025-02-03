@@ -119,3 +119,18 @@ export const Danger: Story = {
     type: "danger",
   },
 };
+
+export const Service: Story = {
+  args: {
+    iconStartImage: "img/platform-google.png",
+    addClass: "btn-service",
+  },
+};
+
+export const SSO: Story = {
+  args: {
+    type: "sso",
+    iconStartName: "service-sso",
+    addClass: "btn-service",
+  },
+};
