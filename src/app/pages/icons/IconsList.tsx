@@ -6,12 +6,16 @@ interface Icon {
   [key: string]: any;
 }
 
-interface DeprecatedIconsList {
+interface IconsList {
   [key: string]: string;
 }
 
 export function renderIconGallery(icons: Icon) {
-  const deprecatedIconsList: DeprecatedIconsList = {
+  const junkyardIconsList: IconsList = {
+    'checkbox-marked-outline': 'checkbox-marked-outline',
+  }
+
+  const deprecatedIconsList: IconsList = {
     'chart-donut': 'plan-data',
     'lightning-bolt': 'admin',
     'map-marker': 'location',
@@ -143,6 +147,19 @@ export function renderIconGallery(icons: Icon) {
       return acc;
     }, {} as { [key: string]: string[] });
 
+  const junkyardIcons: string[] = [];
+
+  // Parcourir les icônes et extraire celles qui sont dans la Junkyard
+  Object.entries(iconsByFirstLetter).forEach(([letter, icons]) => {
+    iconsByFirstLetter[letter] = icons.filter((icon) => {
+      if (icon in junkyardIconsList) {
+        junkyardIcons.push(icon);
+        return false; // Exclure l'icône de la liste principale
+      }
+      return true; // Garder l'icône dans la liste principale
+    });
+  });
+
   const deprecatedIcons: string[] = [];
 
   // Parcourir les icônes et extraire celles qui sont Deprecated
@@ -156,6 +173,9 @@ export function renderIconGallery(icons: Icon) {
     });
   });
 
+  // Ajouter les icônes Junkyard à la fin
+  iconsByFirstLetter['Junkyard'] = junkyardIcons;
+
   // Ajouter les icônes Deprecated à la fin
   iconsByFirstLetter['Deprecated'] = deprecatedIcons;
 
@@ -163,7 +183,7 @@ export function renderIconGallery(icons: Icon) {
     <>
       {Object.entries(iconsByFirstLetter).map(([letter, icons]) => (
         <div key={letter}>
-          <h2>{letter === "Deprecated" ? letter : letter.toUpperCase()}</h2>
+          <h2>{(letter === "Deprecated" || letter === "Junkyard") ? letter : letter.toUpperCase()}</h2>
           <IconGallery>
             {icons.map((icon) => (
               <IconItem key={icon} name={letter === 'Deprecated' ? `${icon} (${deprecatedIconsList[icon]})` : icon}>
