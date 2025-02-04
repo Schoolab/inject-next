@@ -224,8 +224,8 @@ export const ProjectLandingPage = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="message commentFormContainer">
-                                            <div className="thumbnail is-oval">
+                                        <div className="message commentFormContainer align-items-start">
+                                            <div className="thumbnail is-md is-oval">
                                                 <span className="icon icon-account" />
                                             </div>
                                             <div className="message-body">
