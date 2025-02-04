@@ -22,7 +22,6 @@ export function renderIconGallery(icons: Icon) {
     'bullseye-arrow': 'objective',
     'gavel': 'evaluation',
     'account-supervisor-circle': 'coaching',
-    'cancel': 'impact-none',
     'help-circle': 'impact-not-obvious',
     'sprout': 'impact-native',
     'bullhorn': 'impact-push',
@@ -137,6 +136,8 @@ export function renderIconGallery(icons: Icon) {
     'corn': 'vertical-food',
     'leaf': 'impact-sustainable',
     'content-duplicate': 'copy',
+    'file-cancel-outline': 'cancel',
+    'format-text': 'format-title',
   };
 
   const iconsByFirstLetter: { [key: string]: string[] } = Object.keys(icons)
