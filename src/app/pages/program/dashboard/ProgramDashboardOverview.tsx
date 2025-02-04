@@ -18,7 +18,7 @@ export const ProgramDashboardOverview = () => {
     return (
         <Layout shortcutBarExpanded={true}>
             <AppContent
-                sections="transparent"
+                sections="bordered"
                 breadcrumb={[
                     {
                         label: "Impact Innovators",
@@ -178,6 +178,20 @@ export const ProgramDashboardOverview = () => {
                                     <div className="d-flex mt-md gap-sm">
                                         <Button type="primary" label="Respond to survey" addClass="flex-fill" />
                                         <Button type="default" label="See all surveys" addClass="flex-fill" />
+                                    </div>
+                                </div>
+                            </div>
+                        </Section>
+                        <Section>
+                            <div className="cq justify-content-center">
+                                <div className="cq-12">
+                                    <h3 className="d-flex gap-xs align-items-center">
+                                        <Icon size="sm" name="questionnaire" />
+                                        <span>Applications</span>
+                                    </h3>
+                                    <p>Controls the status of an application, whether for a program or a project.</p>
+                                    <div className="d-flex mt-md gap-sm">
+                                        <Button type="default" label="See applications" addClass="flex-fill" />
                                     </div>
                                 </div>
                             </div>
