@@ -13,6 +13,7 @@ import { DropdownNested } from "./dropdown/DropdownNested";
 import { DropdownHeader } from "./dropdown/DropdownHeader";
 import { EmptyState } from "./EmptyState";
 import { Dropdown } from "./dropdown/Dropdown";
+import { Logo } from "./Logo";
 export interface NavBarProps {
     /**
      * User is logged?
@@ -52,21 +53,31 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
     switch (theme) {
         case "Schoolab":
             logoUrl = "img/schoolab-logo-light.svg";
+            logoDarkUrl = "img/schoolab-logo-light.svg";
+            logoLightUrl = "img/schoolab-logo-light.svg";
             break;
         case "Moho":
             logoUrl = "img/moho-logo-light.svg";
+            logoDarkUrl = "img/moho-logo-light.svg";
+            logoLightUrl = "img/moho-logo-light.svg";
             break;
         case "Raiselab":
             logoUrl = "img/raiselab-logo-light.svg";
+            logoDarkUrl = "img/raiselab-logo-light.svg";
+            logoLightUrl = "img/raiselab-logo-light.svg";
             break;
         case "Inject":
             logoUrl = "img/inject-logo-light.svg";
+            logoDarkUrl = "img/inject-logo-light.svg";
+            logoLightUrl = "img/inject-logo-light.svg";
             break;
         case "default":
+            logoUrl = "img/inject-logo-dark.svg";
             logoDarkUrl = "img/inject-logo-dark.svg";
             logoLightUrl = "img/inject-logo-light.svg";
             break;
         default:
+            logoUrl = "img/inject-logo-dark.svg";
             logoDarkUrl = "img/inject-logo-dark.svg";
             logoLightUrl = "img/inject-logo-light.svg";
             break;
@@ -86,16 +97,7 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                 </button>
                                 <div className="navbar-brand">
                                     <a tabIndex={1} title="" data-toggle="tooltip" href="#" data-original-title="Organization Hub">
-                                        { theme && theme !== "default" ? 
-                                            <picture>
-                                                <img className="img-fluid d-block" src={logoUrl} style={{ maxWidth: 150, width: "100%" }} />
-                                            </picture>
-                                        :
-                                            <picture>
-                                                <source srcSet={logoLightUrl} media="(prefers-color-scheme: dark)" />
-                                                <img src={logoDarkUrl} />
-                                            </picture>
-                                        }
+                                        <Logo alt={theme} logoThemeDefault={logoUrl} logoThemeLight={logoDarkUrl} logoThemeDark={logoLightUrl} logoStyle={{ maxWidth: 150, width: "100%" }} />
                                     </a>
                                 </div>
 

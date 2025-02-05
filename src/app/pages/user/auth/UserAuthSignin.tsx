@@ -4,9 +4,10 @@ import { Button } from "@/app/components/Button";
 import { FormGroup } from "@/app/components/forms/FormGroup";
 import { FormInput } from "@/app/components/forms/FormInput";
 import { Theme } from "@/app/components/Theme";
+import { Logo } from "@/app/components/Logo";
 
 interface UserAuthSigninProps {
-    theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
+    theme: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
     showEmail?: boolean;
     showPlatforms?: boolean;
     showSso?: boolean;
@@ -21,7 +22,7 @@ interface UserAuthSigninProps {
 
 export const UserAuthSignin = (
     {
-        theme,
+        theme = "default",
         showEmail = true,
         showPlatforms = true,
         showSso = false,
@@ -40,23 +41,32 @@ export const UserAuthSignin = (
 
     switch (theme) {
         case "Schoolab":
-            logoUrl = "img/schoolab-logo-light.svg";
+            logoUrl = "img/schoolab-logo-dark.svg";
+            logoDarkUrl = "img/schoolab-logo-dark.svg";
+            logoLightUrl = "img/schoolab-logo-light.svg";
             break;
         case "Moho":
-            logoUrl = "img/moho-logo-light.svg";
+            logoUrl = "img/moho-logo-dark.svg";
+            logoDarkUrl = "img/moho-logo-dark.svg";
+            logoLightUrl = "img/moho-logo-light.svg";
             break;
         case "Raiselab":
-            logoUrl = "img/raiselab-logo-light.svg";
+            logoUrl = "img/raiselab-logo-dark.svg";
+            logoDarkUrl = "img/raiselab-logo-dark.svg";
+            logoLightUrl = "img/raiselab-logo-light.svg";
             break;
         case "Inject":
+            logoUrl = "img/inject-logo-dark.svg";
             logoDarkUrl = "img/inject-logo-dark.svg";
             logoLightUrl = "img/inject-logo-light.svg";
             break;
         case "default":
+            logoUrl = "img/inject-logo-dark.svg";
             logoDarkUrl = "img/inject-logo-dark.svg";
             logoLightUrl = "img/inject-logo-light.svg";
             break;
         default:
+            logoUrl = "img/inject-logo-dark.svg";
             logoDarkUrl = "img/inject-logo-dark.svg";
             logoLightUrl = "img/inject-logo-light.svg";
             break;
@@ -83,16 +93,7 @@ export const UserAuthSignin = (
                         <nav className="navbar">
                             <div className="container-fluid p-0">
                                 <a className="m-0" href="#">
-                                    { theme && theme !== "default" ? 
-                                        <picture className="img-fluid d-block">
-                                            <img  src={logoUrl} height="40" />
-                                        </picture>
-                                    :
-                                        <picture className="img-fluid d-block">
-                                            <source srcSet={logoLightUrl} height="40" media="(prefers-color-scheme: dark)" />
-                                            <img src={logoDarkUrl} height="40" />
-                                        </picture>
-                                    }
+                                    <Logo alt={theme} logoThemeDefault={logoUrl} logoThemeLight={logoDarkUrl} logoThemeDark={logoLightUrl} logoStyle={{ maxWidth: 150, maxHeight: 40 }} />
                                 </a>
                             </div>
                         </nav>

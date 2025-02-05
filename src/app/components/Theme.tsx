@@ -126,7 +126,7 @@ export const Theme = ({ themeName }: ThemeProps) => {
                         font-display: swap
                     }
 
-                   :root {
+                    :root {
                         --bg-brand-hero: #181B56;
                         --bg-brand-on-hero-highlight: rgba(255,255,255,.1);
                         --bg-brand-on-hero-active: #FFF;

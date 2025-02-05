@@ -1,6 +1,7 @@
 import type { Preview } from "@storybook/react";
 import { themes } from '@storybook/theming';
 
+import "../public/utils/updateLogo.js";
 import "../public/utils/nestedDropdown.js";
 
 import "../public/styles/styles.css";

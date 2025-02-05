@@ -5,6 +5,7 @@ import { FormGroup } from "@/app/components/forms/FormGroup";
 import { FormInput } from "@/app/components/forms/FormInput";
 import { Theme } from "@/app/components/Theme";
 import { FormSelect } from "@/app/components/forms/FormSelect";
+import { Logo } from "@/app/components/Logo";
 
 interface UserAuthSignupProps {
     theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
@@ -41,23 +42,32 @@ export const UserAuthSignup = (
 
     switch (theme) {
         case "Schoolab":
-            logoUrl = "img/schoolab-logo-light.svg";
+            logoUrl = "img/schoolab-logo-dark.svg";
+            logoDarkUrl = "img/schoolab-logo-dark.svg";
+            logoLightUrl = "img/schoolab-logo-light.svg";
             break;
         case "Moho":
-            logoUrl = "img/moho-logo-light.svg";
+            logoUrl = "img/moho-logo-dark.svg";
+            logoDarkUrl = "img/moho-logo-dark.svg";
+            logoLightUrl = "img/moho-logo-light.svg";
             break;
         case "Raiselab":
-            logoUrl = "img/raiselab-logo-light.svg";
+            logoUrl = "img/raiselab-logo-dark.svg";
+            logoDarkUrl = "img/raiselab-logo-dark.svg";
+            logoLightUrl = "img/raiselab-logo-light.svg";
             break;
         case "Inject":
-            let logoDarkUrl = "img/inject-logo-dark.svg";
-            let logoLightUrl = "img/inject-logo-light.svg";
+            logoUrl = "img/inject-logo-dark.svg";
+            logoDarkUrl = "img/inject-logo-dark.svg";
+            logoLightUrl = "img/inject-logo-light.svg";
             break;
         case "default":
+            logoUrl = "img/inject-logo-dark.svg";
             logoDarkUrl = "img/inject-logo-dark.svg";
             logoLightUrl = "img/inject-logo-light.svg";
             break;
         default:
+            logoUrl = "img/inject-logo-dark.svg";
             logoDarkUrl = "img/inject-logo-dark.svg";
             logoLightUrl = "img/inject-logo-light.svg";
             break;
@@ -84,16 +94,7 @@ export const UserAuthSignup = (
                         <nav className="navbar">
                             <div className="container-fluid p-0">
                                 <a className="m-0" href="#">
-                                    { theme && theme !== "default" ? 
-                                        <picture className="img-fluid d-block">
-                                            <img  src={logoUrl} height="40" />
-                                        </picture>
-                                    :
-                                        <picture className="img-fluid d-block">
-                                            <source srcSet={logoLightUrl} height="40" media="(prefers-color-scheme: dark)" />
-                                            <img src={logoDarkUrl} height="40" />
-                                        </picture>
-                                    }
+                                    <Logo alt={theme} logoThemeDefault={logoUrl} logoThemeLight={logoDarkUrl} logoThemeDark={logoLightUrl} logoStyle={{ maxWidth: 150, maxHeight: 40 }} />
                                 </a>
                             </div>
                         </nav>
