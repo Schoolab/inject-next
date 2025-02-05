@@ -80,7 +80,7 @@ export const Button = ({ size = "default", type, disabled, isActive = false, isL
             {isLoading ? (
                 <>
                     <Icon name="loading" addClass="icon-spin" />
-                    <span>Loading…</span>
+                    <span>{label}</span>
                 </>
             ) : (
                 <>

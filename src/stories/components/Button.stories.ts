@@ -51,6 +51,16 @@ export const Loading: Story = {
     iconStartName: "link",
     type: "default",
     isLoading: true,
+    label: "Loading…"
+  },
+};
+
+export const Sending: Story = {
+  args: {
+    iconStartName: "link",
+    type: "primary",
+    isLoading: true,
+    label: "Sending…"
   },
 };
 
