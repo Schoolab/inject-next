@@ -17,6 +17,7 @@ export interface ButtonProps {
      * Is Active?
      */
     isActive?: Boolean;
+    isLoading?: boolean;
     /**
      * Show Active Icon?
      */
@@ -62,12 +63,13 @@ export interface ButtonProps {
 /**
  * Buttons drive actions in forms, dialogs, etc. and should be used to guide the user to their next best action. Button component has support for multiple sizes, type and can have a start or an end icon.
  */
-export const Button = ({ size = "default", type, disabled, isActive = false, showActive = true, hasDropdown = false, label, link = "#", target, addClass, extended, outlined, iconStartName, iconEndName, iconStartImage, ...props }: ButtonProps) => {
+export const Button = ({ size = "default", type, disabled, isActive = false, isLoading = false, showActive = true, hasDropdown = false, label, link = "#", target, addClass, extended, outlined, iconStartName, iconEndName, iconStartImage, ...props }: ButtonProps) => {
     let classTab = ["btn"];
     type && outlined && classTab.push(`btn-outline-${type}`);
     type && !outlined && classTab.push(`btn-${type}`);
     size !== "default" && classTab.push(`btn-${size}`);
     isActive && classTab.push("active");
+    isLoading && classTab.push("disabled");
     hasDropdown && classTab.push("dropdown-toggle");
     extended && classTab.push("btn-block");
     disabled && classTab.push("disabled");
@@ -75,12 +77,21 @@ export const Button = ({ size = "default", type, disabled, isActive = false, sho
 
     return (
         <a href={link} className={classTab.join(" ")} role="button" target={target} {...props}>
-            {isActive && showActive && <Icon name="check" />}
-            {iconStartName && <Icon name={iconStartName} />}
-            {iconStartImage && <img className="img" src={iconStartImage} />}
-            {label && <span>{label}</span>} 
-            {props.children && props.children}
-            {iconEndName && <Icon name={iconEndName} />}
+            {isLoading ? (
+                <>
+                    <Icon name="loading" addClass="icon-spin" />
+                    <span>Loading…</span>
+                </>
+            ) : (
+                <>
+                    {isActive && showActive && <Icon name="check" />}
+                    {iconStartName && <Icon name={iconStartName} />}
+                    {iconStartImage && <img className="img" src={iconStartImage} />}
+                    {label && <span>{label}</span>}
+                    {props.children && props.children}
+                    {iconEndName && <Icon name={iconEndName} />}
+                </>
+            )}
         </a>
     );
 };

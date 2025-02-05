@@ -7,7 +7,7 @@ const meta = {
   component: Button,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: "padded",
+    layout: "centered",
     docs: {
       controls: { sort: "requiredFirst" },
     },
@@ -18,6 +18,7 @@ const meta = {
   argTypes: {
     disabled: { control: "boolean" },
     isActive: { control: "boolean" },
+    isLoading: { control: "boolean" },
     hasDropdown: { control: "boolean" },
     extended: { control: "boolean" },
     outlined: { control: "boolean" },
@@ -42,6 +43,14 @@ export const Default: Story = {
   args: {
     iconStartName: "link",
     type: "default",
+  },
+};
+
+export const Loading: Story = {
+  args: {
+    iconStartName: "link",
+    type: "default",
+    isLoading: true,
   },
 };
 
