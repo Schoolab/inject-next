@@ -8,7 +8,7 @@ import { FormSelect } from "@/app/components/forms/FormSelect";
 import { Logo } from "@/app/components/Logo";
 
 interface UserAuthSignupProps {
-    theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
+    theme: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
     showEmail?: boolean;
     showPlatforms?: boolean;
     showSso?: boolean;
@@ -23,7 +23,7 @@ interface UserAuthSignupProps {
 
 export const UserAuthSignup = (
     {
-        theme,
+        theme = "default",
         showEmail = true,
         showPlatforms = true,
         showSso = false,
