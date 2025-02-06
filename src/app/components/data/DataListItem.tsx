@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { DataListDetails } from "./DataListDetails";
 
 interface DataListItemProps {
-    label: string;
+    label: string | ReactNode;
     children?: ReactNode;
     addClass?: string;
     style?: CSSProperties;
@@ -14,7 +14,9 @@ export const DataListItem = ({ label = "Label", children, addClass, style, ...pr
     addClass && classTab.push(addClass);
 
     return <div className={classTab.join(" ")} style={style} {...props}>
-      <dt>{label}</dt>
+      <dt>
+        <span>{label}</span>
+      </dt>
       <DataListDetails>
         { children ? children : <dd>No data</dd> }
       </DataListDetails>
