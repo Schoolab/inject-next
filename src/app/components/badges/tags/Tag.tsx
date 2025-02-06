@@ -1,4 +1,4 @@
-import React, { CSSProperties } from "react";
+import React, { CSSProperties, ReactNode } from "react";
 import { Icon } from "../../Icon";
 
 interface TagProps {
@@ -13,6 +13,7 @@ interface TagProps {
 
     addClass?: string;
     style?: CSSProperties;
+    children?: ReactNode;
 }
 
 export const Tag = (
@@ -24,6 +25,7 @@ export const Tag = (
         link,
         addClass,
         style,
+        children,
         ...props 
     }: TagProps
 ) => {
@@ -45,6 +47,7 @@ export const Tag = (
         <span className={classTab.join(" ")} style={style} {...props}>
             {iconName && <Icon name={iconName} />}
             {label && <span>{label}</span>}
+            {children}
         </span>
     );
 };

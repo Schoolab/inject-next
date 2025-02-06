@@ -1,4 +1,7 @@
 import React from "react";
+import { Aside } from "@/app/components/asides/Aside";
+import { AsideHeader } from "@/app/components/asides/AsideHeader";
+import { AsideBody } from "@/app/components/asides/AsideBody";
 
 interface PageAsideNotesProps {}
 
@@ -10,51 +13,64 @@ export const PageAsideNotes = ({}: PageAsideNotesProps) => {
                     <div id="appMainContainer" className="container-fluid mb-lg-0 py-7"></div>
                 </main>
 
-                <aside className="application-aside is-large">
+                <Aside size="large">
                     <div className="aside-content-container">
-                        <div className="aside-header">
-                            <h3 className="aside-title line-clamp-1">
-                                <span className="text-truncate">Title</span>
-                            </h3>
-                            <nav className="aside-nav nav nav-tabs">
-                                <a href="#" className=" nav-link nav-item" id="about-tab" data-toggle="tab" data-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false">
-                                    <span>About</span>
-                                </a>
-                                <a href="#" className=" nav-link nav-item active" id="notes-tab" data-toggle="tab" data-target="#notes" type="button" role="tab" aria-controls="notes" aria-selected="true">
-                                    <span>Notes</span>
-                                    <span className="badge badge-notification is-highlight">2</span>
-                                </a>
-                                <a href="#" className=" nav-link nav-item" id="data-tab" data-toggle="tab" data-target="#data" type="button" role="tab" aria-controls="data" aria-selected="false">
-                                    <span className="icon icon-visibility-off ml-n4px" data-toggle="tooltip" data-placement="top" data-original-title="Accessible only to admins" data-boundary="window" />
-                                    <span>Data</span>
-                                </a>
-                            </nav>
-                            <div className="aside-pagination d-flex align-items-center ml-auto gap-xs">
-                                <small className="pagination-label text-muted">1&nbsp;of&nbsp;6</small>
-                                <a className="btn btn-sm btn-default" data-toggle="tooltip" data-original-title="Previous" href="#">
-                                    <span className="icon icon-chevron-left" />
-                                </a>
-                                <a className="btn btn-sm btn-default" data-toggle="tooltip" data-original-title="Next" href="#">
-                                    <span className="icon icon-chevron-right" />
-                                </a>
-                            </div>
-                            <div className="aside-actions">
-                                <a className="btn btn-transparent border-0 p-2xs text-muted" data-toggle="tooltip" data-original-title="Open in new tab" href="#">
-                                    <span className="icon icon-new-tab is-24px" />
-                                </a>
-                                <button className="btn btn-transparent border-0 p-2xs text-muted close-aside" type="button" data-dismiss="aside" aria-label="Close">
-                                    <span className="icon icon-close is-24px" aria-hidden="true" />
-                                </button>
-                            </div>
-                        </div>
-                        <div className="tab-content h-100" id="projectTabsContent">
+                        <AsideHeader
+                            title="Title"
+                            tabs={[
+                                { 
+                                    label: "About",
+                                    href: "#",
+                                    isActive: false,
+                                    id: "about-tab",
+                                    dataToggle: "tab",
+                                    dataTarget: "#about",
+                                    role: "tab",
+                                    ariaControls: "about",
+                                    ariaSelected: true
+                                },
+                                {
+                                    label: "Notes",
+                                    href: "#",
+                                    isActive: true,
+                                    badge: "2",
+                                    id: "notes-tab",
+                                    dataToggle: "tab",
+                                    dataTarget: "#notes",
+                                    role: "tab",
+                                    ariaControls: "notes",
+                                    ariaSelected: false
+                                },
+                                {
+                                    label: "Data",
+                                    href: "#",
+                                    isActive: false,
+                                    id: "data-tab",
+                                    dataToggle: "tab",
+                                    dataTarget: "#data",
+                                    role: "tab",
+                                    ariaControls: "data",
+                                    ariaSelected: false
+                                },
+                            ]}
+                            pagination={{
+                                currentPage: 1,
+                                totalPages: 6,
+                                prevLink: "#",
+                                nextLink: "#",
+                                onPageChange: () => {}
+                            }}
+                            showNewTab={true}
+                            showClose={true}
+                        />
+                        <div className="tab-content h-100 overflow-auto" id="notesTabsContent">
                             <div id="about" role="tabpanel" aria-labelledby="about-tab" className="tab-pane h-100 fade">
-                                <div className="aside-body d-flex flex-column gap-md">
+                                <AsideBody addClass="d-flex flex-column gap-md">
                                     <p>Content here...</p>
-                                </div>
+                                </AsideBody>
                             </div>
                             <div id="notes" role="tabpanel" aria-labelledby="notes-tab" className="tab-pane h-100 fade active show">
-                                <div className="aside-body p-0">
+                                <AsideBody addClass="p-0">
                                     <div className="overflow-hidden h-100 tab-pane fade show active" id="chat" role="tabpanel">
                                         <div className="messages-module-container standaloneMainThreadContainer">
                                             <div className="messages-module-content">
@@ -154,16 +170,16 @@ export const PageAsideNotes = ({}: PageAsideNotesProps) => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </AsideBody>
                             </div>
                             <div id="data" role="tabpanel" aria-labelledby="data-tab" className="tab-pane h-100 fade">
-                                <div className="aside-body d-flex flex-column gap-md">
+                                <AsideBody addClass="d-flex flex-column gap-md">
                                     <p>Content here...</p>
-                                </div>
+                                </AsideBody>
                             </div>
                         </div>
                     </div>
-                </aside>
+                </Aside>
             </div>
         </div>
     );

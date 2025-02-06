@@ -66,7 +66,7 @@ export const ItemResource = ({ img, cover, resource, action, options = true, ico
                             </li>
                             {resource.details && (
                                 <li>
-                                    <span>420 KB</span>
+                                    <span>{resource.details}</span>
                                 </li>
                             )}
                         </ul>

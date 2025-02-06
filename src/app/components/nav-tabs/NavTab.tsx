@@ -15,6 +15,12 @@ type ItemType = {
     dropdownItems?: ItemType[];
     icon?: string;
     tooltip?: string;
+    id?: string;
+    dataToggle?: string;
+    dataTarget?: string;
+    role?: string;
+    ariaControls?: string;
+    ariaSelected?: boolean;
 }
 
 export interface NavTabProps {
@@ -83,7 +89,13 @@ export const NavTab = (
                     tooltip={item.tooltip}
                     key={index}
                     dropdownItems={item.dropdownItems}
-                 />
+                    id={item.id}
+                    dataToggle={item.dataToggle}
+                    dataTarget={item.dataTarget}
+                    role={item.role}
+                    ariaControls={item.ariaControls}
+                    ariaSelected={item.ariaSelected}
+                />
             );
         } else {
             return (
@@ -94,7 +106,14 @@ export const NavTab = (
                     badge={item.badge}
                     isActive={item.isActive}
                     tooltip={item.tooltip}
-                    key={index} />
+                    key={index}
+                    id={item.id}
+                    dataToggle={item.dataToggle}
+                    dataTarget={item.dataTarget}
+                    role={item.role}
+                    ariaControls={item.ariaControls}
+                    ariaSelected={item.ariaSelected}
+                />
             );
         }
     });

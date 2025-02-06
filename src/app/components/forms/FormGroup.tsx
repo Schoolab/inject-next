@@ -6,7 +6,7 @@ export interface FormGroupProps {
     label?: string; 
     srOnly?: boolean;
     required?: boolean;
-    hint?: string;
+    hint?: ReactNode;
     id?: string;
     addClass?: string;
 }

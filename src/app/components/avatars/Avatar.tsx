@@ -17,7 +17,7 @@ interface AvatarProps {
     /**
      * Sizes
      */
-    size?: "default" | "sm" | "md" | "lg" | "xl" | "2xl";
+    size?: "default" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
     /**
      * IconName
      */

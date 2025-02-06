@@ -20,8 +20,13 @@ export interface NavTabDropdownProps {
     dropdownItems: ItemType[];
     icon?: string;
     tooltip?: string;
-
     addClass?: string;
+    id?: string;
+    dataToggle?: string;
+    dataTarget?: string;
+    role?: string;
+    ariaControls?: string;
+    ariaSelected?: boolean;
 }
 
 export const NavTabDropdown = (
@@ -34,6 +39,12 @@ export const NavTabDropdown = (
         badge,
         tooltip,
         addClass,
+        id,
+        dataToggle = "dropdown",
+        dataTarget,
+        role,
+        ariaControls,
+        ariaSelected,
         ...props
     }: NavTabDropdownProps
 ) => {
@@ -45,7 +56,20 @@ export const NavTabDropdown = (
 
     return (
         <Dropdown addClass={classDropdown.join(" ")} {...props}>
-            <a href="#" className={classLink.join(" ")} data-toggle="dropdown" data-boundary="window" aria-expanded="false" aria-haspopup="true">
+            <a 
+                href={href}
+                onClick={(e) => e.preventDefault()}
+                className={classLink.join(" ")} 
+                id={id}
+                data-toggle={dataToggle}
+                data-target={dataTarget}
+                role={role}
+                aria-controls={ariaControls}
+                aria-selected={ariaSelected}
+                data-boundary="window" 
+                aria-expanded="false" 
+                aria-haspopup="true"
+            >
                 {icon && tooltip && <Icon name={icon} size="xs" data-toggle="tooltip" data-placement="top" data-original-title={tooltip} data-boundary="window" />}
                 { icon && !tooltip && <Icon name={icon} size="xs" />}
                 <span>{label}</span>

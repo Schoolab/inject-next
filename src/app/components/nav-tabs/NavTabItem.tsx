@@ -9,8 +9,13 @@ export interface NavTabItemProps {
     isActive?: boolean;
     icon?: string;
     tooltip?: string;
-
     addClass?: string;
+    id?: string;
+    dataToggle?: string;
+    dataTarget?: string;
+    role?: string;
+    ariaControls?: string;
+    ariaSelected?: boolean;
 }
 
 export const NavTabItem = (
@@ -22,6 +27,12 @@ export const NavTabItem = (
         badge,
         tooltip,
         addClass,
+        id,
+        dataToggle,
+        dataTarget,
+        role,
+        ariaControls,
+        ariaSelected,
         ...props
     }: NavTabItemProps
 ) => {
@@ -30,7 +41,18 @@ export const NavTabItem = (
     addClass && classTab.push(addClass);
 
     return (
-        <a href={href} className={classTab.join(" ")} {...props}>
+        <a 
+            href={href} 
+            onClick={(e) => e.preventDefault()}
+            className={classTab.join(" ")} 
+            id={id}
+            data-toggle={dataToggle}
+            data-target={dataTarget}
+            role={role}
+            aria-controls={ariaControls}
+            aria-selected={ariaSelected}
+            {...props}
+        >
             {icon && tooltip && <Icon name={icon} size="xs" data-toggle="tooltip" data-placement="top" data-original-title={tooltip} data-boundary="window" />}
             { icon && !tooltip && <Icon name={icon} size="xs" />}
             <span>{label}</span>
