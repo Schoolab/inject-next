@@ -7,7 +7,27 @@ import { Button } from "@/app/components/Button";
 export const ManageApplicationForms = () => {
     return (
         <Layout  sideBar="Manage">
-            <AppContent sections="separated" showSubnav={false}>
+            <AppContent
+                sections="separated"
+                breadcrumb={[
+                    {
+                        label: "Impact Innovators",
+                        href: "#",
+                    },
+                    {
+                        label: "Manage",
+                        href: "#",
+                    },
+                    {
+                        label: "Participants",
+                        href: "#",
+                    },
+                    {
+                        label: "Application forms",
+                    },
+                ]}
+                title="Application forms"
+            >
                 <div className="row">
                     <div className="col-12">
                         <div className="application-section">
@@ -347,7 +367,7 @@ export const ManageApplicationForms = () => {
                                         <span>Add step</span>
                                     </button>
                                 </div>
-                                <div className="d-flex justify-content-end mt-16px">
+                                {/* <div className="d-flex justify-content-end mt-16px">
                                     <button type="submit" className="btn btn-default btn-lg mr-3">
                                         <span className="icon icon-visibility mr-2" />
                                         Preview questions
@@ -355,7 +375,7 @@ export const ManageApplicationForms = () => {
                                     <button type="submit" className="btn btn-primary btn-lg">
                                         Save
                                     </button>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="application-section">

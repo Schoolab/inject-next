@@ -10,7 +10,24 @@ import { Section } from "@/app/components/Section";
 export const ManageDashboard = () => {
     return (
         <Layout sideBar="Manage">
-            <AppContent showSubnav={false} sections="transparent">
+            <AppContent
+                showSubnav={false}
+                sections="transparent"
+                breadcrumb={[
+                    {
+                        label: "Impact Innovators",
+                        href: "#",
+                    },
+                    {
+                        label: "Manage",
+                        href: "#",
+                    },
+                    {
+                        label: "Dashboard",
+                    },
+                ]}
+                title="Dashboard"
+            >
                 <div className="cq">
                     <div className="cq-12">
 

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import { Button } from "../Button";
 import { Icon } from "../Icon";
+import { Pagination, PaginationProps } from "../Pagination";
 
 type ButtonType = {
     label?: string;
@@ -19,41 +20,24 @@ type ButtonType = {
 };
 
 export interface TitleProps {
-    /**
-     * Title
-     */
     title?: string;
-
-    /**
-     * Icon
-     */
     iconName?: string;
-
-    /**
-     * Emoji
-     */
     emoji?: string;
-
-    /**
-     * Custom class
-     */
-    addClass?: string;
-
     backLink?: string;
-    paginationLabel?: string;
-    prevLink?: string;
-    nextLink?: string;
+    pagination?: PaginationProps;
     buttons?: ButtonType[];
+    addClass?: string;
+    style?: CSSProperties;
 }
 
-export const Title = ({ title = "Page title", iconName, emoji, backLink, paginationLabel, prevLink, nextLink, buttons, addClass }: TitleProps) => {
+    export const Title = ({ title = "Page title", iconName, emoji, backLink, pagination, buttons, addClass, style, ...props }: TitleProps) => {
     let classTab = ["application-title"];
     addClass && classTab.push(addClass);
 
     let listButtons = buttons?.map((button, index) => <Button key={index} label={button.label} link={button.link} disabled={button.disabled} isActive={button.isActive} showActive={button.showActive} hasDropdown={button.hasDropdown} iconStartName={button.iconStartName} iconEndName={button.iconEndName} addClass={button.addClass} type={button.type} size={button.size} extended={button.extended} outlined={button.outlined} />);
 
     return (
-        <div className={classTab.join(" ")}>
+        <div className={classTab.join(" ")} style={style} {...props}>
             {/* <div className="d-lg-none flex-grow-1">
                 <div className="d-flex justify-content-between mb-3">
                     { backLink && <Button link={backLink} type="default" iconStartName="arrow-left" size="default" data-toggle="tooltip" data-original-title="Back" /> }
@@ -137,13 +121,7 @@ export const Title = ({ title = "Page title", iconName, emoji, backLink, paginat
                             </div>
                         </div>
                     </div>
-                    {(prevLink || nextLink) && (
-                        <div className="d-flex align-items-center gap-xs">
-                            {paginationLabel && <small className="text-muted">{paginationLabel}</small>}
-                            <Button type="default" iconStartName="chevron-left" disabled={!prevLink} size="default" data-toggle="tooltip" data-original-title="Previous" />
-                            <Button type="default" iconStartName="chevron-right" disabled={!nextLink} size="default" data-toggle="tooltip" data-original-title="Next" />
-                        </div>
-                    )}
+                    {pagination && <Pagination {...pagination} />}
                 </div>
             </div>
             <div className="d-none d-lg-block flex-grow-1">
@@ -158,13 +136,7 @@ export const Title = ({ title = "Page title", iconName, emoji, backLink, paginat
                             </div>
                         </div>
                     </div>
-                    {(prevLink || nextLink) && (
-                        <div className="d-flex align-items-center gap-xs">
-                            {paginationLabel && <small className="text-muted">{paginationLabel}</small>}
-                            <Button type="default" iconStartName="chevron-left" disabled={!prevLink} size="default" data-toggle="tooltip" data-original-title="Previous" />
-                            <Button type="default" iconStartName="chevron-right" disabled={!nextLink} size="default" data-toggle="tooltip" data-original-title="Next" />
-                        </div>
-                    )}
+                    {pagination && <Pagination {...pagination} />}
                 </div>
             </div>
             <div className="title-buttons">

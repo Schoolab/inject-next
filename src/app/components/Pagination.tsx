@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Icon } from "./Icon";
 
 export type PaginationProps = {
+    className?: string;
     currentPage: number;
     totalPages: number;
     prevLink?: string;
@@ -19,8 +20,11 @@ export const Pagination: React.FC<PaginationProps> = (props) => {
         }
     };
 
+    let classTab = ["d-flex align-items-center ml-auto gap-xs"];
+    props.className && classTab.push(props.className);
+
     return (
-        <div className="aside-pagination d-flex align-items-center ml-auto gap-xs">
+        <div className={classTab.join(" ")}>
             <small className="pagination-label text-muted">
                 {currentPage}&nbsp;of&nbsp;{props.totalPages}
             </small>

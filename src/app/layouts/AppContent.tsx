@@ -5,7 +5,7 @@ import { Title } from "../components/page-header/Title";
 import { SubNav } from "../components/page-header/SubNav";
 import { Stepper } from "../components/page-header/Stepper";
 import { Footer } from "../components/Footer";
-
+import { PaginationProps } from "../components/Pagination";
 type BreadcrumbType = {
     label: string;
     href?: string;
@@ -55,8 +55,7 @@ interface AppContentProps {
     showTitle?: boolean;
     title?: string;
 
-    prevLink?: string;
-    nextLink?: string;
+    pagination?: PaginationProps;
 
     buttons?: ButtonType[];
 
@@ -85,8 +84,7 @@ export const AppContent = (
         showTitle = true,
         title = "Page title",
 
-        prevLink,
-        nextLink,
+        pagination,
 
         buttons,
 
@@ -131,8 +129,7 @@ export const AppContent = (
                         <Title 
                             backLink={backLink} 
                             title={title}
-                            prevLink={prevLink}
-                            nextLink={nextLink}
+                            pagination={pagination}
                             buttons={buttons} 
                             addClass={titleClass.join(" ")}
                         />

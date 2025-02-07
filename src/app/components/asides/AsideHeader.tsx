@@ -53,7 +53,7 @@ export const AsideHeader = ({
 
             { tabs && <NavTab addClass="aside-nav" items={tabs} /> }
 
-            { pagination && <Pagination {...pagination} /> }
+            { pagination && <Pagination className="aside-pagination" {...pagination} /> }
 
             {(showNewTab || showClose) && (
                 <div className="aside-actions">

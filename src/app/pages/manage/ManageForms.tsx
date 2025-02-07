@@ -20,27 +20,36 @@ export const ManageForms = () => {
             <AppContent
                 showStepper={true}
                 sections="separated"
-                showSubnav={true}
-                subnav={[
+                breadcrumb={[
                     {
-                        label: "Label",
-                        href: "#",
-                        isActive: true,
-                    },
-                    {
-                        label: "Label",
+                        label: "Impact Innovators",
                         href: "#",
                     },
                     {
-                        label: "Dropdown",
+                        label: "Manage",
                         href: "#",
-                        hasDropdown: true,
-                        dropdownItems: [
-                            {
-                                label: "Label",
-                                href: "#",
-                            }
-                        ]
+                    },
+                    {
+                        label: "Program",
+                        href: "#",
+                    },
+                    {
+                        label: "Configuration",
+                    },
+                ]}
+                title="Configuration"
+                buttons={[
+                    {
+                        label: "Preview",
+                        type: "default",
+                        size: "sm",
+                        iconStartName: "preview",
+                        iconEndName: "new-tab",
+                    },
+                    {
+                        label: "Save changes",
+                        type: "primary",
+                        size: "sm",
                     },
                 ]}
             >

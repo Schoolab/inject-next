@@ -7,7 +7,27 @@ import { ProgressBar } from "@/app/components/ProgressBar";
 export const ManageSetup = () => {
     return (
         <Layout sideBar="Manage">
-            <AppContent sections="separated" showSubnav={false}>
+            <AppContent
+                sections="separated"
+                breadcrumb={[
+                    {
+                        label: "Impact Innovators",
+                        href: "#",
+                    },
+                    {
+                        label: "Manage",
+                        href: "#",
+                    },
+                    {
+                        label: "Program",
+                        href: "#",
+                    },
+                    {
+                        label: "Getting started",
+                    },
+                ]}
+                title="Getting started"
+            >
                 <div className="row">
                     <div className="col-12">
                         <div className="application-section">
