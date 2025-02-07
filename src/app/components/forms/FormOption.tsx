@@ -57,13 +57,14 @@ export const FormOption = (
                 onChange={() => onChange && onChange(!checked)}
             />
 
-            <label className="custom-control-label text-nowrap d-flex flex-column" htmlFor={'option-' + id} aria-describedby={'caption-' + id}>
-                { icon && <Icon name={icon} size="sm" addClass="mb-xs" /> }
+            <label className="custom-control-label text-nowrap d-flex flex-column gap-xs" htmlFor={'option-' + id} aria-describedby={'caption-' + id}>
+                { icon && <Icon name={icon} size="sm" /> }
                 <span>{label}</span>
-                { caption && <small id={'caption-' + id} className="form-text text-muted">
+            </label>
+
+            { caption && <small id={'caption-' + id} className="form-text text-muted">
                     {caption}
                 </small> }
-            </label>
 
             
         </div>
