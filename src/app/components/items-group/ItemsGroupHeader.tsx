@@ -1,5 +1,11 @@
 import { Notif } from "../badges/notifs/Notif";
 import { Tag } from "../badges/tags/Tag";
+import { Button } from "../Button";
+import { Dropdown } from "../dropdown/Dropdown";
+import { DropdownDivider } from "../dropdown/DropdownDivider";
+import { DropdownHeader } from "../dropdown/DropdownHeader";
+import { DropdownItem } from "../dropdown/DropdownItem";
+import { DropdownMenu } from "../dropdown/DropdownMenu";
 
 export interface ItemsGroupHeaderProps {
     label?: string; 
@@ -42,34 +48,19 @@ export const ItemsGroupHeader = ({
             
             <Notif label={number} status="highlight" />
 
-            <div className="dropdown-container">
-                <a className="btn btn-xs btn-transparent btn-icon text-muted" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                    <span className="icon icon-options" />
-                </a>
-                <div className="dropdown-menu dropdown-menu-right">
-                    <h6 className="dropdown-header">Position</h6>
-                    <a className="dropdown-item">
-                        <span className="dropdown-item--label">Send to top</span>
-                    </a>
-                    <a className="dropdown-item">
-                        <span className="dropdown-item--label">Move up</span>
-                    </a>
-                    <a className="dropdown-item">
-                        <span className="dropdown-item--label">Move down</span>
-                    </a>
-                    <a className="dropdown-item">
-                        <span className="dropdown-item--label">Send to bottom</span>
-                    </a>
-                    <div className="dropdown-divider" />
-                    <h6 className="dropdown-header">Actions</h6>
-                    <a className="dropdown-item" data-toggle="collapse" data-target="#question1">
-                        <span className="dropdown-item--label">Edit</span>
-                    </a>
-                    <a className="dropdown-item is-danger">
-                        <span className="dropdown-item--label">Delete</span>
-                    </a>
-                </div>
-            </div>
+            <Dropdown addClass="dropdown-container">
+                <Button type="muted" addClass="btn-icon" iconStartName="options" dataToggle="dropdown" aria-expanded="false" data-boundary="window" />
+                <DropdownMenu direction="right">
+                    <DropdownHeader label="Position" />
+                    <DropdownItem label="Send to top" iconName="arrow-top" />
+                    <DropdownItem label="Move up" iconName="arrow-up" />
+                    <DropdownItem label="Move down" iconName="arrow-down" />
+                    <DropdownItem label="Send to bottom" iconName="arrow-bottom" />
+                    <DropdownDivider />
+                    <DropdownItem label="Edit" iconName="pencil" />
+                    <DropdownItem label="Delete" type="danger" iconName="delete" />
+                </DropdownMenu>
+            </Dropdown>
 
         </div>
     );

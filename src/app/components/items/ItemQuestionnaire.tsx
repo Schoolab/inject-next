@@ -95,7 +95,7 @@ export const ItemQuestionnaire = ({
                         {caption && <span className="small text-muted">{caption}</span>}
                     </div>
                 </div>
-                <div className="d-flex align-items-center gap-xs dropdown z-3">
+                <div className="d-flex align-items-center gap-xs dropdown z-2">
                     {isPrivate && <Icon name="visibility-off" size="2sm" addClass="text-muted" dataToggle="tooltip" dataPlacement="top" dataOriginalTitle="Private response" dataBoundary="window" />}
                     {locked && <Icon name="lock" size="2sm" addClass="text-muted" dataToggle="tooltip" dataPlacement="top" dataOriginalTitle="Locked. Can't be moved or deleted." dataBoundary="window" />}
                     {options && <Dropdown addClass="dropdown-container">

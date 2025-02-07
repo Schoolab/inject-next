@@ -8,6 +8,7 @@ import { ItemQuestionnaire } from "@/app/components/items/ItemQuestionnaire";
 import { ItemCondition } from "@/app/components/items/ItemCondition";
 import { Section } from "@/app/components/Section";
 import { EmptyState } from "@/app/components/EmptyState";
+import { ItemForm } from "@/app/components/items/parts/ItemForm";
 
 export const ManageApplicationForms = () => {
     return (
@@ -40,17 +41,29 @@ export const ManageApplicationForms = () => {
                                 <ItemsGroup>
                                     <ItemsGroupHeader label="Basic info" />
                                     <div className="d-flex flex-column gap-2xs">
-                                        <ItemQuestionnaire type="text" label="Your name" required />
-                                        <ItemQuestionnaire type="textarea" label="Describe your project" required />
-                                        <ItemQuestionnaire type="select" label="Select your program" required />
+                                        <ItemQuestionnaire type="text" label="Your name" required locked={true} />
+                                        <ItemQuestionnaire type="textarea" label="Describe yourself" required locked={true} />
+                                        <ItemQuestionnaire type="select" label="Select your program" required locked={true} />
                                         <ItemQuestionnaire type="radio" label="Are you a student?" required />
+                                    </div>
+                                </ItemsGroup>
+                                <ItemsGroup>
+                                    <ItemsGroupHeader label="School info" />
+                                    <div className="d-flex flex-column gap-2xs">
                                         <ItemCondition condition="Participant's type is" value="Student">
-                                            <ItemQuestionnaire type="checklist" label="Choose your school" caption="238 options: [list options here]" required />
+                                            <ItemQuestionnaire type="checklist" label="Choose your school" caption="238 options: [list options here]" required collapsable={true} id="school">
+                                                <ItemForm addClass="bg-highlight rounded-sm p-lg mb-2xs" />
+                                            </ItemQuestionnaire>
                                         </ItemCondition>
-                                        <ItemQuestionnaire type="attachment" label="Upload your project proposal" required />
+                                        <ItemQuestionnaire type="attachment" label="Upload your resume" required  />
                                         <ItemQuestionnaire type="link" label="Your LinkedIn profile" required />
-                                        <ItemQuestionnaire type="checkbox" label="I agree to the terms and conditions" required />
-                                        <ItemQuestionnaire type="rating" label="Rate the program registration process" required />
+                                    </div>
+                                </ItemsGroup>
+                                <ItemsGroup>
+                                    <ItemsGroupHeader label="Conditions" />
+                                    <div className="d-flex flex-column gap-2xs">
+                                        <ItemQuestionnaire type="checkbox" label="I agree to the terms and conditions" required locked={true} />
+                                        <ItemQuestionnaire type="rating" label="Rate the program registration process" required isPrivate={true} />
                                     </div>
                                     <Button label="Add question" iconStartName="plus-circle" size="sm" type="muted" addClass="align-self-start" />
                                 </ItemsGroup>
