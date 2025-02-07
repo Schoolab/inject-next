@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { FormGroup } from "@/app/components/forms/FormGroup";
+import ConditionalFormGroup from "../../app/components/ConditionalFormGroup";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: "Components/Form/Form Group",
-  component: FormGroup,
+  title: "Components/ConditionalFormGroup",
+  component: ConditionalFormGroup,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: "padded",
@@ -16,40 +16,21 @@ const meta = {
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
-    required: { control: "boolean" },
-    hint: { control: 'text' }
+
   },
   args:{
-    required: false
+    type: "checkbox",
+    id: "id",
+    label: "Label",
+    card: true,
+    checked: false
   },
-} satisfies Meta<typeof FormGroup>;
+} satisfies Meta<typeof ConditionalFormGroup>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Default: Story = {
-  args: {
-    id: "name",
-    label: "Name",
-    required: false,
-  },
-};
-
-export const Hint: Story = {
-  args: {
-    id: "name",
-    label: "Name",
-    hint: "This is visible to participants on courses list.",
-    required: false,
-  },
-};
-
-export const Required: Story = {
-  args: {
-    id: "name",
-    label: "Name",
-    hint: "This is visible to participants on courses list.",
-    required: true,
-  },
-};
+  args: {}
+}

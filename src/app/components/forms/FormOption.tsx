@@ -6,7 +6,7 @@ interface FormOptionProps {
     id?: string;
     name?: string;
     label: string;
-    caption?: string;
+    caption?: string | React.ReactNode;
     icon?: string;
     value?: string;
     checked?: boolean;
@@ -15,6 +15,7 @@ interface FormOptionProps {
     card?: boolean;
 
     addClass?: string;
+    onChange?: (checked: boolean) => void;
 }
 
 export const FormOption = (
@@ -31,6 +32,7 @@ export const FormOption = (
         disabled,
         card,
         addClass,
+        onChange,
         ...props
     }: FormOptionProps
 ) => {
@@ -52,16 +54,18 @@ export const FormOption = (
                 defaultChecked={defaultChecked}
                 disabled={disabled}
                 checked={checked}
+                onChange={() => onChange && onChange(!checked)}
             />
 
-            <label className="custom-control-label text-nowrap d-flex flex-column gap-xs" htmlFor={'option-' + id} aria-describedby={'caption-' + id}>
-                { icon && <Icon name={icon} size="sm" /> }
+            <label className="custom-control-label text-nowrap d-flex flex-column" htmlFor={'option-' + id} aria-describedby={'caption-' + id}>
+                { icon && <Icon name={icon} size="sm" addClass="mb-xs" /> }
                 <span>{label}</span>
+                { caption && <small id={'caption-' + id} className="form-text text-muted">
+                    {caption}
+                </small> }
             </label>
 
-            { caption && <small id={'caption-' + id} className="form-text text-muted">
-                {caption}
-            </small> }
+            
         </div>
     );
 };
