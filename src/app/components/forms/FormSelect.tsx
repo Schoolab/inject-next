@@ -7,6 +7,7 @@ type OptionType = {
     value?: string;
     disabled?: boolean;
     selected?: boolean;
+    options?: OptionType[];
 }
 
 interface FormSelectProps {
@@ -32,11 +33,31 @@ export const FormSelect = (
         select();
     }, []);
 
-    let listOptions = options?.map((option, index) => (
-        <option key={index} value={option.value} disabled={option.disabled} selected={option.selected}>
-            {option.label}
-        </option>
-    ));
+    let listOptions = options?.map((option, index) => 
+        option.options ? (
+            <optgroup label={option.label} key={index}>
+                {option.options.map((subOption, subIndex) => (
+                    <option 
+                        key={subIndex} 
+                        value={subOption.value} 
+                        disabled={subOption.disabled} 
+                        selected={subOption.selected}
+                    >
+                        {subOption.label}
+                    </option>
+                ))}
+            </optgroup>
+        ) : (
+            <option 
+                key={index} 
+                value={option.value} 
+                disabled={option.disabled} 
+                selected={option.selected}
+            >
+                {option.label}
+            </option>
+        )
+    );
 
     return (
         <select

@@ -58,12 +58,37 @@ export interface ButtonProps {
 
     link?: string;
     target?: string;
+    dataToggle?: string;
+    dataPlacement?: string;
+    dataOriginalTitle?: string;
+    dataBoundary?: string;
 }
 
 /**
  * Buttons drive actions in forms, dialogs, etc. and should be used to guide the user to their next best action. Button component has support for multiple sizes, type and can have a start or an end icon.
  */
-export const Button = ({ size = "default", type, disabled, isActive = false, isLoading = false, showActive = true, hasDropdown = false, label, link = "#", target, addClass, extended, outlined, iconStartName, iconEndName, iconStartImage, ...props }: ButtonProps) => {
+export const Button = ({
+    size = "default",
+    type,
+    disabled,
+    isActive = false,
+    isLoading = false,
+    showActive = true,
+    hasDropdown = false,
+    label, link = "#",
+    target,
+    addClass,
+    extended,
+    outlined,
+    iconStartName,
+    iconEndName,
+    iconStartImage,
+    dataToggle,
+    dataPlacement,
+    dataOriginalTitle,
+    dataBoundary,
+    ...props
+}: ButtonProps) => {
     let classTab = ["btn"];
     type && outlined && classTab.push(`btn-outline-${type}`);
     type && !outlined && classTab.push(`btn-${type}`);
@@ -76,7 +101,17 @@ export const Button = ({ size = "default", type, disabled, isActive = false, isL
     addClass && classTab.push(addClass);
 
     return (
-        <a href={link} className={classTab.join(" ")} role="button" target={target} {...props}>
+        <a
+            href={link}
+            className={classTab.join(" ")}
+            role="button"
+            target={target}
+            data-toggle={dataToggle}
+            data-placement={dataPlacement}
+            data-original-title={dataOriginalTitle}
+            data-boundary={dataBoundary}
+            {...props}
+        >
             {isLoading ? (
                 <>
                     <Icon name="loading" addClass="icon-spin" />

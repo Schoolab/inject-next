@@ -4,6 +4,7 @@ import { Dropdown } from "../dropdown/Dropdown";
 import { DropdownMenu } from "../dropdown/DropdownMenu";
 import { DropdownItem } from "../dropdown/DropdownItem";
 import { Notif } from "../badges/notifs/Notif";
+import { DropdownDivider } from "../dropdown/DropdownDivider";
 
 type AvatarType = {
     image?: string;
@@ -62,14 +63,16 @@ export const ItemList = ({
 
                 {notifs && <Notif label={notifs} status="accent" />}
 
-                <div className="d-flex align-items-center gap-xs dropdown">
-                    <Dropdown>
+                <div className="d-flex align-items-center gap-xs">
+                    <Dropdown addClass="z-3">
                         <a className="btn btn-muted btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                             <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
                         </a>
                         <DropdownMenu direction="right">
                             <DropdownItem label="Mark as read" iconName="check-circle" />
                             <DropdownItem label="Mute" iconName="notifications-off" />
+                            <DropdownDivider />
+                            <DropdownItem label="Report..." iconName="flag" />
                             <DropdownItem type="danger" label="Delete" iconName="delete" />
                         </DropdownMenu>
                     </Dropdown>

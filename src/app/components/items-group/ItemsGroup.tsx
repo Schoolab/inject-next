@@ -1,4 +1,6 @@
 import { CSSProperties } from "react";
+import { Placeholder } from "../Placeholder";
+import { ItemsGroupHeader } from "./ItemsGroupHeader";
 
 export interface ItemsGroupProps {
     children?: React.ReactNode;
@@ -15,7 +17,18 @@ export const ItemsGroup = ({ children, addClass, style, ...props }: ItemsGroupPr
 
     return (
         <div className={classTab.join(" ")} style={style} {...props}>
-            {children && children}
+            {children ? 
+                children
+            :
+                <>
+                    <ItemsGroupHeader label="Items Group" number={3} />
+                    <div className="d-flex flex-column gap-2xs">
+                        <Placeholder style={{ border: "var(--stroke-thin) solid var(--border-default)", borderRadius: "var(--radius-minimal)" }} />
+                        <Placeholder style={{ border: "var(--stroke-thin) solid var(--border-default)", borderRadius: "var(--radius-minimal)" }} />
+                        <Placeholder style={{ border: "var(--stroke-thin) solid var(--border-default)", borderRadius: "var(--radius-minimal)" }} />
+                    </div>
+                </>
+            }
         </div>
     );
 };
