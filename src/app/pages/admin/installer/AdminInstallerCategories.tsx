@@ -7,6 +7,7 @@ import { FormGroup } from "@/app/components/forms/FormGroup";
 import { FormFieldSet } from "@/app/components/forms/FormFieldSet";
 import { FormOption } from "@/app/components/forms/FormOption";
 import { FormSelect } from "@/app/components/forms/FormSelect";
+import { Button } from "@/app/components/Button";
 
 const steps: StepType[] = [
     {
@@ -730,13 +731,9 @@ export const AdminInstallerCategories = () => {
                                     </FormGroup>
                                 </div>
                             </fieldset>
-                            <div className="d-flex justify-content-end">
-                                <button type="submit" className="btn btn-default btn-lg mr-3">
-                                    Previous
-                                </button>
-                                <button type="submit" className="btn btn-primary btn-lg">
-                                    Next Step
-                                </button>
+                            <div className="d-flex gap-xs justify-content-end">
+                                <Button type="default" label="Previous" />
+                                <Button type="primary" label="Next step" />
                             </div>
                         </Section>
                     </div>

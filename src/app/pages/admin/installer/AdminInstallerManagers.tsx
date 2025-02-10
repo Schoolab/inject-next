@@ -3,6 +3,8 @@ import { Layout } from "../../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Stepper, StepType } from "@/app/components/Stepper";
 import { Section } from "@/app/components/Section";
+import { Button } from "@/app/components/Button";
+import { EmptyState } from "@/app/components/EmptyState";
 
 const steps: StepType[] = [
     {
@@ -47,17 +49,18 @@ export const AdminInstallerManagers = () => {
                             <Stepper steps={steps} />
                         </div>
                         <Section title="Managers" subtitle="Choose the people who will be in charge of the program">
-                            <div className="bg-light rounded p-5">
-                                <p>todo</p>
-                            </div>
-                           
-                            <div className="d-flex justify-content-end">
-                                <button type="submit" className="btn btn-default btn-lg mr-3">
-                                    Previous
-                                </button>
-                                <button type="submit" className="btn btn-primary btn-lg">
-                                    Next Step
-                                </button>
+                            <EmptyState
+                                title="No managers found"
+                                text="You can create a new manager or add an existing one"
+                                iconTitle="role-manager"
+                                spacious={true}
+                                labelBtn="Add a manager"
+                                iconBtn="plus-circle"
+                                labelLink="Learn more about program managers"
+                            />
+                            <div className="d-flex gap-xs justify-content-end">
+                                <Button type="default" label="Previous" />
+                                <Button type="primary" label="Next step" />
                             </div>
                         </Section>
                     </div>

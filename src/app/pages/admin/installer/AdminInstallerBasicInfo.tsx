@@ -350,12 +350,10 @@ export const AdminInstallerBasicInfo = () => {
                                     </FormGroup>
                                 </div>
 
-                                <div className="d-flex justify-content-end">
-                                    <button type="submit" className="btn btn-primary btn-lg">
-                                        Next Step
-                                    </button>
+                                <div className="d-flex gap-xs justify-content-end">
+                                    <Button type="primary" label="Next step" />
                                 </div>
-                        </Section>
+                            </Section>
 
                         </form>
                     </div>

@@ -3,6 +3,11 @@ import { Layout } from "../../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Stepper, StepType } from "@/app/components/Stepper";
 import { Section } from "@/app/components/Section";
+import { FormFieldSet } from "@/app/components/forms/FormFieldSet";
+import { FormOption } from "@/app/components/forms/FormOption";
+import { Alert } from "@/app/components/Alert";
+import { Button } from "@/app/components/Button";
+
 const steps: StepType[] = [
     {
       title: "Basic info",
@@ -47,16 +52,113 @@ export const AdminInstallerFeatures = () => {
                             <Stepper steps={steps} />
                         </div>
                         <Section title="Features" subtitle="Choose which features to keep or skip during the program setup. You can stop here and send an invitation or a link to the program manager to complete the needed information.">
-                            <div className="bg-light rounded p-5">
-                                <p>todo</p>
-                            </div>
-                            <div className="d-flex justify-content-end">
-                                <button type="submit" className="btn btn-default btn-lg mr-3">
-                                    Previous
-                                </button>
-                                <button type="submit" className="btn btn-primary btn-lg">
-                                    Proceed
-                                </button>
+
+                            <FormFieldSet name="features" legend="Enable each features this program needs...">
+                                <FormOption
+                                    name="features"
+                                    id="registrations"
+                                    value="registrations"
+                                    type="checkbox"
+                                    card={true}
+                                    label="Registrations"
+                                    caption="This feature is required to add participants to a program"
+                                    defaultChecked={true}
+                                    disabled={true}
+                                />
+                                <FormOption
+                                    name="features"
+                                    id="evaluations"
+                                    value="evaluations"
+                                    type="checkbox"
+                                    card={true}
+                                    label="Evaluations"
+                                    caption="Create public votes and evaluation sessions by juries"
+                                    defaultChecked={true}
+                                />
+                                <FormOption
+                                    name="features"
+                                    id="learning"
+                                    value="learning"
+                                    type="checkbox"
+                                    card={true}
+                                    label="Learning Course, Modules, Capsules and Tasks"
+                                    caption="Create content for participants to learn and validate during the program"
+                                    defaultChecked={true}
+                                />
+                                <FormOption
+                                    name="features"
+                                    id="objectives"
+                                    value="objectives"
+                                    type="checkbox"
+                                    card={true}
+                                    label="Objectives, Milestones and Tasks"
+                                    caption="Create content for projects to validate during the program"
+                                    defaultChecked={true}
+                                />
+                                <FormOption
+                                    name="features"
+                                    id="coaching"
+                                    value="coaching"
+                                    type="checkbox"
+                                    card={true}
+                                    label="Coaching"
+                                    caption="Allow experts to create coaching sessions for participants and projects"
+                                    defaultChecked={true}
+                                />
+                                <FormOption
+                                    name="features"
+                                    id="events"
+                                    value="events"
+                                    type="checkbox"
+                                    card={true}
+                                    label="Events and Signatures"
+                                    caption="Create events for participants to attend and sign their presence"
+                                    defaultChecked={true}
+                                />
+                                <FormOption
+                                    name="features"
+                                    id="mails"
+                                    value="mails"
+                                    type="checkbox"
+                                    card={true}
+                                    label="Mails and templates"
+                                    caption="Schedule and send email campains during the program"
+                                    defaultChecked={true}
+                                />
+                                <FormOption
+                                    name="features"
+                                    id="newsfeed"
+                                    value="newsfeed"
+                                    type="checkbox"
+                                    card={true}
+                                    label="Newsfeed and Comments"
+                                    caption="Enable posts and comments on the program and projects newsfeeds"
+                                />
+                                <FormOption
+                                    name="features"
+                                    id="chat"
+                                    value="chat"
+                                    type="checkbox"
+                                    card={true}
+                                    label="Private messages in chat and Broadcasts"
+                                    caption="Allow participants to socialize and chat directly from the program"
+                                />
+                                <FormOption
+                                    name="features"
+                                    id="data"
+                                    value="data"
+                                    type="checkbox"
+                                    card={true}
+                                    label="Data"
+                                    caption="Import and export data from a program to another"
+                                />
+                            </FormFieldSet>
+
+                            <Alert type="info" icon="information" text={`You can enable each features later from the administrator interface`} />
+
+                            <div className="d-flex gap-xs justify-content-end">
+                                <Button type="default" label="Previous" />
+                                <Button type="primary" label="Proceed to dashboard" />
                             </div>
                         </Section>
                     </div>
