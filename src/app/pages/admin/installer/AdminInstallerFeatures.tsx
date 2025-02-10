@@ -1,6 +1,37 @@
 import React from "react";
 import { Layout } from "../../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
+import { Stepper, StepType } from "@/app/components/Stepper";
+import { Section } from "@/app/components/Section";
+const steps: StepType[] = [
+    {
+      title: "Basic info",
+      description: "Completed",
+      status: "completed",
+      link: "/?path=/story/pages-admin-installer--basic-info",
+      current: false,
+    },
+    {
+      title: "Categories",
+      description: "In progress",
+      status: "completed",
+      link: "/?path=/story/pages-admin-installer--categories",
+      current: false,
+    },
+    {
+      title: "Managers",
+      description: "Not completed",
+      status: "completed",
+      link: "/?path=/story/pages-admin-installer--managers",
+      current: false,
+    },
+    {
+      title: "Features",
+      description: "Not completed",
+      status: "in-progress",
+      current: true,
+    }
+  ];
 
 export const AdminInstallerFeatures = () => {
     return (
@@ -13,62 +44,9 @@ export const AdminInstallerFeatures = () => {
                                 <h2>Create a new program</h2>
                                 <p className="text-muted">Fill the information below and watch how it will appear to people joining it.</p>
                             </div>
-                            <div className="row">
-                                <div className="col-6 col-sm-3 mb-5 mb-sm-0">
-                                    <div className="progress mb-3" style={{ height: 5 }}>
-                                        <div className="progress-bar" role="progressbar" style={{ width: "100%" }} aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} />
-                                    </div>
-                                    <div className="d-flex flex-column">
-                                        <span className="text-primary">
-                                            <span className="icon icon-check mr-3" />
-                                            Basic info{" "}
-                                        </span>
-                                        <span className="small">Finished</span>
-                                    </div>
-                                </div>
-                                <div className="col-6 col-sm-3 mb-5 mb-sm-0">
-                                    <div className="progress mb-3" style={{ height: 5 }}>
-                                        <div className="progress-bar" role="progressbar" style={{ width: "100%" }} aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} />
-                                    </div>
-                                    <div className="d-flex flex-column">
-                                        <span className="text-primary">
-                                            <span className="icon icon-check mr-3 " />
-                                            Categories{" "}
-                                        </span>
-                                        <span className="small">Finished</span>
-                                    </div>
-                                </div>
-                                <div className="col-6 col-sm-3">
-                                    <div className="progress mb-3" style={{ height: 5 }}>
-                                        <div className="progress-bar" role="progressbar" style={{ width: "100%" }} aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} />
-                                    </div>
-                                    <div className="d-flex flex-column">
-                                        <span className="text-primary">
-                                            <span className="icon icon-check mr-3 " />
-                                            Managers{" "}
-                                        </span>
-                                        <span className="small">Finished</span>
-                                    </div>
-                                </div>
-                                <div className="col-6 col-sm-3">
-                                    <div className="progress mb-3" style={{ height: 5 }}>
-                                        <div className="progress-bar" role="progressbar" style={{ width: "50%" }} aria-valuenow={50} aria-valuemin={0} aria-valuemax={100} />
-                                    </div>
-                                    <div className="d-flex flex-column">
-                                        <span className="font-weight-bold">
-                                            <span className="icon icon-check mr-3 d-none" />
-                                            Features{" "}
-                                        </span>
-                                        <span className="small">In progress</span>
-                                    </div>
-                                </div>
-                            </div>
+                            <Stepper steps={steps} />
                         </div>
-                        <div className="application-section">
-                            <h3 className="application-section--title mb-3">
-                                <span className="application-section--title-content">Features</span>
-                            </h3>
-                            <p className="mb-5">Choose which features to keep or skip during the program setup. You can stop here and send an invitation or a link to the program manager to complete the needed information.</p>
+                        <Section title="Features" subtitle="Choose which features to keep or skip during the program setup. You can stop here and send an invitation or a link to the program manager to complete the needed information.">
                             <div className="bg-light rounded p-5">
                                 <p>todo</p>
                             </div>
@@ -80,7 +58,7 @@ export const AdminInstallerFeatures = () => {
                                     Proceed
                                 </button>
                             </div>
-                        </div>
+                        </Section>
                     </div>
                 </div>
             </AppContent>

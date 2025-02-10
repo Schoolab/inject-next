@@ -7,7 +7,7 @@ export interface FormFieldSetProps {
     legend?: string; 
     disabled?: boolean;
     grid?: boolean;
-    hint?: string;
+    hint?: string | ReactNode;
     id?: string;
     addClass?: string;
 }

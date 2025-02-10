@@ -1,6 +1,40 @@
 import React from "react";
 import { Layout } from "../../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
+import { Stepper, StepType } from "@/app/components/Stepper";
+import { Section } from "@/app/components/Section";
+import { FormGroup } from "@/app/components/forms/FormGroup";
+import { FormFieldSet } from "@/app/components/forms/FormFieldSet";
+import { FormOption } from "@/app/components/forms/FormOption";
+import { FormSelect } from "@/app/components/forms/FormSelect";
+
+const steps: StepType[] = [
+    {
+      title: "Basic info",
+      description: "Completed",
+      status: "completed",
+      link: "/?path=/story/pages-admin-installer--basic-info",
+      current: false,
+    },
+    {
+      title: "Categories",
+      description: "In progress",
+      status: "in-progress",
+      current: true,
+    },
+    {
+      title: "Managers",
+      description: "Not completed",
+      status: "not-completed",
+      current: false,
+    },
+    {
+      title: "Features",
+      description: "Not completed",
+      status: "not-completed",
+      current: false,
+    }
+  ];
 
 export const AdminInstallerCategories = () => {
     return (
@@ -13,124 +47,279 @@ export const AdminInstallerCategories = () => {
                                 <h2>Create a new program</h2>
                                 <p className="text-muted">Fill the information below and watch how it will appear to people joining it.</p>
                             </div>
-                            <div className="row">
-                                <div className="col-6 col-sm-3 mb-5 mb-sm-0">
-                                    <div className="progress mb-3" style={{ height: 5 }}>
-                                        <div className="progress-bar" role="progressbar" style={{ width: "100%" }} aria-valuenow={100} aria-valuemin={0} aria-valuemax={100} />
-                                    </div>
-                                    <div className="d-flex flex-column">
-                                        <span className="text-primary">
-                                            <span className="icon icon-check mr-3" />
-                                            Basic info{" "}
-                                        </span>
-                                        <span className="small">Finished</span>
-                                    </div>
-                                </div>
-                                <div className="col-6 col-sm-3 mb-5 mb-sm-0">
-                                    <div className="progress mb-3" style={{ height: 5 }}>
-                                        <div className="progress-bar" role="progressbar" style={{ width: "50%" }} aria-valuenow={50} aria-valuemin={0} aria-valuemax={100} />
-                                    </div>
-                                    <div className="d-flex flex-column">
-                                        <span className="font-weight-bold">
-                                            <span className="icon icon-check mr-3 d-none" />
-                                            Categories{" "}
-                                        </span>
-                                        <span className="small">In progress</span>
-                                    </div>
-                                </div>
-                                <div className="col-6 col-sm-3">
-                                    <div className="progress mb-3" style={{ height: 5 }}>
-                                        <div className="progress-bar" role="progressbar" style={{ width: "0%" }} aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} />
-                                    </div>
-                                    <div className="d-flex flex-column">
-                                        <span className="">
-                                            <span className="icon icon-check mr-3 d-none" />
-                                            Managers{" "}
-                                        </span>
-                                        <span className="small">Not completed</span>
-                                    </div>
-                                </div>
-                                <div className="col-6 col-sm-3">
-                                    <div className="progress mb-3" style={{ height: 5 }}>
-                                        <div className="progress-bar" role="progressbar" style={{ width: "0%" }} aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} />
-                                    </div>
-                                    <div className="d-flex flex-column">
-                                        <span className="">
-                                            <span className="icon icon-check mr-3 d-none" />
-                                            Features{" "}
-                                        </span>
-                                        <span className="small">Not completed</span>
-                                    </div>
-                                </div>
-                            </div>
+                            <Stepper steps={steps} />
                         </div>
-                        <div className="application-section">
-                            <h3 className="application-section--title mb-3">
-                                <span className="application-section--title-content">Categories</span>
-                            </h3>
-                            <p className="mb-5">Choose the impact and the categories of the program. It will be used for insights.</p>
+
+                        <Section title="Categories" subtitle="Choose the impact and the categories of the program. It will be used for insights.">
                             <fieldset className="form-group">
                                 <div id="ChallengeDefaultForm_defaultFormModel_categories">
-                                    <fieldset className="form-group">
-                                        <legend className="active checkbox-custom font-weight-bold col-form-label">Impact</legend>
-                                        <div id="ChallengeDefaultForm_defaultFormModel_categories_1" data-display="custom">
-                                            <div className="d-flex flex-wrap">
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_1_0" name="ChallengeDefaultForm[defaultFormModel][categories][1]" className="d-none" defaultValue={2} defaultChecked />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_1_0" title="No impact">
-                                                        <span className="text-truncate">No impact</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_1_1" name="ChallengeDefaultForm[defaultFormModel][categories][1]" className="d-none" defaultValue={3} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_1_1" title="Impact not obvious">
-                                                        <span className="text-truncate">Impact not obvious</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_1_2" name="ChallengeDefaultForm[defaultFormModel][categories][1]" className="d-none" defaultValue={4} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_1_2" title="Impact push">
-                                                        <span className="text-truncate">Impact push</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_1_3" name="ChallengeDefaultForm[defaultFormModel][categories][1]" className="d-none" defaultValue={5} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_1_3" title="Impact native">
-                                                        <span className="text-truncate">Impact native</span>
-                                                    </label>
-                                                </div>
-                                            </div>
+                                    <FormFieldSet id="impact" legend="Impact" hint="Choose the the case that best describes the program.">
+                                        <FormOption
+                                            name="impact"
+                                            id="no-impact"
+                                            value="no-impact"
+                                            type="radio"
+                                            card={true}
+                                            label="No impact"
+                                            caption="The program has no social or environmental impact."
+                                            defaultChecked={true}
+                                        />
+                                        <FormOption
+                                            name="impact"
+                                            id="impact-not-obvious"
+                                            value="impact-not-obvious"
+                                            type="radio"
+                                            card={true}
+                                            label="Impact not obvious"
+                                            caption="The program has an impact, but it is not obvious."
+                                        />
+                                        <FormOption
+                                            name="impact"
+                                            id="impact-push"
+                                            value="impact-push"
+                                            type="radio"
+                                            card={true}
+                                            label="Impact push"
+                                            caption="The program has an impact, but not initially."
+                                        />
+                                        <FormOption
+                                            name="impact"
+                                            id="impact-native"
+                                            value="impact-native"
+                                            type="radio"
+                                            card={true}
+                                            label="Impact native"
+                                            caption="The program has an impact and is part of the core."
+                                        />
+                                    </FormFieldSet>
+
+                                    <FormFieldSet id="verticals" legend="Verticals" grid={true}>
+                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
+                                            <FormOption
+                                                name="verticals"
+                                                id="plastic"
+                                                value="plastic"
+                                                type="checkbox"
+                                                card={true}
+                                                icon="vertical-plastic"
+                                                label="Plastic"
+                                            />
                                         </div>
-                                    </fieldset>
-                                    <fieldset className="form-group">
-                                        <legend className="checkbox-custom font-weight-bold col-form-label">Verticals</legend>
-                                        <div id="ChallengeDefaultForm_defaultFormModel_categories_9" data-display="custom">
-                                            <div className="d-flex flex-wrap">
-                                                <div className="custom-label ">
-                                                    <input type="checkbox" id="ChallengeDefaultForm_defaultFormModel_categories_9_0" name="ChallengeDefaultForm[defaultFormModel][categories][9][]" className="d-none" defaultValue={10} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_9_0" title="Plastic">
-                                                        <span className="icon icon-bottle-soda-classic-outline is-md mb-3" />
-                                                        <span className="text-truncate">Plastic</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="checkbox" id="ChallengeDefaultForm_defaultFormModel_categories_9_1" name="ChallengeDefaultForm[defaultFormModel][categories][9][]" className="d-none" defaultValue={11} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_9_1" title="Food">
-                                                        <span className="icon icon-corn is-md mb-3" />
-                                                        <span className="text-truncate">Food</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="checkbox" id="ChallengeDefaultForm_defaultFormModel_categories_9_2" name="ChallengeDefaultForm[defaultFormModel][categories][9][]" className="d-none" defaultValue={12} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_9_2" title="DEI">
-                                                        <span className="icon icon-account-group is-md mb-3" />
-                                                        <span className="text-truncate">DEI</span>
-                                                    </label>
-                                                </div>
-                                            </div>
+                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
+                                            <FormOption
+                                                name="verticals"
+                                                id="food"
+                                                value="food"
+                                                type="checkbox"
+                                                card={true}
+                                                icon="vertical-food"
+                                                label="Food"
+                                            />
                                         </div>
-                                    </fieldset>
-                                    <fieldset className="form-group">
+                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
+                                            <FormOption
+                                                name="verticals"
+                                                id="dei"
+                                                value="dei"
+                                                type="checkbox"
+                                                card={true}
+                                                icon="vertical-dei"
+                                                label="DEI"
+                                            />
+                                        </div>
+                                    </FormFieldSet>
+
+                                    <FormFieldSet id="sdgs" legend="SDGs" hint={<>Choose which SDGs this program has an impact on. <a href='https://sdgs.un.org/goals' target='_blank'>Open full SDGs list</a></>} grid={true}>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-1"
+                                                value="sdg-1"
+                                                type="checkbox"
+                                                card={true}
+                                                label="No poverty"
+                                                sdg="1"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-2"
+                                                value="sdg-2"
+                                                type="checkbox"
+                                                card={true}
+                                            label="Zero hunger"
+                                                sdg="2"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-3"
+                                                value="sdg-3"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Good health and well being"
+                                                sdg="3"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-4"
+                                                value="sdg-4"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Quality education"
+                                                sdg="4"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-5"
+                                                value="sdg-5"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Gender equality"
+                                                sdg="5"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-6"
+                                                value="sdg-6"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Clean water and sanitation"
+                                                sdg="6"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-7"
+                                                value="sdg-7"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Affordable and clean energy"
+                                                sdg="7"
+                                            />  
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-8"
+                                                value="sdg-8"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Decent work and economic growth"
+                                                sdg="8"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-9"
+                                                value="sdg-9"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Industry innovation and infrastructure"
+                                                sdg="9"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-10"
+                                                value="sdg-10"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Reduced inequalities"
+                                                sdg="10"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-11"
+                                                value="sdg-11"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Sustainable cities and communities"
+                                                sdg="11"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-12"
+                                                value="sdg-12"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Responsable consumption and production"
+                                                sdg="12"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-13"
+                                                value="sdg-13"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Climate action"
+                                                sdg="13"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-14"
+                                                value="sdg-14"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Life below water"
+                                                sdg="14"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-15"
+                                                value="sdg-15"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Life on land"
+                                                sdg="15"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-16"
+                                                value="sdg-16"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Peace, justice and strong institutions"
+                                                sdg="16"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="sdgs"
+                                                id="sdg-17"
+                                                value="sdg-17"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Partnerships for the goals"
+                                                sdg="17"
+                                            />
+                                        </div>
+                                    </FormFieldSet>
+
+                                    {/* <fieldset className="form-group">
                                         <legend className="checkbox-custom font-weight-bold col-form-label">SDGs</legend>
                                         <div id="ChallengeDefaultForm_defaultFormModel_categories_13" data-display="custom">
                                             <div className="d-flex flex-wrap">
@@ -238,181 +427,291 @@ export const AdminInstallerCategories = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </fieldset>
-                                    <fieldset className="form-group">
-                                        <legend className="checkbox-custom font-weight-bold col-form-label">Ecosystems</legend>
-                                        <div id="ChallengeDefaultForm_defaultFormModel_categories_31" data-display="custom">
-                                            <div className="d-flex flex-wrap">
-                                                <div className="custom-label ">
-                                                    <input type="checkbox" id="ChallengeDefaultForm_defaultFormModel_categories_31_0" name="ChallengeDefaultForm[defaultFormModel][categories][31][]" className="d-none" defaultValue={32} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_31_0" title="Students">
-                                                        <span className="text-truncate">Students</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="checkbox" id="ChallengeDefaultForm_defaultFormModel_categories_31_1" name="ChallengeDefaultForm[defaultFormModel][categories][31][]" className="d-none" defaultValue={33} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_31_1" title="Startups">
-                                                        <span className="text-truncate">Startups</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="checkbox" id="ChallengeDefaultForm_defaultFormModel_categories_31_2" name="ChallengeDefaultForm[defaultFormModel][categories][31][]" className="d-none" defaultValue={34} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_31_2" title="Corporate">
-                                                        <span className="text-truncate">Corporate</span>
-                                                    </label>
-                                                </div>
-                                            </div>
+                                    </fieldset> */}
+
+                                    <FormFieldSet name="ecosystems" legend="Ecosystems" grid={true}>
+                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
+                                            <FormOption
+                                                name="ecosystems"
+                                                id="ecosystem-students"
+                                                value="students"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Students"
+                                                icon="ecosystem-student"
+                                            />
                                         </div>
-                                    </fieldset>
-                                    <fieldset className="form-group">
-                                        <legend className="active checkbox-custom font-weight-bold col-form-label">Use case</legend>
-                                        <div id="ChallengeDefaultForm_defaultFormModel_categories_36" data-display="custom">
-                                            <div className="d-flex flex-wrap">
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_36_0" name="ChallengeDefaultForm[defaultFormModel][categories][36]" className="d-none" defaultValue={37} defaultChecked />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_36_0" title="Incubator / Entrepreneurship">
-                                                        <span className="text-truncate">Incubator / Entrepreneurship</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_36_1" name="ChallengeDefaultForm[defaultFormModel][categories][36]" className="d-none" defaultValue={38} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_36_1" title="Innovation hub / Community">
-                                                        <span className="text-truncate">Innovation hub / Community</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_36_2" name="ChallengeDefaultForm[defaultFormModel][categories][36]" className="d-none" defaultValue={39} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_36_2" title="Hackathon / Bootcamp / Project acceleration">
-                                                        <span className="text-truncate">Hackathon / Bootcamp / Project acceleration</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_36_3" name="ChallengeDefaultForm[defaultFormModel][categories][36]" className="d-none" defaultValue={40} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_36_3" title="Learning expedition">
-                                                        <span className="text-truncate">Learning expedition</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_36_4" name="ChallengeDefaultForm[defaultFormModel][categories][36]" className="d-none" defaultValue={41} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_36_4" title="Learning">
-                                                        <span className="text-truncate">Learning</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_36_5" name="ChallengeDefaultForm[defaultFormModel][categories][36]" className="d-none" defaultValue={42} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_36_5" title="Workshop">
-                                                        <span className="text-truncate">Workshop</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_36_6" name="ChallengeDefaultForm[defaultFormModel][categories][36]" className="d-none" defaultValue={43} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_36_6" title="Startup / Student challenge">
-                                                        <span className="text-truncate">Startup / Student challenge</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_36_7" name="ChallengeDefaultForm[defaultFormModel][categories][36]" className="d-none" defaultValue={44} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_36_7" title="Strategic thinking / Framework">
-                                                        <span className="text-truncate">Strategic thinking / Framework</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_36_8" name="ChallengeDefaultForm[defaultFormModel][categories][36]" className="d-none" defaultValue={85} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_36_8" title="Inject">
-                                                        <span className="text-truncate">Inject</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_36_9" name="ChallengeDefaultForm[defaultFormModel][categories][36]" className="d-none" defaultValue={86} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_36_9" title="Leadership / Talent / Intrapreneurship program">
-                                                        <span className="text-truncate">Leadership / Talent / Intrapreneurship program</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_36_10" name="ChallengeDefaultForm[defaultFormModel][categories][36]" className="d-none" defaultValue={45} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_36_10" title="Other">
-                                                        <span className="text-truncate">Other</span>
-                                                    </label>
-                                                </div>
-                                            </div>
+                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
+                                            <FormOption
+                                                name="ecosystems"
+                                                id="ecosystem-startups"
+                                                value="startups"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Startups"
+                                                icon="ecosystem-startups"
+                                            />
                                         </div>
-                                    </fieldset>
-                                    <fieldset className="form-group">
-                                        <legend className="active checkbox-custom font-weight-bold col-form-label">Capability</legend>
-                                        <div id="ChallengeDefaultForm_defaultFormModel_categories_46" data-display="custom">
-                                            <div className="d-flex flex-wrap">
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_46_0" name="ChallengeDefaultForm[defaultFormModel][categories][46]" className="d-none" defaultValue={47} defaultChecked />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_46_0" title="Education">
-                                                        <span className="text-truncate">Education</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_46_1" name="ChallengeDefaultForm[defaultFormModel][categories][46]" className="d-none" defaultValue={48} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_46_1" title="Entrepreneurship">
-                                                        <span className="text-truncate">Entrepreneurship</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_46_2" name="ChallengeDefaultForm[defaultFormModel][categories][46]" className="d-none" defaultValue={49} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_46_2" title="Innovation">
-                                                        <span className="text-truncate">Innovation</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_46_3" name="ChallengeDefaultForm[defaultFormModel][categories][46]" className="d-none" defaultValue={79} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_46_3" title="Inject">
-                                                        <span className="text-truncate">Inject</span>
-                                                    </label>
-                                                </div>
-                                                <div className="custom-label ">
-                                                    <input type="radio" id="ChallengeDefaultForm_defaultFormModel_categories_46_4" name="ChallengeDefaultForm[defaultFormModel][categories][46]" className="d-none" defaultValue={50} />
-                                                    <label className="d-flex flex-column p-5" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_46_4" title="Campus">
-                                                        <span className="text-truncate">Campus</span>
-                                                    </label>
-                                                </div>
-                                            </div>
+                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
+                                            <FormOption
+                                                name="ecosystems"
+                                                id="ecosystem-corporate"    
+                                                value="corporate"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Corporate"
+                                                icon="ecosystem-corporate"
+                                            />
                                         </div>
-                                    </fieldset>
-                                    <div className="form-group">
-                                        <label className="checkbox-custom font-weight-bold" htmlFor="ChallengeDefaultForm_defaultFormModel_categories_51">
-                                            Business line
-                                        </label>
-                                        <div className="dropdown bootstrap-select form-control">
-                                            <select id="ChallengeDefaultForm_defaultFormModel_categories_51" name="ChallengeDefaultForm[defaultFormModel][categories][51]" data-display="custom" className="form-control" tabIndex={-98}>
-                                                <option value="" />
-                                                <option value={80}>Agriculture and Food Production</option>
-                                                <option value={81}>Corporate services</option>
-                                                <option value={82}>Education</option>
-                                                <option value={58}>Energy and Utilities</option>
-                                                <option value={83}>Entertainment</option>
-                                                <option value={52}>Financial Services</option>
-                                                <option value={53}>Healthcare and Life Sciences</option>
-                                                <option value={62}>Hospitality and Tourism</option>
-                                                <option value={56}>Manufacturing</option>
-                                                <option value={84}>Media</option>
-                                                <option value={61}>Mobility and Logistics</option>
-                                                <option value={57}>Public Administration and Government Services</option>
-                                                <option value={60}>Real Estate and Construction</option>
-                                                <option value={55}>Retail and Consumer Goods</option>
-                                                <option value={54}>Software and Technology</option>
-                                                <option value={59}>Telecommunications</option>
-                                                <option value={63}>Other</option>
-                                            </select>
-                                            <button type="button" className="btn btn-lg dropdown-toggle btn-default bs-placeholder" data-toggle="dropdown" role="button" data-id="ChallengeDefaultForm_defaultFormModel_categories_51" title="Nothing selected">
-                                                <div className="filter-option">
-                                                    <div className="filter-option-inner">
-                                                        <div className="filter-option-inner-inner">Nothing selected</div>
-                                                    </div>
-                                                </div>
-                                            </button>
-                                            <div className="dropdown-menu " role="combobox">
-                                                <div className="inner show" role="listbox" aria-expanded="false" tabIndex={-1}>
-                                                    <ul className="dropdown-menu inner show" />
-                                                </div>
-                                            </div>
+                                    </FormFieldSet>
+
+                                    <FormFieldSet name="use-case" legend="Use case" grid={true}>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="use-case"
+                                                id="use-case-incubator"
+                                                value="incubator"
+                                                type="radio"
+                                                card={true}
+                                                label="Incubator & Entrepreneurship"
+                                            />
                                         </div>
-                                    </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="use-case"
+                                                id="use-case-innovation-hub"
+                                                value="innovation-hub"
+                                                type="radio"
+                                                card={true}
+                                                label="Innovation hub & Community"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="use-case"
+                                                id="use-case-hackathon"
+                                                value="hackathon"
+                                                type="radio"
+                                                card={true}
+                                                label="Hackathon, Bootcamp & Project acceleration"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="use-case"
+                                                id="use-case-learning-expedition"
+                                                value="learning-expedition"
+                                                type="radio"
+                                                card={true}
+                                                label="Learning Expedition"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="use-case"
+                                                id="use-case-learning"
+                                                value="learning"
+                                                type="radio"
+                                                card={true}
+                                                label="Learning"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="use-case"
+                                                id="use-case-workshop"
+                                                value="workshop"
+                                                type="radio"
+                                                card={true}
+                                                label="Workshop"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="use-case"
+                                                id="use-case-startup-challenge"
+                                                value="startup-challenge"
+                                                type="radio"
+                                                card={true}
+                                                label="Startup & Student challenge"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="use-case"
+                                                id="use-case-strategic-thinking"
+                                                value="strategic-thinking"
+                                                type="radio"
+                                                card={true}
+                                                label="Strategic thinking, Framework"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="use-case"
+                                                id="use-case-inject"
+                                                value="inject"
+                                                type="radio"
+                                                card={true}
+                                                label="Inject"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="use-case"
+                                                id="use-case-leadership"
+                                                value="leadership"
+                                                type="radio"
+                                                card={true}
+                                                label="Leadership, Talent & Intrapreneurship program"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="use-case"
+                                                id="use-case-other"
+                                                value="other"
+                                                type="radio"
+                                                card={true}
+                                                label="Other"
+                                            />
+                                        </div>
+                                    </FormFieldSet>
+
+                                    <FormFieldSet name="capability" legend="Capability" grid={true}>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="capability"
+                                                id="capability-education"
+                                                value="education"
+                                                type="radio"
+                                                card={true}
+                                                label="Education"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="capability"
+                                                id="capability-entrepreneurship"
+                                                value="entrepreneurship"
+                                                type="radio"
+                                                card={true}
+                                                label="Entrepreneurship"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="capability"
+                                                id="capability-innovation"
+                                                value="innovation"
+                                                type="radio"
+                                                card={true}
+                                                label="Innovation"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="capability"
+                                                id="capability-inject"
+                                                value="inject"
+                                                type="radio"
+                                                card={true}
+                                                label="Inject"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="capability"
+                                                id="capability-campus"
+                                                value="campus"
+                                                type="radio"
+                                                card={true}
+                                                label="Campus"
+                                            />
+                                        </div>
+                                    </FormFieldSet>
+
+                                    <FormGroup id="business-line" label="Business line">
+                                        <FormSelect
+                                            id="business-line"
+                                            options={[
+                                                {
+                                                    label: "Select a business line",
+                                                    value: "",
+                                                    selected: true,
+                                                    disabled: true,
+                                                },
+                                                {
+                                                    label: "Agriculture and Food Production",
+                                                    value: "agriculture-and-food-production",
+                                                },
+                                                {
+                                                    label: "Corporate services",
+                                                    value: "corporate-services",
+                                                },
+                                                {
+                                                    label: "Education",
+                                                    value: "education",
+                                                },
+                                                {
+                                                    label: "Energy and Utilities",
+                                                    value: "energy-and-utilities",
+                                                },
+                                                {
+                                                    label: "Entertainment",
+                                                    value: "entertainment",
+                                                },
+                                                {
+                                                    label: "Financial Services",
+                                                    value: "financial-services",
+                                                },
+                                                {
+                                                    label: "Healthcare and Life Sciences",
+                                                    value: "healthcare-and-life-sciences",
+                                                },
+                                                {
+                                                    label: "Hospitality and Tourism",
+                                                    value: "hospitality-and-tourism",
+                                                },
+                                                {
+                                                    label: "Manufacturing",
+                                                    value: "manufacturing",
+                                                },
+                                                {
+                                                    label: "Media",
+                                                    value: "media",
+                                                },
+                                                {
+                                                    label: "Mobility and Logistics",
+                                                    value: "mobility-and-logistics",
+                                                },
+                                                {
+                                                    label: "Public Administration and Government Services",
+                                                    value: "public-administration-and-government-services",
+                                                },
+                                                {
+                                                    label: "Real Estate and Construction",
+                                                    value: "real-estate-and-construction",
+                                                },
+                                                {
+                                                    label: "Retail and Consumer Goods",
+                                                    value: "retail-and-consumer-goods",
+                                                },
+                                                {
+                                                    label: "Software and Technology",
+                                                    value: "software-and-technology",
+                                                },
+                                                {
+                                                    label: "Telecommunications",
+                                                    value: "telecommunications",
+                                                },
+                                                {
+                                                    label: "Other",
+                                                    value: "other",
+                                                }
+                                            ]}
+                                        />
+                                    </FormGroup>
                                 </div>
                             </fieldset>
                             <div className="d-flex justify-content-end">
@@ -423,7 +722,7 @@ export const AdminInstallerCategories = () => {
                                     Next Step
                                 </button>
                             </div>
-                        </div>
+                        </Section>
                     </div>
                 </div>
             </AppContent>

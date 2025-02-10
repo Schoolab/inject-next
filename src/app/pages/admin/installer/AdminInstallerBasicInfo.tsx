@@ -1,6 +1,36 @@
 import React from "react";
 import { Layout } from "../../../layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
+import { Stepper, StepType } from "@/app/components/Stepper";
+import { LangSwitch } from "@/app/components/LangSwitch";
+import { Section } from "@/app/components/Section";
+const steps: StepType[] = [
+  {
+    title: "Basic info",
+    description: "Completed",
+    status: "in-progress",
+    link: "/?path=/story/pages-admin-installer--basic-info",
+    current: true,
+  },
+  {
+    title: "Categories",
+    description: "In progress",
+    status: "not-completed",
+    current: false,
+  },
+  {
+    title: "Managers",
+    description: "Not completed",
+    status: "not-completed",
+    current: false,
+  },
+  {
+    title: "Features",
+    description: "Not completed",
+    status: "not-completed",
+    current: false,
+  }
+];
 
 export const AdminInstallerBasicInfo = () => {
     return (
@@ -9,87 +39,11 @@ export const AdminInstallerBasicInfo = () => {
                 <div className="row justify-content-center">
                     <div className="col-12 col-md-10 col-lg-8 ">
                         <div className="mb-7 py-5 py-lg-0">
-                            <div className="mb-5">
-                                <h2>Create a new program</h2>
-                                <p className="text-muted">Fill the information below and watch how it will appear to people joining it.</p>
-                            </div>
-                            <div className="row">
-                                <div className="col-6 col-sm-3 mb-5 mb-sm-0">
-                                    <div className="progress mb-3" style={{ height: 5 }}>
-                                        <div className="progress-bar" role="progressbar" style={{ width: "50%" }} aria-valuenow={50} aria-valuemin={0} aria-valuemax={100} />
-                                    </div>
-                                    <div className="d-flex flex-column">
-                                        <span className="font-weight-bold">
-                                            <span className="icon icon-check mr-3 d-none" />
-                                            Basic info{" "}
-                                        </span>
-                                        <span className="small">In progress</span>
-                                    </div>
-                                </div>
-                                <div className="col-6 col-sm-3 mb-5 mb-sm-0">
-                                    <div className="progress mb-3" style={{ height: 5 }}>
-                                        <div className="progress-bar" role="progressbar" style={{ width: "0%" }} aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} />
-                                    </div>
-                                    <div className="d-flex flex-column">
-                                        <span className="">
-                                            <span className="icon icon-check mr-3 d-none" />
-                                            Categories{" "}
-                                        </span>
-                                        <span className="small">Not completed</span>
-                                    </div>
-                                </div>
-                                <div className="col-6 col-sm-3">
-                                    <div className="progress mb-3" style={{ height: 5 }}>
-                                        <div className="progress-bar" role="progressbar" style={{ width: "0%" }} aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} />
-                                    </div>
-                                    <div className="d-flex flex-column">
-                                        <span className="">
-                                            <span className="icon icon-check mr-3 d-none" />
-                                            Managers{" "}
-                                        </span>
-                                        <span className="small">Not completed</span>
-                                    </div>
-                                </div>
-                                <div className="col-6 col-sm-3">
-                                    <div className="progress mb-3" style={{ height: 5 }}>
-                                        <div className="progress-bar" role="progressbar" style={{ width: "0%" }} aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} />
-                                    </div>
-                                    <div className="d-flex flex-column">
-                                        <span className="">
-                                            <span className="icon icon-check mr-3 d-none" />
-                                            Features{" "}
-                                        </span>
-                                        <span className="small">Not completed</span>
-                                    </div>
-                                </div>
-                            </div>
+                            <Stepper steps={steps} />
                         </div>
-                        <div className="application-section">
-                            <h3 className="application-section--title mb-3">
-                                <span className="application-section--title-content">Basic info</span>
-                            </h3>
-                            <p className="mb-5">Name the program and choose a description.</p>
+                        <Section title="Basic info" subtitle="Name the program and choose a description.">
                             <form name="ChallengeDefaultForm" method="post" action="/rest/challenge/create/default">
-                                <ul className="nav nav-pills gap-xs" role="tablist">
-                                    <li className="nav-item d-flex align-items-center gap-xs">
-                                        <span className="icon icon-translate is-16px text-muted" />
-                                        <span className="small d-none d-lg-flex text-muted">Edit for each language</span>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link is-sm active" id="ChallengeDefaultFormdefaultFormModel" data-toggle="pill" href="#form-ChallengeDefaultFormdefaultFormModel" role="tab" aria-controls="form-ChallengeDefaultFormdefaultFormModel" aria-selected="true">
-                                            English
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link is-sm" id="ChallengeDefaultFormfr" data-toggle="pill" href="#form-ChallengeDefaultFormfr" role="tab" aria-controls="form-ChallengeDefaultFormfr" aria-selected="false">
-                                            French
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div className="alert-inline is-info icon icon-information mt-3" role="alert">
-                                    {" "}
-                                    If the program uses only one language, enter the content in the "English" tab (default language).{" "}
-                                </div>
+                                <LangSwitch />
 
                                 <div className="card-row">
                                     <div className="col-6 form-group">
@@ -403,7 +357,7 @@ export const AdminInstallerBasicInfo = () => {
                                     Next Step
                                 </button>
                             </div>
-                        </div>
+                        </Section>
                     </div>
                 </div>
             </AppContent>
