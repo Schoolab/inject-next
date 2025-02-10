@@ -53,44 +53,60 @@ export const AdminInstallerCategories = () => {
                         <Section title="Categories" subtitle="Choose the impact and the categories of the program. It will be used for insights.">
                             <fieldset className="form-group">
                                 <div id="ChallengeDefaultForm_defaultFormModel_categories">
-                                    <FormFieldSet id="impact" legend="Impact" hint="Choose the the case that best describes the program.">
-                                        <FormOption
-                                            name="impact"
-                                            id="no-impact"
-                                            value="no-impact"
-                                            type="radio"
-                                            card={true}
-                                            label="No impact"
-                                            caption="The program has no social or environmental impact."
-                                            defaultChecked={true}
-                                        />
-                                        <FormOption
-                                            name="impact"
-                                            id="impact-not-obvious"
-                                            value="impact-not-obvious"
-                                            type="radio"
-                                            card={true}
-                                            label="Impact not obvious"
-                                            caption="The program has an impact, but it is not obvious."
-                                        />
-                                        <FormOption
-                                            name="impact"
-                                            id="impact-push"
-                                            value="impact-push"
-                                            type="radio"
-                                            card={true}
-                                            label="Impact push"
-                                            caption="The program has an impact, but not initially."
-                                        />
-                                        <FormOption
-                                            name="impact"
-                                            id="impact-native"
-                                            value="impact-native"
-                                            type="radio"
-                                            card={true}
-                                            label="Impact native"
-                                            caption="The program has an impact and is part of the core."
-                                        />
+                                    <FormFieldSet id="impact" legend="Impact" hint="Choose the the case that best describes the program." grid={true}>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="impact"
+                                                id="no-impact"
+                                                value="no-impact"
+                                                type="radio"
+                                                card={true}
+                                                label="No impact"
+                                                caption="The program has no social or environmental impact."
+                                                defaultChecked={true}
+                                                icon="impact-none"
+                                                labelClass="flex-column gap-3xs"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="impact"
+                                                id="impact-not-obvious"
+                                                value="impact-not-obvious"
+                                                type="radio"
+                                                card={true}
+                                                label="Impact not obvious"
+                                                caption="The program has an impact, but it is not obvious."
+                                                icon="impact-not-obvious"
+                                                labelClass="flex-column gap-3xs"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="impact"
+                                                id="impact-push"
+                                                value="impact-push"
+                                                type="radio"
+                                                card={true}
+                                                label="Impact push"
+                                                caption="The program has an impact, but not initially."
+                                                icon="impact-push"
+                                                labelClass="flex-column gap-3xs"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6">
+                                            <FormOption
+                                                name="impact"
+                                                id="impact-native"
+                                                value="impact-native"
+                                                type="radio"
+                                                card={true}
+                                                label="Impact native"
+                                                caption="The program has an impact and is part of the core."
+                                                icon="impact-native"
+                                                labelClass="flex-column gap-3xs"
+                                            />
+                                        </div>
                                     </FormFieldSet>
 
                                     <FormFieldSet id="verticals" legend="Verticals" grid={true}>
@@ -125,6 +141,42 @@ export const AdminInstallerCategories = () => {
                                                 card={true}
                                                 icon="vertical-dei"
                                                 label="DEI"
+                                            />
+                                        </div>
+                                    </FormFieldSet>
+
+                                    <FormFieldSet name="ecosystems" legend="Ecosystems" grid={true}>
+                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
+                                            <FormOption
+                                                name="ecosystems"
+                                                id="ecosystem-students"
+                                                value="students"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Students"
+                                                icon="ecosystem-student"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
+                                            <FormOption
+                                                name="ecosystems"
+                                                id="ecosystem-startups"
+                                                value="startups"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Startups"
+                                                icon="ecosystem-startups"
+                                            />
+                                        </div>
+                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
+                                            <FormOption
+                                                name="ecosystems"
+                                                id="ecosystem-corporate"    
+                                                value="corporate"
+                                                type="checkbox"
+                                                card={true}
+                                                label="Corporate"
+                                                icon="ecosystem-corporate"
                                             />
                                         </div>
                                     </FormFieldSet>
@@ -428,42 +480,6 @@ export const AdminInstallerCategories = () => {
                                             </div>
                                         </div>
                                     </fieldset> */}
-
-                                    <FormFieldSet name="ecosystems" legend="Ecosystems" grid={true}>
-                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
-                                            <FormOption
-                                                name="ecosystems"
-                                                id="ecosystem-students"
-                                                value="students"
-                                                type="checkbox"
-                                                card={true}
-                                                label="Students"
-                                                icon="ecosystem-student"
-                                            />
-                                        </div>
-                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
-                                            <FormOption
-                                                name="ecosystems"
-                                                id="ecosystem-startups"
-                                                value="startups"
-                                                type="checkbox"
-                                                card={true}
-                                                label="Startups"
-                                                icon="ecosystem-startups"
-                                            />
-                                        </div>
-                                        <div className="g-col-12 g-col-sm-6 g-col-md-4">
-                                            <FormOption
-                                                name="ecosystems"
-                                                id="ecosystem-corporate"    
-                                                value="corporate"
-                                                type="checkbox"
-                                                card={true}
-                                                label="Corporate"
-                                                icon="ecosystem-corporate"
-                                            />
-                                        </div>
-                                    </FormFieldSet>
 
                                     <FormFieldSet name="use-case" legend="Use case" grid={true}>
                                         <div className="g-col-12 g-col-sm-6">
