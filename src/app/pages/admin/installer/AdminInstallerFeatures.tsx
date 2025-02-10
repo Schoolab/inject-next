@@ -53,7 +53,7 @@ export const AdminInstallerFeatures = () => {
                         </div>
                         <Section title="Features" subtitle="Choose which features to keep or skip during the program setup. You can stop here and send an invitation or a link to the program manager to complete the needed information.">
 
-                            <FormFieldSet name="features" legend="Enable each features this program needs...">
+                            <FormFieldSet name="features" legend="Join the program">
                                 <FormOption
                                     name="features"
                                     id="registrations"
@@ -67,14 +67,15 @@ export const AdminInstallerFeatures = () => {
                                 />
                                 <FormOption
                                     name="features"
-                                    id="evaluations"
-                                    value="evaluations"
+                                    id="invitations"
+                                    value="invitations"
                                     type="checkbox"
                                     card={true}
-                                    label="Evaluations"
-                                    caption="Create public votes and evaluation sessions by juries"
-                                    defaultChecked={true}
+                                    label="Invitations"
+                                    caption="Send invitations to participants to join the program"
                                 />
+                            </FormFieldSet>
+                            <FormFieldSet name="features" legend="Content">
                                 <FormOption
                                     name="features"
                                     id="learning"
@@ -97,13 +98,42 @@ export const AdminInstallerFeatures = () => {
                                 />
                                 <FormOption
                                     name="features"
+                                    id="libraries"
+                                    value="libraries"
+                                    type="checkbox"
+                                    card={true}
+                                    label="Libraries"
+                                    caption="Upload and share documents, videos, images and other files with participants"
+                                />
+                                <FormOption
+                                    name="features"
+                                    id="landing-page"
+                                    value="landing-page"
+                                    type="checkbox"
+                                    card={true}
+                                    label="Landing page"
+                                    caption="Create landing pages to promote the program"
+                                />
+                            </FormFieldSet>
+
+                            <FormFieldSet name="features" legend="Animation">
+                                <FormOption
+                                    name="features"
                                     id="coaching"
                                     value="coaching"
                                     type="checkbox"
                                     card={true}
                                     label="Coaching"
                                     caption="Allow experts to create coaching sessions for participants and projects"
-                                    defaultChecked={true}
+                                />
+                                <FormOption
+                                    name="features"
+                                    id="evaluations"
+                                    value="evaluations"
+                                    type="checkbox"
+                                    card={true}
+                                    label="Evaluations"
+                                    caption="Create public votes and evaluation sessions by juries"
                                 />
                                 <FormOption
                                     name="features"
@@ -113,8 +143,9 @@ export const AdminInstallerFeatures = () => {
                                     card={true}
                                     label="Events and Signatures"
                                     caption="Create events for participants to attend and sign their presence"
-                                    defaultChecked={true}
                                 />
+                            </FormFieldSet>
+                            <FormFieldSet name="features" legend="Communication">
                                 <FormOption
                                     name="features"
                                     id="mails"
@@ -123,7 +154,6 @@ export const AdminInstallerFeatures = () => {
                                     card={true}
                                     label="Mails and templates"
                                     caption="Schedule and send email campains during the program"
-                                    defaultChecked={true}
                                 />
                                 <FormOption
                                     name="features"
@@ -142,6 +172,18 @@ export const AdminInstallerFeatures = () => {
                                     card={true}
                                     label="Private messages in chat and Broadcasts"
                                     caption="Allow participants to socialize and chat directly from the program"
+                                />
+                            </FormFieldSet>
+
+                            <FormFieldSet name="features" legend="Other">
+                                <FormOption
+                                    name="features"
+                                    id="insights"
+                                    value="insights"
+                                    type="checkbox"
+                                    card={true}
+                                    label="Insights"
+                                    caption="Get insights about the program and participants"
                                 />
                                 <FormOption
                                     name="features"
