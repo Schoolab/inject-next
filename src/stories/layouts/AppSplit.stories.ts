@@ -39,6 +39,14 @@ export const Video: Story = {
   }
 };
 
+export const Preview: Story = {
+  args: {
+    preview: `Preview content here...`,
+    shadow: true
+  }
+};
+
+
 export const Boxed: Story = {
   args: {
     cover: "img/signin-cover.jpg",

@@ -13,12 +13,13 @@ export interface AppSplitProps {
   rounded?: boolean;
   cover?: string;
   video?: string;
+  preview?: React.ReactNode;
   children?: React.ReactNode;
   addClass?: string;
   style?: CSSProperties;
 }
 
-export const AppSplit = ({ children, cover, video, theme = "default", logo = true, positionX = "none", positionY = "none", boxed = false, shadow = false, rounded = false, addClass, style, ...props }: AppSplitProps) => {
+export const AppSplit = ({ children, preview, cover, video, theme = "default", logo = true, positionX = "none", positionY = "none", boxed = false, shadow = false, rounded = false, addClass, style, ...props }: AppSplitProps) => {
   let appContentClass = ["application-content p-0"];
 
   let splitedContainerClass = ["splited-container"];
@@ -102,6 +103,12 @@ export const AppSplit = ({ children, cover, video, theme = "default", logo = tru
             }
 
         </div>
+
+        { preview && 
+          <div className="splited-cover bg-highlight">
+            {preview}
+          </div>
+        }
 
         { cover && 
           <div className="splited-cover">

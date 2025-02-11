@@ -21,6 +21,32 @@ import { LangSwitch } from "@/app/components/LangSwitch";
 import { FormSelect } from "@/app/components/forms/FormSelect";
 import { AppSplit } from "@/app/layouts/AppSplit";
 import { ProgressBar } from "@/app/components/ProgressBar";
+import { CardProgram } from "@/app/components/cards/CardProgram";
+
+const Preview = () => {
+  return (
+    <div className="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+        <CardProgram
+          name="Impact Innovators"
+          actions= {[
+            { 
+                title: "Join the program",
+                metas: [
+                    { label: "Applicants" },
+                    { iconName: "account", label: "143", addClass: "font-weight-bold" },
+                ],
+                buttons: [
+                    { label: "Join", type: "primary", link: "#" },
+                    { label: "Learn more", type: "default", link: "#" },
+                ],
+            }
+          ]}
+          style={{ width: "100%", maxWidth: "32rem", }}
+          cover="img/program-innovators.png"
+        />
+    </div>
+  );
+};
 
 interface AdminInstallerProgramOutlineProps {
   theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
@@ -30,7 +56,7 @@ export const AdminInstallerProgramOutline = ({ theme = "default" }: AdminInstall
 
     return (
         <Layout showNavbar={false} showShortcutbar={false}>
-            <AppSplit addClass="py-3xl" theme={theme} positionX="left" shadow={true} cover="img/cover-installer-basic_info.png">
+            <AppSplit addClass="py-3xl" theme={theme} positionX="left" shadow={true} preview={<Preview />}>
                
                 <div className="d-flex flex-column gap-xs">
                     <h1 className="display-3">Program outline</h1>
