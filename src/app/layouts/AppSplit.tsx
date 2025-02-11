@@ -1,11 +1,9 @@
 import React, { CSSProperties } from "react";
 import { Theme } from "../components/Theme";
+import { Placeholder } from "../components/Placeholder";
 
 export interface AppSplitProps {
   theme: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
-  showEmail?: boolean;
-  showPlatforms?: boolean;
-  showSso?: boolean;
   positionX?: "none" | "left" | "center" | "right";
   positionY?: "none" | "top" | "middle" | "bottom";
   boxed?: boolean;
@@ -13,7 +11,7 @@ export interface AppSplitProps {
   rounded?: boolean;
   cover?: string;
   video?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   addClass?: string;
   style?: CSSProperties;
 }
@@ -37,7 +35,17 @@ export const AppSplit = ({ children, cover, video, theme, positionX, positionY, 
       <div className={splitedContainerClass.join(" ")}>
 
         <div className={splitedContentClass.join(" ")}>
-          {children}
+          {children ? 
+            children : 
+            <div className="d-flex flex-column gap-3xl">
+              <Placeholder width="256px" />
+              <div className="d-flex flex-column gap-md">
+              <Placeholder width="75%" height="40px" />
+              <Placeholder height="20px" />
+              </div>
+              <Placeholder />
+            </div>
+          }
         </div>
 
         { cover && 

@@ -6,20 +6,26 @@ import { FormInput } from "@/app/components/forms/FormInput";
 import { Logo } from "@/app/components/Logo";
 import { AppSplit, AppSplitProps } from "@/app/layouts/AppSplit";
 
+interface UserAuthSigninProps extends AppSplitProps {
+    showEmail?: boolean;
+    showPlatforms?: boolean;
+    showSso?: boolean;
+}
+
 export const UserAuthSignin = (
     {
-        theme = "default",
         showEmail = true,
         showPlatforms = true,
         showSso = false,
+        cover,
+        video,
+        theme = "default",
         positionX,
         positionY,
         boxed,
         shadow,
         rounded,
-        cover,
-        video,
-    }:AppSplitProps
+    }:UserAuthSigninProps
 ) => {
     let logoUrl = "img/inject-logo-dark.svg";
     let logoDarkUrl = "img/inject-logo-dark.svg";

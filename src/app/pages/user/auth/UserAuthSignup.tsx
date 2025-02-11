@@ -8,20 +8,26 @@ import { FormSelect } from "@/app/components/forms/FormSelect";
 import { Logo } from "@/app/components/Logo";
 import { AppSplit, AppSplitProps } from "@/app/layouts/AppSplit";
 
+interface UserAuthSignupProps extends AppSplitProps {
+    showEmail?: boolean;
+    showPlatforms?: boolean;
+    showSso?: boolean;
+}
+
 export const UserAuthSignup = (
     {
-        theme = "default",
         showEmail = true,
         showPlatforms = true,
         showSso = false,
+        cover,
+        video,
+        theme = "default",
         positionX,
         positionY,
         boxed,
         shadow,
         rounded,
-        cover,
-        video,
-    }:AppSplitProps
+    }:UserAuthSignupProps
 ) => {
     let logoUrl = "img/inject-logo-dark.svg";
     let logoDarkUrl = "img/inject-logo-dark.svg";
