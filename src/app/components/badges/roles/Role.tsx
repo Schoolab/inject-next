@@ -3,17 +3,15 @@ import { tooltips } from "../../../../../public/utils/tooltips";
 import { useEffect } from "react";
 
 interface RoleProps {
-    /**
-     * Custom class
-     */
-    addClass?: string;
-    /**
-     * Status
-     */
     status: "admin" | "manager" | "expert" | "jury" | "participant" | "visitor";
+    addClass?: string;
+    dataToggle?: string;
+    dataPlacement?: string;
+    dataOriginalTitle?: string;
+    dataBoundary?: string;
 }
 
-export const Role = ({ addClass, status }: RoleProps) => {
+export const Role = ({ status, addClass, dataToggle, dataPlacement, dataOriginalTitle, dataBoundary, ...props }: RoleProps) => {
     useEffect(() => {
         tooltips();
     }, []);
@@ -24,5 +22,5 @@ export const Role = ({ addClass, status }: RoleProps) => {
 
     let statusFirstCapitalize = status.charAt(0).toUpperCase() + status.slice(1);
 
-    return <span className={classTab.join(" ")} data-toggle="tooltip" data-placement="top" data-original-title={statusFirstCapitalize} data-boundary="window" />;
+    return <span className={classTab.join(" ")} data-toggle={dataToggle} data-placement={dataPlacement} data-original-title={dataOriginalTitle || statusFirstCapitalize} data-boundary={dataBoundary} {...props} />;
 };

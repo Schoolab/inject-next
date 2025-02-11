@@ -2,14 +2,19 @@ import React from "react";
 import { ItemResource } from "../items/ItemResource";
 import { CardEvent } from "../cards/CardEvent";
 import { MessageChat } from "../messages/MessageChat";
+import { AsideHeader } from "./AsideHeader";
+import { Message } from "../messages/Message";
+import { FormComposer } from "../forms/FormComposer";
 
 interface AsideEventProps {}
 
 export const AsideEvent = ({}: AsideEventProps) => {
     return (
         <aside className="application-aside">
+
            
             <div className="aside-content-container d-none">
+                
                 <div className="aside-header">
                     <h3 className="aside-title line-clamp-1">
                         <span className="text-truncate">Resources</span>
@@ -104,19 +109,9 @@ export const AsideEvent = ({}: AsideEventProps) => {
             </div>
 
             <div className="aside-content-container">
-                <div className="aside-header">
-                    <h3 className="aside-title line-clamp-1 text-left">
-                        <span className="text-truncate">Chat</span>
-                        <ul className="list-inline list-dotted text-muted mb-none">
-                            <li className="list-inline-item small">Active</li>
-                        </ul>
-                    </h3>
-                    <div className="aside-actions">
-                        <button className="btn btn-transparent border-0 p-2xs text-muted close-aside" type="button" data-dismiss="aside" aria-label="Close">
-                            <span className="icon icon-close is-24px" aria-hidden="true" />
-                        </button>
-                    </div>
-                </div>
+
+                <AsideHeader title="Chat" />
+
                 <div className="tab-content overflow-auto h-100" id="TabsContent">
                     <div id="chat" role="tabpanel" aria-labelledby="content-tab" className="tab-pane h-100 fade active show">
                         <div className="aside-body p-0">
@@ -137,21 +132,64 @@ export const AsideEvent = ({}: AsideEventProps) => {
                                         Loading…
                                     </div>
                                     <div className="message-container p-none">
-                                        <MessageChat />
+                                        <Message 
+                                            showAvatar={true}
+                                            name="Pierre Lemeteil"
+                                            role="admin"
+                                            messages= {[
+                                                {
+                                                  message: "Hey there! ✋",
+                                                  options: [
+                                                    { label: "Edit", href: "#", icon: "pencil", disabled: false, onClick: () => {} },
+                                                    { label: "Delete", href: "#", icon: "delete", type: "danger", disabled: false, onClick: () => {} },
+                                                  ]
+                                                },
+                                                {
+                                                  message: "I was gonna be productive… Laundry, cleaning, but...",
+                                                  options: [
+                                                    { label: "Edit", href: "#", icon: "pencil", disabled: false, onClick: () => {} },
+                                                    { label: "Delete", href: "#", icon: "delete", type: "danger", disabled: false, onClick: () => {} },
+                                                  ]
+                                                },
+                                                {
+                                                  message: "I’m getting powered donuts",
+                                                  options: [
+                                                    { label: "Edit", href: "#", icon: "pencil", disabled: false, onClick: () => {} },
+                                                    { label: "Delete", href: "#", icon: "delete", type: "danger", disabled: false, onClick: () => {} },
+                                                  ]
+                                                },
+                                                {
+                                                  message: "powdered*",
+                                                  options: [
+                                                    { label: "Edit", href: "#", icon: "pencil", disabled: false, onClick: () => {} },
+                                                    { label: "Delete", href: "#", icon: "delete", type: "danger", disabled: false, onClick: () => {} },
+                                                  ]
+                                                }
+                                              ]}
+                                              avatar= "img/avatar-pierre.jpeg"
+                                        />
+                                        <Message
+                                            messages= {[
+                                                {
+                                                  you: true,
+                                                  message: "Donuts do have powers 🤣",
+                                                  options: [
+                                                    { label: "Edit", href: "#", icon: "pencil", disabled: false, onClick: () => {} },
+                                                    { label: "Delete", href: "#", icon: "delete", type: "danger", disabled: false, onClick: () => {} },
+                                                  ]
+                                                }
+                                            ]}
+                                            showAvatar={false}
+                                            avatar="img/avatar-alexandra.jpeg"
+                                            name="Alexandra Jolly"
+                                            role={undefined}
+                                            position="right"
+                                        />
                                     </div>
                                 </div>
-                                <div className="w-100 standaloneThreadForm" data-mark-as-read-url="/mark-as-read/60">
-                                    <form className="w-100 message-composer is-sticky mt-auto" name="message_light" method="post" action="/messages/conversation/60" data-disable-on-submit={1}>
-                                        <div className="w-100 message-composer-row">
-                                            <textarea className="message-composer-input form-control" id="message_light_body" name="message_light[body]" required placeholder="Write a message…" autoComplete="off" />
-                                            <input type="hidden" id="message_light_sentAsAdmin" name="message_light[sentAsAdmin]" className="messageContext" defaultValue={0} />
-                                            <button className="btn btn-transparent btn-icon message-composer-action is-disabled">
-                                                <span className="icon icon-send" />
-                                            </button>
-                                        </div>
-                                        <input type="hidden" id="message_light__token" name="message_light[_token]" />
-                                    </form>
-                                </div>
+                                <form className="w-100 standaloneThreadForm" name="message_light" method="post" action="">
+                                    <FormComposer />
+                                </form>
                             </div>
                         </div>
                     </div>

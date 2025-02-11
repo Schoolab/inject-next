@@ -12,6 +12,7 @@ interface DropdownItemProps {
     newTab?: boolean;
     outbound?: boolean;
     active?: boolean;
+    disabled?: boolean;
     href?: string;
     target?: string;
     rel?: string;
@@ -20,11 +21,13 @@ interface DropdownItemProps {
     onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-export const DropdownItem = ({ children, type, addClass, outbound, active, label, iconName, caption, toggle, newTab, href = "#", target, rel, badge, ...props }: DropdownItemProps) => {
+export const DropdownItem = ({ children, type, addClass, outbound, active, disabled, label, iconName, caption, toggle, newTab, href = "#", target, rel, badge, ...props }: DropdownItemProps) => {
     let classTab = ["dropdown-item"];
     type && classTab.push(`is-${type}`);
     active && classTab.push("active");
+    disabled && classTab.push("disabled");
     addClass && classTab.push(addClass);
+
     return (
         <a className={classTab.join(" ")} href={href} target={target} {...props}>
             {active !== undefined && (active ? <Icon name="check" addClass="dropdown-item--icon" /> : <Icon name="" addClass="dropdown-item--icon" />)}
