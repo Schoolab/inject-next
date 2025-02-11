@@ -40,7 +40,7 @@ export const ProgressBar = ({ label, percentage = 0, min = 0, max = 100, text = 
                     style={{ width: percentage + '%' }}
                 />
             </div>
-            { inline && <span className="small text-muted">{text}</span> }
+            { inline && text && <span className="small text-muted">{text}</span> }
         </div>
     </div>
   );

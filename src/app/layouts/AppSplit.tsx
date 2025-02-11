@@ -1,9 +1,11 @@
 import React, { CSSProperties } from "react";
 import { Theme } from "../components/Theme";
 import { Placeholder } from "../components/Placeholder";
+import { Logo } from "../components/Logo";
 
 export interface AppSplitProps {
-  theme: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
+  theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
+  logo?: boolean;
   positionX?: "none" | "left" | "center" | "right";
   positionY?: "none" | "top" | "middle" | "bottom";
   boxed?: boolean;
@@ -16,9 +18,8 @@ export interface AppSplitProps {
   style?: CSSProperties;
 }
 
-export const AppSplit = ({ children, cover, video, theme, positionX, positionY, boxed, shadow, rounded, addClass, style, ...props }: AppSplitProps) => {
+export const AppSplit = ({ children, cover, video, theme = "default", logo = true, positionX = "none", positionY = "none", boxed = false, shadow = false, rounded = false, addClass, style, ...props }: AppSplitProps) => {
   let appContentClass = ["application-content p-0"];
-  addClass && appContentClass.push(addClass);
 
   let splitedContainerClass = ["splited-container"];
 
@@ -28,6 +29,44 @@ export const AppSplit = ({ children, cover, video, theme, positionX, positionY, 
   boxed && splitedContentClass.push("is-boxed");
   shadow && splitedContentClass.push("is-shadowed");
   rounded && splitedContentClass.push("is-rounded");
+  addClass && splitedContentClass.push(addClass);
+
+  let logoUrl = "img/inject-logo-dark.svg";
+  let logoDarkUrl = "img/inject-logo-dark.svg";
+  let logoLightUrl = "img/inject-logo-light.svg";
+
+  switch (theme) {
+      case "Schoolab":
+          logoUrl = "img/schoolab-logo-dark.svg";
+          logoDarkUrl = "img/schoolab-logo-dark.svg";
+          logoLightUrl = "img/schoolab-logo-light.svg";
+          break;
+      case "Moho":
+          logoUrl = "img/moho-logo-dark.svg";
+          logoDarkUrl = "img/moho-logo-dark.svg";
+          logoLightUrl = "img/moho-logo-light.svg";
+          break;
+      case "Raiselab":
+          logoUrl = "img/raiselab-logo-dark.svg";
+          logoDarkUrl = "img/raiselab-logo-dark.svg";
+          logoLightUrl = "img/raiselab-logo-light.svg";
+          break;
+      case "Inject":
+          logoUrl = "img/inject-logo-dark.svg";
+          logoDarkUrl = "img/inject-logo-dark.svg";
+          logoLightUrl = "img/inject-logo-light.svg";
+          break;
+      case "default":
+          logoUrl = "img/inject-logo-dark.svg";
+          logoDarkUrl = "img/inject-logo-dark.svg";
+          logoLightUrl = "img/inject-logo-light.svg";
+          break;
+      default:
+          logoUrl = "img/inject-logo-dark.svg";
+          logoDarkUrl = "img/inject-logo-dark.svg";
+          logoLightUrl = "img/inject-logo-light.svg";
+          break;
+  }
 
   return (
     <main className={appContentClass.join(" ")} style={style} {...props}>
@@ -35,17 +74,33 @@ export const AppSplit = ({ children, cover, video, theme, positionX, positionY, 
       <div className={splitedContainerClass.join(" ")}>
 
         <div className={splitedContentClass.join(" ")}>
-          {children ? 
-            children : 
-            <div className="d-flex flex-column gap-3xl">
-              <Placeholder width="256px" />
-              <div className="d-flex flex-column gap-md">
-              <Placeholder width="75%" height="40px" />
-              <Placeholder height="20px" />
+
+            {logo && <nav className="navbar">
+                <div className="container-fluid p-0">
+                    <a className="m-0" href="#">
+                        <Logo alt={theme} logoThemeDefault={logoUrl} logoThemeLight={logoDarkUrl} logoThemeDark={logoLightUrl} logoStyle={{ maxWidth: 150, maxHeight: 40 }} />
+                    </a>
+                </div>
+            </nav>}
+
+            {children ? 
+              children : 
+              <div className="d-flex flex-column gap-2xl">
+                <div className="d-flex flex-column gap-md">
+                <Placeholder width="75%" height="40px" />
+                  <div className="d-flex flex-column gap-xs">
+                    <Placeholder height="20px" />
+                    <Placeholder width="50%" height="20px" />
+                  </div>
+                </div>
+                <div className="d-flex flex-column gap-xs">
+                  <Placeholder />
+                  <Placeholder />
+                </div>
+                <Placeholder />
               </div>
-              <Placeholder />
-            </div>
-          }
+            }
+
         </div>
 
         { cover && 

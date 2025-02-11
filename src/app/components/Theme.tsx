@@ -69,6 +69,9 @@ export const Theme = ({ themeName }: ThemeProps) => {
                         --fg-ui-interactive: #ED6B5D;
                         --fg-ui-interactive-hover: #E84230;
 
+                        --border-active: #ED6B5D;
+                        --border-active-hover: #E84230;
+
                         --display-font-family: "Noe Display";
                         --display-font-weight: "Bold";
                         --paragraph-font-family: "Roboto Mono";
@@ -153,6 +156,9 @@ export const Theme = ({ themeName }: ThemeProps) => {
 
                         --fg-ui-interactive: #4462E2;
                         --fg-ui-interactive-hover: #2143D4;
+
+                        --border-active: #4462E2;
+                        --border-active-hover: #2143D4;
                         
                         --display-font-family: "GT America";
                         // --display-font-weight: "700";
@@ -238,6 +244,9 @@ export const Theme = ({ themeName }: ThemeProps) => {
 
                         --fg-ui-interactive: #70462D;
                         --fg-ui-interactive-hover: #4C301F;
+
+                        --border-active: #70462D;
+                        --border-active-hover: #4C301F;
 
                         --display-font-family: "Canela";
                         --display-font-weight: "Regular";

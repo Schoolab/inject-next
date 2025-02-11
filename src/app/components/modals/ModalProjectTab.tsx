@@ -449,7 +449,7 @@ export const ModalProjectTab = ({}: ModalProjectTabProps) => {
                                             <div className="form-group">
                                                 {" "}
                                                 <label className="checkbox-custom font-weight-bold" htmlFor="fields_configuration_form_customData_methodology">
-                                                    Methodology used
+                                                    Used methodology
                                                 </label>
                                                 <div className="dropdown bootstrap-select show-tick disabled form-control">
                                                     <select id="fields_configuration_form_customData_methodology" name="fields_configuration_form[customData][methodology][]" disabled className="form-control" multiple tabIndex={-98}>

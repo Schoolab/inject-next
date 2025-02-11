@@ -27,43 +27,6 @@ export const UserAuthSignin = (
         rounded,
     }:UserAuthSigninProps
 ) => {
-    let logoUrl = "img/inject-logo-dark.svg";
-    let logoDarkUrl = "img/inject-logo-dark.svg";
-    let logoLightUrl = "img/inject-logo-light.svg";
-
-    switch (theme) {
-        case "Schoolab":
-            logoUrl = "img/schoolab-logo-dark.svg";
-            logoDarkUrl = "img/schoolab-logo-dark.svg";
-            logoLightUrl = "img/schoolab-logo-light.svg";
-            break;
-        case "Moho":
-            logoUrl = "img/moho-logo-dark.svg";
-            logoDarkUrl = "img/moho-logo-dark.svg";
-            logoLightUrl = "img/moho-logo-light.svg";
-            break;
-        case "Raiselab":
-            logoUrl = "img/raiselab-logo-dark.svg";
-            logoDarkUrl = "img/raiselab-logo-dark.svg";
-            logoLightUrl = "img/raiselab-logo-light.svg";
-            break;
-        case "Inject":
-            logoUrl = "img/inject-logo-dark.svg";
-            logoDarkUrl = "img/inject-logo-dark.svg";
-            logoLightUrl = "img/inject-logo-light.svg";
-            break;
-        case "default":
-            logoUrl = "img/inject-logo-dark.svg";
-            logoDarkUrl = "img/inject-logo-dark.svg";
-            logoLightUrl = "img/inject-logo-light.svg";
-            break;
-        default:
-            logoUrl = "img/inject-logo-dark.svg";
-            logoDarkUrl = "img/inject-logo-dark.svg";
-            logoLightUrl = "img/inject-logo-light.svg";
-            break;
-    }
-
     return (
         <Layout
             showNavbar={false}
@@ -71,13 +34,7 @@ export const UserAuthSignin = (
         >
             <AppSplit cover={cover} video={video} theme={theme} positionX={positionX} positionY={positionY} boxed={boxed} shadow={shadow} rounded={rounded}>
 
-                <nav className="navbar">
-                    <div className="container-fluid p-0">
-                        <a className="m-0" href="#">
-                            <Logo alt={theme} logoThemeDefault={logoUrl} logoThemeLight={logoDarkUrl} logoThemeDark={logoLightUrl} logoStyle={{ maxWidth: 150, maxHeight: 40 }} />
-                        </a>
-                    </div>
-                </nav>
+                
 
                 <div className="d-flex flex-column gap-xl">
                 
