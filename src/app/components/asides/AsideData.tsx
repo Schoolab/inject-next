@@ -93,7 +93,7 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                     <span>Schoolab</span>
                                 </dd>
                             </DataListItem>
-                            <DataListItem label="Pipedrive ID">
+                            <DataListItem label="Pipedrive ID" tooltip="You can find an item’s system ID in two places: the URL after opening an item in Pipedrive or in the list view by adding the ID column.">
                                 <dd className="d-flex flex-row gap-none">
                                     <span className="text-muted">#</span>
                                     <span>42986</span>
@@ -182,21 +182,58 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                     <Tag label="Open" iconName="status-filled" status="open" />
                                 </dd>
                             </DataListItem>
-                            <DataListItem label="Tags ">
+                            <DataListItem label="SDGs" tooltip="The SDGs are the United Nations Sustainable Development Goals. They are a set of 17 goals designed to transform our world by 2030. Each goal has specific targets to achieve by 2030.">
                                 <dd>
                                     <Badges>
-                                        <Tag label="Impact native" iconName="impact-native" isPill={false} />
-                                        <Tag label="DEI" iconName="vertical-dei" isPill={false} />
                                         <Tag isPill={false}>
                                             <div aria-hidden="true" className="icon icon--sdg is-sdg-7 is-16px">
                                                 <span>7</span>
                                             </div>
                                             <span>Affordable and clean energy</span>
                                         </Tag>
+                                    </Badges>
+                                </dd>
+                            </DataListItem>
+                            <DataListItem label="Tags">
+                                <dd>
+                                    <Badges>
+                                        <Tag label="Impact native" iconName="impact-native" isPill={false} />
+                                        <Tag label="DEI" iconName="vertical-dei" isPill={false} />
                                         <Tag label="Corporate" iconName="ecosystem-corporate" />
                                         <Tag label="Strategic" />
                                         <Tag label="Innovation" />
                                     </Badges>
+                                </dd>
+                            </DataListItem>
+                            <DataListItem label="Links">
+                                <dd>
+                                    <div className="d-flex flex-row flex-wrap gap-3xs">
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Icon name="brand-drive" addClass="text-muted" />
+                                        <span>Drive</span>
+                                        <Icon name="new-tab" addClass="text-muted" />
+                                    </Button>
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Icon name="brand-dropbox" addClass="text-muted" />
+                                        <span>Dropbox</span>
+                                        <Icon name="new-tab" addClass="text-muted" />
+                                    </Button>
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Icon name="brand-notion" addClass="text-muted" />
+                                        <span>Notion</span>
+                                        <Icon name="new-tab" addClass="text-muted" />
+                                    </Button>
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Icon name="brand-slack" addClass="text-muted" />
+                                        <span>Slack</span>
+                                        <Icon name="new-tab" addClass="text-muted" />
+                                    </Button>
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Icon name="brand-figma" addClass="text-muted" />
+                                        <span>Figma</span>
+                                        <Icon name="new-tab" addClass="text-muted" />
+                                    </Button>
+                                    </div>
                                 </dd>
                             </DataListItem>
                         </DataList>
