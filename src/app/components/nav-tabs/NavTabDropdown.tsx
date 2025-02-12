@@ -77,7 +77,7 @@ export const NavTabDropdown = (
             </a>
             <DropdownMenu>
                 {dropdownItems.map((dropdownItem, dropdownIndex) => (
-                    <DropdownItem label={dropdownItem.label} href={dropdownItem.href} key={dropdownIndex} active={dropdownItem.isActive ?? false} />
+                    <DropdownItem label={dropdownItem.label} iconName={dropdownItem.icon} href={dropdownItem.href} key={dropdownIndex} active={dropdownItem.isActive ?? false} />
                 ))}
             </DropdownMenu>
         </Dropdown>

@@ -14,6 +14,7 @@ import { DropdownHeader } from "./dropdown/DropdownHeader";
 import { EmptyState } from "./EmptyState";
 import { Dropdown } from "./dropdown/Dropdown";
 import { Logo } from "./Logo";
+import { Icon } from "./Icon";
 export interface NavBarProps {
     /**
      * User is logged?
@@ -176,7 +177,7 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                             {showNotifs && (
                                                 <Dropdown addClass="navbar-option d-none d-lg-flex">
                                                     <a className="navbar-option--link" data-toggle="dropdown" role="button" href="#">
-                                                        <span className="icon icon-notifications has-dot" title="" data-toggle="tooltip" data-content="" data-original-title="Notifications" />
+                                                        <Icon name="notifications" dataToggle="tooltip" dataOriginalTitle="Notifications" />
                                                     </a>
                                                     <DropdownMenu direction="right" addClass="dropdown-menu-medium">
                                                         <EmptyState iconTitle="notifications-none" title="You've caught up!" text="There is no new notification yet." labelLink="Manage notifications" bordered={false} spacious={true} />
@@ -185,8 +186,8 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                             )}
                                             {showMessages && (
                                                 <div className="navbar-option">
-                                                    <a className="navbar-option--link" href="#" data-toggle="modal" data-target="#messagesModal">
-                                                        <span className="icon icon-comment" title="" data-toggle="tooltip" data-original-title="Messages" />
+                                                    <a className="navbar-option--link" href="#" data-toggle="aside" data-target="#aside-private-messages">
+                                                        <Icon name="comment" addClass="has-dot" dataToggle="tooltip" dataOriginalTitle="Messages" />
                                                     </a>
                                                 </div>
                                             )}

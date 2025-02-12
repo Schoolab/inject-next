@@ -2,36 +2,44 @@ import React from "react";
 import { Icon } from "../Icon";
 import { Avatar } from "../avatars/Avatar";
 import { ItemList } from "../items/ItemList";
+import { Aside } from "./Aside";
+import { AsideHeader } from "./AsideHeader";
+import { AsideBody } from "./AsideBody";
 
-interface AsidePrivateMessagesProps {}
+interface AsidePrivateMessagesProps {
+    show?: boolean;
+}
 
-export const AsidePrivateMessages = ({}: AsidePrivateMessagesProps) => {
+export const AsidePrivateMessages = ({
+    show = false,
+}: AsidePrivateMessagesProps) => {
+    let tabClass = [];   
+    !show && tabClass.push("d-none");
+
     return (
-        <aside className="application-aside is-small">
+        <Aside id="aside-private-messages" size="small" addClass={tabClass.join(" ")}>
             <div className="aside-content-container">
-                <div className="aside-header">
-                    <h3 className="aside-title line-clamp-1">
-                        <span className="text-truncate">Messages</span>
-                    </h3>
-                    <div className="aside-actions gap-xs">
-                        <button className="btn btn-default btn-sm text-ai" role="button">
-                            <Icon name="plus-circle" />
-                            <span>New chat</span>
-                        </button>
-                        <button className="btn btn-transparent border-0 p-2xs text-muted close-aside" type="button" data-dismiss="aside" aria-label="Close">
-                            <span className="icon icon-close is-24px" aria-hidden="true" />
-                        </button>
-                    </div>
-                </div>
-                <div className="px-xl pt-xl pb-none border-none">
-                    <form className="w-100">
+                <AsideHeader
+                    title="Messages"
+                    showClose={false}
+                    buttons={[
+                        {
+                            label: "New chat",
+                            iconStartName: "plus-circle",
+                            type: "default",
+                            size: "sm",
+                        },
+                    ]}
+                />
+
+                <AsideBody addClass="p-none">
+                    <form className="px-xl pt-xl pb-xs w-100">
                         <div className="form-group mb-0 w-100">
                             <label className="sr-only" htmlFor="searchMessages">Search messages</label>
                             <input className="form-control w-100" id="searchMessages" type="text" placeholder="Search for messages or users…" />
                         </div>
                     </form>
-                </div>
-                <div className="aside-body px-none pt-sm pb-none">
+
                     <ItemList
                         type="project"
                         label="Healthify" 
@@ -69,8 +77,8 @@ export const AsidePrivateMessages = ({}: AsidePrivateMessagesProps) => {
                         label="Pierre Lemeteil" 
                         caption="No messages…"
                     />
-                </div>
+                </AsideBody>
             </div>
-        </aside>
+        </Aside>
     );
 };

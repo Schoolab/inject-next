@@ -1,7 +1,7 @@
 import React, { CSSProperties, useState } from "react";
 import { Icon } from "../Icon";
 import { NavTab } from "@/app/components/nav-tabs/NavTab";
-import { Button } from "@/app/components/Button";
+import { Button, ButtonProps } from "@/app/components/Button";
 import { Pagination, PaginationProps } from "@/app/components/Pagination";
 
 type ItemType = {
@@ -27,6 +27,7 @@ interface AsideHeaderProps {
     pagination?: PaginationProps;
     showNewTab?: boolean;
     showClose?: boolean;
+    buttons?: ButtonProps[];
     addClass?: string;
     style?: CSSProperties;
 }
@@ -39,6 +40,7 @@ export const AsideHeader = ({
     pagination,
     showNewTab = false,
     showClose = true,
+    buttons,
     ...props
 }: AsideHeaderProps) => {
     let classTab = ["aside-header"];
@@ -55,8 +57,11 @@ export const AsideHeader = ({
 
             { pagination && <Pagination className="aside-pagination" {...pagination} /> }
 
-            {(showNewTab || showClose) && (
+            {(showNewTab || showClose || buttons) && (
                 <div className="aside-actions">
+                    {buttons && buttons.map((button, index) => (
+                        <Button key={index} {...button} />
+                    ))}
                     {showNewTab && (
                         <Button
                             type="transparent"

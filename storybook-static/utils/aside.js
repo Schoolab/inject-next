@@ -4,7 +4,7 @@ export const aside = () => {
             index: 0,
             // currentPathname : new URL(window.location.href).pathname,
             currentPathname : new URL(window.location.href).searchParams.get('id'),
-            aside : $( ".application-aside" ),
+            aside : $( ".application-aside:not([id])" ),
             asideContent: $( ".aside-content-container" ),
             btnClose :  $( ".close-aside" ),
             btnContent : $( ".aside-buttons .btn" ),            

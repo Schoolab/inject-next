@@ -5,12 +5,14 @@ interface AsideProps {
     addClass?: string;
     children?: React.ReactNode;
     style?: CSSProperties;
+    id?: string;
 }
 
 export const Aside = ({
     size,
     addClass,
     children,
+    id,
     style,
     ...props
 }: AsideProps) => {
@@ -20,7 +22,7 @@ export const Aside = ({
     addClass && classTab.push(addClass);
 
     return (
-        <aside className={classTab.join(" ")} style={style} {...props}>
+        <aside id={id} className={classTab.join(" ")} style={style} {...props}>
             <div className="aside-content-container">
                 {children}
             </div>

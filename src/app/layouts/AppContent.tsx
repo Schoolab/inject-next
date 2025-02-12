@@ -6,6 +6,7 @@ import { SubNav } from "../components/page-header/SubNav";
 import { Stepper } from "../components/page-header/Stepper";
 import { Footer } from "../components/Footer";
 import { PaginationProps } from "../components/Pagination";
+import { Placeholder } from "../components/Placeholder";
 type BreadcrumbType = {
     label: string;
     href?: string;
@@ -63,6 +64,9 @@ interface AppContentProps {
     subnav?: SubnavType[];
 
     showStepper?: boolean;
+
+    showFooter?: boolean;
+
     addClass?: string;
 }
 export const AppContent = (
@@ -92,6 +96,9 @@ export const AppContent = (
         subnav,
 
         showStepper= false,
+
+        showFooter = true,
+        
         addClass,
     }: AppContentProps
 ) => {
@@ -144,9 +151,18 @@ export const AppContent = (
             }
        
             <div id="appMainContainer" className={appMainContainerClass.join(" ")}>
-                {children}
+                {
+                    children ?
+                        children
+                    :
+                        <div className="d-flex flex-column gap-xl">
+                            <Placeholder height="320px" />
+                            <Placeholder height="256px" />
+                            <Placeholder height="128px" />
+                        </div>
+                }
             </div>
-            <Footer addClass={addClass} />
+            { showFooter && <Footer addClass={addClass} /> }
         </main>
     );
 };

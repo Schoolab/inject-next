@@ -5,6 +5,9 @@ import { Navbar } from "../components/NavBar";
 import { ShortcutBar } from "../components/Shortcutbar/ShortcutBar";
 import { SidebarManage } from "../components/sidebar/SidebarManage";
 import { SidebarAdmin } from "../components/sidebar/SidebarAdmin";
+import { AsidePrivateMessages } from "../components/asides/AsidePrivateMessages";
+import { Placeholder } from "../components/Placeholder";
+import { asideToggle } from "../../../public/utils/asideToggle";
 // import { select } from "../../../public/utils/select";
 
 interface LayoutProps {
@@ -12,9 +15,10 @@ interface LayoutProps {
     showNavbar?: boolean;
     shortcutBarExpanded?: boolean;
     hub?: boolean;
-    sideBar?: "Admin" | "Manage";
+    sideBar?: "None" | "Admin" | "Manage";
     theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
     showShortcutbar?: boolean;
+    showPrivateMessages?: boolean;
 }
 
 export const Layout = (
@@ -29,11 +33,13 @@ export const Layout = (
         shortcutBarExpanded,
 
         sideBar,
+        showPrivateMessages = true,
     }: LayoutProps
 ) => {
-    // useEffect(() => {
-    //     select();
-    // }, []);
+    useEffect(() => {
+        asideToggle();
+        // select();
+    }, []);
     let appContainerClass = "application-container";
     sideBar === "Admin" && (appContainerClass = "application-container pb-0");
     return (
@@ -44,7 +50,17 @@ export const Layout = (
                 {showShortcutbar && <ShortcutBar isExpanded={shortcutBarExpanded} />}
                 {sideBar && sideBar === "Manage" && <SidebarManage />}
                 {sideBar && sideBar === "Admin" && <SidebarAdmin />}
-                {children}
+                {
+                    children ?
+                        children
+                    :
+                        <div className="d-flex flex-column gap-xl flex-fill p-xl">
+                            <Placeholder height="320px" />
+                            <Placeholder height="256px" />
+                            <Placeholder height="128px" />
+                        </div>
+                }
+                {showPrivateMessages && <AsidePrivateMessages show={false} />}
             </div>
 
         </div>
