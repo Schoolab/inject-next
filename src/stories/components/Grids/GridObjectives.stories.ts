@@ -3,7 +3,7 @@ import { GridObjectives } from "@/app/components/grids/GridObjectives";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-    title: "Components/Grid/Objectives",
+    title: "Components/Grids/Objectives",
     component: GridObjectives,
     parameters: {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout

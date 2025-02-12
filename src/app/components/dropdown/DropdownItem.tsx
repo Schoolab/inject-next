@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import { Icon } from "@/app/components/Icon";
 import { Notif } from "@/app/components/badges/notifs/Notif";
 
-interface DropdownItemProps {
+export interface DropdownItemProps {
     children?: ReactNode;
     type?: "interactive" | "danger" | "ai";
     iconName?: string;

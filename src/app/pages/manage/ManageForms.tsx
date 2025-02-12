@@ -17,7 +17,7 @@ import { Section } from "@/app/components/Section";
 import { FormFieldSet } from "@/app/forms/FormFieldSet";
 import { FormOption } from "@/app/forms/FormOption";
 import { LangSwitch } from "@/app/components/LangSwitch";
-import ConditionalFormGroup from "@/app/forms/ConditionalFormGroup";
+import FormConditional from "@/app/forms/FormConditional";
 
 export const ManageForms = () => {
     return (
@@ -316,7 +316,7 @@ export const ManageForms = () => {
                                     </div> */}
                                 </FormFieldSet>
                                 <FormFieldSet id="briefs" legend="Briefs">
-                                    <ConditionalFormGroup
+                                    <FormConditional
                                         id="participants-brief"
                                         label="Brief for participants"
                                         caption="This will appear on the program dashboard."
@@ -327,9 +327,9 @@ export const ManageForms = () => {
                                         <FormGroup id="participants-brief" label="Brief for participants" hint="Write a welcoming message for participants and present the program and program managers." addClass="bg-highlight rounded p-md">
                                             <FormTextarea id="participants-brief" rows={4} defaultValue={""} />
                                         </FormGroup>
-                                    </ConditionalFormGroup>
+                                    </FormConditional>
 
-                                    <ConditionalFormGroup
+                                    <FormConditional
                                         id="experts-brief"
                                         label="Brief for experts"
                                         caption="This will appear on the experts space only."
@@ -339,9 +339,9 @@ export const ManageForms = () => {
                                         <FormGroup id="experts-brief" label="Brief for experts" hint="Write a welcoming message for experts and explain the expert role." addClass="bg-highlight rounded p-md">
                                             <FormTextarea id="experts-brief" rows={4} defaultValue={""} />
                                         </FormGroup>
-                                    </ConditionalFormGroup>
+                                    </FormConditional>
 
-                                    <ConditionalFormGroup
+                                    <FormConditional
                                         id="juries-brief"
                                         label="Brief for juries"
                                         caption="This will appear on the jury members dashboard only."
@@ -351,7 +351,7 @@ export const ManageForms = () => {
                                         <FormGroup id="juries-brief" label="Brief for jury members" hint="Write a welcoming message for jury members and explain the jury role." addClass="bg-highlight rounded p-md">
                                             <FormTextarea id="juries-brief" rows={4} defaultValue={""} />
                                         </FormGroup>
-                                    </ConditionalFormGroup>
+                                    </FormConditional>
                                 </FormFieldSet>
                                 <Alert type="info" icon="information" text="Only people for whom the brief is intended can see it" />
                             </div>

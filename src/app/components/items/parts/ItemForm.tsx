@@ -5,6 +5,7 @@ import { FormInput } from "@/app/forms/FormInput";
 import { FormOption } from "@/app/forms/FormOption";
 import { FormSelect } from "@/app/forms/FormSelect";
 import { Button } from "@/app/components/Button";
+import { FormOptions } from "@/app/forms/FormOptions";
 
 export interface ItemFormProps {
   addClass?: string;
@@ -69,6 +70,18 @@ export const ItemForm = ({ addClass, style, ...props }: ItemFormProps) => {
                 </FormGroup>
                 {/* Preview */}
             </div>
+          </FormGroup>
+          <FormGroup id="choices" label="Choices">
+            <FormOptions
+                id="choices"
+                placeholders="Option value here..."
+                deletable={true}
+                options={[
+                    { id: "option1", label: "Option #1", value: "Option #1" },
+                    { id: "option2", label: "Option #2", value: "Option #2" },
+                    { id: "option3", label: "Option #3" },
+                ]}
+            />
           </FormGroup>
           <FormGroup id="text_max_length" label="Text max length" hint="Leave empty for no limit">
             <FormInput

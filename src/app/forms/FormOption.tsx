@@ -4,10 +4,12 @@ import { Sdg } from "@/app/components/Sdg";
 
 interface FormOptionProps {
     type: "checkbox" | "radio" | "switch";
+    hideControl?: boolean;
     id?: string;
     name?: string;
     label: string;
     caption?: string | React.ReactNode;
+    image?: string;
     icon?: string;
     sdg?: string;
     value?: string;
@@ -24,10 +26,12 @@ interface FormOptionProps {
 export const FormOption = (
     {
         type,
+        hideControl,
         id,
         name = "option",
         label,
         caption,
+        image,
         icon,
         sdg,
         value,
@@ -42,14 +46,16 @@ export const FormOption = (
     }: FormOptionProps
 ) => {
     let classTab = ["custom-control"];
-    addClass && classTab.push(addClass);
     type === "checkbox" && classTab.push("custom-checkbox");
     type === "radio" && classTab.push("custom-radio");
     type === "switch" && classTab.push("custom-switch");
     card && classTab.push("custom-control-card");
+    hideControl && classTab.push("custom-control-hidden");
+    addClass && classTab.push(addClass);
 
     let labelClassTab = ["custom-control-label text-nowrap d-flex column-gap-xs"];
     labelClass && labelClassTab.push(labelClass);
+    image && labelClassTab.push("flex-column gap-xs");
 
     return (
         <div className={classTab.join(" ")} {...props}>
@@ -66,6 +72,9 @@ export const FormOption = (
             />
 
             <label className={labelClassTab.join(" ")} htmlFor={'option-' + id} aria-describedby={'caption-' + id}>
+                { image && <picture className="border rounded-sm">
+                    <img role="presentation" src={image} alt={label} />
+                </picture> }
                 { icon && <Icon name={icon} size="sm" /> }
                 { sdg && <Sdg sdg={sdg} size="24" /> }
                 <span>{label}</span>

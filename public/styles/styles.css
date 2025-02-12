@@ -48,33 +48,33 @@ pre {
 
 .rating div.star,
 .rating span.star {
-    font-family: Font Awesome\ 5 Free;
+    /* font-family: Font Awesome\ 5 Free; */
     font-size: 15px;
 }
 
 .rating div.star:before,
 .rating span.star:before {
-    content: "\f005";
+    /* content: "\f005"; */
    
 }
 
 
 .rating div.star-full,
 .rating span.star-full {
-    font-family: Font Awesome\ 5 Free;
+    /* font-family: Font Awesome\ 5 Free; */
     font-weight: 900;
     font-size: 15px;
 }
 
 .rating div.star-empty,
 .rating span.star-empty {
-    font-family: Font Awesome\ 5 Free;
+    /* font-family: Font Awesome\ 5 Free; */
     font-weight: 400
 }
 
 .rating div.star-empty:before,
 .rating span.star-empty:before {
-    content: "\f005"
+    /* content: "\f005" */
 }
 
 /* .nav-main .nav-link[data-toggle=collapse]::after {
