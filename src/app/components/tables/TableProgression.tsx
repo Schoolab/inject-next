@@ -1,7 +1,7 @@
 import React from "react";
-import { TableElementViews } from "./elements/TableElementViews";
-import { TableElementFilters } from "./elements/TableElementFilters";
-import { TableElementSkewed } from "./elements/TableElementSkewed";
+import { TableElementViews } from "@/app/components/tables/elements/TableElementViews";
+import { TableElementFilters } from "@/app/components/tables/elements/TableElementFilters";
+import { TableElementSkewed } from "@/app/components/tables/elements/TableElementSkewed";
 
 export interface TableProgressionProps {}
 

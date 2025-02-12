@@ -1,10 +1,10 @@
 import React, { CSSProperties } from "react";
-import { Card } from "./Card";
-import { CardInfos } from "./CardInfos";
-import { CardBanner } from "./CardBanner";
-import { CardImage } from "./CardImage";
-import { Tag } from "../badges/tags/Tag";
-import { Icon } from "../Icon";
+import { Card } from "@/app/components/cards/Card";
+import { CardInfos } from "@/app/components/cards/CardInfos";
+import { CardBanner } from "@/app/components/cards/CardBanner";
+import { CardImage } from "@/app/components/cards/CardImage";
+import { Tag } from "@/app/components/badges/tags/Tag";
+import { Icon } from "@/app/components/Icon";
 import { CardActions } from "./CardActions";
 
 type StartType = {

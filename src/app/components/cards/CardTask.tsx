@@ -1,5 +1,5 @@
 import React from "react";
-import { CardCollapse } from "./CardCollapse";
+import { CardCollapse } from "@/app/components/cards/CardCollapse";
 
 interface CardTaskProps {}
 

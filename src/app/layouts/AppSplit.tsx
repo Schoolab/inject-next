@@ -1,7 +1,7 @@
 import React, { CSSProperties } from "react";
-import { Theme } from "../components/Theme";
-import { Placeholder } from "../components/Placeholder";
-import { Logo } from "../components/Logo";
+import { Theme } from "@/app/components/Theme";
+import { Placeholder } from "@/app/content/Placeholder";
+import { Logo } from "@/app/components/Logo";
 
 export interface AppSplitProps {
   theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";

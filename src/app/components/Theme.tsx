@@ -1,7 +1,4 @@
 export interface ThemeProps {
-    /**
-     * Root css theme
-     */
     themeName?: "Inject" | "Schoolab" | "Moho" | "Raiselab";
 }
 

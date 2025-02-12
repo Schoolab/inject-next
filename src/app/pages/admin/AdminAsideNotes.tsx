@@ -1,11 +1,11 @@
 import React from "react";
 import { useEffect } from "react";
-import { Layout } from "../../layouts/layout";
+import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { FiltersDefault } from "@/app/components/filters/FiltersDefault";
-import { aside } from "../../../../public/utils/aside";
 import { TableElementAsideNotes } from "@/app/components/tables/elements/TableElementAsideNotes";
 import { AsideNotes } from "@/app/components/asides/AsideNotes";
+import { aside } from "../../../../public/utils/aside";
 
 export const AdminAsideNotes = () => {
     useEffect(() => {

@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { Aside } from "./Aside";
-import { AsideHeader } from "./AsideHeader";
-import { PaginationProps } from "../Pagination";
-import { AsideBody } from "./AsideBody";
-import { Button } from "../Button";
-import { Icon } from "../Icon";
-import { DataList } from "../data/DataList";
-import { DataListItem } from "../data/DataListItem";
-import { Tag } from "../badges/tags/Tag";
-import { Badges } from "../badges/Badges";
-import { Avatar } from "../avatars/Avatar";
-import { Stack } from "../avatars/Stack";
-import { FormGroup } from "../forms/FormGroup";
-import { FormTextarea } from "../forms/FormTextarea";
-import { FormInput } from "../forms/FormInput";
-import { ItemResource } from "../items/ItemResource";
+import { Aside } from "@/app/components/asides/Aside";
+import { AsideHeader } from "@/app/components/asides/AsideHeader";
+import { PaginationProps } from "@/app/components/Pagination";
+import { AsideBody } from "@/app/components/asides/AsideBody";
+import { Button } from "@/app/components/Button";
+import { Icon } from "@/app/components/Icon";
+import { DataList } from "@/app/components/data/DataList";
+import { DataListItem } from "@/app/components/data/DataListItem";
+import { Tag } from "@/app/components/badges/tags/Tag";
+import { Badges } from "@/app/components/badges/Badges";
+import { Avatar } from "@/app/components/avatars/Avatar";
+import { Stack } from "@/app/components/avatars/Stack";
+import { FormGroup } from "@/app/forms/FormGroup";
+import { FormTextarea } from "@/app/forms/FormTextarea";
+import { FormInput } from "@/app/forms/FormInput";
+import { ItemResource } from "@/app/components/items/ItemResource";
 
 interface AsideDataProps {
     initialTab?: string;

@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 
-import { Dropdown } from "./Dropdown";
-import { DropdownMenu } from "./DropdownMenu";
-import { DropdownItem } from "./DropdownItem";
-import { DropdownDivider } from "./DropdownDivider";
+import { Dropdown } from "@/app/components/dropdown/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
 
 import { nestedDropdown } from "../../../../public/utils/nestedDropdown";
-import { Avatar } from "../avatars/Avatar";
-import { Role } from "../badges/roles/Role";
-import { DropdownNested } from "./DropdownNested";
-import { DropdownHeader } from "./DropdownHeader";
+import { Avatar } from "@/app/components/avatars/Avatar";
+import { Role } from "@/app/components/badges/roles/Role";
+import { DropdownNested } from "@/app/components/dropdown/DropdownNested";
+import { DropdownHeader } from "@/app/components/dropdown/DropdownHeader";
 
 interface DropdownUserProps {}
 

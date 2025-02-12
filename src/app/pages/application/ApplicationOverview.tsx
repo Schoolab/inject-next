@@ -1,11 +1,11 @@
 import React from "react";
-import { Layout } from "../../layouts/layout";
+import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { FormInput } from "@/app/components/forms/FormInput";
+import { FormInput } from "@/app/forms/FormInput";
 import { Icon } from "@/app/components/Icon";
 import { Section } from "@/app/components/Section";
-import { FormGroup } from "@/app/components/forms/FormGroup";
-import { FormInputWrapper } from "@/app/components/forms/FormInputWrapper";
+import { FormGroup } from "@/app/forms/FormGroup";
+import { FormInputWrapper } from "@/app/forms/FormInputWrapper";
 import { CardProject } from "@/app/components/cards/CardProject";
 
 export const ApplicationOverview = () => {

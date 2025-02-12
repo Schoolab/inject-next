@@ -1,18 +1,18 @@
 import React, { CSSProperties } from "react";
-import { Card } from "./Card";
-import { CardInfos } from "./CardInfos";
-import { ItemResource } from "../items/ItemResource";
-import { Icon } from "../Icon";
-import { Dropdown } from "../dropdown/Dropdown";
-import { DropdownMenu } from "../dropdown/DropdownMenu";
-import { DropdownItem } from "../dropdown/DropdownItem";
-import { DropdownDivider } from "../dropdown/DropdownDivider";
+import { Card } from "@/app/components/cards/Card";
+import { CardInfos } from "@/app/components/cards/CardInfos";
+import { ItemResource } from "@/app/components/items/ItemResource";
+import { Icon } from "@/app/components/Icon";
+import { Dropdown } from "@/app/components/dropdown/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
 import DOMPurify from 'dompurify';
-import { Avatar } from "../avatars/Avatar";
-import { Role } from "../badges/roles/Role";
-import { Button } from "../Button";
-import { Tag } from "../badges/tags/Tag";
-import { Notif } from "../badges/notifs/Notif";
+import { Avatar } from "@/app/components/avatars/Avatar";
+import { Role } from "@/app/components/badges/roles/Role";
+import { Button } from "@/app/components/Button";
+import { Tag } from "@/app/components/badges/tags/Tag";
+import { Notif } from "@/app/components/badges/notifs/Notif";
 
 type TagType = {
     label: string;

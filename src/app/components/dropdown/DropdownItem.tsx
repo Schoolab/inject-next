@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
-import { Icon } from "../Icon";
-import { Notif } from "../badges/notifs/Notif";
+import { Icon } from "@/app/components/Icon";
+import { Notif } from "@/app/components/badges/notifs/Notif";
 
 interface DropdownItemProps {
     children?: ReactNode;

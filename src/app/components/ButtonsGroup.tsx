@@ -1,5 +1,5 @@
 import React, { CSSProperties } from "react";
-import { Placeholder } from "./Placeholder";
+import { Placeholder } from "@/app/content/Placeholder";
 
 export interface ButtonsGroupProps {
     /**

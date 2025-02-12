@@ -1,5 +1,6 @@
 import React from "react";
-import { Alert } from "../Alert";
+import { Alert } from "@/app/components/Alert";
+
 export interface ModalExternalProgramProps {}
 
 export const ModalExternalProgram = ({}: ModalExternalProgramProps) => {

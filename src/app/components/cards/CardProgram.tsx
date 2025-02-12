@@ -1,13 +1,13 @@
 import React, { CSSProperties } from "react";
-import { Card } from "./Card";
-import { CardInfos } from "./CardInfos";
-import { Icon } from "../Icon";
-import { Tag } from "../badges/tags/Tag";
-import { Badges } from "../badges/Badges";
-import { Button } from "../Button";
-import { CardActions } from "./CardActions";
-import { CardBanner } from "./CardBanner";
-import { CardImage } from "./CardImage";
+import { Card } from "@/app/components/cards/Card";
+import { CardInfos } from "@/app/components/cards/CardInfos";
+import { Icon } from "@/app/components/Icon";
+import { Tag } from "@/app/components/badges/tags/Tag";
+import { Badges } from "@/app/components/badges/Badges";
+import { Button } from "@/app/components/Button";
+import { CardActions } from "@/app/components/cards/CardActions";
+import { CardBanner } from "@/app/components/cards/CardBanner";
+import { CardImage } from "@/app/components/cards/CardImage";
 
 type CategoryType = {
     label: string;

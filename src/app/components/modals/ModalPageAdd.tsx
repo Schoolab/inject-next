@@ -1,9 +1,9 @@
 import React from "react";
-import { Button } from "../Button";
-import { FormFieldSet } from "../forms/FormFieldSet";
-import { LangSwitch } from "../LangSwitch";
-import { FormGroup } from "../forms/FormGroup";
-import { FormInput } from "../forms/FormInput";
+import { Button } from "@/app/components/Button";
+import { FormFieldSet } from "@/app/forms/FormFieldSet";
+import { LangSwitch } from "@/app/components/LangSwitch";
+import { FormGroup } from "@/app/forms/FormGroup";
+import { FormInput } from "@/app/forms/FormInput";
 
 export interface ModalPageAddProps {}
 

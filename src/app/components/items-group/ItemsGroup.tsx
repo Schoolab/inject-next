@@ -1,6 +1,6 @@
 import { CSSProperties } from "react";
-import { Placeholder } from "../Placeholder";
-import { ItemsGroupHeader } from "./ItemsGroupHeader";
+import { Placeholder } from "@/app/content/Placeholder";
+import { ItemsGroupHeader } from "@/app/components/items-group/ItemsGroupHeader";
 
 export interface ItemsGroupProps {
     children?: React.ReactNode;

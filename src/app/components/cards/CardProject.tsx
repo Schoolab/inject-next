@@ -1,12 +1,12 @@
 import React, { CSSProperties } from "react";
-import { Tag } from "../badges/tags/Tag";
-import { Icon } from "../Icon";
-import { Card } from "./Card";
-import { CardInfos } from "./CardInfos";
-import { CardActions } from "./CardActions";
-import { Badges } from "../badges/Badges";
-import { CardBanner } from "./CardBanner";
-import { CardImage } from "./CardImage";
+import { Tag } from "@/app/components/badges/tags/Tag";
+import { Icon } from "@/app/components/Icon";
+import { Card } from "@/app/components/cards/Card";
+import { CardInfos } from "@/app/components/cards/CardInfos";
+import { CardActions } from "@/app/components/cards/CardActions";
+import { Badges } from "@/app/components/badges/Badges";
+import { CardBanner } from "@/app/components/cards/CardBanner";
+import { CardImage } from "@/app/components/cards/CardImage";
 
 type TagType = {
     label: string;

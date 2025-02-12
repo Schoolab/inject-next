@@ -1,10 +1,10 @@
 import React from "react";
-import { Layout } from "../../../layouts/layout";
+import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Stepper, StepType } from "@/app/components/Stepper";
 import { Section } from "@/app/components/Section";
-import { FormFieldSet } from "@/app/components/forms/FormFieldSet";
-import { FormOption } from "@/app/components/forms/FormOption";
+import { FormFieldSet } from "@/app/forms/FormFieldSet";
+import { FormOption } from "@/app/forms/FormOption";
 import { Alert } from "@/app/components/Alert";
 import { Button } from "@/app/components/Button";
 

@@ -1,10 +1,10 @@
 import React from "react";
-import { Icon } from "../Icon";
-import { Avatar } from "../avatars/Avatar";
-import { ItemList } from "../items/ItemList";
-import { Aside } from "./Aside";
-import { AsideHeader } from "./AsideHeader";
-import { AsideBody } from "./AsideBody";
+import { Icon } from "@/app/components/Icon";
+import { Avatar } from "@/app/components/avatars/Avatar";
+import { ItemList } from "@/app/components/items/ItemList";
+import { Aside } from "@/app/components/asides/Aside";
+import { AsideHeader } from "@/app/components/asides/AsideHeader";
+import { AsideBody } from "@/app/components/asides/AsideBody";
 
 interface AsidePrivateMessagesProps {
     show?: boolean;

@@ -1,7 +1,6 @@
 import React, { CSSProperties } from "react";
-import { ProgressBar } from "./ProgressBar";
-import Link from "next/link";
-import { Icon } from "./Icon";
+import { ProgressBar } from "@/app/components/ProgressBar";
+import { Icon } from "@/app/components/Icon";
 
 export interface StepType {
   title: string;

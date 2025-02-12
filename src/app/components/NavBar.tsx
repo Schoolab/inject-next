@@ -2,19 +2,20 @@ import React from "react";
 import { useEffect } from "react";
 import { tooltips } from "../../../public/utils/tooltips";
 import { nestedDropdown } from "../../../public/utils/nestedDropdown";
-import { Button } from "./Button";
-import { Theme } from "./Theme";
-import { Avatar } from "./avatars/Avatar";
-import { DropdownMenu } from "./dropdown/DropdownMenu";
-import { DropdownDivider } from "./dropdown/DropdownDivider";
-import { DropdownItem } from "./dropdown/DropdownItem";
-import { Role } from "./badges/roles/Role";
-import { DropdownNested } from "./dropdown/DropdownNested";
-import { DropdownHeader } from "./dropdown/DropdownHeader";
-import { EmptyState } from "./EmptyState";
-import { Dropdown } from "./dropdown/Dropdown";
-import { Logo } from "./Logo";
-import { Icon } from "./Icon";
+import { Button } from "@/app/components/Button";
+import { Theme } from "@/app/components/Theme";
+import { Avatar } from "@/app/components/avatars/Avatar";
+import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
+import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { Role } from "@/app/components/badges/roles/Role";
+import { DropdownNested } from "@/app/components/dropdown/DropdownNested";
+import { DropdownHeader } from "@/app/components/dropdown/DropdownHeader";
+import { EmptyState } from "@/app/components/EmptyState";
+import { Dropdown } from "@/app/components/dropdown/Dropdown";
+import { Logo } from "@/app/components/Logo";
+import { Icon } from "@/app/components/Icon";
+
 export interface NavBarProps {
     /**
      * User is logged?

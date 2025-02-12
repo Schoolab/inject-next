@@ -1,9 +1,9 @@
 import React, { CSSProperties } from "react";
 import { Button } from "@/app/components/Button";
-import { Dropdown } from "../dropdown/Dropdown";
-import { DropdownMenu } from "../dropdown/DropdownMenu";
-import { DropdownItem } from "../dropdown/DropdownItem";
-import { DropdownDivider } from "../dropdown/DropdownDivider";
+import { Dropdown } from "@/app/components/dropdown/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
 
 type OptionType = {
   label?: string;

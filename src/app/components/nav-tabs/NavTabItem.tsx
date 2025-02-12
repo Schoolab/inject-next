@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from "../Icon";
+import { Icon } from "@/app/components/Icon";
 import { Notif } from "@/app/components/badges/notifs/Notif";
 
 export interface NavTabItemProps {

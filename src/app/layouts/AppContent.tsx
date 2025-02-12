@@ -1,12 +1,13 @@
 import React from "react";
 import { ReactNode } from "react";
-import { Breadcrumb } from "../components/page-header/Breadcrumb";
-import { Title } from "../components/page-header/Title";
-import { SubNav } from "../components/page-header/SubNav";
-import { Stepper } from "../components/page-header/Stepper";
-import { Footer } from "../components/Footer";
-import { PaginationProps } from "../components/Pagination";
-import { Placeholder } from "../components/Placeholder";
+import { Breadcrumb } from "@/app/components/page-header/Breadcrumb";
+import { Title } from "@/app/components/page-header/Title";
+import { SubNav } from "@/app/components/page-header/SubNav";
+import { Stepper } from "@/app/components/page-header/Stepper";
+import { Footer } from "@/app/components/Footer";
+import { PaginationProps } from "@/app/components/Pagination";
+import { Placeholder } from "@/app/content/Placeholder";
+
 type BreadcrumbType = {
     label: string;
     href?: string;

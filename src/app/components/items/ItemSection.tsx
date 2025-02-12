@@ -1,5 +1,5 @@
 import React, { CSSProperties } from "react";
-import { Avatar } from "../avatars/Avatar";
+import { Avatar } from "@/app/components/avatars/Avatar";
 
 export interface ItemSectionProps {
     label?: string; 

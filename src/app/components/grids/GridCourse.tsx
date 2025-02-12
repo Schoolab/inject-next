@@ -1,8 +1,8 @@
 import React from "react";
-import { ItemsGroup } from "../items-group/ItemsGroup";
-import { ItemsGroupHeader } from "../items-group/ItemsGroupHeader";
-import { ItemCapsule } from "../items/ItemCapsule";
-import { Button } from "../Button";
+import { ItemsGroup } from "@/app/components/items-group/ItemsGroup";
+import { ItemsGroupHeader } from "@/app/components/items-group/ItemsGroupHeader";
+import { ItemCapsule } from "@/app/components/items/ItemCapsule";
+import { Button } from "@/app/components/Button";
 
 type CapsuleType = {
     icon?: string;

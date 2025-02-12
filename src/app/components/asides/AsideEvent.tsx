@@ -1,10 +1,10 @@
 import React from "react";
-import { ItemResource } from "../items/ItemResource";
-import { CardEvent } from "../cards/CardEvent";
-import { MessageChat } from "../messages/MessageChat";
-import { AsideHeader } from "./AsideHeader";
-import { Message } from "../messages/Message";
-import { FormComposer } from "../forms/FormComposer";
+import { ItemResource } from "@/app/components/items/ItemResource";
+import { CardEvent } from "@/app/components/cards/CardEvent";
+import { MessageChat } from "@/app/components/messages/MessageChat";
+import { AsideHeader } from "@/app/components/asides/AsideHeader";
+import { Message } from "@/app/components/messages/Message";
+import { FormComposer } from "@/app/forms/FormComposer";
 
 interface AsideEventProps {}
 

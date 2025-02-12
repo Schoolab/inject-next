@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 
-import { Layout } from "../../layouts/layout";
+import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { AsideCapsules } from "@/app/components/asides/AsideCapsules";
 import { aside } from "../../../../public/utils/aside";

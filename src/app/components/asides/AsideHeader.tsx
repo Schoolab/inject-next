@@ -1,5 +1,5 @@
 import React, { CSSProperties, useState } from "react";
-import { Icon } from "../Icon";
+import { Icon } from "@/app/components/Icon";
 import { NavTab } from "@/app/components/nav-tabs/NavTab";
 import { Button, ButtonProps } from "@/app/components/Button";
 import { Pagination, PaginationProps } from "@/app/components/Pagination";

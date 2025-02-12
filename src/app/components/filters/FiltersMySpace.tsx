@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import { FilterDateRange } from "./FilterDateRange";
+import { FilterDateRange } from "@/app/components/filters/FilterDateRange";
 import { searchControl } from "../../../../public/utils/searchControl";
 import { tooltips } from "../../../../public/utils/tooltips";
 // import { dataFilters } from "../../../../public/utils/dataFilters";

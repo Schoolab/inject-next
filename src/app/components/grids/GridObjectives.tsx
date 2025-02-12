@@ -1,8 +1,8 @@
 import React from "react";
-import { ItemsGroup } from "../items-group/ItemsGroup";
-import { ItemsGroupHeader } from "../items-group/ItemsGroupHeader";
-import { ItemObjective } from "../items/ItemObjective";
-import { Button } from "../Button";
+import { ItemsGroup } from "@/app/components/items-group/ItemsGroup";
+import { ItemsGroupHeader } from "@/app/components/items-group/ItemsGroupHeader";
+import { ItemObjective } from "@/app/components/items/ItemObjective";
+import { Button } from "@/app/components/Button";
 
 type ObjectiveType = {
     icon?: string;

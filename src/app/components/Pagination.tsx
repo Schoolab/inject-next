@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Icon } from "./Icon";
+import { Icon } from "@/app/components/Icon";
 
 export type PaginationProps = {
     className?: string;

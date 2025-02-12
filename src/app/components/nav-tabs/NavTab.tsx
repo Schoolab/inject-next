@@ -1,10 +1,10 @@
 import React from "react";
 import { Dropdown } from "@/app/components/dropdown/Dropdown";
-import { DropdownMenu } from "../dropdown/DropdownMenu";
-import { DropdownItem } from "../dropdown/DropdownItem";
-import { Icon } from "../Icon";
-import { NavTabItem } from "./NavTabItem";
-import { NavTabDropdown } from "./NavTabDropdown";
+import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { Icon } from "@/app/components/Icon";
+import { NavTabItem } from "@/app/components/nav-tabs/NavTabItem";
+import { NavTabDropdown } from "@/app/components/nav-tabs/NavTabDropdown";
 
 type ItemType = {
     label: string;

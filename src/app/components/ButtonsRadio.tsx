@@ -1,5 +1,5 @@
 import React, { CSSProperties, useState } from "react";
-import { Icon } from "./Icon";
+import { Icon } from "@/app/components/Icon";
 
 type OptionType = {
     label: string;

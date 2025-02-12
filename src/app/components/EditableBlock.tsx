@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactNode } from "react";
-import { Icon } from "./Icon";
+import { Icon } from "@/app/components/Icon";
 
 interface EditableBlockProps {
     children?: ReactNode;

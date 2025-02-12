@@ -1,13 +1,13 @@
 import React from "react";
 import { ReactNode } from "react";
-import { Icon } from "../Icon";
-import { Progress } from "../Progress";
-import { Placeholder } from "../Placeholder";
-import { Card } from "./Card";
-import { CardInfos } from "./CardInfos";
-import { Tag } from "../badges/tags/Tag";
-import { Button } from "../Button";
-import { ProgressBar } from "../ProgressBar";
+import { Icon } from "@/app/components/Icon";
+import { Progress } from "@/app/components/Progress";
+import { Placeholder } from "@/app/content/Placeholder";
+import { Card } from "@/app/components/cards/Card";
+import { CardInfos } from "@/app/components/cards/CardInfos";
+import { Tag } from "@/app/components/badges/tags/Tag";
+import { Button } from "@/app/components/Button";
+import { ProgressBar } from "@/app/components/ProgressBar";
 import { Completed } from "@/stories/components/Progress.stories";
 
 interface CardObjectiveProps {

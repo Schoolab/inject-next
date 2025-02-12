@@ -1,8 +1,8 @@
 import React, { CSSProperties } from "react";
 import DOMPurify from 'dompurify';
 
-import { Button } from "./Button";
-import { Icon } from "./Icon";
+import { Button } from "@/app/components/Button";
+import { Icon } from "@/app/components/Icon";
 
 export interface AlertProps {
     /**

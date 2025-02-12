@@ -1,9 +1,9 @@
 import React from "react";
 import { ReactNode } from "react";
-import { Icon } from "../Icon";
-import { Progress } from "../Progress";
-import { Placeholder } from "../Placeholder";
-import { Card } from "./Card";
+import { Icon } from "@/app/components/Icon";
+import { Progress } from "@/app/components/Progress";
+import { Placeholder } from "@/app/content/Placeholder";
+import { Card } from "@/app/components/cards/Card";
 
 type MetaType = {
     label: string;

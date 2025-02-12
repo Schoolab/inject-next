@@ -1,7 +1,7 @@
 import React, { CSSProperties, useEffect } from "react";
-import { MessageBubble, MessageBubbleProps } from "./MessageBubble";
-import { Avatar } from "../avatars/Avatar";
-import { Role } from "../badges/roles/Role";
+import { MessageBubble, MessageBubbleProps } from "@/app/components/messages/MessageBubble";
+import { Avatar } from "@/app/components/avatars/Avatar";
+import { Role } from "@/app/components/badges/roles/Role";
 import { tooltips } from "../../../../public/utils/tooltips";
 
 type MetasType = {

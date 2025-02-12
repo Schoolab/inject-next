@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout } from "../../layouts/layout";
+import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { ItemSetupTask } from "@/app/components/items/ItemSetupTask";
 import { ProgressBar } from "@/app/components/ProgressBar";

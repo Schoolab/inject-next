@@ -1,14 +1,14 @@
 import React from "react";
-import { LangSwitch } from "../LangSwitch";
-import { ItemsGroup } from "../items-group/ItemsGroup";
-import { ItemsGroupHeader } from "../items-group/ItemsGroupHeader";
-import { ItemSection } from "../items/ItemSection";
-import { Button } from "../Button";
-import { FormGroup } from "../forms/FormGroup";
-import { FormInput } from "../forms/FormInput";
-import { FormTextarea } from "../forms/FormTextarea";
-import { ItemResource } from "../items/ItemResource";
-import { Alert } from "../Alert";
+import { LangSwitch } from "@/app/components/LangSwitch";
+import { ItemsGroup } from "@/app/components/items-group/ItemsGroup";
+import { ItemsGroupHeader } from "@/app/components/items-group/ItemsGroupHeader";
+import { ItemSection } from "@/app/components/items/ItemSection";
+import { Button } from "@/app/components/Button";
+import { FormGroup } from "@/app/forms/FormGroup";
+import { FormInput } from "@/app/forms/FormInput";
+import { FormTextarea } from "@/app/forms/FormTextarea";
+import { ItemResource } from "@/app/components/items/ItemResource";
+import { Alert } from "@/app/components/Alert";
 
 interface AsideEditPageProps {}
 

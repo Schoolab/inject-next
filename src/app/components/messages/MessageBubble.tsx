@@ -1,8 +1,8 @@
 import React, { CSSProperties } from "react";
-import { Button } from "../Button";
-import { Dropdown } from "../dropdown/Dropdown";
-import { DropdownMenu } from "../dropdown/DropdownMenu";
-import { DropdownItem } from "../dropdown/DropdownItem";
+import { Button } from "@/app/components/Button";
+import { Dropdown } from "@/app/components/dropdown/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
 
 type MessageBubbleOptions = {
   label: string;

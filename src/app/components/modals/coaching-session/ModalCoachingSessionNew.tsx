@@ -1,18 +1,18 @@
 import React from "react";
 import { Button } from "@/app/components/Button";
-import { FormGroup } from "@/app/components/forms/FormGroup";
-import { FormInput } from "@/app/components/forms/FormInput";
-import { FormSelect } from "@/app/components/forms/FormSelect";
-import { FormTextarea } from "@/app/components/forms/FormTextarea";
-import { FormInputWrapper } from "@/app/components/forms/FormInputWrapper";
+import { FormGroup } from "@/app/forms/FormGroup";
+import { FormInput } from "@/app/forms/FormInput";
+import { FormSelect } from "@/app/forms/FormSelect";
+import { FormTextarea } from "@/app/forms/FormTextarea";
+import { FormInputWrapper } from "@/app/forms/FormInputWrapper";
 import { Dropdown } from "@/app/components/dropdown/Dropdown";
 import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
 import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
 import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
 import { DropdownNested } from "@/app/components/dropdown/DropdownNested";
-import { FormFieldSet } from "@/app/components/forms/FormFieldSet";
-import { FormOption } from "@/app/components/forms/FormOption";
-import { ItemsGroup } from "../../items-group/ItemsGroup";
+import { FormFieldSet } from "@/app/forms/FormFieldSet";
+import { FormOption } from "@/app/forms/FormOption";
+import { ItemsGroup } from "@/app/components/items-group/ItemsGroup";
 
 export interface ModalCoachingSessionNewProps {}
 

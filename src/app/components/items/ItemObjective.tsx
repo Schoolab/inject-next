@@ -1,6 +1,6 @@
 import React, { CSSProperties } from "react";
-import { Icon } from "../Icon";
-import { Tag } from "../badges/tags/Tag";
+import { Icon } from "@/app/components/Icon";
+import { Tag } from "@/app/components/badges/tags/Tag";
 
 export interface ItemObjectiveProps {
     icon?: string;

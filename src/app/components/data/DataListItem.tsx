@@ -1,8 +1,8 @@
 import React, { CSSProperties, useEffect } from "react";
 import { ReactNode } from "react";
-import { DataListDetails } from "./DataListDetails";
+import { DataListDetails } from "@/app/components/data/DataListDetails";
 import { tooltips } from "../../../../public/utils/tooltips";
-import { Icon } from "../Icon";
+import { Icon } from "@/app/components/Icon";
 
 interface DataListItemProps {
     label: string | ReactNode;

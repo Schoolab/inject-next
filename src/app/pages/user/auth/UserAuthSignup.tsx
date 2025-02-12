@@ -1,10 +1,10 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { Button } from "@/app/components/Button";
-import { FormGroup } from "@/app/components/forms/FormGroup";
-import { FormInput } from "@/app/components/forms/FormInput";
+import { FormGroup } from "@/app/forms/FormGroup";
+import { FormInput } from "@/app/forms/FormInput";
 import { Theme } from "@/app/components/Theme";
-import { FormSelect } from "@/app/components/forms/FormSelect";
+import { FormSelect } from "@/app/forms/FormSelect";
 import { Logo } from "@/app/components/Logo";
 import { AppSplit, AppSplitProps } from "@/app/layouts/AppSplit";
 

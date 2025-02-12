@@ -1,25 +1,25 @@
 import React from "react";
 import { useEffect } from "react";
-import { Layout } from "../../../layouts/layout";
+import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { AsideEditPage } from "@/app/components/asides/AsideEditPage";
 import { aside } from "../../../../../public/utils/aside";
-import { SectionContent } from "../../../components/sections/SectionContent";
-import { SectionNumber } from "../../../components/sections/SectionNumber";
-import { SectionTimeline } from "../../../components/sections/SectionTimeline";
+import { SectionContent } from "@/app/components/sections/SectionContent";
+import { SectionNumber } from "@/app/components/sections/SectionNumber";
+import { SectionTimeline } from "@/app/components/sections/SectionTimeline";
 import { EditableBlock } from "@/app/components/EditableBlock";
 import { AddableBlock } from "@/app/components/AddableBlock";
-import { SectionContent2col } from "../../../components/sections/SectionContent2col";
-import { SectionHero } from "../../../components/sections/SectionHero";
+import { SectionContent2col } from "@/app/components/sections/SectionContent2col";
+import { SectionHero } from "@/app/components/sections/SectionHero";
 import { Button } from "@/app/components/Button";
 import { Add } from "@/stories/components/Modals/ModalPageAdd.stories";
-import { SectionVideo } from "../../../components/sections/SectionVideo";
-import { SectionCards } from "../../../components/sections/SectionCards";
-import { SectionTeam } from "../../../components/sections/SectionTeam";
-import { SectionGallery } from "../../../components/sections/SectionGallery";
-import { SectionTestimonial } from "../../../components/sections/SectionTestimonial";
-import { SectionColumns } from "../../../components/sections/SectionColumns";
-import { SectionCallToAction } from "../../../components/sections/SectionCallToAction";
+import { SectionVideo } from "@/app/components/sections/SectionVideo";
+import { SectionCards } from "@/app/components/sections/SectionCards";
+import { SectionTeam } from "@/app/components/sections/SectionTeam";
+import { SectionGallery } from "@/app/components/sections/SectionGallery";
+import { SectionTestimonial } from "@/app/components/sections/SectionTestimonial";
+import { SectionColumns } from "@/app/components/sections/SectionColumns";
+import { SectionCallToAction } from "@/app/components/sections/SectionCallToAction";
 
 export const ManagePagesEdit = () => {
     useEffect(() => {

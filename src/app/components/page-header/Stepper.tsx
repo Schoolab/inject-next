@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "../Button";
-import { Progress } from "../Progress";
+import { Button } from "@/app/components/Button";
+import { Progress } from "@/app/components/Progress";
 
 export interface StepperProps {}
 

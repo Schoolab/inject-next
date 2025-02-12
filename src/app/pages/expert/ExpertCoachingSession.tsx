@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import { Layout } from "../../layouts/layout";
+import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { AsideEvent } from "@/app/components/asides/AsideEvent";
 import { AsideNoteManager } from "@/app/components/asides/AsideNoteManager";

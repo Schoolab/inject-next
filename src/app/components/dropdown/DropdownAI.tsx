@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Dropdown } from "./Dropdown";
-import { DropdownMenu } from "./DropdownMenu";
-import { DropdownItem } from "./DropdownItem";
-import { DropdownDivider } from "./DropdownDivider";
-import { DropdownNested } from "./DropdownNested";
+import { Dropdown } from "@/app/components/dropdown/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
+import { DropdownNested } from "@/app/components/dropdown/DropdownNested";
 
 interface DropdownAIProps {}
 

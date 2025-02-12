@@ -1,23 +1,23 @@
 import React from "react";
-import { Layout } from "../../layouts/layout";
+import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Alert } from "@/app/components/Alert";
-import { FormGroup } from "@/app/components/forms/FormGroup";
-import { FormInput } from "@/app/components/forms/FormInput";
-import { FormInputWrapper } from "@/app/components/forms/FormInputWrapper";
+import { FormGroup } from "@/app/forms/FormGroup";
+import { FormInput } from "@/app/forms/FormInput";
+import { FormInputWrapper } from "@/app/forms/FormInputWrapper";
 import { Button } from "@/app/components/Button";
 import { Dropdown } from "@/app/components/dropdown/Dropdown";
 import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
 import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
 import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
-import { FormTextarea } from "@/app/components/forms/FormTextarea";
+import { FormTextarea } from "@/app/forms/FormTextarea";
 import { ItemResource } from "@/app/components/items/ItemResource";
 import { DropdownNested } from "@/app/components/dropdown/DropdownNested";
 import { Section } from "@/app/components/Section";
-import { FormFieldSet } from "@/app/components/forms/FormFieldSet";
-import { FormOption } from "@/app/components/forms/FormOption";
+import { FormFieldSet } from "@/app/forms/FormFieldSet";
+import { FormOption } from "@/app/forms/FormOption";
 import { LangSwitch } from "@/app/components/LangSwitch";
-import ConditionalFormGroup from "@/app/components/ConditionalFormGroup";
+import ConditionalFormGroup from "@/app/forms/ConditionalFormGroup";
 
 export const ManageForms = () => {
     return (

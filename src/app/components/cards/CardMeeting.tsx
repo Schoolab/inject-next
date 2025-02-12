@@ -1,17 +1,17 @@
 import React, { CSSProperties } from "react";
-import { Card } from "./Card";
-import { CardInfos } from "./CardInfos";
-import { Icon } from "../Icon";
-import { Tag } from "../badges/tags/Tag";
-import { Badges } from "../badges/Badges";
-import { Button } from "../Button";
-import { CardActions } from "./CardActions";
-import { Avatar } from "../avatars/Avatar";
-import { Role } from "../badges/roles/Role";
-import { DropdownMenu } from "../dropdown/DropdownMenu";
-import { DropdownItem } from "../dropdown/DropdownItem";
-import { Dropdown } from "../dropdown/Dropdown";
-import { DropdownDivider } from "../dropdown/DropdownDivider";
+import { Card } from "@/app/components/cards/Card";
+import { CardInfos } from "@/app/components/cards/CardInfos";
+import { Icon } from "@/app/components/Icon";
+import { Tag } from "@/app/components/badges/tags/Tag";
+import { Badges } from "@/app/components/badges/Badges";
+import { Button } from "@/app/components/Button";
+import { CardActions } from "@/app/components/cards/CardActions";
+import { Avatar } from "@/app/components/avatars/Avatar";
+import { Role } from "@/app/components/badges/roles/Role";
+import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { Dropdown } from "@/app/components/dropdown/Dropdown";
+import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
 
 type MetaType = {
     label: string;

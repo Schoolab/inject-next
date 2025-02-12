@@ -1,14 +1,14 @@
 import React from "react";
-import { Card } from "./Card";
-import { CardInfos } from "./CardInfos";
-import { Avatar } from "../avatars/Avatar";
-import { DropdownMenu } from "../dropdown/DropdownMenu";
-import { DropdownItem } from "../dropdown/DropdownItem";
-import { Button } from "../Button";
-import { Dropdown } from "../dropdown/Dropdown";
-import { Role } from "../badges/roles/Role";
-import { Placeholder } from "../Placeholder";
-import { CardParticipant } from "./CardParticipant";
+import { Card } from "@/app/components/cards/Card";
+import { CardInfos } from "@/app/components/cards/CardInfos";
+import { Avatar } from "@/app/components/avatars/Avatar";
+import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { Button } from "@/app/components/Button";
+import { Dropdown } from "@/app/components/dropdown/Dropdown";
+import { Role } from "@/app/components/badges/roles/Role";
+import { Placeholder } from "@/app/content/Placeholder";
+import { CardParticipant } from "@/app/components/cards/CardParticipant";
 
 interface CardApplicationProps {}
 

@@ -1,9 +1,9 @@
 import React, { CSSProperties } from "react";
 import { ReactNode } from "react";
-import { Icon } from "../Icon";
-import { Button } from "../Button";
-import { Tag } from "../badges/tags/Tag";
-import { ProgressBar } from "../ProgressBar";
+import { Icon } from "@/app/components/Icon";
+import { Button } from "@/app/components/Button";
+import { Tag } from "@/app/components/badges/tags/Tag";
+import { ProgressBar } from "@/app/components/ProgressBar";
 
 type MetaType = {
     label: string;

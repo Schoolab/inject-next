@@ -1,7 +1,7 @@
 import React, { CSSProperties } from "react";
 import { ReactNode } from "react";
-import { Placeholder } from "../Placeholder";
-import { DataListItem } from "./DataListItem";
+import { Placeholder } from "@/app/content/Placeholder";
+import { DataListItem } from "@/app/components/data/DataListItem";
 
 interface DataListProps {
     children?: ReactNode;

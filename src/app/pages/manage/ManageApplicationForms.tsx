@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout } from "../../layouts/layout";
+import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Button } from "@/app/components/Button";
 import { ItemsGroup } from "@/app/components/items-group/ItemsGroup";

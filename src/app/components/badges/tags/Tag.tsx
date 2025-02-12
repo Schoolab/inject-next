@@ -1,5 +1,5 @@
 import React, { CSSProperties, ReactNode } from "react";
-import { Icon } from "../../Icon";
+import { Icon } from "@/app/components/Icon";
 
 interface TagProps {
     label?: string;

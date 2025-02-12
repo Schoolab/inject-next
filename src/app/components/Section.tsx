@@ -1,8 +1,8 @@
 import React, { CSSProperties } from "react";
 import { ReactNode } from "react";
-import { Icon } from "./Icon";
-import { Placeholder } from "./Placeholder";
-import { Button } from "./Button";
+import { Icon } from "@/app/components/Icon";
+import { Placeholder } from "@/app/content/Placeholder";
+import { Button } from "@/app/components/Button";
 
 type ButtonType = {
     addClass?: string;

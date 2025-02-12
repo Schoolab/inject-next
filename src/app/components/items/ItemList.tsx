@@ -1,10 +1,10 @@
 import React, { CSSProperties } from "react";
-import { Avatar } from "../avatars/Avatar";
-import { Dropdown } from "../dropdown/Dropdown";
-import { DropdownMenu } from "../dropdown/DropdownMenu";
-import { DropdownItem } from "../dropdown/DropdownItem";
-import { Notif } from "../badges/notifs/Notif";
-import { DropdownDivider } from "../dropdown/DropdownDivider";
+import { Avatar } from "@/app/components/avatars/Avatar";
+import { Dropdown } from "@/app/components/dropdown/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { Notif } from "@/app/components/badges/notifs/Notif";
+import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
 
 type AvatarType = {
     image?: string;
