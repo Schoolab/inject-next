@@ -7,9 +7,32 @@ import { Icon } from "@/app/components/Icon";
 import { Section } from "@/app/components/Section";
 import { FormTextarea } from "@/app/components/forms/FormTextarea";
 import { FormOption } from "@/app/components/forms/FormOption";
+import { Stepper, StepType } from "@/app/components/Stepper";
 
+const steps: StepType[] = [
+    {
+        title: "Step 1",
+        description: "In progress",
+        status: "in-progress",
+        link: "/?path=/story/pages-admin-installer--basic-info",
+        current: true,
+    },
+    {
+        title: "Step 2",
+        description: "Not completed",
+        status: "not-completed",
+        current: false,
+    },
+    {
+        title: "Step 3",
+        description: "Not completed",
+        status: "not-completed",
+        current: false,
+    }
 
-export const troubleShotCreateAccount = () => {
+];
+
+export const ApplicationInit = () => {
     return (
         <Layout showShortcutbar={false}>
             <AppContent showSubnav={false} showBreadcrumb={false} showTitle={false}>
@@ -20,7 +43,7 @@ export const troubleShotCreateAccount = () => {
                                 <Button size="sm" type="default" iconStartName="arrow-left" data-toggle="tooltip" data-original-title="Back" />
                                 <h2>Participant account creation</h2>
                             </span>
-                            <Alert buttonLabel="" icon="information" text="A participant account will be created and may be reviewed by a manager." title="" type="info" />
+                            <Stepper steps={steps} />
                         </div>
 
                         <div className="application-section">
@@ -80,29 +103,13 @@ export const troubleShotCreateAccount = () => {
                             </div>
                         </div>
 
-                        <Section title="Program rules" >
-                            <FormTextarea
-                                defaultValue="Text about the rules of the program"
-                                fieldSizing
-                                id="rules"
-                                placeholder="Write your text here..."
-                                readonly
-                              
-                            />
-                            <FormOption
-                                label="Accept rules"
-                                type="checkbox"
-                            />
+                        <Section title="Program rules">
+                            <FormTextarea defaultValue="Text about the rules of the program" fieldSizing id="rules" placeholder="Write your text here..." readonly />
+                            <FormOption label="Accept rules" type="checkbox" />
                         </Section>
+                        <Alert buttonLabel="" icon="information" text="A participant account will be created and may be reviewed by a manager." title="" type="info" />
                         <div className="d-flex justify-content-end">
-                                                        <Button
-                                iconStartImage=""
-                                iconStartName=""
-                                label="Create my account"
-                                size="default"
-                                type="primary"
-                                />
-                       
+                            <Button iconStartImage="" iconStartName="" label="Create my account" size="default" type="primary" />
                         </div>
                     </div>
                 </div>

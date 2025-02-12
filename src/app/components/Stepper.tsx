@@ -26,11 +26,16 @@ export const Stepper = (
   }: StepperProps) => {
   let classTab = ["stepper cq row-gap-md"];
   addClass && classTab.push(addClass);
-
+  console.log(steps.length);
+  let classStepper = ["stepper-item cq-xs-6"];
+  let ratio = 12/(steps.length);
+  classStepper.push(`cq-sm-${ratio}`);
+  
   return (
+    
     <div className={classTab.join(" ")} style={style} {...props}>
       {steps.map((step, index) => (
-        <div className="stepper-item cq-xs-6 cq-sm-3" key={index}>
+        <div className={classStepper.join(" ")} key={index}>
 
           <ProgressBar percentage={step.status === "completed" ? 100 : step.status === "in-progress" ? 50 : 0} addClass="mb-xs" />
 
