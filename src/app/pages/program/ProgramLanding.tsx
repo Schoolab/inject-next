@@ -1,19 +1,19 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { SectionHero } from "@/app/components/sections/SectionHero";
-import { SectionContent } from "@/app/components/sections/SectionContent";
-import { SectionNumber } from "@/app/components/sections/SectionNumber";
-import { SectionTimeline } from "@/app/components/sections/SectionTimeline";
-import { SectionContent2col } from "@/app/components/sections/SectionContent2col";
-import { SectionVideo } from "@/app/components/sections/SectionVideo";
-import { SectionCards } from "@/app/components/sections/SectionCards";
-import { SectionCallToAction } from "@/app/components/sections/SectionCallToAction";
-import { SectionTeam } from "@/app/components/sections/SectionTeam";
-import { SectionGallery } from "@/app/components/sections/SectionGallery";
-import { SectionTestimonial } from "@/app/components/sections/SectionTestimonial";
-import { SectionColumns } from "@/app/components/sections/SectionColumns";
-import { SectionAccordion } from "@/app/components/sections/SectionAccordion";
+import { SectionHero } from "@/app/content/sections/SectionHero";
+import { SectionContent } from "@/app/content/sections/SectionContent";
+import { SectionNumber } from "@/app/content/sections/SectionNumber";
+import { SectionTimeline } from "@/app/content/sections/SectionTimeline";
+import { SectionContent2col } from "@/app/content/sections/SectionContent2col";
+import { SectionVideo } from "@/app/content/sections/SectionVideo";
+import { SectionCards } from "@/app/content/sections/SectionCards";
+import { SectionCallToAction } from "@/app/content/sections/SectionCallToAction";
+import { SectionTeam } from "@/app/content/sections/SectionTeam";
+import { SectionGallery } from "@/app/content/sections/SectionGallery";
+import { SectionTestimonial } from "@/app/content/sections/SectionTestimonial";
+import { SectionColumns } from "@/app/content/sections/SectionColumns";
+import { SectionAccordion } from "@/app/content/sections/SectionAccordion";
 
 interface ProgramLandingProps {
     theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";

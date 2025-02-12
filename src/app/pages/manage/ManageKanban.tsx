@@ -8,10 +8,9 @@ import { Folders } from "@/app/content/folders/Folders";
 import { Views } from "@/app/content/views/Views";
 import { Filters } from "@/app/content/filters/Filters";
 import { Table } from "@/app/content/tables/Table";
-import { FiltersDefault } from "@/app/components/filters/FiltersDefault";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { GridObjectives } from "@/app/components/grids/GridObjectives";
+import { GridObjectives } from "@/app/layouts/grids/GridObjectives";
 
 export interface ManageKanbanProps {}
 

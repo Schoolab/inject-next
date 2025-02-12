@@ -4,7 +4,7 @@ import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { AsideEditPage } from "@/app/components/asides/AsideEditPage";
 import { aside } from "../../../../../public/utils/aside";
-import { EmptyState } from "@/app/components/EmptyState";
+import { EmptyState } from "@/app/content/EmptyState";
 
 export const ManagePagesEditEmpty = () => {
     useEffect(() => {

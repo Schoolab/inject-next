@@ -4,22 +4,22 @@ import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { AsideEditPage } from "@/app/components/asides/AsideEditPage";
 import { aside } from "../../../../../public/utils/aside";
-import { SectionContent } from "@/app/components/sections/SectionContent";
-import { SectionNumber } from "@/app/components/sections/SectionNumber";
-import { SectionTimeline } from "@/app/components/sections/SectionTimeline";
+import { SectionContent } from "@/app/content/sections/SectionContent";
+import { SectionNumber } from "@/app/content/sections/SectionNumber";
+import { SectionTimeline } from "@/app/content/sections/SectionTimeline";
 import { EditableBlock } from "@/app/components/EditableBlock";
 import { AddableBlock } from "@/app/components/AddableBlock";
-import { SectionContent2col } from "@/app/components/sections/SectionContent2col";
-import { SectionHero } from "@/app/components/sections/SectionHero";
+import { SectionContent2col } from "@/app/content/sections/SectionContent2col";
+import { SectionHero } from "@/app/content/sections/SectionHero";
 import { Button } from "@/app/components/Button";
 import { Add } from "@/stories/components/Modals/ModalPageAdd.stories";
-import { SectionVideo } from "@/app/components/sections/SectionVideo";
-import { SectionCards } from "@/app/components/sections/SectionCards";
-import { SectionTeam } from "@/app/components/sections/SectionTeam";
-import { SectionGallery } from "@/app/components/sections/SectionGallery";
-import { SectionTestimonial } from "@/app/components/sections/SectionTestimonial";
-import { SectionColumns } from "@/app/components/sections/SectionColumns";
-import { SectionCallToAction } from "@/app/components/sections/SectionCallToAction";
+import { SectionVideo } from "@/app/content/sections/SectionVideo";
+import { SectionCards } from "@/app/content/sections/SectionCards";
+import { SectionTeam } from "@/app/content/sections/SectionTeam";
+import { SectionGallery } from "@/app/content/sections/SectionGallery";
+import { SectionTestimonial } from "@/app/content/sections/SectionTestimonial";
+import { SectionColumns } from "@/app/content/sections/SectionColumns";
+import { SectionCallToAction } from "@/app/content/sections/SectionCallToAction";
 
 export const ManagePagesEdit = () => {
     useEffect(() => {

@@ -9,7 +9,7 @@ import { Views } from "@/app/content/views/Views";
 import { Filters } from "@/app/content/filters/Filters";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { EmptyState } from "@/app/components/EmptyState";
+import { EmptyState } from "@/app/content/EmptyState";
 
 export interface ManageTableEmptyProps {}
 

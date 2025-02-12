@@ -21,7 +21,7 @@ import { LangSwitch } from "@/app/components/LangSwitch";
 import { FormSelect } from "@/app/forms/FormSelect";
 import { AppSplit } from "@/app/layouts/AppSplit";
 import { ProgressBar } from "@/app/components/ProgressBar";
-import { EmptyState } from "@/app/components/EmptyState";
+import { EmptyState } from "@/app/content/EmptyState";
 import { CardProgram } from "@/app/components/cards/CardProgram";
 
 const Preview = () => {
