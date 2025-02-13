@@ -465,7 +465,7 @@ export const ApplicationOverview = () => {
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
                                                 <a className="dropdown-item" href="#">
-                                                    View application
+                                                    Open application page
                                                 </a>
                                                 <div className="dropdown-divider"></div>
                                                 <a className="dropdown-item is-danger" href="#">
@@ -554,7 +554,7 @@ export const ApplicationOverview = () => {
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
                                                 <a className="dropdown-item" href="#">
-                                                    View application
+                                                    Open application page
                                                 </a>
                                                 <div className="dropdown-divider"></div>
                                                 <a className="dropdown-item is-danger" href="#">
@@ -595,7 +595,9 @@ export const ApplicationOverview = () => {
                                         </div>
                                         <div className="card-actions">
                                             <a className="btn btn-lg btn-default btn-block" href="#">
-                                                <span>View application</span>
+                                                
+                                                <span>Open application page</span>
+                                                <span className="icon icon-new-tab"></span>
                                             </a>
                                         </div>
                                     </div>
@@ -643,7 +645,7 @@ export const ApplicationOverview = () => {
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
                                                 <a className="dropdown-item" href="#">
-                                                    View application
+                                                    Open application page
                                                 </a>
                                                 <div className="dropdown-divider"></div>
                                                 <a className="dropdown-item is-danger" href="#">
@@ -684,7 +686,9 @@ export const ApplicationOverview = () => {
                                         </div>
                                         <div className="card-actions">
                                             <a className="btn btn-lg btn-default btn-block" href="#">
-                                                <span>View application</span>
+                                                
+                                                <span>Open application page</span>
+                                                <span className="icon icon-new-tab"></span>
                                             </a>
                                         </div>
                                     </div>
@@ -732,7 +736,7 @@ export const ApplicationOverview = () => {
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
                                                 <a className="dropdown-item" href="#">
-                                                    View application
+                                                    Open application page
                                                 </a>
                                                 <div className="dropdown-divider"></div>
                                                 <a className="dropdown-item is-danger" href="#">
@@ -821,7 +825,7 @@ export const ApplicationOverview = () => {
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-right">
                                                 <a className="dropdown-item" href="#">
-                                                    View application
+                                                    Open application page
                                                 </a>
                                                 <div className="dropdown-divider"></div>
                                                 <a className="dropdown-item is-danger" href="#">
@@ -862,7 +866,9 @@ export const ApplicationOverview = () => {
                                         </div>
                                         <div className="card-actions">
                                             <a className="btn btn-lg btn-default btn-block" href="#">
-                                                <span>View application</span>
+                                                
+                                                <span>Open application page</span>
+                                                <span className="icon icon-new-tab"></span>
                                             </a>
                                         </div>
                                     </div>
