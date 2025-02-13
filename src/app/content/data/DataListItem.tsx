@@ -6,6 +6,7 @@ import { tooltips } from "../../../../public/utils/tooltips";
 
 interface DataListItemProps {
     label: string | ReactNode;
+    direction?: "horizontal" | "vertical";
     tooltip?: string;
     tooltipIcon?: string;
     children?: ReactNode;
@@ -13,8 +14,9 @@ interface DataListItemProps {
     style?: CSSProperties;
 }
 
-export const DataListItem = ({ label = "Label", tooltip, tooltipIcon = "help-circle", children, addClass, style, ...props }: DataListItemProps) => {
+export const DataListItem = ({ label = "Label", direction = "horizontal", tooltip, tooltipIcon = "help-circle", children, addClass, style, ...props }: DataListItemProps) => {
     let classTab = ["data-list-item"];
+    classTab.push(`is-${direction}`);
     addClass && classTab.push(addClass);
 
     useEffect(() => {
