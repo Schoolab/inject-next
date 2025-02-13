@@ -24,12 +24,19 @@ export const ApplicationOverview = () => {
                         label: "Application",
                     },
                 ]}
+                buttons={[
+                    {
+                        label: "actions",
+                        hasDropdown: true,
+                        type: "default",
+                    },
+                ]}
                 title="Application"
             >
                 <div className="row justify-content-center">
                     <div className="col-12 col-md-10 col-lg-8 d-flex flex-column gap-md">
                         <div className="application-section">
-                        <div className="card">
+                            <div className="card">
                                 <div className="card-infos gap-sm d-flex flex-column align-items-stretch">
                                     <div className=" d-flex flex-column flex-md-row  align-items-center flex-wrap flex-xl-nowrap gap-md">
                                         <div className="card-image-container">
@@ -83,6 +90,17 @@ export const ApplicationOverview = () => {
                                         <div className="collapse px-md pb-md" id="Aboutprogram">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
                                             <p>Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="card-links">
+                                    <div className="d-flex align-items-center justify-content-between text-muted">
+                                        <span className="small font-weight-bold text-truncate mr-2">Registration status</span>
+                                        <div className="badges">
+                                            <div className="badge is-pill is-draft">
+                                                <span className="icon icon-status-bordered"></span>
+                                                <span>Draft</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -184,7 +202,7 @@ export const ApplicationOverview = () => {
                                         <div className="badges">
                                             <div className="badge is-pill is-draft">
                                                 <span className="icon icon-status-bordered"></span>
-                                                <span>Submitted</span>
+                                                <span>Draft</span>
                                             </div>
                                         </div>
                                     </div>
@@ -192,9 +210,60 @@ export const ApplicationOverview = () => {
                                         <a className="btn btn-lg btn-primary btn-block" href="#">
                                             <span>Update</span>
                                         </a>
-                                        <a className="btn btn-lg btn-default btn-block" href="#">
-                                            <span>Delete application</span>
-                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card">
+                                <div className="card-infos gap-sm d-flex flex-column align-items-stretch">
+                                    <FormGroup id="0" label="Type">
+                                        {/* <FormSelect
+                                            disabled={true}
+                                            id="user-case"
+                                            options={[
+                                                {
+                                                    label: "Type 1",
+                                                    value: "1",
+                                                },
+                                                {
+                                                    label: "Type 2",
+                                                    value: "2",
+                                                },
+                                                {
+                                                    label: "Type 3",
+                                                    value: "3",
+                                                },
+                                            ]}
+                                        /> */}
+                                        <FormInputWrapper>
+                                            <FormInput id="0" defaultValue="Type 1" readonly={true} />
+                                        </FormInputWrapper>
+                                    </FormGroup>
+
+                                    <FormGroup id="1" label="Question 1">
+                                        <FormInputWrapper>
+                                            <FormInput id="1" defaultValue="Lorem ipsum" readonly={true} />
+                                        </FormInputWrapper>
+                                    </FormGroup>
+                                    <FormGroup id="2" label="Question 2 ">
+                                        <FormInputWrapper>
+                                            <FormInput id="2" defaultValue="Lorem ipsum" readonly={true} />
+                                        </FormInputWrapper>
+                                    </FormGroup>
+                                    <FormGroup id="3" label="Question 3">
+                                        <FormInputWrapper>
+                                            <FormInput id="3" defaultValue="Lorem ipsum" readonly={true} />
+                                        </FormInputWrapper>
+                                    </FormGroup>
+                                </div>
+                                <div className="card-links">
+                                    <div className="d-flex align-items-center justify-content-between text-muted mb-3">
+                                        <span className="small font-weight-bold text-truncate mr-2">Application status</span>
+                                        <div className="badges">
+                                            <div className="badge is-pill is-draft">
+                                                <span className="icon icon-status-bordered"></span>
+                                                <span>Submitted</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -304,11 +373,6 @@ export const ApplicationOverview = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card-actions">
-                                        <a className="btn btn-lg btn-default btn-block" href="#">
-                                            <span>Delete application</span>
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
                             <div className="card">
@@ -395,6 +459,40 @@ export const ApplicationOverview = () => {
                                                 <li>Created on 16th July 2024</li>
                                             </ul>
                                         </div>
+                                        <div className="dropdown">
+                                            <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span className="icon is-20px icon-options" />
+                                            </a>
+                                            <div className="dropdown-menu dropdown-menu-right">
+                                                <a className="dropdown-item" href="#">
+                                                    View application
+                                                </a>
+                                                <div className="dropdown-divider"></div>
+                                                <a className="dropdown-item is-danger" href="#">
+                                                    <span className="icon icon-delete dropdown-item--icon"></span>
+                                                    <div className="dropdown-item--label">
+                                                        <span className="d-flex">Delete</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="card-targets">
+                                        <div className="card-target-wrapper">
+                                            <div className="card-target to-collapse is-collapsed d-block" data-toggle="collapse" data-target="#collapseContent0" aria-expanded="false">
+                                                <div className="d-flex align-items-center flex-fill">
+                                                    <div className="d-flex align-items-center gap-2xs flex-grow-1">
+                                                        <span className="icon icon-clipboard-text is-sm"></span>
+                                                        <span>Application</span>
+                                                    </div>
+                                                    <span className="icon icon-chevron-right is-sm"></span>
+                                                </div>
+                                            </div>
+                                            <div className="collapse px-md pb-md" id="collapseContent0">
+                                                <div className="bg-highlight rounded p-md">Application Form</div>
+                                            </div>
+                                            
+                                        </div>
                                     </div>
                                     <div className="card-links">
                                         <div className="d-flex align-items-center justify-content-between text-muted mb-3">
@@ -402,16 +500,13 @@ export const ApplicationOverview = () => {
                                             <div className="badges">
                                                 <div className="badge is-pill is-draft">
                                                     <span className="icon icon-status-bordered"></span>
-                                                    <span>Submitted</span>
+                                                    <span>Draft</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="card-actions">
                                             <a className="btn btn-lg btn-primary btn-block" href="#">
                                                 <span>Complete</span>
-                                            </a>
-                                            <a className="btn btn-lg btn-default btn-block" href="#">
-                                                <span>Delete application</span>
                                             </a>
                                         </div>
                                     </div>
@@ -452,6 +547,23 @@ export const ApplicationOverview = () => {
                                                 </li>
                                                 <li>Created on 16th July 2024</li>
                                             </ul>
+                                        </div>
+                                        <div className="dropdown">
+                                            <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span className="icon is-20px icon-options" />
+                                            </a>
+                                            <div className="dropdown-menu dropdown-menu-right">
+                                                <a className="dropdown-item" href="#">
+                                                    View application
+                                                </a>
+                                                <div className="dropdown-divider"></div>
+                                                <a className="dropdown-item is-danger" href="#">
+                                                    <span className="icon icon-delete dropdown-item--icon"></span>
+                                                    <div className="dropdown-item--label">
+                                                        <span className="d-flex">Delete</span>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="card-targets">
@@ -468,17 +580,23 @@ export const ApplicationOverview = () => {
                                             <div className="collapse px-md pb-md" id="collapseContent1">
                                                 <div className="bg-highlight rounded p-md">Application Form</div>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                     <div className="card-links">
-                                        <div className="d-flex align-items-center justify-content-between text-muted">
+                                        <div className="d-flex align-items-center justify-content-between text-muted mb-3">
                                             <span className="small font-weight-bold text-truncate mr-2">Application status</span>
                                             <div className="badges">
-                                                <div className="badge is-pill is-progress">
-                                                    <span className="icon icon-status-dashed"></span>
-                                                    <span>In review</span>
+                                                <div className="badge is-pill is-draft">
+                                                    <span className="icon icon-status-bordered"></span>
+                                                    <span>Submitted</span>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div className="card-actions">
+                                            <a className="btn btn-lg btn-default btn-block" href="#">
+                                                <span>View application</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -519,6 +637,112 @@ export const ApplicationOverview = () => {
                                                 <li>Created on 16th July 2024</li>
                                             </ul>
                                         </div>
+                                        <div className="dropdown">
+                                            <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span className="icon is-20px icon-options" />
+                                            </a>
+                                            <div className="dropdown-menu dropdown-menu-right">
+                                                <a className="dropdown-item" href="#">
+                                                    View application
+                                                </a>
+                                                <div className="dropdown-divider"></div>
+                                                <a className="dropdown-item is-danger" href="#">
+                                                    <span className="icon icon-delete dropdown-item--icon"></span>
+                                                    <div className="dropdown-item--label">
+                                                        <span className="d-flex">Delete</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="card-targets">
+                                        <div className="card-target-wrapper">
+                                            <div className="card-target to-collapse is-collapsed d-block" data-toggle="collapse" data-target="#collapseContent1a" aria-expanded="false">
+                                                <div className="d-flex align-items-center flex-fill">
+                                                    <div className="d-flex align-items-center gap-2xs flex-grow-1">
+                                                        <span className="icon icon-clipboard-text is-sm"></span>
+                                                        <span>Application</span>
+                                                    </div>
+                                                    <span className="icon icon-chevron-right is-sm"></span>
+                                                </div>
+                                            </div>
+                                            <div className="collapse px-md pb-md" id="collapseContent1a">
+                                                <div className="bg-highlight rounded p-md">Application Form</div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div className="card-links">
+                                        <div className="d-flex align-items-center justify-content-between text-muted mb-3">
+                                            <span className="small font-weight-bold text-truncate mr-2">Application status</span>
+                                            <div className="badges">
+                                                <div className="badge is-pill is-progress">
+                                                    <span className="icon icon-status-dashed"></span>
+                                                    <span>In review</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-actions">
+                                            <a className="btn btn-lg btn-default btn-block" href="#">
+                                                <span>View application</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="card">
+                                    <div className="card-infos is-linked d-flex align-items-start gap-sm">
+                                        <span className="icon icon--letter is-40px">
+                                            <span>P</span>
+                                        </span>
+                                        <div className="card-title flex-grow-1">
+                                            <a href="#" className="h4 mb-none line-clamp-1 d-flex align-items-center gap-2xs">
+                                                <span>Project Name</span>
+                                            </a>
+                                            <ul className="metas is-list small">
+                                                <li
+                                                    className="list-inline-item z-1"
+                                                    data-toggle="tooltip"
+                                                    data-placement="bottom"
+                                                    data-original-title="<ul class='list-unstyled d-flex flex-column gap-2xs m-none'><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/2216e7ab-c701-4503-83a2-ae7b91afb15d/sq150.jpeg'></div><span>Alexandra Jolly</span></li><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/3155b942-7535-4b0b-8ded-97eb42a92e1b/sq150.jpeg'></div><span>Emma Salvarelli</span></li>"
+                                                    data-html="true"
+                                                    data-boundary="window"
+                                                >
+                                                    <ul className="metas is-list">
+                                                        <li>
+                                                            <div className="thumbnail-stack">
+                                                                <div className="thumbnail is-oval is-xs">
+                                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/d5b965a6-9324-45d3-aac3-613e623d95d1/sq150.jpeg" />
+                                                                </div>
+                                                                <div className="thumbnail is-oval is-xs">
+                                                                    <img src="https://inject-intrap.s3.amazonaws.com/images/e3af9c9d-3c0f-4fbd-a728-ce925a201011/sq150.jpeg" />
+                                                                </div>
+                                                            </div>
+                                                            <a href="/program/71/project/2903/mentors">
+                                                                <small className="text-muted">2 Members</small>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>Created on 16th July 2024</li>
+                                            </ul>
+                                        </div>
+                                        <div className="dropdown">
+                                            <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span className="icon is-20px icon-options" />
+                                            </a>
+                                            <div className="dropdown-menu dropdown-menu-right">
+                                                <a className="dropdown-item" href="#">
+                                                    View application
+                                                </a>
+                                                <div className="dropdown-divider"></div>
+                                                <a className="dropdown-item is-danger" href="#">
+                                                    <span className="icon icon-delete dropdown-item--icon"></span>
+                                                    <div className="dropdown-item--label">
+                                                        <span className="d-flex">Delete</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="card-targets">
                                         <div className="card-target-wrapper">
@@ -534,6 +758,7 @@ export const ApplicationOverview = () => {
                                             <div className="collapse px-md pb-md" id="collapseContent2">
                                                 <div className="bg-highlight rounded p-md">Application Form</div>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                     <div className="card-links">
@@ -590,6 +815,23 @@ export const ApplicationOverview = () => {
                                                 <li>Created on 16th July 2024</li>
                                             </ul>
                                         </div>
+                                        <div className="dropdown">
+                                            <a className="btn btn-transparent btn-icon position-relative z-1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span className="icon is-20px icon-options" />
+                                            </a>
+                                            <div className="dropdown-menu dropdown-menu-right">
+                                                <a className="dropdown-item" href="#">
+                                                    View application
+                                                </a>
+                                                <div className="dropdown-divider"></div>
+                                                <a className="dropdown-item is-danger" href="#">
+                                                    <span className="icon icon-delete dropdown-item--icon"></span>
+                                                    <div className="dropdown-item--label">
+                                                        <span className="d-flex">Delete</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="card-targets">
                                         <div className="card-target-wrapper">
@@ -605,6 +847,23 @@ export const ApplicationOverview = () => {
                                             <div className="collapse px-md pb-md" id="collapseContent3">
                                                 <div className="bg-highlight rounded p-md">Application Form</div>
                                             </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div className="card-links">
+                                        <div className="d-flex align-items-center justify-content-between text-muted mb-3">
+                                            <span className="small font-weight-bold text-truncate mr-2">Registration status</span>
+                                            <div className="badges">
+                                                <div className="badge is-pill is-open">
+                                                    <span className="icon icon-status-filled"></span>
+                                                    <span>Accepted</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-actions">
+                                            <a className="btn btn-lg btn-default btn-block" href="#">
+                                                <span>View application</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

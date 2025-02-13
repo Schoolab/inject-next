@@ -40,13 +40,7 @@ export const ShortcutBar = ({ isExpanded }: ShortcutBarProps) => {
                     <div className="shortcutbar-option--label">Switch program</div>
                 </div> */}
                 <div className="d-flex flex-row flex-lg-column">
-                    <div className="shortcutbar-option">
-                        <a className="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Application" data-boundary="window">
-                            <span className="icon icon-form-checklist" aria-hidden="true" />
-                            <div className="shortcutbar-option--label">Application</div>
-                        </a>
-                        <div className="shortcutbar-option--label">Application</div>
-                    </div>
+              
                     <div className="shortcutbar-option">
                         <a className="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Program dashboard" data-boundary="window">
                             <span className="icon icon-home" aria-hidden="true" />
@@ -54,6 +48,13 @@ export const ShortcutBar = ({ isExpanded }: ShortcutBarProps) => {
                         </a>
                         <div className="shortcutbar-option--label">Dashboard</div>
                     </div> 
+                    <div className="shortcutbar-option">
+                        <a className="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Application" data-boundary="window">
+                            <span className="icon icon-questionnaire" aria-hidden="true" />
+                            <div className="shortcutbar-option--label">Application</div>
+                        </a>
+                        <div className="shortcutbar-option--label">Application</div>
+                    </div>
                     <div className="shortcutbar-option">
                         <a className="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Learning course" data-boundary="window">
                             <span className="icon icon-learning" aria-hidden="true" />
