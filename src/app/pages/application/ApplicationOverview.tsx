@@ -256,7 +256,7 @@ export const ApplicationOverview = () => {
                                     </FormGroup>
                                 </div>
                                 <div className="card-links">
-                                    <div className="d-flex align-items-center justify-content-between text-muted mb-3">
+                                    <div className="d-flex align-items-center justify-content-between text-muted">
                                         <span className="small font-weight-bold text-truncate mr-2">Application status</span>
                                         <div className="badges">
                                             <div className="badge is-pill is-draft">
@@ -364,7 +364,7 @@ export const ApplicationOverview = () => {
                                     </FormGroup>
                                 </div>
                                 <div className="card-links">
-                                    <div className="d-flex align-items-center justify-content-between text-muted mb-3">
+                                    <div className="d-flex align-items-center justify-content-between text-muted">
                                         <span className="small font-weight-bold text-truncate mr-2">Application status</span>
                                         <div className="badges">
                                             <div className="badge is-pill is-closed">
@@ -417,6 +417,18 @@ export const ApplicationOverview = () => {
                                         </FormInputWrapper>
                                     </FormGroup>
                                 </div>
+                                <div className="card-links">
+                                    <div className="d-flex align-items-center justify-content-between text-muted">
+                                        <span className="small font-weight-bold text-truncate mr-2">Registration status</span>
+                                        <div className="badges">
+                                            <div className="badge is-pill is-open">
+                                                <span className="icon icon-status-filled"></span>
+                                                <span>Accepted</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </Section>
 
