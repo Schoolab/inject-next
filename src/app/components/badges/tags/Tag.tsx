@@ -39,6 +39,7 @@ export const Tag = (
             <a href={link} className={classTab.join(" ")} style={style} {...props}>
                 {iconName && <Icon name={iconName} />}
                 {label && <span>{label}</span>}
+                {children}
             </a>
         );
     }

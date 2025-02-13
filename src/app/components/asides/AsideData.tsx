@@ -185,7 +185,7 @@ export const AsideData: React.FC<AsideDataProps> = ({
                             <DataListItem label="SDGs" tooltip="The SDGs are the United Nations Sustainable Development Goals. They are a set of 17 goals designed to transform our world by 2030. Each goal has specific targets to achieve by 2030.">
                                 <dd>
                                     <Badges>
-                                        <Tag isPill={false}>
+                                        <Tag link="#" isPill={false}>
                                             <div aria-hidden="true" className="icon icon--sdg is-sdg-7 is-16px">
                                                 <span>7</span>
                                             </div>
@@ -197,11 +197,11 @@ export const AsideData: React.FC<AsideDataProps> = ({
                             <DataListItem label="Tags">
                                 <dd>
                                     <Badges>
-                                        <Tag label="Impact native" iconName="impact-native" isPill={false} />
-                                        <Tag label="DEI" iconName="vertical-dei" isPill={false} />
-                                        <Tag label="Corporate" iconName="ecosystem-corporate" />
-                                        <Tag label="Strategic" />
-                                        <Tag label="Innovation" />
+                                        <Tag link="#" label="Impact native" iconName="impact-native" isPill={false} />
+                                        <Tag link="#" label="DEI" iconName="vertical-dei" isPill={false} />
+                                        <Tag link="#" label="Corporate" iconName="ecosystem-corporate" />
+                                        <Tag link="#" label="Strategic" />
+                                        <Tag link="#" label="Innovation" />
                                     </Badges>
                                 </dd>
                             </DataListItem>
