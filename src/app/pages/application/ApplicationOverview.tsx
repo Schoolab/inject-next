@@ -151,7 +151,7 @@ export const ApplicationOverview = () => {
                             </div>
                         </div>
                         <Section collapsable={true} collapsableId="noApplication" title="Impact Innovators application">
-                            <EmptyState iconTitle="form-checklist" text="This program does not have a participant application form" title="No application form" />
+                            <EmptyState iconTitle="questionnaire" text="This program does not have a participant application form" title="No application form" />
                         </Section>
                         <Section collapsable={true} collapsableId="Application" title="Impact Innovators application" subtitle="Thank you for your registration. ">
                             <Alert buttonLabel="" icon="information" text="Here is the information you provided in your application. We will get back to you by email to inform you of the selection." title="" type="info" />
