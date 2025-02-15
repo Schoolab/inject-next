@@ -2,7 +2,7 @@ import React from "react";
 import { tooltips } from "../../../../../public/utils/tooltips";
 import { useEffect } from "react";
 
-interface RoleProps {
+export interface RoleProps {
     status: "admin" | "manager" | "expert" | "jury" | "participant" | "visitor";
     addClass?: string;
     dataToggle?: string;
