@@ -964,6 +964,7 @@ export const StudyAdmin: Story = {
                       {
                         label: "Details",
                         href: "#",
+                        active: true,
                       },
                       {
                         label: "Appearance",
