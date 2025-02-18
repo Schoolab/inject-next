@@ -1,73 +1,40 @@
-import React from "react";
+import React, { CSSProperties } from "react";
+import { SidebarItem, SidebarItemProps } from "./SidebarItem";
 
-export interface SidebarDefaultProps {}
+export type SidebarSectionType = {
+    label?: string;
+    items: SidebarItemProps[];
+    addClass?: string;
+}
 
-export const SidebarDefault = ({}: SidebarDefaultProps) => {
+export interface SidebarDefaultProps {
+    id?: string;
+    addClass?: string;
+    sections: SidebarSectionType[];
+    style?: CSSProperties;
+    children?: React.ReactNode;
+}
+
+export const SidebarDefault = ({ id = "accordionManageNav", sections, addClass, style, children, ...props }: SidebarDefaultProps) => {
+    let classTab = ["application-sidebar", "d-none", "d-lg-block", "sidebar", "overflow-auto"];
+    addClass && classTab.push(addClass);
+
     return (
-        <aside className="application-sidebar d-none d-lg-block" id="leftMainSidebar">
+        <aside id="leftMainSidebar" className={classTab.join(" ")} style={style} {...props}>
             <div className="sidebar overflow-auto">
-                <div className="px-24px pb-32px">
-                    <div className="mt-7">
-                        <ul className="nav nav-main flex-column">
-                            {/* <li class="nav-item mb-5">
-                  <a href="#" class="nav-link">
-                      <span class="nav-link--label text-dark">← Back to Item</span>
-                  </a>
-              </li> */}
-                            <li className="nav-item ">
-                                <span className="nav-title"> ITEM TITLE </span>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className="nav-link">
-                                    <span className="nav-link--column">
-                                        <span className="nav-link--label">Item</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className=" nav-link active">
-                                    <span className="nav-link--column">
-                                        <span className="nav-link--label">Item</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className=" nav-link">
-                                    <span className="nav-link--column">
-                                        <span className="nav-link--label">Item</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className=" nav-link">
-                                    <span className="nav-link--column">
-                                        <span className="nav-link--label">Item</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className=" nav-link">
-                                    <span className="nav-link--column">
-                                        <span className="nav-link--label">Item</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className=" nav-link">
-                                    <span className="nav-link--column">
-                                        <span className="nav-link--label">Item</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className=" nav-link">
-                                    <span className="nav-link--column">
-                                        <span className="nav-link--label">Item</span>
-                                    </span>
-                                </a>
-                            </li>
+                <div id={id} className="d-flex flex-column flex-fill gap-xl px-24px pt-24px pb-32px accordion">
+
+                    {sections.map((section, i) => (
+                        <ul className={`nav nav-main flex-column ${section.addClass || ''}`}>
+                            {section.label && <li key={i} className="nav-item ">
+                                <span className="nav-title">{section.label}</span>
+                            </li>}
+                            {section.items.map((item, index) => (
+                                <SidebarItem key={index} {...item} parent={id} />
+                            ))}
                         </ul>
-                    </div>
+                    ))}
+                    
                 </div>
             </div>
         </aside>
