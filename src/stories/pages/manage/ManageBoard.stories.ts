@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { ManageTable } from "@/app/pages/manage/ManageTable";
+import { ManageBoard } from "@/app/pages/manage/ManageBoard";
 
 const meta = {
-    title: "Pages/Manage/Table",
-    component: ManageTable,
+    title: "Pages/Manage/Board",
+    component: ManageBoard,
     parameters: {
         layout: "fullscreen",
     },
-} satisfies Meta<typeof ManageTable>;
+} satisfies Meta<typeof ManageBoard>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

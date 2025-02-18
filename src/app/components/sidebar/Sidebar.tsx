@@ -7,7 +7,7 @@ export type SidebarSectionType = {
     addClass?: string;
 }
 
-export interface SidebarDefaultProps {
+export interface SidebarProps {
     id?: string;
     addClass?: string;
     sections: SidebarSectionType[];
@@ -15,8 +15,8 @@ export interface SidebarDefaultProps {
     children?: React.ReactNode;
 }
 
-export const SidebarDefault = ({ id = "accordionManageNav", sections, addClass, style, children, ...props }: SidebarDefaultProps) => {
-    let classTab = ["application-sidebar", "d-none", "d-lg-block", "sidebar", "overflow-auto"];
+export const Sidebar = ({ id = "accordionManageNav", sections, addClass, style, children, ...props }: SidebarProps) => {
+    let classTab = ["application-sidebar", "d-none", "d-lg-block"];
     addClass && classTab.push(addClass);
 
     return (

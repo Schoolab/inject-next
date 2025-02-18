@@ -1,5 +1,5 @@
 import React from "react";
-import { SidebarDefault } from "./SidebarDefault";
+import { Sidebar } from "./Sidebar";
 
 export interface SidebarManageProps {}
 
@@ -399,6 +399,6 @@ export const SidebarManage = ({}: SidebarManageProps) => {
         },
     ];
     return (
-        <SidebarDefault id="accordionManageNav" sections={sections} />
+        <Sidebar id="accordionManageNav" sections={sections} />
     );
 };

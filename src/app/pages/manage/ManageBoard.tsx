@@ -12,9 +12,9 @@ import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { GridObjectives } from "@/app/layouts/grids/GridObjectives";
 
-export interface ManageKanbanProps {}
+export interface ManageBoardProps {}
 
-export const ManageKanban = ({}: ManageKanbanProps) => {
+export const ManageBoard = ({}: ManageBoardProps) => {
     useEffect(() => {
         tooltips();
         tableheader();

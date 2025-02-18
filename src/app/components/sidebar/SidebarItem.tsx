@@ -11,8 +11,8 @@ export interface SidebarItemProps {
     active?: boolean;
     locked?: boolean;
     newFeature?: boolean;
-    notif?: string;
-    badge?: string;
+    notif?: number;
+    badge?: number;
     newTab?: boolean;
     items?: SidebarItemProps[];
     parent?: string;
@@ -33,8 +33,8 @@ export const SidebarLink = ({
     active,
     locked,
     newFeature,
-    notif,
-    badge,
+    notif = 0,
+    badge = 0,
     newTab,
     items,
     parent,
@@ -57,8 +57,8 @@ export const SidebarLink = ({
             <span className="nav-link--label">{label}</span>
             {locked && <Icon name="lock" addClass="nav-link--icon" aria-label="Locked feature" />}
             {newFeature && <Notif status="interactive" label="NEW" aria-label="New feature" />}
-            {notif && <Notif status="accent" label={notif} aria-label={`${notif} notifications`} />}
-            {badge && <Notif status="highlight" label={badge} aria-label={`${badge} elements`} />}
+            {notif > 0 && <Notif status="accent" label={notif.toString()} aria-label={`${notif} notifications`} />}
+            {badge > 0 && <Notif status="highlight" label={badge.toString()} aria-label={`${badge} elements`} />}
             {newTab && <Icon name="new-tab" size="2xs" addClass="my-4px text-muted" aria-label="New tab" />}
         </a>
     );
@@ -72,8 +72,8 @@ export const SidebarItem = ({
     active,
     locked,
     newFeature,
-    notif,
-    badge,
+    notif = 0,
+    badge = 0,
     newTab,
     items,
     parent,

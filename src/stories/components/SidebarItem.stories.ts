@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { SidebarItem } from '@/app/components/sidebar/SidebarItem';
 
 const meta = {
-  title: 'Components/Sidebar/Item',
+  title: 'Components/Sidebar Item',
   component: SidebarItem,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout

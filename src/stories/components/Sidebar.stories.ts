@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { SidebarDefault } from '@/app/components/sidebar/SidebarDefault';
+import { Sidebar } from '@/app/components/sidebar/Sidebar';
 
 const meta = {
-  title: 'Components/Sidebar/Default',
-  component: SidebarDefault,
+  title: 'Components/Sidebar',
+  component: Sidebar,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
     layout: 'centered',
@@ -57,7 +57,7 @@ const meta = {
       },
     ],
   },
-} satisfies Meta<typeof SidebarDefault>;
+} satisfies Meta<typeof Sidebar>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -574,12 +574,12 @@ export const StudyManage: Story = {
             label: "Program",
             href: "#",
             icon: "program",
-            notif: "2",
+            notif: 2,
             items: [
               {
                 label: "🚀 Getting Started",
                 href: "#",
-                notif: "2",
+                notif: 2,
                 active: true,
               },
               {
@@ -638,7 +638,7 @@ export const StudyManage: Story = {
             label: "Participants",
             href: "#",
             icon: "account",
-            notif: "9+",
+            notif: 18,
             items: [
               {
                 label: "List",
@@ -651,7 +651,7 @@ export const StudyManage: Story = {
               {
                 label: "Registrations",
                 href: "#",
-                notif: "9+",
+                notif: 18,
               },
               {
                 label: "Deliverables",
@@ -668,7 +668,7 @@ export const StudyManage: Story = {
             label: "Projects",
             href: "#",
             icon: "project",
-            notif: "3",
+            notif: 3,
             items: [
               {
                 label: "List",
@@ -677,7 +677,7 @@ export const StudyManage: Story = {
               {
                 label: "Applications",
                 href: "#",
-                notif: "3",
+                notif: 3,
               },
               {
                 label: "Deliverables",
@@ -750,13 +750,13 @@ export const StudyManage: Story = {
             label: "F.A.Q.",
             href: "#",
             icon: "faq",
-            notif: "4",
+            notif: 4,
             newFeature: true,
             items: [
               {
                 label: "Questions",
                 href: "#",
-                notif: "4",
+                notif: 4,
               },
               {
                 label: "Responses",
@@ -1001,17 +1001,17 @@ export const StudyAdmin: Story = {
                       {
                         label: "Programs",
                         href: "#",
-                        badge: "136",
+                        badge: 136,
                       },
                       {
                         label: "Servers",
                         href: "#",
-                        badge: "9",
+                        badge: 9,
                       },
                       {
                         label: "Clients",
                         href: "#",
-                        badge: "23",
+                        badge: 23,
                       },
                     ]
                 },
