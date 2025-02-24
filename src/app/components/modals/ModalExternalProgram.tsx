@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert } from "@/app/components/Alert";
+import { Alert } from "@/app/components/alerts/Alert";
 
 export interface ModalExternalProgramProps {}
 

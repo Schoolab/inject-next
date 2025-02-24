@@ -1,16 +1,16 @@
 import React, { CSSProperties } from "react";
 import { Card } from "@/app/components/cards/Card";
 import { CardInfos } from "@/app/components/cards/CardInfos";
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 import { Tag } from "@/app/components/badges/tags/Tag";
 import { Badges } from "@/app/components/badges/Badges";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 import { CardActions } from "@/app/components/cards/CardActions";
 import { Avatar } from "@/app/components/avatars/Avatar";
 import { Role } from "@/app/components/badges/roles/Role";
-import { Dropdown } from "@/app/components/dropdown/Dropdown";
-import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
-import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { Dropdown } from "@/app/components/dropdowns/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
 
 type TagType = {
     label: string;

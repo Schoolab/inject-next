@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 import { Placeholder } from "@/app/content/Placeholder";
-import { Button } from "@/app/components/Button";
-import { Dropdown } from "@/app/components/dropdown/Dropdown";
-import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
-import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
-import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
-import { DropdownNested } from "@/app/components/dropdown/DropdownNested";
+import { Button } from "@/app/components/buttons/Button";
+import { Dropdown } from "@/app/components/dropdowns/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
+import { DropdownDivider } from "@/app/components/dropdowns/DropdownDivider";
+import { DropdownNested } from "@/app/components/dropdowns/DropdownNested";
 
 export interface FormInputWrapperProps {
     children?: ReactNode;

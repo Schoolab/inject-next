@@ -5,7 +5,7 @@ import { AppContent } from "@/app/layouts/AppContent";
 import { AsideEvent } from "@/app/components/asides/examples/AsideEvent";
 import { AsideNoteManager } from "@/app/components/asides/examples/AsideNoteManager";
 import { aside } from "../../../../../public/utils/aside";
-import { Alert } from "@/app/components/Alert";
+import { Alert } from "@/app/components/alerts/Alert";
 import { CardFeed } from "@/app/components/cards/CardFeed";
 import { ItemResource } from "@/app/components/items/ItemResource";
 

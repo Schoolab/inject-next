@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 
 interface ProjectLetterProps {
     name: string;

@@ -1,4 +1,4 @@
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 
 export interface EmptyStateProps {
     title?: string; 

@@ -1,6 +1,6 @@
 // IconGallery.tsx
 import { IconGallery, IconItem } from '@storybook/blocks';
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 
 interface Icon {
   [key: string]: any;

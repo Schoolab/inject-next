@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 import { tooltips } from "../../../../public/utils/tooltips";
 export interface ModalProjectTabProps {}
 

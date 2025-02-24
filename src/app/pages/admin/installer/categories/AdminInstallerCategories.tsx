@@ -1,13 +1,13 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { Stepper, StepType } from "@/app/components/Stepper";
-import { Section } from "@/app/components/Section";
+import { Stepper, StepType } from "@/app/components/stepper/Stepper";
+import { Section } from "@/app/components/sections/Section";
 import { FormGroup } from "@/app/forms/FormGroup";
 import { FormFieldSet } from "@/app/forms/FormFieldSet";
 import { FormOption } from "@/app/forms/FormOption";
 import { FormSelect } from "@/app/forms/FormSelect";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 
 const steps: StepType[] = [
     {
@@ -189,7 +189,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="No poverty"
-                                        sdg="1"
+                                        sdg={1}
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -199,8 +199,8 @@ export const AdminInstallerCategories = () => {
                                         value="sdg-2"
                                         type="checkbox"
                                         card={true}
-                                    label="Zero hunger"
-                                        sdg="2"
+                                        label="Zero hunger"
+                                        sdg={2}
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -211,7 +211,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Good health and well being"
-                                        sdg="3"
+                                        sdg={3} 
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -222,7 +222,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Quality education"
-                                        sdg="4"
+                                        sdg={4}
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -233,7 +233,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Gender equality"
-                                        sdg="5"
+                                        sdg={5}
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -244,7 +244,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Clean water and sanitation"
-                                        sdg="6"
+                                        sdg={6}
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -255,7 +255,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Affordable and clean energy"
-                                        sdg="7"
+                                        sdg={7}
                                     />  
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -266,7 +266,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Decent work and economic growth"
-                                        sdg="8"
+                                        sdg={8}
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -277,7 +277,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Industry innovation and infrastructure"
-                                        sdg="9"
+                                        sdg={9}
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -288,7 +288,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Reduced inequalities"
-                                        sdg="10"
+                                        sdg={10}
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -299,7 +299,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Sustainable cities and communities"
-                                        sdg="11"
+                                        sdg={11}
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -310,7 +310,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Responsable consumption and production"
-                                        sdg="12"
+                                        sdg={12}
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -321,7 +321,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Climate action"
-                                        sdg="13"
+                                        sdg={13}
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -332,7 +332,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Life below water"
-                                        sdg="14"
+                                        sdg={14}
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -343,7 +343,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Life on land"
-                                        sdg="15"
+                                        sdg={15}
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -354,7 +354,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Peace, justice and strong institutions"
-                                        sdg="16"
+                                        sdg={16}
                                     />
                                 </div>
                                 <div className="g-col-12 g-col-sm-6">
@@ -365,7 +365,7 @@ export const AdminInstallerCategories = () => {
                                         type="checkbox"
                                         card={true}
                                         label="Partnerships for the goals"
-                                        sdg="17"
+                                        sdg={17}
                                     />
                                 </div>
                             </FormFieldSet>

@@ -1,7 +1,7 @@
 import React from "react";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 import { ItemsGroup } from "@/app/components/items-group/ItemsGroup";
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 
 export interface ModalCoachingSessionSentProps {}
 

@@ -4,7 +4,7 @@ import { CardInfos } from "@/app/components/cards/CardInfos";
 import { CardBanner } from "@/app/components/cards/CardBanner";
 import { CardImage } from "@/app/components/cards/CardImage";
 import { Tag } from "@/app/components/badges/tags/Tag";
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 import { CardActions } from "./CardActions";
 
 type StartType = {

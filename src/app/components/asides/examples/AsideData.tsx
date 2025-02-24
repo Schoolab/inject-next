@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Aside } from "@/app/components/asides/Aside";
 import { AsideHeader } from "@/app/components/asides/AsideHeader";
-import { PaginationProps } from "@/app/components/Pagination";
+import { PaginationProps } from "@/app/components/pagination/Pagination";
 import { AsideBody } from "@/app/components/asides/AsideBody";
-import { Button } from "@/app/components/Button";
-import { Icon } from "@/app/components/Icon";
+import { Button } from "@/app/components/buttons/Button";
+import { Icon } from "@/app/components/icons/Icon";
 import { DataList } from "@/app/content/data/DataList";
 import { DataListItem } from "@/app/content/data/DataListItem";
 import { Tag } from "@/app/components/badges/tags/Tag";

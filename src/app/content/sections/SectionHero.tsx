@@ -1,4 +1,4 @@
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 import React, { CSSProperties } from "react";
 import DOMPurify from 'dompurify';
 

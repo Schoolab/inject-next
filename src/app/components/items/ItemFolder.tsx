@@ -1,10 +1,10 @@
 import React, { CSSProperties } from "react";
 
-import { DropdownItem, DropdownItemProps } from "@/app/components/dropdown/DropdownItem";
-import { Icon } from "@/app/components/Icon";
-import { Dropdown } from "@/app/components/dropdown/Dropdown";
-import { Button } from "../Button";
-import { DropdownMenu } from "../dropdown/DropdownMenu";
+import { DropdownItem, DropdownItemProps } from "@/app/components/dropdowns/DropdownItem";
+import { Icon } from "@/app/components/icons/Icon";
+import { Dropdown } from "@/app/components/dropdowns/Dropdown";
+import { Button } from "../buttons/Button";
+import { DropdownMenu } from "../dropdowns/DropdownMenu";
 
 export interface ItemFolderProps {
     label: string;

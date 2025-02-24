@@ -4,7 +4,7 @@ import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { AsideEvent } from "@/app/components/asides/examples/AsideEvent";
 import { aside } from "../../../../../public/utils/aside";
-import { Alert } from "@/app/components/Alert";
+import { Alert } from "@/app/components/alerts/Alert";
 
 export const ProgramEvent = () => {
     useEffect(() => {

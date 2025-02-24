@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 
 export interface ModalModelProps {}
 

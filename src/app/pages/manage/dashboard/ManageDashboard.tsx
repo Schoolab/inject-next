@@ -1,11 +1,11 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { StatCard } from "@/app/components/StatCard";
-import { Button } from "@/app/components/Button";
-import { Icon } from "@/app/components/Icon";
-import { Alert } from "@/app/components/Alert";
-import { Section } from "@/app/components/Section";
+import { StatCard } from "@/app/components/stat-cards/StatCard";
+import { Button } from "@/app/components/buttons/Button";
+import { Icon } from "@/app/components/icons/Icon";
+import { Alert } from "@/app/components/alerts/Alert";
+import { Section } from "@/app/components/sections/Section";
 
 export const ManageDashboard = () => {
     return (

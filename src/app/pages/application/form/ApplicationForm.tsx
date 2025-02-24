@@ -1,13 +1,13 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { Button } from "@/app/components/Button";
-import { Alert } from "@/app/components/Alert";
-import { Icon } from "@/app/components/Icon";
-import { Section } from "@/app/components/Section";
+import { Button } from "@/app/components/buttons/Button";
+import { Alert } from "@/app/components/alerts/Alert";
+import { Icon } from "@/app/components/icons/Icon";
+import { Section } from "@/app/components/sections/Section";
 import { FormTextarea } from "@/app/forms/FormTextarea";
 import { FormOption } from "@/app/forms/FormOption";
-import { Stepper, StepType } from "@/app/components/Stepper";
+import { Stepper, StepType } from "@/app/components/stepper/Stepper";
 import { FormInput } from "@/app/forms/FormInput";
 import { FormGroup } from "@/app/forms/FormGroup";
 import { FormInputWrapper } from "@/app/forms/FormInputWrapper";

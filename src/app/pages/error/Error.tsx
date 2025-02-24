@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 
 type ButtonType = {
     addClass?: string;

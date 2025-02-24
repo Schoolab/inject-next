@@ -1,5 +1,5 @@
 import React, { CSSProperties } from "react";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 import { ItemsGroup } from "@/app/components/items-group/ItemsGroup";
 import { FormGroup } from "@/app/forms/FormGroup";
 import { FormInput } from "@/app/forms/FormInput";

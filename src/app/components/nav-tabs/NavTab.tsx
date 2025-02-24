@@ -1,8 +1,8 @@
 import React from "react";
-import { Dropdown } from "@/app/components/dropdown/Dropdown";
-import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
-import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
-import { Icon } from "@/app/components/Icon";
+import { Dropdown } from "@/app/components/dropdowns/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
+import { Icon } from "@/app/components/icons/Icon";
 import { NavTabItem } from "@/app/components/nav-tabs/NavTabItem";
 import { NavTabDropdown } from "@/app/components/nav-tabs/NavTabDropdown";
 

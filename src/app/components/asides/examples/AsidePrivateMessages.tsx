@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 import { Avatar } from "@/app/components/avatars/Avatar";
 import { ItemList } from "@/app/components/items/ItemList";
 import { Aside } from "@/app/components/asides/Aside";

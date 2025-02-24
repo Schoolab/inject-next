@@ -1,6 +1,6 @@
 import React, { CSSProperties } from "react";
 import DOMPurify from 'dompurify';
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 import { Avatar } from "@/app/components/avatars/Avatar";
 
 type QuoteType = {

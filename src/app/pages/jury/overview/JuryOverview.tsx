@@ -3,7 +3,7 @@ import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { CardFeed } from "@/app/components/cards/CardFeed";
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 
 export const JuryOverview = () => {
     return (

@@ -2,19 +2,19 @@ import React from "react";
 import { useEffect } from "react";
 import { tooltips } from "../../../../public/utils/tooltips";
 import { nestedDropdown } from "../../../../public/utils/nestedDropdown";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 import { Theme } from "@/app/components/Theme";
 import { Avatar } from "@/app/components/avatars/Avatar";
-import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
-import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
-import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
+import { DropdownDivider } from "@/app/components/dropdowns/DropdownDivider";
+import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
 import { Role } from "@/app/components/badges/roles/Role";
-import { DropdownNested } from "@/app/components/dropdown/DropdownNested";
-import { DropdownHeader } from "@/app/components/dropdown/DropdownHeader";
+import { DropdownNested } from "@/app/components/dropdowns/DropdownNested";
+import { DropdownHeader } from "@/app/components/dropdowns/DropdownHeader";
 import { EmptyState } from "@/app/content/EmptyState";
-import { Dropdown } from "@/app/components/dropdown/Dropdown";
+import { Dropdown } from "@/app/components/dropdowns/Dropdown";
 import { Logo } from "@/app/components/Logo";
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 
 export interface NavBarProps {
     /**

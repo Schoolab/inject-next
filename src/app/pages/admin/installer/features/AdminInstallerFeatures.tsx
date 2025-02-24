@@ -1,12 +1,12 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { Stepper, StepType } from "@/app/components/Stepper";
-import { Section } from "@/app/components/Section";
+import { Stepper, StepType } from "@/app/components/stepper/Stepper";
+import { Section } from "@/app/components/sections/Section";
 import { FormFieldSet } from "@/app/forms/FormFieldSet";
 import { FormOption } from "@/app/forms/FormOption";
-import { Alert } from "@/app/components/Alert";
-import { Button } from "@/app/components/Button";
+import { Alert } from "@/app/components/alerts/Alert";
+import { Button } from "@/app/components/buttons/Button";
 
 const steps: StepType[] = [
     {

@@ -1,9 +1,9 @@
 import React from "react";
-import { Button } from "@/app/components/Button";
-import { Dropdown } from "@/app/components/dropdown/Dropdown";
-import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
-import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
-import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
+import { Button } from "@/app/components/buttons/Button";
+import { Dropdown } from "@/app/components/dropdowns/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
+import { DropdownDivider } from "@/app/components/dropdowns/DropdownDivider";
 
 export interface ModalParticipantProps {}
 

@@ -2,7 +2,7 @@ import React from "react";
 import { ItemsGroup } from "@/app/components/items-group/ItemsGroup";
 import { ItemsGroupHeader } from "@/app/components/items-group/ItemsGroupHeader";
 import { ItemCapsule } from "@/app/components/items/ItemCapsule";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 
 type CapsuleType = {
     icon?: string;

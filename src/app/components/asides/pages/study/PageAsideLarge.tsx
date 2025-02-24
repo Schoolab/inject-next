@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Aside } from "@/app/components/asides/Aside";
 import { AsideHeader } from "@/app/components/asides/AsideHeader";
-import { PaginationProps } from "@/app/components/Pagination";
+import { PaginationProps } from "@/app/components/pagination/Pagination";
 import { AsideBody } from "@/app/components/asides/AsideBody";
 
 interface PageAsideLargeProps {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 import { FormGroup } from "@/app/forms/FormGroup";
 import { FormInput } from "@/app/forms/FormInput";
 import { Theme } from "@/app/components/Theme";

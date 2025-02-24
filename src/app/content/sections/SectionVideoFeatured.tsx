@@ -1,5 +1,5 @@
 import React, { CSSProperties } from "react";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 
 type ButtonType = {
     type?: "primary" | "default";

@@ -1,7 +1,7 @@
 import React, { CSSProperties, useEffect } from "react";
 import { ReactNode } from "react";
 import { DataListDetails } from "@/app/content/data/DataListDetails";
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 import { tooltips } from "../../../../public/utils/tooltips";
 
 interface DataListItemProps {

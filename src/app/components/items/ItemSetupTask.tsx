@@ -1,7 +1,7 @@
 import React, { CSSProperties } from "react";
-import { Icon } from "@/app/components/Icon";
-import { Progress } from "@/app/components/Progress";
-import { Button } from "@/app/components/Button";
+import { Icon } from "@/app/components/icons/Icon";
+import { Progress } from "@/app/components/progress/Progress";
+import { Button } from "@/app/components/buttons/Button";
 
 export interface ItemSetupTaskProps {
     title?: string;

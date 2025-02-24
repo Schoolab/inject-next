@@ -1,22 +1,22 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { Alert } from "@/app/components/Alert";
+import { Alert } from "@/app/components/alerts/Alert";
 import { FormGroup } from "@/app/forms/FormGroup";
 import { FormInput } from "@/app/forms/FormInput";
 import { FormInputWrapper } from "@/app/forms/FormInputWrapper";
-import { Button } from "@/app/components/Button";
-import { Dropdown } from "@/app/components/dropdown/Dropdown";
-import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
-import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
-import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { Button } from "@/app/components/buttons/Button";
+import { Dropdown } from "@/app/components/dropdowns/Dropdown";
+import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
+import { DropdownDivider } from "@/app/components/dropdowns/DropdownDivider";
+import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
 import { FormTextarea } from "@/app/forms/FormTextarea";
 import { ItemResource } from "@/app/components/items/ItemResource";
-import { DropdownNested } from "@/app/components/dropdown/DropdownNested";
-import { Section } from "@/app/components/Section";
+import { DropdownNested } from "@/app/components/dropdowns/DropdownNested";
+import { Section } from "@/app/components/sections/Section";
 import { FormFieldSet } from "@/app/forms/FormFieldSet";
 import { FormOption } from "@/app/forms/FormOption";
-import { LangSwitch } from "@/app/components/LangSwitch";
+import { LangSwitch } from "@/app/components/lang-switch/LangSwitch";
 import FormConditional from "@/app/forms/FormConditional";
 
 export const ManageForms = () => {

@@ -1,12 +1,12 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 import { ItemsGroup } from "@/app/components/items-group/ItemsGroup";
 import { ItemsGroupHeader } from "@/app/components/items-group/ItemsGroupHeader";
 import { ItemQuestionnaire } from "@/app/components/items/ItemQuestionnaire";
 import { ItemCondition } from "@/app/components/items/ItemCondition";
-import { Section } from "@/app/components/Section";
+import { Section } from "@/app/components/sections/Section";
 import { EmptyState } from "@/app/content/EmptyState";
 import { ItemForm } from "@/app/components/items/parts/ItemForm";
 

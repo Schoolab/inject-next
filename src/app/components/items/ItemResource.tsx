@@ -1,6 +1,6 @@
 import React from "react";
-import { Icon } from "@/app/components/Icon";
-import { Button } from "@/app/components/Button";
+import { Icon } from "@/app/components/icons/Icon";
+import { Button } from "@/app/components/buttons/Button";
 
 type ResourceType = {
     name: string;

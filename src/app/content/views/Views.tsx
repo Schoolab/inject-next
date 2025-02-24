@@ -1,7 +1,7 @@
 import React, { CSSProperties, useState } from "react";
 import { Notif } from "@/app/components/badges/notifs/Notif";
-import { Icon } from "@/app/components/Icon";
-import { Button, ButtonProps } from "@/app/components/Button";
+import { Icon } from "@/app/components/icons/Icon";
+import { Button, ButtonProps } from "@/app/components/buttons/Button";
 
 export type OptionType = {
     value: string;

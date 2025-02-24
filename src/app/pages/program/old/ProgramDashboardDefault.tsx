@@ -2,7 +2,7 @@ import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { CardEvent } from "@/app/components/cards/CardEvent";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 import { CardFeed } from "@/app/components/cards/CardFeed";
 import { ItemResource } from "@/app/components/items/ItemResource";
 

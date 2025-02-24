@@ -1,6 +1,6 @@
 import React, { CSSProperties, useEffect } from "react";
 import { Notif } from "../badges/notifs/Notif";
-import { Icon } from "../Icon";
+import { Icon } from "../icons/Icon";
 import { tooltips } from "../../../../public/utils/tooltips";
 
 export interface SidebarItemProps {

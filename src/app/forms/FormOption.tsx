@@ -1,6 +1,6 @@
 import React from "react";
-import { Icon } from "@/app/components/Icon";
-import { Sdg } from "@/app/components/Sdg";
+import { Icon } from "@/app/components/icons/Icon";
+import { Sdg } from "@/app/components/avatars/Sdg";
 
 interface FormOptionProps {
     type: "checkbox" | "radio" | "switch";
@@ -11,7 +11,7 @@ interface FormOptionProps {
     caption?: string | React.ReactNode;
     image?: string;
     icon?: string;
-    sdg?: string;
+    sdg?: number;
     value?: string;
     checked?: boolean;
     defaultChecked?: boolean;
@@ -76,7 +76,7 @@ export const FormOption = (
                     <img role="presentation" src={image} alt={label} />
                 </picture> }
                 { icon && <Icon name={icon} size="sm" /> }
-                { sdg && <Sdg sdg={sdg} size="24" /> }
+                { sdg && <Sdg number={sdg} size="24px" /> }
                 <span>{label}</span>
             </label>
 

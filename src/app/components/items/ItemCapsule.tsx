@@ -1,5 +1,5 @@
 import React, { CSSProperties } from "react";
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 import { Tag } from "@/app/components/badges/tags/Tag";
 
 export interface ItemCapsuleProps {

@@ -5,7 +5,7 @@ import { Title } from "@/app/components/page-header/Title";
 import { SubNav } from "@/app/components/page-header/SubNav";
 import { Stepper } from "@/app/components/page-header/Stepper";
 import { Footer } from "@/app/components/footer/Footer";
-import { PaginationProps } from "@/app/components/Pagination";
+import { PaginationProps } from "@/app/components/pagination/Pagination";
 import { Placeholder } from "@/app/content/Placeholder";
 
 type BreadcrumbType = {

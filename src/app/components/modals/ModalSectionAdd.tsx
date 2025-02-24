@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 import { FormFieldSet } from "@/app/forms/FormFieldSet";
 import { FormOption } from "@/app/forms/FormOption";
 

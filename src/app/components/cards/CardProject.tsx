@@ -1,6 +1,6 @@
 import React, { CSSProperties } from "react";
 import { Tag } from "@/app/components/badges/tags/Tag";
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 import { Card } from "@/app/components/cards/Card";
 import { CardInfos } from "@/app/components/cards/CardInfos";
 import { CardActions } from "@/app/components/cards/CardActions";

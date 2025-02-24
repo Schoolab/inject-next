@@ -2,15 +2,15 @@ import React, { CSSProperties } from "react";
 import { Card } from "@/app/components/cards/Card";
 import { CardInfos } from "@/app/components/cards/CardInfos";
 import { ItemResource } from "@/app/components/items/ItemResource";
-import { Icon } from "@/app/components/Icon";
-import { Dropdown } from "@/app/components/dropdown/Dropdown";
-import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
-import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
-import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
+import { Icon } from "@/app/components/icons/Icon";
+import { Dropdown } from "@/app/components/dropdowns/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
+import { DropdownDivider } from "@/app/components/dropdowns/DropdownDivider";
 import DOMPurify from 'dompurify';
 import { Avatar } from "@/app/components/avatars/Avatar";
 import { Role } from "@/app/components/badges/roles/Role";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 
 type MetaType = {
     label: string;

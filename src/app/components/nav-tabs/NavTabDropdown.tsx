@@ -1,8 +1,8 @@
 import React from "react";
-import { Icon } from "@/app/components/Icon";
-import { Dropdown } from "@/app/components/dropdown/Dropdown";
-import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
-import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { Icon } from "@/app/components/icons/Icon";
+import { Dropdown } from "@/app/components/dropdowns/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
 import { Notif } from "@/app/components/badges/notifs/Notif";
 
 type ItemType = {

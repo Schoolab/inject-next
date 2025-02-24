@@ -1,10 +1,10 @@
 import React from "react";
-import { LangSwitch } from "@/app/components/LangSwitch";
+import { LangSwitch } from "@/app/components/lang-switch/LangSwitch";
 import { FormGroup } from "@/app/forms/FormGroup";
 import { FormInput } from "@/app/forms/FormInput";
 import { FormOption } from "@/app/forms/FormOption";
 import { FormSelect } from "@/app/forms/FormSelect";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 import { FormOptions } from "@/app/forms/FormOptions";
 
 export interface ItemFormProps {

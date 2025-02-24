@@ -1,6 +1,6 @@
 import React, { CSSProperties } from "react";
 import DOMPurify from 'dompurify';
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 
 type GalleryType = {
     type?: "image" | "video";

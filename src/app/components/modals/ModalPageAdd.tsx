@@ -1,7 +1,7 @@
 import React from "react";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 import { FormFieldSet } from "@/app/forms/FormFieldSet";
-import { LangSwitch } from "@/app/components/LangSwitch";
+import { LangSwitch } from "@/app/components/lang-switch/LangSwitch";
 import { FormGroup } from "@/app/forms/FormGroup";
 import { FormInput } from "@/app/forms/FormInput";
 

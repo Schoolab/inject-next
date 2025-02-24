@@ -1,12 +1,12 @@
 import React from "react";
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 import { Placeholder } from "@/app/content/Placeholder";
-import { Dropdown } from "@/app/components/dropdown/Dropdown";
-import { Button } from "@/app/components/Button";
-import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
-import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
-import { DropdownHeader } from "@/app/components/dropdown/DropdownHeader";
-import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
+import { Dropdown } from "@/app/components/dropdowns/Dropdown";
+import { Button } from "@/app/components/buttons/Button";
+import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
+import { DropdownHeader } from "@/app/components/dropdowns/DropdownHeader";
+import { DropdownDivider } from "@/app/components/dropdowns/DropdownDivider";
 
 interface QuestionTypeProps {
     type: "text" | "textarea" | "select" | "radio" | "checkbox" | "checklist" | "attachment" | "link" | "rating" | "votes";

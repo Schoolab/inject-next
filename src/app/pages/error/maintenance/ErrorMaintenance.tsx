@@ -2,7 +2,7 @@ import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Theme } from "@/app/components/Theme";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 
 export const ErrorMaintenance = () => {
     return (

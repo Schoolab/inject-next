@@ -1,8 +1,8 @@
 import React, { CSSProperties, useState } from "react";
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 import { NavTab } from "@/app/components/nav-tabs/NavTab";
-import { Button, ButtonProps } from "@/app/components/Button";
-import { Pagination, PaginationProps } from "@/app/components/Pagination";
+import { Button, ButtonProps } from "@/app/components/buttons/Button";
+import { Pagination, PaginationProps } from "@/app/components/pagination/Pagination";
 
 type ItemType = {
     label: string;

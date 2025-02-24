@@ -1,11 +1,11 @@
 import { Notif } from "@/app/components/badges/notifs/Notif";
 import { Tag } from "@/app/components/badges/tags/Tag";
-import { Button } from "@/app/components/Button";
-import { Dropdown } from "@/app/components/dropdown/Dropdown";
-import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
-import { DropdownHeader } from "@/app/components/dropdown/DropdownHeader";
-import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
-import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { Button } from "@/app/components/buttons/Button";
+import { Dropdown } from "@/app/components/dropdowns/Dropdown";
+import { DropdownDivider } from "@/app/components/dropdowns/DropdownDivider";
+import { DropdownHeader } from "@/app/components/dropdowns/DropdownHeader";
+import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
+import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
 
 export interface ItemsGroupHeaderProps {
     label?: string; 

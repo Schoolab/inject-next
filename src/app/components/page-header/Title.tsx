@@ -1,7 +1,7 @@
 import React, { CSSProperties } from "react";
-import { Button } from "@/app/components/Button";
-import { Icon } from "@/app/components/Icon";
-import { Pagination, PaginationProps } from "@/app/components/Pagination";
+import { Button } from "@/app/components/buttons/Button";
+import { Icon } from "@/app/components/icons/Icon";
+import { Pagination, PaginationProps } from "@/app/components/pagination/Pagination";
 
 type ButtonType = {
     label?: string;

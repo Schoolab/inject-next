@@ -5,24 +5,24 @@ import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 
 // Components
-import { Section } from "@/app/components/Section";
+import { Section } from "@/app/components/sections/Section";
 import { FormGroup } from "@/app/forms/FormGroup";
 import { FormInput } from "@/app/forms/FormInput";
 import { ItemResource } from "@/app/components/items/ItemResource";
-import { Dropdown } from "@/app/components/dropdown/Dropdown";
-import { Button } from "@/app/components/Button";
-import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
-import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
+import { Dropdown } from "@/app/components/dropdowns/Dropdown";
+import { Button } from "@/app/components/buttons/Button";
+import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
 import { FormInputWrapper } from "@/app/forms/FormInputWrapper";
 import { FormTextarea } from "@/app/forms/FormTextarea";
-import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
+import { DropdownDivider } from "@/app/components/dropdowns/DropdownDivider";
 import { FormSelect } from "@/app/forms/FormSelect";
 import { FormSelectMultiple } from "@/app/forms/FormSelectMultiple";
 import { FormFieldSet } from "@/app/forms/FormFieldSet";
 import { FormOption } from "@/app/forms/FormOption";
-import { Alert } from "@/app/components/Alert";
+import { Alert } from "@/app/components/alerts/Alert";
 import { ItemsGroup } from "@/app/components/items-group/ItemsGroup";
-import { Icon } from "@/app/components/Icon";
+import { Icon } from "@/app/components/icons/Icon";
 import { ItemsGroupHeader } from "@/app/components/items-group/ItemsGroupHeader";
 
 export const UserSettingsNotifications = () => {

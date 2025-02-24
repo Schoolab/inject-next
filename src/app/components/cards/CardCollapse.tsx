@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactNode } from "react";
-import { Icon } from "@/app/components/Icon";
-import { Progress } from "@/app/components/Progress";
+import { Icon } from "@/app/components/icons/Icon";
+import { Progress } from "@/app/components/progress/Progress";
 import { Placeholder } from "@/app/content/Placeholder";
 import { Card } from "@/app/components/cards/Card";
 

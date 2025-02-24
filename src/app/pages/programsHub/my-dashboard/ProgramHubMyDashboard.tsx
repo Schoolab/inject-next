@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { Button } from "@/app/components/Button";
+import { Button } from "@/app/components/buttons/Button";
 import { CardEvent } from "@/app/components/cards/CardEvent";
 import { FiltersMySpace } from "@/app/components/filters/FiltersMySpace";
 import { showMore } from "../../../../../public/utils/showMore";

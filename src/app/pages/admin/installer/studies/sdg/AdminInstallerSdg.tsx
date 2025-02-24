@@ -1,26 +1,26 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { Stepper, StepType } from "@/app/components/Stepper";
-import { Alert } from "@/app/components/Alert";
+import { Stepper, StepType } from "@/app/components/stepper/Stepper";
+import { Alert } from "@/app/components/alerts/Alert";
 import { FormGroup } from "@/app/forms/FormGroup";
 import { FormInput } from "@/app/forms/FormInput";
 import { FormInputWrapper } from "@/app/forms/FormInputWrapper";
-import { Button } from "@/app/components/Button";
-import { Dropdown } from "@/app/components/dropdown/Dropdown";
-import { DropdownItem } from "@/app/components/dropdown/DropdownItem";
-import { DropdownDivider } from "@/app/components/dropdown/DropdownDivider";
-import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
+import { Button } from "@/app/components/buttons/Button";
+import { Dropdown } from "@/app/components/dropdowns/Dropdown";
+import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
+import { DropdownDivider } from "@/app/components/dropdowns/DropdownDivider";
+import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
 import { FormTextarea } from "@/app/forms/FormTextarea";
 import { ItemResource } from "@/app/components/items/ItemResource";
-import { DropdownNested } from "@/app/components/dropdown/DropdownNested";
-import { Section } from "@/app/components/Section";
+import { DropdownNested } from "@/app/components/dropdowns/DropdownNested";
+import { Section } from "@/app/components/sections/Section";
 import { FormFieldSet } from "@/app/forms/FormFieldSet";
 import { FormOption } from "@/app/forms/FormOption";
-import { LangSwitch } from "@/app/components/LangSwitch";
+import { LangSwitch } from "@/app/components/lang-switch/LangSwitch";
 import { FormSelect } from "@/app/forms/FormSelect";
 import { AppSplit } from "@/app/layouts/AppSplit";
-import { ProgressBar } from "@/app/components/ProgressBar";
+import { ProgressBar } from "@/app/components/progress/bar/ProgressBar";
 import { CardProgram } from "@/app/components/cards/CardProgram";
 
 const Preview = () => {
@@ -75,7 +75,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="No poverty"
-                                    sdg="1"
+                                    sdg={1}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -84,7 +84,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                 label="Zero hunger"
-                                    sdg="2"
+                                    sdg={2}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -93,7 +93,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Good health and well being"
-                                    sdg="3"
+                                    sdg={3}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -102,7 +102,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Quality education"
-                                    sdg="4"
+                                    sdg={4}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -111,7 +111,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Gender equality"
-                                    sdg="5"
+                                    sdg={5}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -120,7 +120,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Clean water and sanitation"
-                                    sdg="6"
+                                    sdg={6}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -129,7 +129,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Affordable and clean energy"
-                                    sdg="7"
+                                    sdg={7}
                                 />  
                                 <FormOption
                                     name="sdgs"
@@ -138,7 +138,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Decent work and economic growth"
-                                    sdg="8"
+                                    sdg={8}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -147,7 +147,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Industry innovation and infrastructure"
-                                    sdg="9"
+                                    sdg={9}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -156,7 +156,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Reduced inequalities"
-                                    sdg="10"
+                                    sdg={10}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -165,7 +165,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Sustainable cities and communities"
-                                    sdg="11"
+                                    sdg={11}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -174,7 +174,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Responsable consumption and production"
-                                    sdg="12"
+                                    sdg={12}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -183,7 +183,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Climate action"
-                                    sdg="13"
+                                    sdg={13}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -192,7 +192,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Life below water"
-                                    sdg="14"
+                                    sdg={14}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -201,7 +201,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Life on land"
-                                    sdg="15"
+                                    sdg={15}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -210,7 +210,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Peace, justice and strong institutions"
-                                    sdg="16"
+                                    sdg={16}
                                 />
                                 <FormOption
                                     name="sdgs"
@@ -219,7 +219,7 @@ export const AdminInstallerSdg = ({ theme = "default" }: AdminInstallerSdgProps)
                                     type="checkbox"
                                     card={true}
                                     label="Partnerships for the goals"
-                                    sdg="17"
+                                    sdg={17}
                                 />
                         </FormFieldSet>
 
