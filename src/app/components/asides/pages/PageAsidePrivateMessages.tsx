@@ -1,5 +1,5 @@
 import React from "react";
-import { AsidePrivateMessages } from "../AsidePrivateMessages";
+import { AsidePrivateMessages } from "../examples/AsidePrivateMessages";
 
 interface PageAsidePrivateMessagesProps {}
 

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { AsideCapsules } from "@/app/components/asides/AsideCapsules";
+import { AsideCapsules } from "@/app/components/asides/examples/AsideCapsules";
 import { aside } from "../../../../public/utils/aside";
 import { CardCollapse } from "@/app/components/cards/CardCollapse";
 import { CardTask } from "@/app/components/cards/CardTask";

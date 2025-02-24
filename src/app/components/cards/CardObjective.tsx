@@ -8,7 +8,7 @@ import { CardInfos } from "@/app/components/cards/CardInfos";
 import { Tag } from "@/app/components/badges/tags/Tag";
 import { Button } from "@/app/components/Button";
 import { ProgressBar } from "@/app/components/ProgressBar";
-import { Completed } from "@/stories/components/Progress.stories";
+import { Completed } from "@/app/components/Progress.stories";
 
 interface CardObjectiveProps {
     name?: string;

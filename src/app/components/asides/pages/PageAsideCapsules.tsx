@@ -1,5 +1,5 @@
 import React from "react";
-import { AsideCapsules } from "../AsideCapsules";
+import { AsideCapsules } from "../examples/AsideCapsules";
 
 interface PageAsideCapsulesProps {}
 

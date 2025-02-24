@@ -13,7 +13,7 @@ import { DropdownMenu } from "@/app/components/dropdown/DropdownMenu";
 import { FormTextarea } from "@/app/forms/FormTextarea";
 import { ItemResource } from "@/app/components/items/ItemResource";
 import { Alert } from "@/app/components/Alert";
-import { AsideIAChat } from "@/app/components/asides/AsideIAChat";
+import { AsideIAChat } from "@/app/components/asides/examples/AsideIAChat";
 import { aside } from "../../../../public/utils/aside";
 
 export const AdminIAForm = () => {

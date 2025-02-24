@@ -1,5 +1,5 @@
 import React from "react";
-import { AsideEditPage } from "../AsideEditPage";
+import { AsideEditPage } from "../examples/AsideEditPage";
 
 interface PageAsideEditPageProps {}
 

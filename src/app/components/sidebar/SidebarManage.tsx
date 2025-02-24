@@ -1,3 +1,5 @@
+// TODO: DELETE (use Sidebar with props)
+
 import React from "react";
 import { Sidebar } from "./Sidebar";
 

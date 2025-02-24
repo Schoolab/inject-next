@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { AsideEvent } from "@/app/components/asides/AsideEvent";
+import { AsideEvent } from "@/app/components/asides/examples/AsideEvent";
 import { aside } from "../../../../public/utils/aside";
 import { Alert } from "@/app/components/Alert";
 

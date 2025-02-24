@@ -4,7 +4,7 @@ import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { FiltersDefault } from "@/app/components/filters/FiltersDefault";
 import { TableElementAsideNotes } from "@/app/content/tables/TableAsideNotes";
-import { AsideNotes } from "@/app/components/asides/AsideNotes";
+import { AsideNotes } from "@/app/components/asides/examples/AsideNotes";
 import { aside } from "../../../../public/utils/aside";
 
 export const AdminAsideNotes = () => {

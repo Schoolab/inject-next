@@ -4,7 +4,7 @@ import { Breadcrumb } from "@/app/components/page-header/Breadcrumb";
 import { Title } from "@/app/components/page-header/Title";
 import { SubNav } from "@/app/components/page-header/SubNav";
 import { Stepper } from "@/app/components/page-header/Stepper";
-import { Footer } from "@/app/components/Footer";
+import { Footer } from "@/app/components/footer/Footer";
 import { PaginationProps } from "@/app/components/Pagination";
 import { Placeholder } from "@/app/content/Placeholder";
 

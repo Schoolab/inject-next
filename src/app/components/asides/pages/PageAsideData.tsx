@@ -1,5 +1,5 @@
 import React from "react";
-import { AsideData } from "../AsideData";
+import { AsideData } from "../examples/AsideData";
 
 interface PageAsideDataProps {}
 

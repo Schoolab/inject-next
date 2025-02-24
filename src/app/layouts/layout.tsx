@@ -1,11 +1,11 @@
 import React from "react";
 import { ReactNode } from "react";
 import { useEffect } from "react";
-import { Navbar } from "@/app/components/NavBar";
-import { ShortcutBar } from "@/app/components/Shortcutbar/ShortcutBar";
+import { Navbar } from "@/app/components/navbar/NavBar";
+import { ShortcutBar } from "@/app/components/shortcutbar/ShortcutBar";
 import { SidebarManage } from "@/app/components/sidebar/SidebarManage";
 import { SidebarAdmin } from "@/app/components/sidebar/SidebarAdmin";
-import { AsidePrivateMessages } from "@/app/components/asides/AsidePrivateMessages";
+import { AsidePrivateMessages } from "@/app/components/asides/examples/AsidePrivateMessages";
 import { Placeholder } from "@/app/content/Placeholder";
 import { asideToggle } from "../../../public/utils/asideToggle";
 // import { select } from "../../../public/utils/select";

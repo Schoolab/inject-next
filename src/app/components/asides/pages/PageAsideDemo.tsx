@@ -1,5 +1,5 @@
 import React from "react";
-import { AsideDemo } from "@/app/components/asides/AsideDemo";
+import { AsideDemo } from "@/app/components/asides/examples/AsideDemo";
 import { Button } from "@/app/components/Button";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";

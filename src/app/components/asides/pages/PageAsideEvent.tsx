@@ -1,5 +1,5 @@
 import React from "react";
-import { AsideEvent } from "../AsideEvent";
+import { AsideEvent } from "../examples/AsideEvent";
 
 interface PageAsideEventProps {}
 

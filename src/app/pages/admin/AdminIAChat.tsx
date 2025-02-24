@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { AsideIAChat } from "@/app/components/asides/AsideIAChat";
+import { AsideIAChat } from "@/app/components/asides/examples/AsideIAChat";
 import { aside } from "../../../../public/utils/aside";
 
 export const AdminIAChat = () => {

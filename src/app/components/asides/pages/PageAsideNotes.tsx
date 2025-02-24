@@ -1,5 +1,5 @@
 import React from "react";
-import { AsideNotes } from "../AsideNotes";
+import { AsideNotes } from "../examples/AsideNotes";
 
 interface PageAsideNotesProps {}
 

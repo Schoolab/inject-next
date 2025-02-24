@@ -1,5 +1,5 @@
 import React from "react";
-import { AsideJury } from "../AsideJury";
+import { AsideJury } from "../examples/AsideJury";
 
 interface PageAsideJuryProps {}
 
