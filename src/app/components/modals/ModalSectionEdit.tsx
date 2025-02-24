@@ -1,11 +1,11 @@
 import React from "react";
 import { Button } from "@/app/components/buttons/Button";
 import { LangSwitch } from "@/app/components/lang-switch/LangSwitch";
-import { FormGroup } from "@/app/forms/FormGroup";
-import { FormInput } from "@/app/forms/FormInput";
-import { FormTextarea } from "@/app/forms/FormTextarea";
+import { FormGroup } from "@/app/forms/group/FormGroup";
+import { FormInput } from "@/app/forms/input/FormInput";
+import { FormTextarea } from "@/app/forms/textarea/FormTextarea";
 import { Icon } from "@/app/components/icons/Icon";
-import { FormFieldSet } from "@/app/forms/FormFieldSet";
+import { FormFieldSet } from "@/app/forms/fieldset/FormFieldSet";
 import { CardCollapse } from "@/app/components/cards/CardCollapse";
 export interface ModalSectionEditProps {}
 

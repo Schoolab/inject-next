@@ -1,17 +1,17 @@
 import React from "react";
 import { Button } from "@/app/components/buttons/Button";
-import { FormGroup } from "@/app/forms/FormGroup";
-import { FormInput } from "@/app/forms/FormInput";
-import { FormSelect } from "@/app/forms/FormSelect";
-import { FormTextarea } from "@/app/forms/FormTextarea";
-import { FormInputWrapper } from "@/app/forms/FormInputWrapper";
+import { FormGroup } from "@/app/forms/group/FormGroup";
+import { FormInput } from "@/app/forms/input/FormInput";
+import { FormSelect } from "@/app/forms/select/FormSelect";
+import { FormTextarea } from "@/app/forms/textarea/FormTextarea";
+import { FormInputWrapper } from "@/app/forms/input-wrapper/FormInputWrapper";
 import { Dropdown } from "@/app/components/dropdowns/Dropdown";
 import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
 import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
 import { DropdownDivider } from "@/app/components/dropdowns/DropdownDivider";
 import { DropdownNested } from "@/app/components/dropdowns/DropdownNested";
-import { FormFieldSet } from "@/app/forms/FormFieldSet";
-import { FormOption } from "@/app/forms/FormOption";
+import { FormFieldSet } from "@/app/forms/fieldset/FormFieldSet";
+import { FormOption } from "@/app/forms/option/FormOption";
 import { ItemsGroup } from "@/app/components/items-group/ItemsGroup";
 
 export interface ModalCoachingSessionNewProps {}

@@ -11,7 +11,7 @@ import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
 import { Role } from "@/app/components/badges/roles/Role";
 import { DropdownNested } from "@/app/components/dropdowns/DropdownNested";
 import { DropdownHeader } from "@/app/components/dropdowns/DropdownHeader";
-import { EmptyState } from "@/app/content/EmptyState";
+import { EmptyState } from "@/app/content/empty-states/EmptyState";
 import { Dropdown } from "@/app/components/dropdowns/Dropdown";
 import { Logo } from "@/app/components/Logo";
 import { Icon } from "@/app/components/icons/Icon";

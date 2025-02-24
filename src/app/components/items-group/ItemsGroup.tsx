@@ -1,5 +1,5 @@
 import { CSSProperties } from "react";
-import { Placeholder } from "@/app/content/Placeholder";
+import { Placeholder } from "@/app/content/placeholders/Placeholder";
 import { ItemsGroupHeader } from "@/app/components/items-group/ItemsGroupHeader";
 
 export interface ItemsGroupProps {

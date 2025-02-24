@@ -7,7 +7,7 @@ import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
 import { Button } from "@/app/components/buttons/Button";
 import { Dropdown } from "@/app/components/dropdowns/Dropdown";
 import { Role } from "@/app/components/badges/roles/Role";
-import { Placeholder } from "@/app/content/Placeholder";
+import { Placeholder } from "@/app/content/placeholders/Placeholder";
 import { CardParticipant } from "@/app/components/cards/CardParticipant";
 
 interface CardApplicationProps {}

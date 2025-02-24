@@ -4,7 +4,7 @@ import { CardEvent } from "@/app/components/cards/CardEvent";
 import { MessageChat } from "@/app/components/messages/MessageChat";
 import { AsideHeader } from "@/app/components/asides/AsideHeader";
 import { Message } from "@/app/components/messages/Message";
-import { FormComposer } from "@/app/forms/FormComposer";
+import { FormComposer } from "@/app/forms/composer/FormComposer";
 
 interface AsideEventProps {}
 

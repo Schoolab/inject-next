@@ -7,7 +7,7 @@ import { ItemsGroupHeader } from "@/app/components/items-group/ItemsGroupHeader"
 import { ItemQuestionnaire } from "@/app/components/items/ItemQuestionnaire";
 import { ItemCondition } from "@/app/components/items/ItemCondition";
 import { Section } from "@/app/components/sections/Section";
-import { EmptyState } from "@/app/content/EmptyState";
+import { EmptyState } from "@/app/content/empty-states/EmptyState";
 import { ItemForm } from "@/app/components/items/parts/ItemForm";
 
 export const ManageApplicationForms = () => {

@@ -1,14 +1,14 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { FormInput } from "@/app/forms/FormInput";
+import { FormInput } from "@/app/forms/input/FormInput";
 import { Icon } from "@/app/components/icons/Icon";
 import { Section } from "@/app/components/sections/Section";
-import { FormGroup } from "@/app/forms/FormGroup";
-import { FormInputWrapper } from "@/app/forms/FormInputWrapper";
+import { FormGroup } from "@/app/forms/group/FormGroup";
+import { FormInputWrapper } from "@/app/forms/input-wrapper/FormInputWrapper";
 import { Alert } from "@/app/components/alerts/Alert";
-import { FormSelect } from "@/app/forms/FormSelect";
-import { EmptyState } from "@/app/content/EmptyState";
+import { FormSelect } from "@/app/forms/select/FormSelect";
+import { EmptyState } from "@/app/content/empty-states/EmptyState";
 
 export const ApplicationOverview = () => {
     return (

@@ -6,20 +6,20 @@ import { AppContent } from "@/app/layouts/AppContent";
 
 // Components
 import { Section } from "@/app/components/sections/Section";
-import { FormGroup } from "@/app/forms/FormGroup";
-import { FormInput } from "@/app/forms/FormInput";
+import { FormGroup } from "@/app/forms/group/FormGroup";
+import { FormInput } from "@/app/forms/input/FormInput";
 import { ItemResource } from "@/app/components/items/ItemResource";
 import { Dropdown } from "@/app/components/dropdowns/Dropdown";
 import { Button } from "@/app/components/buttons/Button";
 import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
 import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
-import { FormInputWrapper } from "@/app/forms/FormInputWrapper";
-import { FormTextarea } from "@/app/forms/FormTextarea";
+import { FormInputWrapper } from "@/app/forms/input-wrapper/FormInputWrapper";
+import { FormTextarea } from "@/app/forms/textarea/FormTextarea";
 import { DropdownDivider } from "@/app/components/dropdowns/DropdownDivider";
-import { FormSelect } from "@/app/forms/FormSelect";
-import { FormSelectMultiple } from "@/app/forms/FormSelectMultiple";
-import { FormFieldSet } from "@/app/forms/FormFieldSet";
-import { FormOption } from "@/app/forms/FormOption";
+import { FormSelect } from "@/app/forms/select/FormSelect";
+import { FormSelectMultiple } from "@/app/forms/select-multiple/FormSelectMultiple";
+import { FormFieldSet } from "@/app/forms/fieldset/FormFieldSet";
+import { FormOption } from "@/app/forms/option/FormOption";
 import { Alert } from "@/app/components/alerts/Alert";
 
 export const UserSettingsAccount = () => {

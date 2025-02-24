@@ -13,9 +13,9 @@ import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
 import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
 import { DropdownDivider } from "@/app/components/dropdowns/DropdownDivider";
 import { CardCollapse } from "@/app/components/cards/CardCollapse";
-import { FormGroup } from "@/app/forms/FormGroup";
-import { FormTextarea } from "@/app/forms/FormTextarea";
-import { FormFieldSet } from "@/app/forms/FormFieldSet";
+import { FormGroup } from "@/app/forms/group/FormGroup";
+import { FormTextarea } from "@/app/forms/textarea/FormTextarea";
+import { FormFieldSet } from "@/app/forms/fieldset/FormFieldSet";
 import { ItemResource } from "@/app/components/items/ItemResource";
 
 export const UserProfileAbout = () => {

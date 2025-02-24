@@ -2,7 +2,7 @@ import React from "react";
 import { ReactNode } from "react";
 import { Icon } from "@/app/components/icons/Icon";
 import { Progress } from "@/app/components/progress/Progress";
-import { Placeholder } from "@/app/content/Placeholder";
+import { Placeholder } from "@/app/content/placeholders/Placeholder";
 import { Card } from "@/app/components/cards/Card";
 
 type MetaType = {

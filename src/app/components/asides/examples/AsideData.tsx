@@ -11,9 +11,9 @@ import { Tag } from "@/app/components/badges/tags/Tag";
 import { Badges } from "@/app/components/badges/Badges";
 import { Avatar } from "@/app/components/avatars/Avatar";
 import { Stack } from "@/app/components/avatars/Stack";
-import { FormGroup } from "@/app/forms/FormGroup";
-import { FormTextarea } from "@/app/forms/FormTextarea";
-import { FormInput } from "@/app/forms/FormInput";
+import { FormGroup } from "@/app/forms/group/FormGroup";
+import { FormTextarea } from "@/app/forms/textarea/FormTextarea";
+import { FormInput } from "@/app/forms/input/FormInput";
 import { ItemResource } from "@/app/components/items/ItemResource";
 
 interface AsideDataProps {

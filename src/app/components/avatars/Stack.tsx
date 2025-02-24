@@ -1,5 +1,5 @@
 import React, { CSSProperties } from "react";
-import { Placeholder } from "@/app/content/Placeholder";
+import { Placeholder } from "@/app/content/placeholders/Placeholder";
 
 interface StackProps {
     /**

@@ -6,7 +6,7 @@ import { SubNav } from "@/app/components/page-header/SubNav";
 import { Stepper } from "@/app/components/page-header/Stepper";
 import { Footer } from "@/app/components/footer/Footer";
 import { PaginationProps } from "@/app/components/pagination/Pagination";
-import { Placeholder } from "@/app/content/Placeholder";
+import { Placeholder } from "@/app/content/placeholders/Placeholder";
 
 type BreadcrumbType = {
     label: string;

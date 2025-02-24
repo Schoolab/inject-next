@@ -6,7 +6,7 @@ import { ShortcutBar } from "@/app/components/shortcutbar/ShortcutBar";
 import { SidebarManage } from "@/app/components/sidebar/SidebarManage";
 import { SidebarAdmin } from "@/app/components/sidebar/SidebarAdmin";
 import { AsidePrivateMessages } from "@/app/components/asides/examples/AsidePrivateMessages";
-import { Placeholder } from "@/app/content/Placeholder";
+import { Placeholder } from "@/app/content/placeholders/Placeholder";
 import { asideToggle } from "../../../public/utils/asideToggle";
 // import { select } from "../../../public/utils/select";
 

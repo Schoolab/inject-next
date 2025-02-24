@@ -3,10 +3,10 @@ import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Stepper, StepType } from "@/app/components/stepper/Stepper";
 import { Section } from "@/app/components/sections/Section";
-import { FormGroup } from "@/app/forms/FormGroup";
-import { FormFieldSet } from "@/app/forms/FormFieldSet";
-import { FormOption } from "@/app/forms/FormOption";
-import { FormSelect } from "@/app/forms/FormSelect";
+import { FormGroup } from "@/app/forms/group/FormGroup";
+import { FormFieldSet } from "@/app/forms/fieldset/FormFieldSet";
+import { FormOption } from "@/app/forms/option/FormOption";
+import { FormSelect } from "@/app/forms/select/FormSelect";
 import { Button } from "@/app/components/buttons/Button";
 
 const steps: StepType[] = [

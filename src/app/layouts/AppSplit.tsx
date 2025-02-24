@@ -1,6 +1,6 @@
 import React, { CSSProperties } from "react";
 import { Theme } from "@/app/components/Theme";
-import { Placeholder } from "@/app/content/Placeholder";
+import { Placeholder } from "@/app/content/placeholders/Placeholder";
 import { Logo } from "@/app/components/Logo";
 
 export interface AppSplitProps {

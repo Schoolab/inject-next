@@ -5,8 +5,8 @@ import { Button } from "@/app/components/buttons/Button";
 import { Alert } from "@/app/components/alerts/Alert";
 import { Icon } from "@/app/components/icons/Icon";
 import { Section } from "@/app/components/sections/Section";
-import { FormTextarea } from "@/app/forms/FormTextarea";
-import { FormOption } from "@/app/forms/FormOption";
+import { FormTextarea } from "@/app/forms/textarea/FormTextarea";
+import { FormOption } from "@/app/forms/option/FormOption";
 import { Stepper, StepType } from "@/app/components/stepper/Stepper";
 
 const steps: StepType[] = [

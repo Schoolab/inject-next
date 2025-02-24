@@ -1,5 +1,5 @@
 import React from "react";
-import { Placeholder } from "@/app/content/Placeholder";
+import { Placeholder } from "@/app/content/placeholders/Placeholder";
 
 export interface ItemConditionProps {
   condition: string;

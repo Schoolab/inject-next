@@ -4,9 +4,9 @@ import { ItemsGroup } from "@/app/components/items-group/ItemsGroup";
 import { ItemsGroupHeader } from "@/app/components/items-group/ItemsGroupHeader";
 import { ItemSection } from "@/app/components/items/ItemSection";
 import { Button } from "@/app/components/buttons/Button";
-import { FormGroup } from "@/app/forms/FormGroup";
-import { FormInput } from "@/app/forms/FormInput";
-import { FormTextarea } from "@/app/forms/FormTextarea";
+import { FormGroup } from "@/app/forms/group/FormGroup";
+import { FormInput } from "@/app/forms/input/FormInput";
+import { FormTextarea } from "@/app/forms/textarea/FormTextarea";
 import { ItemResource } from "@/app/components/items/ItemResource";
 import { Alert } from "@/app/components/alerts/Alert";
 

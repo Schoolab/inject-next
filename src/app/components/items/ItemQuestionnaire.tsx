@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "@/app/components/icons/Icon";
-import { Placeholder } from "@/app/content/Placeholder";
+import { Placeholder } from "@/app/content/placeholders/Placeholder";
 import { Dropdown } from "@/app/components/dropdowns/Dropdown";
 import { Button } from "@/app/components/buttons/Button";
 import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";

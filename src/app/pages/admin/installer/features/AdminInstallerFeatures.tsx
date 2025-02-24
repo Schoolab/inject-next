@@ -3,8 +3,8 @@ import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Stepper, StepType } from "@/app/components/stepper/Stepper";
 import { Section } from "@/app/components/sections/Section";
-import { FormFieldSet } from "@/app/forms/FormFieldSet";
-import { FormOption } from "@/app/forms/FormOption";
+import { FormFieldSet } from "@/app/forms/fieldset/FormFieldSet";
+import { FormOption } from "@/app/forms/option/FormOption";
 import { Alert } from "@/app/components/alerts/Alert";
 import { Button } from "@/app/components/buttons/Button";
 

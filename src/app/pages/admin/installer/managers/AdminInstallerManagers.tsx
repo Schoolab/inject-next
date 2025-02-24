@@ -4,7 +4,7 @@ import { AppContent } from "@/app/layouts/AppContent";
 import { Stepper, StepType } from "@/app/components/stepper/Stepper";
 import { Section } from "@/app/components/sections/Section";
 import { Button } from "@/app/components/buttons/Button";
-import { EmptyState } from "@/app/content/EmptyState";
+import { EmptyState } from "@/app/content/empty-states/EmptyState";
 
 const steps: StepType[] = [
     {

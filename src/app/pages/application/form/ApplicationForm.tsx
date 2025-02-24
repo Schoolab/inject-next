@@ -5,12 +5,12 @@ import { Button } from "@/app/components/buttons/Button";
 import { Alert } from "@/app/components/alerts/Alert";
 import { Icon } from "@/app/components/icons/Icon";
 import { Section } from "@/app/components/sections/Section";
-import { FormTextarea } from "@/app/forms/FormTextarea";
-import { FormOption } from "@/app/forms/FormOption";
+import { FormTextarea } from "@/app/forms/textarea/FormTextarea";
+import { FormOption } from "@/app/forms/option/FormOption";
 import { Stepper, StepType } from "@/app/components/stepper/Stepper";
-import { FormInput } from "@/app/forms/FormInput";
-import { FormGroup } from "@/app/forms/FormGroup";
-import { FormInputWrapper } from "@/app/forms/FormInputWrapper";
+import { FormInput } from "@/app/forms/input/FormInput";
+import { FormGroup } from "@/app/forms/group/FormGroup";
+import { FormInputWrapper } from "@/app/forms/input-wrapper/FormInputWrapper";
 
 const steps: StepType[] = [
     {

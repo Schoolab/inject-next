@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/app/components/buttons/Button";
-import { FormFieldSet } from "@/app/forms/FormFieldSet";
-import { FormOption } from "@/app/forms/FormOption";
+import { FormFieldSet } from "@/app/forms/fieldset/FormFieldSet";
+import { FormOption } from "@/app/forms/option/FormOption";
 
 export interface ModalSectionAddProps {}
 
