@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ShortcutBar } from '@/app/components/shortcutbar/ShortcutBar';
+import { ShortcutBar } from './ShortcutBar';
 
 const meta = {
   title: 'Components/ShortcutBar',
