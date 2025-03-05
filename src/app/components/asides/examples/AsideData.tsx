@@ -82,41 +82,35 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                 <dd>
                                     <Button type="muted" addClass="btn-link" size="xs">
                                         <span>Impact Innovators</span>
-                                        <Icon name="new-tab" addClass="text-muted" />
                                     </Button>
-                                </dd>
-                            </DataListItem>
-                            <DataListItem label="Pipedrive ID" tooltip="You can find an item’s system ID in two places: the URL after opening an item in Pipedrive or in the list view by adding the ID column.">
-                                <dd className="d-flex flex-row gap-none">
-                                    <span className="text-muted">#</span>
-                                    <span>42986</span>
                                 </dd>
                             </DataListItem>
                             <DataListItem label="Customer">
                                 <dd>
-                                    <span>Schoolab</span>
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <span>Schoolab</span>
+                                    </Button>
+                                   
                                 </dd>
                             </DataListItem>
-                        
-                    
                             <DataListItem label="Business line">
                                 <dd>
                                     <span>Real Estate and construction</span>
                                 </dd>
                             </DataListItem>
-                            <DataListItem label="Used case ">
+                            <DataListItem label="Timeline">
                                 <dd>
-                                    <Badges>
-                                        <Tag label="workshop" />
-                                    </Badges>
+                                    <span>Feb 12, 2025 - March 12, 2025  </span>
                                 </dd>
                             </DataListItem>
-                            <DataListItem label="Methodologies ">
-                                <dd>
-                                    <Badges>
-                                        <Tag label="Consulting" />
-                                        <Tag label="Design Thinking" />
-                                    </Badges>
+                            <DataListItem label="Pipedrive ID" tooltip="You can find an item’s system ID in two places: the URL after opening an item in Pipedrive or in the list view by adding the ID column.">
+                                <dd className="d-flex flex-row gap-none">
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <span className="text-muted">#</span>
+                                        <span>42986</span>
+                                        <Icon name="new-tab" addClass="text-muted" />
+                                    </Button>
+
                                 </dd>
                             </DataListItem>
                             <DataListItem label="Budget">
@@ -125,8 +119,113 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                 </dd>
                             </DataListItem>
                             <DataListItem label="Status ">
+                                <dd className="d-flex flex-row gap-2xs">
+                                    <Tag label="Open" iconName="status-filled" status="open" /> <Tag label="Public" iconName="visibility" status="open" />
+                                </dd>
+                            </DataListItem>
+                            
+                      
+                            <DataListItem label="Owners">
                                 <dd>
-                                    <Tag label="Open" iconName="status-filled" status="open" />
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Avatar size="xs" image="img/avatar-terence.jpeg" />
+                                        <span>Terence Irving</span>
+                                    </Button>
+                                </dd>
+                                <dd>
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Avatar size="xs" image="img/avatar-alexandra.jpeg" />
+                                        <span>Alexandra Jolly</span>
+                                    </Button>
+                                </dd>
+                            </DataListItem>
+                            <DataListItem label="Managers">
+                                <dd className="d-flex flex-row gap-2xs">
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Stack>
+                                            <Avatar size="xs" image="img/avatar-pierre.jpeg" />
+                                            <Avatar size="xs" image="img/avatar-emma.jpeg" />
+                                            <Avatar size="xs" image="img/avatar-julien.jpeg" />
+                                        </Stack>
+                                        <span>5</span>
+                                    </Button>
+                                </dd>
+                            </DataListItem>
+                            <DataListItem label="Participants">
+                                <dd className="d-flex flex-row gap-2xs">
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Stack>
+                                            <Avatar size="xs" image="img/avatar-nora.jpeg" />
+                                            <Avatar size="xs" image="img/avatar-marine.jpeg" />
+                                            <Avatar size="xs" image="img/avatar-john.jpeg" />
+                                        </Stack>
+                                        <span>803</span>
+                                    </Button>
+                                </dd>
+                            </DataListItem>
+                            <DataListItem label="projects">
+                                <dd className="d-flex flex-row gap-2xs">
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Stack>
+                                            <div className="icon icon--letter is-xs">
+                                                <span aria-hidden="true">A</span>
+                                            </div>
+                                            <div className="icon icon--letter is-xs">
+                                                <span aria-hidden="true">S</span>
+                                            </div>
+                                            <div className="icon icon--letter is-xs">
+                                                <span aria-hidden="true">H</span>
+                                            </div>
+                                        </Stack>
+                                        <span>12</span>
+                                    </Button>
+                                </dd>
+                            </DataListItem>
+                       
+                        
+                            {/* <DataListItem label="SDGs" tooltip="The SDGs are the United Nations Sustainable Development Goals. They are a set of 17 goals designed to transform our world by 2030. Each goal has specific targets to achieve by 2030.">
+                                <dd>
+                                    <Badges>
+                                        <Tag link="#" isPill={false}>
+                                            <div aria-hidden="true" className="icon icon--sdg is-sdg-7 is-16px">
+                                                <span>7</span>
+                                            </div>
+                                            <span>Affordable and clean energy</span>
+                                        </Tag>
+                                    </Badges>
+                                </dd>
+                            </DataListItem> */}
+                               <DataListItem label="Used case ">
+                                <dd>
+                                    <Badges>
+                                        <Tag label="workshop" />
+                                    </Badges>
+                                </dd>
+                            </DataListItem>
+                                  
+                            <DataListItem label="Methodologies ">
+                                <dd>
+                                    <Badges>
+                                        <Tag label="Consulting" />
+                                        <Tag label="Design Thinking" />
+                                    </Badges>
+                                </dd>
+                            </DataListItem>
+                            <DataListItem label="Tags">
+                                <dd>
+                                    <Badges>
+                                        <Tag link="#" isPill={false}>
+                                            <div aria-hidden="true" className="icon icon--sdg is-sdg-7 is-16px">
+                                                <span>7</span>
+                                            </div>
+                                            <span>Affordable and clean energy</span>
+                                        </Tag>
+                                        <Tag link="#" label="Impact native" iconName="impact-native" isPill={false} />
+                                        <Tag link="#" label="DEI" iconName="vertical-dei" isPill={false} />
+                                        <Tag link="#" label="Corporate" iconName="ecosystem-corporate" />
+                                        <Tag link="#" label="Strategic" />
+                                        <Tag link="#" label="Innovation" />
+                                    </Badges>
                                 </dd>
                             </DataListItem>
                             <DataListItem label="Links">
@@ -160,101 +259,6 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                     </div>
                                 </dd>
                             </DataListItem>
-                            <DataListItem label="Confidentiality ">
-                                <dd>
-                                    <Tag label="Public" iconName="visibility" status="open" />
-                                </dd>
-                            </DataListItem>
-                            <DataListItem label="Owners">
-                                <dd>
-                                    <Button type="muted" addClass="btn-link" size="xs">
-                                        <Avatar size="xs" image="img/avatar-terence.jpeg" />
-                                        <span>Terence Irving</span>
-                                        <Icon name="new-tab" addClass="text-muted" />
-                                    </Button>
-                                </dd>
-                                <dd>
-                                    <Button type="muted" addClass="btn-link" size="xs">
-                                        <Avatar size="xs" image="img/avatar-alexandra.jpeg" />
-                                        <span>Alexandra Jolly</span>
-                                        <Icon name="new-tab" addClass="text-muted" />
-                                    </Button>
-                                </dd>
-                            </DataListItem>
-                            <DataListItem label="Managers">
-                                <dd className="d-flex flex-row gap-2xs">
-                                    <Stack>
-                                        <Avatar size="xs" image="img/avatar-pierre.jpeg" />
-                                        <Avatar size="xs" image="img/avatar-emma.jpeg" />
-                                        <Avatar size="xs" image="img/avatar-julien.jpeg" />
-                                    </Stack>
-                                    <span>5</span>
-                                    <Button type="muted" iconStartName="new-tab" size="xs" />
-                                </dd>
-                            </DataListItem>
-                            <DataListItem label="Participants">
-                                <dd className="d-flex flex-row gap-2xs">
-                                    <Stack>
-                                        <Avatar size="xs" image="img/avatar-nora.jpeg" />
-                                        <Avatar size="xs" image="img/avatar-marine.jpeg" />
-                                        <Avatar size="xs" image="img/avatar-john.jpeg" />
-                                    </Stack>
-                                    <span>803</span>
-                                    <Button type="muted" iconStartName="new-tab" size="xs" />
-                                </dd>
-                            </DataListItem>
-                            <DataListItem label="projects">
-                                <dd className="d-flex flex-row gap-2xs">
-                                    <Stack>
-                                        <div className="icon icon--letter is-xs">
-                                            <span aria-hidden="true">A</span>
-                                        </div>
-                                        <div className="icon icon--letter is-xs">
-                                            <span aria-hidden="true">S</span>
-                                        </div>
-                                        <div className="icon icon--letter is-xs">
-                                            <span aria-hidden="true">H</span>
-                                        </div>
-                                    </Stack>
-                                    <span>12</span>
-                                    <Button type="muted" iconStartName="new-tab" size="xs" />
-                                </dd>
-                            </DataListItem>
-                            <DataListItem label="Timeline">
-                                <dd>
-                                    <span>Feb 12, 2025 - March 12, 2025  </span>
-                                </dd>
-                            </DataListItem>
-                        
-                            {/* <DataListItem label="SDGs" tooltip="The SDGs are the United Nations Sustainable Development Goals. They are a set of 17 goals designed to transform our world by 2030. Each goal has specific targets to achieve by 2030.">
-                                <dd>
-                                    <Badges>
-                                        <Tag link="#" isPill={false}>
-                                            <div aria-hidden="true" className="icon icon--sdg is-sdg-7 is-16px">
-                                                <span>7</span>
-                                            </div>
-                                            <span>Affordable and clean energy</span>
-                                        </Tag>
-                                    </Badges>
-                                </dd>
-                            </DataListItem> */}
-                            <DataListItem label="Tags">
-                                <dd>
-                                    <Badges>
-                                        <Tag link="#" isPill={false}>
-                                            <div aria-hidden="true" className="icon icon--sdg is-sdg-7 is-16px">
-                                                <span>7</span>
-                                            </div>
-                                            <span>Affordable and clean energy</span>
-                                        </Tag>
-                                        <Tag link="#" label="Impact native" iconName="impact-native" isPill={false} />
-                                        <Tag link="#" label="DEI" iconName="vertical-dei" isPill={false} />
-                                        <Tag link="#" label="Corporate" iconName="ecosystem-corporate" />
-                                        <Tag link="#" label="Strategic" />
-                                        <Tag link="#" label="Innovation" />
-                                    </Badges>
-                                </dd>
-                            </DataListItem>
                             
                         </DataList>
 
@@ -271,12 +275,12 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                 placeholder="Not completed yet"
                                 defaultValue={`Il est clé pour Rungis Académie de clarifier son positionnement et sa proposition de valeur et d’identifier les meilleurs organismes / opérateurs de formation, à même d’occuper les lieux. 
 
-Notre mission: vous accompagner du cadrage de la proposition de valeur au choix du titulaire. 
+                                Notre mission: vous accompagner du cadrage de la proposition de valeur au choix du titulaire. 
 
-Il s’agira de : 
-- mener des entretiens en vue de comprendre plus finement le besoin en matière de formation
-- définir une proposition de valeur différenciante et attrayante
-- vous appuyer dans l’analyse des offres jusqu’au choix du ou des concessionnaires.`}
+                                Il s’agira de : 
+                                - mener des entretiens en vue de comprendre plus finement le besoin en matière de formation
+                                - définir une proposition de valeur différenciante et attrayante
+                                - vous appuyer dans l’analyse des offres jusqu’au choix du ou des concessionnaires.`}
                                 readonly={true}
                                 fieldSizing={true}
                             />

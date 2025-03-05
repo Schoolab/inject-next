@@ -78,7 +78,7 @@ export const AsideHeader = ({
                         <Button
                             type="transparent"
                             size="sm"
-                            addClass="border-0 p-2xs text-muted"
+                            addClass="border-0 p-2xs text-muted close-aside"
                             data-toggle="tooltip"
                             data-original-title="Close"
                             link="#"

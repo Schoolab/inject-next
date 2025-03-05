@@ -11,7 +11,7 @@ import { Placeholder } from "@/app/content/placeholders/Placeholder";
 type BreadcrumbType = {
     label: string;
     href?: string;
-}
+};
 
 type SubnavType = {
     label: string;
@@ -22,7 +22,7 @@ type SubnavType = {
     dropdownItems?: SubnavType[];
     icon?: string;
     tooltip?: string;
-}
+};
 
 type ButtonType = {
     label?: string;
@@ -70,40 +70,37 @@ interface AppContentProps {
 
     addClass?: string;
 }
-export const AppContent = (
-    {
-        children,
-        layout = "centered",
-        sections = "cards",
-        
-        isAsside,
-        isIAchat,
+export const AppContent = ({
+    children,
+    layout = "centered",
+    sections = "cards",
 
-        showBreadcrumb = true,
-        breadcrumbIcon,
-        breadcrumbHome = "#",
-        breadcrumb,
+    isAsside,
+    isIAchat,
 
-        backLink,
+    showBreadcrumb = true,
+    breadcrumbIcon,
+    breadcrumbHome = "#",
+    breadcrumb,
 
-        showTitle = true,
-        title = "Page title",
+    backLink,
 
-        pagination,
+    showTitle = true,
+    title = "Page title",
 
-        buttons,
+    pagination,
 
-        showSubnav = true,
-        subnav,
+    buttons,
 
-        showStepper= false,
+    showSubnav = true,
+    subnav,
 
-        showFooter = true,
-        
-        addClass,
-    }: AppContentProps
-) => {
+    showStepper = false,
 
+    showFooter = true,
+
+    addClass,
+}: AppContentProps) => {
     let appMainContainerClass = ["application-main-content container-lg container-lg-fluid p-sm p-md-md p-lg-xl"];
     isAsside && (appMainContainerClass = ["application-main-content container-fluid p-sm p-md-md p-lg-xl"]);
     isIAchat && (appMainContainerClass = ["application-main-content h-100 overflow-auto"]);
@@ -112,7 +109,8 @@ export const AppContent = (
     layout === "narrow" && (appMainContainerClass = ["application-main-content container-md p-sm p-md-md p-lg-xl"]);
     layout === "full" && (appMainContainerClass = ["application-landing"]);
 
-    let appContentClass = ["application-content card-sections"];
+    let appContentClass = ["application-content"];
+    sections === "cards" && appContentClass.push("cards-sections");
     sections === "bordered" && appContentClass.push("bordered-sections");
     sections === "transparent" && appContentClass.push("transparent-sections");
     sections === "separated" && appContentClass.push("separated-sections");
@@ -124,46 +122,29 @@ export const AppContent = (
 
     return (
         <main className={appContentClass.join(" ")}>
-            { showBreadcrumb &&
-                <Breadcrumb
-                    homeIcon={breadcrumbIcon}
-                    homeLink={breadcrumbHome}
-                    items={breadcrumb}
-                />
-            }
-            { ( showTitle || showSubnav || showStepper) &&
+            {showBreadcrumb && <Breadcrumb homeIcon={breadcrumbIcon} homeLink={breadcrumbHome} items={breadcrumb} />}
+            {(showTitle || showSubnav || showStepper) && (
                 <div className="application-header">
-                    { showTitle && 
-                        <Title 
-                            backLink={backLink} 
-                            title={title}
-                            pagination={pagination}
-                            buttons={buttons} 
-                            addClass={titleClass.join(" ")}
-                        />
-                    }
-                    
-                    { subnav &&
-                        <SubNav items={subnav} />
-                    }
+                    {showTitle && <Title backLink={backLink} title={title} pagination={pagination} buttons={buttons} addClass={titleClass.join(" ")} />}
 
-                    { showStepper && <Stepper /> }
+                    {subnav && <SubNav items={subnav} />}
+
+                    {showStepper && <Stepper />}
                 </div>
-            }
-       
+            )}
+
             <div id="appMainContainer" className={appMainContainerClass.join(" ")}>
-                {
-                    children ?
-                        children
-                    :
-                        <div className="d-flex flex-column gap-xl">
-                            <Placeholder height="320px" />
-                            <Placeholder height="256px" />
-                            <Placeholder height="128px" />
-                        </div>
-                }
+                {children ? (
+                    children
+                ) : (
+                    <div className="d-flex flex-column gap-xl">
+                        <Placeholder height="320px" />
+                        <Placeholder height="256px" />
+                        <Placeholder height="128px" />
+                    </div>
+                )}
             </div>
-            { showFooter && <Footer addClass={addClass} /> }
+            {showFooter && <Footer addClass={addClass} />}
         </main>
     );
 };
