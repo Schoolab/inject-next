@@ -49,7 +49,10 @@ export const AdminProgram = () => {
                     },
                 ]}
                 title="Impact Innovators"
-            >
+            >   
+                <div>
+                    
+                </div>
                 <div className="row">
                     <div className="col-12">
                         <div className="application-section">

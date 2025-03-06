@@ -8,6 +8,7 @@ import { SidebarAdmin } from "@/app/components/sidebar/SidebarAdmin";
 import { AsidePrivateMessages } from "@/app/components/asides/examples/AsidePrivateMessages";
 import { Placeholder } from "@/app/content/placeholders/Placeholder";
 import { asideToggle } from "../../../public/utils/asideToggle";
+import { ModalAITab } from "../components/modals/ModalAITab";
 // import { select } from "../../../public/utils/select";
 
 interface LayoutProps {
@@ -43,26 +44,32 @@ export const Layout = (
     let appContainerClass = "application-container";
     sideBar === "Admin" && (appContainerClass = "application-container pb-0");
     return (
-        <div className="application-ui">
-            { showNavbar && <Navbar theme={theme && theme} isHub={hub} /> }
-           
-            <div className={appContainerClass}>
-                {showShortcutbar && <ShortcutBar isExpanded={shortcutBarExpanded} />}
-                {sideBar && sideBar === "Manage" && <SidebarManage />}
-                {sideBar && sideBar === "Admin" && <SidebarAdmin />}
-                {
-                    children ?
-                        children
-                    :
-                        <div className="d-flex flex-column gap-xl flex-fill p-xl">
-                            <Placeholder height="320px" />
-                            <Placeholder height="256px" />
-                            <Placeholder height="128px" />
-                        </div>
-                }
-                {showPrivateMessages && <AsidePrivateMessages show={false} />}
-            </div>
+        <>
+            <div className="application-ui">
 
-        </div>
+        
+                { showNavbar && <Navbar theme={theme && theme} isHub={hub} /> }
+            
+                <div className={appContainerClass}>
+                    {showShortcutbar && <ShortcutBar isExpanded={shortcutBarExpanded} />}
+                    {sideBar && sideBar === "Manage" && <SidebarManage />}
+                    {sideBar && sideBar === "Admin" && <SidebarAdmin />}
+                    {
+                        children ?
+                            children
+                        :
+                            <div className="d-flex flex-column gap-xl flex-fill p-xl">
+                                <Placeholder height="320px" />
+                                <Placeholder height="256px" />
+                                <Placeholder height="128px" />
+                            </div>
+                    }
+                    {showPrivateMessages && <AsidePrivateMessages show={false} />}
+                </div>
+
+            </div>
+            <ModalAITab />
+        </>
+
     );
 };

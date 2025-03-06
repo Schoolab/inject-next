@@ -26,24 +26,28 @@ export interface NavBarProps {
      */
     isHub?: Boolean;
     /**
-     * Show admin?
+     * Show Hub?
      */
     showAdmin?: Boolean;
     /**
-     * Show notifs?
+     * Show admin?
      */
      showNotifs?: Boolean;
     /**
-     * Show messages?
+     * Show Notifs?
      */
      showMessages?: Boolean;
+    /**
+     * Show messages?
+     */
+     showIA?: Boolean;
     /**
      *theme add a Root css variables
      */
     theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
 }
 
-export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showNotifs = true, showMessages = true, theme = "Inject" }: NavBarProps) => {
+export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showNotifs = true, showMessages = true, showIA= true, theme = "Inject" }: NavBarProps) => {
     useEffect(() => {
         tooltips();
         nestedDropdown();
@@ -171,8 +175,15 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                             )}
                                             {showMessages && (
                                                 <div className="navbar-option">
-                                                    <a href="#" role="button" aria-label="Messages" className="navbar-option--link" data-toggle="aside" data-target="#aside-private-messages">
-                                                        <Icon name="comment" addClass="has-dot" dataToggle="tooltip" dataOriginalTitle="Messages" />
+                                                    <a href="#" role="button" aria-label="Messages" className="navbar-option--link">
+                                                        <Icon name="comment" dataToggle="tooltip" dataOriginalTitle="Messages" />
+                                                    </a>
+                                                </div>
+                                            )}
+                                                 {showIA && (
+                                                <div className="navbar-option">
+                                                    <a href="#" role="button" aria-label="AI Agent" id="messagesSidebar" className="navbar-option--link" data-toggle="modal" data-target="#iaSidebar">
+                                                        <Icon name="ai" dataToggle="tooltip" dataOriginalTitle="AI Aganet" />
                                                     </a>
                                                 </div>
                                             )}
@@ -275,6 +286,11 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                     <div className="nav-item">
                                         <a className="nav-link" href="#">
                                             Notifications
+                                        </a>
+                                    </div>
+                                    <div className="nav-item">
+                                        <a className="nav-link" href="#">
+                                            IA
                                         </a>
                                     </div>
                                     <div className="nav-item">
