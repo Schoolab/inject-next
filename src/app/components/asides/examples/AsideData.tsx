@@ -72,7 +72,7 @@ export const AsideData: React.FC<AsideDataProps> = ({
                     },
                 ]}
                 pagination={pagination}
-                showNewTab={true}
+                
             />
             <div className="tab-content h-100 overflow-auto" id="dataTabsContent">
                 <div id="info" role="tabpanel" aria-labelledby="info-tab" className={`tab-pane h-100 fade ${activeTab === "info" ? "active show" : ""}`}>
@@ -184,20 +184,6 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                     </Button>
                                 </dd>
                             </DataListItem>
-                       
-                        
-                            {/* <DataListItem label="SDGs" tooltip="The SDGs are the United Nations Sustainable Development Goals. They are a set of 17 goals designed to transform our world by 2030. Each goal has specific targets to achieve by 2030.">
-                                <dd>
-                                    <Badges>
-                                        <Tag link="#" isPill={false}>
-                                            <div aria-hidden="true" className="icon icon--sdg is-sdg-7 is-16px">
-                                                <span>7</span>
-                                            </div>
-                                            <span>Affordable and clean energy</span>
-                                        </Tag>
-                                    </Badges>
-                                </dd>
-                            </DataListItem> */}
                                <DataListItem label="Used case ">
                                 <dd>
                                     <Badges>
@@ -262,7 +248,15 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                     </div>
                                 </dd>
                             </DataListItem>
-                            
+                            <h4 className="nav-title flex-fill mb-none">Custom fields</h4>
+                            <DataListItem label="Country">
+                                <dd>
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <span>France</span>
+                                       
+                                    </Button>
+                                </dd>
+                            </DataListItem>
                         </DataList>
 
                         <hr />
@@ -329,12 +323,11 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                 <a className="dropdown-item is-danger" href="#">                            
                                     <div className="dropdown-item--label"><span className="d-flex">Delete</span></div>
                                 </a>
-                            </div>
+                            </div>                        
                         </div>
-                        {/* <div className="d-flex gap-xs ml-auto">
-                            <a href="#" className="btn btn-default" role="button"><span>Discard changes</span></a>
-                            <a href="#" className="btn btn-primary" role="button"><span>Save</span></a>
-                        </div> */}
+                        <div className="d-flex gap-xs ml-auto">
+                            <a className="btn btn-lg btn-default" href="#">Open full page</a>
+                        </div>
                     </div>
                 </div>
                 <div id="edit" role="tabpanel" aria-labelledby="edit-tab" className={`tab-pane h-100 fade ${activeTab === "edit" ? "active show" : ""}`}>
