@@ -26,6 +26,9 @@ export const ModalAITab = ({}: ModalAITabProps) => {
                         </nav>
 
                         <div className="modal-actions">
+                            <button className="btn btn-default btn-sm text-ai" role="button">
+                                <span className="icon icon-ai"></span><span>New chat</span>
+                            </button>
                             <button className="btn btn-transparent border-0 p-2xs text-muted" type="button" data-dismiss="modal" aria-label="Close">
                                 <span className="icon icon-close is-24px" aria-hidden="true" />
                             </button>
