@@ -331,10 +331,10 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                 </a>
                             </div>
                         </div>
-                        <div className="d-flex gap-xs ml-auto">
+                        {/* <div className="d-flex gap-xs ml-auto">
                             <a href="#" className="btn btn-default" role="button"><span>Discard changes</span></a>
                             <a href="#" className="btn btn-primary" role="button"><span>Save</span></a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div id="edit" role="tabpanel" aria-labelledby="edit-tab" className={`tab-pane h-100 fade ${activeTab === "edit" ? "active show" : ""}`}>
