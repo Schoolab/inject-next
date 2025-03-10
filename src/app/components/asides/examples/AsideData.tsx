@@ -115,7 +115,10 @@ export const AsideData: React.FC<AsideDataProps> = ({
                             </DataListItem>
                             <DataListItem label="Budget">
                                 <dd>
-                                    <span>100k</span>
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <span>100k</span>
+                                        <Icon name="new-tab" addClass="text-muted" />
+                                    </Button>
                                 </dd>
                             </DataListItem>
                             <DataListItem label="Status ">
