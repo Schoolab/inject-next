@@ -27,15 +27,40 @@ export const ModalAITab = ({}: ModalAITabProps) => {
 
                         <div className="modal-actions">
                             <button className="btn btn-default btn-sm text-ai" role="button">
-                                <span className="icon icon-ai"></span><span>New chat</span>
+                                <span className="icon icon-ai"></span>
+                                <span>New chat</span>
                             </button>
                             <button className="btn btn-transparent border-0 p-2xs text-muted" type="button" data-dismiss="modal" aria-label="Close">
                                 <span className="icon icon-close is-24px" aria-hidden="true" />
                             </button>
                         </div>
                     </div>
+
                     <div className="tab-content h-100">
                         <div id="chat" role="tabpanel" aria-labelledby="info-tab" className="h-100 tab-pane fade active show">
+                            <ul className="nav nav-main flex-column border-bottom pl-5 pl-md-7 pr-5">
+                                <li className="nav-item d-flex justify-content-between align-items-center">
+                                    <div className=" d-flex line-clamp-1 flex-fill">
+                                        <span className="nav-link--label d-flex align-items-center gap-xs">
+                                            <img src="img/mistral.svg" />
+                                            <span className="text-truncate">What is a design system ?</span>
+                                        </span>
+                                    </div>
+                                    <div className="message-options dropdown">
+                                        <a className="btn btn-sm btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span className="icon icon-options" />
+                                        </a>
+                                        <div className="dropdown-menu dropdown-menu-right">
+                                            <a href="#" className="dropdown-item update-comment" data-url="/rest/comment/924/edit-modal">
+                                                Edit
+                                            </a>
+                                            <a href="#" className="dropdown-item is-danger delete-comment" data-url="/rest/comment/924/delete">
+                                                Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                             <div className="modal-body have-sticky-footer">
                                 <div className="message align-items-end">
                                     <a href="#" className="thumbnail is-oval is-md">
