@@ -48,7 +48,7 @@ export const ModalAITab = ({ isShow = false, emptyState = false }: ModalAITabPro
                                 <>
                                  <EmptyState bordered={false} 
                                     iconBtn="ai"
-                                    title= "Your AI agent is ready"
+                                    title= "Your AI Agent is ready"
                                     iconTitle="ai"
                                     text ="How can we help you?"
                                     labelBtn= "New chat"                                    
