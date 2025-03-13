@@ -536,14 +536,17 @@ export const Admin: Story = {
                   {
                       label: "Overview",
                       href: "#",
+                      icon: "chart-line",
                   },
                   {
                       label: "Programs",
                       href: "#",
+                      icon: "program",
                   },
                   {
                       label: "Settings",
                       href: "#",
+                      icon: "settings",
                   },
               ]
           }
