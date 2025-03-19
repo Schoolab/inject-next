@@ -25,7 +25,7 @@ export const Sidebar = ({ id = "accordionManageNav", sections, addClass, style, 
                 <div id={id} className="d-flex flex-column flex-fill gap-xl px-24px pt-24px pb-32px accordion">
 
                     {sections.map((section, i) => (
-                        <ul className={`nav nav-main flex-column ${section.addClass || ''}`}>
+                        <ul key={i} className={`nav nav-main flex-column ${section.addClass || ''}`}>
                             {section.label && <li key={i} className="nav-item ">
                                 <span className="nav-title">{section.label}</span>
                             </li>}

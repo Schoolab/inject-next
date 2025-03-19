@@ -32,22 +32,22 @@ export interface NavBarProps {
     /**
      * Show admin?
      */
-     showNotifs?: Boolean;
+    showNotifs?: Boolean;
     /**
      * Show Notifs?
      */
-     showMessages?: Boolean;
+    showMessages?: Boolean;
     /**
      * Show messages?
      */
-     showIA?: Boolean;
+    showIA?: Boolean;
     /**
      *theme add a Root css variables
      */
     theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
 }
 
-export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showNotifs = true, showMessages = true, showIA= true, theme = "Inject" }: NavBarProps) => {
+export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showNotifs = true, showMessages = true, showIA = true, theme = "Inject" }: NavBarProps) => {
     useEffect(() => {
         tooltips();
         nestedDropdown();
@@ -157,7 +157,7 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                                 <>
                                                     <div className="navbar-option d-none d-lg-flex">
                                                         <a href="#" aria-label="Admin" className="navbar-option--link">
-                                                            <Icon name="admin" data-toggle="tooltip" data-original-title="Admin"/>
+                                                            <Icon name="admin" data-toggle="tooltip" data-original-title="Admin" />
                                                         </a>
                                                     </div>
                                                     <div className="nav-horizontal-divider d-none d-lg-block" />
@@ -180,10 +180,31 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                                     </a>
                                                 </div>
                                             )}
-                                                 {showIA && (
+                                            {showIA && (
                                                 <div className="navbar-option">
                                                     <a href="#" role="button" aria-label="AI Agent" id="messagesSidebar" className="navbar-option--link" data-toggle="modal" data-target="#iaSidebar">
-                                                        <Icon name="ai" dataToggle="tooltip" dataOriginalTitle="AI Aganet" />
+                                                        <svg className="sparkle" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M93.781 51.578C95 50.969 96 49.359 96 48c0-1.375-1-2.969-2.219-3.578 0 0-22.868-1.514-31.781-10.422-8.915-8.91-10.438-31.781-10.438-31.781C50.969 1 49.375 0 48 0s-2.969 1-3.594 2.219c0 0-1.5 22.87-10.406 31.781-8.908 8.913-31.781 10.422-31.781 10.422C1 45.031 0 46.625 0 48c0 1.359 1 2.969 2.219 3.578 0 0 22.873 1.51 31.781 10.422 8.906 8.911 10.406 31.781 10.406 31.781C45.031 95 46.625 96 48 96s2.969-1 3.562-2.219c0 0 1.523-22.871 10.438-31.781 8.913-8.908 31.781-10.422 31.781-10.422Z"
+                                                                fill="#000"
+                                                            />
+                                                        </svg>
+                                                        <svg className="sparkle" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M93.781 51.578C95 50.969 96 49.359 96 48c0-1.375-1-2.969-2.219-3.578 0 0-22.868-1.514-31.781-10.422-8.915-8.91-10.438-31.781-10.438-31.781C50.969 1 49.375 0 48 0s-2.969 1-3.594 2.219c0 0-1.5 22.87-10.406 31.781-8.908 8.913-31.781 10.422-31.781 10.422C1 45.031 0 46.625 0 48c0 1.359 1 2.969 2.219 3.578 0 0 22.873 1.51 31.781 10.422 8.906 8.911 10.406 31.781 10.406 31.781C45.031 95 46.625 96 48 96s2.969-1 3.562-2.219c0 0 1.523-22.871 10.438-31.781 8.913-8.908 31.781-10.422 31.781-10.422Z"
+                                                                fill="#000"
+                                                            />
+                                                        </svg>
+                                                        <svg className="sparkle" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M93.781 51.578C95 50.969 96 49.359 96 48c0-1.375-1-2.969-2.219-3.578 0 0-22.868-1.514-31.781-10.422-8.915-8.91-10.438-31.781-10.438-31.781C50.969 1 49.375 0 48 0s-2.969 1-3.594 2.219c0 0-1.5 22.87-10.406 31.781-8.908 8.913-31.781 10.422-31.781 10.422C1 45.031 0 46.625 0 48c0 1.359 1 2.969 2.219 3.578 0 0 22.873 1.51 31.781 10.422 8.906 8.911 10.406 31.781 10.406 31.781C45.031 95 46.625 96 48 96s2.969-1 3.562-2.219c0 0 1.523-22.871 10.438-31.781 8.913-8.908 31.781-10.422 31.781-10.422Z"
+                                                                fill="#000"
+                                                            />
+                                                        </svg>
+                                                    
+                                                    
+                                                 
+                                                        <Icon name="ai" dataToggle="tooltip" dataOriginalTitle="AI Agent" />
                                                     </a>
                                                 </div>
                                             )}
@@ -196,7 +217,9 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                                     <DropdownItem label="Profile" addClass="gap-xs">
                                                         <Avatar />
                                                         <div className="d-flex flex-column justify-content-center w-100">
-                                                            <span className="d-flex align-items-center gap-2xs">John Doe <Role status="admin" /></span>
+                                                            <span className="d-flex align-items-center gap-2xs">
+                                                                John Doe <Role status="admin" />
+                                                            </span>
                                                             <span className="small text-muted mb-none">Head of Tests</span>
                                                         </div>
                                                     </DropdownItem>
@@ -208,13 +231,7 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                                     <DropdownDivider />
                                                     <DropdownItem label="Settings" iconName="settings" />
                                                     <DropdownNested>
-                                                        <DropdownItem 
-                                                            label="Theme: Device"
-                                                            iconName="theme-dark"
-                                                            toggle={true}
-                                                            data-toggle="dropdown"
-                                                            aria-haspopup="true"
-                                                            aria-expanded="false" />
+                                                        <DropdownItem label="Theme: Device" iconName="theme-dark" toggle={true} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
                                                         <DropdownMenu>
                                                             <DropdownItem label="Device theme" active={true} />
                                                             <DropdownItem label="Light theme" active={false} />
@@ -251,13 +268,15 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                         <a href="#" className="nav-link d-flex gap-xs border rounded" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false">
                                             <span className="d-flex gap-xs flex-fill">
                                                 <span className="icon icon-school" aria-hidden="true" />
-                                                <span className="text-truncate" style={{ maxWidth: 256 }}>Schoolab - Saint Lazare Schoolab - Saint Lazare</span>
+                                                <span className="text-truncate" style={{ maxWidth: 256 }}>
+                                                    Schoolab - Saint Lazare Schoolab - Saint Lazare
+                                                </span>
                                             </span>
-                                            
+
                                             <span className="icon icon-chevron-down" aria-hidden="true" />
                                         </a>
 
-                                        <div className="dropdown-menu" style={{ maxWidth : `100%` }}>
+                                        <div className="dropdown-menu" style={{ maxWidth: `100%` }}>
                                             <h6 className="dropdown-header">Switch program</h6>
                                             <a className="dropdown-item active" href="#">
                                                 <span className="text-truncate">Schoolab - Saint Lazare Schoolab - Saint Lazare</span>
@@ -276,7 +295,7 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                         <a className="nav-link" href="#">
                                             My space
                                         </a>
-                                    </div>   
+                                    </div>
                                     <div className="nav-item">
                                         <a className="nav-link" href="#">
                                             Admin

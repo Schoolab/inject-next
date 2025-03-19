@@ -16,7 +16,7 @@ import { ItemSetupTask } from "@/app/components/items/ItemSetupTask";
 
 export const ProgramDashboardOverview = () => {
     return (
-        <Layout shortcutBarExpanded={true}>
+        <Layout theme="default" shortcutBarExpanded={true}>
             <AppContent
                 sections="bordered"
                 breadcrumb={[

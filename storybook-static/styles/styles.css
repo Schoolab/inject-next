@@ -52,12 +52,6 @@ pre {
     font-size: 15px;
 }
 
-.rating div.star:before,
-.rating span.star:before {
-    /* content: "\f005"; */
-   
-}
-
 
 .rating div.star-full,
 .rating span.star-full {
@@ -72,17 +66,64 @@ pre {
     font-weight: 400
 }
 
-.rating div.star-empty:before,
-.rating span.star-empty:before {
-    /* content: "\f005" */
+
+
+a svg.sparkle {
+	position: absolute;
+	z-index: 3;
+	width: calc(var(--font-size) * 1.2);
+	aspect-ratio: 1;
 }
 
-/* .nav-main .nav-link[data-toggle=collapse]::after {
-    content: "\f138"!important;
-    font: normal normal normal 24px / 1 "inject-icons"!important;
-    font-size: 1rem!important;;
-    line-height: 1rem!important;;
- } */
-/* .modal-backdrop{
-    display: none;
-} */
+a svg.sparkle path {
+	fill: var(--fg-brand-hero);
+    
+}
+
+/* Animation for sparkles */
+
+a svg {
+	animation: sparkle 3s calc((var(--delay-step) * var(--d)) * 1s) infinite;
+}
+
+@keyframes sparkle {
+	50% {
+		transform: translate(-50%, -50%) scale(var(--s, 0.8));
+	}
+}
+
+a svg.sparkle {
+	--delay-step: 0.5;
+	top: calc(var(--y, 50) * 1%);
+	left:  calc(var(--x, 0) * 1%);
+	transform: translate(-50%, -50%) scale(0);
+}
+
+a svg.sparkle:nth-of-type(1) {
+	--x: 69;
+	--y: 20;
+	--s: 0.85;
+	--d: 4;
+    opacity: 0.75;
+
+}
+
+
+
+
+a svg.sparkle:nth-of-type(2) {
+	--x: 77;
+	--y: 35;
+	--s: 0.95;
+	--d: 3;
+    opacity: 0.5;
+}
+
+a svg.sparkle:nth-of-type(3) {
+	--x: 25;
+	--y: 31;
+	--s: 0.32;
+	--d: 5;
+    opacity:0.5;
+
+}
