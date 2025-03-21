@@ -32,3 +32,12 @@ export const emptyState: Story = {
     },
 }
 
+export const loading: Story = {
+    args: {
+ 
+        isShow: true,
+        loading: true,
+       
+    },
+}
+

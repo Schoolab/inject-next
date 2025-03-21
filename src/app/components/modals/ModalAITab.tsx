@@ -6,9 +6,10 @@ import { EmptyState } from "@/app/content/empty-states/EmptyState";
 export interface ModalAITabProps {
     isShow?: Boolean;
     emptyState?: Boolean;
+    loading?: Boolean;
 }
 
-export const ModalAITab = ({ isShow = false, emptyState = false }: ModalAITabProps) => {
+export const ModalAITab = ({ isShow = false, emptyState = false, loading = false }: ModalAITabProps) => {
     useEffect(() => {
         tooltips();
     }, []);
@@ -46,13 +47,16 @@ export const ModalAITab = ({ isShow = false, emptyState = false }: ModalAITabPro
                         <div id="chat" role="tabpanel" aria-labelledby="info-tab" className="h-100 tab-pane fade active show">
                             {emptyState ? (
                                 <>
-                                 <EmptyState bordered={false} 
-                                    iconBtn="ai"
-                                    title= "Your AI Agent is ready"
-                                    iconTitle="ai"
-                                    text ="How can we help you?"
-                                    labelBtn= "New chat"                                    
-                                    labelLink= "Support center" />
+                                    <EmptyState bordered={false} iconBtn="ai" title="Your AI Agent is ready" iconTitle="ai" text="How can we help you?" labelBtn="New chat" labelLink="Support center" />
+                                </>
+                            ) : loading ? (
+                                <>
+                                    <div className="h-100 d-flex justify-content-center align-items-center small text-muted py-3 flex-column gap-xs">
+                                        <div className="spinner-border spinner-border-sm mr-3 text-primary" role="status">
+                                            <span className="sr-only">Loading...</span>
+                                        </div>
+                                        Loading...
+                                    </div>
                                 </>
                             ) : (
                                 <>
@@ -241,28 +245,41 @@ export const ModalAITab = ({ isShow = false, emptyState = false }: ModalAITabPro
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="modal-footer border-top is-sticky">
-                                        <div className="w-100 message-composer-row">
-                                            <textarea className="message-composer-input form-control" required placeholder="Type your question here..." autoComplete="off" defaultValue={""} />
-                                            <button className="btn btn-transparent btn-icon message-composer-action">
-                                                <span className="icon icon-send" />
-                                            </button>
-                                        </div>
-                                    </div>
                                 </>
+                            )}
+                            {loading ? (
+                                <div className="modal-footer border-top is-sticky">
+                                    <div className="w-100 message-composer-row disabled ">
+                                        <textarea className="message-composer-input form-control" required placeholder="Type your question here..." autoComplete="off" defaultValue={""} />
+                                        <button className="btn btn-transparent btn-icon message-composer-action disabled">
+                                            <span className="icon icon-send" />
+                                        </button>
+                                    </div>
+                                </div>
+                            ) : (
+                                <div className="modal-footer border-top is-sticky">
+                                    <div className="w-100 message-composer-row">
+                                        <textarea className="message-composer-input form-control" required placeholder="Type your question here..." autoComplete="off" defaultValue={""} />
+                                        <button className="btn btn-transparent btn-icon message-composer-action">
+                                            <span className="icon icon-send" />
+                                        </button>
+                                    </div>
+                                </div>
                             )}
                         </div>
                         <div id="history" role="tabpanel" aria-labelledby="history-tab" className="h-100 tab-pane fade">
                             {emptyState ? (
                                 <>
-                                    <EmptyState bordered={false} 
-                                  
-                                    title= "No history"
-                                    iconTitle="format-list-bulleted"
-                                    text ="Your chat list will be listed here"
-                                                                     
-                                     />
-                               
+                                    <EmptyState bordered={false} title="No history" iconTitle="format-list-bulleted" text="Your chat list will be listed here" />
+                                </>
+                            ) : loading ? (
+                                <>
+                                    <div className="h-100 d-flex justify-content-center align-items-center small text-muted py-3 flex-column gap-xs">
+                                        <div className="spinner-border spinner-border-sm mr-3 text-primary" role="status">
+                                            <span className="sr-only">Loading...</span>
+                                        </div>
+                                        Loading...
+                                    </div>
                                 </>
                             ) : (
                                 <>
@@ -407,14 +424,24 @@ export const ModalAITab = ({ isShow = false, emptyState = false }: ModalAITabPro
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="modal-footer border-top">
-                                        <div className="d-flex gap-xs ml-auto">
-                                            <a className="btn btn-lg btn-default" href="#">
-                                                New Chat
-                                            </a>
-                                        </div>
-                                    </div>
                                 </>
+                            )}
+                            {loading ? (
+                                <div className="modal-footer border-top">
+                                    <div className="d-flex gap-xs ml-auto">
+                                        <a className="btn btn-lg btn-default disabled" href="#">
+                                            New Chat
+                                        </a>
+                                    </div>
+                                </div>
+                            ) : (
+                                <div className="modal-footer border-top">
+                                    <div className="d-flex gap-xs ml-auto">
+                                        <a className="btn btn-lg btn-default" href="#">
+                                            New Chat
+                                        </a>
+                                    </div>
+                                </div>
                             )}
                         </div>
                     </div>
