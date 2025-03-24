@@ -132,7 +132,7 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                 <dd>
                                     <Button type="muted" addClass="btn-link" size="xs">
                                         <Avatar size="xs" image="img/avatar-julien.jpeg" />
-                                        <span>John DOe</span>
+                                        <span>John Doe</span>
                                     </Button>
                                 </dd>
                           
