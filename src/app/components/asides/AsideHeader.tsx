@@ -27,6 +27,7 @@ interface AsideHeaderProps {
     pagination?: PaginationProps;
     showNewTab?: boolean;
     showClose?: boolean;
+    showManage?: boolean;
     buttons?: ButtonProps[];
     addClass?: string;
     style?: CSSProperties;
@@ -40,6 +41,7 @@ export const AsideHeader = ({
     pagination,
     showNewTab = false,
     showClose = true,
+    showManage = false,
     buttons,
     ...props
 }: AsideHeaderProps) => {
@@ -72,6 +74,18 @@ export const AsideHeader = ({
                             link="#"
                         >
                             <Icon name="new-tab" size="sm" />
+                        </Button>
+                    )}
+                    {showManage && (
+                        <Button
+                            type="transparent"
+                            size="sm"
+                            addClass="border-0 p-2xs text-muted close-aside"
+                            data-toggle="tooltip"
+                            data-original-title="Manage"
+                            link="#"
+                        >
+                            <Icon name="settings" size="sm" />
                         </Button>
                     )}
                     {showClose && (

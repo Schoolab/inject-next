@@ -71,7 +71,9 @@ export const AsideData: React.FC<AsideDataProps> = ({
                         ariaSelected: false,
                     },
                 ]}
+                showManage = {true}
                 pagination={pagination}
+                
                 
             />
             <div className="tab-content h-100 overflow-auto" id="dataTabsContent">
@@ -121,12 +123,20 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                     </Button>
                                 </dd>
                             </DataListItem>
-                            <DataListItem label="Status ">
+                            <DataListItem label="Status">
                                 <dd className="d-flex flex-row gap-2xs">
                                     <Tag label="Open" iconName="status-filled" status="open" /> <Tag label="Public" iconName="visibility" status="open" />
                                 </dd>
                             </DataListItem>
-                            
+                            <DataListItem label="Customer contact">
+                                <dd>
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Avatar size="xs" image="img/avatar-julien.jpeg" />
+                                        <span>John DOe</span>
+                                    </Button>
+                                </dd>
+                          
+                            </DataListItem>
                       
                             <DataListItem label="Owners">
                                 <dd>
@@ -184,15 +194,15 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                     </Button>
                                 </dd>
                             </DataListItem>
-                               <DataListItem label="Used case ">
+                            {/*    <DataListItem label="Used case ">
                                 <dd>
                                     <Badges>
                                         <Tag label="workshop" />
                                     </Badges>
                                 </dd>
-                            </DataListItem>
+                            </DataListItem> */}
                                   
-                            <DataListItem label="Methodologies ">
+                            <DataListItem label="Used case ">
                                 <dd>
                                     <Badges>
                                         <Tag label="Consulting" />
@@ -261,11 +271,11 @@ export const AsideData: React.FC<AsideDataProps> = ({
 
                         <hr />
 
-                        <FormGroup id="problem" label="Problems addressed" hint="A short sentence to explain what the problems are.">
-                            <FormTextarea id="problem" rows={4} placeholder="Not completed yet" defaultValue={"La Semmaris a lancé la Rungis Académie : un centre de formation de 3 000 m² conçu pour former 500 diplômés par an, doté d’équipements modernes adaptés aux besoins du secteur. Rungis Académie souhaite lancer une consultation à destination de potentiels concessionnaires (organismes de formation)."} readonly={true} fieldSizing={true} />
+                        <FormGroup id="problem" label="Context and Challenges" hint="A short sentence to explain what the context and the challenge.">
+                            <FormTextarea id="c&c" rows={4} placeholder="Not completed yet" defaultValue={"La Semmaris a lancé la Rungis Académie : un centre de formation de 3 000 m² conçu pour former 500 diplômés par an, doté d’équipements modernes adaptés aux besoins du secteur. Rungis Académie souhaite lancer une consultation à destination de potentiels concessionnaires (organismes de formation)."} readonly={true} fieldSizing={true} />
                         </FormGroup>
 
-                        <FormGroup id="goal" label="Mission goal" hint="List the goals of the mission in simple sentences or bullet points.">
+                        {/* <FormGroup id="goal" label="Mission goal" hint="List the goals of the mission in simple sentences or bullet points.">
                             <FormTextarea
                                 id="goal"
                                 rows={4}
@@ -281,7 +291,7 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                 readonly={true}
                                 fieldSizing={true}
                             />
-                        </FormGroup>
+                        </FormGroup> */}
 
                         <FormGroup
                             id="results"
