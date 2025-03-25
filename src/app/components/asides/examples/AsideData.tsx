@@ -17,7 +17,10 @@ import { FormInput } from "@/app/forms/input/FormInput";
 import { ItemResource } from "@/app/components/items/ItemResource";
 import { AsideFooter } from "../AsideFooter";
 import { FormFieldSet } from "@/app/forms/fieldset/FormFieldSet";
-
+import { FormOption } from "@/app/forms/option/FormOption";
+import { FormSelect } from "@/app/forms/select/FormSelect";
+import { FormInputWrapper } from "@/app/forms/input-wrapper/FormInputWrapper";
+import { FormSelectMultiple } from "@/app/forms/select-multiple/FormSelectMultiple";
 interface AsideDataProps {
     initialTab?: string;
     pagination?: PaginationProps;
@@ -62,7 +65,7 @@ export const AsideData: React.FC<AsideDataProps> = ({
                         label: "Edit",
                         href: "#",
                         isActive: false,
-                      
+
                         id: "edit-tab",
                         dataToggle: "tab",
                         dataTarget: "#edit",
@@ -71,10 +74,8 @@ export const AsideData: React.FC<AsideDataProps> = ({
                         ariaSelected: false,
                     },
                 ]}
-                showManage = {true}
+                showManage={true}
                 pagination={pagination}
-                
-                
             />
             <div className="tab-content h-100 overflow-auto" id="dataTabsContent">
                 <div id="info" role="tabpanel" aria-labelledby="info-tab" className={`tab-pane h-100 fade ${activeTab === "info" ? "active show" : ""}`}>
@@ -92,7 +93,6 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                     <Button type="muted" addClass="btn-link" size="xs">
                                         <span>Schoolab</span>
                                     </Button>
-                                   
                                 </dd>
                             </DataListItem>
                             <DataListItem label="Business line">
@@ -102,7 +102,7 @@ export const AsideData: React.FC<AsideDataProps> = ({
                             </DataListItem>
                             <DataListItem label="Timeline">
                                 <dd>
-                                    <span>Feb 12, 2025 - March 12, 2025  </span>
+                                    <span>Feb 12, 2025 - March 12, 2025 </span>
                                 </dd>
                             </DataListItem>
                             <DataListItem label="Pipedrive ID" tooltip="You can find an item’s system ID in two places: the URL after opening an item in Pipedrive or in the list view by adding the ID column.">
@@ -112,7 +112,6 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                         <span>42986</span>
                                         <Icon name="new-tab" addClass="text-muted" />
                                     </Button>
-
                                 </dd>
                             </DataListItem>
                             <DataListItem label="Budget">
@@ -135,9 +134,8 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                         <span>John Doe</span>
                                     </Button>
                                 </dd>
-                          
                             </DataListItem>
-                      
+
                             <DataListItem label="Owners">
                                 <dd>
                                     <Button type="muted" addClass="btn-link" size="xs">
@@ -201,7 +199,7 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                     </Badges>
                                 </dd>
                             </DataListItem> */}
-                                  
+
                             <DataListItem label="Used case ">
                                 <dd>
                                     <Badges>
@@ -263,7 +261,6 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                 <dd>
                                     <Button type="muted" addClass="btn-link" size="xs">
                                         <span>France</span>
-                                       
                                     </Button>
                                 </dd>
                             </DataListItem>
@@ -307,94 +304,368 @@ export const AsideData: React.FC<AsideDataProps> = ({
                     </AsideBody>
                     <div className="aside-footer">
                         <div className="dropdown">
-                            <a href="#" className="btn btn-default dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Actions</span></a>
+                            <a href="#" className="btn btn-default dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Actions</span>
+                            </a>
                             <div className="dropdown-menu">
                                 <a className="dropdown-item" href="#">
-                                    <div className="dropdown-item--label"><span className="d-flex">Data</span></div>
-                                   
+                                    <div className="dropdown-item--label">
+                                        <span className="d-flex">Data</span>
+                                    </div>
                                 </a>
                                 <div className="dropdown-divider"></div>
-                                <a className="dropdown-item" href="#">                                
-                                    <div className="dropdown-item--label"><span className="d-flex">Workspace</span></div>
+                                <a className="dropdown-item" href="#">
+                                    <div className="dropdown-item--label">
+                                        <span className="d-flex">Workspace</span>
+                                    </div>
                                 </a>
-                                <a className="dropdown-item" href="#">                                
-                                    <div className="dropdown-item--label"><span className="d-flex">Public page</span></div>
+                                <a className="dropdown-item" href="#">
+                                    <div className="dropdown-item--label">
+                                        <span className="d-flex">Public page</span>
+                                    </div>
                                 </a>
-                                <a className="dropdown-item" href="#">                                
-                                    <div className="dropdown-item--label"><span className="d-flex">Manage</span></div>
+                                <a className="dropdown-item" href="#">
+                                    <div className="dropdown-item--label">
+                                        <span className="d-flex">Manage</span>
+                                    </div>
                                 </a>
-                                <a className="dropdown-item" href="#">                                
-                                    <div className="dropdown-item--label"><span className="d-flex">Edit</span></div>
+                                <a className="dropdown-item" href="#">
+                                    <div className="dropdown-item--label">
+                                        <span className="d-flex">Edit</span>
+                                    </div>
                                 </a>
-                                <a className="dropdown-item" href="#">                                
-                                    <div className="dropdown-item--label"><span className="d-flex">Duplicate</span></div>
+                                <a className="dropdown-item" href="#">
+                                    <div className="dropdown-item--label">
+                                        <span className="d-flex">Duplicate</span>
+                                    </div>
                                 </a>
                                 <div className="dropdown-divider"></div>
-                                <a className="dropdown-item is-danger" href="#">                            
-                                    <div className="dropdown-item--label"><span className="d-flex">Delete</span></div>
+                                <a className="dropdown-item is-danger" href="#">
+                                    <div className="dropdown-item--label">
+                                        <span className="d-flex">Delete</span>
+                                    </div>
                                 </a>
-                            </div>                        
+                            </div>
                         </div>
                         <div className="d-flex gap-xs ml-auto">
-                            <a className="btn btn-lg btn-default" href="#">Open full page</a>
+                            <a className="btn btn-lg btn-default" href="#">
+                                Open full page
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div id="edit" role="tabpanel" aria-labelledby="edit-tab" className={`tab-pane h-100 fade ${activeTab === "edit" ? "active show" : ""}`}>
                     <AsideBody>
-                        <FormFieldSet
-                            legend="Pipedrive ID"
-                            name="Pipedrive ID"
-                        />
-                          <FormFieldSet
-                            legend="Customer"
-                            name="Customer"
-                        />
-                          <FormFieldSet
-                            legend="Business line"
-                            name="Business line"
-                        />
-                          <FormFieldSet
-                            legend="Methodology used"
-                            name="Methodology used"
-                        />
-                         <FormFieldSet
-                            legend="Owner"
-                            name="Owner"
-                        />
-                         <FormFieldSet
-                            legend="Google drive"
-                            name="Google drive"
-                        />
-                         <FormFieldSet
-                            legend="Confidentiality"
-                            name="Confidentiality"
-                        />
-                          <FormFieldSet
-                            legend="Problems addressed"
-                            name="Problems addressed"
-                        />
-                          <FormFieldSet
-                            legend="Mission goal"
-                            name="Mission goal"
-                        />
-                         <FormFieldSet
-                            legend="Results and impact"
-                            name="Results and impact"
-                        />
-                         <FormFieldSet
-                            legend="Customer verbatim"
-                            name="Customer verbatim"
-                        />
-                         <FormFieldSet
-                            legend="Note"
-                            name="Note"
-                        />
+                        <FormGroup id="Customer" label="Customer">
+                            <FormSelect
+                                id="Customer"
+                                options={[
+                                    {
+                                        label: "Select customer",
+                                        value: "",
+                                        selected: true,
+                                        disabled: true,
+                                    },
+
+                                    {
+                                        label: "customer",
+                                        value: "customer",
+                                    },
+                                    {
+                                        label: "customer",
+                                        value: "customer",
+                                    },
+                                    {
+                                        label: "customer",
+                                        value: "customer",
+                                    },
+                                    {
+                                        label: "Other",
+                                        value: "other",
+                                    },
+                                ]}
+                            />
+                        </FormGroup>
+                        <FormGroup id="business-line" label="Business line">
+                            <FormSelect
+                                id="business-line"
+                                options={[
+                                    {
+                                        label: "Select a business line",
+                                        value: "",
+                                        selected: true,
+                                        disabled: true,
+                                    },
+                                    {
+                                        label: "Agriculture and Food Production",
+                                        value: "agriculture-and-food-production",
+                                    },
+                                    {
+                                        label: "Corporate services",
+                                        value: "corporate-services",
+                                    },
+                                    {
+                                        label: "Education",
+                                        value: "education",
+                                    },
+                                    {
+                                        label: "Energy and Utilities",
+                                        value: "energy-and-utilities",
+                                    },
+                                    {
+                                        label: "Entertainment",
+                                        value: "entertainment",
+                                    },
+                                    {
+                                        label: "Financial Services",
+                                        value: "financial-services",
+                                    },
+                                    {
+                                        label: "Healthcare and Life Sciences",
+                                        value: "healthcare-and-life-sciences",
+                                    },
+                                    {
+                                        label: "Hospitality and Tourism",
+                                        value: "hospitality-and-tourism",
+                                    },
+                                    {
+                                        label: "Manufacturing",
+                                        value: "manufacturing",
+                                    },
+                                    {
+                                        label: "Media",
+                                        value: "media",
+                                    },
+                                    {
+                                        label: "Mobility and Logistics",
+                                        value: "mobility-and-logistics",
+                                    },
+                                    {
+                                        label: "Public Administration and Government Services",
+                                        value: "public-administration-and-government-services",
+                                    },
+                                    {
+                                        label: "Real Estate and Construction",
+                                        value: "real-estate-and-construction",
+                                    },
+                                    {
+                                        label: "Retail and Consumer Goods",
+                                        value: "retail-and-consumer-goods",
+                                    },
+                                    {
+                                        label: "Software and Technology",
+                                        value: "software-and-technology",
+                                    },
+                                    {
+                                        label: "Telecommunications",
+                                        value: "telecommunications",
+                                    },
+                                    {
+                                        label: "Other",
+                                        value: "other",
+                                    },
+                                ]}
+                            />
+                        </FormGroup>
+                        <FormGroup addClass="cq-12 " id="pipedrive_id" label="Pipedrive ID">
+                            <FormInputWrapper>
+                                <FormInput id="pipedrive_id" placeholder="e.g. #1234567890" />
+                            </FormInputWrapper>
+                        </FormGroup>
+                        <FormFieldSet addClass="cq-12" id="confidentiality" legend="Confidentiality" grid={true}>
+                            <div className="g-col-12 g-col-md-6">
+                                <FormOption name="confidentiality" id="confidentiality-public" label="Public" value="public" type="radio" card={true} icon="visibility" defaultChecked={true} />
+                            </div>
+                            <div className="g-col-12 g-col-md-6">
+                                <FormOption name="confidentiality" id="confidentiality-confidential" label="Confidential" value="confidential" type="radio" card={true} icon="visibility-off" />
+                            </div>
+                        </FormFieldSet>
+                        <FormGroup addClass="cq-12" id="owner" label="Owner" required={true}>
+                            <FormSelect
+                                id="owner"
+                                options={[
+                                    { label: "Guillaume Yvon", value: "guillaume-yvon" },
+                                    { label: "Org Admins", value: "org-admin" },
+                                ]}
+                            />
+                        </FormGroup>
+                        <FormGroup addClass="cq-12" id="Used-case" required={false} label="Used case">
+                            <FormSelectMultiple
+                                id="Used-case"
+                                options={[
+                                    { label: "Choose an option...", value: "", disabled: true },
+                                    { label: "Consulting", value: "Consulting" },
+                                    { label: "Design fiction", value: "Design fictions", selected: true },
+                                    { label: "Design thinking", value: "Design thinking", selected: true },
+                                    { label: "Education engineering", value: "Education engineering" },
+                                    { label: "Sustainable design", value: "Sustainable design" },
+                                    { label: "UX/UI", value: "UX/UI" },
+                                    { label: "Other", value: "Other" },
+                                ]}
+                            />
+                        </FormGroup>
+
+                        <FormGroup id="Context and Challenges" label="Context and Challenges" hint="A short sentence to explain what the context and the challenge.">
+                            <FormTextarea id="impact" rows={4} />
+                        </FormGroup>
+
+                        <FormGroup id="impact" label="Results and impact" hint="What is the impact of the program? Including environmental and social impact">
+                            <FormTextarea id="impact" rows={4} />
+                        </FormGroup>
+                        <FormGroup id="customer_verbatim" label="Customer verbatim">
+                            <FormTextarea id="customer_verbatim" rows={4} />
+                        </FormGroup>
+                        <FormGroup id="note" label="Note" hint="Why do we believe in it?">
+                            <FormTextarea id="note" rows={4} />
+                        </FormGroup>
+                 
+                        <FormFieldSet id="impact" legend="Impact" hint="Choose the the case that best describes the program." grid={true}>
+                            <div className="g-col-12 g-col-sm-6">
+                                <FormOption name="impact" id="no-impact" value="no-impact" type="radio" card={true} label="None" defaultChecked={true} icon="impact-none" />
+                            </div>
+                            <div className="g-col-12 g-col-sm-6">
+                                <FormOption name="impact" id="impact-not-obvious" value="impact-not-obvious" type="radio" card={true} label="Not obvious" icon="impact-not-obvious" />
+                            </div>
+                            <div className="g-col-12 g-col-sm-6">
+                                <FormOption
+                                    name="impact"
+                                    id="impact-push"
+                                    value="impact-push"
+                                    type="radio"
+                                    card={true}
+                                    label="Push"
+                                    // caption="The program has an impact, but not initially."
+                                    icon="impact-push"
+                                />
+                            </div>
+                            <div className="g-col-12 g-col-sm-6">
+                                <FormOption
+                                    name="impact"
+                                    id="impact-native"
+                                    value="impact-native"
+                                    type="radio"
+                                    card={true}
+                                    label="Native"
+                                    // caption="The program has an impact and is part of the core."
+                                    icon="impact-native"
+                                />
+                            </div>
+                        </FormFieldSet>
+
+                        <FormFieldSet id="verticals" legend="Verticals">
+                            <FormOption name="verticals" id="plastic" value="plastic" type="checkbox" card={true} icon="vertical-plastic" label="Plastic" />
+                            <FormOption name="verticals" id="food" value="food" type="checkbox" card={true} icon="vertical-food" label="Food" />
+                            <FormOption name="verticals" id="dei" value="dei" type="checkbox" card={true} icon="vertical-dei" label="DEI" />
+                        </FormFieldSet>
+                        <FormFieldSet id="sdgs" legend="SDGs" grid={true}>
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-1" value="sdg-1" type="checkbox" card={true} label="No poverty" sdg={1} />
+                            </div>
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-2" value="sdg-2" type="checkbox" card={true} label="Zero hunger" sdg={2} />
+                            </div>
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-3" value="sdg-3" type="checkbox" card={true} label="Good health and well being" sdg={3} />
+                            </div>
+                            
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-4" value="sdg-4" type="checkbox" card={true} label="Quality education" sdg={4} />
+                            </div>
+                            
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-5" value="sdg-5" type="checkbox" card={true} label="Gender equality" sdg={5} />
+                            </div>
+                           
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-6" value="sdg-6" type="checkbox" card={true} label="Clean water and sanitation" sdg={6} />
+                            </div>
+                            
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-7" value="sdg-7" type="checkbox" card={true} label="Affordable and clean energy" sdg={7} />
+                            </div>
+                            
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-8" value="sdg-8" type="checkbox" card={true} label="Decent work and economic growth" sdg={8} />
+                            </div>
+                            
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-9" value="sdg-9" type="checkbox" card={true} label="Industry innovation and infrastructure" sdg={9} />
+                            </div>
+                            
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-10" value="sdg-10" type="checkbox" card={true} label="Reduced inequalities" sdg={10} />
+                            </div>
+                           
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-11" value="sdg-11" type="checkbox" card={true} label="Sustainable cities and communities" sdg={11} />
+                            </div>
+                            
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-12" value="sdg-12" type="checkbox" card={true} label="Responsable consumption and production" sdg={12} />
+                            </div>
+                            
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-13" value="sdg-13" type="checkbox" card={true} label="Climate action" sdg={13} />
+                            </div>
+                            
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-14" value="sdg-14" type="checkbox" card={true} label="Life below water" sdg={14} />
+                            </div>
+                            
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-15" value="sdg-15" type="checkbox" card={true} label="Life on land" sdg={15} />
+                            </div>
+                           
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-16" value="sdg-16" type="checkbox" card={true} label="Peace, justice and strong institutions" sdg={16} />
+                            </div>
+                           
+                            <div className="g-col-12 g-col-sm-6">
+                            <FormOption name="sdgs" id="sdg-17" value="sdg-17" type="checkbox" card={true} label="Partnerships for the goals" sdg={17} />
+                            </div>
+                            
+                        </FormFieldSet>
+
+                        <FormFieldSet name="ecosystems" legend="Ecosystems">
+                            <FormOption name="ecosystems" id="ecosystem-students" value="students" type="checkbox" card={true} label="Students" icon="ecosystem-student" />
+                            <FormOption name="ecosystems" id="ecosystem-startups" value="startups" type="checkbox" card={true} label="Startups" icon="ecosystem-startups" />
+                            <FormOption name="ecosystems" id="ecosystem-corporate" value="corporate" type="checkbox" card={true} label="Corporate" icon="ecosystem-corporate" />
+                        </FormFieldSet>
+                        <FormGroup addClass="cq-12" id="google_drive" label="Google Drive">
+                            <FormInputWrapper>
+                                <FormInput id="google_drive" placeholder="e.g. https://drive.google.com/..." />
+                            </FormInputWrapper>
+                        </FormGroup>
+                        <FormGroup addClass="cq-12" id="Notion" label="Notion">
+                            <FormInputWrapper>
+                                <FormInput id="Notion" placeholder="e.g. https://notion.com/..." />
+                            </FormInputWrapper>
+                        </FormGroup>
+                        <FormGroup addClass="cq-12" id="Slack" label="Slack">
+                            <FormInputWrapper>
+                                <FormInput id="Slack" placeholder="e.g. https://Slack.com/..." />
+                            </FormInputWrapper>
+                        </FormGroup>
+                        <h4 className="nav-title flex-fill mb-none">Custom fields</h4>
+                        <FormGroup addClass="cq-12" id="Country" label="Country" required={true}>
+                            <FormSelect
+                                id="Country"
+                                options={[
+                                    { label: "France", value: "France" },
+                                    { label: "Other", value: "Other" },
+                                ]}
+                            />
+                        </FormGroup>
+                        
                     </AsideBody>
                     <div className="aside-footer">
                         <div className="d-flex gap-xs ml-auto">
-                            <a className="btn btn-lg btn-default" href="#">Discard changes</a>
-                            <a className="btn btn-lg btn-primary" href="#">Save</a>
+                            <a className="btn btn-lg btn-default" href="#">
+                                Discard changes
+                            </a>
+                            <a className="btn btn-lg btn-primary" href="#">
+                                Save
+                            </a>
                         </div>
                     </div>
                 </div>
