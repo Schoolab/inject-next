@@ -176,7 +176,7 @@ export const Navbar = ({ isLogged = true, isHub = false, showAdmin = true, showN
                                             {showMessages && (
                                                 <div className="navbar-option">
                                                     <a href="#" role="button" aria-label="Messages" className="navbar-option--link">
-                                                        <Icon name="comment" dataToggle="tooltip" dataOriginalTitle="Messages" />
+                                                        <Icon name="comment" addClass="has-dot" dataToggle="tooltip" dataOriginalTitle="Messages" />
                                                     </a>
                                                 </div>
                                             )}

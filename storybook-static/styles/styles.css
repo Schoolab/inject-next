@@ -5,7 +5,8 @@
 
 @import '../../../inject-css/css/main.css';
 /* @import './icon.css'; */
-@import '~@schoolab/inject-icons/dist/inject-icons.css';
+@import '~@schoolab/inject-icons/dist/inject-icons.css'; 
+/* @import '../../../inject-icons/dist/inject-icons.css'; */
 
 /* Importing from Google Fonts doesn't work - need a local copy on server */
 
