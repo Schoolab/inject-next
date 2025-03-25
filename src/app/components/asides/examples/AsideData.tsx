@@ -268,7 +268,11 @@ export const AsideData: React.FC<AsideDataProps> = ({
 
                         <hr />
 
-                        <FormGroup id="problem" label="Context and Challenges" hint="A short sentence to explain what the context and the challenge.">
+                        <FormGroup id="problem" label="Context and Challenges" hint={
+                                <>
+                                    The product owner must complete this info. <a href="#">Reach out to them</a>
+                                </>
+                            }>
                             <FormTextarea id="c&c" rows={4} placeholder="Not completed yet" defaultValue={"La Semmaris a lancé la Rungis Académie : un centre de formation de 3 000 m² conçu pour former 500 diplômés par an, doté d’équipements modernes adaptés aux besoins du secteur. Rungis Académie souhaite lancer une consultation à destination de potentiels concessionnaires (organismes de formation)."} readonly={true} fieldSizing={true} />
                         </FormGroup>
 
@@ -647,7 +651,7 @@ export const AsideData: React.FC<AsideDataProps> = ({
                             </FormInputWrapper>
                         </FormGroup>
                         <h4 className="nav-title flex-fill mb-none">Custom fields</h4>
-                        <FormGroup addClass="cq-12" id="Country" label="Country" required={true}>
+                        <FormGroup addClass="cq-12" id="Country" label="Country" required={true} >
                             <FormSelect
                                 id="Country"
                                 options={[
