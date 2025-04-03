@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Button } from "@/app/components/buttons/Button";
 import { tooltips } from "../../../../public/utils/tooltips";
 import { EmptyState } from "@/app/content/empty-states/EmptyState";
+import { Notif } from "../badges/notifs/Notif";
 export interface ModalAITabProps {
     isShow?: Boolean;
     emptyState?: Boolean;
@@ -20,8 +21,9 @@ export const ModalAITab = ({ isShow = false, emptyState = false, loading = false
             <div className="modal-dialog modal-dialog-vertical" role="document">
                 <div className="modal-content scrollable">
                     <div className="modal-header border-bottom">
-                        <h3 className="modal-title line-clamp-1">
-                            <span className="text-truncate">AI Agent</span>
+                        <h3 className="modal-title line-clamp-1 d-flex align-items-start">
+                            <span className="text-truncate">AI Chat</span>
+                            <Notif label="Beta 1" status="highlight" />
                         </h3>
                         <nav className="modal-nav nav nav-tabs">
                             <a href="#" className=" nav-link nav-item active" id="chat-tab" data-toggle="tab" data-target="#chat" type="button" role="tab" aria-controls="chat" aria-selected="true">
@@ -112,76 +114,93 @@ export const ModalAITab = ({ isShow = false, emptyState = false, loading = false
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="message align-items-end">
-                                            <a href="#" className="thumbnail is-oval is-md">
-                                                <img src="img/thumbnails/mistral.png" />
-                                            </a>
-                                            <div className="message-body">
-                                                <div className="message-row">
-                                                    <ul className="metas is-list small">
-                                                        <li>
-                                                            <a href="#" className="text-muted d-flex align-items-center gap-2xs">
-                                                                <span>Mistral IA_</span>
-                                                                {/* <span className="badge badge-role is-expert z-2" data-toggle="tooltip" data-placement="top" data-original-title="Expert" data-boundary="window" /> */}
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <span>June 18, 2024</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>3:41 PM</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div className="message-row align-items-end">
-                                                    <div className="message-content gap-md">
-                                                        <p>A design system is a set of interconnected standards used to manage design on a large scale. Here are some key components</p>
-                                                        <ul>
-                                                            <li>Design Guidelines: Rules and principles that guide the creation of consistent and high-quality products.</li>
-                                                            <li>Reusable Components: Standardized and reusable user interface elements (like buttons, forms, etc.) that streamline development.</li>
-                                                            <li>Design Patterns: Proven solutions to common design problems.</li>
-                                                            <li>Documentation: Instructions and standards for using the components and design principles.</li>
+                                        <div className="message flex-column gap-2xs">
+                                            <div className="d-flex align-items-end gap-xs">
+                                                <a href="#" className="thumbnail is-oval is-md">
+                                                    <img src="img/thumbnails/mistral.png" />
+                                                </a>
+                                                <div className="message-body">
+                                                    <div className="message-row">
+                                                        <ul className="metas is-list small">
+                                                            <li>
+                                                                <a href="#" className="text-muted d-flex align-items-center gap-2xs">
+                                                                    <span>Mistral IA_</span>
+                                                                    {/* <span className="badge badge-role is-expert z-2" data-toggle="tooltip" data-placement="top" data-original-title="Expert" data-boundary="window" /> */}
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <span>June 18, 2024</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>3:41 PM</span>
+                                                            </li>
                                                         </ul>
-                                                        <p>The goal is to ensure visual and functional consistency across all products and experiences of a brand, while optimizing development time and simplifying maintenance.</p>
+                                                    </div>
+                                                    <div className="message-row align-items-end">
+                                                        <div className="message-content gap-md">
+                                                            <p>A design system is a set of interconnected standards used to manage design on a large scale. Here are some key components</p>
+                                                            <ul>
+                                                                <li>Design Guidelines: Rules and principles that guide the creation of consistent and high-quality products.</li>
+                                                                <li>Reusable Components: Standardized and reusable user interface elements (like buttons, forms, etc.) that streamline development.</li>
+                                                                <li>Design Patterns: Proven solutions to common design problems.</li>
+                                                                <li>Documentation: Instructions and standards for using the components and design principles.</li>
+                                                            </ul>
+                                                            <p>The goal is to ensure visual and functional consistency across all products and experiences of a brand, while optimizing development time and simplifying maintenance.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div className="d-flex justify-content-end">
+                                                <Button iconStartName="thumb-up" size="sm" type="transparent" addClass="text-muted " />
+                                                <Button iconStartName="thumb-down" size="sm" type="transparent" addClass="text-muted" />
+                                                <Button iconStartName="copy" size="sm" type="transparent" addClass="text-muted" />
+                                            </div>
                                         </div>
-                                        <div className="message align-items-end">
-                                            <a href="#" className="thumbnail is-oval is-md">
-                                                <img src="img/thumbnails/mistral.png" />
-                                            </a>
-                                            <div className="message-body">
-                                                <div className="message-row">
-                                                    <ul className="metas is-list small">
-                                                        <li>
-                                                            <a href="#" className="text-muted d-flex align-items-center gap-2xs">
-                                                                <span>Mistral IA_</span>
-                                                                {/* <span className="badge badge-role is-expert z-2" data-toggle="tooltip" data-placement="top" data-original-title="Expert" data-boundary="window" /> */}
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <span>June 18, 2024</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>3:41 PM</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div className="message-row align-items-end">
-                                                    <div className="message-content gap-md">
-                                                        <p>A design system is a set of interconnected standards used to manage design on a large scale. Here are some key components</p>
-                                                        <ul>
-                                                            <li>Design Guidelines: Rules and principles that guide the creation of consistent and high-quality products.</li>
-                                                            <li>Reusable Components: Standardized and reusable user interface elements (like buttons, forms, etc.) that streamline development.</li>
-                                                            <li>Design Patterns: Proven solutions to common design problems.</li>
-                                                            <li>Documentation: Instructions and standards for using the components and design principles.</li>
+
+                                        <div className="message flex-column gap-2xs">
+                                            <div className="d-flex align-items-end gap-xs">
+                                                <a href="#" className="thumbnail is-oval is-md">
+                                                    <img src="img/thumbnails/mistral.png" />
+                                                </a>
+                                                <div className="message-body">
+                                                    <div className="message-row">
+                                                        <ul className="metas is-list small">
+                                                            <li>
+                                                                <a href="#" className="text-muted d-flex align-items-center gap-2xs">
+                                                                    <span>Mistral IA_</span>
+                                                                    {/* <span className="badge badge-role is-expert z-2" data-toggle="tooltip" data-placement="top" data-original-title="Expert" data-boundary="window" /> */}
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <span>June 18, 2024</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>3:41 PM</span>
+                                                            </li>
                                                         </ul>
-                                                        <p>The goal is to ensure visual and functional consistency across all products and experiences of a brand, while optimizing development time and simplifying maintenance.</p>
+                                                    </div>
+                                                    <div className="message-row align-items-end">
+                                                        <div className="message-content gap-md">
+                                                            <p>A design system is a set of interconnected standards used to manage design on a large scale. Here are some key components</p>
+                                                            <ul>
+                                                                <li>Design Guidelines: Rules and principles that guide the creation of consistent and high-quality products.</li>
+                                                                <li>Reusable Components: Standardized and reusable user interface elements (like buttons, forms, etc.) that streamline development.</li>
+                                                                <li>Design Patterns: Proven solutions to common design problems.</li>
+                                                                <li>Documentation: Instructions and standards for using the components and design principles.</li>
+                                                            </ul>
+                                                            <p>The goal is to ensure visual and functional consistency across all products and experiences of a brand, while optimizing development time and simplifying maintenance.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div className="d-flex justify-content-end">
+                                                <Button iconStartName="thumb-up" size="sm" type="transparent" addClass="text-muted " />
+                                                <Button iconStartName="thumb-down" size="sm" type="transparent" addClass="text-muted" />
+                                                <Button iconStartName="copy" size="sm" type="transparent" addClass="text-muted" />
+                                            </div>
                                         </div>
+
                                         <div className="message align-items-end">
                                             <a href="#" className="thumbnail is-oval is-md">
                                                 <img src="https://inject-prod.s3.amazonaws.com/images/41c42fb1-35bd-4a31-bf08-3b2267df4b95/sq150.jpeg" />
@@ -210,38 +229,44 @@ export const ModalAITab = ({ isShow = false, emptyState = false, loading = false
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="message align-items-end">
-                                            <a href="#" className="thumbnail is-oval is-md">
-                                                <img src="img/thumbnails/mistral.png" />
-                                            </a>
-                                            <div className="message-body">
-                                                <div className="message-row">
-                                                    <ul className="metas is-list small">
-                                                        <li>
-                                                            <a href="#" className="text-muted d-flex align-items-center gap-2xs">
-                                                                <span>Mistral IA_</span>
-                                                                {/* <span className="badge badge-role is-expert z-2" data-toggle="tooltip" data-placement="top" data-original-title="Expert" data-boundary="window" /> */}
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <span>June 18, 2024</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>3:46 PM</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div className="message-row align-items-end">
-                                                    <div className="message-content gap-md">
-                                                        <div className="loading-bubble">
-                                                            <div className="spinner">
-                                                                <div className="bounce1"></div>
-                                                                <div className="bounce2"></div>
-                                                                <div className="bounce3"></div>
+                                        <div className="message flex-column gap-2xs">
+                                            <div className="d-flex align-items-end gap-xs">
+                                                <a href="#" className="thumbnail is-oval is-md">
+                                                    <img src="img/thumbnails/mistral.png" />
+                                                </a>
+                                                <div className="message-body">
+                                                    <div className="message-row">
+                                                        <ul className="metas is-list small">
+                                                            <li>
+                                                                <a href="#" className="text-muted d-flex align-items-center gap-2xs">
+                                                                    <span>Mistral IA_</span>
+                                                                    {/* <span className="badge badge-role is-expert z-2" data-toggle="tooltip" data-placement="top" data-original-title="Expert" data-boundary="window" /> */}
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <span>June 18, 2024</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>3:46 PM</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="message-row align-items-end">
+                                                        <div className="message-content gap-md">
+                                                            <div className="loading-bubble">
+                                                                <div className="spinner">
+                                                                    <div className="bounce1"></div>
+                                                                    <div className="bounce2"></div>
+                                                                    <div className="bounce3"></div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            
+                                            <div className="d-flex justify-content-end">
+                                                <Button iconStartName="reload" size="sm" label="try again" type="transparent" addClass="text-muted" />
                                             </div>
                                         </div>
                                     </div>
