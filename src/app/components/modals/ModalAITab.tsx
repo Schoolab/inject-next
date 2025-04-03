@@ -86,36 +86,38 @@ export const ModalAITab = ({ isShow = false, emptyState = false, loading = false
                                         </li>
                                     </ul>
                                     <div className="modal-body have-sticky-footer">
-                                        <div className="message align-items-end">
-                                            <a href="#" className="thumbnail is-oval is-md">
-                                                <img src="https://inject-prod.s3.amazonaws.com/images/41c42fb1-35bd-4a31-bf08-3b2267df4b95/sq150.jpeg" />
-                                            </a>
-                                            <div className="message-body">
-                                                <div className="message-row">
-                                                    <ul className="metas is-list small">
-                                                        <li>
-                                                            <a href="#" className="text-muted d-flex align-items-center gap-2xs">
-                                                                <span>Pierre Lemeteil</span>
-                                                                {/* <span className="badge badge-role is-admin z-2" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window" /> */}
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <span>June 18, 2024</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>3:40 PM</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div className="message-row align-items-end">
-                                                    <div className="message-content gap-md">
-                                                        <p>What is a design system ?</p>
+                                        <div className="message-wrapper">
+                                            <div className="message align-items-end">
+                                                <a href="#" className="thumbnail is-oval is-md">
+                                                    <img src="https://inject-prod.s3.amazonaws.com/images/41c42fb1-35bd-4a31-bf08-3b2267df4b95/sq150.jpeg" />
+                                                </a>
+                                                <div className="message-body">
+                                                    <div className="message-row">
+                                                        <ul className="metas is-list small">
+                                                            <li>
+                                                                <a href="#" className="text-muted d-flex align-items-center gap-2xs">
+                                                                    <span>Pierre Lemeteil</span>
+                                                                    {/* <span className="badge badge-role is-admin z-2" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window" /> */}
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <span>June 18, 2024</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>3:40 PM</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="message-row align-items-end">
+                                                        <div className="message-content gap-md">
+                                                            <p>What is a design system ?</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="message flex-column gap-2xs">
-                                            <div className="d-flex align-items-end gap-xs">
+                                        <div className="message-wrapper">
+                                            <div className="message align-items-end">
                                                 <a href="#" className="thumbnail is-oval is-md">
                                                     <img src="img/thumbnails/mistral.png" />
                                                 </a>
@@ -158,8 +160,8 @@ export const ModalAITab = ({ isShow = false, emptyState = false, loading = false
                                             </div>
                                         </div>
 
-                                        <div className="message flex-column gap-2xs">
-                                            <div className="d-flex align-items-end gap-xs">
+                                        <div className="message-wrapper">
+                                            <div className="message align-items-end">
                                                 <a href="#" className="thumbnail is-oval is-md">
                                                     <img src="img/thumbnails/mistral.png" />
                                                 </a>
@@ -200,37 +202,39 @@ export const ModalAITab = ({ isShow = false, emptyState = false, loading = false
                                                 <Button iconStartName="copy" size="sm" type="transparent" addClass="text-muted" />
                                             </div>
                                         </div>
-
-                                        <div className="message align-items-end">
-                                            <a href="#" className="thumbnail is-oval is-md">
-                                                <img src="https://inject-prod.s3.amazonaws.com/images/41c42fb1-35bd-4a31-bf08-3b2267df4b95/sq150.jpeg" />
-                                            </a>
-                                            <div className="message-body">
-                                                <div className="message-row">
-                                                    <ul className="metas is-list small">
-                                                        <li>
-                                                            <a href="#" className="text-muted d-flex align-items-center gap-2xs">
-                                                                <span>Pierre Lemeteil</span>
-                                                                {/* <span className="badge badge-role is-admin z-2" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window" /> */}
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <span>June 18, 2024</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>3:45 PM</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div className="message-row align-items-end">
-                                                    <div className="message-content gap-md">
-                                                        <p>Could you develop what are Design patterns ?</p>
+                                        <div className="message-wrapper">
+                                            <div className="message align-items-end">
+                                                <a href="#" className="thumbnail is-oval is-md">
+                                                    <img src="https://inject-prod.s3.amazonaws.com/images/41c42fb1-35bd-4a31-bf08-3b2267df4b95/sq150.jpeg" />
+                                                </a>
+                                                <div className="message-body">
+                                                    <div className="message-row">
+                                                        <ul className="metas is-list small">
+                                                            <li>
+                                                                <a href="#" className="text-muted d-flex align-items-center gap-2xs">
+                                                                    <span>Pierre Lemeteil</span>
+                                                                    {/* <span className="badge badge-role is-admin z-2" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window" /> */}
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <span>June 18, 2024</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>3:45 PM</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="message-row align-items-end">
+                                                        <div className="message-content gap-md">
+                                                            <p>Could you develop what are Design patterns ?</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="message flex-column gap-2xs">
-                                            <div className="d-flex align-items-end gap-xs">
+                                        
+                                        <div className="message-wrapper">
+                                            <div className="message align-items-end">
                                                 <a href="#" className="thumbnail is-oval is-md">
                                                     <img src="img/thumbnails/mistral.png" />
                                                 </a>
