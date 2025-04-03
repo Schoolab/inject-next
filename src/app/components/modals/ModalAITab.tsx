@@ -195,7 +195,7 @@ export const ModalAITab = ({ isShow = false, emptyState = false, loading = false
                                                 </div>
                                             </div>
                                             <div className="d-flex justify-content-end">
-                                                <Button iconStartName="thumb-up" size="sm" type="transparent" addClass="text-muted " />
+                                                <Button iconStartName="thumb-up" size="sm" type="transparent" addClass="text-primary " disabled={true} />
                                                 <Button iconStartName="thumb-down" size="sm" type="transparent" addClass="text-muted" />
                                                 <Button iconStartName="copy" size="sm" type="transparent" addClass="text-muted" />
                                             </div>
