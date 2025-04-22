@@ -234,8 +234,8 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                             <Icon name="new-tab" addClass="text-muted" />
                                         </Button>
                                         <Button type="muted" addClass="btn-link" size="xs">
-                                            <Icon name="brand-dropbox" addClass="text-muted" />
-                                            <span>Dropbox</span>
+                                            <Icon name="brand-napta" addClass="text-muted" />
+                                            <span>Napta</span>
                                             <Icon name="new-tab" addClass="text-muted" />
                                         </Button>
                                         <Button type="muted" addClass="btn-link" size="xs">
