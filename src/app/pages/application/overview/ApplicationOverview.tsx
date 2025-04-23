@@ -35,6 +35,13 @@ export const ApplicationOverview = () => {
             >
                 <div className="row justify-content-center">
                     <div className="col-12 col-md-10 col-lg-8 d-flex flex-column gap-md">
+                        <Alert
+                            
+                            icon="alert"
+                            text="Your application is currently under review. You will receive a response shortly."
+                     
+                            type="warning"
+                        />
                         <div className="application-section">
                             <div className="card">
                                 <div className="card-infos gap-sm d-flex flex-column align-items-stretch">
