@@ -46,6 +46,21 @@ export const Default: Story = {
     },
 };
 
+export const IsPrivate: Story = {
+    args: {
+        start: {
+            month: "June",
+            day: "8",
+            startTime: "10 AM",
+            endTime: "11 AM",
+        },
+        isPrivate: true,
+        location: "Online",
+        title: "Event Not started",
+        img: "img/placeholder-events-pink.png",
+    },
+};
+
 export const Register: Story = {
     args: {
         start: {

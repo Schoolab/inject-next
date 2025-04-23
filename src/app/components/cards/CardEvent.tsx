@@ -6,6 +6,7 @@ import { CardImage } from "@/app/components/cards/CardImage";
 import { Tag } from "@/app/components/badges/tags/Tag";
 import { Icon } from "@/app/components/icons/Icon";
 import { CardActions } from "./CardActions";
+import { Badges } from "../badges/Badges";
 
 type StartType = {
     month: string;
@@ -18,17 +19,17 @@ type MetaType = {
     label: string;
     iconName?: string;
     addClass?: string;
-}
+};
 
 type ButtonType = {
     addClass?: string;
-    type: "default" | "primary" | "secondary" | "transparent" | "muted" | "success" | "warning" | "danger" | "brand-primary" | "brand-secondary" | "brand-tertiary" ;
-    label?: string | number; 
+    type: "default" | "primary" | "secondary" | "transparent" | "muted" | "success" | "warning" | "danger" | "brand-primary" | "brand-secondary" | "brand-tertiary";
+    label?: string | number;
     iconStartName?: string;
     iconEndName?: string;
     link?: string;
     hasDropdown?: Boolean;
-}
+};
 
 type LinkType = {
     label: string;
@@ -41,14 +42,14 @@ type ActionType = {
     title?: string;
     metas?: MetaType[];
     buttons?: ButtonType[];
-}
+};
 
 interface CardEventProps {
     /**
      * Does the event have an image url
      */
     img?: string;
-     /**
+    /**
      * When the event begin
      */
     start: StartType;
@@ -60,14 +61,15 @@ interface CardEventProps {
      * Pin
      */
     pin?: boolean;
-     /**
+    /**
      * Where is the event
      */
     location?: "Online" | "Hybride" | "InPerson";
     /**
      * is this event still ongoing
      */
-    ongoing?: boolean; 
+    isPrivate?: boolean;
+    ongoing?: boolean;
     links?: LinkType[];
     actions?: ActionType[];
 
@@ -75,41 +77,28 @@ interface CardEventProps {
     style?: CSSProperties;
 }
 
-export const CardEvent = (
-    { 
-        img,
-        start,
-        title,
-        pin,
-        location,
-        ongoing = false,
-        links,
-        actions,
-        addClass,
-        style,
-        ...props 
-    }: CardEventProps
-) => {
+export const CardEvent = ({ img, start, title, pin, location, isPrivate = false, ongoing = false, links, actions, addClass, style, ...props }: CardEventProps) => {
     let classTab = [""];
     addClass && classTab.push(addClass);
 
     let listLinks = links?.map((link) => (
         <div className="card-target">
             <a href={link.link} className="stretched-link d-flex align-items-center">
-                { link.iconLetter && <span className="icon icon--letter is-sm"><span>{link.iconLetter}</span></span> }
-                { link.iconName && <Icon name={link.iconName} size="sm" /> }
+                {link.iconLetter && (
+                    <span className="icon icon--letter is-sm">
+                        <span>{link.iconLetter}</span>
+                    </span>
+                )}
+                {link.iconName && <Icon name={link.iconName} size="sm" />}
                 <span>{link.label}</span>
             </a>
             <Icon name="chevron-right" size="sm" />
         </div>
     ));
-    let listActions = actions?.map((action) => (
-        <CardActions title={action.title} metas={action.metas} buttons={action.buttons} />
-    ))
+    let listActions = actions?.map((action) => <CardActions title={action.title} metas={action.metas} buttons={action.buttons} />);
 
     return (
         <Card addClass={classTab.join(" ")} style={style} {...props}>
-
             <CardInfos addClass="is-linked">
                 {img && (
                     <CardBanner>
@@ -129,26 +118,22 @@ export const CardEvent = (
                             </a>
                         </div>
                         <div className="d-flex justify-content-between align-items-end flex-wrap gap-xs">
-                            {location === "Online" && <Tag iconName="link" label="Online" />}
-                            {location === "Hybride" && <Tag iconName="location" label="Hybride" />}
-                            {location === "InPerson" && <Tag iconName="location" label="In person" />}
-                            {ongoing ? (
-                                <Tag iconName="status-filled" status="open" label={`Ongoing until ${start.endTime}`} />
-                            ) :(
-                                <Tag iconName="status-bordered" status="draft" label={`Starts at ${start.startTime}`} />
-                            )}
-                            
+                            <Badges addClass="flex-nowrap">
+                                {location === "Online" && <Tag iconName="link" label="Online" />}
+                                {location === "Hybride" && <Tag iconName="location" label="Hybride" />}
+                                {location === "InPerson" && <Tag iconName="location" label="In person" />}
+                                {isPrivate && <Tag iconName="eye-off" isPill label="Private" status="default" />}
+                            </Badges>
+
+                            {ongoing ? <Tag iconName="status-filled" status="open" label={`Ongoing until ${start.endTime}`} /> : <Tag iconName="status-bordered" status="draft" label={`Starts at ${start.startTime}`} />}
                         </div>
                     </div>
                 </div>
             </CardInfos>
 
-            { links && <div className="card-targets">
-               {listLinks} 
-            </div> }
+            {links && <div className="card-targets">{listLinks}</div>}
 
-            { actions && listActions }
-
+            {actions && listActions}
         </Card>
     );
 };
