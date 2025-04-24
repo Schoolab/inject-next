@@ -72,14 +72,19 @@ interface CardEventProps {
     ongoing?: boolean;
     links?: LinkType[];
     actions?: ActionType[];
-
+    cardImageAddClass?: string;
+    cardIconAddClass?: string;
     addClass?: string;
     style?: CSSProperties;
 }
 
-export const CardEvent = ({ img, start, title, pin, location, isPrivate = false, ongoing = false, links, actions, addClass, style, ...props }: CardEventProps) => {
+export const CardEvent = ({ img, start, cardImageAddClass,cardIconAddClass, title, pin, location, isPrivate = false, ongoing = false, links, actions, addClass, style, ...props }: CardEventProps) => {
     let classTab = [""];
     addClass && classTab.push(addClass);
+    let cardImageClass=["card-image is-3by1 bg-highlight"];
+    cardImageAddClass && cardImageClass.push(cardImageAddClass);
+    let cardIconClass=["icon icon-calendar is-64px position-absolute top-50 start-50 translate-middle"];
+    cardIconAddClass && cardImageClass.push(cardIconAddClass);
 
     let listLinks = links?.map((link) => (
         <div className="card-target">
@@ -100,11 +105,15 @@ export const CardEvent = ({ img, start, title, pin, location, isPrivate = false,
     return (
         <Card addClass={classTab.join(" ")} style={style} {...props}>
             <CardInfos addClass="is-linked">
-                {img && (
-                    <CardBanner>
-                        <CardImage is3by1={true} src={img} />
-                    </CardBanner>
-                )}
+             
+                <CardBanner>
+                   { img ? 
+                    <CardImage is3by1={true} src={img} />
+                    : <div className={cardImageClass.join(" ")}>
+                        <span className={cardIconClass.join(" ")}></span>
+                    </div>
+                    }
+                </CardBanner>
                 <div className="d-flex gap-sm">
                     <div className="thumbnail is-date is-lg">
                         <span className="month">{start.month}</span> <span className="day">{start.day}</span>

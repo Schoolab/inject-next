@@ -47,6 +47,7 @@ interface CardProjectProps {
     pinned?: boolean;
     name: string;
     link?: string;
+    cardImageAddClass?: string;
     members?: number;
     tags?: TagType[];
     cover?: string;
@@ -72,13 +73,15 @@ export const CardProject = (
         actions,
         children, 
         addClass,
+        cardImageAddClass,
         style,
         ...props 
     }: CardProjectProps
 ) => {
     let classTab = [""];
     addClass && classTab.push(addClass);
-
+    let cardImageClass=["card-image bg-highlight"];
+    cardImageAddClass && cardImageClass.push(cardImageAddClass);
     let listTags = tags?.slice(0, 2).map((tag) => <Tag label={tag.label} link={tag.link} />);
     let listLinks = links?.map((link) => (
         <div className="card-target">
@@ -101,7 +104,7 @@ export const CardProject = (
                 <CardBanner>
                     { cover 
                         ? <CardImage src={cover} />
-                        : <div className="card-image bg-highlight">
+                        : <div className={cardImageClass.join(" ")}>
                             <span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle">
                                 <span>{name.charAt(0)}</span>
                             </span>

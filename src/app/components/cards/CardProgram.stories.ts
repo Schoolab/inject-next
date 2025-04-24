@@ -36,6 +36,46 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
     args: {},
 };
+export const Random_color_1: Story = {
+    args: {
+        cardImageAddClass:"bg-random-1",
+    },
+};
+export const Random_color_2: Story = {
+    args: {
+        cardImageAddClass:"bg-random-2",
+    },
+};
+export const Random_color_3: Story = {
+    args: {
+        cardImageAddClass:"bg-random-3",
+    },
+};
+export const Random_color_4: Story = {
+    args: {
+        cardImageAddClass:"bg-random-4",
+    },
+};
+export const Random_color_5: Story = {
+    args: {
+        cardImageAddClass:"bg-random-5",
+    },
+};
+export const Random_color_6: Story = {
+    args: {
+        cardImageAddClass:"bg-random-6",
+    },
+};
+export const Random_color_7: Story = {
+    args: {
+        cardImageAddClass:"bg-random-7",
+    },
+};
+export const Random_color_8: Story = {
+    args: {
+        cardImageAddClass:"bg-random-8",
+    },
+};
 
 export const Cover: Story = {
     args: {

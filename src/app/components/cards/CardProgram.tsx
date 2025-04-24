@@ -54,7 +54,7 @@ interface CardProgramProps {
     externalProgram?: string;
     links?: LinkType[];
     actions?: ActionType[];
-
+    cardImageAddClass?: string;
     children?: React.ReactNode;
     addClass?: string;
     style?: CSSProperties;
@@ -74,12 +74,15 @@ export const CardProgram = (
         actions,
         children, 
         addClass,
+        cardImageAddClass,
         style,
         ...props 
     }: CardProgramProps
 ) => {
     let classTab = [""];
     addClass && classTab.push(addClass);
+    let cardImageClass=["card-image bg-highlight"];
+    cardImageAddClass && cardImageClass.push(cardImageAddClass);
 
     let listCategories = categories?.map((category) => <Tag label={category.label} link={link} />);
     let listLinks = links?.map((link) => (
@@ -101,7 +104,18 @@ export const CardProgram = (
 
             <CardInfos addClass="is-linked">
                 <CardBanner>
-                    <CardImage src={cover ? cover : "img/placeholder-programs-pink.png"} />
+                      { cover 
+                            ? <CardImage src={cover} />
+                            : <div className={cardImageClass.join(" ")}>
+                                <span className="icon icon--program is-64px position-absolute top-50 start-50 translate-middle">
+                                    <span>{name.charAt(0)}</span>
+                                </span>
+                            </div>
+                        }
+
+
+
+                    
                     { externalProgram && <div className="card-external">
                         <div className="small">External: </div>
                         <div className="small font-weight-bold text-truncate mx-2">{externalProgram}</div>

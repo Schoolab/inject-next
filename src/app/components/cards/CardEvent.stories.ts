@@ -42,7 +42,118 @@ export const Default: Story = {
         },
         location: "Online",
         title: "Event Not started",
-        img: "img/placeholder-events-pink.png",
+    },
+};
+export const Random_color_1: Story = {
+    args: {
+        start: {
+            month: "June",
+            day: "8",
+            startTime: "10 AM",
+            endTime: "11 AM",
+        },
+        cardIconAddClass:"c-random-1",
+        cardImageAddClass:"bg-random-1",
+        location: "Online",
+        title: "Event Not started",
+    },
+};
+export const Random_color_2: Story = {
+    args: {
+        start: {
+            month: "June",
+            day: "8",
+            startTime: "10 AM",
+            endTime: "11 AM",
+        },
+        cardIconAddClass:"c-random-2",
+        cardImageAddClass:"bg-random-2",
+        location: "Online",
+        title: "Event Not started",
+    },
+};
+export const Random_color_3: Story = {
+    args: {
+        start: {
+            month: "June",
+            day: "8",
+            startTime: "10 AM",
+            endTime: "11 AM",
+        },
+        cardIconAddClass:"c-random-3",
+        cardImageAddClass:"bg-random-3",
+        location: "Online",
+        title: "Event Not started",
+    },
+};
+export const Random_color_4: Story = {
+    args: {
+        start: {
+            month: "June",
+            day: "8",
+            startTime: "10 AM",
+            endTime: "11 AM",
+        },
+        cardIconAddClass:"c-random-4",
+        cardImageAddClass:"bg-random-4",
+        location: "Online",
+        title: "Event Not started",
+    },
+};
+export const Random_color_5: Story = {
+    args: {
+        start: {
+            month: "June",
+            day: "8",
+            startTime: "10 AM",
+            endTime: "11 AM",
+        },
+        cardIconAddClass:"c-random-5",
+        cardImageAddClass:"bg-random-5",
+        location: "Online",
+        title: "Event Not started",
+    },
+};
+export const Random_color_6: Story = {
+    args: {
+        start: {
+            month: "June",
+            day: "8",
+            startTime: "10 AM",
+            endTime: "11 AM",
+        },
+        cardIconAddClass:"c-random-6",
+        cardImageAddClass:"bg-random-6",
+        location: "Online",
+        title: "Event Not started",
+    },
+};
+export const Random_color_7: Story = {
+    args: {
+        start: {
+            month: "June",
+            day: "8",
+            startTime: "10 AM",
+            endTime: "11 AM",
+        },
+        cardIconAddClass:"c-random-7",
+        cardImageAddClass:"bg-random-7",
+        location: "Online",
+        title: "Event Not started",
+    },
+};
+export const Random_color_8: Story = {
+    args: {
+        start: {
+            month: "June",
+            day: "8",
+            startTime: "10 AM",
+            endTime: "11 AM",
+        },
+        cardIconAddClass:"c-random-8",
+        cardImageAddClass:"bg-random-8",
+        location: "Online",
+        title: "Event Not started",
     },
 };
 
@@ -57,7 +168,8 @@ export const IsPrivate: Story = {
         isPrivate: true,
         location: "Online",
         title: "Event Not started",
-        img: "img/placeholder-events-pink.png",
+        cardIconAddClass:"c-random-7",
+        cardImageAddClass:"bg-random-7",
     },
 };
 
@@ -71,7 +183,8 @@ export const Register: Story = {
         },
         location: "Online",
         title: "Event Not started",
-        img: "img/placeholder-events-pink.png",
+        cardIconAddClass:"c-random-7",
+        cardImageAddClass:"bg-random-7",
         actions: [
             {
                 title: "To access the event",
@@ -99,7 +212,8 @@ export const Ongoing: Story = {
         ongoing: true,
         location: "Hybride",
         title: "Ongoing Event Name",
-        img: "img/placeholder-events-pink.png",
+        cardIconAddClass:"c-random-7",
+        cardImageAddClass:"bg-random-7",
     },
 };
 

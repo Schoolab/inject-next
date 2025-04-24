@@ -2,7 +2,8 @@ import React from "react";
 import { Icon } from "@/app/components/icons/Icon";
 
 interface AvatarProps {
-    addClass?: string;  
+    addClass?: string; 
+    iconAddClass? :string; 
     isOval?: Boolean;
     isBordered?: Boolean;
     size?: "default" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
@@ -14,7 +15,7 @@ interface AvatarProps {
     dataBoundary?: string;
 }
 
-export const Avatar = ({ addClass, size = "lg", isOval = true, isBordered = false, iconName = "account", image, dataToggle, dataPlacement, dataOriginalTitle, dataBoundary, ...props }: AvatarProps) => {
+export const Avatar = ({ addClass, size = "lg",iconAddClass, isOval = true, isBordered = false, iconName = "account", image, dataToggle, dataPlacement, dataOriginalTitle, dataBoundary, ...props }: AvatarProps) => {
     let classTab = ["thumbnail"];
     size && classTab.push(`is-${size}`);
     isOval && classTab.push(`is-oval`);
@@ -23,7 +24,7 @@ export const Avatar = ({ addClass, size = "lg", isOval = true, isBordered = fals
 
     return (
         <div className={classTab.join(" ")} data-toggle={dataToggle} data-placement={dataPlacement} data-original-title={dataOriginalTitle} data-boundary={dataBoundary} {...props}>
-            {iconName && !image && <Icon name={iconName} />}
+            {iconName && !image && <Icon name={iconName} addClass={iconAddClass}/>}
             {image && <img src={image}></img>}
         </div> 
     );
