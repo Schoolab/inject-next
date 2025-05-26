@@ -2,7 +2,7 @@ import React from "react";
 import { ReactNode } from "react";
 import { useEffect } from "react";
 import { Navbar } from "@/app/components/navbar/NavBar";
-import { ShortcutBar } from "../components/Shortcutbar/ShortcutBar";
+import { ShortcutBar } from "../components/Shortcutbar/default/ShortcutBar";
 import { SidebarManage } from "@/app/components/sidebar/SidebarManage";
 import { SidebarAdmin } from "@/app/components/sidebar/SidebarAdmin";
 import { AsidePrivateMessages } from "@/app/components/asides/examples/AsidePrivateMessages";

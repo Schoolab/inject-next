@@ -11,7 +11,7 @@ export const AdminAIChat = () => {
     }, []);
     return (
         <Layout sideBar="Admin" showShortcutbar={false}>
-            <AppContent sections="transparent" isIAchat={true} showSubnav={false}>
+            <AppContent sections="transparent" isVerticalScroll={true} showSubnav={false}>
                 <div className="messages-module-container standaloneMainThreadContainer">
                     <div className="messages-module-content">
                         <div className="message align-items-end">

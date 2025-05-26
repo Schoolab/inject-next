@@ -18,12 +18,13 @@ interface SectionProps {
     title?: string;
     subtitle?: string;
     subtitleIcon?: string;
+    addClassTitleIcon?: string;
     buttons?: ButtonType[];
     children?: ReactNode;
     collapsable?: boolean;
     collapsableId?: string;
     isOpen?: boolean;
-
+    titleIcon?: string;
     addClass?: string;
     style?: CSSProperties;
 }
@@ -31,6 +32,8 @@ interface SectionProps {
 export const Section = (
     {
         title,
+        titleIcon,
+        addClassTitleIcon,
         subtitle,
         subtitleIcon,
         buttons,
@@ -60,7 +63,7 @@ export const Section = (
                 <>
                     <h3 className="application-section--title" data-toggle="collapse" data-target={`#${collapsableId}`} aria-expanded={isOpen ? "true" : "false"}>
                         <div className="d-flex flex-column gap-none w-100">
-                            <div className="application-section--title-content">{title}</div>
+                            <div className="application-section--title-content"><div className="t d-flex align-items-center gap-xs">{ titleIcon && <Icon name={titleIcon} addClass={addClassTitleIcon} size="2sm" /> } {title}</div></div>
                             { subtitle && 
                                 <div className="d-flex gap-2xs align-items-center text-navigation text-muted">
                                     { subtitleIcon && <Icon name={subtitleIcon} size="xs" /> }

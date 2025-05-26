@@ -554,6 +554,99 @@ export const Admin: Story = {
   }
 };
 
+export const ConsultingMissions: Story = {
+  args: {
+    id: "consultingMission",
+    sections: [
+        {
+            
+            items: [
+                  {
+                      label: "Missions",
+                      href: "#",
+                      icon: "program",
+                      active: true,
+                  },
+                  {
+                      label: "Members",
+                      href: "#",
+                      icon: "account",
+                  },
+                  {
+                      label: "AskAI tools",
+                      href: "#",
+                      icon: "ai",
+                  },
+                  {
+                      label: "Analytics",
+                      href: "#",
+                      icon: "chart-line",
+                  },
+                  
+              ]
+          },
+          
+      ]
+  }
+};
+
+export const InnovationPrograms: Story = {
+  args: {
+    id: "innovationPrograms",
+    sections: [
+        {
+            
+            items: [
+                  {
+                      label: "Programs",
+                      href: "#",
+                      icon: "program",
+                      active: true,
+                  },
+                  {
+                      label: "Projects",
+                      href: "#",
+                      icon: "project",
+                  },
+                  {
+                    label: "Members",
+                    href: "#",
+                    icon: "account",
+                },
+            
+                  {
+                      label: "Experts Meetings",
+                      href: "#",
+                      icon: "coaching",
+                  },
+                  {
+                      label: "Custom fields",
+                      href: "#",
+                      icon: "form-fields",
+                  },
+           
+                  {
+                      label: "Tags",
+                      href: "#",
+                      icon: "tag",
+                  },
+                  {
+                      label: "Custom Tabs",
+                      href: "#",
+                      icon: "tab",
+                  },
+                  {
+                      label: "Analytics",
+                      href: "#",
+                      icon: "chart-line",
+                  },
+              ]
+          },
+          
+      ]
+  }
+};
+
 export const StudyManage: Story = {
   args: {
     id: "studyNav",

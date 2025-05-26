@@ -9,6 +9,7 @@ type ButtonType = {
     isActive?: Boolean;
     showActive?: Boolean;
     hasDropdown?: Boolean;
+    hasNumber?: string;
     iconStartName?: string;
     iconEndName?: string;
     addClass?: string;
@@ -34,7 +35,7 @@ export interface TitleProps {
     let classTab = ["application-title"];
     addClass && classTab.push(addClass);
 
-    let listButtons = buttons?.map((button, index) => <Button key={index} label={button.label} link={button.link} disabled={button.disabled} isActive={button.isActive} showActive={button.showActive} hasDropdown={button.hasDropdown} iconStartName={button.iconStartName} iconEndName={button.iconEndName} addClass={button.addClass} type={button.type} size={button.size} extended={button.extended} outlined={button.outlined} />);
+    let listButtons = buttons?.map((button, index) => <Button key={index} label={button.label} link={button.link} disabled={button.disabled} isActive={button.isActive} showActive={button.showActive} hasDropdown={button.hasDropdown}  hasNumber={button.hasNumber}  iconStartName={button.iconStartName} iconEndName={button.iconEndName} addClass={button.addClass} type={button.type} size={button.size} extended={button.extended} outlined={button.outlined} />);
 
     return (
         <div className={classTab.join(" ")} style={style} {...props}>

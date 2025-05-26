@@ -30,6 +30,7 @@ type ButtonType = {
     isActive?: Boolean;
     showActive?: Boolean;
     hasDropdown?: Boolean;
+    hasNumber?: string;
     iconStartName?: string;
     iconEndName?: string;
     addClass?: string;
@@ -40,70 +41,49 @@ type ButtonType = {
 
 interface AppContentProps {
     children?: ReactNode;
-
     layout?: "centered" | "fluid" | "narrow" | "full";
     sections?: "cards" | "bordered" | "transparent" | "separated";
-
     isAsside?: boolean;
-    isIAchat?: boolean;
-
+    isVerticalScroll?: boolean;
     showBreadcrumb?: boolean;
     breadcrumbIcon?: string;
     breadcrumbHome?: string;
     breadcrumb?: BreadcrumbType[];
-
     backLink?: string;
-
     showTitle?: boolean;
     title?: string;
-
     pagination?: PaginationProps;
-
     buttons?: ButtonType[];
-
     showSubnav?: boolean;
     subnav?: SubnavType[];
-
     showStepper?: boolean;
-
     showFooter?: boolean;
-
     addClass?: string;
 }
 export const AppContent = ({
     children,
     layout = "centered",
     sections = "cards",
-
     isAsside,
-    isIAchat,
-
+    isVerticalScroll,
     showBreadcrumb = true,
     breadcrumbIcon,
     breadcrumbHome = "#",
     breadcrumb,
-
     backLink,
-
     showTitle = true,
     title = "Page title",
-
     pagination,
-
     buttons,
-
     showSubnav = true,
     subnav,
-
     showStepper = false,
-
     showFooter = true,
-
     addClass,
 }: AppContentProps) => {
     let appMainContainerClass = ["application-main-content container-lg container-lg-fluid p-sm p-md-md p-lg-xl"];
     isAsside && (appMainContainerClass = ["application-main-content container-fluid p-sm p-md-md p-lg-xl"]);
-    isIAchat && (appMainContainerClass = ["application-main-content h-100 overflow-auto"]);
+    isVerticalScroll && (appMainContainerClass = ["h-100 overflow-y-auto overflow-x-hidden"]);
 
     layout === "fluid" && (appMainContainerClass = ["application-main-content container-fluid p-sm p-md-md p-lg-xl"]);
     layout === "narrow" && (appMainContainerClass = ["application-main-content container-md p-sm p-md-md p-lg-xl"]);
