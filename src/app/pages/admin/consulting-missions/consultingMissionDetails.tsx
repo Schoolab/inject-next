@@ -25,6 +25,7 @@ import { Stack } from "@/app/components/avatars/Stack";
 import { FormGroup } from "@/app/forms/group/FormGroup";
 import { FormTextarea } from "@/app/forms/textarea/FormTextarea";
 import { StatCard } from "@/app/components/stat-cards/StatCard";
+import { CardAskAI } from "@/app/components/cards/CardAskAI";
 
 const steps: StepType[] = [
     {
@@ -95,7 +96,7 @@ export const consultingMissionDetails = () => {
             >
                 <Section>
                     <div className="cq">
-                        <div className="cq-12 cq-lg-6">
+                        <div className="cq-12 cq-lg-6 mb-md mb-lg-0">
                             <div className="card is-highlighted border rounded p-md d-flex flex-column gap-md h-100">
                                 <div className="d-flex gap-xs">
                                     <div>
@@ -119,7 +120,7 @@ export const consultingMissionDetails = () => {
                                 <Button label="Complete data" type="default" iconStartName="plan-data" />
                             </div>
                         </div>
-                        <div className="cq-12 cq-lg-6">
+                        <div className="cq-12 cq-lg-6 mb-md mb-lg-0">
                             <div className="card border rounded p-md d-flex flex-column gap-md h-100 justify-content-between">
                                 <div className="">
                                     <h4>Customers access</h4>
@@ -136,71 +137,8 @@ export const consultingMissionDetails = () => {
                 <Section title="Mission phasses">
                     <Stepper steps={steps} />
                 </Section>
-                <h3>Mission report</h3>
-                <Section addClass="border rounded p-md" title="InjectAI" titleIcon="ai" addClassTitleIcon="text-assistant" subtitle="An AI assistant to guide you through your misson with schoolab" collapsable={true} isOpen={false} collapsableId="InjectAI" isIAComposer={true}>
-                    <div className="message align-items-end">
-                        <a href="#" className="thumbnail is-oval is-md">
-                            <img src="https://inject-prod.s3.amazonaws.com/images/41c42fb1-35bd-4a31-bf08-3b2267df4b95/sq150.jpeg" />
-                        </a>
-                        <div className="message-body">
-                            <div className="message-row">
-                                <ul className="metas is-list small">
-                                    <li>
-                                        <a href="#" className="text-muted d-flex align-items-center gap-2xs">
-                                            <span>Pierre Lemeteil</span>
-                                            {/* <span className="badge badge-role is-admin z-2" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window" /> */}
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span>June 18, 2024</span>
-                                    </li>
-                                    <li>
-                                        <span>3:40 PM</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="message-row align-items-end">
-                                <div className="message-content gap-md">
-                                    <p>What is a design system ?</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="message align-items-end">
-                        <a href="#" className="thumbnail is-oval is-md">
-                            <img src="img/thumbnails/mistral.png" />
-                        </a>
-                        <div className="message-body">
-                            <div className="message-row">
-                                <ul className="metas is-list small">
-                                    <li>
-                                        <a href="#" className="text-muted d-flex align-items-center gap-2xs">
-                                            <span>Mistral IA_</span>
-                                            {/* <span className="badge badge-role is-expert z-2" data-toggle="tooltip" data-placement="top" data-original-title="Expert" data-boundary="window" /> */}
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span>June 18, 2024</span>
-                                    </li>
-                                    <li>
-                                        <span>3:41 PM</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="message-row align-items-end">
-                                <div className="message-content gap-md">
-                                    <p>A design system is a set of interconnected standards used to manage design on a large scale. Here are some key components</p>
-                                    <ul>
-                                        <li>Design Guidelines: Rules and principles that guide the creation of consistent and high-quality products.</li>
-                                        <li>Reusable Components: Standardized and reusable user interface elements (like buttons, forms, etc.) that streamline development.</li>
-                                        <li>Design Patterns: Proven solutions to common design problems.</li>
-                                        <li>Documentation: Instructions and standards for using the components and design principles.</li>
-                                    </ul>
-                                    <p>The goal is to ensure visual and functional consistency across all products and experiences of a brand, while optimizing development time and simplifying maintenance.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <Section title="Mission report">
+                    <CardAskAI />
                 </Section>
                 <Section title="Summary" subtitle="All you need to know about this mission">
                     <div className="bg-highlight p-md rounded">
