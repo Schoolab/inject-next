@@ -36,7 +36,7 @@ export interface StatCardProps {
 }
 
 export const StatCard = ({ number = 0, isPercentage, variation, warning = false, caption = "Statistic Name", link = "", addClass, ...props }: StatCardProps) => {
-    let classTab = ["bg-light rounded p-sm w-100 h-100 d-flex flex-column gap-xs justify-content-start text-decoration-none"];
+    let classTab = ["bg-light rounded p-sm flex-fill h-100 d-flex flex-column gap-xs justify-content-start text-decoration-none"];
     addClass && classTab.push(addClass);
 
     let difference;

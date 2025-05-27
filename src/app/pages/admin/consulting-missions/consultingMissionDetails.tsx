@@ -1,18 +1,23 @@
 import React from "react";
-
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { Title } from "@/app/components/page-header/Title";
-import { SubNav } from "@/app/components/page-header/SubNav";
-import { Stepper, StepType } from "@/app/components/stepper/Stepper";
+import { CardEvent } from "@/app/components/cards/CardEvent";
+import { Button } from "@/app/components/buttons/Button";
 import { CardFeed } from "@/app/components/cards/CardFeed";
+import { ItemResource } from "@/app/components/items/ItemResource";
+import { Icon } from "@/app/components/icons/Icon";
+import { Dropdown } from "@/app/components/dropdowns/Dropdown";
+import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
+import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
+import { DropdownDivider } from "@/app/components/dropdowns/DropdownDivider";
 import { Section } from "@/app/components/sections/Section";
+import { CardParticipant } from "@/app/components/cards/CardParticipant";
+import { ItemSetupTask } from "@/app/components/items/ItemSetupTask";
+import { Stepper, StepType } from "@/app/components/stepper/Stepper";
 import { Nps } from "@/app/components/nps/Nps";
 import { DataList } from "@/app/content/data/DataList";
 import { DataListItem } from "@/app/content/data/DataListItem";
 import { FormFieldSet } from "@/app/forms/fieldset/FormFieldSet";
-import { Button } from "@/app/components/buttons/Button";
-import { Icon } from "@/app/components/icons/Icon";
 import { Badges } from "@/app/components/badges/Badges";
 import { Tag } from "@/app/components/badges/tags/Tag";
 import { Avatar } from "@/app/components/avatars/Avatar";
@@ -49,20 +54,31 @@ const steps: StepType[] = [
     },
 ];
 
-export const consultingportalDetails = () => {
+export const consultingMissionDetails = () => {
     return (
-        <Layout showShortcutbar={false}>
+        <Layout theme="default" showShortcutbarAdmin={true} showShortcutbar={false} shortcutBarExpanded={false}>
             <AppContent
-                showBreadcrumb={false}
                 sections="transparent"
-                title="Consulting portal"
+                breadcrumb={[
+                    {
+                        label: "Consulting missions",
+                        href: "",
+                    },
+                    {
+                        label: "Missions",
+                        href: "",
+                    },
+                    {
+                        label: "Impact Innovators",
+                    },
+                ]}
+                title="Impact Innovator"
                 buttons={[
                     {
                         type: "default",
-                        label: "Manage access",
+                        label: "Data",
                         link: "",
-                        iconStartName: "account-plus",
-                        hasNumber: "3",
+                        iconStartName: "plan-data",
                     },
                 ]}
                 subnav={[
@@ -72,35 +88,56 @@ export const consultingportalDetails = () => {
                         isActive: true,
                     },
                     {
-                        label: "Shared files",
-                        href: "",
-                    },
-                    {
-                        label: "Satisfaction",
+                        label: "shared files",
                         href: "",
                     },
                 ]}
             >
-                <Section addClass="gap-2xl">
-                    <Stepper steps={steps} />
-                    <CardFeed
-                        avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg"
-                        author="Pierre Forestier"
-                        metas={[{ label: "Program Manager, Schoolab" }]}
-                        content={`
-                                <p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p>
-                                <ul><li>You’ll find all the key deliverables and documents available in the Shared Files section of this space.</li>
-                                <li>We’d love to hear your thoughts — please take a moment to share your feedback in the Satisfaction tab.</li></ul>
-                                <p>Your insights help us grow and continue to improve how we support our partners.</p>
-                                <p>It’s been a real pleasure working with you — and I hope we get to collaborate again in the future!</p>
-                                <p>Warm regards</p>
-                            `}
-                        readMore={false}
-                        isFooterActions={false}
-                        isTitleActions={false}
-                    ></CardFeed>
+                <Section>
+                    <div className="cq">
+                        <div className="cq-12 cq-lg-6">
+                            <div className="card is-highlighted border rounded p-md d-flex flex-column gap-md h-100">
+                                <div className="d-flex gap-xs">
+                                    <div>
+                                        <h4>Data Completion</h4>
+                                        <p>Collecting mission data is essential for capitalizing on completed work and measuring business and ESG impact. These insights feed into our Knowledge Base, boosting consultants' capabilities with access to historical mission intelligence.</p>
+                                    </div>
+                                    <div>
+                                        <svg className="progress-circle-container is-2xl mb-3" viewBox="0 0 32 32" data-percent={15} style={{ ["--percent" as any]: 15 }}>
+                                            <circle className="progress-circle progress-circle-bg" />
+                                            <circle className="progress-circle progress-circle-percent" />
+                                            <text className="progress-circle-text" x={16} y={15}>
+                                                20%
+                                            </text>
+                                            <text className="progress-circle-subtext" x={16} y={20}>
+                                                Fields
+                                            </text>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <Button label="Complete data" type="default" iconStartName="plan-data" />
+                            </div>
+                        </div>
+                        <div className="cq-12 cq-lg-6">
+                            <div className="card border rounded p-md d-flex flex-column gap-md h-100 justify-content-between">
+                                <div className="">
+                                    <h4>Customers access</h4>
+                                    <p>Share access with the client to deliverables, shared files, and satisfaction feedback tools.</p>
+                                </div>
+                                <div className="d-flex gap-xs">
+                                    <Button addClass="flex-fill" label="Go to portal" type="default" iconStartName="new-tab" />
+                                    <Button hasNumber="2" addClass="flex-fill" label="Customers access" type="default" iconStartName="account-plus" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </Section>
-                <Section addClass="border rounded p-md" title="InjectAI - Mission report" titleIcon="ai" addClassTitleIcon="text-assistant" subtitle="An AI assistant to guide you through your misson with schoolab" collapsable={true} isOpen={false} collapsableId="InjectAI" isIAComposer={true}>
+                <Section title="Mission phasses">
+                    <Stepper steps={steps} />
+                </Section>
+                <h3>Mission report</h3>
+                <Section addClass="border rounded p-md" title="InjectAI" titleIcon="ai" addClassTitleIcon="text-assistant" subtitle="An AI assistant to guide you through your misson with schoolab" collapsable={true} isOpen={false} collapsableId="InjectAI" isIAComposer={true}>
                     <div className="message align-items-end">
                         <a href="#" className="thumbnail is-oval is-md">
                             <img src="https://inject-prod.s3.amazonaws.com/images/41c42fb1-35bd-4a31-bf08-3b2267df4b95/sq150.jpeg" />
@@ -343,25 +380,21 @@ export const consultingportalDetails = () => {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </Section>
-                <Section title="Mission KPI">
-                    <div className="cq row-gap-md">
-                        <div className="cq-xs-6 cq-sm-4">
-                            <StatCard number={3896} variation={-209} caption="Sessions" link="#" />
+                <Section title="Satisfaction">
+                    <CardFeed avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" author="Pierre Forestier" metas={[{ label: "Program Manager, Schoolab" }]} content={`<h4>Feedback.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p>`} readMore={false} isFooterActions={false} isTitleActions={false}>
+                        <Nps></Nps>
+                    </CardFeed>
+                </Section>
+                <Section title="Verbatims">
+                    <div className="cq">
+                        <div className="cq-12 cq-lg-4">
+                            <CardFeed avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" author="Pierre Forestier" metas={[{ label: "Program Manager, Schoolab" }]} content={`<h4>Verbatim.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p>`} readMore={false} isFooterActions={false} isTitleActions={false}></CardFeed>
                         </div>
-                        <div className="cq-xs-6 cq-sm-4">
-                            <StatCard number={5651} variation={+23} caption="Participants" link="#" />
+                        <div className="cq-12 cq-lg-4">
+                            <CardFeed avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" author="Pierre Forestier" metas={[{ label: "Program Manager, Schoolab" }]} content={`<h4>Verbatim.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p>`} readMore={false} isFooterActions={false} isTitleActions={false}></CardFeed>
                         </div>
-                        <div className="cq-xs-6 cq-sm-4">
-                            <StatCard number={10} isPercentage={true} variation={2} caption="Courses completions" link="#" />
-                        </div>
-                        <div className="cq-xs-6 cq-sm-4">
-                            <StatCard number={103} variation={34} caption="Mail delivered" link="#" />
-                        </div>
-                        <div className="cq-xs-6 cq-sm-4">
-                            <StatCard number={0} variation={0} caption="Projects" link="#" />
-                        </div>
-                        <div className="cq-xs-6 cq-sm-4">
-                            <StatCard number={0} variation={0} caption="Followers" link="#" />
+                        <div className="cq-12 cq-lg-4">
+                            <CardFeed avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" author="Pierre Forestier" metas={[{ label: "Program Manager, Schoolab" }]} content={`<h4>Verbatim.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p>`} readMore={false} isFooterActions={false} isTitleActions={false}></CardFeed>
                         </div>
                     </div>
                 </Section>

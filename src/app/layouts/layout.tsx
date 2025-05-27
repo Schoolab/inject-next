@@ -9,6 +9,7 @@ import { AsidePrivateMessages } from "@/app/components/asides/examples/AsidePriv
 import { Placeholder } from "@/app/content/placeholders/Placeholder";
 import { asideToggle } from "../../../public/utils/asideToggle";
 import { ModalAITab } from "../components/modals/ModalAITab";
+import { AdminShortcutBar } from "../components/Shortcutbar/admin/adminShortcutBar";
 // import { select } from "../../../public/utils/select";
 
 interface LayoutProps {
@@ -19,6 +20,7 @@ interface LayoutProps {
     sideBar?: "None" | "Admin" | "Manage";
     theme?: "default" | "Inject" | "Schoolab" | "Moho" | "Raiselab";
     showShortcutbar?: boolean;
+    showShortcutbarAdmin?: boolean;
     showPrivateMessages?: boolean;
 }
 
@@ -31,6 +33,7 @@ export const Layout = (
         hub = false,
 
         showShortcutbar = true,
+        showShortcutbarAdmin = false,
         shortcutBarExpanded,
 
         sideBar,
@@ -52,6 +55,7 @@ export const Layout = (
             
                 <div className={appContainerClass}>
                     {showShortcutbar && <ShortcutBar isExpanded={shortcutBarExpanded} />}
+                    {showShortcutbarAdmin && <AdminShortcutBar isExpanded={shortcutBarExpanded} />}
                     {sideBar && sideBar === "Manage" && <SidebarManage />}
                     {sideBar && sideBar === "Admin" && <SidebarAdmin />}
                     {
