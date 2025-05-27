@@ -319,8 +319,8 @@ export const consultingMissionDetails = () => {
                     </div>
                 </Section>
                 <Section title="Satisfaction">
-                    <CardFeed avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" author="Pierre Forestier" metas={[{ label: "Program Manager, Schoolab" }]} content={`<h4>Feedback.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p>`} readMore={false} isFooterActions={false} isTitleActions={false}>
-                        <Nps></Nps>
+                    <CardFeed avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" author="Pierre Forestier" metas={[{ label: "Program Manager, Schoolab" }]} content={`<h4>Feedback.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p><p class="p-0 small">NPS:</p>`} readMore={false} isFooterActions={false} isTitleActions={false}>
+                        <Nps isDisabled={true}></Nps>
                     </CardFeed>
                 </Section>
                 <Section title="Verbatims">
