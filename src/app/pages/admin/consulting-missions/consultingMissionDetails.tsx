@@ -95,9 +95,9 @@ export const consultingMissionDetails = () => {
                 ]}
             >
                 <Section>
-                    <div className="cq">
-                        <div className="cq-12 cq-lg-6 mb-md mb-lg-0">
-                            <div className="card is-highlighted border rounded p-md d-flex flex-column gap-md h-100">
+                    <div className="row">
+                        <div className="col-12 col-lg-6 mb-md mb-lg-0">
+                            <div className="card is-highlighted  p-md d-flex flex-column gap-md h-100">
                                 <div className="d-flex gap-xs">
                                     <div>
                                         <h4>Data Completion</h4>
@@ -120,8 +120,8 @@ export const consultingMissionDetails = () => {
                                 <Button label="Complete data" type="default" iconStartName="plan-data" />
                             </div>
                         </div>
-                        <div className="cq-12 cq-lg-6 mb-md mb-lg-0">
-                            <div className="card border rounded p-md d-flex flex-column gap-md h-100 justify-content-between">
+                        <div className="col-12 col-lg-6 mb-md mb-lg-0">
+                            <div className="card  p-md d-flex flex-column gap-md h-100 justify-content-between">
                                 <div className="">
                                     <h4>Customers access</h4>
                                     <p>Share access with the client to deliverables, shared files, and satisfaction feedback tools.</p>
