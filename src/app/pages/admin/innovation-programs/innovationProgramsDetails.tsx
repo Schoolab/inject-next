@@ -24,7 +24,7 @@ import { EmptyState } from "@/app/content/empty-states/EmptyState";
 import { CardAskAI } from "@/app/components/cards/CardAskAI";
 import { ItemResource } from "@/app/components/items/ItemResource";
 
-export const consultingMissionDetails = () => {
+export const innovationProgramsDetails = () => {
     useEffect(() => {
         phasesToggle();
     }, []);
@@ -110,84 +110,7 @@ export const consultingMissionDetails = () => {
                         </div>
                     </div>
                 </Section>
-                <Section title="Mission phases">
-                    <fieldset className="form-group">
-                        <div className="form-options grid gap-xs">
-                            <div className="g-col-6 g-col-sm-3">
-                                <div className="custom-control custom-radio custom-control-card">
-                                    <input className="custom-control-input" type="radio" value="Initiation" name="phase" />
-                                    <label className="custom-control-label d-flex column-gap-xs" aria-describedby="caption-no-impact">
-                                        <div className="d-flex flex-column gap-2xs flex-fill">
-                                            <div className="d-flex flex-column gap-2xs is-sm mb-xs">
-                                                <div className="d-flex gap-xs align-items-center">
-                                                    <div className="progress flex-fill mr-3" style={{ height: ".5rem" }}>
-                                                        <div className="progress-bar" role="progressbar" aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} style={{ width: "0%" }}></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <span className="h4">Initiation</span>
-                                            <small className="form-text text-muted">Not completed</small>
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-                            <div className="g-col-6 g-col-sm-3">
-                                <div className="custom-control custom-radio custom-control-card">
-                                    <input className="custom-control-input" type="radio" value="Diagnostic" name="phase" />
-                                    <label className="custom-control-label d-flex column-gap-xs">
-                                        <div className="d-flex flex-column gap-2xs flex-fill">
-                                            <div className="d-flex flex-column gap-2xs is-sm mb-xs">
-                                                <div className="d-flex gap-xs align-items-center">
-                                                    <div className="progress flex-fill mr-3" style={{ height: ".5rem" }}>
-                                                        <div className="progress-bar" role="progressbar" aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} style={{ width: "0%" }}></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <span className="h4">Diagnostic</span>
-                                            <small className="form-text text-muted">Not completed</small>
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-                            <div className="g-col-6 g-col-sm-3">
-                                <div className="custom-control custom-radio custom-control-card">
-                                    <input className="custom-control-input" type="radio" value="Delivery" name="phase" />
-                                    <label className="custom-control-label d-flex column-gap-xs">
-                                        <div className="d-flex flex-column gap-2xs flex-fill">
-                                            <div className="d-flex flex-column gap-2xs is-sm mb-xs">
-                                                <div className="d-flex gap-xs align-items-center">
-                                                    <div className="progress flex-fill mr-3" style={{ height: ".5rem" }}>
-                                                        <div className="progress-bar" role="progressbar" aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} style={{ width: "0%" }}></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <span className="h4">Delivery</span>
-                                            <small className="form-text text-muted">Not completed</small>
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-                            <div className="g-col-6 g-col-sm-3">
-                                <div className="custom-control custom-radio custom-control-card">
-                                    <input className="custom-control-input" type="radio" value="Closing" name="phase" />
-                                    <label className="custom-control-label d-flex column-gap-xs">
-                                        <div className="d-flex flex-column gap-2xs flex-fill">
-                                            <div className="d-flex flex-column gap-2xs is-sm mb-xs">
-                                                <div className="d-flex gap-xs align-items-center">
-                                                    <div className="progress flex-fill mr-3" style={{ height: ".5rem" }}>
-                                                        <div className="progress-bar" role="progressbar" aria-valuenow={0} aria-valuemin={0} aria-valuemax={100} style={{ width: "0%" }}></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <span className="h4">Closing</span>
-                                            <small className="form-text text-muted">Not completed</small>
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                </Section>
+                
                 <Section title="Mission report">
                     <CardAskAI />
                 </Section>
@@ -424,24 +347,8 @@ export const consultingMissionDetails = () => {
                         />
                     </div>
                 </Section>
-                <Section title="Satisfaction">
-                    <CardFeed avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" author="Pierre Forestier" metas={[{ label: "Program Manager, Schoolab" }]} content={`<h4>Feedback.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p><p class="p-0 small">NPS:</p>`} readMore={false} isFooterActions={false} isTitleActions={false}>
-                        <Nps isDisabled={true}></Nps>
-                    </CardFeed>
-                </Section>
-                <Section title="Verbatims">
-                    <div className="cq">
-                        <div className="cq-12 cq-lg-4">
-                            <CardFeed avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" author="Pierre Forestier" metas={[{ label: "Program Manager, Schoolab" }]} content={`<h4>Verbatim.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p>`} readMore={false} isFooterActions={false} isTitleActions={false}></CardFeed>
-                        </div>
-                        <div className="cq-12 cq-lg-4">
-                            <CardFeed avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" author="Pierre Forestier" metas={[{ label: "Program Manager, Schoolab" }]} content={`<h4>Verbatim.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p>`} readMore={false} isFooterActions={false} isTitleActions={false}></CardFeed>
-                        </div>
-                        <div className="cq-12 cq-lg-4">
-                            <CardFeed avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" author="Pierre Forestier" metas={[{ label: "Program Manager, Schoolab" }]} content={`<h4>Verbatim.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p>`} readMore={false} isFooterActions={false} isTitleActions={false}></CardFeed>
-                        </div>
-                    </div>
-                </Section>
+                
+                
             </AppContent>
         </Layout>
     );
