@@ -23,6 +23,7 @@ import { EmptyState } from "@/app/content/empty-states/EmptyState";
 
 import { CardAskAI } from "@/app/components/cards/CardAskAI";
 import { ItemResource } from "@/app/components/items/ItemResource";
+import { ProgressBar } from "@/app/components/progress/bar/ProgressBar";
 
 export const innovationProgramsDetails = () => {
     useEffect(() => {
@@ -68,37 +69,48 @@ export const innovationProgramsDetails = () => {
             >
                 <Section>
                     <div className="row">
-                        <div className="col-12 col-lg-6 mb-md mb-lg-0">
-                            <div className="card is-highlighted  p-md d-flex flex-column gap-md h-100">
-                                <div className="d-flex gap-xs">
-                                    <div>
-                                        <h4>Data Completion</h4>
-                                        <p>Collecting mission data is essential for capitalizing on completed work and measuring business and ESG impact. These insights feed into our Knowledge Base, boosting consultants' capabilities with access to historical mission intelligence.</p>
+                        <div className="col-12 col-lg-6 mb-md">
+                            <div className="card  p-md d-flex flex-column gap-md h-100 justify-content-between">
+                                <div className="flex-fill">
+                                    <h4>Data Completion</h4>
+                                    <p>Collecting mission data is essential for capitalizing on completed work and measuring business and ESG impact. These insights feed into our Knowledge Base, boosting consultants' capabilities with access to historical mission intelligence.</p>
+                                </div>
+                                <div className="d-flex flex-column gap-2xs">
+                                    <div className="small text-muted d-flex">
+                                        <span className="flex-fill">Fields</span>
+                                        <span>In progress</span>
                                     </div>
-                                    <div>
-                                        <svg className="progress-circle-container is-2xl mb-3" viewBox="0 0 32 32" data-percent={15} style={{ ["--percent" as any]: 15 }}>
-                                            <circle className="progress-circle progress-circle-bg" />
-                                            <circle className="progress-circle progress-circle-percent" />
-                                            <text className="progress-circle-text" x={16} y={15}>
-                                                20%
-                                            </text>
-                                            <text className="progress-circle-subtext" x={16} y={20}>
-                                                Fields
-                                            </text>
-                                        </svg>
-                                    </div>
+                                    <ProgressBar percentage={25} label="Steps" text="5/20" inline={true} />
                                 </div>
                                 <div className="d-flex gap-xs">
-                                  
-                                    <Button addClass="flex-fill" label="Complete data" type="default" iconStartName="plan-data" />                                   
-                                    <Button addClass="flex-fill" label="AskAI" type="default" iconStartName="ai" />
+                                    <Button addClass="flex-fill" label="Complete data" type="default" iconStartName="plan-data" />
                                 </div>
-
                             </div>
                         </div>
-                        <div className="col-12 col-lg-6 mb-md mb-lg-0">
+                        <div className="col-12 col-lg-6 mb-md">
                             <div className="card  p-md d-flex flex-column gap-md h-100 justify-content-between">
-                                <div className="">
+                                <div className="flex-fill">
+                                    <h4>Experience report</h4>
+                                    <p>To generate business case and linkedin post, experience report must be compeleted.</p>
+                                </div>
+                                <div className="d-flex flex-column gap-2xs">
+                                    <div className="small text-muted d-flex">
+                                        <span className="flex-fill">Steps</span>
+                                        <span>In progress</span>
+                                    </div>
+                                    <ProgressBar percentage={33} label="Steps" text="1/3" inline={true} />
+                                </div>
+                                <div className="d-flex gap-xs">
+                                    <a href="#" className="btn btn-default flex-fill" role="button">
+                                        <span className="icon icon-ai text-assistant"></span>
+                                        <span>Complete experience report</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 mb-md mb-lg-0">
+                            <div className="card  p-md d-flex flex-column gap-md h-100 justify-content-between">
+                                <div className="flex-fill">
                                     <h4>Customers access</h4>
                                     <p>Share access with the client to deliverables, shared files, and satisfaction feedback tools.</p>
                                 </div>
@@ -110,7 +122,7 @@ export const innovationProgramsDetails = () => {
                         </div>
                     </div>
                 </Section>
-                
+
                 <Section title="Mission report">
                     <CardAskAI />
                 </Section>
@@ -319,36 +331,42 @@ export const innovationProgramsDetails = () => {
                         <div className="d-flex justify-content-between align-items-end">
                             <span className="label">Assets</span>
                         </div>
-                        <EmptyState title="Assets" iconTitle="point" text="To generate business case and linkedin post, experience report fields must be compeleted  " labelBtn="AskAI" iconBtn="ai" />
-                        <ItemResource
-                          
-                            icon={{
-                                
-                                name: "link",
-                            }}
-                          
-                            resource={{
-                                details: "Google drive",
-                                name: "Business case",
-                                type: "link",
-                            }}
-                        />
-                        <ItemResource
-                       
-                            icon={{
-                            
-                                name: "newsfeed",
-                            }}
-                        
-                            resource={{
-                                name: "Linkedin post",
-                                type: "text",
-                            }}
-                        />
+                        <EmptyState title="Assets" iconTitle="point" text="To generate business case and linkedin post, experience report fields must be compeleted  " labelBtn="Complete experience report" iconBtn="ai" />
+
+                        <div className="item is-linked is-bordered is-completed">
+                            <div className="item-row">
+                                <div className="item-row align-items-center">
+                                    <span className="icon icon-content item-icon is-darker"></span>
+                                    <div className="item-content">
+                                        <a href="#" className="item-title stretched-link">
+                                            Business case
+                                        </a>
+                                        {/* <span className="small text-muted">Review the name, the description, dates and cover of the program</span> */}
+                                    </div>
+                                </div>
+                                <div className="item-options">
+                                    <Button hasDropdown disabled={true} iconStartName="" label="Generate" size="default" type="default" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item is-linked is-bordered is-completed">
+                            <div className="item-row">
+                                <div className="item-row align-items-center">
+                                    <span className="icon icon-public-page item-icon is-darker"></span>
+                                    <div className="item-content">
+                                        <a href="#" className="item-title stretched-link">
+                                            Linkedin post
+                                        </a>
+                                        {/* <span className="small text-muted">Review the name, the description, dates and cover of the program</span> */}
+                                    </div>
+                                </div>
+                                <div className="item-options">
+                                    <Button hasDropdown disabled={true} iconStartName="" label="Generate" size="default" type="default" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </Section>
-                
-                
             </AppContent>
         </Layout>
     );
