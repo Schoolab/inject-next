@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-
+import { types } from "../../../../../public/utils/tables/types";
 import { Button } from "@/app/components/buttons/Button";
 
 import { phasesToggle } from "../../../../../public/utils/phasesToggle";
@@ -11,6 +11,7 @@ import { ItemFolder } from "@/app/components/items/ItemFolder";
 
 export const consultingMissionShardedFiles = () => {
     useEffect(() => {
+         types();
         phasesToggle();
     }, []);
     return (

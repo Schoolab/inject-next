@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+import { types } from "../../../../public/utils/tables/types";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { CardEvent } from "@/app/components/cards/CardEvent";
@@ -16,6 +18,9 @@ import { ItemSetupTask } from "@/app/components/items/ItemSetupTask";
 import { ItemFolder } from "@/app/components/items/ItemFolder";
 
 export const SponsorSpaceSharedFiles = () => {
+    useEffect(() => {
+        types();
+    }, []);
     return (
         <Layout theme="default" shortcutBarExpanded={true}>
             <AppContent
