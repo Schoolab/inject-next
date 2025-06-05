@@ -1,26 +1,25 @@
 import React from "react";
-
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { Title } from "@/app/components/page-header/Title";
-import { SubNav } from "@/app/components/page-header/SubNav";
-import { Stepper, StepType } from "@/app/components/stepper/Stepper";
+import { CardEvent } from "@/app/components/cards/CardEvent";
+import { Button } from "@/app/components/buttons/Button";
 import { CardFeed } from "@/app/components/cards/CardFeed";
+
+import { Icon } from "@/app/components/icons/Icon";
+
 import { Section } from "@/app/components/sections/Section";
-import { Nps } from "@/app/components/nps/Nps";
+
 import { DataList } from "@/app/content/data/DataList";
 import { DataListItem } from "@/app/content/data/DataListItem";
-import { FormFieldSet } from "@/app/forms/fieldset/FormFieldSet";
-import { Button } from "@/app/components/buttons/Button";
-import { Icon } from "@/app/components/icons/Icon";
+
 import { Badges } from "@/app/components/badges/Badges";
 import { Tag } from "@/app/components/badges/tags/Tag";
 import { Avatar } from "@/app/components/avatars/Avatar";
 import { Stack } from "@/app/components/avatars/Stack";
-import { FormGroup } from "@/app/forms/group/FormGroup";
-import { FormTextarea } from "@/app/forms/textarea/FormTextarea";
+
 import { StatCard } from "@/app/components/stat-cards/StatCard";
 import { CardAskAI } from "@/app/components/cards/CardAskAI";
+import { Stepper, StepType } from "@/app/components/stepper/Stepper";
 
 const steps: StepType[] = [
     {
@@ -50,25 +49,28 @@ const steps: StepType[] = [
     },
 ];
 
-export const consultingportalDetails = () => {
+export const SponsorSpaceOverview = () => {
     return (
-        <Layout showShortcutbar={false}>
+        <Layout theme="default" shortcutBarExpanded={true}>
             <AppContent
-                showBreadcrumb={false}
                 sections="transparent"
-                title="Consulting portal"
-                buttons={[
+                breadcrumb={[
                     {
-                        type: "default",
-                        label: "Manage access",
-                        link: "",
-                        iconStartName: "account-plus",
-                        hasNumber: "3",
+                        label: "Impact Innovators",
+                        href: "./?path=/story/pages-program-dashboard--overview",
+                    },
+                    {
+                        label: "Sponsor space",
+                        href: "./?path=/story/pages-program-dashboard--overview",
+                    },
+                    {
+                        label: "Overview",
                     },
                 ]}
+                title="Sponsor space"
                 subnav={[
                     {
-                        label: "Details",
+                        label: "Overview",
                         href: "",
                         isActive: true,
                     },
@@ -80,6 +82,14 @@ export const consultingportalDetails = () => {
                         label: "Satisfaction",
                         href: "",
                     },
+                    {
+                        label: "Projects",
+                        href: "",
+                    },
+                    {
+                        label: "Members",
+                        href: "",
+                    },
                 ]}
             >
                 <Section addClass="gap-2xl">
@@ -89,13 +99,13 @@ export const consultingportalDetails = () => {
                         author="Pierre Forestier"
                         metas={[{ label: "Program Manager, Schoolab" }]}
                         content={`
-                                <p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p>
-                                <ul><li>You’ll find all the key deliverables and documents available in the Shared Files section of this space.</li>
-                                <li>We’d love to hear your thoughts — please take a moment to share your feedback in the Satisfaction tab.</li></ul>
-                                <p>Your insights help us grow and continue to improve how we support our partners.</p>
-                                <p>It’s been a real pleasure working with you — and I hope we get to collaborate again in the future!</p>
-                                <p>Warm regards</p>
-                            `}
+                                                <p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p>
+                                                <ul><li>You’ll find all the key deliverables and documents available in the Shared Files section of this space.</li>
+                                                <li>We’d love to hear your thoughts — please take a moment to share your feedback in the Satisfaction tab.</li></ul>
+                                                <p>Your insights help us grow and continue to improve how we support our partners.</p>
+                                                <p>It’s been a real pleasure working with you — and I hope we get to collaborate again in the future!</p>
+                                                <p>Warm regards</p>
+                                            `}
                         readMore={false}
                         isFooterActions={false}
                         isTitleActions={false}
