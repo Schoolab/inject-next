@@ -21,6 +21,7 @@ import { FormOption } from "@/app/forms/option/FormOption";
 import { FormSelect } from "@/app/forms/select/FormSelect";
 import { FormInputWrapper } from "@/app/forms/input-wrapper/FormInputWrapper";
 import { FormSelectMultiple } from "@/app/forms/select-multiple/FormSelectMultiple";
+import { EmptyState } from "@/app/content/empty-states/EmptyState";
 interface AsideDataProps {
     initialTab?: string;
     pagination?: PaginationProps;
@@ -71,6 +72,18 @@ export const AsideData: React.FC<AsideDataProps> = ({
                         dataTarget: "#edit",
                         role: "tab",
                         ariaControls: "edit",
+                        ariaSelected: false,
+                    },
+                    {
+                        label: "Assets",
+                        href: "#",
+                        isActive: false,
+
+                        id: "assets-tab",
+                        dataToggle: "tab",
+                        dataTarget: "#assets",
+                        role: "tab",
+                        ariaControls: "assets",
                         ariaSelected: false,
                     },
                 ]}
@@ -268,11 +281,15 @@ export const AsideData: React.FC<AsideDataProps> = ({
 
                         <hr />
 
-                        <FormGroup id="problem" label="Context and Challenges" hint={
+                        <FormGroup
+                            id="problem"
+                            label="Context and Challenges"
+                            hint={
                                 <>
                                     The product owner must complete this info. <a href="#">Reach out to them</a>
                                 </>
-                            }>
+                            }
+                        >
                             <FormTextarea id="c&c" rows={4} placeholder="Not completed yet" defaultValue={"La Semmaris a lancé la Rungis Académie : un centre de formation de 3 000 m² conçu pour former 500 diplômés par an, doté d’équipements modernes adaptés aux besoins du secteur. Rungis Académie souhaite lancer une consultation à destination de potentiels concessionnaires (organismes de formation)."} readonly={true} fieldSizing={true} />
                         </FormGroup>
 
@@ -522,7 +539,7 @@ export const AsideData: React.FC<AsideDataProps> = ({
                         <FormGroup id="note" label="Note" hint="Why do we believe in it?">
                             <FormTextarea id="note" rows={4} />
                         </FormGroup>
-                 
+
                         <FormFieldSet id="impact" legend="Impact" hint="Choose the the case that best describes the program." grid={true}>
                             <div className="g-col-12 g-col-sm-6">
                                 <FormOption name="impact" id="no-impact" value="no-impact" type="radio" card={true} label="None" defaultChecked={true} icon="impact-none" />
@@ -563,71 +580,70 @@ export const AsideData: React.FC<AsideDataProps> = ({
                         </FormFieldSet>
                         <FormFieldSet id="sdgs" legend="SDGs" grid={true}>
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-1" value="sdg-1" type="checkbox" card={true} label="No poverty" sdg={1} />
+                                <FormOption name="sdgs" id="sdg-1" value="sdg-1" type="checkbox" card={true} label="No poverty" sdg={1} />
                             </div>
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-2" value="sdg-2" type="checkbox" card={true} label="Zero hunger" sdg={2} />
+                                <FormOption name="sdgs" id="sdg-2" value="sdg-2" type="checkbox" card={true} label="Zero hunger" sdg={2} />
                             </div>
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-3" value="sdg-3" type="checkbox" card={true} label="Good health and well being" sdg={3} />
+                                <FormOption name="sdgs" id="sdg-3" value="sdg-3" type="checkbox" card={true} label="Good health and well being" sdg={3} />
                             </div>
-                            
+
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-4" value="sdg-4" type="checkbox" card={true} label="Quality education" sdg={4} />
+                                <FormOption name="sdgs" id="sdg-4" value="sdg-4" type="checkbox" card={true} label="Quality education" sdg={4} />
                             </div>
-                            
+
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-5" value="sdg-5" type="checkbox" card={true} label="Gender equality" sdg={5} />
+                                <FormOption name="sdgs" id="sdg-5" value="sdg-5" type="checkbox" card={true} label="Gender equality" sdg={5} />
                             </div>
-                           
+
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-6" value="sdg-6" type="checkbox" card={true} label="Clean water and sanitation" sdg={6} />
+                                <FormOption name="sdgs" id="sdg-6" value="sdg-6" type="checkbox" card={true} label="Clean water and sanitation" sdg={6} />
                             </div>
-                            
+
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-7" value="sdg-7" type="checkbox" card={true} label="Affordable and clean energy" sdg={7} />
+                                <FormOption name="sdgs" id="sdg-7" value="sdg-7" type="checkbox" card={true} label="Affordable and clean energy" sdg={7} />
                             </div>
-                            
+
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-8" value="sdg-8" type="checkbox" card={true} label="Decent work and economic growth" sdg={8} />
+                                <FormOption name="sdgs" id="sdg-8" value="sdg-8" type="checkbox" card={true} label="Decent work and economic growth" sdg={8} />
                             </div>
-                            
+
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-9" value="sdg-9" type="checkbox" card={true} label="Industry innovation and infrastructure" sdg={9} />
+                                <FormOption name="sdgs" id="sdg-9" value="sdg-9" type="checkbox" card={true} label="Industry innovation and infrastructure" sdg={9} />
                             </div>
-                            
+
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-10" value="sdg-10" type="checkbox" card={true} label="Reduced inequalities" sdg={10} />
+                                <FormOption name="sdgs" id="sdg-10" value="sdg-10" type="checkbox" card={true} label="Reduced inequalities" sdg={10} />
                             </div>
-                           
+
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-11" value="sdg-11" type="checkbox" card={true} label="Sustainable cities and communities" sdg={11} />
+                                <FormOption name="sdgs" id="sdg-11" value="sdg-11" type="checkbox" card={true} label="Sustainable cities and communities" sdg={11} />
                             </div>
-                            
+
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-12" value="sdg-12" type="checkbox" card={true} label="Responsable consumption and production" sdg={12} />
+                                <FormOption name="sdgs" id="sdg-12" value="sdg-12" type="checkbox" card={true} label="Responsable consumption and production" sdg={12} />
                             </div>
-                            
+
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-13" value="sdg-13" type="checkbox" card={true} label="Climate action" sdg={13} />
+                                <FormOption name="sdgs" id="sdg-13" value="sdg-13" type="checkbox" card={true} label="Climate action" sdg={13} />
                             </div>
-                            
+
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-14" value="sdg-14" type="checkbox" card={true} label="Life below water" sdg={14} />
+                                <FormOption name="sdgs" id="sdg-14" value="sdg-14" type="checkbox" card={true} label="Life below water" sdg={14} />
                             </div>
-                            
+
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-15" value="sdg-15" type="checkbox" card={true} label="Life on land" sdg={15} />
+                                <FormOption name="sdgs" id="sdg-15" value="sdg-15" type="checkbox" card={true} label="Life on land" sdg={15} />
                             </div>
-                           
+
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-16" value="sdg-16" type="checkbox" card={true} label="Peace, justice and strong institutions" sdg={16} />
+                                <FormOption name="sdgs" id="sdg-16" value="sdg-16" type="checkbox" card={true} label="Peace, justice and strong institutions" sdg={16} />
                             </div>
-                           
+
                             <div className="g-col-12 g-col-sm-6">
-                            <FormOption name="sdgs" id="sdg-17" value="sdg-17" type="checkbox" card={true} label="Partnerships for the goals" sdg={17} />
+                                <FormOption name="sdgs" id="sdg-17" value="sdg-17" type="checkbox" card={true} label="Partnerships for the goals" sdg={17} />
                             </div>
-                            
                         </FormFieldSet>
 
                         <FormFieldSet name="ecosystems" legend="Ecosystems">
@@ -651,7 +667,7 @@ export const AsideData: React.FC<AsideDataProps> = ({
                             </FormInputWrapper>
                         </FormGroup>
                         <h4 className="nav-title flex-fill mb-none">Custom fields</h4>
-                        <FormGroup addClass="cq-12" id="Country" label="Country" required={true} >
+                        <FormGroup addClass="cq-12" id="Country" label="Country" required={true}>
                             <FormSelect
                                 id="Country"
                                 options={[
@@ -660,7 +676,6 @@ export const AsideData: React.FC<AsideDataProps> = ({
                                 ]}
                             />
                         </FormGroup>
-                        
                     </AsideBody>
                     <div className="aside-footer">
                         <div className="d-flex gap-xs ml-auto">
@@ -669,6 +684,97 @@ export const AsideData: React.FC<AsideDataProps> = ({
                             </a>
                             <a className="btn btn-lg btn-primary" href="#">
                                 Save
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="assets" role="tabpanel" aria-labelledby="assets-tab" className={`tab-pane h-100 fade ${activeTab === "assets" ? "active show" : ""}`}>
+                    <AsideBody addClass="d-flex flex-column gap-md">
+                        <div className="d-flex flex-column gap-xs">
+                            <EmptyState title="Assets" iconTitle="point" text="To generate business case and linkedin post, experience report fields must be compeleted  " labelBtn="Complete experience report" iconBtn="ai" />
+
+                            <div className="item is-linked is-bordered is-completed">
+                                <div className="item-row">
+                                    <div className="item-row align-items-center">
+                                        <span className="icon icon-content item-icon is-darker"></span>
+                                        <div className="item-content">
+                                            <a href="#" className="item-title stretched-link">
+                                                Business case
+                                            </a>
+                                            {/* <span className="small text-muted">Review the name, the description, dates and cover of the program</span> */}
+                                        </div>
+                                    </div>
+                                    <div className="item-options">
+                                        <Button hasDropdown disabled={true} iconStartName="" label="Generate" size="default" type="default" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="item is-linked is-bordered is-completed">
+                                <div className="item-row">
+                                    <div className="item-row align-items-center">
+                                        <span className="icon icon-public-page item-icon is-darker"></span>
+                                        <div className="item-content">
+                                            <a href="#" className="item-title stretched-link">
+                                                Linkedin post
+                                            </a>
+                                            {/* <span className="small text-muted">Review the name, the description, dates and cover of the program</span> */}
+                                        </div>
+                                    </div>
+                                    <div className="item-options">
+                                        <Button hasDropdown disabled={true} iconStartName="" label="Generate" size="default" type="default" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </AsideBody>
+                    <div className="aside-footer">
+                        <div className="dropdown">
+                            <a href="#" className="btn btn-default dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Actions</span>
+                            </a>
+                            <div className="dropdown-menu">
+                                <a className="dropdown-item" href="#">
+                                    <div className="dropdown-item--label">
+                                        <span className="d-flex">Data</span>
+                                    </div>
+                                </a>
+                                <div className="dropdown-divider"></div>
+                                <a className="dropdown-item" href="#">
+                                    <div className="dropdown-item--label">
+                                        <span className="d-flex">Workspace</span>
+                                    </div>
+                                </a>
+                                <a className="dropdown-item" href="#">
+                                    <div className="dropdown-item--label">
+                                        <span className="d-flex">Public page</span>
+                                    </div>
+                                </a>
+                                <a className="dropdown-item" href="#">
+                                    <div className="dropdown-item--label">
+                                        <span className="d-flex">Manage</span>
+                                    </div>
+                                </a>
+                                <a className="dropdown-item" href="#">
+                                    <div className="dropdown-item--label">
+                                        <span className="d-flex">Edit</span>
+                                    </div>
+                                </a>
+                                <a className="dropdown-item" href="#">
+                                    <div className="dropdown-item--label">
+                                        <span className="d-flex">Duplicate</span>
+                                    </div>
+                                </a>
+                                <div className="dropdown-divider"></div>
+                                <a className="dropdown-item is-danger" href="#">
+                                    <div className="dropdown-item--label">
+                                        <span className="d-flex">Delete</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="d-flex gap-xs ml-auto">
+                            <a className="btn btn-lg btn-default" href="#">
+                                Open full page
                             </a>
                         </div>
                     </div>
