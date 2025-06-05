@@ -1,60 +1,54 @@
 import React from "react";
+import { useEffect } from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
-import { CardEvent } from "@/app/components/cards/CardEvent";
+
 import { Button } from "@/app/components/buttons/Button";
-import { CardFeed } from "@/app/components/cards/CardFeed";
-import { ItemResource } from "@/app/components/items/ItemResource";
-import { Icon } from "@/app/components/icons/Icon";
-import { Dropdown } from "@/app/components/dropdowns/Dropdown";
-import { DropdownMenu } from "@/app/components/dropdowns/DropdownMenu";
-import { DropdownItem } from "@/app/components/dropdowns/DropdownItem";
-import { DropdownDivider } from "@/app/components/dropdowns/DropdownDivider";
-import { Section } from "@/app/components/sections/Section";
-import { CardParticipant } from "@/app/components/cards/CardParticipant";
-import { ItemSetupTask } from "@/app/components/items/ItemSetupTask";
+
+import { phasesToggle } from "../../../../../public/utils/phasesToggle";
+
 import { ItemFolder } from "@/app/components/items/ItemFolder";
 
-export const SponsorSpaceSharedFiles = () => {
+export const consultingMissionShardedFiles = () => {
+    useEffect(() => {
+        phasesToggle();
+    }, []);
     return (
-        <Layout theme="default" shortcutBarExpanded={true}>
+        <Layout theme="default" showShortcutbarAdmin={true} showShortcutbar={false} shortcutBarExpanded={false}>
             <AppContent
-                sections="separated"
+                sections="transparent"
                 breadcrumb={[
                     {
+                        label: "Consulting missions",
+                        href: "",
+                    },
+                    {
+                        label: "Missions",
+                        href: "",
+                    },
+                    {
                         label: "Impact Innovators",
-                        href: "./?path=/story/pages-program-dashboard--overview",
-                    },
-                    {
-                        label: "Sponsor space",
-                        href: "./?path=/story/pages-program-dashboard--overview",
-                    },
-                    {
-                        label: "Shared files",
                     },
                 ]}
-                title="Sponsor space"
+                title="Impact Innovator"
+                buttons={[
+                    {
+                        type: "default",
+                        label: "Data",
+                        link: "",
+                        iconStartName: "plan-data",
+                    },
+                ]}
                 subnav={[
                     {
-                        label: "Overview",
+                        label: "Details",
                         href: "",
+                        
                     },
                     {
-                        label: "Shared files",
+                        label: "shared files",
                         href: "",
                         isActive: true,
-                    },
-                    {
-                        label: "Satisfaction",
-                        href: "",
-                    },
-                    {
-                        label: "Projects",
-                        href: "",
-                    },
-                    {
-                        label: "Members",
-                        href: "",
                     },
                 ]}
             >
