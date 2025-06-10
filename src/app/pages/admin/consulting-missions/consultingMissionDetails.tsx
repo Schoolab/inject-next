@@ -260,12 +260,6 @@ export const consultingMissionDetails = () => {
                                                         <span>Terence Irving</span>
                                                     </Button>
                                                 </dd>
-                                                <dd>
-                                                    <Button type="muted" addClass="btn-link" size="xs">
-                                                        <Avatar size="xs" image="img/avatar-alexandra.jpeg" />
-                                                        <span>Alexandra Jolly</span>
-                                                    </Button>
-                                                </dd>
                                             </DataListItem>
                                             <DataListItem label="Mission director">
                                                 <dd>
