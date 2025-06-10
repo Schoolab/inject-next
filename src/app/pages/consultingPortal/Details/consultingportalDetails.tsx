@@ -121,50 +121,31 @@ export const consultingportalDetails = () => {
                                     </Button>
                                 </dd>
                             </DataListItem>
-                            <DataListItem label="Business line">
-                                <dd>
-                                    <span>Real Estate and construction</span>
-                                </dd>
-                            </DataListItem>
+
                             <DataListItem label="Timeline">
                                 <dd>
                                     <span>Feb 12, 2025 - March 12, 2025 </span>
                                 </dd>
                             </DataListItem>
-                            <DataListItem label="Pipedrive ID" tooltip="You can find an item’s system ID in two places: the URL after opening an item in Pipedrive or in the list view by adding the ID column.">
-                                <dd className="d-flex flex-row gap-none">
-                                    <Button type="muted" addClass="btn-link" size="xs">
-                                        <span className="text-muted">#</span>
-                                        <span>42986</span>
-                                        <Icon name="new-tab" addClass="text-muted" />
-                                    </Button>
+
+                            <DataListItem label="Visibility">
+                                <dd className="d-flex flex-row gap-2xs">
+                                    <Tag label="All visitors" status="default" iconName="eye" />
                                 </dd>
                             </DataListItem>
-                            <DataListItem label="Budget">
+                            <DataListItem label="Sales">
                                 <dd>
                                     <Button type="muted" addClass="btn-link" size="xs">
-                                        <span>100k</span>
-                                        <Icon name="new-tab" addClass="text-muted" />
+                                        <Avatar size="xs" image="img/avatar-emma.jpeg" />
+                                        <span>Camille</span>
                                     </Button>
                                 </dd>
                             </DataListItem>
-                            <DataListItem label="Status ">
-                                <dd className="d-flex flex-row gap-2xs">
-                                    <Tag label="Diagnostic" iconName="status-dashed" status="progress" /> <Tag label="Public" iconName="visibility" status="open" />
-                                </dd>
-                            </DataListItem>
-
-                            <DataListItem label="Owners">
+                            <DataListItem label="Mission director">
                                 <dd>
                                     <Button type="muted" addClass="btn-link" size="xs">
                                         <Avatar size="xs" image="img/avatar-terence.jpeg" />
                                         <span>Terence Irving</span>
-                                    </Button>
-                                </dd>
-                                <dd>
-                                    <Button type="muted" addClass="btn-link" size="xs">
-                                        <Avatar size="xs" image="img/avatar-alexandra.jpeg" />
-                                        <span>Alexandra Jolly</span>
                                     </Button>
                                 </dd>
                             </DataListItem>
@@ -180,98 +161,12 @@ export const consultingportalDetails = () => {
                                     </Button>
                                 </dd>
                             </DataListItem>
-                            <DataListItem label="Participants">
-                                <dd className="d-flex flex-row gap-2xs">
+                            <DataListItem label="Customer contact">
+                                <dd>
                                     <Button type="muted" addClass="btn-link" size="xs">
-                                        <Stack>
-                                            <Avatar size="xs" image="img/avatar-nora.jpeg" />
-                                            <Avatar size="xs" image="img/avatar-marine.jpeg" />
-                                            <Avatar size="xs" image="img/avatar-john.jpeg" />
-                                        </Stack>
-                                        <span>803</span>
+                                        <Avatar size="xs" image="img/avatar-emma.jpeg" />
+                                        <span>Emma</span>
                                     </Button>
-                                </dd>
-                            </DataListItem>
-                            <DataListItem label="projects">
-                                <dd className="d-flex flex-row gap-2xs">
-                                    <Button type="muted" addClass="btn-link" size="xs">
-                                        <Stack>
-                                            <div className="icon icon--letter is-xs">
-                                                <span aria-hidden="true">A</span>
-                                            </div>
-                                            <div className="icon icon--letter is-xs">
-                                                <span aria-hidden="true">S</span>
-                                            </div>
-                                            <div className="icon icon--letter is-xs">
-                                                <span aria-hidden="true">H</span>
-                                            </div>
-                                        </Stack>
-                                        <span>12</span>
-                                    </Button>
-                                </dd>
-                            </DataListItem>
-                            <DataListItem label="Used case ">
-                                <dd>
-                                    <Badges>
-                                        <Tag label="workshop" />
-                                    </Badges>
-                                </dd>
-                            </DataListItem>
-
-                            <DataListItem label="Methodologies ">
-                                <dd>
-                                    <Badges>
-                                        <Tag label="Consulting" />
-                                        <Tag label="Design Thinking" />
-                                    </Badges>
-                                </dd>
-                            </DataListItem>
-                            <DataListItem label="Tags">
-                                <dd>
-                                    <Badges>
-                                        <Tag link="#" isPill={false}>
-                                            <div aria-hidden="true" className="icon icon--sdg is-sdg-7 is-16px">
-                                                <span>7</span>
-                                            </div>
-                                            <span>Affordable and clean energy</span>
-                                        </Tag>
-                                        <Tag link="#" label="Impact native" iconName="impact-native" isPill={false} />
-                                        <Tag link="#" label="DEI" iconName="vertical-dei" isPill={false} />
-                                        <Tag link="#" label="Corporate" iconName="ecosystem-corporate" />
-                                        <Tag link="#" label="Strategic" />
-                                        <Tag link="#" label="Innovation" />
-                                    </Badges>
-                                </dd>
-                            </DataListItem>
-                            <DataListItem label="Links">
-                                <dd>
-                                    <div className="d-flex flex-row flex-wrap gap-3xs">
-                                        <Button type="muted" addClass="btn-link" size="xs">
-                                            <Icon name="brand-drive" addClass="text-muted" />
-                                            <span>Drive</span>
-                                            <Icon name="new-tab" addClass="text-muted" />
-                                        </Button>
-                                        <Button type="muted" addClass="btn-link" size="xs">
-                                            <Icon name="brand-dropbox" addClass="text-muted" />
-                                            <span>Dropbox</span>
-                                            <Icon name="new-tab" addClass="text-muted" />
-                                        </Button>
-                                        <Button type="muted" addClass="btn-link" size="xs">
-                                            <Icon name="brand-notion" addClass="text-muted" />
-                                            <span>Notion</span>
-                                            <Icon name="new-tab" addClass="text-muted" />
-                                        </Button>
-                                        <Button type="muted" addClass="btn-link" size="xs">
-                                            <Icon name="brand-slack" addClass="text-muted" />
-                                            <span>Slack</span>
-                                            <Icon name="new-tab" addClass="text-muted" />
-                                        </Button>
-                                        <Button type="muted" addClass="btn-link" size="xs">
-                                            <Icon name="brand-figma" addClass="text-muted" />
-                                            <span>Figma</span>
-                                            <Icon name="new-tab" addClass="text-muted" />
-                                        </Button>
-                                    </div>
                                 </dd>
                             </DataListItem>
                         </DataList>
@@ -282,7 +177,17 @@ export const consultingportalDetails = () => {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </Section>
-                <Section title="Mission KPI">
+                <Section title="Expertises and methodology used">
+                    <div className="bg-highlight p-md rounded">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </Section>
+                <Section title="Results and impacts (business and ESG)">
+                    <div className="bg-highlight p-md rounded">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </Section>
+                {/* <Section title="Mission KPI">
                     <div className="cq row-gap-md">
                         <div className="cq-xs-6 cq-sm-4">
                             <StatCard number={3896} variation={-209} caption="Sessions" link="#" />
@@ -303,7 +208,7 @@ export const consultingportalDetails = () => {
                             <StatCard number={0} variation={0} caption="Followers" link="#" />
                         </div>
                     </div>
-                </Section>
+                </Section> */}
             </AppContent>
         </Layout>
     );

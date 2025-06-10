@@ -170,13 +170,13 @@ export const innovationProgramsDetails = () => {
                                     </Button>
                                 </dd>
                             </DataListItem>
-                            <DataListItem label="Status ">
+                            <DataListItem label="Visibility ">
                                 <dd className="d-flex flex-row gap-2xs">
-                                    <Tag label="Open" iconName="status-filled" status="open" /> <Tag label="Public" iconName="visibility" status="open" />
+                                   <Tag label="All visitors"  status="default" iconName="eye"/> 
                                 </dd>
                             </DataListItem>
 
-                            <DataListItem label="Owners">
+                            <DataListItem label="Sales">
                                 <dd>
                                     <Button type="muted" addClass="btn-link" size="xs">
                                         <Avatar size="xs" image="img/avatar-terence.jpeg" />
@@ -187,6 +187,14 @@ export const innovationProgramsDetails = () => {
                                     <Button type="muted" addClass="btn-link" size="xs">
                                         <Avatar size="xs" image="img/avatar-alexandra.jpeg" />
                                         <span>Alexandra Jolly</span>
+                                    </Button>
+                                </dd>
+                            </DataListItem>
+                            <DataListItem label="Mission director">
+                                <dd>
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Avatar size="xs" image="img/avatar-alexandra.jpeg" />
+                                        <span>Alexandra Jolly</span> 
                                     </Button>
                                 </dd>
                             </DataListItem>
@@ -232,6 +240,30 @@ export const innovationProgramsDetails = () => {
                                     </Button>
                                 </dd>
                             </DataListItem>
+                            <DataListItem label="Experts">
+                                <dd className="d-flex flex-row gap-2xs">
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Stack>
+                                            <Avatar size="xs" image="img/avatar-nora.jpeg" />
+                                            <Avatar size="xs" image="img/avatar-marine.jpeg" />
+                                            <Avatar size="xs" image="img/avatar-john.jpeg" />
+                                        </Stack>
+                                        <span>16</span>
+                                    </Button>
+                                </dd>
+                            </DataListItem>
+                            <DataListItem label="Juries">
+                                <dd className="d-flex flex-row gap-2xs">
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Stack>
+                                            <Avatar size="xs" image="img/avatar-nora.jpeg" />
+                                            <Avatar size="xs" image="img/avatar-marine.jpeg" />
+                                            <Avatar size="xs" image="img/avatar-john.jpeg" />
+                                        </Stack>
+                                        <span>6</span>
+                                    </Button>
+                                </dd>
+                            </DataListItem>
                             <DataListItem label="Used case ">
                                 <dd>
                                     <Badges>
@@ -240,14 +272,7 @@ export const innovationProgramsDetails = () => {
                                 </dd>
                             </DataListItem>
 
-                            <DataListItem label="Methodologies ">
-                                <dd>
-                                    <Badges>
-                                        <Tag label="Consulting" />
-                                        <Tag label="Design Thinking" />
-                                    </Badges>
-                                </dd>
-                            </DataListItem>
+              
                             <DataListItem label="Tags">
                                 <dd>
                                     <Badges>
@@ -294,6 +319,14 @@ export const innovationProgramsDetails = () => {
                                             <Icon name="new-tab" addClass="text-muted" />
                                         </Button>
                                     </div>
+                                </dd>
+                            </DataListItem>
+                            <DataListItem label="Customer contact">
+                                <dd>
+                                    <Button type="muted" addClass="btn-link" size="xs">
+                                        <Avatar size="xs" image="img/avatar-emma.jpeg" />
+                                        <span>Emma</span> 
+                                    </Button>
                                 </dd>
                             </DataListItem>
                         </DataList>

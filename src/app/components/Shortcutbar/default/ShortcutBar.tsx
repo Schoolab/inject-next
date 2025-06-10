@@ -266,7 +266,7 @@ export const ShortcutBar = ({ isExpanded }: ShortcutBarProps) => {
                     <div className="shortcutbar-separator" />
                     <div className="shortcutbar-option">
                         <a className="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Sponsor space" data-boundary="window">
-                            <span className="icon icon-org" aria-hidden="true" />
+                            <span className="icon icon-sponsor" aria-hidden="true" />
                             <div className="shortcutbar-option--label">Sponsor space</div>
                         </a>
                         <div className="shortcutbar-option--label">Expert space</div>
