@@ -28,7 +28,36 @@ export const types = () => {
                 table.fixedColumns().left('0');                           
             }
         });
+        var tablebis = new DataTable('#doc-table-data-types-bis ', {
+            fixedColumns: {
+                left: 1,
+                left: 2,
+            },
+            responsive: {
+                fixedColumns: false
+            },
+            paging: false,
+            info: false,
+            searching: false,
+            scrollCollapse: true,
+            scrollX: true,
+            // scrollY: "75vh",
+            ordering: false
+        }); 
+        jQuery(window).on('resize', function () {
+            var win = jQuery(this); //this = window
+            if (win.width() >= 1200) {
+                tablebis.fixedColumns().left('1');
+                tablebis.fixedColumns().left('2');
+            }
+            else {
+                tablebis.fixedColumns().left('0');                           
+            }
+        });
         table.on( 'draw', function () {
+            console.log( 'Redraw occurred at: '+new Date().getTime() );
+        } );
+        tablebis.on( 'draw', function () {
             console.log( 'Redraw occurred at: '+new Date().getTime() );
         } );
     
