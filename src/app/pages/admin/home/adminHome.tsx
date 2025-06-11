@@ -32,7 +32,7 @@ export const adminHome = () => {
         types();
     }, []);
     return (
-        <Layout theme="default" showShortcutbarAdmin={true} showShortcutbar={false} shortcutBarExpanded={true}>
+        <Layout theme="default" hub={true} showShortcutbarAdmin={true} showShortcutbar={false} shortcutBarExpanded={true}>
             <AppContent
                 sections="transparent"
                 breadcrumb={[
@@ -106,7 +106,7 @@ export const adminHome = () => {
                                                 </th>
                                                 <th id="small" className="sorting" style={{ minWidth: 280 }}>
                                                     <div className="d-flex gap-2xs align-items-center">
-                                                        <span>start</span>
+                                                        <span>Start</span>
                                                     </div>
                                                 </th>
                                                 <th id="multiple" className="sorting" style={{ minWidth: 280 }}>
@@ -422,7 +422,7 @@ export const adminHome = () => {
                                                 </th>
                                                 <th id="small" className="sorting" style={{ minWidth: 280 }}>
                                                     <div className="d-flex gap-2xs align-items-center">
-                                                        <span>start</span>
+                                                        <span>Start</span>
                                                     </div>
                                                 </th>
                                                 <th id="multiple" className="sorting" style={{ minWidth: 280 }}>
