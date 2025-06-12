@@ -20,19 +20,6 @@ const Preview = () => {
     <div className="d-flex flex-column align-items-center justify-content-center w-100 h-100">
         <CardProgram
           name="Impact Innovators"
-          actions= {[
-            { 
-                title: "Join the program",
-                metas: [
-                    { label: "Applicants" },
-                    { iconName: "account", label: "143", addClass: "font-weight-bold" },
-                ],
-                buttons: [
-                    { label: "Join", type: "primary", link: "#" },
-                    { label: "Learn more", type: "default", link: "#" },
-                ],
-            }
-          ]}
           style={{ width: "100%", maxWidth: "32rem", }}
           cover="img/program-innovators.png"
         />
