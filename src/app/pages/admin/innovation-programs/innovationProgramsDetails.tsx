@@ -70,7 +70,7 @@ export const innovationProgramsDetails = () => {
                 <Section>
                     <div className="row">
                         <div className="col-12 col-lg-6 mb-md">
-                            <div className="card  p-md d-flex flex-column gap-md h-100 justify-content-between">
+                            <div className="card is-highlighted p-md d-flex flex-column gap-md h-100 justify-content-between">
                                 <div className="flex-fill">
                                     <h4>Data Completion</h4>
                                     <p>Collecting mission data is essential for capitalizing on completed work and measuring business and ESG impact. These insights feed into our Knowledge Base, boosting consultants' capabilities with access to historical mission intelligence.</p>

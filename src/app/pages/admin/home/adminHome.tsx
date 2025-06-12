@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { types } from "../../../../../public/utils/tables/types";
+import { tooltips } from "../../../../../public/utils/tooltips";
 import { Button } from "@/app/components/buttons/Button";
 import { CardFeed } from "@/app/components/cards/CardFeed";
 
@@ -30,6 +31,7 @@ import { StatCard } from "@/app/components/stat-cards/StatCard";
 export const adminHome = () => {
     useEffect(() => {
         types();
+        tooltips();
     }, []);
     return (
         <Layout theme="default" hub={true} showShortcutbarAdmin={true} showShortcutbar={false} shortcutBarExpanded={true}>
@@ -50,7 +52,7 @@ export const adminHome = () => {
                             <div className="card is-linked p-md d-flex flex-column gap-md h-100 justify-content-between">
                                 <div className="flex-fill d-flex">
                                     <h4 className="d-flex flex-fill gap-2xs align-items-center">
-                                        <span className="icon is-sm icon-work"></span> Consulting missions<span className="icon is-xs text-muted icon-information"></span>
+                                        <span className="icon is-sm icon-work"></span> Consulting missions<span className="z-2 icon is-xs text-muted icon-information" data-toggle="tooltip" data-placement="top" data-boundary="window" data-original-title="A Consulting Mission is a client project led by a Schoolab consultant, with a shared portal to exchange deliverables, measure impact, and gather client feedback."></span>
                                     </h4>
                                     <Button link="#" addClass="stretched-link" size="sm" label="view mission" type="default" />
                                 </div>
@@ -61,7 +63,7 @@ export const adminHome = () => {
                             <div className="card is-linked p-md d-flex flex-column gap-md h-100 justify-content-between">
                                 <div className="flex-fill d-flex">
                                     <h4 className="d-flex flex-fill gap-2xs align-items-center">
-                                        <span className="icon is-sm icon-lightbulb"></span>Innovation programs<span className="icon is-xs text-muted icon-information"></span>
+                                        <span className="icon is-sm icon-lightbulb"></span>Innovation programs<span className="z-2 icon is-xs text-muted icon-information" data-toggle="tooltip" data-placement="top" data-boundary="window" data-original-title="An Innovation Program enables participants, experts, and juries to collaborate via Inject on innovation challenges, training, and project follow-ups."></span>
                                     </h4>
                                     <Button link="#" addClass="stretched-link" size="sm" label="view programs" type="default" />
                                 </div>

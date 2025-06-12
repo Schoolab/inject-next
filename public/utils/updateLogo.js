@@ -1,6 +1,5 @@
 export const updateLogo = () => {
     function updateLogo() {
-        console.log('updateLogo');
         const html = document.documentElement;
         const body = document.body;
         const imgElement = document.querySelector('.logo img');
