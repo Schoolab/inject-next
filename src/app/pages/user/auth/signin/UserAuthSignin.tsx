@@ -5,12 +5,38 @@ import { FormGroup } from "@/app/forms/group/FormGroup";
 import { FormInput } from "@/app/forms/input/FormInput";
 import { Logo } from "@/app/components/Logo";
 import { AppSplit, AppSplitProps } from "@/app/layouts/AppSplit";
+import { CardProgram } from "@/app/components/cards/CardProgram";
 
 interface UserAuthSigninProps extends AppSplitProps {
     showEmail?: boolean;
     showPlatforms?: boolean;
     showSso?: boolean;
 }
+
+const Preview = () => {
+  return (
+    <div className="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+        <CardProgram
+          name="Impact Innovators"
+          actions= {[
+            { 
+                title: "Join the program",
+                metas: [
+                    { label: "Applicants" },
+                    { iconName: "account", label: "143", addClass: "font-weight-bold" },
+                ],
+                buttons: [
+                    { label: "Join", type: "primary", link: "#" },
+                    { label: "Learn more", type: "default", link: "#" },
+                ],
+            }
+          ]}
+          style={{ width: "100%", maxWidth: "32rem", }}
+          cover="img/program-innovators.png"
+        />
+    </div>
+  );
+};
 
 export const UserAuthSignin = (
     {
@@ -32,7 +58,7 @@ export const UserAuthSignin = (
             showNavbar={false}
             showShortcutbar={false}
         >
-            <AppSplit cover={cover} video={video} theme={theme} positionX={positionX} positionY={positionY} boxed={boxed} shadow={shadow} rounded={rounded}>
+            <AppSplit cover={cover} video={video} theme={theme} positionX={positionX} positionY={positionY} boxed={boxed} shadow={shadow} rounded={rounded} preview={<Preview />}>
 
                 <div className="d-flex flex-column gap-xl">
                 

@@ -35,28 +35,28 @@ export const SSO: Story = {
   }
 };
 
-export const Cover: Story = {
-  args: {
-    cover: "img/signin-cover.jpg",
-    shadow: true
-  }
-};
+// export const Cover: Story = {
+//   args: {
+//     cover: "img/signin-cover.jpg",
+//     shadow: true
+//   }
+// };
 
-export const Video: Story = {
-  args: {
-    video: "https://www.theschoolab.com/wp-content/uploads/2022/04/Open-Schoolab_2022-Aftermovie.mp4",
-    shadow: true
-  }
-};
+// export const Video: Story = {
+//   args: {
+//     video: "https://www.theschoolab.com/wp-content/uploads/2022/04/Open-Schoolab_2022-Aftermovie.mp4",
+//     shadow: true
+//   }
+// };
 
-export const Boxed: Story = {
-  args: {
-    cover: "img/signin-cover.jpg",
-    shadow: true,
-    boxed: true,
-    rounded: true,
-    positionX: "right",
-    positionY: "middle",
-    showEmail: false,
-  }
-};
+// export const Boxed: Story = {
+//   args: {
+//     cover: "img/signin-cover.jpg",
+//     shadow: true,
+//     boxed: true,
+//     rounded: true,
+//     positionX: "right",
+//     positionY: "middle",
+//     showEmail: false,
+//   }
+// };
