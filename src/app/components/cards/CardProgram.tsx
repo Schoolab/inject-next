@@ -137,7 +137,7 @@ export const CardProgram = (
                             </span>
                         </div>) }
                         { (categories || members < 1) && <Badges addClass="flex-nowrap">
-                            { categories ? listCategories : <span className="text-muted small text-nowrap">No category…</span> }
+                            { categories && listCategories}
                         </Badges> }
                     </div>
                     { status === "draft" && <Tag label="Draft" iconName="status-bordered" status="draft" /> }
