@@ -34,7 +34,7 @@ export const CPAuthCheckMail = (
             showNavbar={false}
             showShortcutbar={false}
         >
-            <AppSplit cover={cover} video={video} theme="Schoolab" positionX={positionX} positionY={positionY} boxed={boxed} shadow={shadow} rounded={rounded}>
+            <AppSplit cover={cover} video={video} theme="default" positionX={positionX} positionY={positionY} boxed={boxed} shadow={shadow} rounded={rounded}>
 
                 <div className="d-flex flex-column gap-xl">
                 
@@ -50,19 +50,19 @@ export const CPAuthCheckMail = (
                         <form method="post" action="/signin" id="loginForm" className="d-flex flex-column">
                             <div className="form-row justify-content-center mb-md">
                                 <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
-                                    <FormInput maxLength={1} addClass="text-center" id="" required={true} placeholder="-" autofocus={true} />
+                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" autofocus={true} />
                                 </FormGroup>
                                 <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
-                                    <FormInput maxLength={1} addClass="text-center" id="" required={true} placeholder="-" />
+                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" />
                                 </FormGroup>
                                 <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
-                                    <FormInput maxLength={1} addClass="text-center" id="" required={true} placeholder="-" />
+                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" />
                                 </FormGroup>
                                 <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
-                                    <FormInput maxLength={1} addClass="text-center" id="" required={true} placeholder="-" />
+                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" />
                                 </FormGroup>
                                 <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
-                                    <FormInput maxLength={1} addClass="text-center" id="" required={true} placeholder="-" />
+                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" />
                                 </FormGroup>
                             </div>
                

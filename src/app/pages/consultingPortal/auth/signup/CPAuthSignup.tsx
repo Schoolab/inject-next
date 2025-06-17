@@ -34,7 +34,7 @@ export const CPAuthSignup = (
             showNavbar={false}
             showShortcutbar={false}
         >
-            <AppSplit cover={cover} video={video} theme="Schoolab" positionX={positionX} positionY={positionY} boxed={boxed} shadow={shadow} rounded={rounded}>
+            <AppSplit cover={cover} video={video} theme="default" positionX={positionX} positionY={positionY} boxed={boxed} shadow={shadow} rounded={rounded}>
 
                 <div className="d-flex flex-column gap-xl">
                 
