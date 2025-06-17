@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { CPAuthSignup } from './CPAuthSignup';
+import { CPAuthCheckMail } from './CPAuthCheckMail';
 
 const meta = {
-  title: 'Pages/Consulting portal/Auth/SignUp',
-  component: CPAuthSignup,
+  title: 'Pages/Consulting portal/Auth/CheckMail',
+  component: CPAuthCheckMail,
   parameters: {
     layout: 'fullscreen',
   },
@@ -19,14 +19,15 @@ const meta = {
     shadow: false,
     rounded: false,
   }
-} satisfies Meta<typeof CPAuthSignup>;
+} satisfies Meta<typeof CPAuthCheckMail>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const SignUp: Story = {
+export const CheckMail: Story = {
   args: {
     cover: "img/CP-SignUP.png",
     shadow: true
   }
+
 };

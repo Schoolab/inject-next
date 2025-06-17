@@ -22,6 +22,8 @@ export const FormInput = ({ type = "text", id, defaultValue, placeholder, requir
     useEffect(() => {
         maxlength();
     }, []);
+    let classTab = ["form-control"];
+    addClass && classTab.push(addClass);
 
     return(
         <input 
@@ -35,7 +37,7 @@ export const FormInput = ({ type = "text", id, defaultValue, placeholder, requir
             autoFocus={autofocus}
             aria-required={required ? "true" : "false"}
             aria-describedby={'hint-' + id}
-            className="form-control"
+            className={classTab.join(" ")}
             maxLength={maxLength}
             {...props}
         />

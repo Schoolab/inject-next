@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { CPAuthSignup } from './CPAuthSignup';
+import { CPAuthLogin } from './CPAuthLogin';
 
 const meta = {
-  title: 'Pages/Consulting portal/Auth/SignUp',
-  component: CPAuthSignup,
+  title: 'Pages/Consulting portal/Auth/Login',
+  component: CPAuthLogin,
   parameters: {
     layout: 'fullscreen',
   },
@@ -19,12 +19,12 @@ const meta = {
     shadow: false,
     rounded: false,
   }
-} satisfies Meta<typeof CPAuthSignup>;
+} satisfies Meta<typeof CPAuthLogin>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const SignUp: Story = {
+export const Login: Story = {
   args: {
     cover: "img/CP-SignUP.png",
     shadow: true

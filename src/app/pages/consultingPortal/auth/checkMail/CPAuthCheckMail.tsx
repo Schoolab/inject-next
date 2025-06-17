@@ -8,13 +8,13 @@ import { FormSelect } from "@/app/forms/select/FormSelect";
 import { Logo } from "@/app/components/Logo";
 import { AppSplit, AppSplitProps } from "@/app/layouts/AppSplit";
 
-interface CPAuthSignup extends AppSplitProps {
+interface CPAuthCheckMail extends AppSplitProps {
     showEmail?: boolean;
     showPlatforms?: boolean;
     showSso?: boolean;
 }
 
-export const CPAuthSignup = (
+export const CPAuthCheckMail = (
     {
         showEmail = true,
         showPlatforms = true,
@@ -27,7 +27,7 @@ export const CPAuthSignup = (
         boxed,
         shadow,
         rounded,
-    }:CPAuthSignup
+    }:CPAuthCheckMail
 ) => {
     return (
         <Layout
@@ -39,8 +39,8 @@ export const CPAuthSignup = (
                 <div className="d-flex flex-column gap-xl">
                 
                     <div className="d-flex flex-column gap-md">
-                        <h2 className="display-3 mb-md">Create your account</h2>
-                       
+                        <h2 className="display-3 mb-md">Check your email</h2>
+                       <p><strong>We've send you a temporary login link</strong>. Please check your inbox at email@eamil.com. <a href="#">Send me a code again</a>.</p>
                     </div>
 
                     <div className="d-flex flex-column gap-md">
@@ -48,31 +48,28 @@ export const CPAuthSignup = (
                        
                         
                         <form method="post" action="/signin" id="loginForm" className="d-flex flex-column">
-                            <div className="form-row">
-                                <FormGroup addClass="col-6 mb-xs" id="first-name" required={true} label="First Name" srOnly={true}>
-                                    <FormInput id="first-name" required={true} placeholder="First Name" autofocus={true} />
+                            <div className="form-row justify-content-center mb-md">
+                                <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
+                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" autofocus={true} />
                                 </FormGroup>
-
-                                <FormGroup addClass="col-6 mb-xs" id="last-name" required={true} label="Last Name" srOnly={true}>
-                                    <FormInput id="last-name" required={true} placeholder="Last Name" />
+                                <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
+                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" />
+                                </FormGroup>
+                                <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
+                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" />
+                                </FormGroup>
+                                <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
+                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" />
+                                </FormGroup>
+                                <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
+                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" />
                                 </FormGroup>
                             </div>
                
-                            <FormGroup addClass="mb-xs" id="email" label="Email address" srOnly={true} required={true}>
-                                <FormInput id="email" type="email" placeholder="Email address" />
-                            </FormGroup>
-                            <FormGroup addClass="mb-xs" id="password" label="Password" srOnly={true} required={true}>
-                                <FormInput id="password" type="password" placeholder="Password" />
-                            </FormGroup>
-                            <Button type="primary" label="Continue" extended={true} />
+                            <Button disabled={true} type="primary" label="Continue" extended={true} />
                         </form>
                     </div>
-
-                   
-
-                    <p className="smaller text-muted mt-8 mb-8">
-                        By clicking on "Join" above, you acknowledge that you have read and understood, and agree to <a href="/terms-and-conditions">Terms & Conditions</a> and <a href="/privacy-policy">Privacy Policy</a>.
-                    </p>
+            
                     <p className="small text-muted mt-8 mb-8">
                         <a href="#">← Back to login</a>.
                     </p>
