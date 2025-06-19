@@ -50,7 +50,7 @@ export const CPAuthLogin = (
                         
                         <form method="post" action="/signin" id="loginForm" className="d-flex flex-column">
                
-                            <FormGroup addClass="mb-xs" id="email" label="Email address" srOnly={true} required={true}>
+                            <FormGroup addClass="mb-md" id="email" label="Email address" srOnly={true} required={true}>
                                 <FormInput id="email" type="email" placeholder="Enter your Email address" />
                             </FormGroup>
                     
@@ -60,7 +60,7 @@ export const CPAuthLogin = (
 
                    
 
-                    <p className="smaller text-muted mt-8 mb-8">
+                    <p className="small text-muted mt-8 mb-8">
                         Have an account? <a href="#">Sign in</a>.
                     </p>
                     

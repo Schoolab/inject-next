@@ -61,7 +61,7 @@ export const CPAuthSignup = (
                             <FormGroup addClass="mb-xs" id="email" label="Email address" srOnly={true} required={true}>
                                 <FormInput id="email" type="email" placeholder="Email address" />
                             </FormGroup>
-                            <FormGroup addClass="mb-xs" id="password" label="Password" srOnly={true} required={true}>
+                            <FormGroup addClass="mb-md" id="password" label="Password" srOnly={true} required={true}>
                                 <FormInput id="password" type="password" placeholder="Password" />
                             </FormGroup>
                             <Button type="primary" label="Continue" extended={true} />
@@ -70,10 +70,10 @@ export const CPAuthSignup = (
 
                    
 
-                    <p className="smaller text-muted mt-8 mb-8">
+                    <p className="small text-muted mt-8 mb-8">
                         By clicking on "Join" above, you acknowledge that you have read and understood, and agree to <a href="/terms-and-conditions">Terms & Conditions</a> and <a href="/privacy-policy">Privacy Policy</a>.
                     </p>
-                    <p className="small text-muted mt-8 mb-8">
+                    <p className="text-muted mt-8 mb-8">
                         <a href="#">← Back to login</a>.
                     </p>
                     
