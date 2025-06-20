@@ -75,7 +75,7 @@ export const adminHome = () => {
                     <div className="card p-md d-flex flex-column gap-md mb-md">
                         <h4 className="d-flex flex-fill gap-2xs align-items-center">Initiative by phases </h4>
 
-                        <div className="d-flex flex-wrap gap-xs">
+                        <div className="d-flex gap-xs flex-column flex-sm-row">
                             <StatCard link="#" number="22" caption="Ongoing programs"></StatCard>
                             <StatCard link="#" number="22" caption="Ongoing programs"></StatCard>
                             <StatCard link="#" number="22" caption="Ongoing programs"></StatCard>
