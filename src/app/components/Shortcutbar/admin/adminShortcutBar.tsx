@@ -74,6 +74,13 @@ export const AdminShortcutBar = ({ isExpanded }: ShortcutBarProps) => {
                         <div className="shortcutbar-option--label">Logs</div>
                     </div>
                     <div className="shortcutbar-option">
+                        <a className="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="API" data-boundary="window">
+                            <span className="icon icon-api" aria-hidden="true" />
+                            <div className="shortcutbar-option--label">API</div>
+                        </a>
+                        <div className="shortcutbar-option--label">API</div>
+                    </div>
+                    <div className="shortcutbar-option">
                         <a className="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Settings" data-boundary="window">
                             <span className="icon icon-settings" aria-hidden="true" />
                             <div className="shortcutbar-option--label">Settings</div>
