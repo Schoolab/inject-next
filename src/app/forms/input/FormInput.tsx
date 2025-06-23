@@ -12,7 +12,7 @@ export interface FormInputProps {
     maxLength?: number;
 
     addClass?: string;
-    type?: "text" | "email" | "tel" | "number" | "date" | "datetime-local" | "time" | "color" | "file" | "password" | "range" ;
+    type?: "text" | "email" | "tel" | "number" | "date" | "datetime-local" | "time" | "color" | "file" | "password" | "range"| "hidden"  ;
 }
 
 /**

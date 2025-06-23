@@ -1,5 +1,6 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
+import { useEffect } from "react";
 import { Button } from "@/app/components/buttons/Button";
 import { FormGroup } from "@/app/forms/group/FormGroup";
 import { FormInput } from "@/app/forms/input/FormInput";
@@ -7,6 +8,7 @@ import { Theme } from "@/app/components/Theme";
 import { FormSelect } from "@/app/forms/select/FormSelect";
 import { Logo } from "@/app/components/Logo";
 import { AppSplit, AppSplitProps } from "@/app/layouts/AppSplit";
+import { otp } from "../../../../../../public/utils/otp";
 
 interface CPAuthCheckMail extends AppSplitProps {
     showEmail?: boolean;
@@ -29,6 +31,11 @@ export const CPAuthCheckMail = (
         rounded,
     }:CPAuthCheckMail
 ) => {
+        useEffect(() => {
+            otp();
+        }, []);
+
+
     return (
         <Layout
             showNavbar={false}
@@ -44,30 +51,23 @@ export const CPAuthCheckMail = (
                     </div>
 
                     <div className="d-flex flex-column gap-md">
-                        
-                       
-                        
-                        <form method="post" action="/signin" id="loginForm" className="d-flex flex-column">
-                            <div className="form-row justify-content-center mb-md">
-                                <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
-                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" autofocus={true} />
-                                </FormGroup>
-                                <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
-                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" />
-                                </FormGroup>
-                                <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
-                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" />
-                                </FormGroup>
-                                <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
-                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" />
-                                </FormGroup>
-                                <FormGroup addClass="col-2 mb-xs" id="" required={true} srOnly={true}>
-                                    <FormInput addClass="text-center" id="" required={true} placeholder="-" />
-                                </FormGroup>
+                      
+                        <form  className="d-flex flex-column otp-form ">
+                            <div className="form-row justify-content-center mb-md gap-xs">
+                                <FormInput addClass="col-2 text-center otp-field" maxLength={1} id="" placeholder="-" autofocus={true} />
+                                <FormInput addClass="col-2 text-center otp-field" maxLength={1} id="" placeholder="-" autofocus={true} />
+                                <FormInput addClass="col-2 text-center otp-field" maxLength={1} id="" placeholder="-" autofocus={true} />
+                                <FormInput addClass="col-2 text-center otp-field" maxLength={1} id="" placeholder="-" autofocus={true} />
+                                <FormInput addClass="col-2 text-center otp-field" maxLength={1} id="" placeholder="-" autofocus={true} />
+                             
+                                <FormInput type="hidden" addClass="otp-value" id="" required={true} placeholder="-" />
                             </div>
-               
                             <Button disabled={true} type="primary" label="Continue" extended={true} />
                         </form>
+                        
+
+                        
+                   
                     </div>
             
                     <p className="small text-muted mt-8 mb-8">
