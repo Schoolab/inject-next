@@ -4,7 +4,7 @@ interface AsideNoteManagerProps {}
 
 export const AsideNoteManager = ({}: AsideNoteManagerProps) => {
     return (
-        <aside className="application-aside is-small">
+        <aside className="application-aside">
             <div className="aside-content-container ">
                 <div className="aside-header">
                     <h3 className="aside-title line-clamp-1">
@@ -103,7 +103,7 @@ export const AsideNoteManager = ({}: AsideNoteManagerProps) => {
                         <button className="btn btn-lg btn-primary close-aside">
                             <span className="icon icon-plus-circle"></span>
                             <span>Add resources</span>
-                             </button>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -126,7 +126,7 @@ export const AsideNoteManager = ({}: AsideNoteManagerProps) => {
                                     Flag
                                 </label>
                                 <div>
-                                    <div className="dropdown bootstrap-select form-control">
+                                    <div className="dropdown bootstrap-select form-control mb-2">
                                         <select id="event_icon" name="event[icon]" className="form-control" tabIndex={-98}>
                                             <option value="" />
                                             <option value="icon-flag-success" data-icon="icon-flag text-success" selected />
@@ -206,7 +206,7 @@ export const AsideNoteManager = ({}: AsideNoteManagerProps) => {
                                 <textarea
                                     id="event_adminNote"
                                     name="event[adminNote]"
-                                    className="autoSaveField form-control"
+                                    className="autoSaveField form-control mb-2"
                                     data-save-url="/rest/event/4700/note-save"
                                     aria-describedby="event_adminNote_help"
                                     rows={4}
@@ -223,6 +223,28 @@ export const AsideNoteManager = ({}: AsideNoteManagerProps) => {
                                 </small>
                             </div>
                         </div>
+                        <hr></hr>
+                        <h4 className="nav-title flex-fill">Custom fields</h4>
+                        <div className="form-group">
+                            <label className="active checkbox-custom font-weight-bold" htmlFor="event_adminNote">
+                                Lorem Ipsum
+                            </label>
+                            <textarea
+                                className=" form-control mb-2"
+                                rows={4}
+                                style={{
+                                    overflow: "hidden",
+                                    overflowWrap: "break-word",
+                                    resize: "none",
+                                    height: 100,
+                                }}
+                                defaultValue={"Lorem Ipsum"}
+                            />
+                            <small id="event_adminNote_help" className="form-text text-muted">
+                                Lorem ipsum.
+                            </small>
+                        </div>
+                        
                         <input type="hidden" id="event__token" name="event[_token]" defaultValue="" />
                     </form>
                 </div>

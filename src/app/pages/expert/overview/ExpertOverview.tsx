@@ -76,8 +76,12 @@ export const ExpertOverview = () => {
                         </div>
                         <div className="application-section">
                             <div className="d-flex flex-lg-row flex-column align-items-start">
-                                <h3 className="application-section--title flex-fill"> Coaching sessions </h3>
-                                <Button size="sm" iconStartName="plus-circle" type="default" label="Add Session" />
+                                <h3 className="application-section--title flex-fill"> Meetings </h3>
+                                <div className="d-flex gap-2xs">
+                                     <Button size="sm" iconStartName="restore" type="default" label="Report meeting" />
+                                     <Button size="sm" iconStartName="plus-circle" type="default" label="Add meeting" />
+                                </div>
+                            
                             </div>
                             <div className="cards-list">
                                 <div className="card">
@@ -182,20 +186,24 @@ export const ExpertOverview = () => {
                         </div>
                         <div className="application-section">
                             <div className="d-flex flex-lg-row flex-column align-items-start">
-                                <h3 className="application-section--title flex-fill"> Coaching sessions </h3>
+                                <h3 className="application-section--title flex-fill"> Meetings </h3>
                             </div>
                             <div className="bg-white border rounded px-40px py-40px d-flex flex-column align-items-center gap-0px text-center">
                                 <div className="d-flex pb-16px">
                                     <span className="icon icon-account-supervisor-circle is-24px" />
                                 </div>
                                 <div className="d-flex flex-column gap-2xs">
-                                    <p className="font-weight-bold">No sessions</p>
-                                    <p className="small text-muted">Your coaching sessions will be listed here.</p>
+                                    <p className="font-weight-bold">No meeting</p>
+                                    <p className="small text-muted">Your meeting sessions will be listed here.</p>
                                 </div>
-                                <div className="d-flex pt-32px">
+                                <div className="d-flex pt-32px gap-2xs">
+                                    <a href="#" className="btn btn-lg btn-default">
+                                        <span className="icon icon-restore" />
+                                        <span>Report meeting</span>
+                                    </a>
                                     <a href="#" className="btn btn-lg btn-default">
                                         <span className="icon icon-plus-circle" />
-                                        <span>Add Session</span>
+                                        <span>Add meeting</span>
                                     </a>
                                 </div>
                             </div>
