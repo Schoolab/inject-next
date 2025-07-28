@@ -4,6 +4,7 @@ import { FilterDateRange } from "@/app/components/filters/FilterDateRange";
 import { searchControl } from "../../../../public/utils/searchControl";
 import { tooltips } from "../../../../public/utils/tooltips";
 import { dataFilters } from "../../../../public/utils/dataFilters";
+import { Icon } from "../icons/Icon";
 
 interface FiltersDefaultProps {}
 
@@ -30,6 +31,11 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="challenges_status" method="post" data-col={17} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_challenges_status" data-col={17} className="dataTableFilter table-filter">
+                                    <div className="custom-control custom-switch mb-3">
+                                            <input id="option-switch" className="custom-control-input" type="checkbox" name="switch" />
+                                            <label className="custom-control-label text-nowrap d-flex align-items-center column-gap-xs" htmlFor="option-switch" aria-describedby="caption-switch"><span className="small text-muted d-flex pt-2 gap-2xs">Strict filtering <Icon size="xs" name="information
+" dataOriginalTitle="lorem ipsum" dataToggle="tooltip" dataPlacement="top" /></span></label>
+                                        </div>
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
 
                                         <div className="custom-control custom-radio">
@@ -69,7 +75,15 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="1" method="post" data-col={3} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_1" data-col={3} className="dataTableFilter table-filter">
+                                        <div className="custom-control custom-switch mb-3">
+                                            <input id="option-switch" className="custom-control-input" type="checkbox" name="switch" />
+                                            <label className="custom-control-label text-nowrap d-flex align-items-center column-gap-xs" htmlFor="option-switch" aria-describedby="caption-switch"><span className="small text-muted d-flex pt-2 gap-2xs">Strict filtering <Icon size="xs" name="information
+" dataOriginalTitle="lorem ipsum" dataToggle="tooltip" dataPlacement="top" /></span></label>
+                                        </div>
+                            
+                             
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
+                                
                                         <div className="btn-group w-100 mb-3" role="group">
                                             <a className="btn btn-sm btn-default w-50 checkControl">All</a>
                                             <a className="btn btn-sm btn-default w-50 uncheckControl">Clean</a>
@@ -111,6 +125,11 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="9" method="post" data-col={4} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_9" data-col={4} className="dataTableFilter table-filter">
+                                    <div className="custom-control custom-switch mb-3">
+                                            <input id="option-switch" className="custom-control-input" type="checkbox" name="switch" />
+                                            <label className="custom-control-label text-nowrap d-flex align-items-center column-gap-xs" htmlFor="option-switch" aria-describedby="caption-switch"><span className="small text-muted d-flex pt-2 gap-2xs">Strict filtering <Icon size="xs" name="information
+" dataOriginalTitle="lorem ipsum" dataToggle="tooltip" dataPlacement="top" /></span></label>
+                                        </div>
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
                                             <a className="btn btn-sm btn-default w-50 checkControl">All</a>
@@ -147,6 +166,11 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="13" method="post" data-col={5} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_13" data-col={5} className="dataTableFilter table-filter">
+                                    <div className="custom-control custom-switch mb-3">
+                                            <input id="option-switch" className="custom-control-input" type="checkbox" name="switch" />
+                                            <label className="custom-control-label text-nowrap d-flex align-items-center column-gap-xs" htmlFor="option-switch" aria-describedby="caption-switch"><span className="small text-muted d-flex pt-2 gap-2xs">Strict filtering <Icon size="xs" name="information
+" dataOriginalTitle="lorem ipsum" dataToggle="tooltip" dataPlacement="top" /></span></label>
+                                        </div>
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
                                             <a className="btn btn-sm btn-default w-50 checkControl">All</a>
@@ -267,6 +291,11 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="31" method="post" data-col={6} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_31" data-col={6} className="dataTableFilter table-filter">
+                                    <div className="custom-control custom-switch mb-3">
+                                            <input id="option-switch" className="custom-control-input" type="checkbox" name="switch" />
+                                            <label className="custom-control-label text-nowrap d-flex align-items-center column-gap-xs" htmlFor="option-switch" aria-describedby="caption-switch"><span className="small text-muted d-flex pt-2 gap-2xs">Strict filtering <Icon size="xs" name="information
+" dataOriginalTitle="lorem ipsum" dataToggle="tooltip" dataPlacement="top" /></span></label>
+                                        </div>
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
                                             <a className="btn btn-sm btn-default w-50 checkControl">All</a>
@@ -303,6 +332,11 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="36" method="post" data-col={7} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_36" data-col={7} className="dataTableFilter table-filter">
+                                    <div className="custom-control custom-switch mb-3">
+                                            <input id="option-switch" className="custom-control-input" type="checkbox" name="switch" />
+                                            <label className="custom-control-label text-nowrap d-flex align-items-center column-gap-xs" htmlFor="option-switch" aria-describedby="caption-switch"><span className="small text-muted d-flex pt-2 gap-2xs">Strict filtering <Icon size="xs" name="information
+" dataOriginalTitle="lorem ipsum" dataToggle="tooltip" dataPlacement="top" /></span></label>
+                                        </div>
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
                                             <a className="btn btn-sm btn-default w-50 checkControl">All</a>
@@ -375,6 +409,11 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="46" method="post" data-col={8} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_46" data-col={8} className="dataTableFilter table-filter">
+                                    <div className="custom-control custom-switch mb-3">
+                                            <input id="option-switch" className="custom-control-input" type="checkbox" name="switch" />
+                                            <label className="custom-control-label text-nowrap d-flex align-items-center column-gap-xs" htmlFor="option-switch" aria-describedby="caption-switch"><span className="small text-muted d-flex pt-2 gap-2xs">Strict filtering <Icon size="xs" name="information
+" dataOriginalTitle="lorem ipsum" dataToggle="tooltip" dataPlacement="top" /></span></label>
+                                        </div>
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
                                             <a className="btn btn-sm btn-default w-50 checkControl">All</a>
@@ -417,6 +456,11 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="51" method="post" data-col={9} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_51" data-col={9} className="dataTableFilter table-filter">
+                                    <div className="custom-control custom-switch mb-3">
+                                            <input id="option-switch" className="custom-control-input" type="checkbox" name="switch" />
+                                            <label className="custom-control-label text-nowrap d-flex align-items-center column-gap-xs" htmlFor="option-switch" aria-describedby="caption-switch"><span className="small text-muted d-flex pt-2 gap-2xs">Strict filtering <Icon size="xs" name="information
+" dataOriginalTitle="lorem ipsum" dataToggle="tooltip" dataPlacement="top" /></span></label>
+                                        </div>
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
                                         <div className="btn-group w-100 mb-3" role="group">
                                             <a className="btn btn-sm btn-default w-50 checkControl">All</a>
@@ -507,6 +551,11 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             <div className="dropdown-menu">
                                 <form name="form_value_owner" method="post" data-col={11} className="dataTableFilter table-filter px-5 pt-5 pb-3" style={{ maxHeight: 300, overflowY: "auto" }}>
                                     <div id="challenges_filters_form_value_owner" data-col={11} className="dataTableFilter table-filter">
+                                    <div className="custom-control custom-switch mb-3">
+                                            <input id="option-switch" className="custom-control-input" type="checkbox" name="switch" />
+                                            <label className="custom-control-label text-nowrap d-flex align-items-center column-gap-xs" htmlFor="option-switch" aria-describedby="caption-switch"><span className="small text-muted d-flex pt-2 gap-2xs">Strict filtering <Icon size="xs" name="information
+" dataOriginalTitle="lorem ipsum" dataToggle="tooltip" dataPlacement="top" /></span></label>
+                                        </div>
                                         <input type="search" className="form-control form-control-md searchControl mb-3" placeholder="Search" title="Type in a name" />
 
                                         <div className="custom-control custom-radio">
