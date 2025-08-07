@@ -9,6 +9,7 @@ export const dataFilters = () => {
             controlSelect: $(".dataFitlersControl").find("select"),
             controlApply: $(".dataFitlersControlApply"),
             controlCancel: $(".dataFitlersControlCancel"),
+            controlClean: $(".dataFitlersClean"),
             controlRemoveCtn: $(".dataFitlersControlRemove"),
             dataTable: [],
         };
@@ -74,6 +75,17 @@ export const dataFilters = () => {
                     var value = $(this).attr("id").split("index-")[1];
                     viewDataFilters.remove(value);
                     viewDataFilters.clean(value);
+                });
+                modelDataFilters.controlClean.on("click", function () {
+                    modelDataFilters.filters.each(function (index) {
+                        viewDataFilters.remove(index);
+                        viewDataFilters.clean(index);
+                    });
+                    modelDataFilters.dataTable = [];
+                    modelDataFilters.filters.each(function (index) {                       
+                        modelDataFilters.dataTable.push(Number(index)); 
+                    });
+                    presenterDataFilters.localStorageSetItem();
                 });
             },
         };

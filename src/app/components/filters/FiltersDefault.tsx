@@ -1091,35 +1091,34 @@ export const FiltersDefault = ({}: FiltersDefaultProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className="dropdown dataFitlersControl mr-lg-3 mr-0 mb-5 mb-lg-0" data-save-to-close="true">
-                        <a className="btn btn-lg btn-muted" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
-                            <span className="icon icon-plus-circle" />
-                            <span>Filter</span>
-                        </a>
-                        <div className="dropdown-menu gap-xs">
-                            <form className="d-flex flex-column gap-md px-16px">
-                                <div className="form-group">
-                                    <label>Filters</label>
-                                    <select required data-hint="type" aria-describedby="exemple_help" className="form-control custom-select" defaultValue="">
-                                        <option value="" disabled>
-                                            Choose a filter...
-                                        </option>
-                                    </select>
-                                    <div className="invalid-feedback">Please choose an option in the select.</div>
-                                </div>
-                            </form>
-                            <div className="d-flex flex-column dataFitlersControlRemove px-16px"></div>
-
-                            {/* <div className="d-flex gap-xs justify-content-end px-16px ">
-                                <button className="btn btn-lg btn-default dataFitlersControlCancel">
-                                    Cancel
-                                </button>
-                                <button type="submit" className="btn btn-lg btn-primary dataFitlersControlApply">
-                                    Apply
-                                </button>
-                            </div> */}
+                    <div className="mr-lg-3 mr-0 mb-5 mb-lg-0 d-flex align-items-start">
+                        <div className="dropdown dataFitlersControl" data-save-to-close="true">
+                            <a className="btn btn-lg btn-muted" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
+                                <span className="icon icon-plus-circle" />
+                                <span>Filter</span>
+                            </a>
+                    
+                            <div className="dropdown-menu gap-xs">
+                                <form className="d-flex flex-column gap-md px-16px">
+                                    <div className="form-group">
+                                        <label>Filters</label>
+                                        <select required data-hint="type" aria-describedby="exemple_help" className="form-control custom-select" defaultValue="">
+                                            <option value="" disabled>
+                                                Choose a filter...
+                                            </option>
+                                        </select>
+                                        <div className="invalid-feedback">Please choose an option in the select.</div>
+                                    </div>
+                                </form>
+                                <div className="d-flex flex-column dataFitlersControlRemove px-16px"></div>
+                   
+                            </div>
                         </div>
-                    </div>
+                   
+                        <a className="btn btn-lg btn-muted dataFitlersClean" href="#" role="button">
+                            <span>Clean</span>
+                        </a>
+                     </div>
                 </div>
                 <div className="d-flex flex-column flex-lg-row">
                     <div className="mr-lg-3 mr-0 mb-5 mb-lg-0" data-toggle="tooltip" data-placement="top" data-original-title="Sort by range dates" data-boundary="window">
