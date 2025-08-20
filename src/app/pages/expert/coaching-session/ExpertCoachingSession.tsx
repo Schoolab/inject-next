@@ -56,7 +56,7 @@ export const ExpertCoachingSession = () => {
                         <div className="row justify-content-center flex-grow-1">
                             <div className="col-12 col-xl-10">
                                 <div className="application-section">
-                                    <h4 className="application-section--title">
+                                    <h3 className="application-section--title">
                                         <div className="d-flex flex-column gap-none w-100">
                                             <span className="application-section--title-content">Summary</span>
                                             <div className="d-flex gap-2xs align-items-center text-navigation text-muted">
@@ -67,7 +67,7 @@ export const ExpertCoachingSession = () => {
                                             <Button label="Add to calendar" iconStartName="calendar" size="sm" type="default" />
                                             <Button label="Meeting link" iconStartName="copy" size="sm" type="default" />
                                         </div>
-                                    </h4>
+                                    </h3>
                                     <div className="bg-highlight p-md rounded">
                                         <DataList>
                                             <DataListItem label="Name">
@@ -115,7 +115,7 @@ export const ExpertCoachingSession = () => {
                                     </div>
                                 </div>
                                 <div className="application-section">
-                                    <h4 className="application-section--title">Pinned notes</h4>
+                                    <h3 className="application-section--title">Pinned notes</h3>
                                     <div id="challenge-blogposts-container">
                                         <div className="blogPostsWall" data-url="/program/75/workspace/updates/wall?preview=3">
                                             <div className="cardsContainer">
@@ -147,7 +147,7 @@ export const ExpertCoachingSession = () => {
                                     </a>
                                 </div>   
                                 <div className="application-section">               
-                                    <h4 className="application-section--title">Project</h4>
+                                    <h3 className="application-section--title">Project</h3>
                                     <div className="d-flex flex-column flex-md-row flex-lg-column flex-xl-row align-items-center flex-wrap flex-xl-nowrap gap-md">
                                         <div className="card-image-container">
                                             <div
@@ -238,7 +238,7 @@ export const ExpertCoachingSession = () => {
                                 </div>   
                                 <div className="application-section">          
                                     
-                                        <h4 className="application-section--title"> Notes</h4>
+                                        <h3 className="application-section--title"> Notes</h3>
                                         <div id="challenge-blogposts-container">
                                             <a className="message mb-5 startMessageButton" href="/program/75/manage/updates/new-update">
                                                 <span className="thumbnail is-oval is-lg" data-toggle="tooltip" title="" data-original-title="John Doe">
@@ -258,7 +258,7 @@ export const ExpertCoachingSession = () => {
                                                 <div className="card m-none p-5 wallLoader d-none">
                                                     <div className="pb-0 pt-3 pt-sm-5">
                                                         <div className="item is-wide is-static">
-                                                            <h4 className="text-center w-100 mb-3">Loading...</h4>
+                                                            <h3 className="text-center w-100 mb-3">Loading...</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -311,7 +311,7 @@ export const ExpertCoachingSession = () => {
                                 </div>
                                 <div className="application-section">
                                    
-                                     <h4 className="application-section--title">Attendance sheet responsibles</h4>
+                                     <h3 className="application-section--title">Attendance sheet responsibles</h3>
                                     <div className="item is-bordered">
                                         <div className="item-row">
                                             <div className="item-row">
@@ -324,7 +324,7 @@ export const ExpertCoachingSession = () => {
                                                     </div>
                                                 </a>
                                                 <div className="item-content ml-4 py-1">
-                                                    <a href="#" className="item-title h4 font-weight-normal mb-none userProfileModale userProfileModale-301" data-url="/user/600a4bc4/profile-modal" data-toggle="modal" data-target="#loadingContentModal">
+                                                    <a href="#" className="item-title h3 font-weight-normal mb-none userProfileModale userProfileModale-301" data-url="/user/600a4bc4/profile-modal" data-toggle="modal" data-target="#loadingContentModal">
                                                         {" "}
                                                         Guillaume Larieu{" "}
                                                         <ul className="metas is-list ">
@@ -361,7 +361,7 @@ export const ExpertCoachingSession = () => {
                                                     </div>
                                                 </a>
                                                 <div className="item-content ml-4 py-1">
-                                                    <a href="#" className="item-title h4 font-weight-normal mb-none userProfileModale userProfileModale-673" data-url="/user/ae5b9801/profile-modal" data-toggle="modal" data-target="#loadingContentModal">
+                                                    <a href="#" className="item-title h3 font-weight-normal mb-none userProfileModale userProfileModale-673" data-url="/user/ae5b9801/profile-modal" data-toggle="modal" data-target="#loadingContentModal">
                                                         {" "}
                                                         Louis Boutet{" "}
                                                         <ul className="metas is-list ">
