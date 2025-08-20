@@ -133,7 +133,7 @@ export interface TitleProps {
                             <div className="h3 d-flex gap-xs m-none">
                                 {iconName && <Icon name={iconName} />}
                                 {emoji && <span>{emoji}</span>}
-                                <span>{title}</span>
+                                <span className="line-clamp-1">{title}</span>
                             </div>
                         </div>
                     </div>
