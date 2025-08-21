@@ -25,7 +25,7 @@ export const ExpertCoachingSession = () => {
     return (
         <Layout>
             <AppContent
-                sections="transparent"
+                sections="separated"
                 showSubnav={false}
                 isAsside={true}
                 backLink="Back"
@@ -98,7 +98,7 @@ export const ExpertCoachingSession = () => {
                                                     </Button>
                                                 </dd>
                                             </DataListItem>
-                                            <DataListItem label="Project description">
+                                            <DataListItem label="About the project">
                                                 <dd>
                                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl ignissim est, at elementum felis diam eget massa.</span>
                                                 </dd>
@@ -114,39 +114,8 @@ export const ExpertCoachingSession = () => {
                                         </DataList>
                                     </div>
                                 </div>
+
                                 <div className="application-section">
-                                    <h3 className="application-section--title">Pinned notes</h3>
-                                    <div id="challenge-blogposts-container">
-                                        <div className="blogPostsWall" data-url="/program/75/workspace/updates/wall?preview=3">
-                                            <div className="cardsContainer">
-                                                <div className="cardsContainer">
-                                                    <CardFeed
-                                                        author="{user.name}"
-                                                        metas={[{ label: "Community Builder, Schoolab" }]}
-                                                        content={`
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl ignissim est, at elementum felis diam eget massa.</p>
-                                                            `}
-                                                        readMore={false}
-                                                        liked={true}
-                                                        likes={9}
-                                                        comments={4}
-                                                        copyLink={false}
-                                                    ></CardFeed>
-                                                </div>
-                                            </div>
-                                            <div className="pagerContainer mt-5 d-none">
-                                                <button className="btn btn-lg btn-block btn-default pagerLoadMoreButton">
-                                                    Load more
-                                                    <span className="icon icon-loading icon-spin ml-1 d-none buttonLoader" />
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a id="challenge-blogposts-page-btn" className="btn btn-lg btn-block btn-default mt-3 d-none" href="/program/75/updates">
-                                        Show more
-                                    </a>
-                                </div>   
-                                <div className="application-section">               
                                     <h3 className="application-section--title">Project</h3>
                                     <div className="d-flex flex-column flex-md-row flex-lg-column flex-xl-row align-items-center flex-wrap flex-xl-nowrap gap-md">
                                         <div className="card-image-container">
@@ -167,23 +136,63 @@ export const ExpertCoachingSession = () => {
                                                         <span>Project Name</span>
                                                     </div>
                                                 </div>
-                                                <ul className="text-muted small metas is-list mb-none">
-                                                    <li className="list-inline-item" data-toggle="tooltip" data-placement="bottom" data-original-title="<ul class='list-unstyled d-flex flex-column gap-2xs m-none'><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/2216e7ab-c701-4503-83a2-ae7b91afb15d/sq150.jpeg'></div><span>Alexandra Jolly</span></li>" data-html="true" data-boundary="window">
-                                                        <a href="/program/71/project/2903/users">
-                                                            <small className="text-muted">1 member</small>
-                                                        </a>
+                                                <ul className="list-inline list-dotted">
+                                                    <li
+                                                        className="list-inline-item"
+                                                        data-toggle="tooltip"
+                                                        data-placement="bottom"
+                                                        data-original-title='&lt;ul class="list-unstyled d-flex flex-column gap-4px m-0"&gt;&lt;li class="d-flex gap-4px align-items-center"&gt;&lt;div class="thumbnail is-xs is-oval bg-random-5" title="IB"&gt;&lt;span class="icon icon-account c-random-5"&gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;Ibrahim Baldé&lt;/span&gt;&lt;/li&gt;&lt;li class="d-flex gap-4px align-items-center"&gt;&lt;div class="thumbnail is-xs is-oval bg-random-3" title="KC"&gt;&lt;span class="icon icon-account c-random-3"&gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;Kelly Chou&lt;/span&gt;&lt;/li&gt;&lt;li class="d-flex gap-4px align-items-center"&gt;&lt;div class="thumbnail is-xs is-oval bg-random-1" title="ES"&gt;&lt;span class="icon icon-account c-random-1"&gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;Emma Salvarelli&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;+ 2 more&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;'
+                                                        data-html="true"
+                                                        data-boundary="window"
+                                                    >
+                                                        <ul className="metas is-list">
+                                                            <li>
+                                                                <div className="thumbnail-stack mr-2">
+                                                                    <div className="thumbnail is-xs is-oval bg-random-5" title="IB">
+                                                                        <span className="icon icon-account c-random-5"></span>
+                                                                    </div>
+                                                                    <div className="thumbnail is-xs is-oval bg-random-3" title="KC">
+                                                                        <span className="icon icon-account c-random-3"></span>
+                                                                    </div>
+                                                                    <div className="thumbnail is-xs is-oval bg-random-1" title="ES">
+                                                                        <span className="icon icon-account c-random-1"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <a href="/program/frrezpo/project/w/154bed30/users">
+                                                                    <small className="text-muted">5 members</small>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
                                                     </li>
                                                     <li
                                                         className="list-inline-item"
                                                         data-toggle="tooltip"
                                                         data-placement="bottom"
-                                                        data-original-title="<ul class='list-unstyled d-flex flex-column gap-2xs m-none'><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/2216e7ab-c701-4503-83a2-ae7b91afb15d/sq150.jpeg'></div><span>Alexandra Jolly</span></li><li class='d-flex gap-2xs align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/3155b942-7535-4b0b-8ded-97eb42a92e1b/sq150.jpeg'></div><span>Emma Salvarelli</span></li>"
+                                                        data-original-title='&lt;ul class="list-unstyled d-flex flex-column gap-4px m-0"&gt;&lt;li class="d-flex gap-4px align-items-center"&gt;&lt;div class="thumbnail is-oval is-xs" title="TI"&gt;&lt;img src="img/avatar-terence.jpeg" width="150" height="150" class=" is-xs rounded-circle"&gt;&lt;/div&gt;&lt;span&gt;Terence Irving&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;'
                                                         data-html="true"
                                                         data-boundary="window"
                                                     >
-                                                        <a href="/program/71/project/2903/mentors">
-                                                            <small className="text-muted">2 experts</small>
-                                                        </a>
+                                                        <ul className="metas is-list">
+                                                            <li>
+                                                                <div className="thumbnail-stack mr-2">
+                                                                    <div className="thumbnail is-oval is-xs" title="TI">
+                                                                        <img src="img/avatar-terence.jpeg" width="150" height="150" className=" is-xs rounded-circle" />
+                                                                    </div>
+                                                                </div>
+                                                                <a href="/program/frrezpo/project/w/154bed30/mentors">
+                                                                    <small className="text-muted">1 expert</small>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li className="list-inline-item">
+                                                        <ul className="metas is-list">
+                                                            <li>
+                                                                <a href="/program/147/project/w/2872/followers">
+                                                                    <small className="text-muted">1 follower</small>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -223,95 +232,74 @@ export const ExpertCoachingSession = () => {
                                         </div>
                                     </div>
                                     <div className="d-block bg-highlight rounded">
-                                        <div className="d-flex align-items-center flex-fill text-muted p-md" data-toggle="collapse" data-target="#Aboutprogram" aria-expanded="true">
+                                        <div className="d-flex align-items-center flex-fill text-muted p-md" data-toggle="collapse" data-target="#Aboutprogram" aria-expanded="false">
                                             <div className="d-flex align-items-center gap-xs flex-grow-1">
                                                 <Icon name="information" size="sm" />
                                                 <span className="font-weight-bold">About the project</span>
                                             </div>
                                             <Icon name="chevron-right" size="sm" />
                                         </div>
-                                        <div className="collapse show px-md pb-md" id="Aboutprogram">
+                                        <div className="collapse px-md pb-md" id="Aboutprogram">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
                                             <p>Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est.</p>
                                         </div>
                                     </div>
-                                </div>   
-                                <div className="application-section">          
-                                    
-                                        <h3 className="application-section--title"> Notes</h3>
-                                        <div id="challenge-blogposts-container">
-                                            <a className="message mb-5 startMessageButton" href="/program/75/manage/updates/new-update">
-                                                <span className="thumbnail is-oval is-lg" data-toggle="tooltip" title="" data-original-title="John Doe">
-                                                    <div className="thumbnail is-oval">
-                                                        <span className="icon icon-account" />
-                                                    </div>
-                                                </span>
-                                                <div className="message-body">
-                                                    <div className="message-list">
-                                                        <div className="message-row">
-                                                            <input type="text" className="form-control message-content bg-white cursorLink" placeholder="Start a new note..." />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div className="blogPostsWall" data-url="/program/75/workspace/updates/wall?preview=3">
-                                                <div className="card m-none p-5 wallLoader d-none">
-                                                    <div className="pb-0 pt-3 pt-sm-5">
-                                                        <div className="item is-wide is-static">
-                                                            <h3 className="text-center w-100 mb-3">Loading...</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="cardsContainer">
-                                                    <div className="cardsContainer">
-                                                        <CardFeed
-                                                            avatar="https://inject-prod.s3.amazonaws.com/images/0ee71840-6d78-4784-acff-6f8d2722dbb7/sq150.jpeg"
-                                                            author="Sarah Lamoureux"
-                                                            metas={[{ label: "Community Builder, Schoolab" }]}
-                                                            content={`
-                                                                <p>Bonjour à tous·tes,</p>
-                                                                <p>Nous sommes heureux de vous accueillir au sein de Schoolab Saint-Lazare !</p>
-                                                                <p>Le système de réservation de salles de réunion est maintenant disponible, <a href="https://schoolab.skedda.com/register?i=277598&k=0tUkWBHX4UlHvcRlvn6Cx60VhMZD7EZl">cliquez sur ce lien pour activer vos accès</a>.</p>
-                                                                <p>Ensuite, pour y accéder il vous suffira de cliquer sur le petit 🏢 dans la barre de navigation de gauche, vous retrouverez le p...</p>
-                                                            `}
-                                                            readMore={false}
-                                                            liked={true}
-                                                            likes={9}
-                                                            comments={4}
-                                                            copyLink={false}
-                                                        >
-                                                            <ItemResource
-                                                                isSmall={false}
-                                                                action="download"
-                                                                icon={{
-                                                                    addClass: "text-danger",
-                                                                    name: "file-pdf-box",
-                                                                }}
-                                                                resource={{
-                                                                    details: "120 KB",
-                                                                    name: "stakeholdermap-model.pdf",
-                                                                    type: "PDF File",
-                                                                }}
-                                                            />
-                                                        </CardFeed>
-                                                    </div>
-                                                </div>
-                                                <div className="pagerContainer mt-5 d-none">
-                                                    <button className="btn btn-lg btn-block btn-default pagerLoadMoreButton">
-                                                        Load more
-                                                        <span className="icon icon-loading icon-spin ml-1 d-none buttonLoader" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a id="challenge-blogposts-page-btn" className="btn btn-lg btn-block btn-default mt-3 d-none" href="/program/75/updates">
-                                            Show more
-                                        </a>
-                                    
                                 </div>
                                 <div className="application-section">
-                                   
-                                     <h3 className="application-section--title">Attendance sheet responsibles</h3>
+                                    <h3 className="application-section--title"> Notes</h3>
+                                    <div id="challenge-blogposts-container">
+                                        <a className="message mb-5 startMessageButton" href="/program/75/manage/updates/new-update">
+                                            <span className="thumbnail is-oval is-lg" data-toggle="tooltip" title="" data-original-title="John Doe">
+                                                <div className="thumbnail is-oval">
+                                                    <span className="icon icon-account" />
+                                                </div>
+                                            </span>
+                                            <div className="message-body">
+                                                <div className="message-list">
+                                                    <div className="message-row">
+                                                        <input type="text" className="form-control message-content bg-white cursorLink" placeholder="Start a new note..." />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div className="blogPostsWall" data-url="/program/75/workspace/updates/wall?preview=3">
+                                            <div className="card m-none p-5 wallLoader d-none">
+                                                <div className="pb-0 pt-3 pt-sm-5">
+                                                    <div className="item is-wide is-static">
+                                                        <h3 className="text-center w-100 mb-3">Loading...</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="cardsContainer">
+                                                <div className="cardsContainer">
+                                                    <CardFeed
+                                                        author="{user.name}"
+                                                        metas={[{ label: "Community Builder, Schoolab" }]}
+                                                        content={`
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl ignissim est, at elementum felis diam eget massa.</p>
+                                                            `}
+                                                        readMore={false}
+                                                        liked={true}
+                                                        likes={9}
+                                                        comments={4}
+                                                        copyLink={false}
+                                                    ></CardFeed>
+                                                </div>
+                                            </div>
+                                            <div className="pagerContainer mt-5 d-none">
+                                                <button className="btn btn-lg btn-block btn-default pagerLoadMoreButton">
+                                                    Load more
+                                                    <span className="icon icon-loading icon-spin ml-1 d-none buttonLoader" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a id="challenge-blogposts-page-btn" className="btn btn-lg btn-block btn-default mt-3 d-none" href="/program/75/updates">
+                                        Show more
+                                    </a>
+                                </div>
+                                <div className="application-section">
+                                    <h3 className="application-section--title">Attendance sheet responsibles</h3>
                                     <div className="item is-bordered">
                                         <div className="item-row">
                                             <div className="item-row">
@@ -386,7 +374,7 @@ export const ExpertCoachingSession = () => {
                                             </div>
                                         </div>
                                     </div>
-                                   
+
                                     <div className="aside-buttons-bottom d-flex flex-column flex-lg-row mt-5">
                                         <button id="btn-comment" className="btn btn-default btn-lg dropdown mr-lg-3 mb-3 mr-0">
                                             <span className="icon icon-note-text-outline mr-2" />
