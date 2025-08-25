@@ -98,6 +98,18 @@ export const ExpertCoachingSession = () => {
                                                     </Button>
                                                 </dd>
                                             </DataListItem>
+                                            <DataListItem label="Project members">
+                                                <dd className="d-flex flex-row gap-2xs">
+                                                    <Button type="muted" addClass="btn-link" size="xs">
+                                                        <Stack>
+                                                            <Avatar size="xs" image="img/avatar-pierre.jpeg" />
+                                                            <Avatar size="xs" image="img/avatar-emma.jpeg" />
+                                                            <Avatar size="xs" image="img/avatar-julien.jpeg" />
+                                                        </Stack>
+                                                        <span>5</span>
+                                                    </Button>
+                                                </dd>
+                                            </DataListItem>
                                             <DataListItem label="About the project">
                                                 <dd>
                                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl ignissim est, at elementum felis diam eget massa.</span>
@@ -115,7 +127,7 @@ export const ExpertCoachingSession = () => {
                                     </div>
                                 </div>
 
-                                <div className="application-section">
+                                {/* <div className="application-section">
                                     <h3 className="application-section--title">Project</h3>
                                     <div className="d-flex flex-column flex-md-row flex-lg-column flex-xl-row align-items-center flex-wrap flex-xl-nowrap gap-md">
                                         <div className="card-image-container">
@@ -244,7 +256,7 @@ export const ExpertCoachingSession = () => {
                                             <p>Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est.</p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="application-section">
                                     <h3 className="application-section--title"> Notes</h3>
                                     <div id="challenge-blogposts-container">
@@ -298,7 +310,7 @@ export const ExpertCoachingSession = () => {
                                         Show more
                                     </a>
                                 </div>
-                                <div className="application-section">
+                                {/* <div className="application-section">
                                     <h3 className="application-section--title">Attendance sheet responsibles</h3>
                                     <div className="item is-bordered">
                                         <div className="item-row">
@@ -385,7 +397,7 @@ export const ExpertCoachingSession = () => {
                                             Ressources
                                         </button>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
