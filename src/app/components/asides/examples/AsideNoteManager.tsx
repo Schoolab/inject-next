@@ -142,7 +142,7 @@ export const AsideNoteManager = ({}: AsideNoteManagerProps) => {
                                 Lorem ipsum.
                             </small>
                         </div>
-                        
+
                         <input type="hidden" id="event__token" name="event[_token]" defaultValue="" />
                     </form>
                 </div>
@@ -254,7 +254,6 @@ export const AsideNoteManager = ({}: AsideNoteManagerProps) => {
                     </div>
                 </div>
             </div>
-            
         </aside>
     );
 };

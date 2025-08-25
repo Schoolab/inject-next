@@ -36,9 +36,8 @@ export const ModalCoachingReport = ({}: ModalCoachingReportProps) => {
                         <FormGroup addClass="cq-xs-12" id="project" required={true} label="Project">
                             <FormSelect
                                 id="project"
-                              
                                 options={[
-                                    { label: "Choose an option...", value: "",},
+                                    { label: "Choose an option...", value: "" },
                                     { label: "Healthify", value: "healthify", selected: true },
                                     { label: "TidyCards", value: "tidycards" },
                                 ]}
@@ -79,7 +78,7 @@ export const ModalCoachingReport = ({}: ModalCoachingReportProps) => {
                                 ]}
                             />
                         </FormGroup>
-                             <FormGroup addClass="cq-xs-3" id="Min" required={true} label="Min">
+                        <FormGroup addClass="cq-xs-3" id="Min" required={true} label="Min">
                             <FormSelect
                                 id="Min"
                                 options={[
@@ -155,108 +154,51 @@ export const ModalCoachingReport = ({}: ModalCoachingReportProps) => {
                             </FormInputWrapper>
                         </FormGroup>
 
+                      
                         <div className="form-group">
-                                <label className="active checkbox-custom font-weight-bold" htmlFor="event_icon">
-                                    Flag
-                                </label>
-                                <div>
-                                    <div className="dropdown bootstrap-select form-control mb-2">
-                                        <select id="event_icon" name="event[icon]" className="form-control" tabIndex={-98}>
-                                            <option value="" />
-                                            <option value="icon-flag-success" data-icon="icon-flag text-success" selected />
-                                            <option value="icon-flag-warning" data-icon="icon-flag text-warning" />
-                                            <option value="icon-flag-danger" data-icon="icon-flag text-danger" />
-                                        </select>
-                                        <button type="button" className="btn btn-lg dropdown-toggle btn-default" data-toggle="dropdown" role="button" data-id="event_icon" title="" aria-expanded="false">
-                                            <div className="filter-option">
-                                                <div className="filter-option-inner">
-                                                    <div className="filter-option-inner-inner">
-                                                        <i className="icon icon-flag text-success" />
-                                                        &nbsp;
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </button>
-                                        <div
-                                            className="dropdown-menu"
-                                            role="combobox"
-                                            style={{
-                                                maxHeight: "531.375px",
-                                                overflow: "hidden",
-                                                minHeight: 126,
-                                            }}
-                                        >
-                                            <div
-                                                className="inner show"
-                                                role="listbox"
-                                                aria-expanded="false"
-                                                tabIndex={-1}
-                                                style={{
-                                                    maxHeight: "515.375px",
-                                                    overflowY: "auto",
-                                                    minHeight: 110,
-                                                }}
-                                            >
-                                                <ul className="dropdown-menu inner show">
-                                                    <li>
-                                                        <a role="option" className="dropdown-item" aria-disabled="false" tabIndex={0} aria-selected="false">
-                                                            <span className="text" />
-                                                        </a>
-                                                    </li>
-                                                    <li className="selected active">
-                                                        <a role="option" className="dropdown-item selected active" aria-disabled="false" tabIndex={0} aria-selected="true">
-                                                            <span className="icon icon-flag text-success" />
-                                                            &nbsp;
-                                                            <span className="text" />
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a role="option" className="dropdown-item" aria-disabled="false" tabIndex={0} aria-selected="false">
-                                                            <span className="icon icon-flag text-warning" />
-                                                            &nbsp;
-                                                            <span className="text" />
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a role="option" className="dropdown-item" aria-disabled="false" tabIndex={0} aria-selected="false">
-                                                            <span className="icon icon-flag text-danger" />
-                                                            &nbsp;
-                                                            <span className="text" />
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <label className="active checkbox-custom font-weight-bold" htmlFor="event_icon">
+                                Flag
+                            </label>
+                            <div>
+                                <div className="dropdown bootstrap-select form-control mb-2">
+                                    <select id="event_icon" name="event[icon]" className="form-control" tabIndex={-98}>
+                                        <option value="" />
+                                        <option value="icon-flag-success" data-icon="icon-flag text-success" selected />
+                                        <option value="icon-flag-warning" data-icon="icon-flag text-warning" />
+                                        <option value="icon-flag-danger" data-icon="icon-flag text-danger" />
+                                    </select>
                                 </div>
-                                <small id="event_icon_help" className="form-text text-muted">
-                                    Use the Flag to help them visually identify if the coaching went well or if there are any issues.
-                                </small>
                             </div>
-                            <div className="form-group">
-                                <label className="active checkbox-custom font-weight-bold" htmlFor="event_adminNote">
-                                    Expert's Notes
-                                </label>
-                                <textarea
-                                    id="event_adminNote"
-                                    name="event[adminNote]"
-                                    className="autoSaveField form-control mb-2"
-                                    data-save-url="/rest/event/4700/note-save"
-                                    aria-describedby="event_adminNote_help"
-                                    rows={4}
-                                    style={{
-                                        overflow: "hidden",
-                                        overflowWrap: "break-word",
-                                        resize: "none",
-                                        height: 100,
-                                    }}
-                                    defaultValue={"Attention il est en retard sur ce projet"}
-                                />
-                                <small id="event_adminNote_help" className="form-text text-muted">
-                                    This confidential note allows you to share information with Program Managers. Use the Flag to help them visually identify if the coaching went well or if there are any issues.
-                                </small>
-                            </div>
-                            <hr></hr>
+                            <small id="event_icon_help" className="form-text text-muted">
+                                Use the Flag to help them visually identify if the coaching went well or if there are any issues.
+                            </small>
+                        </div>
+             
+                     
+                        <div className="form-group">
+                            <label className="active checkbox-custom font-weight-bold" htmlFor="event_adminNote">
+                                Expert's Notes
+                            </label>
+                            <textarea
+                                id="event_adminNote"
+                                name="event[adminNote]"
+                                className="autoSaveField form-control mb-2"
+                                data-save-url="/rest/event/4700/note-save"
+                                aria-describedby="event_adminNote_help"
+                                rows={4}
+                                style={{
+                                    overflow: "hidden",
+                                    overflowWrap: "break-word",
+                                    resize: "none",
+                                    height: 100,
+                                }}
+                                defaultValue={"Attention il est en retard sur ce projet"}
+                            />
+                            <small id="event_adminNote_help" className="form-text text-muted">
+                                This confidential note allows you to share information with Program Managers. Use the Flag to help them visually identify if the coaching went well or if there are any issues.
+                            </small>
+                        </div>
+                        <hr></hr>
                         <h4 className="nav-title flex-fill">Custom fields</h4>
                         <div className="form-group">
                             <label className="active checkbox-custom font-weight-bold" htmlFor="event_adminNote">
@@ -277,7 +219,6 @@ export const ModalCoachingReport = ({}: ModalCoachingReportProps) => {
                                 Lorem ipsum.
                             </small>
                         </div>
-
                     </div>
                 </div>
 
