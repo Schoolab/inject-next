@@ -1,0 +1,232 @@
+export const speekToText = () => {
+    $(function () {
+        let mediaRecorder,
+            audioChunks = [],
+            audioBlob;
+        let audioCtx, analyser, source, dataArray, animationId;
+        let timerInterval,
+            secondsElapsed = 0;
+        const MAX_DURATION = 30;
+        const stopBtn = document.getElementById("stopBtn");
+        const reRecordBtn = document.getElementById("reRecordBtn");
+        const downloadBtn = document.getElementById("downloadBtn");
+        const recaller = document.getElementById("recaller");
+        const player = document.getElementById("player");
+        const canvas = document.getElementById("visualizer");
+        const ctx = canvas.getContext("2d");
+        const timerDiv = document.getElementById("timer");
+
+        let history = [];
+        const BAR_WIDTH = 2;
+        const BAR_SPACING = 2;
+        const SPEED = 3;
+        const AMPLIFY = 5;
+
+        // Canvas responsive
+        function resizeCanvas() {
+            const newWidth = canvas.clientWidth;
+            const newHeight = canvas.clientHeight;
+            canvas.width = newWidth;
+            canvas.height = newHeight;
+            const newLength = Math.floor(canvas.width / (BAR_WIDTH + BAR_SPACING));
+            if (history.length < newLength) {
+                history = new Array(newLength - history.length).fill(0).concat(history);
+            } else if (history.length > newLength) {
+                history = history.slice(history.length - newLength);
+            }
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+        window.addEventListener("load", resizeCanvas);
+        window.addEventListener("resize", resizeCanvas);
+
+        function drawBars() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            const centerY = canvas.height / 2;
+            for (let i = 0; i < history.length; i++) {
+                const h = history[i];
+                ctx.fillStyle = "#000000";
+                ctx.fillRect(i * (BAR_WIDTH + BAR_SPACING), centerY - h / 2, BAR_WIDTH, h);
+            }
+        }
+
+        function updateTimer() {
+            const min = Math.floor(secondsElapsed / 60);
+            const sec = secondsElapsed % 60;
+            timerDiv.textContent = `${min}:${sec.toString().padStart(2, "0")}`;
+        }
+
+        // Convertir AudioBuffer en WAV
+        function audioBufferToWav(buffer) {
+            const numChannels = buffer.numberOfChannels;
+            const sampleRate = buffer.sampleRate;
+            const length = buffer.length * numChannels * 2 + 44;
+            const arrayBuffer = new ArrayBuffer(length);
+            const view = new DataView(arrayBuffer);
+            let offset = 0;
+            function writeString(str) {
+                for (let i = 0; i < str.length; i++) view.setUint8(offset++, str.charCodeAt(i));
+            }
+            function setUint16(val) {
+                view.setUint16(offset, val, true);
+                offset += 2;
+            }
+            function setUint32(val) {
+                view.setUint32(offset, val, true);
+                offset += 4;
+            }
+            writeString("RIFF");
+            setUint32(length - 8);
+            writeString("WAVE");
+            writeString("fmt ");
+            setUint32(16);
+            setUint16(1);
+            setUint16(numChannels);
+            setUint32(sampleRate);
+            setUint32(sampleRate * numChannels * 2);
+            setUint16(numChannels * 2);
+            setUint16(16);
+            writeString("data");
+            setUint32(buffer.length * numChannels * 2);
+            for (let i = 0; i < buffer.length; i++) {
+                for (let ch = 0; ch < numChannels; ch++) {
+                    let sample = buffer.getChannelData(ch)[i];
+                    sample = Math.max(-1, Math.min(1, sample));
+                    view.setInt16(offset, sample < 0 ? sample * 0x8000 : sample * 0x7fff, true);
+                    offset += 2;
+                }
+            }
+            return arrayBuffer;
+        }
+
+        // Convertir blob webm en WAV
+        function blobToWav(chunks) {
+            const buffer = new Blob(chunks, { type: "audio/webm" });
+            return new Promise((resolve) => {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    const arrayBuffer = reader.result;
+                    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                    audioCtx.decodeAudioData(arrayBuffer, (audioBuffer) => {
+                        const wavBuffer = audioBufferToWav(audioBuffer);
+                        const wavBlob = new Blob([wavBuffer], { type: "audio/wav" });
+                        resolve(wavBlob);
+                    });
+                };
+                reader.readAsArrayBuffer(buffer);
+            });
+        }
+
+        // Démarrer enregistrement
+        async function startRecording() {
+            const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+            mediaRecorder = new MediaRecorder(stream);
+            audioChunks = [];
+            secondsElapsed = 0;
+            updateTimer();
+            reRecordBtn.disabled = true;
+            downloadBtn.disabled = true;
+            stopBtn.disabled = false;
+            
+
+            mediaRecorder.ondataavailable = (e) => audioChunks.push(e.data);
+            mediaRecorder.onstop = async () => {
+                audioBlob = await blobToWav(audioChunks);
+                const audioUrl = URL.createObjectURL(audioBlob);
+                player.src = audioUrl;
+
+              
+                recaller.classList.remove("d-flex");
+                recaller.classList.add("d-none");
+                player.classList.remove("d-none");
+                player.classList.add("d-block");
+        
+                reRecordBtn.disabled = false;
+                downloadBtn.disabled = false;
+                clearInterval(timerInterval);
+                secondsElapsed = 0;
+                updateTimer();
+             
+
+                player.addEventListener("loadedmetadata", () => console.log("Durée totale : ", player.duration.toFixed(2), "s"), { once: true });
+            };
+
+            mediaRecorder.start();
+
+            timerInterval = setInterval(() => {
+                secondsElapsed++;
+                updateTimer();
+                if (secondsElapsed >= MAX_DURATION && mediaRecorder.state === "recording") mediaRecorder.stop();
+            }, 1000);
+
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            analyser = audioCtx.createAnalyser();
+            source = audioCtx.createMediaStreamSource(stream);
+            source.connect(analyser);
+            analyser.fftSize = 256;
+            dataArray = new Uint8Array(analyser.frequencyBinCount);
+
+            let frame = 0;
+            function draw() {
+                animationId = requestAnimationFrame(draw);
+                analyser.getByteFrequencyData(dataArray);
+                if (frame % SPEED === 0) {
+                    const avg = dataArray.reduce((a, b) => a + b, 0) / dataArray.length;
+                    const barHeight = (avg / 255) * canvas.height * AMPLIFY;
+                    for (let i = 0; i < history.length - 1; i++) history[i] = history[i + 1];
+                    history[history.length - 1] = barHeight;
+                }
+                frame++;
+                drawBars();
+            }
+            draw();
+      
+        }
+
+        // Lancer automatiquement au chargement
+        window.addEventListener("load", startRecording);
+
+        // Bouton arrêter
+        stopBtn.addEventListener("click", () => {
+            if (mediaRecorder && mediaRecorder.state === "recording") mediaRecorder.stop();
+            stopBtn.disabled = true;
+            cancelAnimationFrame(animationId);
+            if (audioCtx) audioCtx.close();
+            clearInterval(timerInterval);
+            secondsElapsed = 0;
+            updateTimer();
+        });
+
+        // Réenregistrer
+        reRecordBtn.addEventListener("click", async () => {
+            // Réinitialiser UI et canvas
+            recaller.classList.remove("d-none");
+            recaller.classList.add("d-flex");
+            player.classList.remove("d-block");
+            player.classList.add("d-none");
+     
+            stopBtn.disabled = false;
+            reRecordBtn.disabled = true;
+            downloadBtn.disabled = true;
+            history.fill(0);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+          
+            secondsElapsed = 0;
+            updateTimer();
+
+            // Démarrer l'enregistrement automatiquement
+            await startRecording();
+        });
+
+        // Télécharger
+        downloadBtn.addEventListener("click", () => {
+            if (!audioBlob) return;
+            const url = URL.createObjectURL(audioBlob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "enregistrement.wav";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        });
+    });
+};
