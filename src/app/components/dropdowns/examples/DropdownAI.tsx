@@ -13,6 +13,7 @@ export const DropdownAI = ({}: DropdownAIProps) => {
         <Dropdown>
             <DropdownMenu direction="left" show={true}>
                 <DropdownItem type="ai" label="Write content" iconName="pencil" />
+                <DropdownDivider />
                 <DropdownItem type="ai" label="Improve writing" iconName="improve-writing" />
                 <DropdownItem type="ai" label="Make shorter" iconName="shorter-text" />
                 <DropdownItem type="ai" label="Make longer" iconName="longer-text" />
