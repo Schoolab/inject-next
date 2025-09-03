@@ -67,15 +67,15 @@ export const CPAuthSignup = (
                             <Button type="primary" label="Continue" extended={true} />
                         </form>
                     </div>
-
+                    <p className="text-muted mt-8 mb-8 small">
+                        <a href="#">← Back to login</a>.
+                    </p>
                    
 
                     <p className="small text-muted mt-8 mb-8">
                         By clicking on "Join" above, you acknowledge that you have read and understood, and agree to <a href="/terms-and-conditions">Terms & Conditions</a> and <a href="/privacy-policy">Privacy Policy</a>.
                     </p>
-                    <p className="text-muted mt-8 mb-8">
-                        <a href="#">← Back to login</a>.
-                    </p>
+                
                     
                     
                 </div>
