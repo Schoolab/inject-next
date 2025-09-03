@@ -73,15 +73,14 @@ export const UserAuthSignin = (
                             <FormGroup id="password" label="Password" srOnly={true} required={true}>
                                 <FormInput id="password" type="password" placeholder="Password" />
                             </FormGroup>
-                            <p className="small text-muted mt-5 mb-0">
-                                <a href="#" className="text-muted" data-toggle="modal" data-target="#lostPasswordModal">Password lost?</a>
+                            <p className="small mt-5 mb-0">
+                                <a href="#" data-toggle="modal" data-target="#lostPasswordModal">Password lost?</a>
                             </p>
-                            
-                            <Button type="primary" label="Sign in with email" extended={true} />
+                            { showEmail && <p className="small text-muted mt-5 mb-0">Not registered? <a href="/signup">Sign up with email</a></p> }
                         </form> }
                     </div>
 
-                    { showEmail && <p className="small text-muted mt-5 mb-0">Not registered? <a href="/signup">Sign up with email</a></p> }
+            
 
                     <p className="smaller text-muted mt-8 mb-8">
                         By clicking on "Sign in" above, you acknowledge that you have read and understood, and agree to <a href="/terms-and-conditions">Terms & Conditions</a> and <a href="/privacy-policy">Privacy Policy</a>.
