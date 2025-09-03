@@ -16,7 +16,6 @@ export interface ModalSectionAddProps {}
 export const ModalSpeekToText = ({}: ModalSectionAddProps) => {
     useEffect(() => {
         speekToText();
- 
     }, []);
     return (
         <div className="modal-dialog  modal-dialog-centered modal-dialog-scrollable" role="document">
@@ -32,29 +31,28 @@ export const ModalSpeekToText = ({}: ModalSectionAddProps) => {
                     </div>
                 </div>
                 <div className="modal-body d-flex flex-column gap-sm">
-                   
+                    <div className="d-flex flex-column">
+                        <span className="label mb-0">Transcribe voice</span>
+                    </div>
 
-                <div className="d-flex flex-column">
-                      <span className="label mb-0">Transcribe voice</span>
-                      
-                </div>
-                  
-              
-                    
                     <div id="recaller" className="bg-highlight rounded-pill px-md d-flex align-items-center w-100 gap-md">
                         <div className="small text-muted" id="timer">
                             0:00
                         </div>
                         <canvas className="flex-fill" id="visualizer" style={{ height: "54px" }}></canvas>
-                        <button id="stopBtn" className="btn  btn-sm btn-transparent" title="Arrêter">
-                            <span className="icon icon-check"></span>
-                        </button>
+                        <div className="d-flex gap-2xs">
+                            <button id="recordBtn" className="btn  btn-sm btn-transparent" title="Record">
+                                <span className="icon icon-micro"></span>
+                            </button>
+                            <button id="stopBtn" className="btn  btn-sm btn-transparent" title="Arrêter">
+                                <span className="icon icon-check"></span>
+                            </button>
+                        </div>
                     </div>
-                  
 
                     <audio id="player" controls className="bg-highlight rounded-pill  w-100 d-none"></audio>
-                      {/* <span className="small text-muted">Recordings limit  to 30 seconds</span>   */}
-                         {/* <Alert
+                    {/* <span className="small text-muted">Recordings limit  to 30 seconds</span>   */}
+                    {/* <Alert
                         buttonLabel=""
                         icon="information"
                         text="For performance reasons, we limit recordings to 30 seconds."

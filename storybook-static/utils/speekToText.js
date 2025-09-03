@@ -1,5 +1,8 @@
 export const speekToText = () => {
     $(function () {
+
+
+        
         let mediaRecorder,
             audioChunks = [],
             audioBlob;
@@ -7,7 +10,9 @@ export const speekToText = () => {
         let timerInterval,
             secondsElapsed = 0;
         const MAX_DURATION = 30;
+
         const stopBtn = document.getElementById("stopBtn");
+        const recordBtn = document.getElementById("recordBtn");
         const reRecordBtn = document.getElementById("reRecordBtn");
         const downloadBtn = document.getElementById("downloadBtn");
         const recaller = document.getElementById("recaller");
@@ -17,10 +22,10 @@ export const speekToText = () => {
         const timerDiv = document.getElementById("timer");
 
         let history = [];
-        const BAR_WIDTH = 2;
-        const BAR_SPACING = 2;
-        const SPEED = 3;
-        const AMPLIFY = 5;
+        const BAR_WIDTH = 2; // largeur des barres
+        const BAR_SPACING = 2; // espacement
+        const SPEED = 4;
+        const AMPLIFY = 5; // amplification visuelle
 
         // Canvas responsive
         function resizeCanvas() {
@@ -28,12 +33,9 @@ export const speekToText = () => {
             const newHeight = canvas.clientHeight;
             canvas.width = newWidth;
             canvas.height = newHeight;
+
             const newLength = Math.floor(canvas.width / (BAR_WIDTH + BAR_SPACING));
-            if (history.length < newLength) {
-                history = new Array(newLength - history.length).fill(0).concat(history);
-            } else if (history.length > newLength) {
-                history = history.slice(history.length - newLength);
-            }
+            history = new Array(newLength).fill(0); // recalcul propre
             ctx.clearRect(0, 0, canvas.width, canvas.height);
         }
         window.addEventListener("load", resizeCanvas);
@@ -126,7 +128,6 @@ export const speekToText = () => {
             reRecordBtn.disabled = true;
             downloadBtn.disabled = true;
             stopBtn.disabled = false;
-            
 
             mediaRecorder.ondataavailable = (e) => audioChunks.push(e.data);
             mediaRecorder.onstop = async () => {
@@ -134,20 +135,16 @@ export const speekToText = () => {
                 const audioUrl = URL.createObjectURL(audioBlob);
                 player.src = audioUrl;
 
-              
                 recaller.classList.remove("d-flex");
                 recaller.classList.add("d-none");
                 player.classList.remove("d-none");
                 player.classList.add("d-block");
-        
                 reRecordBtn.disabled = false;
                 downloadBtn.disabled = false;
+
                 clearInterval(timerInterval);
                 secondsElapsed = 0;
                 updateTimer();
-             
-
-                player.addEventListener("loadedmetadata", () => console.log("Durée totale : ", player.duration.toFixed(2), "s"), { once: true });
             };
 
             mediaRecorder.start();
@@ -158,12 +155,20 @@ export const speekToText = () => {
                 if (secondsElapsed >= MAX_DURATION && mediaRecorder.state === "recording") mediaRecorder.stop();
             }, 1000);
 
+            // 🎯 AudioContext & Analyser
             audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            if (audioCtx.state === "suspended") {
+                await audioCtx.resume();
+            }
+
             analyser = audioCtx.createAnalyser();
             source = audioCtx.createMediaStreamSource(stream);
             source.connect(analyser);
             analyser.fftSize = 256;
             dataArray = new Uint8Array(analyser.frequencyBinCount);
+
+            // stop toute animation précédente
+            if (animationId) cancelAnimationFrame(animationId);
 
             let frame = 0;
             function draw() {
@@ -172,48 +177,64 @@ export const speekToText = () => {
                 if (frame % SPEED === 0) {
                     const avg = dataArray.reduce((a, b) => a + b, 0) / dataArray.length;
                     const barHeight = (avg / 255) * canvas.height * AMPLIFY;
-                    for (let i = 0; i < history.length - 1; i++) history[i] = history[i + 1];
-                    history[history.length - 1] = barHeight;
+                    history.shift();
+                    history.push(barHeight);
                 }
                 frame++;
                 drawBars();
             }
             draw();
-      
         }
 
-        // Lancer automatiquement au chargement
+        // Tenter auto-start mais débloquer via interaction si bloqué
         window.addEventListener("load", startRecording);
-
+   
+        recordBtn.addEventListener("click",  async () => {
+            if (mediaRecorder && mediaRecorder.state === "recording") {
+              stopBtn.disabled = false;
+                 reRecordBtn.disabled = true;
+                 downloadBtn.disabled = true;
+                 resizeCanvas();
+                secondsElapsed = 0;
+                updateTimer();
+                await startRecording();
+            }
+        });
         // Bouton arrêter
-        stopBtn.addEventListener("click", () => {
-            if (mediaRecorder && mediaRecorder.state === "recording") mediaRecorder.stop();
-            stopBtn.disabled = true;
-            cancelAnimationFrame(animationId);
-            if (audioCtx) audioCtx.close();
-            clearInterval(timerInterval);
-            secondsElapsed = 0;
-            updateTimer();
+        stopBtn.addEventListener("click",  async () => {
+            if (mediaRecorder && mediaRecorder.state === "recording") {
+                mediaRecorder.stop();
+                stopBtn.disabled = true;
+                cancelAnimationFrame(animationId);
+                if (audioCtx) audioCtx.close();
+                clearInterval(timerInterval);
+                secondsElapsed = 0;
+                updateTimer();
+            }
+        //    else {
+        //         stopBtn.disabled = false;
+        //         reRecordBtn.disabled = true;
+        //         downloadBtn.disabled = true;
+        //         resizeCanvas();
+        //         secondsElapsed = 0;
+        //         updateTimer();
+        //         await startRecording();
+        //     }
+        
         });
 
         // Réenregistrer
         reRecordBtn.addEventListener("click", async () => {
-            // Réinitialiser UI et canvas
             recaller.classList.remove("d-none");
             recaller.classList.add("d-flex");
             player.classList.remove("d-block");
             player.classList.add("d-none");
-     
             stopBtn.disabled = false;
             reRecordBtn.disabled = true;
             downloadBtn.disabled = true;
-            history.fill(0);
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-          
+            resizeCanvas();
             secondsElapsed = 0;
             updateTimer();
-
-            // Démarrer l'enregistrement automatiquement
             await startRecording();
         });
 
