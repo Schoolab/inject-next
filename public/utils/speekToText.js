@@ -1,5 +1,8 @@
 export const speekToText = () => {
-    $(function () {
+     $(function () {
+
+        
+        
         let mediaRecorder,
             audioChunks = [],
             audioBlob;
@@ -117,11 +120,14 @@ export const speekToText = () => {
 
         // Démarrer enregistrement
         async function startRecording() {
+
             const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
             mediaRecorder = new MediaRecorder(stream);
             audioChunks = [];
+            resizeCanvas();
             secondsElapsed = 0;
             updateTimer();
+            recordBtn.disabled = true;
             reRecordBtn.disabled = true;
             downloadBtn.disabled = true;
             stopBtn.disabled = false;
@@ -183,22 +189,10 @@ export const speekToText = () => {
             draw();
         }
 
-        // Tenter auto-start mais débloquer via interaction si bloqué
-        window.addEventListener("load", startRecording);
+        recordBtn.addEventListener("click",startRecording);
 
-        recordBtn.addEventListener("click", async () => {
-           
-            stopBtn.disabled = false;
-            reRecordBtn.disabled = true;
-            downloadBtn.disabled = true;
-            resizeCanvas();
-            secondsElapsed = 0;
-            updateTimer();
-            await startRecording();
-            
-        });
         // Bouton arrêter
-        stopBtn.addEventListener("click", async () => {
+        stopBtn.addEventListener("click", () => {
             if (mediaRecorder && mediaRecorder.state === "recording") {
                 mediaRecorder.stop();
                 stopBtn.disabled = true;
@@ -211,19 +205,13 @@ export const speekToText = () => {
         });
 
         // Réenregistrer
-        reRecordBtn.addEventListener("click", async () => {
+        reRecordBtn.addEventListener("click",  () => {
             recaller.classList.remove("d-none");
             recaller.classList.add("d-flex");
             player.classList.remove("d-block");
             player.classList.add("d-none");
-            stopBtn.disabled = false;
-            reRecordBtn.disabled = true;
-            downloadBtn.disabled = true;
-            resizeCanvas();
-            secondsElapsed = 0;
-            updateTimer();
-            await startRecording();
-        });
+            startRecording();
+        })
 
         // Télécharger
         downloadBtn.addEventListener("click", () => {
@@ -236,5 +224,8 @@ export const speekToText = () => {
             a.click();
             document.body.removeChild(a);
         });
+        // auto-start 
+        startRecording();
     });
+    
 };
