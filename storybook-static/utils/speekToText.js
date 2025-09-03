@@ -1,8 +1,5 @@
 export const speekToText = () => {
     $(function () {
-
-
-        
         let mediaRecorder,
             audioChunks = [],
             audioBlob;
@@ -188,20 +185,20 @@ export const speekToText = () => {
 
         // Tenter auto-start mais débloquer via interaction si bloqué
         window.addEventListener("load", startRecording);
-   
-        recordBtn.addEventListener("click",  async () => {
-            if (mediaRecorder && mediaRecorder.state === "recording") {
-              stopBtn.disabled = false;
-                 reRecordBtn.disabled = true;
-                 downloadBtn.disabled = true;
-                 resizeCanvas();
-                secondsElapsed = 0;
-                updateTimer();
-                await startRecording();
-            }
+
+        recordBtn.addEventListener("click", async () => {
+           
+            stopBtn.disabled = false;
+            reRecordBtn.disabled = true;
+            downloadBtn.disabled = true;
+            resizeCanvas();
+            secondsElapsed = 0;
+            updateTimer();
+            await startRecording();
+            
         });
         // Bouton arrêter
-        stopBtn.addEventListener("click",  async () => {
+        stopBtn.addEventListener("click", async () => {
             if (mediaRecorder && mediaRecorder.state === "recording") {
                 mediaRecorder.stop();
                 stopBtn.disabled = true;
@@ -211,16 +208,6 @@ export const speekToText = () => {
                 secondsElapsed = 0;
                 updateTimer();
             }
-        //    else {
-        //         stopBtn.disabled = false;
-        //         reRecordBtn.disabled = true;
-        //         downloadBtn.disabled = true;
-        //         resizeCanvas();
-        //         secondsElapsed = 0;
-        //         updateTimer();
-        //         await startRecording();
-        //     }
-        
         });
 
         // Réenregistrer
