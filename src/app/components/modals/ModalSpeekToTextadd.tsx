@@ -13,10 +13,8 @@ import { Alert } from "../alerts/Alert";
 
 export interface ModalSectionAddProps {}
 
-export const ModalSpeekToText = ({}: ModalSectionAddProps) => {
-    useEffect(() => {
-        speekToText();
-    }, []);
+export const ModalSpeekToTextadd = ({}: ModalSectionAddProps) => {
+
     return (
         <div className="modal-dialog  modal-dialog-centered modal-dialog-scrollable" role="document">
             <div className="modal-content">
@@ -34,31 +32,10 @@ export const ModalSpeekToText = ({}: ModalSectionAddProps) => {
                     <div className="d-flex flex-column">
                         <span className="label mb-0">Transcribe voice</span>
                     </div>
+                    <div className="bg-highlight rounded overflow-scroll p-md responseText">Aliquam et tellus felis. Donec lorem leo, porttitor in nibh non, sodales efficitur tellus. Phasellus sed tincidunt risus. Duis enim mauris, finibus eget orci bibendum, sodales semper velit. Cras pulvinar neque vitae velit gravida, pharetra ultrices libero lobortis. Ut cursus, diam id consequat semper, orci sapien imperdiet leo, sit amet volutpat ligula est sit amet ligula. Nunc quis magna erat.</div>
+              
 
-                    <div id="recaller" className="bg-highlight rounded-pill px-md d-flex align-items-center w-100 gap-md">
-                        <div className="small text-muted" id="timer">
-                            0:00
-                        </div>
-                        <canvas className="flex-fill" id="visualizer" style={{ height: "54px" }}></canvas>
-                        <div className="d-flex gap-2xs">
-                            {/* <button id="recordBtn" className="btn  btn-sm btn-transparent" title="Record">
-                                <span className="icon icon-micro"></span>
-                            </button> */}
-                            <button id="stopBtn" className="btn  btn-sm btn-transparent" title="Arrêter">
-                                <span className="icon icon-check"></span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <audio id="player" controls className="bg-highlight rounded-pill  w-100 d-none"></audio>
-                    {/* <span className="small text-muted">Recordings limit  to 30 seconds</span>   */}
-                    {/* <Alert
-                        buttonLabel=""
-                        icon="information"
-                        text="For performance reasons, we limit recordings to 30 seconds."
-                        title=""
-                        type="assistant"
-                    />  */}
+      
                 </div>
 
                 <div className="modal-footer border-top">
@@ -66,15 +43,13 @@ export const ModalSpeekToText = ({}: ModalSectionAddProps) => {
                         Cancel
                     </button>
                     <div className="d-flex gap-xs ml-auto">
-                         <button id="recordBtn" className="btn btn-lg btn-default" title="Regenerate">
+                        <button id="recordBtn" className="btn btn-lg btn-default" title="Regenerate">
                             <span className="icon icon-micro"></span>
                         </button>
                         <button id="reRecordBtn" className="btn btn-lg btn-default reloadBtn" title="Regenerate">
                             <span className="icon icon-reload"></span>
                         </button>
-                        {/* <button className="btn btn-lg btn-default copyToClipboard" title="Copy" data-mode="html">
-                            <span className="icon icon-copy"></span>
-                        </button> */}
+                    
                         <button id="downloadBtn" className="btn btn-lg btn-primary applyBtn">
                             <span>Apply</span>
                         </button>

@@ -189,13 +189,20 @@ export const speekToText = () => {
             draw();
         }
 
-        recordBtn.addEventListener("click",startRecording);
+        recordBtn.addEventListener("click",  () => {
+            recaller.classList.remove("d-none");
+            recaller.classList.add("d-flex");
+            player.classList.remove("d-block");
+            player.classList.add("d-none");
+            startRecording();
+        })
 
         // Bouton arrêter
         stopBtn.addEventListener("click", () => {
             if (mediaRecorder && mediaRecorder.state === "recording") {
                 mediaRecorder.stop();
                 stopBtn.disabled = true;
+                recordBtn.disabled = false;
                 cancelAnimationFrame(animationId);
                 if (audioCtx) audioCtx.close();
                 clearInterval(timerInterval);
