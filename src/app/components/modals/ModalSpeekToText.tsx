@@ -41,9 +41,9 @@ export const ModalSpeekToText = ({}: ModalSectionAddProps) => {
                         </div>
                         <canvas className="flex-fill" id="visualizer" style={{ height: "54px" }}></canvas>
                         <div className="d-flex gap-2xs">
-                            {/* <button id="recordBtn" className="btn  btn-sm btn-transparent" title="Record">
+                            <button id="recordBtn" className="btn  btn-sm btn-transparent" title="Record">
                                 <span className="icon icon-micro"></span>
-                            </button> */}
+                            </button>
                             <button id="stopBtn" className="btn  btn-sm btn-transparent" title="Arrêter">
                                 <span className="icon icon-check"></span>
                             </button>
@@ -65,13 +65,17 @@ export const ModalSpeekToText = ({}: ModalSectionAddProps) => {
                     <button className="btn btn-lg btn-default" data-dismiss="modal">
                         Cancel
                     </button>
+                     <button id="reRecordBtn" className="btn btn-lg btn-default">
+                        Restart
+                    </button>
+                  
                     <div className="d-flex gap-xs ml-auto">
-                         <button id="recordBtn" className="btn btn-lg btn-default" title="Regenerate">
+                         {/* <button id="recordBtn" className="btn btn-lg btn-default" title="Record">
                             <span className="icon icon-micro"></span>
-                        </button>
-                        <button id="reRecordBtn" className="btn btn-lg btn-default reloadBtn" title="Regenerate">
+                        </button> */}
+                        {/* <button id="reRecordBtn" className="btn btn-lg btn-default reloadBtn" title="Regenerate">
                             <span className="icon icon-reload"></span>
-                        </button>
+                        </button> */}
                         {/* <button className="btn btn-lg btn-default copyToClipboard" title="Copy" data-mode="html">
                             <span className="icon icon-copy"></span>
                         </button> */}
