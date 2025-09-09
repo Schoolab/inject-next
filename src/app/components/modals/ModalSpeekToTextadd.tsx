@@ -41,8 +41,8 @@ export const ModalSpeekToTextadd = ({}: ModalSectionAddProps) => {
                         id="description"
                         placeholder="Write your text here..."
                     />
-                    <button id="recordBtn" className="btn btn-lg btn-default">
-                        <span className="icon icon-micro"></span> continue recording
+                    <button id="addRecordBtn" className="btn btn-lg btn-default">
+                        <span className="icon icon-micro"></span> Continue recording
                     </button>
                 </div>
 

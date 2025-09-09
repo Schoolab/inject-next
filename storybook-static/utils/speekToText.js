@@ -188,6 +188,7 @@ export const speekToText = () => {
             }
             draw();
         }
+        
 
         recordBtn.addEventListener("click",  () => {
             recaller.classList.remove("d-none");
