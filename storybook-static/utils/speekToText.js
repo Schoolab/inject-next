@@ -36,9 +36,9 @@ export const speekToText = () => {
         function viewrecorderOnly(){
             recaller.classList.remove("d-none");
             recaller.classList.add("d-flex");
-            textResult.classList.remove("d-block");
+            textResult.classList.remove("d-inline-flex");
             textResult.classList.add("d-none");
-            addRecordBtn.classList.remove("d-block");
+            addRecordBtn.classList.remove("d-inline-flex");
             addRecordBtn.classList.add("d-none");
             reRecordBtn.disabled = true;
             downloadBtn.disabled = true;
@@ -48,7 +48,7 @@ export const speekToText = () => {
         function viewrecorder(){
             recaller.classList.remove("d-none");
             recaller.classList.add("d-flex");
-            addRecordBtn.classList.remove("d-block");
+            addRecordBtn.classList.remove("d-inline-flex");
             addRecordBtn.classList.add("d-none");
             reRecordBtn.disabled = true;
             downloadBtn.disabled = true;
@@ -61,9 +61,9 @@ export const speekToText = () => {
             recaller.classList.remove("d-flex");
             recaller.classList.add("d-none");
             textResult.classList.remove("d-none");
-            textResult.classList.add("d-block");
+            textResult.classList.add("d-inline-flex");
             addRecordBtn.classList.remove("d-none");
-            addRecordBtn.classList.add("d-block");
+            addRecordBtn.classList.add("d-inline-flex");
         }
         // Canvas responsive
         function resizeCanvas() {
@@ -172,7 +172,8 @@ export const speekToText = () => {
                 // player.src = audioUrl;
 
                 //text resutl
-                textResult.value += "\n \n Duis enim mauris, finibus eget orci bibendum, sodales semper velit. Cras pulvinar neque vitae velit gravida, pharetra ultrices libero lobortis."
+                textResult.value += "\n \nDuis enim mauris, finibus eget orci bibendum, sodales semper velit. Cras pulvinar neque vitae velit gravida, pharetra ultrices libero lobortis."
+                textResult.scrollTop = textResult.scrollHeight;
                 viewtextResult();
            
                 clearInterval(timerInterval);
