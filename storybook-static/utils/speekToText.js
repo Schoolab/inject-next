@@ -12,11 +12,12 @@ export const speekToText = () => {
         const MAX_DURATION = 30;
 
         const stopBtn = document.getElementById("stopBtn");
-        const recordBtn = document.getElementById("recordBtn");
+        
         const reRecordBtn = document.getElementById("reRecordBtn");
         const downloadBtn = document.getElementById("downloadBtn");
         const recaller = document.getElementById("recaller");
-        const player = document.getElementById("player");
+        const textResult = document.getElementById("textResult");
+        const addRecordBtn = document.getElementById("addRecordBtn");
         const canvas = document.getElementById("visualizer");
         const ctx = canvas.getContext("2d");
         const timerDiv = document.getElementById("timer");
@@ -27,6 +28,43 @@ export const speekToText = () => {
         const SPEED = 4;
         const AMPLIFY = 5; // amplification visuelle
 
+        //init
+        function init(){
+            viewrecorderOnly();
+            startRecording();
+        }
+        function viewrecorderOnly(){
+            recaller.classList.remove("d-none");
+            recaller.classList.add("d-flex");
+            textResult.classList.remove("d-block");
+            textResult.classList.add("d-none");
+            addRecordBtn.classList.remove("d-block");
+            addRecordBtn.classList.add("d-none");
+            reRecordBtn.disabled = true;
+            downloadBtn.disabled = true;
+            stopBtn.disabled = false;
+        }
+
+        function viewrecorder(){
+            recaller.classList.remove("d-none");
+            recaller.classList.add("d-flex");
+            addRecordBtn.classList.remove("d-block");
+            addRecordBtn.classList.add("d-none");
+            reRecordBtn.disabled = true;
+            downloadBtn.disabled = true;
+            stopBtn.disabled = false;
+        }
+
+        function viewtextResult(){
+            reRecordBtn.disabled = false;
+            downloadBtn.disabled = false;
+            recaller.classList.remove("d-flex");
+            recaller.classList.add("d-none");
+            textResult.classList.remove("d-none");
+            textResult.classList.add("d-block");
+            addRecordBtn.classList.remove("d-none");
+            addRecordBtn.classList.add("d-block");
+        }
         // Canvas responsive
         function resizeCanvas() {
             const newWidth = canvas.clientWidth;
@@ -118,33 +156,25 @@ export const speekToText = () => {
             });
         }
 
+
         // Démarrer enregistrement
         async function startRecording() {
-
             const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
             mediaRecorder = new MediaRecorder(stream);
             audioChunks = [];
             resizeCanvas();
             secondsElapsed = 0;
             updateTimer();
-            recordBtn.disabled = true;
-            reRecordBtn.disabled = true;
-            downloadBtn.disabled = true;
-            stopBtn.disabled = false;
-
             mediaRecorder.ondataavailable = (e) => audioChunks.push(e.data);
             mediaRecorder.onstop = async () => {
                 audioBlob = await blobToWav(audioChunks);
                 const audioUrl = URL.createObjectURL(audioBlob);
-                player.src = audioUrl;
+                // player.src = audioUrl;
 
-                recaller.classList.remove("d-flex");
-                recaller.classList.add("d-none");
-                player.classList.remove("d-none");
-                player.classList.add("d-block");
-                reRecordBtn.disabled = false;
-                downloadBtn.disabled = false;
-
+                //text resutl
+                textResult.value += "\n \n Duis enim mauris, finibus eget orci bibendum, sodales semper velit. Cras pulvinar neque vitae velit gravida, pharetra ultrices libero lobortis."
+                viewtextResult();
+           
                 clearInterval(timerInterval);
                 secondsElapsed = 0;
                 updateTimer();
@@ -189,21 +219,11 @@ export const speekToText = () => {
             draw();
         }
         
-
-        recordBtn.addEventListener("click",  () => {
-            recaller.classList.remove("d-none");
-            recaller.classList.add("d-flex");
-            player.classList.remove("d-block");
-            player.classList.add("d-none");
-            startRecording();
-        })
-
         // Bouton arrêter
         stopBtn.addEventListener("click", () => {
             if (mediaRecorder && mediaRecorder.state === "recording") {
                 mediaRecorder.stop();
                 stopBtn.disabled = true;
-                recordBtn.disabled = false;
                 cancelAnimationFrame(animationId);
                 if (audioCtx) audioCtx.close();
                 clearInterval(timerInterval);
@@ -212,12 +232,16 @@ export const speekToText = () => {
             }
         });
 
+        addRecordBtn.addEventListener("click",  () => {
+            viewrecorder();
+            
+            startRecording();
+        })
+
         // Réenregistrer
         reRecordBtn.addEventListener("click",  () => {
-            recaller.classList.remove("d-none");
-            recaller.classList.add("d-flex");
-            player.classList.remove("d-block");
-            player.classList.add("d-none");
+            viewrecorderOnly();
+            textResult.value = "Duis enim mauris, finibus eget orci bibendum, sodales semper velit. Cras pulvinar neque vitae velit gravida, pharetra ultrices libero lobortis."
             startRecording();
         })
 
@@ -232,8 +256,11 @@ export const speekToText = () => {
             a.click();
             document.body.removeChild(a);
         });
+
         // auto-start 
-        startRecording();
+     
+        init();
+     
     });
     
 };
