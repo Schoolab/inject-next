@@ -107,7 +107,7 @@ export const adminHome = () => {
                                         <span className="icon icon-alert is-sm"></span>
                                         <h4>My initiatives with missing data</h4>
                                     </div>
-                                    <Button link="#" size="sm" label="View All My Initiatives" type="default" />
+                                    <Button link="#" size="sm" label="View all my initiatives" type="default" />
                                 </div>
                              
                                 <p>The following initiatives require attention for missing data and experience report completion:</p>
