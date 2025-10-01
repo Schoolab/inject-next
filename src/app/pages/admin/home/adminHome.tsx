@@ -27,6 +27,7 @@ import { CardAskAI } from "@/app/components/cards/CardAskAI";
 import { ItemResource } from "@/app/components/items/ItemResource";
 import { ProgressBar } from "@/app/components/progress/bar/ProgressBar";
 import { StatCard } from "@/app/components/stat-cards/StatCard";
+import { Progress } from "@/app/components/progress/Progress";
 
 export const adminHome = () => {
     useEffect(() => {
@@ -47,6 +48,17 @@ export const adminHome = () => {
                 showSubnav={false}
             >
                 <Section>
+                    <div className="row">
+                        <div className="col-12 mb-md">
+                            <div className="w-100 message-composer-row align-items-center ">
+                                <span className="icon icon-search is-sm ml-md text-muted"></span>
+                                <textarea className="message-composer-input form-control pl-0" id="message_light_body" name="message_light[body]" placeholder="Search…"></textarea>
+                                {/* <a href="#" className="btn btn-transparent btn-icon message-composer-action" role="button"><span className="icon icon-send"></span></a> */}
+                            </div>
+                        </div>
+                    </div>
+                </Section>
+                <Section title="Initiatives">
                     <div className="row">
                         <div className="col-12 col-lg-6 mb-md">
                             <div className="card is-linked p-md d-flex flex-column gap-md h-100 justify-content-between">
@@ -82,7 +94,390 @@ export const adminHome = () => {
                             <StatCard link="#" number="22" caption="Ongoing programs"></StatCard>
                         </div>
                     </div>
+                </Section>
+                <Section title="My Initiatives">
                     <div className="row">
+                        <div className="col-12 mb-md">
+                            <div className="card is-highlighted p-md d-flex flex-column gap-md h-100 justify-content-between">
+                                <div className="d-flex align-items-center gap-2xs">
+                                    <span className="icon icon-alert is-sm"></span>
+                                    <h4>My initiatives with missing data</h4>
+                                </div>
+                                <p>The following programs require attention for missing data and experience report completion:</p>
+
+                                <div className="items">
+                                    <div className="item is-linked is-bordered">
+                                        <div className="item-row">
+                                            <div className="item-row align-items-center">
+                                                <div className="icon icon--program">
+                                                    <span>IN</span>
+                                                </div>
+                                                <div className="item-content">
+                                                    <a href="#" className="item-title stretched-link">
+                                                        Initiative.name
+                                                    </a>
+                                                    <ul className="list-inline list-dotted text-muted mb-none">
+                                                        <li className="list-inline-item small">Customer</li>
+                                                        <li className="list-inline-item small">start date</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="d-flex gap-2xs align-items-center">
+                                                    <Progress percentage={30} size="sm" />
+                                                    <span className="text-muted small">33% Data</span>
+                                                </div>
+                                                <div className="d-flex gap-2xs align-items-center">
+                                                    <Progress percentage={30} size="sm" />
+                                                    <span className="text-muted small">1/3 ER</span>
+                                                </div>
+                                                <Button link="#" addClass="stretched-link" size="sm" label="Complete" type="brand-primary" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="item is-linked is-bordered">
+                                        <div className="item-row">
+                                            <div className="item-row align-items-center">
+                                                <div className="icon icon--program">
+                                                    <span>IN</span>
+                                                </div>
+                                                <div className="item-content">
+                                                    <a href="#" className="item-title stretched-link">
+                                                        Initiative.name
+                                                    </a>
+                                                    <ul className="list-inline list-dotted text-muted mb-none">
+                                                        <li className="list-inline-item small">Customer</li>
+                                                        <li className="list-inline-item small">start date</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="d-flex gap-2xs align-items-center">
+                                                    <Progress percentage={30} size="sm" />
+                                                    <span className="text-muted small">33% Data</span>
+                                                </div>
+                                                <div className="d-flex gap-2xs align-items-center">
+                                                    <Progress percentage={30} size="sm" />
+                                                    <span className="text-muted small">1/3 ER</span>
+                                                </div>
+                                                <Button link="#" addClass="stretched-link" size="sm" label="Complete" type="brand-primary" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="item is-linked is-bordered">
+                                        <div className="item-row">
+                                            <div className="item-row align-items-center">
+                                                <div className="icon icon--program">
+                                                    <span>IN</span>
+                                                </div>
+                                                <div className="item-content">
+                                                    <a href="#" className="item-title stretched-link">
+                                                        Initiative.name
+                                                    </a>
+                                                    <ul className="list-inline list-dotted text-muted mb-none">
+                                                        <li className="list-inline-item small">Customer</li>
+                                                        <li className="list-inline-item small">start date</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="d-flex gap-2xs align-items-center">
+                                                    <Progress percentage={30} size="sm" />
+                                                    <span className="text-muted small">33% Data</span>
+                                                </div>
+                                                <div className="d-flex gap-2xs align-items-center">
+                                                    <Progress percentage={30} size="sm" />
+                                                    <span className="text-muted small">1/3 ER</span>
+                                                </div>
+                                                <Button link="#" addClass="stretched-link" size="sm" label="Complete" type="brand-primary" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="d-flex gap-xs">
+                                    <Button addClass="flex-fill" label="View all" type="default" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-12 col-lg-6 mb-md">
+                            <div className="d-flex align-items-center mb-md">
+                                <h4 className="flex-fill ">My last created initiatives</h4>
+                                <Button link="#" size="sm" label="view all" type="default" />
+                            </div>
+                            <div className="items">
+                                <div className="item is-linked is-bordered">
+                                    <div className="item-row">
+                                        <div className="item-row align-items-center">
+                                            <div className="icon icon--program">
+                                                <span>IN</span>
+                                            </div>
+                                            <div className="item-content">
+                                                <a href="#" className="item-title stretched-link">
+                                                    Initiative.name
+                                                </a>
+                                                <ul className="list-inline list-dotted text-muted mb-none">
+                                                    <li className="list-inline-item small">Customer</li>
+                                                    <li className="list-inline-item small">start date</li>
+                                                </ul>
+                                            </div>
+                                            <div className="d-flex gap-2xs align-items-center">
+                                                <Progress percentage={30} size="sm" />
+                                                <span className="text-muted small">33% Data</span>
+                                            </div>
+                                            <div className="d-flex gap-2xs align-items-center">
+                                                <Progress percentage={30} size="sm" />
+                                                <span className="text-muted small">1/3 ER</span>
+                                            </div>
+                                        </div>
+                                        <div className="item-options">
+                                            <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                <span className="icon icon-options" />
+                                            </a>
+                                            <div className="dropdown-menu dropdown-menu-right">
+                                                <a href="#" className="dropdown-item">
+                                                    Manage
+                                                </a>
+                                                <a href="#" className="dropdown-item">
+                                                    Workspace
+                                                </a>
+                                                <div className="dropdown-divider" />
+                                                <a href="#" className="dropdown-item">
+                                                    <span className="dropdown-item--icon icon icon-pencil" />
+                                                    <span className="dropdown-item--label">Edit</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="item is-linked is-bordered">
+                                    <div className="item-row">
+                                        <div className="item-row align-items-center">
+                                            <div className="icon icon--program">
+                                                <span>IN</span>
+                                            </div>
+                                            <div className="item-content">
+                                                <a href="#" className="item-title stretched-link">
+                                                    Initiative.name
+                                                </a>
+                                                <ul className="list-inline list-dotted text-muted mb-none">
+                                                    <li className="list-inline-item small">Customer</li>
+                                                    <li className="list-inline-item small">start date</li>
+                                                </ul>
+                                            </div>
+                                            <div className="d-flex gap-2xs align-items-center">
+                                                <Progress percentage={30} size="sm" />
+                                                <span className="text-muted small">33% Data</span>
+                                            </div>
+                                            <div className="d-flex gap-2xs align-items-center">
+                                                <Progress percentage={30} size="sm" />
+                                                <span className="text-muted small">1/3 ER</span>
+                                            </div>
+                                        </div>
+                                        <div className="item-options">
+                                            <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                <span className="icon icon-options" />
+                                            </a>
+                                            <div className="dropdown-menu dropdown-menu-right">
+                                                <a href="#" className="dropdown-item">
+                                                    Manage
+                                                </a>
+                                                <a href="#" className="dropdown-item">
+                                                    Workspace
+                                                </a>
+                                                <div className="dropdown-divider" />
+                                                <a href="#" className="dropdown-item">
+                                                    <span className="dropdown-item--icon icon icon-pencil" />
+                                                    <span className="dropdown-item--label">Edit</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="item is-linked is-bordered">
+                                    <div className="item-row">
+                                        <div className="item-row align-items-center">
+                                            <div className="icon icon--program">
+                                                <span>IN</span>
+                                            </div>
+                                            <div className="item-content">
+                                                <a href="#" className="item-title stretched-link">
+                                                    Initiative.name
+                                                </a>
+                                                <ul className="list-inline list-dotted text-muted mb-none">
+                                                    <li className="list-inline-item small">Customer</li>
+                                                    <li className="list-inline-item small">start date</li>
+                                                </ul>
+                                            </div>
+                                            <div className="d-flex gap-2xs align-items-center">
+                                                <Progress percentage={30} size="sm" />
+                                                <span className="text-muted small">33% Data</span>
+                                            </div>
+                                            <div className="d-flex gap-2xs align-items-center">
+                                                <Progress percentage={30} size="sm" />
+                                                <span className="text-muted small">1/3 ER</span>
+                                            </div>
+                                        </div>
+                                        <div className="item-options">
+                                            <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                <span className="icon icon-options" />
+                                            </a>
+                                            <div className="dropdown-menu dropdown-menu-right">
+                                                <a href="#" className="dropdown-item">
+                                                    Manage
+                                                </a>
+                                                <a href="#" className="dropdown-item">
+                                                    Workspace
+                                                </a>
+                                                <div className="dropdown-divider" />
+                                                <a href="#" className="dropdown-item">
+                                                    <span className="dropdown-item--icon icon icon-pencil" />
+                                                    <span className="dropdown-item--label">Edit</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-6 mb-md">
+                            <div className="d-flex align-items-center mb-md">
+                                <h4 className="flex-fill ">My last closed initiatives</h4>
+                                <Button link="#" size="sm" label="view all" type="default" />
+                            </div>
+                            <div className="items">
+                                <div className="item is-linked is-bordered">
+                                    <div className="item-row">
+                                        <div className="item-row align-items-center">
+                                            <div className="icon icon--program">
+                                                <span>IN</span>
+                                            </div>
+                                            <div className="item-content">
+                                                <a href="#" className="item-title stretched-link">
+                                                    Initiative.name
+                                                </a>
+                                                <ul className="list-inline list-dotted text-muted mb-none">
+                                                    <li className="list-inline-item small">Customer</li>
+                                                    <li className="list-inline-item small">start date</li>
+                                                </ul>
+                                            </div>
+                                            <div className="d-flex gap-2xs align-items-center">
+                                                <Progress percentage={30} size="sm" />
+                                                <span className="text-muted small">33% Data</span>
+                                            </div>
+                                            <div className="d-flex gap-2xs align-items-center">
+                                                <Progress percentage={30} size="sm" />
+                                                <span className="text-muted small">1/3 ER</span>
+                                            </div>
+                                        </div>
+                                        <div className="item-options">
+                                            <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                <span className="icon icon-options" />
+                                            </a>
+                                            <div className="dropdown-menu dropdown-menu-right">
+                                                <a href="#" className="dropdown-item">
+                                                    Manage
+                                                </a>
+                                                <a href="#" className="dropdown-item">
+                                                    Workspace
+                                                </a>
+                                                <div className="dropdown-divider" />
+                                                <a href="#" className="dropdown-item">
+                                                    <span className="dropdown-item--icon icon icon-pencil" />
+                                                    <span className="dropdown-item--label">Edit</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="item is-linked is-bordered">
+                                    <div className="item-row">
+                                        <div className="item-row align-items-center">
+                                            <div className="icon icon--program">
+                                                <span>IN</span>
+                                            </div>
+                                            <div className="item-content">
+                                                <a href="#" className="item-title stretched-link">
+                                                    Initiative.name
+                                                </a>
+                                                <ul className="list-inline list-dotted text-muted mb-none">
+                                                    <li className="list-inline-item small">Customer</li>
+                                                    <li className="list-inline-item small">start date</li>
+                                                </ul>
+                                            </div>
+                                            <div className="d-flex gap-2xs align-items-center">
+                                                <Progress percentage={30} size="sm" />
+                                                <span className="text-muted small">33% Data</span>
+                                            </div>
+                                            <div className="d-flex gap-2xs align-items-center">
+                                                <Progress percentage={30} size="sm" />
+                                                <span className="text-muted small">1/3 ER</span>
+                                            </div>
+                                        </div>
+                                        <div className="item-options">
+                                            <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                <span className="icon icon-options" />
+                                            </a>
+                                            <div className="dropdown-menu dropdown-menu-right">
+                                                <a href="#" className="dropdown-item">
+                                                    Manage
+                                                </a>
+                                                <a href="#" className="dropdown-item">
+                                                    Workspace
+                                                </a>
+                                                <div className="dropdown-divider" />
+                                                <a href="#" className="dropdown-item">
+                                                    <span className="dropdown-item--icon icon icon-pencil" />
+                                                    <span className="dropdown-item--label">Edit</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="item is-linked is-bordered">
+                                    <div className="item-row">
+                                        <div className="item-row align-items-center">
+                                            <div className="icon icon--program">
+                                                <span>IN</span>
+                                            </div>
+                                            <div className="item-content">
+                                                <a href="#" className="item-title stretched-link">
+                                                    Initiative.name
+                                                </a>
+                                                <ul className="list-inline list-dotted text-muted mb-none">
+                                                    <li className="list-inline-item small">Customer</li>
+                                                    <li className="list-inline-item small">start date</li>
+                                                </ul>
+                                            </div>
+                                            <div className="d-flex gap-2xs align-items-center">
+                                                <Progress percentage={30} size="sm" />
+                                                <span className="text-muted small">33% Data</span>
+                                            </div>
+                                            <div className="d-flex gap-2xs align-items-center">
+                                                <Progress percentage={30} size="sm" />
+                                                <span className="text-muted small">1/3 ER</span>
+                                            </div>
+                                        </div>
+                                        <div className="item-options">
+                                            <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                                                <span className="icon icon-options" />
+                                            </a>
+                                            <div className="dropdown-menu dropdown-menu-right">
+                                                <a href="#" className="dropdown-item">
+                                                    Manage
+                                                </a>
+                                                <a href="#" className="dropdown-item">
+                                                    Workspace
+                                                </a>
+                                                <div className="dropdown-divider" />
+                                                <a href="#" className="dropdown-item">
+                                                    <span className="dropdown-item--icon icon icon-pencil" />
+                                                    <span className="dropdown-item--label">Edit</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className="row">
                         <div className="col-12 col-lg-6 mb-md">
                             <div className="card p-md d-flex flex-column gap-md">
                                 <div className="d-flex align-items-center">
@@ -153,16 +548,13 @@ export const adminHome = () => {
                                                             </a>
                                                             <div className="dropdown-menu dropdown-menu-right">
                                                                 <a href="#" className="dropdown-item">
-                                                                    {" "}
-                                                                    Data{" "}
+                                                                    Data
                                                                 </a>
                                                                 <a href="#" className="dropdown-item">
-                                                                    {" "}
-                                                                    Manage{" "}
+                                                                    Manage
                                                                 </a>
                                                                 <a href="#" className="dropdown-item">
-                                                                    {" "}
-                                                                    Workspace{" "}
+                                                                    Workspace
                                                                 </a>
                                                                 <div className="dropdown-divider" />
                                                                 <a href="#" className="dropdown-item">
@@ -714,6 +1106,51 @@ export const adminHome = () => {
                                     </table>
                                 </div>
                             </div>
+                        </div>
+                    </div> */}
+                </Section>
+                <Section title="Feedbacks">
+                    <div className="cq">
+            
+                        <div className="cq-12 cq-lg-6">
+                            <CardFeed
+                                from="Initiative.name"
+                                
+                                author="User.name"
+                                metas={[{ label: "Program Manager, Schoolab" }]}
+                                content={`<h4>Feedback.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p><p class="p-0 small">NPS:</p>`}
+                                readMore={false}
+                                isFooterActions={false}
+                                isTitleActions={false}
+                            >
+                                <Nps isDisabled={true}></Nps>
+                            </CardFeed>
+                        </div>
+                        <div className="cq-12 cq-lg-6">
+                            <CardFeed
+                                from="Initiative.name"
+                                author="User.name"
+                                metas={[{ label: "Program Manager, Schoolab" }]}
+                                content={`<h4>Feedback.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p><p class="p-0 small">NPS:</p>`}
+                                readMore={false}
+                                isFooterActions={false}
+                                isTitleActions={false}
+                            >
+                                <Nps isDisabled={true}></Nps>
+                            </CardFeed>
+                        </div>
+                    </div>
+                </Section>
+                <Section title="Verbatims">
+                    <div className="cq">
+                        <div className="cq-12 cq-lg-4">
+                            <CardFeed from="Initiative.name" author="User.name" metas={[{ label: "Program Manager, Schoolab" }]} content={`<h4>Verbatim.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p>`} readMore={false} isFooterActions={false} isTitleActions={false}></CardFeed>
+                        </div>
+                        <div className="cq-12 cq-lg-4">
+                            <CardFeed from="Initiative.name" author="User.name" metas={[{ label: "Program Manager, Schoolab" }]} content={`<h4>Verbatim.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p>`} readMore={false} isFooterActions={false} isTitleActions={false}></CardFeed>
+                        </div>
+                        <div className="cq-12 cq-lg-4">
+                            <CardFeed from="Initiative.name" author="User.name" metas={[{ label: "Program Manager, Schoolab" }]} content={`<h4>Verbatim.title</h4><p>As we’re reaching the end of our mission together, I wanted to thank you personally for the collaboration and the trust you’ve placed in us.</p>`} readMore={false} isFooterActions={false} isTitleActions={false}></CardFeed>
                         </div>
                     </div>
                 </Section>

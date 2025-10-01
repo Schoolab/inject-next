@@ -1,8 +1,5 @@
 export const speekToText = () => {
-     $(function () {
-
-        
-        
+    $(function () {
         let mediaRecorder,
             audioChunks = [],
             audioBlob;
@@ -12,7 +9,7 @@ export const speekToText = () => {
         const MAX_DURATION = 30;
 
         const stopBtn = document.getElementById("stopBtn");
-        
+
         const reRecordBtn = document.getElementById("reRecordBtn");
         const downloadBtn = document.getElementById("downloadBtn");
         const recaller = document.getElementById("recaller");
@@ -29,11 +26,11 @@ export const speekToText = () => {
         const AMPLIFY = 5; // amplification visuelle
 
         //init
-        function init(){
+        function init() {
             viewrecorderOnly();
             startRecording();
         }
-        function viewrecorderOnly(){
+        function viewrecorderOnly() {
             recaller.classList.remove("d-none");
             recaller.classList.add("d-flex");
             textResult.classList.remove("d-inline-flex");
@@ -45,7 +42,7 @@ export const speekToText = () => {
             stopBtn.disabled = false;
         }
 
-        function viewrecorder(){
+        function viewrecorder() {
             recaller.classList.remove("d-none");
             recaller.classList.add("d-flex");
             addRecordBtn.classList.remove("d-inline-flex");
@@ -55,7 +52,7 @@ export const speekToText = () => {
             stopBtn.disabled = false;
         }
 
-        function viewtextResult(){
+        function viewtextResult() {
             reRecordBtn.disabled = false;
             downloadBtn.disabled = false;
             recaller.classList.remove("d-flex");
@@ -156,7 +153,6 @@ export const speekToText = () => {
             });
         }
 
-
         // Démarrer enregistrement
         async function startRecording() {
             const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -172,10 +168,10 @@ export const speekToText = () => {
                 // player.src = audioUrl;
 
                 //text resutl
-                textResult.value += "\n \nDuis enim mauris, finibus eget orci bibendum, sodales semper velit. Cras pulvinar neque vitae velit gravida, pharetra ultrices libero lobortis."
+                textResult.value += "\n \nDuis enim mauris, finibus eget orci bibendum, sodales semper velit. Cras pulvinar neque vitae velit gravida, pharetra ultrices libero lobortis.";
                 textResult.scrollTop = textResult.scrollHeight;
                 viewtextResult();
-           
+
                 clearInterval(timerInterval);
                 secondsElapsed = 0;
                 updateTimer();
@@ -219,7 +215,7 @@ export const speekToText = () => {
             }
             draw();
         }
-        
+
         // Bouton arrêter
         stopBtn.addEventListener("click", () => {
             if (mediaRecorder && mediaRecorder.state === "recording") {
@@ -233,18 +229,18 @@ export const speekToText = () => {
             }
         });
 
-        addRecordBtn.addEventListener("click",  () => {
+        addRecordBtn.addEventListener("click", () => {
             viewrecorder();
-            
+
             startRecording();
-        })
+        });
 
         // Réenregistrer
-        reRecordBtn.addEventListener("click",  () => {
+        reRecordBtn.addEventListener("click", () => {
             viewrecorderOnly();
-            textResult.value = "Duis enim mauris, finibus eget orci bibendum, sodales semper velit. Cras pulvinar neque vitae velit gravida, pharetra ultrices libero lobortis."
+            textResult.value = "Duis enim mauris, finibus eget orci bibendum, sodales semper velit. Cras pulvinar neque vitae velit gravida, pharetra ultrices libero lobortis.";
             startRecording();
-        })
+        });
 
         // Télécharger
         downloadBtn.addEventListener("click", () => {
@@ -258,10 +254,8 @@ export const speekToText = () => {
             document.body.removeChild(a);
         });
 
-        // auto-start 
-     
+        // auto-start
+
         init();
-     
     });
-    
 };

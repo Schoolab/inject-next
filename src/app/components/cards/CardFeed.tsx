@@ -46,7 +46,7 @@ interface CardFeedProps {
 
 export const CardFeed = ({
     from,
-    fromPrepend = "From program:",
+    fromPrepend = "From initiative:",
     avatar,
     author = "Name",
     role,
