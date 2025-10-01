@@ -24,7 +24,7 @@ export const CardAskAI = ({}: CardAskAIProps) => {
                     </div>
                     
                     <ul className="metas is-list small">
-                        <li>An AI assistant to guide you through your misson with schoolab</li>
+                        <li>An AI assistant to guide you through your initiatives.</li>
                     </ul>
                 </div>
                
@@ -98,8 +98,8 @@ export const CardAskAI = ({}: CardAskAIProps) => {
                     </div>
                 </div>
             </div>
-            <div className="d-flex flex-column gap-xs p-md">
-                <div id="tags" className="badges flex-nowrap" role="button" aria-labelledby="multiple" data-toggle="tooltip" data-placement="top" data-html="true" data-boundary="window">
+            <div className="d-flex flex-column gap-xs px-md pb-md">
+                {/* <div id="tags" className="badges flex-nowrap" role="button" aria-labelledby="multiple" data-toggle="tooltip" data-placement="top" data-html="true" data-boundary="window">
                     <div className="badge is-pill">
                         <span className="icon icon-ai text-assistant" />
                         <span>Summarize in a Briefing doc</span>
@@ -112,7 +112,7 @@ export const CardAskAI = ({}: CardAskAIProps) => {
                         <span className="icon icon-information text-assistant" />
                         <span>How did the mission evolve ?</span>
                     </div>
-                </div>
+                </div> */}
                 <div className="w-100 message-composer-row">
                     <textarea className="message-composer-input form-control" id="message_light_body" name="message_light[body]" placeholder="Write a message…"></textarea>
                     <a href="#" className="btn btn-transparent btn-icon message-composer-action" role="button">

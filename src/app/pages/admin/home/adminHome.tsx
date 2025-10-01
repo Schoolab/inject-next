@@ -47,16 +47,19 @@ export const adminHome = () => {
                 title="Home"
                 showSubnav={false}
             >
-                <Section>
+                {/* <Section>
                     <div className="row">
                         <div className="col-12">
                             <div className="w-100 message-composer-row align-items-center ">
                                 <span className="icon icon-search is-sm ml-md text-muted"></span>
                                 <textarea className="message-composer-input form-control pl-0" id="message_light_body" name="message_light[body]" placeholder="Search…"></textarea>
-                                {/* <a href="#" className="btn btn-transparent btn-icon message-composer-action" role="button"><span className="icon icon-send"></span></a> */}
+                               
                             </div>
                         </div>
                     </div>
+                </Section> */}
+                <Section>
+                    <CardAskAI />
                 </Section>
                 <Section title="Initiatives">
                     <div className="row">
