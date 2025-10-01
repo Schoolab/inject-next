@@ -98,11 +98,15 @@ export const adminHome = () => {
                 <Section title="My Initiatives">
                     <div className="row">
                         <div className="col-12 mb-md">
-                            <div className="card is-highlighted p-md d-flex flex-column gap-md h-100 justify-content-between">
-                                <div className="d-flex align-items-center gap-2xs">
-                                    <span className="icon icon-alert is-sm"></span>
-                                    <h4>My initiatives with missing data</h4>
+                            <div className="card is-highlighted p-md d-flex flex-column h-100 justify-content-between">
+                                <div className="d-flex align-items-center">
+                                    <div className="d-flex align-items-center gap-2xs flex-fill">
+                                        <span className="icon icon-alert is-sm"></span>
+                                        <h4>My initiatives with missing data</h4>
+                                    </div>
+                                    <Button link="#" size="sm" label="view all" type="default" />
                                 </div>
+                             
                                 <p>The following programs require attention for missing data and experience report completion:</p>
 
                                 <div className="items">
@@ -188,9 +192,9 @@ export const adminHome = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="d-flex gap-xs">
+                                {/* <div className="d-flex gap-xs">
                                     <Button addClass="flex-fill" label="View all" type="default" />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
