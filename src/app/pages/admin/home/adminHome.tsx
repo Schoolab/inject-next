@@ -49,7 +49,7 @@ export const adminHome = () => {
             >
                 <Section>
                     <div className="row">
-                        <div className="col-12 mb-md">
+                        <div className="col-12">
                             <div className="w-100 message-composer-row align-items-center ">
                                 <span className="icon icon-search is-sm ml-md text-muted"></span>
                                 <textarea className="message-composer-input form-control pl-0" id="message_light_body" name="message_light[body]" placeholder="Search…"></textarea>
@@ -104,7 +104,7 @@ export const adminHome = () => {
                                         <span className="icon icon-alert is-sm"></span>
                                         <h4>My initiatives with missing data</h4>
                                     </div>
-                                    <Button link="#" size="sm" label="View all" type="default" />
+                                    <Button link="#" size="sm" label="View All My Initiatives" type="default" />
                                 </div>
                              
                                 <p>The following initiatives require attention for missing data and experience report completion:</p>
