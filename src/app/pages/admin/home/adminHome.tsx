@@ -66,7 +66,7 @@ export const adminHome = () => {
                                     <h4 className="d-flex flex-fill gap-2xs align-items-center">
                                         <span className="icon is-sm icon-work"></span> Consulting missions<span className="z-2 icon is-xs text-muted icon-information" data-toggle="tooltip" data-placement="top" data-boundary="window" data-original-title="A Consulting Mission is a client project led by a Schoolab consultant, with a shared portal to exchange deliverables, measure impact, and gather client feedback."></span>
                                     </h4>
-                                    <Button link="#" addClass="stretched-link" size="sm" label="view mission" type="default" />
+                                    <Button link="#" addClass="stretched-link" size="sm" label="View mission" type="default" />
                                 </div>
                                 <StatCard link="#" number="22" caption="Ongoing missions"></StatCard>
                             </div>
@@ -77,7 +77,7 @@ export const adminHome = () => {
                                     <h4 className="d-flex flex-fill gap-2xs align-items-center">
                                         <span className="icon is-sm icon-lightbulb"></span>Innovation programs<span className="z-2 icon is-xs text-muted icon-information" data-toggle="tooltip" data-placement="top" data-boundary="window" data-original-title="An Innovation Program enables participants, experts, and juries to collaborate via Inject on innovation challenges, training, and project follow-ups."></span>
                                     </h4>
-                                    <Button link="#" addClass="stretched-link" size="sm" label="view programs" type="default" />
+                                    <Button link="#" addClass="stretched-link" size="sm" label="View programs" type="default" />
                                 </div>
                                 <StatCard link="#" number="22" caption="Ongoing programs"></StatCard>
                             </div>
@@ -104,7 +104,7 @@ export const adminHome = () => {
                                         <span className="icon icon-alert is-sm"></span>
                                         <h4>My initiatives with missing data</h4>
                                     </div>
-                                    <Button link="#" size="sm" label="view all" type="default" />
+                                    <Button link="#" size="sm" label="View all" type="default" />
                                 </div>
                              
                                 <p>The following initiatives require attention for missing data and experience report completion:</p>
@@ -203,7 +203,7 @@ export const adminHome = () => {
                         <div className="col-12 col-lg-6 mb-md">
                             <div className="d-flex align-items-center mb-md">
                                 <h4 className="flex-fill ">My last created initiatives</h4>
-                                <Button link="#" size="sm" label="view all" type="default" />
+                                <Button link="#" size="sm" label="View all" type="default" />
                             </div>
                             <div className="items">
                                 <div className="item is-linked is-bordered">
@@ -343,7 +343,7 @@ export const adminHome = () => {
                         <div className="col-12 col-lg-6 mb-md">
                             <div className="d-flex align-items-center mb-md">
                                 <h4 className="flex-fill ">My last closed initiatives</h4>
-                                <Button link="#" size="sm" label="view all" type="default" />
+                                <Button link="#" size="sm" label="View all" type="default" />
                             </div>
                             <div className="items">
                                 <div className="item is-linked is-bordered">
@@ -486,7 +486,7 @@ export const adminHome = () => {
                             <div className="card p-md d-flex flex-column gap-md">
                                 <div className="d-flex align-items-center">
                                     <h4 className="flex-fill ">Last initiatives created</h4>
-                                    <Button link="#" size="sm" label="view all" type="default" />
+                                    <Button link="#" size="sm" label="View all" type="default" />
                                 </div>
 
                                 <div className="">
@@ -799,7 +799,7 @@ export const adminHome = () => {
                             <div className="card p-md d-flex flex-column gap-md">
                                 <div className="d-flex align-items-center">
                                     <h4 className="flex-fill ">My initiatives </h4>
-                                    <Button link="#" size="sm" label="view all" type="default" />
+                                    <Button link="#" size="sm" label="View all" type="default" />
                                 </div>
 
                                 <div className="">
