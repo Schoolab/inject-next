@@ -14,7 +14,7 @@ interface CardAskAIProps {}
 export const CardAskAI = ({}: CardAskAIProps) => {
     return (
         <div className="card">
-            <div className="d-flex gap-sm align-items-center p-md" id="headercontent" data-toggle="collapse" data-target="#AskAI" aria-expanded="false" aria-controls="AskAI">
+            <div className="d-flex gap-sm align-items-center px-md pt-md" id="headercontent" data-toggle="collapse" data-target="#AskAI" aria-expanded="false" aria-controls="AskAI">
               
                  
                 <div className="d-flex flex-column w-100 gap-none">
@@ -32,7 +32,7 @@ export const CardAskAI = ({}: CardAskAIProps) => {
                 <span className="icon icon-chevron-right"></span>
             </div>
             <div className="collapse" id="AskAI" aria-labelledby="headercontent">
-                <div className="px-md">
+                <div className="px-md pt-md">
                     <div className="message align-items-end">
                         <a href="#" className="thumbnail is-oval is-md">
                             <img src="https://inject-prod.s3.amazonaws.com/images/41c42fb1-35bd-4a31-bf08-3b2267df4b95/sq150.jpeg" />
@@ -98,7 +98,7 @@ export const CardAskAI = ({}: CardAskAIProps) => {
                     </div>
                 </div>
             </div>
-            <div className="d-flex flex-column gap-xs px-md pb-md">
+            <div className="d-flex flex-column gap-xs p-md">
                 {/* <div id="tags" className="badges flex-nowrap" role="button" aria-labelledby="multiple" data-toggle="tooltip" data-placement="top" data-html="true" data-boundary="window">
                     <div className="badge is-pill">
                         <span className="icon icon-ai text-assistant" />
