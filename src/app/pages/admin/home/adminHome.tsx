@@ -107,7 +107,7 @@ export const adminHome = () => {
                                     <Button link="#" size="sm" label="view all" type="default" />
                                 </div>
                              
-                                <p>The following programs require attention for missing data and experience report completion:</p>
+                                <p>The following initiatives require attention for missing data and experience report completion:</p>
 
                                 <div className="items">
                                     <div className="item is-linked is-bordered">
