@@ -14,8 +14,8 @@ interface CardAskAIProps {}
 export const CardAskAI = ({}: CardAskAIProps) => {
     return (
         <div className="card">
-            <div className="d-flex gap-sm align-items-center px-md pt-md" id="headercontent" data-toggle="collapse" data-target="#AskAI" aria-expanded="false" aria-controls="AskAI">
-              
+            {/* <div className="d-flex gap-sm align-items-center px-md pt-md" id="headercontent" data-toggle="collapse" data-target="#AskAI" aria-expanded="false" aria-controls="AskAI"> */}
+            <div className="d-flex gap-sm align-items-center px-md pt-md"> 
                  
                 <div className="d-flex flex-column w-100 gap-none">
                     <div className="d-flex gap-2xs align-items-center">
@@ -29,9 +29,9 @@ export const CardAskAI = ({}: CardAskAIProps) => {
                 </div>
                
 
-                <span className="icon icon-chevron-right"></span>
+                {/* <span className="icon icon-chevron-right"></span> */}
             </div>
-            <div className="collapse" id="AskAI" aria-labelledby="headercontent">
+            {/* <div className="collapse" id="AskAI" aria-labelledby="headercontent">
                 <div className="px-md pt-md">
                     <div className="message align-items-end">
                         <a href="#" className="thumbnail is-oval is-md">
@@ -43,7 +43,6 @@ export const CardAskAI = ({}: CardAskAIProps) => {
                                     <li>
                                         <a href="#" className="text-muted d-flex align-items-center gap-2xs">
                                             <span>Pierre Lemeteil</span>
-                                            {/* <span className="badge badge-role is-admin z-2" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window" /> */}
                                         </a>
                                     </li>
                                     <li>
@@ -71,7 +70,7 @@ export const CardAskAI = ({}: CardAskAIProps) => {
                                     <li>
                                         <a href="#" className="text-muted d-flex align-items-center gap-2xs">
                                             <span>Mistral IA_</span>
-                                            {/* <span className="badge badge-role is-expert z-2" data-toggle="tooltip" data-placement="top" data-original-title="Expert" data-boundary="window" /> */}
+                                         
                                         </a>
                                     </li>
                                     <li>
@@ -97,7 +96,7 @@ export const CardAskAI = ({}: CardAskAIProps) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="d-flex flex-column gap-xs p-md">
                 {/* <div id="tags" className="badges flex-nowrap" role="button" aria-labelledby="multiple" data-toggle="tooltip" data-placement="top" data-html="true" data-boundary="window">
                     <div className="badge is-pill">
