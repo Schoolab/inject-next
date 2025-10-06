@@ -136,7 +136,7 @@ export const adminHome = () => {
                                                     <Progress percentage={30} size="sm" />
                                                     <span className="text-muted small">1/3 ER</span>
                                                 </div>
-                                                <Button link="#" addClass="stretched-link" size="sm" label="Complete" type="brand-primary" />
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -163,7 +163,7 @@ export const adminHome = () => {
                                                     <Progress percentage={30} size="sm" />
                                                     <span className="text-muted small">1/3 ER</span>
                                                 </div>
-                                                <Button link="#" addClass="stretched-link" size="sm" label="Complete" type="brand-primary" />
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -190,7 +190,7 @@ export const adminHome = () => {
                                                     <Progress percentage={30} size="sm" />
                                                     <span className="text-muted small">1/3 ER</span>
                                                 </div>
-                                                <Button link="#" addClass="stretched-link" size="sm" label="Complete" type="brand-primary" />
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -233,24 +233,7 @@ export const adminHome = () => {
                                                 <span className="text-muted small">1/3 ER</span>
                                             </div>
                                         </div>
-                                        <div className="item-options">
-                                            <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                                <span className="icon icon-options" />
-                                            </a>
-                                            <div className="dropdown-menu dropdown-menu-right">
-                                                <a href="#" className="dropdown-item">
-                                                    Manage
-                                                </a>
-                                                <a href="#" className="dropdown-item">
-                                                    Workspace
-                                                </a>
-                                                <div className="dropdown-divider" />
-                                                <a href="#" className="dropdown-item">
-                                                    <span className="dropdown-item--icon icon icon-pencil" />
-                                                    <span className="dropdown-item--label">Edit</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div className="item is-linked is-bordered">
@@ -277,24 +260,7 @@ export const adminHome = () => {
                                                 <span className="text-muted small">1/3 ER</span>
                                             </div>
                                         </div>
-                                        <div className="item-options">
-                                            <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                                <span className="icon icon-options" />
-                                            </a>
-                                            <div className="dropdown-menu dropdown-menu-right">
-                                                <a href="#" className="dropdown-item">
-                                                    Manage
-                                                </a>
-                                                <a href="#" className="dropdown-item">
-                                                    Workspace
-                                                </a>
-                                                <div className="dropdown-divider" />
-                                                <a href="#" className="dropdown-item">
-                                                    <span className="dropdown-item--icon icon icon-pencil" />
-                                                    <span className="dropdown-item--label">Edit</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div className="item is-linked is-bordered">
@@ -321,24 +287,7 @@ export const adminHome = () => {
                                                 <span className="text-muted small">1/3 ER</span>
                                             </div>
                                         </div>
-                                        <div className="item-options">
-                                            <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                                <span className="icon icon-options" />
-                                            </a>
-                                            <div className="dropdown-menu dropdown-menu-right">
-                                                <a href="#" className="dropdown-item">
-                                                    Manage
-                                                </a>
-                                                <a href="#" className="dropdown-item">
-                                                    Workspace
-                                                </a>
-                                                <div className="dropdown-divider" />
-                                                <a href="#" className="dropdown-item">
-                                                    <span className="dropdown-item--icon icon icon-pencil" />
-                                                    <span className="dropdown-item--label">Edit</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -373,24 +322,7 @@ export const adminHome = () => {
                                                 <span className="text-muted small">1/3 ER</span>
                                             </div>
                                         </div>
-                                        <div className="item-options">
-                                            <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                                <span className="icon icon-options" />
-                                            </a>
-                                            <div className="dropdown-menu dropdown-menu-right">
-                                                <a href="#" className="dropdown-item">
-                                                    Manage
-                                                </a>
-                                                <a href="#" className="dropdown-item">
-                                                    Workspace
-                                                </a>
-                                                <div className="dropdown-divider" />
-                                                <a href="#" className="dropdown-item">
-                                                    <span className="dropdown-item--icon icon icon-pencil" />
-                                                    <span className="dropdown-item--label">Edit</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div className="item is-linked is-bordered">
@@ -417,24 +349,7 @@ export const adminHome = () => {
                                                 <span className="text-muted small">1/3 ER</span>
                                             </div>
                                         </div>
-                                        <div className="item-options">
-                                            <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                                <span className="icon icon-options" />
-                                            </a>
-                                            <div className="dropdown-menu dropdown-menu-right">
-                                                <a href="#" className="dropdown-item">
-                                                    Manage
-                                                </a>
-                                                <a href="#" className="dropdown-item">
-                                                    Workspace
-                                                </a>
-                                                <div className="dropdown-divider" />
-                                                <a href="#" className="dropdown-item">
-                                                    <span className="dropdown-item--icon icon icon-pencil" />
-                                                    <span className="dropdown-item--label">Edit</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div className="item is-linked is-bordered">
@@ -461,24 +376,7 @@ export const adminHome = () => {
                                                 <span className="text-muted small">1/3 ER</span>
                                             </div>
                                         </div>
-                                        <div className="item-options">
-                                            <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
-                                                <span className="icon icon-options" />
-                                            </a>
-                                            <div className="dropdown-menu dropdown-menu-right">
-                                                <a href="#" className="dropdown-item">
-                                                    Manage
-                                                </a>
-                                                <a href="#" className="dropdown-item">
-                                                    Workspace
-                                                </a>
-                                                <div className="dropdown-divider" />
-                                                <a href="#" className="dropdown-item">
-                                                    <span className="dropdown-item--icon icon icon-pencil" />
-                                                    <span className="dropdown-item--label">Edit</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
