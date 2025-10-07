@@ -11,7 +11,7 @@ export const ExpertProjectMentored = () => {
                 <div className="application-section">
                     <div className="row">
                         <div className="col-12 mb-5">
-                            <div className="card is-assistant p-md d-flex flex-column gap-md h-100 justify-content-between">
+                            <div className="card is-assistant p-md d-flex flex-column flex-lg-row gap-md h-100  align-items-center justify-content-between">
                                 <div className="flex-fill">
                                     <div className="d-flex gap-2xs align-items-center">
                                         <span className="icon is-2sm icon-ai text-assistant"></span>
