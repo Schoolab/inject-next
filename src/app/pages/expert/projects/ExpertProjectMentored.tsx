@@ -1,50 +1,108 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
+import { Button } from "@/app/components/buttons/Button";
+import { FilterDateRange } from "@/app/components/filters/FilterDateRange";
 
 export const ExpertProjectMentored = () => {
     return (
         <Layout shortcutBarExpanded={true}>
-            <AppContent >
+            <AppContent>
                 <div className="application-section">
+                    <div className="row">
+                        <div className="col-12 mb-5">
+                            <div className="card is-assistant p-md d-flex flex-column gap-md h-100 justify-content-between">
+                                <div className="flex-fill">
+                                    <div className="d-flex gap-2xs align-items-center">
+                                        <span className="icon is-2sm icon-ai text-assistant"></span>
+                                        <h4>Ask AI</h4>
+                                    </div>
+
+                                    <p>Let artificial intelligence rank projects by relevance. The system matches your preferences and expertise with each project’s needs to highlight the most relevant ones.</p>
+                                </div>
+                                <div className="d-flex gap-xs">
+                                    <a href="#" className="btn btn-default flex-fill" role="button">
+                                        <span className="icon icon-reload"></span>
+                                        <span>Refresh relevance scores</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div className="col-12">
+                            <div className="card is-assistant p-md d-flex flex-column gap-sm h-100 justify-content-between">
+                                <div className="d-flex flex-fill">
+                                    <div className="d-flex gap-2xs align-items-center flex-fill">
+                                        <span className="icon is-2sm icon-ai text-assistant"></span>
+                                        <h4>Ask AI</h4>
+                                    </div>
+                                    <Button link="#" size="sm" iconStartName="reload" label="Refresh relevance scores" type="default" />
+                                </div>
+                                  <p>Let artificial intelligence rank projects by relevance. The system matches your preferences and expertise with each project’s needs to highlight the most relevant ones.</p>
+                            </div>
+                        </div> */}
+                    </div>
+
                     <div className="row card-row">
                         <div className="col-12">
-                            <div className="d-flex flex-column flex-lg-row align-items-lg-start justify-content-lg-between ">
-                                <div className="d-flex flex-column flex-lg-row scroll-h mr-lg-8 mr-0">
-                                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
-                                        <form name="mentored" method="post">
-                                            <button className="btn btn-lg btn-block btn-default text-nowrap customSwitch" data-switch="applicationsFilters_mentored" type="button" style={{ fontWeight: 400 }}>
-                                                Mentored projects
-                                            </button>
-                                            <input type="checkbox" name="applicationsFilters[mentored]" id="applicationsFilters_mentored" defaultValue={1} className=" d-none" />
-                                        </form>
+                            <div className="datatableFiltersWrapper ">
+                                
+                                <div className="d-flex flex-column flex-lg-row align-items-lg-start">
+                                    <div className="d-flex flex-column flex-lg-row mr-lg-3 mr-0">
+                                        <div id="sg-datatables-challenges_list_datatable_filter" className="dataTables_filter mb-5 mb-lg-0">
+                                            <input type="search" className="form-control form-control-md" placeholder="Search" aria-controls="sg-datatables-challenges_list_datatable" style={{ minWidth: 150, width: "100%" }} />
+                                        </div>
                                     </div>
-                                    <div className="mr-lg-3 mr-0 mb-3 mb-lg-0">
-                                        <form name="isFollow" method="post">
-                                            <button className="btn btn-lg btn-block btn-default text-nowrap customSwitch" data-switch="applicationsFilters_isFollow" type="button" style={{ fontWeight: 400 }}>
-                                                Followed
-                                            </button>
-                                            <input type="checkbox" name="applicationsFilters[isFollow]" id="applicationsFilters_isFollow" defaultValue={1} className=" d-none" />
-                                        </form>
+                                       <div className="d-flex flex-column flex-lg-row scroll-h mr-lg-3 mr-0 flex-fill">
+                                    <div className="mr-lg-3 mr-0 mb-5 mb-lg-0 d-flex align-items-start">
+                                        <div className="dropdown dataFitlersControl" data-save-to-close="true">
+                                            <a className="btn btn-lg btn-muted" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
+                                                <span className="icon icon-plus-circle" />
+                                                <span>Filter</span>
+                                            </a>
+
+                                            <div className="dropdown-menu gap-xs">
+                                                <form className="d-flex flex-column gap-md px-16px">
+                                                    <div className="form-group">
+                                                        <label>Filters</label>
+                                                        <select required data-hint="type" aria-describedby="exemple_help" className="form-control custom-select" defaultValue="">
+                                                            <option value="" disabled>
+                                                                Choose a filter...
+                                                            </option>
+                                                        </select>
+                                                        <div className="invalid-feedback">Please choose an option in the select.</div>
+                                                    </div>
+                                                </form>
+                                                <div className="d-flex flex-column dataFitlersControlRemove px-16px"></div>
+                                            </div>
+                                        </div>
+
+                                        <a className="btn btn-lg btn-muted dataFitlersClean" href="#" role="button">
+                                            <span>Clean</span>
+                                        </a>
                                     </div>
                                 </div>
+
                                 <div className="d-flex flex-column flex-lg-row">
-                                    <div className="mr-lg-3 mr-0 mb-5 mb-lg-0 searchContainer">
-                                        <form className="customSearch">
-                                            <input name="search" autoComplete="off" type="search" id="search" className="form-control" style={{ minWidth: 150, width: "100%" }} aria-describedby="search" placeholder="Search..." defaultValue="" />
-                                        </form>
+                                    <div className="mr-lg-3 mr-0 mb-5 mb-lg-0" data-toggle="tooltip" data-placement="top" data-original-title="Sort by range dates" data-boundary="window">
+                                        <FilterDateRange />
+                                    </div>
+                                    <div className="mb-5 mb-lg-0">
+                                        <a id="btn-new-challenge" className="btn btn-default btn-icon btn-lg btn-block text-nowrap" data-form-url="/organization/challenge/modal/new" href="#">
+                                            <span className="icon-ai text-assistant" />
+                                            <span>Ask AI</span>
+                                        </a>
                                     </div>
                                 </div>
+                                </div>
+                             
                             </div>
                         </div>
                         <div className="col-12 col-lg-4">
                             <div className="card h-100">
                                 <div className="card-infos is-linked">
                                     <div className="card-banner">
-                                        <div className="card-image">
-                                            <picture>
-                                                <img src="https://inject-demo.s3.amazonaws.com/images/c17572e7-fb1e-48ac-b80d-bd77c815ed02/co1140x380.jpeg" alt="" />
-                                            </picture>
+                                        <div className="card-image bg-highlight bg-random-1">
+                                            <span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle"><span>E</span></span>
                                         </div>
                                     </div>
                                     <div className="card-title d-flex align-items-center gap-2xs mb-none">
@@ -92,10 +150,8 @@ export const ExpertProjectMentored = () => {
                             <div className="card h-100">
                                 <div className="card-infos is-linked">
                                     <div className="card-banner">
-                                        <div className="card-image">
-                                            <picture>
-                                                <img src="https://inject-demo.s3.amazonaws.com/images/7241300b-a008-4101-b202-7f65d47c7382/co1140x380.jpeg" alt="" />
-                                            </picture>
+                                          <div className="card-image bg-highlight bg-random-2">
+                                            <span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle"><span>W</span></span>
                                         </div>
                                     </div>
                                     <div className="card-title d-flex align-items-center gap-2xs mb-none">
@@ -143,10 +199,8 @@ export const ExpertProjectMentored = () => {
                             <div className="card h-100">
                                 <div className="card-infos is-linked">
                                     <div className="card-banner">
-                                        <div className="card-image">
-                                            <picture>
-                                                <img src="https://inject-demo.s3.amazonaws.com/images/645a913c-6fa9-483c-8c0c-152fefc15cf5/co1140x380.jpeg" alt="" />
-                                            </picture>
+                                              <div className="card-image bg-highlight bg-random-3">
+                                            <span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle"><span>O</span></span>
                                         </div>
                                     </div>
                                     <div className="card-title d-flex align-items-center gap-2xs mb-none">
@@ -194,10 +248,8 @@ export const ExpertProjectMentored = () => {
                             <div className="card h-100">
                                 <div className="card-infos is-linked">
                                     <div className="card-banner">
-                                        <div className="card-image">
-                                            <picture>
-                                                <img src="https://inject-demo.s3.amazonaws.com/images/36864d1d-f673-4bda-98f7-d76995c9cea1/co1140x380.jpeg" alt="" />
-                                            </picture>
+                                        <div className="card-image bg-highlight bg-random-4">
+                                            <span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle"><span>O</span></span>
                                         </div>
                                     </div>
                                     <div className="card-title d-flex align-items-center gap-2xs mb-none">
