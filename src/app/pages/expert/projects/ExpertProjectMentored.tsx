@@ -3,14 +3,15 @@ import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
 import { Button } from "@/app/components/buttons/Button";
 import { FilterDateRange } from "@/app/components/filters/FilterDateRange";
+import { Alert } from "@/app/components/alerts/Alert";
 
 export const ExpertProjectMentored = () => {
     return (
         <Layout shortcutBarExpanded={true}>
             <AppContent>
                 <div className="application-section">
-                    <div className="row">
-                        <div className="col-12 mb-5">
+                    {/* <div className="row">
+                        <div className="col-12">
                             <div className="card is-assistant p-md d-flex flex-column flex-lg-row gap-md h-100  align-items-center justify-content-between">
                                 <div className="flex-fill">
                                     <div className="d-flex gap-2xs align-items-center">
@@ -28,73 +29,62 @@ export const ExpertProjectMentored = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="col-12">
-                            <div className="card is-assistant p-md d-flex flex-column gap-sm h-100 justify-content-between">
-                                <div className="d-flex flex-fill">
-                                    <div className="d-flex gap-2xs align-items-center flex-fill">
-                                        <span className="icon is-2sm icon-ai text-assistant"></span>
-                                        <h4>Ask AI</h4>
-                                    </div>
-                                    <Button link="#" size="sm" iconStartName="reload" label="Refresh relevance scores" type="default" />
-                                </div>
-                                  <p>Let artificial intelligence rank projects by relevance. The system matches your preferences and expertise with each project’s needs to highlight the most relevant ones.</p>
-                            </div>
-                        </div> */}
-                    </div>
+                    </div> */}
+
+                 
 
                     <div className="row card-row">
                         <div className="col-12">
+                               <Alert buttonLabel="Refresh relevance scores" icon="ai" text="Let artificial intelligence rank projects by relevance. The system matches your preferences and expertise with each project’s needs to highlight the most relevant ones." title="Ask AI" type="info" />
                             <div className="datatableFiltersWrapper ">
-                                
                                 <div className="d-flex flex-column flex-lg-row align-items-lg-start">
                                     <div className="d-flex flex-column flex-lg-row mr-lg-3 mr-0">
                                         <div id="sg-datatables-challenges_list_datatable_filter" className="dataTables_filter mb-5 mb-lg-0">
                                             <input type="search" className="form-control form-control-md" placeholder="Search" aria-controls="sg-datatables-challenges_list_datatable" style={{ minWidth: 150, width: "100%" }} />
                                         </div>
                                     </div>
-                                       <div className="d-flex flex-column flex-lg-row scroll-h mr-lg-3 mr-0 flex-fill">
-                                    <div className="mr-lg-3 mr-0 mb-5 mb-lg-0 d-flex align-items-start">
-                                        <div className="dropdown dataFitlersControl" data-save-to-close="true">
-                                            <a className="btn btn-lg btn-muted" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
-                                                <span className="icon icon-plus-circle" />
-                                                <span>Filter</span>
-                                            </a>
+                                    <div className="d-flex flex-column flex-lg-row scroll-h mr-lg-3 mr-0 flex-fill">
+                                        <div className="mr-lg-3 mr-0 mb-5 mb-lg-0 d-flex align-items-start">
+                                            <div className="dropdown dataFitlersControl" data-save-to-close="true">
+                                                <a className="btn btn-lg btn-muted" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
+                                                    <span className="icon icon-plus-circle" />
+                                                    <span>Filter</span>
+                                                </a>
 
-                                            <div className="dropdown-menu gap-xs">
-                                                <form className="d-flex flex-column gap-md px-16px">
-                                                    <div className="form-group">
-                                                        <label>Filters</label>
-                                                        <select required data-hint="type" aria-describedby="exemple_help" className="form-control custom-select" defaultValue="">
-                                                            <option value="" disabled>
-                                                                Choose a filter...
-                                                            </option>
-                                                        </select>
-                                                        <div className="invalid-feedback">Please choose an option in the select.</div>
-                                                    </div>
-                                                </form>
-                                                <div className="d-flex flex-column dataFitlersControlRemove px-16px"></div>
+                                                <div className="dropdown-menu gap-xs">
+                                                    <form className="d-flex flex-column gap-md px-16px">
+                                                        <div className="form-group">
+                                                            <label>Filters</label>
+                                                            <select required data-hint="type" aria-describedby="exemple_help" className="form-control custom-select" defaultValue="">
+                                                                <option value="" disabled>
+                                                                    Choose a filter...
+                                                                </option>
+                                                            </select>
+                                                            <div className="invalid-feedback">Please choose an option in the select.</div>
+                                                        </div>
+                                                    </form>
+                                                    <div className="d-flex flex-column dataFitlersControlRemove px-16px"></div>
+                                                </div>
                                             </div>
+
+                                            <a className="btn btn-lg btn-muted dataFitlersClean" href="#" role="button">
+                                                <span>Clean</span>
+                                            </a>
                                         </div>
+                                    </div>
 
-                                        <a className="btn btn-lg btn-muted dataFitlersClean" href="#" role="button">
-                                            <span>Clean</span>
-                                        </a>
+                                    <div className="d-flex flex-column flex-lg-row">
+                                        <div className="mr-lg-3 mr-0 mb-5 mb-lg-0" data-toggle="tooltip" data-placement="top" data-original-title="Sort by range dates" data-boundary="window">
+                                            <FilterDateRange />
+                                        </div>
+                                        <div className="mb-5 mb-lg-0">
+                                            <a id="btn-new-challenge" className="btn btn-default btn-icon btn-lg btn-block text-nowrap" data-form-url="/organization/challenge/modal/new" href="#">
+                                                <span className="icon-ai text-assistant" />
+                                                <span>Ask AI</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div className="d-flex flex-column flex-lg-row">
-                                    <div className="mr-lg-3 mr-0 mb-5 mb-lg-0" data-toggle="tooltip" data-placement="top" data-original-title="Sort by range dates" data-boundary="window">
-                                        <FilterDateRange />
-                                    </div>
-                                    <div className="mb-5 mb-lg-0">
-                                        <a id="btn-new-challenge" className="btn btn-default btn-icon btn-lg btn-block text-nowrap" data-form-url="/organization/challenge/modal/new" href="#">
-                                            <span className="icon-ai text-assistant" />
-                                            <span>Ask AI</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                </div>
-                             
                             </div>
                         </div>
                         <div className="col-12 col-lg-4">
@@ -102,7 +92,9 @@ export const ExpertProjectMentored = () => {
                                 <div className="card-infos is-linked">
                                     <div className="card-banner">
                                         <div className="card-image bg-highlight bg-random-1">
-                                            <span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle"><span>E</span></span>
+                                            <span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle">
+                                                <span>E</span>
+                                            </span>
                                         </div>
                                     </div>
                                     <div className="card-title d-flex align-items-center gap-2xs mb-none">
@@ -150,8 +142,10 @@ export const ExpertProjectMentored = () => {
                             <div className="card h-100">
                                 <div className="card-infos is-linked">
                                     <div className="card-banner">
-                                          <div className="card-image bg-highlight bg-random-2">
-                                            <span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle"><span>W</span></span>
+                                        <div className="card-image bg-highlight bg-random-2">
+                                            <span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle">
+                                                <span>W</span>
+                                            </span>
                                         </div>
                                     </div>
                                     <div className="card-title d-flex align-items-center gap-2xs mb-none">
@@ -199,8 +193,10 @@ export const ExpertProjectMentored = () => {
                             <div className="card h-100">
                                 <div className="card-infos is-linked">
                                     <div className="card-banner">
-                                              <div className="card-image bg-highlight bg-random-3">
-                                            <span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle"><span>O</span></span>
+                                        <div className="card-image bg-highlight bg-random-3">
+                                            <span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle">
+                                                <span>O</span>
+                                            </span>
                                         </div>
                                     </div>
                                     <div className="card-title d-flex align-items-center gap-2xs mb-none">
@@ -249,7 +245,9 @@ export const ExpertProjectMentored = () => {
                                 <div className="card-infos is-linked">
                                     <div className="card-banner">
                                         <div className="card-image bg-highlight bg-random-4">
-                                            <span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle"><span>O</span></span>
+                                            <span className="icon icon--letter is-64px position-absolute top-50 start-50 translate-middle">
+                                                <span>O</span>
+                                            </span>
                                         </div>
                                     </div>
                                     <div className="card-title d-flex align-items-center gap-2xs mb-none">
