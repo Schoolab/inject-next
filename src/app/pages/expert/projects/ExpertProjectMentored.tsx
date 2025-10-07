@@ -31,11 +31,21 @@ export const ExpertProjectMentored = () => {
                         </div>
                     </div> */}
 
-                 
-
                     <div className="row card-row">
                         <div className="col-12">
-                               <Alert buttonLabel="Refresh relevance scores" icon="ai" text="Let artificial intelligence rank projects by relevance. The system matches your preferences and expertise with each project’s needs to highlight the most relevant ones." title="Ask AI" type="info" />
+                            <div className="alert alert-info">
+                                <span className="icon is-2sm icon-ai"></span>
+                                <div className="flex-fill">
+                                    <p className="m-none font-weight-bold">Ask AI</p>
+                                    <p>Let artificial intelligence rank projects by relevance. The system matches your preferences and expertise with each project’s needs to highlight the most relevant ones.</p>
+                                </div>
+                                <div className="flex-lg-shrink-1">
+                                    <a href="#" className="btn btn-default btn-sm btn-block" role="button">
+                                        <span className="icon icon-reload"></span>
+                                        <span>Refresh relevance scores</span>
+                                    </a>
+                                </div>
+                            </div>
                             <div className="datatableFiltersWrapper ">
                                 <div className="d-flex flex-column flex-lg-row align-items-lg-start">
                                     <div className="d-flex flex-column flex-lg-row mr-lg-3 mr-0">
