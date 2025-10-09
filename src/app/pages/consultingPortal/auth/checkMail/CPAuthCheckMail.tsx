@@ -22,6 +22,8 @@ export const CPAuthCheckMail = (
         showPlatforms = true,
         showSso = false,
         cover,
+        imgTextTitle,
+        imgText,
         video,
         theme = "default",
         positionX,
@@ -41,7 +43,7 @@ export const CPAuthCheckMail = (
             showNavbar={false}
             showShortcutbar={false}
         >
-            <AppSplit cover={cover} video={video} theme="default" positionX={positionX} positionY={positionY} boxed={boxed} shadow={shadow} rounded={rounded}>
+            <AppSplit cover={cover} imgTextTitle={imgTextTitle}  imgText={imgText}  video={video} theme="default" positionX={positionX} positionY={positionY} boxed={boxed} shadow={shadow} rounded={rounded}>
 
                 <div className="d-flex flex-column gap-xl">
                 

@@ -12,6 +12,9 @@ export interface AppSplitProps {
   shadow?: boolean;
   rounded?: boolean;
   cover?: string;
+  imgTextTitle?: string;
+  imgText?: string;
+
   video?: string;
   preview?: React.ReactNode;
   children?: React.ReactNode;
@@ -19,7 +22,7 @@ export interface AppSplitProps {
   style?: CSSProperties;
 }
 
-export const AppSplit = ({ children, preview, cover, video, theme = "default", logo = true, positionX = "none", positionY = "none", boxed = false, shadow = false, rounded = false, addClass, style, ...props }: AppSplitProps) => {
+export const AppSplit = ({ children, imgTextTitle, imgText, preview, cover, video, theme = "default", logo = true, positionX = "none", positionY = "none", boxed = false, shadow = false, rounded = false, addClass, style, ...props }: AppSplitProps) => {
   let appContentClass = ["application-content p-0"];
 
   let splitedContainerClass = ["splited-container"];
@@ -110,9 +113,19 @@ export const AppSplit = ({ children, preview, cover, video, theme = "default", l
           </div>
         }
 
+
         { cover && 
           <div className="splited-cover">
-            <img src={cover} />
+            <div className="splited-cover-content">
+               <img src={cover} />
+                 { (imgTextTitle || imgText) && 
+                  <div className="splited-cover-content-text d-flex flex-column justify-content-center align-items-center text-center p-xl">
+                    { imgTextTitle && <p className="text-white text-uppercase display-1">{imgTextTitle}</p>}
+                    {  imgText && <p className="text-white font-weight-bold">{imgText}</p>}
+                  </div>
+              }
+            </div>
+           
           </div>
         }
 

@@ -14,10 +14,10 @@ interface CPAuthLoginProps extends AppSplitProps {
     showSso?: boolean;
 }
 
-export const CPAuthLogin = ({ showEmail = true, showPlatforms = true, showSso = false, cover, video, theme = "default", positionX, positionY, boxed, shadow, rounded }: CPAuthLoginProps) => {
+export const CPAuthLogin = ({ imgTextTitle, imgText, showEmail = true, showPlatforms = true, showSso = false, cover, video, theme = "default", positionX, positionY, boxed, shadow, rounded }: CPAuthLoginProps) => {
     return (
         <Layout showNavbar={false} showShortcutbar={false}>
-            <AppSplit cover={cover} video={video} theme="default" positionX={positionX} positionY={positionY} boxed={boxed} shadow={shadow} rounded={rounded}>
+            <AppSplit cover={cover} imgTextTitle={imgTextTitle} imgText={imgText} video={video} theme="default" positionX={positionX} positionY={positionY} boxed={boxed} shadow={shadow} rounded={rounded}>
                 <div className="d-flex flex-column gap-xl">
                     <div className="d-flex flex-column gap-md">
                         <h2 className="display-3 mb-md">Access the consulting portal</h2>
@@ -60,15 +60,12 @@ export const CPAuthLogin = ({ showEmail = true, showPlatforms = true, showSso = 
                                     <FormInput id="password" type="password" placeholder="Password" />
                                 </FormGroup>
                                 <p className="small text-muted mt-5 mb-0">
-                                    <a href="#" >
-                                        Password lost? 
-                                    </a>
+                                    <a href="#">Password lost?</a>
                                 </p>
 
                                 <p className="small text-muted mt-5 mb-0">
                                     Not registered? <a href="/signup">Sign up with email</a>
                                 </p>
-
                             </form>
                         </div>
 
