@@ -9,11 +9,13 @@ export interface EmptyStateProps {
     labelLink?: string;
     bordered?: Boolean;
     spacious?:  Boolean;
+    addClass?: string;
 }
 
-export const EmptyState = ({ title="No category", text="Your category will be listed here", labelLink, iconTitle, iconBtn= "plus-circle", labelBtn, bordered = true, spacious = false, ...props  }: EmptyStateProps) => {
+export const EmptyState = ({ title="No category", text="Your category will be listed here", labelLink, iconTitle, iconBtn= "plus-circle", labelBtn, addClass, bordered = true, spacious = false, ...props  }: EmptyStateProps) => {
     let classTab = ["bg-white d-flex flex-column align-items-center gap-0px text-center"];
     bordered && classTab.push("border rounded");
+    addClass && classTab.push(addClass);
     !spacious && classTab.push("px-2xl py-2xl");
     spacious && classTab.push("px-3xl py-80px");
 

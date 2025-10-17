@@ -11,13 +11,13 @@ interface AsidePrivateMessagesProps {
 }
 
 export const AsidePrivateMessages = ({
-    show = false,
+    show,
 }: AsidePrivateMessagesProps) => {
     let tabClass = [];   
-    !show && tabClass.push("d-none");
+    show==false && tabClass.push("d-none");
 
     return (
-        <Aside id="aside-private-messages" size="small" addClass={tabClass.join(" ")}>
+        <Aside id="aside-private-messages" addClass={tabClass.join(" ")}>
             <div className="aside-content-container">
                 <AsideHeader
                     title="Messages"
