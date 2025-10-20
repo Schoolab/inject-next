@@ -23,7 +23,7 @@ export const ModalMessage = ({ isShow = false, emptyState = false, loading = fal
                     <div className="modal-header border-bottom">
                        
                        
-                        <h3 className="modal-title line-clamp-1 d-flex align-items-center gap-2xs">
+                        <h3 className="modal-title line-clamp-1 d-flex align-items-center gap-xs">
                             <button id="chat-return" className="modal-action btn btn-default btn-sm d-flex"><span className="icon icon-arrow-left"></span></button>
                             <span className="text-truncate">Pierre Lemeteil</span>
                         </h3>
