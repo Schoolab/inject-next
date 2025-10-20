@@ -29,7 +29,7 @@ export const ModalMessage = ({ isShow = false, emptyState = false, loading = fal
                         </h3>
                         <div className="modal-actions">
                             <button className="btn btn-default btn-sm" role="button">
-                                <span className="icon icon-phone"></span>
+                                <span className="icon icon-headphones"></span>
                                
                             </button>
                             <button className="btn btn-transparent border-0 p-2xs text-muted" type="button" data-dismiss="modal" aria-label="Close">
