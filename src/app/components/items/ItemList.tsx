@@ -64,7 +64,8 @@ export const ItemList = ({
                 {notifs && <Notif label={notifs} status="accent" />}
 
                 <div className="d-flex align-items-center gap-xs">
-                    <Dropdown>
+                    <div className="dropdown-container">
+                        
                         <a className="btn btn-muted btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
                             <span className="icon icon-options"  data-placement="bottom"/>
                         </a>
@@ -75,7 +76,7 @@ export const ItemList = ({
                             <DropdownItem label="Report..." iconName="flag" />
                             <DropdownItem type="danger" label="Delete" iconName="delete" />
                         </DropdownMenu>
-                    </Dropdown>
+                    </div>
                 </div>
             </div>
         </div>

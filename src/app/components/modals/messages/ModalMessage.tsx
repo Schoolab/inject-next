@@ -40,11 +40,6 @@ export const ModalMessage = ({ isShow = false, emptyState = false, loading = fal
 
                     <div className="tab-content h-100">
                         <div id="chat" role="tabpanel" aria-labelledby="info-tab" className="h-100 tab-pane fade active show">
-                    
-                             
-                         
-                       
-                            
                                     <div className="modal-body have-sticky-footer">
                                         <div className="message-wrapper">
                                             <div className="message align-items-end">
