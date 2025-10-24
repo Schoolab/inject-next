@@ -72,18 +72,18 @@ export const Table = ({
                                 </div>
                                 <div className="d-flex flex-column flex-fill gap-0">
                                     <p className="font-weight-bold" aria-labelledby="large">
-                                        Title with icon
+                                        Title with icon xxx
                                     </p>
                                     <div className="text-muted small metas is-list mb-none">
                                         <p>Meta</p>
                                     </div>
                                 </div>
                             </div>
-                            <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
+                            <a href="#" className="btn btn-lg btn-muted show-on-hover" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
-                                <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                            <div className="dropdown-container">
+                                <a href="#" className="btn btn-sm btn-transparent btn-icon text-muted dropdown-trigger" data-boudary="window" data-toggle="dropdown" aria-expanded="true">
                                     <span className="icon icon-options" />
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-right">
@@ -158,7 +158,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -230,7 +230,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -300,7 +300,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -379,7 +379,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -466,7 +466,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -541,7 +541,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -616,7 +616,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -688,7 +688,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -761,7 +761,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -902,7 +902,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -1001,7 +1001,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -1099,7 +1099,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -1197,7 +1197,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -1294,7 +1294,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Download file" data-boundary="window">
                                 <span className="icon icon-cloud-download" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -1386,7 +1386,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -1471,7 +1471,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -1555,7 +1555,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>
@@ -1634,7 +1634,7 @@ export const Table = ({
                             <a href="#" className="btn btn-lg btn-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                                 <span className="icon icon-copy" />
                             </a>
-                            <div className="dropdown-container z-1" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
+                            <div className="dropdown-container" data-toggle="tooltip" data-placement="top" data-boundary="window" data-title="Options">
                                 <a href="#" className="btn btn-lg btn-muted" role="button" data-toggle="dropdown" aria-expanded="false">
                                     <span className="icon icon-options" />
                                 </a>

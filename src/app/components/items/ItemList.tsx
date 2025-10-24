@@ -64,9 +64,9 @@ export const ItemList = ({
                 {notifs && <Notif label={notifs} status="accent" />}
 
                 <div className="d-flex align-items-center gap-xs">
-                    <Dropdown addClass="z-3">
+                    <Dropdown>
                         <a className="btn btn-muted btn-icon z-1" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
-                            <span className="icon icon-options" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window" />
+                            <span className="icon icon-options"  data-placement="bottom"/>
                         </a>
                         <DropdownMenu direction="right">
                             <DropdownItem label="Mark as read" iconName="check-circle" />
