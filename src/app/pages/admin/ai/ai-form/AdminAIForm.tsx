@@ -23,7 +23,7 @@ export const AdminAIForm = () => {
     //     aside();
     // }, []);
     return (
-        <Layout showShortcutbarAdmin={true} showShortcutbar={false} shortcutBarExpanded={true} >
+        <Layout showShortcutbarAdmin={true} showShortcutbar={false} shortcutBarExpanded={true}>
             <AppContent sections="separated" showSubnav={false}>
                 <Section collapsable={true} collapsableId="Providers" title="Providers" subtitle="Manage your AI providers here to activate and enhance INJECT’s features.">
                     <div className="row card-row">
@@ -31,9 +31,8 @@ export const AdminAIForm = () => {
                             <div className="card h-100">
                                 <div className="card-infos d-flex flex-column align-items-stretch gap-md">
                                     <div className="d-flex flex-column gap-sm">
-                                 
                                         <div className="d-flex flex-column gap-none">
-                                            <p className="h3 line-clamp-1 align-items-center">       
+                                            <p className="h3 line-clamp-1 align-items-center">
                                                 <span className="icon is-sm mr-2">
                                                     <img src="img/InjectIA.svg" />
                                                 </span>
@@ -43,45 +42,41 @@ export const AdminAIForm = () => {
                                         </div>
                                     </div>
                                 </div>
-                                     <div className="card-links" >
+                                <div className="card-links">
                                     <div className="card-actions">
                                         <Button iconStartName="code" label="Json Config" size="sm" type="default" />
-                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
-                          <div className="col-12 col-md-6 col-lg-4">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div className="card h-100">
                                 <div className="card-infos d-flex flex-column align-items-stretch gap-md">
                                     <div className="d-flex flex-column gap-sm">
-                                 
                                         <div className="d-flex flex-column gap-none">
-                                            <p className="h3 line-clamp-1 align-items-center">       
+                                            <p className="h3 line-clamp-1 align-items-center">
                                                 <span className="icon is-sm mr-2">
                                                     <img src="img/OpenIA.svg" />
                                                 </span>
                                                 <span>OpenIA</span>
                                             </p>
-                                            <p className="text-navigation">  Most widely used. Perfect for general discussions, complex customer support, content creation, education and training, and translating.</p>
+                                            <p className="text-navigation"> Most widely used. Perfect for general discussions, complex customer support, content creation, education and training, and translating.</p>
                                         </div>
                                     </div>
                                 </div>
-                                     <div className="card-links" >
+                                <div className="card-links">
                                     <div className="card-actions">
                                         <Button iconStartName="lock" label="Secret Key" size="sm" type="default" />
-                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
-                          <div className="col-12 col-md-6 col-lg-4">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div className="card h-100">
                                 <div className="card-infos d-flex flex-column align-items-stretch gap-md">
                                     <div className="d-flex flex-column gap-sm">
-                                 
                                         <div className="d-flex flex-column gap-none">
-                                            <p className="h3 line-clamp-1 align-items-center">       
+                                            <p className="h3 line-clamp-1 align-items-center">
                                                 <span className="icon is-sm mr-2">
                                                     <img src="img/mistral.svg" />
                                                 </span>
@@ -91,15 +86,13 @@ export const AdminAIForm = () => {
                                         </div>
                                     </div>
                                 </div>
-                                     <div className="card-links" >
+                                <div className="card-links">
                                     <div className="card-actions">
                                         <Button iconStartName="lock" label="Secret Key" size="sm" type="default" />
-                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </Section>
                 <Section collapsable={true} collapsableId="Features" title="Features">
@@ -114,7 +107,7 @@ export const AdminAIForm = () => {
                                                     <input id="ai_feature_chat" className="custom-control-input featureActivate" type="checkbox" checked disabled value="chat" name="ai_feature_chat" />
                                                     <label className="custom-control-label" htmlFor="ai_feature_chat">
                                                         Enable
-                                                     </label>
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
@@ -124,17 +117,9 @@ export const AdminAIForm = () => {
                                         </div>
                                         <div className="item-group gap-2xs">
                                             <FormGroup addClass="cq-12" id="provider" label="Provider">
-                                                <FormSelect
-                                                    id="Provider-1"
-                                                    disabled
-                                                    options={[
-                                                   
-                                                        { label: "INJECT AI", value: "INJECT",selected: true,
-                                                            disabled: true, },
-                                                    ]}
-                                                />
+                                                <FormSelect id="Provider-1" disabled options={[{ label: "INJECT AI", value: "INJECT", selected: true, disabled: true }]} />
                                             </FormGroup>
-                                            <FormGroup addClass="cq-12" id="Assistant" label="Assistant" >
+                                            <FormGroup addClass="cq-12" id="Assistant" label="Assistant">
                                                 <FormSelect
                                                     id="Assistant-1"
                                                     disabled
@@ -148,16 +133,13 @@ export const AdminAIForm = () => {
                                                     ]}
                                                 />
                                             </FormGroup>
-                                 
                                         </div>
-
-                                       
                                     </div>
                                 </div>
-                                     <div className="card-links" >
+                                <div className="card-links">
                                     <div className="card-actions">
                                         <Button disabled iconStartName="code" label="Prompt & Output" size="sm" type="default" />
-                                        <Button disabled iconStartName="settings" label="Config" size="sm" type="default" />
+                                        <Button iconStartName="settings" label="Config" size="sm" type="default" />
                                     </div>
                                 </div>
                             </div>
@@ -172,7 +154,7 @@ export const AdminAIForm = () => {
                                                     <input id="ai_feature_chat" className="custom-control-input featureActivate" type="checkbox" checked value="chat" name="ai_feature_chat" />
                                                     <label className="custom-control-label" htmlFor="ai_feature_chat">
                                                         Enable
-                                                     </label>
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
@@ -193,7 +175,6 @@ export const AdminAIForm = () => {
                                                         },
                                                         { label: "OpenAI", value: "OpenAI" },
                                                         { label: "Mistral", value: "Mistral" },
-                                                
                                                     ]}
                                                 />
                                             </FormGroup>
@@ -211,13 +192,10 @@ export const AdminAIForm = () => {
                                                     ]}
                                                 />
                                             </FormGroup>
-                                        
                                         </div>
-
-                                    
                                     </div>
                                 </div>
-                                     <div className="card-links" >
+                                <div className="card-links">
                                     <div className="card-actions">
                                         <Button disabled iconStartName="code" label="Prompt & Output" size="sm" type="default" />
                                         <Button iconStartName="settings" label="Config" size="sm" type="default" />
@@ -235,7 +213,7 @@ export const AdminAIForm = () => {
                                                     <input id="ai_feature_chat" className="custom-control-input featureActivate" type="checkbox" checked disabled value="chat" name="ai_feature_chat" />
                                                     <label className="custom-control-label" htmlFor="ai_feature_chat">
                                                         Enable
-                                                     </label>
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
@@ -256,7 +234,6 @@ export const AdminAIForm = () => {
                                                         },
                                                         { label: "OpenAI", value: "OpenAI" },
                                                         { label: "Mistral", value: "Mistral" },
-                                                    
                                                     ]}
                                                 />
                                             </FormGroup>
@@ -275,11 +252,9 @@ export const AdminAIForm = () => {
                                                 />
                                             </FormGroup>
                                         </div>
-
-                                        
                                     </div>
                                 </div>
-                                     <div className="card-links" >
+                                <div className="card-links">
                                     <div className="card-actions">
                                         <Button disabled iconStartName="code" label="Prompt & Output" size="sm" type="default" />
                                         <Button disabled iconStartName="settings" label="Config" size="sm" type="default" />
@@ -297,7 +272,7 @@ export const AdminAIForm = () => {
                                                     <input id="ai_feature_chat" className="custom-control-input featureActivate" type="checkbox" checked disabled value="chat" name="ai_feature_chat" />
                                                     <label className="custom-control-label" htmlFor="ai_feature_chat">
                                                         Enable
-                                                     </label>
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
@@ -307,17 +282,7 @@ export const AdminAIForm = () => {
                                         </div>
                                         <div className="item-group gap-2xs">
                                             <FormGroup addClass="cq-12" id="provider" label="Provider">
-                                                <FormSelect
-                                                    id="Provider-4"
-                                                    disabled
-                                                    options={[
-                                                     
-                                                      
-                                                        { label: "Mistral", value: "Mistral",   selected: true,
-                                                            disabled: true, },
-                                                      
-                                                    ]}
-                                                />
+                                                <FormSelect id="Provider-4" disabled options={[{ label: "Mistral", value: "Mistral", selected: true, disabled: true }]} />
                                             </FormGroup>
                                             <FormGroup addClass="cq-12" id="Assistant" label="Assistant">
                                                 <FormSelect
@@ -333,12 +298,10 @@ export const AdminAIForm = () => {
                                                     ]}
                                                 />
                                             </FormGroup>
-                                        
                                         </div>
-
                                     </div>
                                 </div>
-                                     <div className="card-links" >
+                                <div className="card-links">
                                     <div className="card-actions">
                                         <Button disabled iconStartName="code" label="Prompt & Output" size="sm" type="default" />
                                         <Button disabled iconStartName="settings" label="Config" size="sm" type="default" />
@@ -353,16 +316,16 @@ export const AdminAIForm = () => {
                                         <div className="form-row">
                                             <div className="form-group">
                                                 <div className="custom-control custom-switch">
-                                                    <input id="ai_feature_chat" className="custom-control-input featureActivate" type="checkbox" checked  value="chat" name="ai_feature_chat" />
+                                                    <input id="ai_feature_chat" className="custom-control-input featureActivate" type="checkbox" checked value="chat" name="ai_feature_chat" />
                                                     <label className="custom-control-label" htmlFor="ai_feature_chat">
                                                         Enable
-                                                     </label>
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="d-flex flex-column gap-none">
                                             <p className="h3 line-clamp-1">AskAI Matching Mentoring</p>
-                                            <p className="text-navigation">Enables  AI-powered suggestions for matching experts with projects..</p>
+                                            <p className="text-navigation">Enables AI-powered suggestions for matching experts with projects..</p>
                                         </div>
                                         <div className="item-group gap-2xs">
                                             <FormGroup addClass="cq-12" id="provider" label="Provider">
@@ -377,7 +340,6 @@ export const AdminAIForm = () => {
                                                         },
                                                         { label: "OpenAI", value: "OpenAI" },
                                                         { label: "Mistral", value: "Mistral" },
-                                                      
                                                     ]}
                                                 />
                                             </FormGroup>
@@ -401,12 +363,10 @@ export const AdminAIForm = () => {
                                             </p>
                                         </div>
 
-                                        <div className="d-flex justify-content-end gap-xs">
-                                           
-                                        </div>
+                                        <div className="d-flex justify-content-end gap-xs"></div>
                                     </div>
                                 </div>
-                               <div className="card-links" >
+                                <div className="card-links">
                                     <div className="card-actions">
                                         <Button iconStartName="code" label="Prompt & Output" size="sm" type="default" />
                                         <Button iconStartName="settings" label="Config" size="sm" type="default" />
@@ -417,99 +377,7 @@ export const AdminAIForm = () => {
                     </div>
                 </Section>
 
-               
-                <div className="application-section">
-        <h3 className="application-section--title mb-0 " data-toggle="collapse" data-target="#context" aria-expanded="true">
-                <span className="title-container">Configuration</span>
-                <span className="icon icon-chevron-right ml-auto"></span>
-        </h3>
-        <div className=" collapse show" id="context">
-                <p className="mb-5"> Provide the AI with comprehensive information about your organization to enhance its ability to answer questions and offer improved recommendations. </p>
-                <div className="contextFormContainer">
-                        <form name="fields_configuration_form" method="post" action="/rest/ai/context/83a93717-1382-49f2-bd0e-d78bb5752627"><input type="hidden" name="_method" value="PATCH" />
-                                <div id="fields_configuration_form">
-                                        <div className="form-group"> 
-                                            <label className="checkbox-custom font-weight-bold" htmlFor="fields_configuration_form_textValue">Context</label>
-                                                <small id="fields_configuration_form_textValue_help" className="form-text text-muted">To provide context to an AI agent, include detailed descriptions of the subjects, matter, relevant examples, and any specific goals or outcomes you want to achieve.</small> 
-                                                <textarea id="fields_configuration_form_textValue" name="fields_configuration_form[textValue]" placeholder="e.g., Expertises and History"  aria-describedby="fields_configuration_form_textValue_help" className="form-control" ></textarea>
-                                        </div>
-                                        <fieldset className="form-group">
-                                                <legend className="active checkbox-custom font-weight-bold col-form-label">Tone of voice</legend>
-                                                <div id="fields_configuration_form_tone" data-display="flex-fill"  data-force-blank="">
-                                                        <div className="d-flex flex-column flex-lg-row gap-xs">
-                                                                <div className="custom-control custom-control-card custom-radio flex-fill">
-                                                                        <input type="radio" className="custom-control-input" id="fields_configuration_form_tone_0" name="fields_configuration_form[tone]" data-display="flex-fill"  data-force-blank="" value="0" checked />
-                                                                        <label className="checkbox-custom custom-control-label custom-control-label" htmlFor="fields_configuration_form_tone_0">Friendly</label>
-                                                                </div>
-                                                                <div className="custom-control custom-control-card custom-radio flex-fill">
-                                                                        <input type="radio" className="custom-control-input" id="fields_configuration_form_tone_1" name="fields_configuration_form[tone]" data-display="flex-fill"  data-force-blank="" value="1" />
-                                                                        <label className="checkbox-custom custom-control-label custom-control-label" htmlFor="fields_configuration_form_tone_1">Professional</label>
-                                                                </div>
-                                                                <div className="custom-control custom-control-card custom-radio flex-fill">
-                                                                        <input type="radio" className="custom-control-input" id="fields_configuration_form_tone_2" name="fields_configuration_form[tone]" data-display="flex-fill"  data-force-blank="" value="2" />
-                                                                        <label className="checkbox-custom custom-control-label custom-control-label" htmlFor="fields_configuration_form_tone_2">Persuasive</label>
-                                                                </div>
-                                                                <div className="custom-control custom-control-card custom-radio flex-fill">
-                                                                        <input type="radio" className="custom-control-input" id="fields_configuration_form_tone_3" name="fields_configuration_form[tone]" data-display="flex-fill"  data-force-blank="" value="3" />
-                                                                        <label className="checkbox-custom custom-control-label custom-control-label" htmlFor="fields_configuration_form_tone_3">Informative</label>
-                                                                </div>
-                                                                <div className="custom-control custom-control-card custom-radio flex-fill">
-                                                                        <input type="radio" className="custom-control-input" id="fields_configuration_form_tone_4" name="fields_configuration_form[tone]" data-display="flex-fill"  data-force-blank="" value="4" />
-                                                                        <label className="checkbox-custom custom-control-label custom-control-label" htmlFor="fields_configuration_form_tone_4">Direct</label>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </fieldset>
-                                        <fieldset className="form-group">
-                                                <legend className="active checkbox-custom font-weight-bold col-form-label">Audience</legend>
-                                                <div id="fields_configuration_form_audience" data-display="flex-fill"  data-force-blank="">
-                                                        <div className="d-flex flex-column flex-lg-row gap-xs">
-                                                                <div className="custom-control custom-control-card custom-radio flex-fill">
-                                                                        <input type="radio" className="custom-control-input" id="fields_configuration_form_audience_0" name="fields_configuration_form[audience]" data-display="flex-fill"  data-force-blank="" value="0" checked />
-                                                                        <label className="checkbox-custom custom-control-label custom-control-label" htmlFor="fields_configuration_form_audience_0">Corporate</label>
-                                                                </div>
-                                                                <div className="custom-control custom-control-card custom-radio flex-fill">
-                                                                        <input type="radio" className="custom-control-input" id="fields_configuration_form_audience_1" name="fields_configuration_form[audience]" data-display="flex-fill"  data-force-blank="" value="1" />
-                                                                        <label className="checkbox-custom custom-control-label custom-control-label" htmlFor="fields_configuration_form_audience_1">Startup</label>
-                                                                </div>
-                                                                <div className="custom-control custom-control-card custom-radio flex-fill">
-                                                                        <input type="radio" className="custom-control-input" id="fields_configuration_form_audience_2" name="fields_configuration_form[audience]" data-display="flex-fill"  data-force-blank="" value="2" />
-                                                                        <label className="checkbox-custom custom-control-label custom-control-label" htmlFor="fields_configuration_form_audience_2">Academic</label>
-                                                                </div>
-                                                                <div className="custom-control custom-control-card custom-radio flex-fill">
-                                                                        <input type="radio" className="custom-control-input" id="fields_configuration_form_audience_3" name="fields_configuration_form[audience]" data-display="flex-fill"  data-force-blank="" value="3" />
-                                                                        <label className="checkbox-custom custom-control-label custom-control-label" htmlFor="fields_configuration_form_audience_3">Associations</label>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </fieldset>
-                                        <fieldset className="form-group">
-                                                <legend className="active checkbox-custom font-weight-bold col-form-label">Language</legend>
-                                                <div id="fields_configuration_form_language" data-display="flex-fill"  data-force-blank="">
-                                                        <div className="d-flex flex-column flex-lg-row gap-xs">
-                                                                <div className="custom-control custom-control-card custom-radio flex-fill">
-                                                                        <input type="radio" className="custom-control-input" id="fields_configuration_form_language_0" name="fields_configuration_form[language]" data-display="flex-fill"  data-force-blank="" value="0" />
-                                                                        <label className="checkbox-custom custom-control-label custom-control-label" htmlFor="fields_configuration_form_language_0">Simple</label>
-                                                                </div>
-                                                                <div className="custom-control custom-control-card custom-radio flex-fill">
-                                                                        <input type="radio" className="custom-control-input" id="fields_configuration_form_language_1" name="fields_configuration_form[language]" data-display="flex-fill"  data-force-blank="" value="1" checked />
-                                                                        <label className="checkbox-custom custom-control-label custom-control-label" htmlFor="fields_configuration_form_language_1">Technical</label>
-                                                                </div>
-                                                                <div className="custom-control custom-control-card custom-radio flex-fill">
-                                                                        <input type="radio" className="custom-control-input" id="fields_configuration_form_language_2" name="fields_configuration_form[language]" data-display="flex-fill"  data-force-blank="" value="2" />
-                                                                        <label className="checkbox-custom custom-control-label custom-control-label" htmlFor="fields_configuration_form_language_2">Inclusive</label>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </fieldset> <input type="hidden" id="fields_configuration_form__token" name="fields_configuration_form[_token]" value="3aeec692681262c635a54c6da.mB-IHfo69zfLJWzt76I7ZcGqSCc_Q2v8tNkrh1hNn8Q.13GxL7tsgXG6HBalq9tsB_j8fmhFezyN65Fp6WkY5Yf0JsMlnnS0eIxwDw" />
-                                </div>
-                                <div className="d-flex justify-content-end">
-                                        <button type="submit" className="btn btn-primary">Save</button>
-                                </div>
-                        </form>
-                </div>
-        </div>
-</div>
+                
             </AppContent>
         </Layout>
     );
