@@ -120,7 +120,7 @@ export const AskAIPersona = () => {
                     <div className="row">
                         <div className="col-12 col-lg-6 mb-md">
                             <div className="card h-100">
-                                <div className="card-infos d-flex flex-column align-items-stretch gap-md">
+                                <div className="card-infos flex-shrink-1 flex-grow-0">
                                     <div className="d-flex align-items-start gap-sm">
                                         <Avatar iconName="account" isOval />
                                         <div className="card-title flex-grow-1">
@@ -134,7 +134,7 @@ export const AskAIPersona = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card-links is-scrollabe d-flex flex-column gap-xs" >
+                                <div className="card-links is-scrollabe h-100" >
                                        <FormGroup label="Main citation">
                                             <FormTextarea id="f-1a" rows={4} placeholder="Not completed yet" defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex."} readonly={true} fieldSizing={true} />
                                         </FormGroup>
@@ -155,7 +155,7 @@ export const AskAIPersona = () => {
                         </div>
                         <div className="col-12 col-lg-6 mb-md">
                             <div className="card h-100">
-                                <div className="card-infos d-flex flex-column align-items-stretch gap-md">
+                                <div className="card-infos flex-shrink-1 flex-grow-0">
                                     <div className="d-flex align-items-start gap-sm">
                                         <Avatar iconName="account" isOval />
                                         <div className="card-title flex-grow-1">
@@ -169,7 +169,7 @@ export const AskAIPersona = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card-links is-scrollabe d-flex flex-column gap-xs" >
+                                <div className="card-links is-scrollabe" >
                                        <FormGroup label="Main citation">
                                             <FormTextarea id="f-1a" rows={4} placeholder="Not completed yet" defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex."} readonly={true} fieldSizing={true} />
                                         </FormGroup>
