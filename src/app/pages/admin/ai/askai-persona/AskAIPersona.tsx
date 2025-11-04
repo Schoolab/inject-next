@@ -138,7 +138,7 @@ export const AskAIPersona = () => {
                                     </div>
                                     <div className="d-flex flex-column">
                                         <div className="d-flex gap-2xs">
-                                            <span className="icon icon-release text-primary"></span>
+                                            <span className="icon icon-alert text-primary"></span>
                                             <h4 className="mb-0">His/her obstacles/problems</h4>
                                         </div>
                                         <div style={{ overflow: "auto", maxHeight: 150 }}>
@@ -205,7 +205,7 @@ export const AskAIPersona = () => {
                                     </div>
                                     <div className="d-flex flex-column">
                                         <div className="d-flex gap-2xs">
-                                            <span className="icon icon-release text-primary"></span>
+                                            <span className="icon icon-alert text-primary"></span>
                                             <h4 className="mb-0">His/her obstacles/problems</h4>
                                         </div>
                                         <div style={{ overflow: "auto", maxHeight: 150 }}>
