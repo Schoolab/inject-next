@@ -141,7 +141,7 @@ export const AskAIPersona = () => {
                                             <span className="icon icon-alert text-primary"></span>
                                             <h4 className="mb-0">His/her obstacles/problems</h4>
                                         </div>
-                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                        
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
                                             <ul>
                                                 <li>Nullam eu dictum ex</li>
@@ -149,38 +149,38 @@ export const AskAIPersona = () => {
                                                 <li>Phasellus a dictum metus</li>
                                             </ul>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
-                                        </div>
+                                        
                                     </div>
                                     <div className="d-flex flex-column">
                                         <div className="d-flex gap-2xs">
                                             <span className="icon icon-objective text-primary"></span>
                                             <h4 className="mb-0">His/her needs</h4>
                                         </div>
-                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                        
                                             <ul>
                                                 <li>Nullam eu dictum ex</li>
                                                 <li>consectetur adipiscing elit</li>
                                                 <li>Phasellus a dictum metus</li>
                                             </ul>
-                                        </div>
+                                      
                                     </div>
                                     <div className="d-flex flex-column">
                                         <div className="d-flex gap-2xs">
                                             <span className="icon icon-rating text-primary"></span>
                                             <h4 className="mb-0">The services he/she uses</h4>
                                         </div>
-                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                        
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
-                                        </div>
+                                      
                                     </div>
                                     <div className="d-flex flex-column">
                                         <div className="d-flex gap-2xs">
                                             <span className="icon icon-impact-native text-primary"></span>
                                             <h4 className="mb-0">Environmental and social awareness</h4>
                                         </div>
-                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                        
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -208,48 +208,47 @@ export const AskAIPersona = () => {
                                             <span className="icon icon-alert text-primary"></span>
                                             <h4 className="mb-0">His/her obstacles/problems</h4>
                                         </div>
-                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                        
                                             <ul>
                                                 <li>Nullam eu dictum ex</li>
                                                 <li>consectetur adipiscing elit</li>
                                                 <li>Phasellus a dictum metus</li>
                                             </ul>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
-                                        </div>
+                                     
                                     </div>
                                     <div className="d-flex flex-column">
                                         <div className="d-flex gap-2xs">
                                             <span className="icon icon-objective text-primary"></span>
                                             <h4 className="mb-0">His/her needs</h4>
                                         </div>
-                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                        
                                             <ul>
                                                 <li>Nullam eu dictum ex</li>
                                                 <li>consectetur adipiscing elit</li>
                                                 <li>Phasellus a dictum metus</li>
                                             </ul>
-                                        </div>
+                                     
                                     </div>
                                     <div className="d-flex flex-column">
                                         <div className="d-flex gap-2xs">
                                             <span className="icon icon-rating text-primary"></span>
                                             <h4 className="mb-0">The services he/she uses</h4>
                                         </div>
-                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                        
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
-                                        </div>
+                                       
                                     </div>
                                     <div className="d-flex flex-column">
                                         <div className="d-flex gap-2xs">
                                             <span className="icon icon-impact-native text-primary"></span>
                                             <h4 className="mb-0">Environmental and social awareness</h4>
                                         </div>
-                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                        
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
-                                        </div>
+                                        
+                                        
                                     </div>
                                 </div>
                             </div>
