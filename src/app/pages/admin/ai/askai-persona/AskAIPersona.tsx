@@ -120,9 +120,9 @@ export const AskAIPersona = () => {
                     <div className="row">
                         <div className="col-12 col-lg-6 mb-md">
                             <div className="card h-100">
-                                <div className="card-infos flex-shrink-1 flex-grow-0">
+                                <div className="card-infos flex-shrink-1 flex-grow-0 d-flex flex-column gap-md align-items-start">
                                     <div className="d-flex align-items-start gap-sm">
-                                        <Avatar iconName="account" isOval />
+                                        <Avatar addClass="bg-random-1" iconAddClass="c-random-1" iconName="account" isOval />
                                         <div className="card-title flex-grow-1">
                                             <span className="h4 mb-none line-clamp-1 gap-2xs d-flex flex-direction align-items-center gap-2xs">
                                                 <span>Firstname Lastname</span>
@@ -133,31 +133,63 @@ export const AskAIPersona = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="card-links is-scrollabe h-100" >
-                                       <FormGroup label="Main citation">
-                                            <FormTextarea id="f-1a" rows={4} placeholder="Not completed yet" defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex."} readonly={true} fieldSizing={true} />
-                                        </FormGroup>
-                                        <FormGroup label="His/her obstacles/problems">
-                                            <FormTextarea id="f-2a" rows={4} placeholder="Not completed yet" defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex."} readonly={true} fieldSizing={true} />
-                                        </FormGroup>
-                                        <FormGroup label="His/her needs">
-                                            <FormTextarea id="f-3a" rows={4} placeholder="Not completed yet" defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex."} readonly={true} fieldSizing={true} />
-                                        </FormGroup>
-                                        <FormGroup label="The services he/she uses">
-                                            <FormTextarea id="f-4a" rows={4} placeholder="Not completed yet" defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex."} readonly={true} fieldSizing={true} />
-                                        </FormGroup>
-                                        <FormGroup label="Environmental and social awareness">
-                                            <FormTextarea id="f-5a" rows={4} placeholder="Not completed yet" defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex."} readonly={true} fieldSizing={true} />
-                                        </FormGroup>
+                                    <div className="d-flex flex-column">
+                                        <div className="h5 font-italic bg-light rounded p-md mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex."</div>
+                                    </div>
+                                    <div className="d-flex flex-column">
+                                        <div className="d-flex gap-2xs">
+                                            <span className="icon icon-alert text-primary"></span>
+                                            <h4 className="mb-0">His/her obstacles/problems</h4>
+                                        </div>
+                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
+                                            <ul>
+                                                <li>Nullam eu dictum ex</li>
+                                                <li>consectetur adipiscing elit</li>
+                                                <li>Phasellus a dictum metus</li>
+                                            </ul>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex flex-column">
+                                        <div className="d-flex gap-2xs">
+                                            <span className="icon icon-objective text-primary"></span>
+                                            <h4 className="mb-0">His/her needs</h4>
+                                        </div>
+                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                            <ul>
+                                                <li>Nullam eu dictum ex</li>
+                                                <li>consectetur adipiscing elit</li>
+                                                <li>Phasellus a dictum metus</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex flex-column">
+                                        <div className="d-flex gap-2xs">
+                                            <span className="icon icon-program text-primary"></span>
+                                            <h4 className="mb-0">The services he/she uses</h4>
+                                        </div>
+                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex flex-column">
+                                        <div className="d-flex gap-2xs">
+                                            <span className="icon icon-impact-native text-primary"></span>
+                                            <h4 className="mb-0">Environmental and social awareness</h4>
+                                        </div>
+                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-12 col-lg-6 mb-md">
                             <div className="card h-100">
-                                <div className="card-infos flex-shrink-1 flex-grow-0">
+                                <div className="card-infos flex-shrink-1 flex-grow-0 d-flex flex-column gap-md align-items-start">
                                     <div className="d-flex align-items-start gap-sm">
-                                        <Avatar iconName="account" isOval />
+                                        <Avatar addClass="bg-random-7" iconAddClass="c-random-7" iconName="account" isOval />
                                         <div className="card-title flex-grow-1">
                                             <span className="h4 mb-none line-clamp-1 gap-2xs d-flex flex-direction align-items-center gap-2xs">
                                                 <span>Firstname Lastname</span>
@@ -168,23 +200,57 @@ export const AskAIPersona = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="card-links is-scrollabe" >
-                                       <FormGroup label="Main citation">
-                                            <FormTextarea id="f-1a" rows={4} placeholder="Not completed yet" defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex."} readonly={true} fieldSizing={true} />
-                                        </FormGroup>
-                                        <FormGroup label="His/her obstacles/problems">
-                                            <FormTextarea id="f-2a" rows={4} placeholder="Not completed yet" defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex."} readonly={true} fieldSizing={true} />
-                                        </FormGroup>
-                                        <FormGroup label="His/her needs">
-                                            <FormTextarea id="f-3a" rows={4} placeholder="Not completed yet" defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex."} readonly={true} fieldSizing={true} />
-                                        </FormGroup>
-                                        <FormGroup label="The services he/she uses">
-                                            <FormTextarea id="f-4a" rows={4} placeholder="Not completed yet" defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex."} readonly={true} fieldSizing={true} />
-                                        </FormGroup>
-                                        <FormGroup label="Environmental and social awareness">
-                                            <FormTextarea id="f-5a" rows={4} placeholder="Not completed yet" defaultValue={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex."} readonly={true} fieldSizing={true} />
-                                        </FormGroup>
+                                    <div className="d-flex flex-column">
+                                        <div className="h5 font-italic bg-light rounded p-md mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus."</div>
+                                    </div>
+                                    <div className="d-flex flex-column">
+                                        <div className="d-flex gap-2xs">
+                                            <span className="icon icon-alert text-primary"></span>
+                                            <h4 className="mb-0">His/her obstacles/problems</h4>
+                                        </div>
+                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                            <ul>
+                                                <li>Nullam eu dictum ex</li>
+                                                <li>consectetur adipiscing elit</li>
+                                                <li>Phasellus a dictum metus</li>
+                                            </ul>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex flex-column">
+                                        <div className="d-flex gap-2xs">
+                                            <span className="icon icon-objective text-primary"></span>
+                                            <h4 className="mb-0">His/her needs</h4>
+                                        </div>
+                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                            <ul>
+                                                <li>Nullam eu dictum ex</li>
+                                                <li>consectetur adipiscing elit</li>
+                                                <li>Phasellus a dictum metus</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex flex-column">
+                                        <div className="d-flex gap-2xs">
+                                            <span className="icon icon-program text-primary"></span>
+                                            <h4 className="mb-0">The services he/she uses</h4>
+                                        </div>
+                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex flex-column">
+                                        <div className="d-flex gap-2xs">
+                                            <span className="icon icon-impact-native text-primary"></span>
+                                            <h4 className="mb-0">Environmental and social awareness</h4>
+                                        </div>
+                                        <div style={{ overflow: "auto", maxHeight: 150 }}>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dictum metus. Nullam eu dictum ex</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
