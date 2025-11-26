@@ -182,20 +182,7 @@ export const ProgramDashboardOverview = () => {
                                 </div>
                             </div>
                         </Section>
-                        <Section>
-                            <div className="cq justify-content-center">
-                                <div className="cq-12">
-                                    <h3 className="d-flex gap-xs align-items-center">
-                                        <Icon size="sm" name="questionnaire" />
-                                        <span>Applications</span>
-                                    </h3>
-                                    <p>Controls the status of an application, whether for a program or a project.</p>
-                                    <div className="d-flex mt-md gap-sm">
-                                        <Button type="default" label="See applications" addClass="flex-fill" />
-                                    </div>
-                                </div>
-                            </div>
-                        </Section>
+                
 
                         <Section title="Newsfeed" subtitle="Only visible to participants" subtitleIcon="community" buttons={[{type: "default", label: "New post", iconStartName: "plus-circle"}]}>
                             <div id="blogPostsWall" className="d-flex flex-column gap-xs">
@@ -279,14 +266,7 @@ export const ProgramDashboardOverview = () => {
                             </div>
                         </Section>
 
-                        <Section title="Your program managers" subtitle="Program Managers are here to guide you during the program.">
-                            <div className="d-flex flex-column gap-xs">
-                                <CardParticipant name="Marine Martinez" metas={[{ label: "Program Manager, Schoolab" }]} avatar="img/avatar-marine.jpeg" />
-                                <CardParticipant name="Pierre Forestier" metas={[{ label: "Program Manager, Schoolab" }]} avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" />
-                                <CardParticipant name="Sarah Lamoureux" metas={[{ label: "Community Builder, Schoolab" }]} avatar="https://inject-prod.s3.amazonaws.com/images/0ee71840-6d78-4784-acff-6f8d2722dbb7/sq150.jpeg" />
-                            </div>
-                            <Button type="default" extended={true} label="Show more" />
-                        </Section>
+       
 
                         <Section title="Resources">
                             <div className="d-flex flex-column gap-xs">
@@ -295,6 +275,33 @@ export const ProgramDashboardOverview = () => {
                                 <ItemResource isSmall={false} action="download" icon={{ addClass: "text-danger", name: "file-pdf-box" }} resource={{ details: "120 KB", name: "stakeholdermap-model.pdf", type: "PDF File" }} />
                             </div>
                             <Button type="default" extended={true} label="View all 5 shared files" />
+                        </Section>
+                        <Section>
+                            <div className="cq justify-content-center">
+                                <div className="cq-12">
+                                    <h3 className="d-flex gap-xs align-items-center">
+                                        <Icon size="sm" name="questionnaire" />
+                                        <span>Applications</span>
+                                    </h3>
+                                    <p>Controls the status of an application, whether for a program or a project.</p>
+                                    <div className="d-flex flex-column gap-xs">
+                                        <ItemResource isSmall={false} action="openLink" badge="Accepted" options={false} icon={{  name: "account-circle" }} resource={{  name: "Participant", type: "Application" }} />
+                                        <ItemResource isSmall={false} action="openLink" badge="Rejected" options={false} icon={{  name: "coaching" }} resource={{  name: "Expert", type: "Application" }} />
+                                        <ItemResource isSmall={false} action="openLink" badge="Inreview" options={false} icon={{  name: "project" }} resource={{  name: "Project_1", type: "Application" }} />
+                                        <ItemResource isSmall={false} action="openLink" badge="Submitted" options={false} icon={{  name: "project" }} resource={{  name: "Project_2", type: "Application" }} />
+                                         <ItemResource isSmall={false} action="openLink" badge="Draft" options={false} icon={{  name: "project" }} resource={{  name: "Project_3", type: "Application" }} />
+                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </Section>
+                                         <Section title="Your program managers" subtitle="Program Managers are here to guide you during the program.">
+                            <div className="d-flex flex-column gap-xs">
+                                <CardParticipant name="Marine Martinez" metas={[{ label: "Program Manager, Schoolab" }]} avatar="img/avatar-marine.jpeg" />
+                                <CardParticipant name="Pierre Forestier" metas={[{ label: "Program Manager, Schoolab" }]} avatar="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" />
+                                <CardParticipant name="Sarah Lamoureux" metas={[{ label: "Community Builder, Schoolab" }]} avatar="https://inject-prod.s3.amazonaws.com/images/0ee71840-6d78-4784-acff-6f8d2722dbb7/sq150.jpeg" />
+                            </div>
+                            <Button type="default" extended={true} label="Show more" />
                         </Section>
                         
                     </div>

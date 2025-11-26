@@ -27,6 +27,7 @@ export interface ItemResourceProps {
      * What kind of action is possible?
      */
     action?: "download" | "openLink" | "delete";
+    badge?: "Draft" | "Submitted" | "Inreview" | "Rejected" | "Accepted";
     options?: Boolean;
     /**
      * Icon parameters
@@ -38,7 +39,7 @@ export interface ItemResourceProps {
     isSmall?: Boolean;
 }
 
-export const ItemResource = ({ img, cover, resource, action, options = true, icon, isSmall = false }: ItemResourceProps) => {
+export const ItemResource = ({ img, cover, resource, action, options = true, icon, isSmall = false, badge }: ItemResourceProps) => {
     let classTab = ["item is-bordered"];
     isSmall && classTab.push("is-small");
 
@@ -51,10 +52,15 @@ export const ItemResource = ({ img, cover, resource, action, options = true, ico
             )}
             <div className="item-row">
                 <div className="item-row">
-                    { cover
-                        ? <Icon name={icon.name} addClass={`item-icon ${icon.addClass}`} />
-                        : img ? <div className="thumbnail is-lg"><img src={img} /></div> : <Icon name={icon.name} addClass={`item-icon ${icon.addClass}`} />
-                    }
+                    {cover ? (
+                        <Icon name={icon.name} addClass={`item-icon ${icon.addClass}`} />
+                    ) : img ? (
+                        <div className="thumbnail is-lg">
+                            <img src={img} />
+                        </div>
+                    ) : (
+                        <Icon name={icon.name} addClass={`item-icon ${icon.addClass}`} />
+                    )}
 
                     <div className="item-content">
                         <a className="item-title stretched-link text-truncate" href="#">
@@ -73,15 +79,42 @@ export const ItemResource = ({ img, cover, resource, action, options = true, ico
                     </div>
                 </div>
                 <div className="item-options">
-                    {action == "download" && (
-                        <Button type="muted" iconStartName="download" addClass="z-1" data-toggle="tooltip" data-placement="top" data-title="Download file" data-boundary="window" />
+                    {badge == "Draft" && (
+                        <div className="badge is-pill is-draft">
+                            <span className="icon icon-status-bordered"></span>
+                            <span>Draft</span>
+                        </div>
                     )}
-                    {action == "openLink" && (
-                        <Button type="muted" iconStartName="new-tab" addClass="z-1" data-toggle="tooltip" data-placement="top" data-title="Open in new tab" data-boundary="window" />
+                    {badge == "Submitted" && (
+                        <div className="badge is-pill is-draft">
+                            <span className="icon icon-status-bordered"></span>
+                            <span>Submitted</span>
+                        </div>
                     )}
-                    {action == "delete" && (
-                        <Button type="muted" iconStartName="delete" addClass="z-1 btn-danger-on-hover" data-toggle="tooltip" data-placement="top" data-title="Delete file" data-boundary="window" />
+                    {badge == "Inreview" && (
+                        <div className="badge is-pill is-progress">
+                            <span className="icon icon-status-dashed"></span>
+                            <span>In review</span>
+                        </div>
                     )}
+                    {badge == "Rejected" && (
+                        <div className="badge is-pill is-closed">
+                            <span className="icon icon-minus-circle"></span>
+                            <span>Rejected</span>
+                        </div>
+                    )}
+                    {badge == "Accepted" && (
+                        <div className="badges">
+                            <div className="badge is-pill is-open">
+                                <span className="icon icon-status-filled"></span>
+                                <span>Accepted</span>
+                            </div>
+                        </div>
+                    )}
+                    {action == "download" && <Button type="muted" iconStartName="download" addClass="z-1" data-toggle="tooltip" data-placement="top" data-title="Download file" data-boundary="window" />}
+                    {action == "openLink" && <Button type="muted" iconStartName="new-tab" addClass="z-1" data-toggle="tooltip" data-placement="top" data-title="Open in new tab" data-boundary="window" />}
+                    {action == "delete" && <Button type="muted" iconStartName="delete" addClass="z-1 btn-danger-on-hover" data-toggle="tooltip" data-placement="top" data-title="Delete file" data-boundary="window" />}
+
                     {options && (
                         <div className="dropdown" data-toggle="tooltip" data-placement="top" data-title="Options" data-boundary="window" data-original-title="" title="">
                             <a className="btn btn-muted btn-icon z-1" href="#" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
