@@ -43,4 +43,4 @@ next-env.d.ts
 *.DS/Store
 *.DS_Store
 *.sass-cache
-*.npmrc
+#*.npmrc
