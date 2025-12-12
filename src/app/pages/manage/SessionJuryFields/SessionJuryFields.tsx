@@ -1,6 +1,7 @@
 import React from "react";
 import { Layout } from "@/app/layouts/layout";
 import { AppContent } from "@/app/layouts/AppContent";
+import { useEffect } from "react";
 import { Button } from "@/app/components/buttons/Button";
 import { ItemsGroup } from "@/app/components/items-group/ItemsGroup";
 import { ItemsGroupHeader } from "@/app/components/items-group/ItemsGroupHeader";
@@ -9,8 +10,13 @@ import { ItemCondition } from "@/app/components/items/ItemCondition";
 import { Section } from "@/app/components/sections/Section";
 import { EmptyState } from "@/app/content/empty-states/EmptyState";
 import { ItemForm } from "@/app/components/items/parts/ItemForm";
+import { groupCheckbox } from "../../../../../public/utils/groupCheckbox";
 
 export const SessionJuryFields = () => {
+    useEffect(() => {
+        groupCheckbox();
+    
+    }, []);
     return (
         <Layout sideBar="Manage">
             <AppContent
@@ -25,81 +31,169 @@ export const SessionJuryFields = () => {
                         href: "#",
                     },
                     {
-                        label: "Participants",
+                        label: "Jury",
                         href: "#",
                     },
                     {
-                        label: "Application forms",
+                        label: "Session",
+                    },
+                    {
+                        label: "Session fields",
                     },
                 ]}
-                title="Application forms"
+                title="Session fields"
             >
                 <div className="row">
                     <div className="col-12">
-                        <div className="card">
-                            <div className="card-header d-flex gap-sm align-items-center" data-toggle="collapse" data-target="#body2" aria-expanded="false">
-                                <div className="custom-control custom-checkbox">
-                                    <input id="option-undefined" className="custom-control-input" type="checkbox" name="option" />
-                                    <label className="custom-control-label text-nowrap d-flex column-gap-xs" htmlFor="option-undefined" aria-describedby="caption-undefined">
-                                        <div className="d-flex flex-column w-100 gap-none">
-                                            <p className="h4">Livrables</p>
-                                            <ul className="metas is-list small">
-                                                <li>Read only</li>
-                                                <li>4 required fields</li>
-                                            </ul>
-                                        </div>
-                                    </label>
+
+                        <Section title="Participants" subtitle="List of all fields concerning participants" collapsable isOpen={true} collapsableId="participants">
+
+
+
+
+                            <div className="item-group checkbox-group">
+                                <div className="item-group-header">
+                                    <div className="custom-control custom-checkbox flex-fill">
+                                        <input id="main-1" className="custom-control-input checkbox-main" type="checkbox" name="option" />
+                                        <label className="custom-control-label text-nowrap d-flex column-gap-xs" htmlFor="main-1" aria-describedby="main-1">
+                                            <div className="d-flex flex-column w-100 gap-none">
+                                                <p className="h4">Fields</p>
+                                                <ul className="metas is-list small">
+                                                    <li>6 fields</li>
+                                                    <li><span className="checkbox-count">0</span> fields selected</li>
+                                                </ul>
+                                            </div>
+                                        </label>
+                                    </div>
                                 </div>
+                                <div className="d-flex flex-column gap-2xs">
 
-                                <span className="icon icon-chevron-right"></span>
-                            </div>
-                            <div className="collapse" id="body2">
-                                <div className="card-body">test</div>
-                            </div>
-                        </div>
 
-                        <Section title="Participants" subtitle="Add questions you want to ask to participants during their applications." collapsable isOpen={true} collapsableId="participants">
-                            <div className="grid-vertical gap-md">
-                                <ItemsGroup>
-                                    <ItemsGroupHeader label="Basic info" />
-                                    <div className="d-flex flex-column gap-2xs">
-                                        <ItemQuestionnaire type="text" label="Your name" required locked={true} />
-                                        <ItemQuestionnaire type="textarea" label="Describe yourself" required locked={true} />
-                                        <ItemQuestionnaire type="select" label="Select your program" required locked={true} />
-                                        <ItemQuestionnaire type="radio" label="Are you a student?" required />
+                                    <div className="item is-bordered is-small">
+                                        <div className="item-row">
+                                            <div className="custom-control custom-checkbox flex-fill">
+                                                <input id="child-1a" className="custom-control-input checkbox-child" type="checkbox" name="option" />
+                                                <label className="custom-control-label text-nowrap d-flex column-gap-xs" htmlFor="child-1a" aria-describedby="child-1a">
+                                                    <div className="item-icon">
+                                                        <div className="icon icon-form-textbox"></div>
+                                                    </div>
+                                                    <div className="item-content ml-3 py-1 d-flex">
+                                                        <div className="item-title h4 mb-0 stretched-link flex-fill">Lorem Ipsum <span className="text-danger">*</span></div>
+                                                        <ul className="item-caption metas small is-list">
+                                                            <li>Short text</li>
+                                                            <li>Mandatory</li>
+                                                        </ul>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
-                                </ItemsGroup>
-                                <ItemsGroup>
-                                    <ItemsGroupHeader label="School info" />
-                                    <div className="d-flex flex-column gap-2xs">
-                                        <ItemCondition condition="Participant's type is" value="Student">
-                                            <ItemQuestionnaire type="checklist" label="Choose your school" caption="238 options: [list options here]" required collapsable={true} id="school">
-                                                <ItemForm addClass="bg-highlight rounded-sm p-lg mb-2xs" />
-                                            </ItemQuestionnaire>
-                                        </ItemCondition>
-                                        <ItemQuestionnaire type="attachment" label="Upload your resume" required />
-                                        <ItemQuestionnaire type="link" label="Your LinkedIn profile" required />
+
+                                    <div className="item is-bordered is-small">
+                                        <div className="item-row">
+                                            <div className="custom-control custom-checkbox flex-fill">
+                                                <input id="child-1b" className="custom-control-input checkbox-child" type="checkbox" name="option" />
+                                                <label className="custom-control-label text-nowrap d-flex column-gap-xs" htmlFor="child-1b" aria-describedby="child-1b">
+                                                    <div className="item-icon">
+                                                        <div className="icon icon-form-textarea"></div>
+                                                    </div>
+                                                    <div className="item-content ml-3 py-1 d-flex">
+                                                        <div className="item-title h4 mb-0 stretched-link flex-fill">Lorem Ipsum  </div>
+                                                        <ul className="item-caption metas small is-list">
+                                                            <li>Long text</li>
+                                                        </ul>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
-                                </ItemsGroup>
-                                <ItemsGroup>
-                                    <ItemsGroupHeader label="Conditions" />
-                                    <div className="d-flex flex-column gap-2xs">
-                                        <ItemQuestionnaire type="checkbox" label="I agree to the terms and conditions" required locked={true} />
-                                        <ItemQuestionnaire type="rating" label="Rate the program registration process" required isPrivate={true} />
+
+                                    <div className="item is-bordered is-small">
+                                        <div className="item-row">
+                                            <div className="custom-control custom-checkbox flex-fill">
+                                                <input id="child-1c" className="custom-control-input checkbox-child" type="checkbox" name="option" />
+                                                <label className="custom-control-label text-nowrap d-flex column-gap-xs" htmlFor="child-1c" aria-describedby="child-1c">
+                                                    <div className="item-icon">
+                                                        <div className="icon icon-form-select"></div>
+                                                    </div>
+                                                    <div className="item-content ml-3 py-1 d-flex">
+                                                        <div className="item-title h4 mb-0 stretched-link flex-fill">Lorem Ipsum </div>
+                                                        <ul className="item-caption metas small is-list">
+                                                            <li>Select list</li>
+                                                        </ul>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <Button label="Add question" iconStartName="plus-circle" size="sm" type="muted" addClass="align-self-start" />
-                                </ItemsGroup>
-                                <Button label="Add step" iconStartName="plus-circle" size="sm" type="muted" addClass="align-self-start" />
+
+                                    <div className="item is-bordered is-small">
+                                        <div className="item-row">
+                                            <div className="custom-control custom-checkbox flex-fill ">
+                                                <input id="child-1d" className="custom-control-input checkbox-child" type="checkbox" name="option" />
+                                                <label className="custom-control-label text-nowrap d-flex column-gap-xs" htmlFor="child-1d" aria-describedby="child-1d">
+                                                    <div className="item-icon">
+                                                        <div className="icon icon-form-radiobox-marked"></div>
+                                                    </div>
+                                                    <div className="item-content ml-3 py-1 d-flex">
+                                                        <div className="item-title h4 mb-0 stretched-link flex-fill">Lorem Ipsum</div>
+                                                        <ul className="item-caption metas small is-list">
+                                                            <li>Unique choice</li>
+                                                        </ul>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div className="item is-bordered is-small">
+                                        <div className="item-row">
+                                            <div className="custom-control custom-checkbox flex-fill ">
+                                                <input id="child-1e" className="custom-control-input checkbox-child" type="checkbox" name="option" />
+                                                <label className="custom-control-label text-nowrap d-flex column-gap-xs" htmlFor="child-1e" aria-describedby="child-1e">
+                                                    <div className="item-icon">
+                                                        <div className="icon icon-form-checklist"></div>
+                                                    </div>
+                                                    <div className="item-content ml-3 py-1 d-flex">
+                                                        <div className="item-title h4 mb-0 stretched-link flex-fill">Lorem Ipsum</div>
+                                                        <ul className="item-caption metas small is-list">
+                                                            <li>Check list</li>
+                                                        </ul>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                        <div className="item is-bordered is-small">
+                                        <div className="item-row">
+                                            <div className="custom-control custom-checkbox flex-fill ">
+                                                <input id="child-1f" className="custom-control-input checkbox-child" type="checkbox" name="option" />
+                                                <label className="custom-control-label text-nowrap d-flex column-gap-xs" htmlFor="child-1f" aria-describedby="child-1f">
+                                                    <div className="item-icon">
+                                                        <div className="icon icon-link"></div>
+                                                    </div>
+                                                    <div className="item-content ml-3 py-1 d-flex">
+                                                        <div className="item-title h4 mb-0 stretched-link flex-fill">Lorem Ipsum</div>
+                                                        <ul className="item-caption metas small is-list">
+                                                            <li>Upload file</li>
+                                                        </ul>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </Section>
-                        <Section title="Projects" subtitle="Add questions you want to ask to participants during their applications." collapsable isOpen={true} collapsableId="projects">
-                            <EmptyState title="There’s no questions yet" text="Before being able to add a question you have to create a&nbsp;first&nbsp;step." iconTitle="questionnaire" iconBtn="plus-circle" labelBtn="Add step" labelLink="Learn more about questions" spacious={true} />
+                        <Section title="Projects" subtitle="List of all fields concerning projects" collapsable isOpen={true} collapsableId="projects">
+                            <EmptyState title="There’s no fields yet" text="All fields will be listed here" iconTitle="questionnaire"  spacious={true} />
                         </Section>
-                        <Section title="Experts" subtitle="Add questions you want to ask to participants during their applications." collapsable isOpen={false} collapsableId="experts">
-                            <EmptyState title="There’s no questions yet" text="Before being able to add a question you have to create a&nbsp;first&nbsp;step." iconTitle="questionnaire" iconBtn="plus-circle" labelBtn="Add step" labelLink="Learn more about questions" spacious={true} />
+                        <Section title="Experts" subtitle="List of all fields concerning experts" collapsable isOpen={false} collapsableId="experts">
+                            <EmptyState title="There’s no fields yet" text="All fields will be listed here" iconTitle="questionnaire"  spacious={true} />
                         </Section>
-                        <Section title="Jury" subtitle="Add questions you want to ask to participants during their applications." collapsable isOpen={false} collapsableId="jury">
-                            <EmptyState title="There’s no questions yet" text="Before being able to add a question you have to create a&nbsp;first&nbsp;step." iconTitle="questionnaire" iconBtn="plus-circle" labelBtn="Add step" labelLink="Learn more about questions" />
+                        <Section title="Jury" subtitle="List of all fields concerning jury" collapsable isOpen={false} collapsableId="jury">
+                            <EmptyState title="There’s no fields yet" text="All fields will be listed here" iconTitle="questionnaire" spacious={true} />
                         </Section>
                     </div>
                 </div>
