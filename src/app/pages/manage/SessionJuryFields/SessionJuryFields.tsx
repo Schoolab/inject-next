@@ -42,6 +42,39 @@ export const SessionJuryFields = () => {
                     },
                 ]}
                 title="Session fields"
+                 subnav={[
+                    {
+                        label: "Basic info",
+                        href: "",
+                    },
+                    {
+                        label: "Fields",
+                        href: "",
+                         isActive: true,
+                    },
+                         {
+                        label: "Score cards",
+                        href: "",
+                       
+                    },
+                    {
+                        label: "Projects",
+                        href: "",
+                    },
+                 
+                      {
+                        label: "Juries",
+                        href: "",
+                    },
+                      {
+                        label: "Results",
+                        href: "",
+                    },
+                        {
+                        label: "Communication",
+                        href: "",
+                    },
+                ]}
             >
                 <div className="row">
                     <div className="col-12">
@@ -65,6 +98,11 @@ export const SessionJuryFields = () => {
                                             </div>
                                         </label>
                                     </div>
+                                    <a href="#" className="btn btn-default btn-sm" role="button">
+                                        <span className="icon icon-settings"></span>
+                                        <span>Manage</span>
+                                    </a>
+                                    
                                 </div>
                                 <div className="d-flex flex-column gap-2xs">
 

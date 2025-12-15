@@ -15,12 +15,6 @@ export const TableElementSkewedEmpty = ({}: TableElementSkewedEmptyProps) => {
         <div>
             <table className="table table-striped table-vertical table-skewed responsive w-100" id="doc-table-data-skewed" role="grid">
                 <thead>
-                    {/* <th class="table-c" style="min-width: 20px;">
-                    <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
-                        <input type="checkbox" id="selectAll" class="custom-control-input selectAllBulkSelectors" name="select" />
-                        <label class="custom-control-label" for="selectAll"></label>
-                    </div>
-                </th> */}
                     <tr>
                         <th scope="col" style={{ minWidth: 320, maxWidth: 320, width: 320 }}>
                             Name
@@ -61,12 +55,6 @@ export const TableElementSkewedEmpty = ({}: TableElementSkewedEmptyProps) => {
                 </thead>
                 <tbody>
                     <tr role="row" className="exclude-sort">
-                        {/* <td class="table-checkbox">
-          <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
-              <input type="checkbox" id="1" class="bulkActionSelector custom-control-input" value="1" />
-              <label class="custom-control-label" for="1"></label>
-          </div>
-      </td> */}
                         <th scope="row" data-content="All participants (10)">
                             <div className="d-flex align-items-center flex-fill gap-0">
                                 <div className="d-flex align-items-start flex-fill gap-xs">
@@ -154,12 +142,6 @@ export const TableElementSkewedEmpty = ({}: TableElementSkewedEmptyProps) => {
                         <td style={{ width: '100%', padding: '0 124px' }} />
                     </tr>
                     <tr role="row" className="table-active">
-                        {/* <td class="table-checkbox">
-          <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
-              <input type="checkbox" id="1" class="bulkActionSelector custom-control-input" value="1" />
-              <label class="custom-control-label" for="1"></label>
-          </div>
-      </td> */}
                         <th scope="row" data-content="Alexandra Jolly">
                             <div className="d-flex align-items-center flex-fill gap-0">
                                 <div className="d-flex align-items-start flex-fill gap-xs">
@@ -227,7 +209,7 @@ export const TableElementSkewedEmpty = ({}: TableElementSkewedEmptyProps) => {
                                         <circle className="progress-circle progress-circle-bg" />
                                         <circle className="progress-circle progress-circle-percent" />
                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                        {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
+                                
                                     </svg>
                                 </div>
                             </div>
@@ -239,7 +221,7 @@ export const TableElementSkewedEmpty = ({}: TableElementSkewedEmptyProps) => {
                                         <circle className="progress-circle progress-circle-bg" />
                                         <circle className="progress-circle progress-circle-percent" />
                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                        {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
+                             
                                     </svg>
                                 </div>
                             </div>
@@ -247,12 +229,7 @@ export const TableElementSkewedEmpty = ({}: TableElementSkewedEmptyProps) => {
                         <td style={{ width: '100%', padding: '0 124px' }} />
                     </tr>
                     <tr role="row" className="table-active">
-                        {/* <td class="table-checkbox">
-          <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
-              <input type="checkbox" id="1" class="bulkActionSelector custom-control-input" value="1" />
-              <label class="custom-control-label" for="1"></label>
-          </div>
-      </td> */}
+
                         <th scope="row" data-content="Schoolab">
                             <div className="d-flex align-items-center flex-fill gap-0">
                                 <div className="d-flex align-items-start flex-fill gap-xs">
@@ -332,7 +309,7 @@ export const TableElementSkewedEmpty = ({}: TableElementSkewedEmptyProps) => {
                                         <circle className="progress-circle progress-circle-bg" />
                                         <circle className="progress-circle progress-circle-percent" />
                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                        {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
+                              
                                     </svg>
                                 </div>
                             </div>
@@ -340,12 +317,7 @@ export const TableElementSkewedEmpty = ({}: TableElementSkewedEmptyProps) => {
                         <td style={{ width: '100%', padding: '0 124px' }} />
                     </tr>
                     <tr role="row">
-                        {/* <td class="table-checkbox">
-          <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
-              <input type="checkbox" id="1" class="bulkActionSelector custom-control-input" value="1" />
-              <label class="custom-control-label" for="1"></label>
-          </div>
-      </td> */}
+
                         <th scope="row" data-content="Impact (1)">
                             <div className="d-flex align-items-center flex-fill gap-0">
                                 <div className="d-flex align-items-start flex-fill gap-xs">
@@ -415,7 +387,7 @@ export const TableElementSkewedEmpty = ({}: TableElementSkewedEmptyProps) => {
                                         <circle className="progress-circle progress-circle-bg" />
                                         <circle className="progress-circle progress-circle-percent" />
                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                        {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
+                                   
                                     </svg>
                                 </div>
                             </div>
@@ -427,7 +399,7 @@ export const TableElementSkewedEmpty = ({}: TableElementSkewedEmptyProps) => {
                                         <circle className="progress-circle progress-circle-bg" />
                                         <circle className="progress-circle progress-circle-percent" />
                                         <path className="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z" />
-                                        {/* <text class="progress-circle-text" x="16" y="20">567/756</text> */}
+                                       
                                     </svg>
                                 </div>
                             </div>
@@ -435,12 +407,6 @@ export const TableElementSkewedEmpty = ({}: TableElementSkewedEmptyProps) => {
                         <td style={{ width: '100%', padding: '0 124px' }} />
                     </tr>
                     <tr role="row">
-                        {/* <td class="table-checkbox">
-          <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
-              <input type="checkbox" id="1" class="bulkActionSelector custom-control-input" value="1" />
-              <label class="custom-control-label" for="1"></label>
-          </div>
-      </td> */}
                         <th scope="row" data-content="Freelance (0)">
                             <div className="d-flex align-items-center flex-fill gap-0">
                                 <div className="d-flex align-items-start flex-fill gap-xs">
@@ -508,12 +474,6 @@ export const TableElementSkewedEmpty = ({}: TableElementSkewedEmptyProps) => {
                         <td style={{ width: '100%', padding: '0 124px' }} />
                     </tr>
                     <tr role="row">
-                        {/* <td class="table-checkbox">
-          <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
-              <input type="checkbox" id="1" class="bulkActionSelector custom-control-input" value="1" />
-              <label class="custom-control-label" for="1"></label>
-          </div>
-      </td> */}
                         <th scope="row" data-content="External (0)">
                             <div className="d-flex align-items-center flex-fill gap-0">
                                 <div className="d-flex align-items-start flex-fill gap-xs">

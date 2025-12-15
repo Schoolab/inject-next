@@ -39,6 +39,42 @@ export const JuryResults = () => {
                     },
                 ]}
                 title="Results"
+                subnav={[
+                    {
+                        label: "Basic info",
+                        href: "",
+                      
+                    },
+                    {
+                        label: "Fields",
+                        href: "",
+                    },
+                         {
+                        label: "Score cards",
+                        href: "",
+                      
+                    },
+                    {
+                        label: "Projects",
+                        href: "",
+                    },
+                 
+                      {
+                        label: "Juries",
+                        href: "",
+                    },
+                      {
+                        label: "Results",
+                        href: "",
+                          isActive: true,
+                    },
+                        {
+                        label: "Communication",
+                        href: "",
+                    },
+                ]}
+                
+                
             >
                 <div className="row">
                     <div className="col-12">
