@@ -79,7 +79,7 @@ export const SessionJuryFields = () => {
                 <div className="row">
                     <div className="col-12">
 
-                        <Section title="Participants" subtitle="List of all fields concerning participants" collapsable isOpen={true} collapsableId="participants">
+                        <Section title="Participants" subtitle="List of all fields concerning participants" collapsable isOpen={true} collapsableId="participantsFields">
 
 
 
@@ -224,13 +224,13 @@ export const SessionJuryFields = () => {
                                 </div>
                             </div>
                         </Section>
-                        <Section title="Projects" subtitle="List of all fields concerning projects" collapsable isOpen={true} collapsableId="projects">
+                        <Section title="Projects" subtitle="List of all fields concerning projects" collapsable isOpen={true} collapsableId="projectsFields">
                             <EmptyState title="There’s no fields yet" text="All fields will be listed here" iconTitle="questionnaire"  spacious={true} />
                         </Section>
-                        <Section title="Experts" subtitle="List of all fields concerning experts" collapsable isOpen={false} collapsableId="experts">
+                        <Section title="Experts" subtitle="List of all fields concerning experts" collapsable isOpen={false} collapsableId="expertsFieslds">
                             <EmptyState title="There’s no fields yet" text="All fields will be listed here" iconTitle="questionnaire"  spacious={true} />
                         </Section>
-                        <Section title="Jury" subtitle="List of all fields concerning jury" collapsable isOpen={false} collapsableId="jury">
+                        <Section title="Jury" subtitle="List of all fields concerning jury" collapsable isOpen={false} collapsableId="juryFields">
                             <EmptyState title="There’s no fields yet" text="All fields will be listed here" iconTitle="questionnaire" spacious={true} />
                         </Section>
                     </div>
