@@ -19,8 +19,8 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@schoolab/inject-css": "^1.10.33",
-    "@schoolab/inject-icons": "^1.28.0",
+    "@schoolab/inject-css": "^1.10.34",
+    "@schoolab/inject-icons": "^1.28.1",
     "dompurify": "^3.2.0",
     "jquery": "3.7.1",
     "next": ">=14.2.21",
